@@ -1,65 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="au-pd-practitioner"/>
-	<meta>
-		<lastUpdated value="2017-05-05T17:28:05.839+10:00"/>
-	</meta>
-	<url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-practitioner"/>
-	<name value="Practitioner: Australian Practitioner Directory Entry"/>
-	<title value="Australian Practitioner Directory Entry"/>
-	<status value="draft"/>
-	<date value="2017-05-05T16:52:22.3595388+10:00"/>
-	<description value="Base profile for Australian context Practitioner for provider directory usage"/>
-	<fhirVersion value="3.0.1"/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Practitioner"/>
-	<baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-practitioner"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Practitioner">
-			<path value="Practitioner"/>
-		</element>
-		<element id="Practitioner.active">
-			<path value="Practitioner.active"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Practitioner.names">
-			<path value="Practitioner.name"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="use"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-			<min value="1"/>
-		</element>
-		<element id="Practitioner.directoryname">
-			<path value="Practitioner.name"/>
-			<sliceName value="directoryname"/>
-			<short value="Official directory entry name for the practitioner"/>
-			<definition value="A registered name for the practitioner"/>
-			<min value="1"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Practitioner.directoryname.use">
-			<path value="Practitioner.name.use"/>
-			<min value="1"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Practitioner.directoryname.family">
-			<path value="Practitioner.name.family"/>
-			<min value="1"/>
-			<max value="1"/>
-		</element>
-		<element id="Practitioner.directoryname.given">
-			<path value="Practitioner.name.given"/>
-			<min value="1"/>
-			<max value="*"/>
-		</element>
-	</differential>
+  <id value="au-pd-practitioner" />
+  <meta>
+    <lastUpdated value="2017-05-12T15:21:43.15+10:00" />
+  </meta>
+  <url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-practitioner" />
+  <name value="Australian Practitioner Directory Entry" />
+  <title value="Australian Practitioner Directory Entry" />
+  <status value="draft" />
+  <date value="2017-05-05T16:52:22.3595388+10:00" />
+  <description value="Base profile for Australian context Practitioner for provider directory usage" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-practitioner" />
+    <derivation value="constraint"/>
+  <differential>
+   <element>
+      <path value="Practitioner" />
+    </element>
+    <element>
+      <path value="Practitioner.active" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.names">
+      <path value="Practitioner.name" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="use" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Practitioner.directoryname">
+      <path value="Practitioner.name" />
+      <sliceName value="directoryname" />
+      <short value="Official directory entry name for the practitioner" />
+      <definition value="A registered name for the practitioner" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.directoryname.use">
+      <path value="Practitioner.name.use" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.directoryname.family">
+      <path value="Practitioner.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.directoryname.given">
+      <path value="Practitioner.name.given" />
+      <min value="1" />
+    </element>
+  </differential>
 </StructureDefinition>

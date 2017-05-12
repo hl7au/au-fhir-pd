@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-au-address-countries"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2017-02-21T10:54:35.273+11:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SACC -- Standard Australian Classification of Countries, 2016</h2><div><p>Standard countries names</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-codesystem-au-address-countries.html"><code>http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0#Names</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org.au/fhir/ValueSet/valueset-au-address-countries"/>
+  <name value="SACC -- Standard Australian Classification of Countries, 2016"/>
+  <status value="draft"/>
+  <date value="2017-05-12T12:31:38+10:00"/>
+  <publisher value="Health Level Seven Australia (Patient Administration)"/>
+  <contact>
+    <name value="hl7.org.au"/>
+  </contact>
+  <description value="Standard countries names"/>
+  <compose>
+    <include>
+      <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1269.0#Names"/>
+    </include>
+  </compose>
+</ValueSet>

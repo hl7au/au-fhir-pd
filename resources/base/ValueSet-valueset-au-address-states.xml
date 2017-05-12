@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-au-address-states"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2017-02-21T10:54:35.273+11:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Australian States and Territories</h2><div><p>Australian states and territories coding</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-codesystem-au-address-states.html"><code>http://meteor.aihw.gov.au/content/index.phtml/itemId/430134#Codes</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org.au/fhir/ValueSet/valueset-au-address-states"/>
+  <name value="Australian States and Territories"/>
+  <status value="draft"/>
+  <date value="2017-05-12T12:31:38+10:00"/>
+  <publisher value="Health Level Seven Australia (Patient Administration)"/>
+  <contact>
+    <name value="hl7.org.au"/>
+  </contact>
+  <description value="Australian states and territories coding"/>
+  <compose>
+    <include>
+      <system value="http://meteor.aihw.gov.au/content/index.phtml/itemId/430134#Codes"/>
+    </include>
+  </compose>
+</ValueSet>

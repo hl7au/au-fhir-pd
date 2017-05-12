@@ -2,10 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-organisation" />
   <meta>
-    <lastUpdated value="2017-05-05T17:23:05.757+10:00" />
+    <lastUpdated value="2017-05-12T16:21:31.922+10:00" />
   </meta>
   <url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-organisation" />
-  <name value="Organisation: Australian Healthcare Organisation Directory Entry" />
+  <name value="Australian Healthcare Organisation Directory Entry" />
   <title value="Australian Organisation Directory Entry" />
   <status value="draft" />
   <date value="2017-05-05T17:01:18.5856309+10:00" />
@@ -14,25 +14,18 @@
   <abstract value="false" />
   <type value="Organization" />
   <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-organisation" />
-   <derivation value="constraint"/>
+    <derivation value="constraint"/>
   <differential>
-     <element>
+    <element>
       <path value="Organization" />
-      <min value="1" />
     </element>
     <element>
       <path value="Organization.active" />
       <min value="1" />
     </element>
     <element>
-      <path value="Organization.type" />
-      <sliceName value="Organization Type Class" />
-      <min value="1" />
-    </element>
-    <element>
-      <path value="Organization.type" />
-      <sliceName value="Organization Type Activity" />
-      <min value="1" />
+      <path value="Organization.endpoint" />
+      <short value="Australian endpoints for an organisation" />
     </element>
   </differential>
 </StructureDefinition>

@@ -5,7 +5,7 @@
   "dependencyList": [ 
     {
        "name" : "aubase",
-       "location" : "http://fhir.hl7.org.au/fhir/base2017Apr"
+       "location" : "http://build.fhir.org/ig/hl7au/au-fhir-base"
     }
   ], 
   "spreadsheets": [],
@@ -66,6 +66,12 @@
 	},
 	"StructureDefinition/au-pd-organisation": {
 	  "base": "StructureDefinition-au-pd-organisation.html"
+	},
+	"StructureDefinition/au-pd-endpoint": {
+	  "base": "StructureDefinition-au-pd-endpoint.html"
+	},
+	"StructureDefinition/au-pd-sm-endpoint": {
+	  "base": "StructureDefinition-au-pd-sm-endpoint.html"
 	}
   }
 }
