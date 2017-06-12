@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="example0"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>identifier</b>: Provider Number = 2426621B</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-example0.html">Generated Summary: id: example0; HPI-I = 8003610833334085, Prescriber Number = 453221; active; Helen Mayo ; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>organization</b>: <a href="Organization-example0.html">Generated Summary: id: example0; HPI-O = 8003627500000328; active; <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401}">Hospitals (except Psychiatric Hospitals)</span>, <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401-15}">Public acute care Hospital</span>; name: Downunder Hospital; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>code</b>: Cardiologist <span style="background: LightGoldenRodYellow">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253312' = 'Cardiologist', given as 'Cardiologist'})</span></p><p><b>location</b>: <a href="Location-example0.html">Generated Summary: id: example0; status: active; name: Downunder Hospital Blacktown; ph: 025553555(WORK)</a></p><p><b>telecom</b>: ph: 025553333(WORK)</p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/v2/0203"/>
+        <code value="PRN"/>
+        <display value="Provider Number"/>
+      </coding>
+      <text value="Provider Number"/>
+    </type>
+    <system value="http://ns.electronichealth.net.au/id/provider-number"/>
+    <value value="2426621B"/>
+  </identifier>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/example0"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/example0"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+      <code value="253312"/>
+      <display value="Cardiologist"/>
+    </coding>
+  </code>
+  <location>
+    <reference value="Location/example0"/>
+  </location>
+  <telecom>
+    <system value="phone"/>
+    <value value="025553333"/>
+    <use value="work"/>
+  </telecom>
+</PractitionerRole>

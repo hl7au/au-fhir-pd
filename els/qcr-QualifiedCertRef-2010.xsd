@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ns.electronichealth.net.au/qcr/xsd/QualifiedCertRef/2010" targetNamespace="http://ns.electronichealth.net.au/qcr/xsd/QualifiedCertRef/2010" elementFormDefault="qualified">
+	<xsd:element name="qualifiedCertRef" type="tns:QualifiedCertRefType"/>
+	<xsd:complexType name="QualifiedCertRefType">
+		<xsd:sequence>
+			<xsd:element name="type" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="value" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

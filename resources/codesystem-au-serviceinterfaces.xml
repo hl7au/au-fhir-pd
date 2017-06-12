@@ -1,0 +1,50 @@
+<CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/codesystem.xsd">
+	<id value="codesystem-au-serviceinterfaces"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2>Service Interfaces</h2>
+			<p>Enumeration of well known service interfaces that can be used for specifying a connection type.</p>
+		</div>
+	</text>
+	<url value="http://ns.electronichealth.net.au/smd/intf"/>
+	<version value="1"/>
+	<name value="Australian Service Interfaces"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2017-06-10"/>
+	<publisher value="HL7 Australia"/>
+	<contact>
+		<name value="hl7.org.au"/>
+	</contact>
+	<description value="Service interface types"/>
+	<caseSensitive value="true"/>
+	<compositional value="false"/>
+	<versionNeeded value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/SealedImmediateMessageDelivery/TLS/2010"/>
+		<display value="Sealed Immediate Message Delivery"/>
+		<definition value="Service interface for secure message delivery (immediate mode)"/>
+	</concept>
+	<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010"/>
+		<display value="Sealed Message Delivery"/>
+		<definition value="Service interface for secure message delivery (deferred mode)"/>
+	</concept>
+	<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/SealedMessageRetrieval/TLS/2010"/>
+		<display value="Sealed Message Retrieval"/>
+		<definition value="Service interface for secure message delivery (retrieval in deferred mode)"/>
+	</concept>
+	<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/TransportResponseDelivery/TLS/2010"/>
+		<display value="Transport Response Delivery"/>
+		<definition value="Service interface for secure message delivery (deliver acknowledgement)"/>
+	</concept>
+	<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/TransportResponseRetrieval/TLS/2010"/>
+		<display value="Transport Response Retrieval"/>
+		<definition value="Service interface for secure message delivery (retreive acknowledgement)"/>
+	</concept>
+</CodeSystem>

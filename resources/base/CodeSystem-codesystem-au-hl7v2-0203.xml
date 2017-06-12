@@ -54,4 +54,24 @@
     <display value="DVA Orange Card Number"/>
     <definition value="Department of Veterans&#39; Affairs Number (Orange Card)"/>
   </concept>
+  <concept>
+    <code value="DVL"/>
+    <display value="DVA Lilac Card Number"/>
+    <definition value="Department of Veterans&#39; Affairs Number (Lilac Card)"/>
+  </concept>
+  <concept>
+    <code value="ABN"/>
+    <display value="ABN"/>
+    <definition value="Australian Business Number (ASIC)"/>
+  </concept>
+  <concept>
+    <code value="ACN"/>
+    <display value="ACN"/>
+    <definition value="Australian Company Number (ASIC)"/>
+  </concept>
+  <concept>
+    <code value="ARBN"/>
+    <display value="ARBN"/>
+    <definition value="Australian Registered Body Number (ASIC)"/>
+  </concept>
 </CodeSystem>

@@ -3,10 +3,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-organisation"/>
   <meta>
-    <lastUpdated value="2017-03-11T17:30:54.254+11:00"/>
+    <lastUpdated value="2017-06-01T14:37:46.857+10:00"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>AU Organisation</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+			<p>AU Organisation</p>
+		</div>
   </text>
   <url value="http://hl7.org.au/fhir/StructureDefinition/au-organisation"/>
   <name value="Australian Healthcare Organisation"/>
@@ -16,7 +18,6 @@
   <publisher value="Health Level Seven Australia (Patient Administration)"/>
   <contact>
     <telecom>
-      <system value="url"/>
       <value value="http://hl7.org.au/fhir"/>
     </telecom>
   </contact>
@@ -348,7 +349,7 @@
       <path value="Organization.identifier"/>
       <sliceName value="HPI-O"/>
       <short value="National organisation identifier"/>
-      <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems."/>
+      <definition value="Health Provider Identifier for Organisation"/>
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization."/>
       <min value="0"/>
       <max value="1"/>
@@ -766,6 +767,328 @@
         <map value="./IdentifierIssuingAuthority"/>
       </mapping>
     </element>
+    <element id="Organization.identifier:asic-business-identifier">
+      <path value="Organization.identifier"/>
+      <sliceName value="asic-business-identifier"/>
+      <short value="ASIC assigned identifier for business"/>
+      <definition value="ASIC assigned identifier for business/entity. That is ABN (Australian Business Number), ACN (Australian Company Number) or ARBN (Australian Registered Body Number)."/>
+      <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Organization.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <condition value="org-1"/>
+      <constraint>
+        <key value="inv-asic-abn-name"/>
+        <severity value="error"/>
+        <human value="Type text must be &#39;ABN&#39; when code is &#39;ABN&#39;"/>
+        <expression value="type.coding.code=&#39;ABN&#39; and type.text != &#39;ABN&#39;"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-abn-length"/>
+        <severity value="error"/>
+        <human value="&#39;ABN&#39; must be 11 digits"/>
+        <expression value="type.coding.code=&#39;ABN&#39; and value.length()=11"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-acn-name"/>
+        <severity value="error"/>
+        <human value="Type text must be &#39;ACN&#39; when code is &#39;ACN&#39;"/>
+        <expression value="type.coding.code=&#39;ACN&#39; and type.text != &#39;ACN&#39;"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-acn-length"/>
+        <severity value="error"/>
+        <human value="&#39;ACN&#39; must be 9 digits"/>
+        <expression value="type.coding.code=&#39;ACN&#39; and value.length()=9"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-arbn-name"/>
+        <severity value="error"/>
+        <human value="Type text must be &#39;ARBN&#39; when code is &#39;ARBN&#39;"/>
+        <expression value="type.coding.code=&#39;ARBN&#39; and type.text != &#39;ARBN&#39;"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-arbn-length"/>
+        <severity value="error"/>
+        <human value="&#39;ARBN&#39; must be 9 digits"/>
+        <expression value="type.coding.code=&#39;ARBN&#39; and value.length()=9"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XON.10 / XON.3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".scopes[Role](classCode=IDENT)"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./Identifiers"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="id"/>
+      </mapping>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.id">
+      <path value="Organization.identifier.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.extension">
+      <path value="Organization.identifier.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.use">
+      <path value="Organization.identifier.use"/>
+      <short value="usual | official | temp | secondary (If known)"/>
+      <definition value="The purpose of this identifier."/>
+      <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary."/>
+      <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Identifier.use"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="IdentifierUse"/>
+        </extension>
+        <strength value="required"/>
+        <description value="Identifies the purpose for this identifier, if known ."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/identifier-use"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Role.code or implied by context"/>
+      </mapping>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.type">
+      <path value="Organization.identifier.type"/>
+      <short value="Description of identifier"/>
+      <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."/>
+      <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage. &#xA;&#xA;Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."/>
+      <requirements value="Allows users to make use of identifiers when the identifier system is not known."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Identifier.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="IdentifierType"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="required"/>
+        <description value="ASIC identifier types"/>
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-au-asic"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="CX.5"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Role.code or implied by context"/>
+      </mapping>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.system">
+      <path value="Organization.identifier.system"/>
+      <short value="The namespace for the identifier value"/>
+      <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."/>
+      <requirements value="There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we&#39;re dealing with. The system identifies a particular set of unique identifiers."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Identifier.system"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://business.gov.au"/>
+      <example>
+        <label value="General"/>
+        <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
+      </example>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="CX.4 / EI-2-4"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="II.root or Role.id.root"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./IdentifierType"/>
+      </mapping>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.value">
+      <path value="Organization.identifier.value"/>
+      <short value="ASIC identifier value"/>
+      <definition value="ASIC identiffier value ABN, ACN or ARBN."/>
+      <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value&#39;s primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Identifier.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <example>
+        <label value="General"/>
+        <valueString value="123456"/>
+      </example>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="CX.1 / EI.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./Value"/>
+      </mapping>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.period">
+      <path value="Organization.identifier.period"/>
+      <short value="Time period when id is/was valid for use"/>
+      <definition value="Time period during which identifier is/was valid for use."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Identifier.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="CX.7 + CX.8"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Role.effectiveTime or implied by context"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./StartDate and ./EndDate"/>
+      </mapping>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.assigner">
+      <path value="Organization.identifier.assigner"/>
+      <short value="Organization that issued id (may be just text)"/>
+      <definition value="Organization that issued/manages the identifier."/>
+      <comment value="The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Identifier.assigner"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="CX.4 / (CX.4,CX.9,CX.10)"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./IdentifierIssuingAuthority"/>
+      </mapping>
+    </element>
     <element id="Organization.active">
       <path value="Organization.active"/>
       <short value="Whether the organization&#39;s record is still in active use"/>
@@ -853,9 +1176,9 @@
         <map value="class"/>
       </mapping>
     </element>
-    <element id="Organization.type:organizationtypeclass">
+    <element id="Organization.type:organization-type-class">
       <path value="Organization.type"/>
-      <sliceName value="Organization Type Class"/>
+      <sliceName value="organization-type-class"/>
       <short value="Organisation Class Type"/>
       <definition value="The kind of organization that this is coded as ANZSIC class type"/>
       <comment value="Australian and New Zealand standard classification of industry category level 1 class type"/>
@@ -896,9 +1219,9 @@
         <map value="class"/>
       </mapping>
     </element>
-    <element id="Organization.type:organizationtypeactivity">
+    <element id="Organization.type:organization-type-activity">
       <path value="Organization.type"/>
-      <sliceName value="Organization Type Activity"/>
+      <sliceName value="organization-type-activity"/>
       <short value="Organisation Activity Type"/>
       <definition value="The kind of organization that this is coded as ANZSIC activity type"/>
       <comment value="Australian and New Zealand standard classification of industry category level 2 activity type"/>
@@ -1318,7 +1641,6 @@
   <differential>
     <element id="Organization">
       <path value="Organization"/>
-      <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc."/>
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier"/>
@@ -1333,18 +1655,13 @@
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>
-      <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems."/>
     </element>
     <element id="Organization.identifier:hpi-o">
       <path value="Organization.identifier"/>
       <sliceName value="HPI-O"/>
       <short value="National organisation identifier"/>
-      <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems."/>
-      <min value="0"/>
+      <definition value="Health Provider Identifier for Organisation"/>
       <max value="1"/>
-      <type>
-        <code value="Identifier"/>
-      </type>
       <constraint>
         <key value="inv-hpio-0"/>
         <severity value="error"/>
@@ -1363,20 +1680,12 @@
       <short value="HPI-O Identifier Type"/>
       <definition value="Element describing the type of identifier"/>
       <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
     </element>
     <element id="Organization.identifier:hpi-o.type.coding">
       <path value="Organization.identifier.type.coding"/>
       <short value="HPI-O Identifier Type Code"/>
       <definition value="Coding for the identifier type"/>
-      <min value="0"/>
       <max value="1"/>
-      <type>
-        <code value="Coding"/>
-      </type>
       <fixedCoding>
         <system value="http://hl7.org.au/fhir/v2/0203"/>
         <code value="NOI"/>
@@ -1384,39 +1693,106 @@
       </fixedCoding>
     </element>
     <element id="Organization.identifier:hpi-o.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true"/>
+      </extension>
       <path value="Organization.identifier.type.text"/>
       <short value="HPI-O Identifier Type Descriptive Text"/>
       <definition value="Descriptive text for the identifier type"/>
       <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
       <fixedString value="HPI-O"/>
     </element>
     <element id="Organization.identifier:hpi-o.system">
       <path value="Organization.identifier.system"/>
       <definition value="Namespace uri for HPI-O values"/>
       <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="uri"/>
-      </type>
       <fixedUri value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
     </element>
     <element id="Organization.identifier:hpi-o.value">
       <path value="Organization.identifier.value"/>
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems."/>
       <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
       <example>
         <label value="HPI-O number"/>
         <valueString value="8003627500000328"/>
       </example>
       <maxLength value="16"/>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier">
+      <path value="Organization.identifier"/>
+      <sliceName value="asic-business-identifier"/>
+      <short value="ASIC assigned identifier for business"/>
+      <definition value="ASIC assigned identifier for business/entity. That is ABN (Australian Business Number), ACN (Australian Company Number) or ARBN (Australian Registered Body Number)."/>
+      <constraint>
+        <key value="inv-asic-abn-name"/>
+        <severity value="error"/>
+        <human value="Type text must be &#39;ABN&#39; when code is &#39;ABN&#39;"/>
+        <expression value="type.coding.code=&#39;ABN&#39; and type.text != &#39;ABN&#39;"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-abn-length"/>
+        <severity value="error"/>
+        <human value="&#39;ABN&#39; must be 11 digits"/>
+        <expression value="type.coding.code=&#39;ABN&#39; and value.length()=11"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-acn-name"/>
+        <severity value="error"/>
+        <human value="Type text must be &#39;ACN&#39; when code is &#39;ACN&#39;"/>
+        <expression value="type.coding.code=&#39;ACN&#39; and type.text != &#39;ACN&#39;"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-acn-length"/>
+        <severity value="error"/>
+        <human value="&#39;ACN&#39; must be 9 digits"/>
+        <expression value="type.coding.code=&#39;ACN&#39; and value.length()=9"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-arbn-name"/>
+        <severity value="error"/>
+        <human value="Type text must be &#39;ARBN&#39; when code is &#39;ARBN&#39;"/>
+        <expression value="type.coding.code=&#39;ARBN&#39; and type.text != &#39;ARBN&#39;"/>
+      </constraint>
+      <constraint>
+        <key value="inv-asic-arbn-length"/>
+        <severity value="error"/>
+        <human value="&#39;ARBN&#39; must be 9 digits"/>
+        <expression value="type.coding.code=&#39;ARBN&#39; and value.length()=9"/>
+      </constraint>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.type">
+      <path value="Organization.identifier.type"/>
+      <min value="1"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="IdentifierType"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="required"/>
+        <description value="ASIC identifier types"/>
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-au-asic"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.system">
+      <path value="Organization.identifier.system"/>
+      <min value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://business.gov.au"/>
+    </element>
+    <element id="Organization.identifier:asic-business-identifier.value">
+      <path value="Organization.identifier.value"/>
+      <short value="ASIC identifier value"/>
+      <definition value="ASIC identiffier value ABN, ACN or ARBN."/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
     </element>
     <element id="Organization.type">
       <path value="Organization.type"/>
@@ -1429,18 +1805,13 @@
       </slicing>
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems."/>
     </element>
-    <element id="Organization.type:organizationtypeclass">
+    <element id="Organization.type:organization-type-class">
       <path value="Organization.type"/>
-      <sliceName value="Organization Type Class"/>
+      <sliceName value="organization-type-class"/>
       <short value="Organisation Class Type"/>
       <definition value="The kind of organization that this is coded as ANZSIC class type"/>
       <comment value="Australian and New Zealand standard classification of industry category level 1 class type"/>
-      <min value="0"/>
       <max value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="OrganizationType"/>
@@ -1450,18 +1821,13 @@
         <valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-anzsic-restricted-class"/>
       </binding>
     </element>
-    <element id="Organization.type:organizationtypeactivity">
+    <element id="Organization.type:organization-type-activity">
       <path value="Organization.type"/>
-      <sliceName value="Organization Type Activity"/>
+      <sliceName value="organization-type-activity"/>
       <short value="Organisation Activity Type"/>
       <definition value="The kind of organization that this is coded as ANZSIC activity type"/>
       <comment value="Australian and New Zealand standard classification of industry category level 2 activity type"/>
-      <min value="0"/>
       <max value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="OrganizationType"/>

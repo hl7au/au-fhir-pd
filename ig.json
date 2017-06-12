@@ -9,7 +9,7 @@
     }
   ], 
   "spreadsheets": [],
-  "special-urls": [ ],
+  "special-urls": [ "http://ns.electronichealth.net.au/smd/intf"],
   "extraTemplates": [ "mappings" ],
   "defaults": {
     "ConceptMap": { "template-base": "cm.html" },
@@ -72,6 +72,9 @@
 	},
 	"StructureDefinition/au-pd-sm-endpoint": {
 	  "base": "StructureDefinition-au-pd-sm-endpoint.html"
+	},
+	"StructureDefinition/au-pd-healthcareservice": {
+	  "base": "StructureDefinition-au-pd-healthcareservice.html"
 	}
   }
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ns.electronichealth.net.au/els/xsd/DataTypes/2013" xmlns:qcr="http://ns.electronichealth.net.au/qcr/xsd/QualifiedCertRef/2010" targetNamespace="http://ns.electronichealth.net.au/els/xsd/DataTypes/2013" elementFormDefault="qualified">
+	<xsd:import namespace="http://ns.electronichealth.net.au/qcr/xsd/QualifiedCertRef/2010" schemaLocation="qcr-QualifiedCertRef-2010.xsd"/>
+	<xsd:complexType name="CapabilityType">
+		<xsd:sequence>
+			<xsd:element name="id" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="value" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ElsCertRefType">
+		<xsd:sequence>
+			<xsd:element name="useQualifier" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+			<xsd:element ref="qcr:qualifiedCertRef" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ExtensionData">
+		<xsd:sequence>
+			<xsd:element name="typeId" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="data" type="xsd:anyType" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="InteractionType">
+		<xsd:sequence>
+			<xsd:element name="target" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="payloadScheme" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="serviceInterface" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="serviceEndpoint" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="delegate" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="certRef" type="tns:ElsCertRefType" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="capability" type="tns:CapabilityType" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="extension" type="tns:ExtensionData" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

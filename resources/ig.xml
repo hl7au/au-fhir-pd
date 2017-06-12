@@ -42,13 +42,19 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/au-pd-endpoint"/>
+				<reference value="StructureDefinition/au-pd-sm-endpoint"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/au-pd-sm-endpoint"/>
+				<reference value="StructureDefinition/au-pd-healthcareservice"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/codesystem-au-serviceinterfaces"/>
 			</sourceReference>
 		</resource>
 	</package>
