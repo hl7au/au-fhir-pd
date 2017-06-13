@@ -24,6 +24,6 @@
   <derivation value="constraint"/>
   <element>
 		<path value="Location"/>
-		<short value="Australian Location"/>
+		<short value="Australian Location Directory Entry"/>
   </element>
 </StructureDefinition>

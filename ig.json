@@ -64,6 +64,9 @@
 	"StructureDefinition/au-pd-practitioner": {
 	  "base": "StructureDefinition-au-pd-practitioner.html"
 	},
+	"StructureDefinition/au-pd-practitionerrole": {
+	  "base": "StructureDefinition-au-pd-practitionerrole.html"
+	},
 	"StructureDefinition/au-pd-organisation": {
 	  "base": "StructureDefinition-au-pd-organisation.html"
 	},

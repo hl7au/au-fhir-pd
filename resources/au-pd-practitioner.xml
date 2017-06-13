@@ -23,8 +23,10 @@
 	<baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-practitioner"/>
 	<derivation value="constraint"/>
 	<differential>
-		
-		<element>
+		<element id="Practitioner">
+			<path value="Practitioner"/>
+		</element>
+		<element id="Practitioner.identifier.hpii">
 			<path value="Practitioner.identifier"/>
 			<sliceName value="HPI-I"/>
 			<mustSupport value="true"/>

@@ -1,2 +1,0 @@
-Australian Endpoint Directory Entry
-

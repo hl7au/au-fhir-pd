@@ -18,13 +18,16 @@
 	<status value="draft"/>
 	<date value="2017-06-09T16:54:42.8062171+10:00"/>
 	<description value="Australian healthcare service provider directory directory entry "/>
-	<fhirVersion value="3.0.0"/>
+	<fhirVersion value="3.0.1"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="HealthcareService"/>
 	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
 	<derivation value="constraint"/>
 	<differential>
+		<element>
+			<path value="HealthcareService"/>
+		</element>
 		<element>
 			<path value="HealthcareService.providedBy"/>
 			<type>

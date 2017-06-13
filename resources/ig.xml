@@ -36,6 +36,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/au-pd-practitionerrole"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/au-pd-organisation"/>
 			</sourceReference>
 		</resource>
@@ -63,7 +69,6 @@
 				<reference value="ValueSet/valueset-au-serviceinterfaces"/>
 			</sourceReference>
 		</resource>
-	
 	</package>
 	<page>
 		<source value="index.html"/>
