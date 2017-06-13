@@ -88,6 +88,9 @@
 	"StructureDefinition/au-receivingapplication": {
 	  "base": "StructureDefinition-au-receivingapplication.html"
 	},
+	"StructureDefinition/encrypting-qualified-certificate-reference": {
+	  "base": "StructureDefinition-encrypting-qualified-certificate-reference.html"
+	},
 	"CodeSystem/codesystem-au-serviceinterfaces": {
 	  "base": "CodeSystem-codesystem-au-serviceinterfaces.html"
 	},
