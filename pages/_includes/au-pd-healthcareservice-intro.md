@@ -1,3 +1,3 @@
-Australian Organization Directory Entry Profile
+Australian Healthcare Service Directory Entry Profile
 
 
