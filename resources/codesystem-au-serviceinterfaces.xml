@@ -1,4 +1,4 @@
-<CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/codesystem.xsd">
+<CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="codesystem-au-serviceinterfaces"/>
 	<text>
 		<status value="generated"/>
@@ -17,8 +17,9 @@
 	<contact>
 		<name value="hl7.org.au"/>
 	</contact>
-	<description value="Service interface types"/>
+    <description value="Service interface types"/>
 	<caseSensitive value="true"/>
+	<valueSet value="http://hl7.org.au.fhir/ValueSet/au-serviceinterfaces"/>
 	<compositional value="false"/>
 	<versionNeeded value="true"/>
 	<content value="complete"/>
@@ -32,17 +33,17 @@
 		<display value="Sealed Message Delivery"/>
 		<definition value="Service interface for secure message delivery (deferred mode)"/>
 	</concept>
-	<concept>
+		<concept>
 		<code value="http://ns.electronichealth.net.au/smd/intf/SealedMessageRetrieval/TLS/2010"/>
 		<display value="Sealed Message Retrieval"/>
 		<definition value="Service interface for secure message delivery (retrieval in deferred mode)"/>
-	</concept>
+	</concept>	
 	<concept>
 		<code value="http://ns.electronichealth.net.au/smd/intf/TransportResponseDelivery/TLS/2010"/>
 		<display value="Transport Response Delivery"/>
 		<definition value="Service interface for secure message delivery (deliver acknowledgement)"/>
 	</concept>
-	<concept>
+		<concept>
 		<code value="http://ns.electronichealth.net.au/smd/intf/TransportResponseRetrieval/TLS/2010"/>
 		<display value="Transport Response Retrieval"/>
 		<definition value="Service interface for secure message delivery (retreive acknowledgement)"/>
