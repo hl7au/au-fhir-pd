@@ -79,6 +79,15 @@
 	"StructureDefinition/au-pd-healthcareservice": {
 	  "base": "StructureDefinition-au-pd-healthcareservice.html"
 	},
+	"StructureDefinition/au-pd-location": {
+	  "base": "StructureDefinition-au-pd-location.html"
+	},
+	"StructureDefinition/au-receivingfacility": {
+	  "base": "StructureDefinition-au-receivingfacility.html"
+	},
+	"StructureDefinition/au-receivingapplication": {
+	  "base": "StructureDefinition-au-receivingapplication.html"
+	},
 	"CodeSystem/codesystem-au-serviceinterfaces": {
 	  "base": "CodeSystem-codesystem-au-serviceinterfaces.html"
 	},

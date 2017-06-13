@@ -17,7 +17,7 @@
 	<type value="Extension"/>
 	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
 	<derivation value="constraint"/>
-	<differential>
+<differential>
 		<element>
 			<path value="Extension"/>
 		</element>
@@ -33,6 +33,11 @@
 		</element>
 		<element>
 			<path value="Extension.extension"/>
+			<sliceName value="namespace-id"/>
+		</element>
+		<element>
+			<path value="Extension.extension.url"/>
+			<fixedUri value="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility/namespace-id"/>
 		</element>
 		<element>
 			<path value="Extension.extension.valueString"/>
@@ -42,6 +47,11 @@
 		</element>
 		<element>
 			<path value="Extension.extension"/>
+			<sliceName value="universal-id"/>
+		</element>
+		<element>
+			<path value="Extension.extension.url"/>
+			<fixedUri value="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility/universal-id"/>
 		</element>
 		<element>
 			<path value="Extension.extension.valueString"/>
@@ -51,6 +61,11 @@
 		</element>
 		<element>
 			<path value="Extension.extension"/>
+			<sliceName value="universal-id-type"/>
+		</element>
+		<element>
+			<path value="Extension.extension.url"/>
+			<fixedUri value="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility/universal-id-type"/>
 		</element>
 		<element>
 			<path value="Extension.extension.valueString"/>
