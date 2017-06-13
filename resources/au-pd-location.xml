@@ -20,12 +20,18 @@
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Location"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location" />
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location"/>
 	<derivation value="constraint"/>
 	<differential>
 		<element id="Location">
 			<path value="Location"/>
 			<short value="Australian Location Directory Entry"/>
+		</element>
+		<element id="Location.address">
+			<path value="Location.address"/>
+			<short value="Australian location"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>
