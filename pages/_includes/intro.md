@@ -7,26 +7,45 @@
 {:toc}
 
 ## Introduction
-This guide covers capability requirements of FHIR services to implement a set of profiles and support interfaces in an Australian context for the purpose of implementation of provider directory services.
+This implementation guide is provided to support the use of FHIR<sup>&reg;&copy;</sup> in an Australian context.
 
-Many of the resource profiles provided here are based on definitions from the Australian Base Profiles Implementation Guide.
-
-This document is a working specification that is expected to be implemented and tested by FHIR<sup>&reg;&copy;</sup> system producers to enable feedback to improve the content of this guide.
+This document is a working specification that is expected to be implemented and tested by FHIR<sup>&reg;&copy;</sup> system producers
+to enable feedback to improve the content of this guide.
 
 ## Scope
 
-* Directory Entry Organisation: searchable details, name, type, address
-* Directory Entry Practitioner: searchable details, name, type, role
-* Directory Entry Endpoints: general connection and secure message addressing details
+An indication of FHIR profiles that are managed under HL7 Australia working groups follows. 
+
+__HL7 Australia Patient Administration Working Group__
+
+* [Patient](StructureDefinition-au-patient.html): identifying values (IHI, Medicare Number, DVA Number), indigenous status
+* [Practitioner](StructureDefinition-au-practitioner.html): identifiers (HPI-I, Prescriber Number)
+* [PractitionerRole](StructureDefinition-au-practitionerrole.html): identifiers (Provider Number), occupation role
+* [Organization](StructureDefinition-au-organisation.html): identifiers (HPI-O), industry class, industry activity
+
+__HL7 Australia Medications Working Group__
+
+* [Medication](StructureDefinition-au-medication.html): medication details (product, strength, form etc.), PBS code, manufacturer
+* [MedicationRequest](StructureDefinition-au-prescription.html): prescription details, concurrent supply, concession benefits, authority, approval etc.
+* MedicationDispense: (tbd)
+* MedicationStatement: (tbd)
+* Immunization: (tbd)
+
+__HL7 Australia Orders and Observations Working Group__
+
+* Observation (Vital Signs): (tbd)
+* Observation (Smoking Status): (tbd)
+* Observation (Pathology Results): (tbd)
+* DiagnosticReport: (tbd)
 
 ## Usage
 
 This document is a working specification that may be directly implemented by FHIR<sup>&reg;&copy;</sup> system producers.
 
-Information contained in this document provides a minimal requirement level for use in secure message end point location and addressing. 
-To that end it specifies key entities and elements thereof needed for secure message addressing and also needed interface interactions
-to achieve basic searchability operations with diretories. This common core set of capability of systems enables an agreed technical
-profile for searching provider directories to obtain information required for secure message addressing.
+Information contained in this document is aimed at providing guidance on representing Australian local concepts 
+using FHIR. This includes code systems, extensions and profiles on base FHIR types.  The content of the IG is 
+general in nature and seeks to provide a ‘how-to’ guide when representing concepts, it includes core base
+profiles that can be further constrained for a particular usage.
 
 FHIR<sup>&reg;&copy;</sup> connectathon events are key to the verification of the guide as being suitable for 
 implementation. This implementation guide will be used as the basis for Australian connectathon events.
@@ -38,6 +57,8 @@ This guide is the product of collaborative work undertaken with participants fro
 * Secure Messaging Technical Working Group
 * Australian FHIR Implementers' Community
 * HL7 Australia Patient Administration Working Group
+* HL7 Australia Medications Working Group
+* HL7 Australia Orders and Observations Working Group
 * HL7 Australia Members 
 
 
