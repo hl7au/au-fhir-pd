@@ -47,6 +47,10 @@
 	"Address": { 
 		"template-base": "ex.html",
 		"template-format": "ex-format.html" 
+	},
+	"Endpoint": { 
+		"template-base": "ex.html",
+		"template-format": "ex-format.html" 
 	}
   },
   "tool": "jekyll",
@@ -69,9 +73,6 @@
 	},
 	"StructureDefinition/au-pd-organisation": {
 	  "base": "StructureDefinition-au-pd-organisation.html"
-	},
-	"StructureDefinition/au-pd-endpoint": {
-	  "base": "StructureDefinition-au-pd-endpoint.html"
 	},
 	"StructureDefinition/au-pd-sm-endpoint": {
 	  "base": "StructureDefinition-au-pd-sm-endpoint.html"

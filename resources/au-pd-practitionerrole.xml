@@ -43,7 +43,6 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://hl7.org.au/fhir/StructureDefinition/au-organisation"/>
 				<targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-pd-organisation"/>
 			</type>
 		</element>
@@ -59,7 +58,7 @@
 			<path value="PractitionerRole.endpoint"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/au-pd-sm-endpoint"/>
+				<targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-pd-sm-endpoint"/>
 			</type>
 			<type>
 				<code value="Reference"/>

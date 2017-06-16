@@ -34,7 +34,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/au-pd-organisation"/>
+				<targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-pd-organisation"/>
 			</type>
 		</element>
 		<element>
@@ -43,7 +43,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/au-pd-location"/>
+				<targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-pd-location"/>
 			</type>
 		</element>
 		<element>
