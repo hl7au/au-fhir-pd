@@ -15,9 +15,11 @@ This document is a working specification that is expected to be implemented and 
 
 ## Scope
 
-* Directory Entry Organisation: searchable details, name, type, address
-* Directory Entry Practitioner: searchable details, name, type, role
-* Directory Entry Endpoints: general connection and secure message addressing details
+* Organisation Directory Entry: managing organisations
+* Practitioner Directory Entry: individual practitioners
+* Practitioner Role Directory Entry: role participants at a location for an organisation
+* Healthcare Service Directory Entry: services delivered at a location for an organization
+* Secure Messaging Endpoint Directory Entry: connection details for secure messaging
 
 ## Usage
 
