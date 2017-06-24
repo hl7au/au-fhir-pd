@@ -97,6 +97,12 @@
 	},
 	"ValueSet/valueset-au-serviceinterfaces": {
 	  "base": "ValueSet-valueset-au-serviceinterfaces.html"
+	},
+	"CodeSystem/codesystem-au-endpoint-payload-type": {
+	  "base": "CodeSystem-codesystem-au-endpoint-payload-type.html"
+	},
+	"ValueSet/valueset-au-endpoint-payload-type": {
+	  "base": "ValueSet-valueset-au-endpoint-payload-type.html"
 	}
   }
 }

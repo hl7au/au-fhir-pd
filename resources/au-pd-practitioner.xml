@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/structuredefinition.xsd">
 	<id value="au-pd-practitioner"/>
+		<meta>
+		<lastUpdated value="2017-06-09T20:06:36.252+10:00"/>
+	</meta>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<p>AU PD Practitioner</p>
 		</div>
 	</text>
-	<meta>
-		<lastUpdated value="2017-06-09T20:06:36.252+10:00"/>
-	</meta>
+
 	<url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-practitioner"/>
 	<name value="Australian Practitioner Directory Entry"/>
 	<title value="Australian Practitioner Directory Entry"/>
@@ -26,9 +27,25 @@
 		<element id="Practitioner">
 			<path value="Practitioner"/>
 		</element>
+		<element id="Practitioner.identifier.slicing">
+			<path value="Practitioner.identifier"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="system"/>
+				</discriminator>
+				<discriminator>
+					<type value="value"/>
+					<path value="type"/>
+				</discriminator>
+				<rules value="openAtEnd"/>
+			</slicing>
+		</element>
 		<element id="Practitioner.identifier.hpii">
 			<path value="Practitioner.identifier"/>
 			<sliceName value="HPI-I"/>
+			<short value="HPI-I"/>
+			<definition value="National identifier for the individual provider"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Practitioner.active">
@@ -39,19 +56,33 @@
 		</element>
 		<element>
 			<path value="Practitioner.name"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="use"/>
+				</discriminator>
+				<rules value="openAtEnd"/>
+			</slicing>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Practitioner.directoryname.use">
+		<element>
+			<path value="Practitioner.name"/>
+			<sliceName value="directory-practitioner-name"/>
+			<short value="Usual practitioner name"/>
+			<definition value="Name used by practitioner that may be searched for in this directory entry"/>
+			<min value="1"/>
+		</element>
+		<element>
 			<path value="Practitioner.name.use"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
+			<fixedCode  value="usual"/>
 		</element>
-		<element id="Practitioner.directoryname.family">
+		<element>
 			<path value="Practitioner.name.family"/>
 			<min value="1"/>
 		</element>
-		<element id="Practitioner.directoryname.given">
+		<element>
 			<path value="Practitioner.name.given"/>
 			<min value="1"/>
 		</element>

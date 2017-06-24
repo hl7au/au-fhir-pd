@@ -93,6 +93,18 @@
 				<reference value="ValueSet/valueset-au-serviceinterfaces"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/codesystem-au-endpoint-payload-type"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/valueset-au-endpoint-payload-type"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>

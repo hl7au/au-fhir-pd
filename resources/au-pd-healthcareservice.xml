@@ -46,6 +46,16 @@
 				<targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-pd-location"/>
 			</type>
 		</element>
+		<element id="HealthcareService.name">
+			<path value="HealthcareService.name"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+	    <element id="HealthcareService.telecom">
+			<path value="HealthcareService.telecom"/>
+			<min value="0"/>
+			<mustSupport value="true"/>
+		</element>
 		<element>
 			<path value="HealthcareService.endpoint"/>
 			<type>
