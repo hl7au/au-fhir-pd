@@ -3,7 +3,7 @@
 
 `GET [base]/Practitioner?identifier=[system]|[code]`
 
-**Example:** GET [base]/Practitioner?identifier=http://ns.electronichealth.net.au/id/hi/hpii/1.0|8003610833334085
+**Example:** GET [base]/Practitioner?identifier=http://ns.electronichealth.net.au/id/hi/hpii/1.0\|8003610833334085
 
 *Support:* Mandatory to search by identifier.
 
