@@ -1,44 +1,66 @@
 
 -----------
+##### *Search: Healthcare Service Name*
 
 `GET [base]/HealthcareService?name=[string]`
 
-**Example:** GET [base]/HealthcareService?name=southern%20clinic
+*Example:* 
+`GET [base]/HealthcareService?name=southern%20clinic`
 
 *Support:* Mandatory to support search by HealthcareService name.
 
-*Implementation Notes:* Search based on HealthcareService name
+*Implementation Notes:* [(how to search by string)]
+* Search based on HealthcareService name
+* Can _include details of managing organisation and endpoints adding 
+`&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
 
 -----------
+##### *Search: Healthcare Service Managing Organisation Name*
 
 `GET [base]/HealthcareService?organization.name=[string]`
 
-**Example:** GET [base]/HealthcareService?organization.name=clinigroup
+*Example:* 
+`GET [base]/HealthcareService?organization.name=clinigroup`
 
 *Support:* Mandatory to support search by Organization name.
 
-*Implementation Notes:* Search based on text name.
+*Implementation Notes:* [(how to search by string)]
+* Search based on text name.
+* Can _include details of managing organisation and endpoints adding 
+`&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
+
 
 -----------
+##### *Search: Healthcare Service Type*
 
 `GET [base]/HealthcareService?type=[system]|[code]`
 
-**Example:** GET [base]/HealthcareService?type=[todo]\|[todo]
+*Example:* 
+`GET [base]/HealthcareService?type=[todo]|[todo]`
 
 *Support:* Mandatory to support search by HealthcareService type.
 
-*Implementation Notes:*  Search based on type.
+*Implementation Notes:* [(how to search by token)]
+* Search based on type.
+* Can _include details of managing organisation and endpoints adding 
+`&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
 
 -----------
+##### *Search: Healthcare Service Managing Organisation HPI-O*
 
-`GET [base]/HealthcareService?organization.identifier=[system]|[code]&endpoint.connection-type=[system]|[code]&endpoint.payload-type=[system]|[code]&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
+`GET [base]/HealthcareService?organization.identifier=[system]|[code]`
 
-**Example:** GET [base]/HealthcareService?organization.identifier=HPI-O&connection-type=[todo]\|[todo]&payload-type=[todo]\|[todo]
+*Example:* 
+`GET [base]/HealthcareService?organization.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
 
-*Support:* Mandatory to support search by HPI-O, connection type (service interface) and payload type (service category).
+*Support:* Mandatory to support search by HPI-O.
 
-*Implementation Notes:* Equivalent to ELS listInteractions for organisation.
-
+*Implementation Notes:* [(how to search by token)]
+* Equivalent to ELS listInteractions for target.
+* Can _include details of managing organisation and endpoints adding 
+`&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
+* Can add required support for interface and/or payload capability 
+`&endpoint.connection-type=[todo]|[todo]&endpoint.payload-type=[todo]|[todo]`
 
 -----------
 

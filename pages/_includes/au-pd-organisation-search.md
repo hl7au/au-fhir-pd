@@ -1,24 +1,29 @@
 
 -----------
+##### *Search: Organisation Name*
 
 `GET [base]/Organization?name=[string]`
 
-**Example:** GET [base]/Organization?name=clinigroup
+*Example:* 
+`GET [base]/Organization?name=clinigroup`
 
 *Support:* Mandatory to support search by Organization name.
 
-*Implementation Notes:* Search based on Organization name
+*Implementation Notes:* [(how to search by string)]
+* Search based on Organization name
 
 -----------
+##### *Search: Organisation HPI-O*
 
-`GET [base]/Organization?identifier=[system]|[code]&endpoint.connection-type=[system]|[code]&endpoint.payload-type=[system]|[code]&_include=Organization:organization&_include=Organization:endpoint`
+`GET [base]/Organization?identifier=[system]|[code]`
 
-**Example:** GET [base]/Organization?identifier=HPI-O&connection-type=[todo]\|[todo]&payload-type=[todo]\|[todo]
+*Example:* 
+`GET [base]/Organization?identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
 
-*Support:* Mandatory to support search by HPI-O, connection type (service interface) and payload type (service category).
+*Support:* Mandatory to support search by HPI-O.
 
-*Implementation Notes:* Equivalent to ELS listInteractions for organisation.
-
+*Implementation Notes:* [(how to search by token)]
+* Find an organisation by HPI-O.
 
 -----------
 
