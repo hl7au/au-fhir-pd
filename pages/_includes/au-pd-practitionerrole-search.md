@@ -1,6 +1,6 @@
 
 -----------
-##### *Search: Provider Practitioner Name*
+**Search: Provider Practitioner Name**
 
 `GET [base]/PractitionerRole?practitioner.family=[string]&practitioner.given=[string]`
 
@@ -15,7 +15,7 @@
 `&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint`
 
 -----------
-##### *Search: Provider Specialty*
+**Search: Provider Specialty**
 
 `GET [base]/PractitionerRole?specialty=[system]|[code]`
 
@@ -31,7 +31,7 @@
 
 
 -----------
-##### *Search: Provider Managing Organisation HPI-O*
+**Search: Provider Managing Organisation HPI-O**
 
 `GET [base]/PractitionerRole?organization.identifier=[system]|[code]`
 
@@ -48,7 +48,7 @@
 `&endpoint.connection-type=[todo]|[todo]&endpoint.payload-type=[todo]|[todo]`
 
 -----------
-##### *Search: Provider Practitioner HPI-I*
+**Search: Provider Practitioner HPI-I**
 
 `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]`
 
@@ -65,7 +65,7 @@
 `&endpoint.connection-type=[todo]|[todo]&endpoint.payload-type=[todo]|[todo]`
 
 -----------
-##### *Search: Provider Provider Number*
+**Search: Provider Provider Number**
 
 `GET [base]/PractitionerRole?identifier=[system]|[code]`
 

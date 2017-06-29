@@ -1,6 +1,6 @@
 
 -----------
-##### *Search: Healthcare Service Name*
+**Search: Healthcare Service Name**
 
 `GET [base]/HealthcareService?name=[string]`
 
@@ -15,7 +15,7 @@
 `&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
 
 -----------
-##### *Search: Healthcare Service Managing Organisation Name*
+**Search: Healthcare Service Managing Organisation Name**
 
 `GET [base]/HealthcareService?organization.name=[string]`
 
@@ -31,7 +31,7 @@
 
 
 -----------
-##### *Search: Healthcare Service Type*
+**Search: Healthcare Service Type**
 
 `GET [base]/HealthcareService?type=[system]|[code]`
 
@@ -46,7 +46,7 @@
 `&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
 
 -----------
-##### *Search: Healthcare Service Managing Organisation HPI-O*
+**Search: Healthcare Service Managing Organisation HPI-O**
 
 `GET [base]/HealthcareService?organization.identifier=[system]|[code]`
 

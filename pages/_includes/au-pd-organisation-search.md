@@ -1,6 +1,6 @@
 
 -----------
-##### *Search: Organisation Name*
+**Search: Organisation Name**
 
 `GET [base]/Organization?name=[string]`
 
@@ -13,7 +13,7 @@
 * Search based on Organization name
 
 -----------
-##### *Search: Organisation HPI-O*
+**Search: Organisation HPI-O**
 
 `GET [base]/Organization?identifier=[system]|[code]`
 

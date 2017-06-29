@@ -1,6 +1,6 @@
 
 -----------
-##### *Search: Practitioner HPI-I*
+**Search: Practitioner HPI-I**
 
 `GET [base]/Practitioner?identifier=[system]|[code]`
 
@@ -13,7 +13,7 @@
 * Search based on practitioner identifier  (e.g. HPI-I)
 
 -----------
-##### *Search: Practitioner Name*
+**Search: Practitioner Name**
 
 `GET [base]/Practitioner?family=[string]&given=[string]`
 
