@@ -10,9 +10,10 @@
 *Support:* Mandatory to support search by HealthcareService name.
 
 *Implementation Notes:* [(how to search by string)]
+
 * Search based on HealthcareService name
-* Can _include details of managing organisation and endpoints adding 
-`&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
+* Can _include details of managing organisation, endpoints and location by adding  
+`&_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
 
 -----------
 **Search: Healthcare Service Managing Organisation Name**
@@ -25,9 +26,10 @@
 *Support:* Mandatory to support search by Organization name.
 
 *Implementation Notes:* [(how to search by string)]
+
 * Search based on text name.
-* Can _include details of managing organisation and endpoints adding 
-`&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
+* Can _include details of managing organisation, endpoints and location by adding 
+`&_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
 
 
 -----------
@@ -41,9 +43,10 @@
 *Support:* Mandatory to support search by HealthcareService type.
 
 *Implementation Notes:* [(how to search by token)]
+
 * Search based on type.
-* Can _include details of managing organisation and endpoints adding 
-`&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
+* Can _include details of managing organisation, endpoints and location by adding 
+`&_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
 
 -----------
 **Search: Healthcare Service Managing Organisation HPI-O**
@@ -56,9 +59,10 @@
 *Support:* Mandatory to support search by HPI-O.
 
 *Implementation Notes:* [(how to search by token)]
+
 * Equivalent to ELS listInteractions for target.
-* Can _include details of managing organisation and endpoints adding 
-`&_include=HealthcareService:organization&_include=HealthcareService:endpoint`
+* Can _include details of managing organisation, endpoints and location by adding 
+`&_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
 * Can add required support for interface and/or payload capability 
 `&endpoint.connection-type=[todo]|[todo]&endpoint.payload-type=[todo]|[todo]`
 
