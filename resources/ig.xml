@@ -105,6 +105,24 @@
 				<reference value="ValueSet/valueset-au-endpoint-payload-type"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="CodeSystem/codesystem-nhsd-practitioner-role"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/valueset-mo-practitioner-role"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/valueset-nhsd-practitioner-role"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>

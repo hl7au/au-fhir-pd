@@ -11,7 +11,7 @@
 
 *Implementation Notes:*  [(how to search by string)]
 
-* Search based on text name.
+* Chained search (via Practitioner) based on text name.
 * Can _include details of managing organisation, endpoints and location by adding 
 `&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
 
@@ -21,7 +21,7 @@
 `GET [base]/PractitionerRole?specialty=[system]|[code]`
 
 *Example:* 
-`GET [base]/PractitionerRole?specialty=[todo]|[todo]`
+`GET [base]/PractitionerRole?specialty=[]|[]`
 
 *Support* Mandatory to support search by Specialty.
 
@@ -44,11 +44,10 @@
 
 *Implementation Notes:* [(how to search by token)]
 
+* Chained search (via Organisation) based on identifier token.
 * Equivalent to ELS listInteractions for target.
 * Can _include details of managing organisation, endpoints and location by adding 
 `&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
-* Can add required support for interface and/or payload capability 
-`&endpoint.connection-type=[todo]|[todo]&endpoint.payload-type=[todo]|[todo]`
 
 -----------
 **Search: Provider Practitioner HPI-I**
@@ -62,11 +61,10 @@
 
 *Implementation Notes:* [(how to search by token)]
 
+* Chained search (via Practitioner) based on identifier token.
 * Equivalent to ELS listInteractions for target individual provider.
 * Can _include details of managing organisation, endpoints and location by adding 
 `&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
-* Can add required support for interface and/or payload capability
-`&endpoint.connection-type=[todo]|[todo]&endpoint.payload-type=[todo]|[todo]`
 
 -----------
 **Search: Provider Number**
@@ -83,8 +81,6 @@
 * Equivalent to ELS listInteractions for target individual provider.
 * Can _include details of managing organisation, endpoints and location by adding 
 `&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
-* Can add required support for interface and/or payload capability
-`&endpoint.connection-type=[todo]|[todo]&endpoint.payload-type=[todo]|[todo]`
 
 -----------
 
