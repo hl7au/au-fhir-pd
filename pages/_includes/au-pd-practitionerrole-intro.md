@@ -8,6 +8,11 @@ number to be associated with the role.
 In the context of provider directories the practitioner role may include references to endpoints that describe 
 channels of communication to the provider in this role.
 
+#### Examples
+
+[Practitioner Role Directory Entry Example](PractitionerRole-example0.html)
+
+
 
 
 

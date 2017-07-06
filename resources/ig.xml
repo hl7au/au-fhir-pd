@@ -123,6 +123,42 @@
 				<reference value="ValueSet/valueset-nhsd-practitioner-role"/>
 			</sourceReference>
 		</resource>
+			<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Practitioner/example0"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="PractitionerRole/example0"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Organization/example0"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Location/example0"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Endpoint/example0"/>
+			</sourceReference>
+		</resource>
+		<resource>
+		<example value="true"/>
+			<sourceReference>
+				<reference value="HealthcareService/example0"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>
