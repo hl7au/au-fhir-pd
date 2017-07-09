@@ -24,8 +24,8 @@
 	<versionNeeded value="true"/>
 	<content value="complete"/>
 	<concept>
-		<code value="https://ns.hl7.org.au/ref/draft-HL7AU-REF-SIMPLIFIED-201706"/>
-		<display value="Draft HL7 V2.4 REF message for Secure Messaging proof of concept"/>
+		<code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706"/>
+		<display value="Simplified Profile for HL7 V2.4 REF message"/>
 		<definition value=""/>
 	</concept>
 	<concept>
