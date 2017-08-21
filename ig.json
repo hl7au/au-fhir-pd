@@ -8,6 +8,7 @@
        "location" : "http://build.fhir.org/ig/hl7au/au-fhir-base"
     }
   ], 
+  
   "spreadsheets": [],
   "special-urls": [ "http://ns.electronichealth.net.au/smd/intf" ],
   "extraTemplates": [ "mappings" ],
