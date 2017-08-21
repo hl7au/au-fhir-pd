@@ -103,6 +103,12 @@
 			<definition value="Details to display for the directory entry managing organisation, typically the name."/>
 			<min value="1"/>
 		</element>
+		<element id="Endpoint.contact">
+			<path value="Endpoint.contact"/>
+			<short value="Endpoint operator contact"/>
+			<definition value="Details to contact operator of the endpoint responsible for it's support and maintenance."/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Endpoint.payloadType">
 			<path value="Endpoint.payloadType"/>
 			<short value="Payload type "/>

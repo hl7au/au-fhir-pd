@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-healthcareservice" />
   <meta>
@@ -23,6 +23,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
   <derivation value="constraint" />
   <differential>
+    <element id="HealthcareService">
+      <path value="HealthcareService" />
+      <short value="Healthcare Service Directory Entry"/>
+    </element>
     <element id="HealthcareService.identifier:slice">
       <path value="HealthcareService.identifier" />
       <slicing>
