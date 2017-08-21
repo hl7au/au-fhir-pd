@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-08-21T22:42:11.012+10:00" />
+    <lastUpdated value="2017-08-22T00:08:13.04+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -27,14 +27,60 @@
     <element id="PractitionerRole.identifier:providernumber">
       <path value="PractitionerRole.identifier" />
       <sliceName value="providernumber" />
-      <short value="Australian provider number" />
+      <short value="Directory Provider Number" />
+      <definition value="Directory entry practitioner role provider number" />
       <mustSupport value="true" />
+    </element>
+    <element>
+      <path value="PractitionerRole.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PractitionerRole.identifier:providernumber.extension:providernumberassigningauthority">
+      <path value="PractitionerRole.identifier.extension" />
+      <sliceName value="providernumberassigningauthority" />
+      <short value="Optional HL7 V2 routing content" />
+      <definition value="Optional HL7 V2 routing content" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
+      </type>
     </element>
     <element id="PractitionerRole.identifier:nationalprovideratorganisation">
       <path value="PractitionerRole.identifier" />
       <sliceName value="nationalprovideratorganisation" />
-      <short value="Provider at Organisation Identifier" />
+      <short value="Directory Provider at Organisation Identifier" />
+      <definition value="Directory entry provider at organisation identifier" />
       <mustSupport value="true" />
+    </element>
+    <element>
+      <path value="PractitionerRole.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PractitionerRole.identifier:nationalprovideratorganisation.extension:nationalprovideratorganisationassigningauthority">
+      <path value="PractitionerRole.identifier.extension" />
+      <sliceName value="nationalprovideratorganisationassigningauthority" />
+      <short value="Optional HL7 V2 routing content" />
+      <definition value="Optional HL7 V2 routing content" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
+      </type>
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
