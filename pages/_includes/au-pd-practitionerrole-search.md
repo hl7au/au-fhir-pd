@@ -143,7 +143,7 @@ The [_include](http://hl7.org/fhir/search.html#include) argument allows the auto
 -----------
 **Search: Combination**
 
-* The following searches MUST be able to be perfomed together in a single request using logical AND for criteria. e.g specialty cardiologist in post code 4846
+* Searches MUST be able to be perfomed  in a single request using logical AND for criteria. e.g specialty cardiologist in post code 4846
 
 -----------
 
