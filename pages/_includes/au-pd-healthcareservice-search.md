@@ -1,5 +1,6 @@
 -----------
 **Read: HealthcareService**
+
 Read identified healthcare service resource content.
 
 `GET [base]/HealthcareService/[id]`
@@ -12,6 +13,7 @@ Read identified healthcare service resource content.
 
 -----------
 **Search: Name**
+
 Search for a healthcare service by name.
 
 `GET [base]/HealthcareService?name=[string]`
@@ -24,6 +26,7 @@ Search for a healthcare service by name.
 
 -----------
 **Search: Healthcare Service Managing Organisation Name**
+
 Chained search (via Organisation) based on text name.
 
 `GET [base]/HealthcareService?organization.name=[string]`
@@ -36,6 +39,7 @@ Chained search (via Organisation) based on text name.
 
 -----------
 **Search: Healthcare Service offered Specialties**
+
 Search for healthcare service based on specialties offered
 
 `GET [base]/HealthcareService?specialty=[system]|[code]`
@@ -48,6 +52,7 @@ Search for healthcare service based on specialties offered
 
 -----------
 **Search: Healthcare Service by Managing Organisation HPI-O**
+
 Chained search (via Organisation) based on identifier token.
 
 `GET [base]/HealthcareService?organization.identifier=[system]|[code]`
@@ -72,6 +77,7 @@ Search based on identifier token. Direct HPI-O allocation to the service; may be
 
 -----------
 **Search: Location Address Parts**
+
 Chained search (via Location) based on address parts for postcode, suburb, and state.
 
 `GET [base]/HealthcareService?location.address-postalcode=[postcode]`
@@ -95,6 +101,7 @@ Chained search (via Location) based on address parts for postcode, suburb, and s
 
 -----------
 **Search: Location Distance**
+
 Chained search (via Location) for a location within a nominated distance.
 
 `GET [base]/HealthcareService?location.near=[latitude]:[longitude]&location.near-distance=[prefix][value]|[units-system]|[units]`
@@ -113,6 +120,7 @@ Chained search (via Location) for a location within a nominated distance.
 
 -----------
 **Search: Include References**
+
 The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type.
 
 *Example:* `GET [base]/HealthcareService?_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`

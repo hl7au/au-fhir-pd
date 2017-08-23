@@ -1,5 +1,6 @@
 -----------
 **Read: Practitioner**
+
 Read identified practitioner resource content.
 
 `GET [base]/Practitioner/[id]`
@@ -12,6 +13,7 @@ Read identified practitioner resource content.
 
 -----------
 **Search: Practitioner Name**
+
 Search based on family, given and/or any name.
 
 `GET [base]/Practitioner?family=[string]`
@@ -34,6 +36,7 @@ Search based on family, given and/or any name.
 
 -----------
 **Search: HPI-I**
+
 Search based based on identifier token.
  
 `GET [base]/Practitioner?identifier=[system]|[value]`

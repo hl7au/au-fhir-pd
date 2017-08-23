@@ -1,6 +1,7 @@
 
 -----------
 **Read: PractitionerRole**
+
 Read identified practitioner role resource content.
 
 `GET [base]/PractitionerRole/[id]`
@@ -13,6 +14,7 @@ Read identified practitioner role resource content.
 
 -----------
 **Search: Provider Practitioner Name**
+
 Chained search (via Practitioner) based on family, given and/or any name.
 
 `GET [base]/PractitionerRole?practitioner.family=[string]`
@@ -35,6 +37,7 @@ Chained search (via Practitioner) based on family, given and/or any name.
 
 -----------
 **Search: Provider Specialty**
+
 Search based on specialty code.
 
 `GET [base]/PractitionerRole?specialty=[system]|[code]`
@@ -47,6 +50,7 @@ Search based on specialty code.
 
 -----------
 **Search: Provider Managing Organisation HPI-O**
+
 Chained search (via Organisation) based on identifier token.
 
 `GET [base]/PractitionerRole?organization.identifier=[system]|[value]`
@@ -59,6 +63,7 @@ Chained search (via Organisation) based on identifier token.
 
 -----------
 **Search: Provider Practitioner HPI-I**
+
 Chained search (via Practitioner) based on identifier token.
  
 `GET [base]/PractitionerRole?practitioner.identifier=[system]|[value]`
@@ -72,6 +77,7 @@ Chained search (via Practitioner) based on identifier token.
 
 -----------
 **Search: Provider Number**
+
 Search based on identifier.
 
 `GET [base]/PractitionerRole?identifier=[system]|[value]`
@@ -84,6 +90,7 @@ Search based on identifier.
 
 -----------
 **Search: Location Address Parts**
+
 Chained search (via Location) based on address parts for postcode, suburb, and state.
 
 `GET [base]/PractitionerRole?location.address-postalcode=[postcode]`
@@ -107,6 +114,7 @@ Chained search (via Location) based on address parts for postcode, suburb, and s
 
 -----------
 **Search: Location Distance**
+
 Chained search (via Location) for a location within a nominated distance.
 
 `GET [base]/PractitionerRole?location.near=[latitude]:[longitude]&location.near-distance=[prefix][value]|[units-system]|[units]`
@@ -125,6 +133,7 @@ Chained search (via Location) for a location within a nominated distance.
 
 -----------
 **Search: Include References**
+
 The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type.
 
 *Example:* `GET [base]/PractitionerRole?_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`

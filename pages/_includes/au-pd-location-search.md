@@ -1,6 +1,7 @@
 
 -----------
 **Read: Location**
+
 Read identified location resource content.
 
 `GET [base]/Location/[id]`
@@ -14,6 +15,7 @@ Read identified location resource content.
 -----------
 
 **Search: Location Address Parts**
+
 Search based on address parts for postcode, suburb, and state.
 
 `GET [base]/Location?address-postalcode=[postcode]`
@@ -37,6 +39,7 @@ Search based on address parts for postcode, suburb, and state.
 
 -----------
 **Search: Location Distance**
+
 Search based on address within a nominated distance.
 
 `GET [base]/Location?location.near=[latitude]:[longitude]&location.near-distance=[prefix][value]|[units-system]|[units]`

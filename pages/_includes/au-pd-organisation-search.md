@@ -1,6 +1,7 @@
 
 -----------
 **Read: Organisation**
+
 Read identified organisation resource content.
 
 `GET [base]/Organization/[id]`
@@ -13,6 +14,7 @@ Read identified organisation resource content.
 
 -----------
 **Search: HPI-O**
+
 Search based on identifier token.
 
 `GET [base]/Organization?identifier=[system]|[value]`
