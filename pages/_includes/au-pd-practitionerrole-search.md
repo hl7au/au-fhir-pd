@@ -91,7 +91,7 @@ Search based on identifier.
 -----------
 **Search: National Provider at Organisation Identifier**
 
-Search based on identifier. Note NPIO format is <HPI-I>@<HPI-O>.
+Search based on identifier. Note NPIO format is [HPI-I]@[HPI-O].
 
 `GET [base]/PractitionerRole?identifier=[system]|[value]`
 
