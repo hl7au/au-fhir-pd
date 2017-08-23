@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-healthcareservice" />
   <meta>
-    <lastUpdated value="2017-08-22T00:04:50.062+10:00" />
+    <lastUpdated value="2017-08-23T16:49:32.227+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -76,7 +76,6 @@
       <sliceName value="hpioassigningauthority" />
       <short value="Optional HL7 V2 routing content" />
       <definition value="Optional HL7 V2 routing content" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -139,6 +138,11 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-pd-organisation" />
       </type>
+    </element>
+    <element id="HealthcareService.specialty">
+      <path value="HealthcareService.specialty" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="HealthcareService.location">
       <path value="HealthcareService.location" />

@@ -1,122 +1,140 @@
 
 -----------
+**Read: PractitionerRole**
+Read identified practitioner role resource content.
+
+`GET [base]/PractitionerRole/[id]`
+
+*Example:* `GET [base]/PractitionerRole/1234`
+
+*Support:* MUST support read PractitionerRole
+
+*Implementation Notes:*  [[(how to read resource)]
+
+-----------
 **Search: Provider Practitioner Name**
+Chained search (via Practitioner) based on family, given and/or any name.
+
+`GET [base]/PractitionerRole?practitioner.family=[string]`
 
 `GET [base]/PractitionerRole?practitioner.family=[string]&practitioner.given=[string]`
 
+`GET [base]/PractitionerRole?practitioner.name=[string]`
+
 *Example:* 
+
+`GET [base]/PractitionerRole?practitioner.family=Smith`
+
 `GET [base]/PractitionerRole?practitioner.family=Smith&practitioner.given=John`
 
-*Support* Mandatory to support search by Practitioner family and or given name.
+`GET [base]/PractitionerRole?practitioner.name=Smith`
+
+*Support:* MUST support search by Practitioner family, given and name.
 
 *Implementation Notes:*  [(how to search by string)]
 
-* Chained search (via Practitioner) based on text name.
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
-
 -----------
 **Search: Provider Specialty**
+Search based on specialty code.
 
 `GET [base]/PractitionerRole?specialty=[system]|[code]`
 
-*Example:* 
-`GET [base]/PractitionerRole?specialty=[]|[]`
+*Example:* `GET [base]/PractitionerRole?specialty=http://snomed.info/sct|17561000`
 
-*Support* Mandatory to support search by Specialty.
+*Support:* MUST support search PractitionerRole by specialty.
 
 *Implementation Notes:* [(how to search by token)]
-
-* Search based on specialty.
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
-
 
 -----------
 **Search: Provider Managing Organisation HPI-O**
+Chained search (via Organisation) based on identifier token.
 
-`GET [base]/PractitionerRole?organization.identifier=[system]|[code]`
+`GET [base]/PractitionerRole?organization.identifier=[system]|[value]`
 
-*Example:* 
-`GET [base]/PractitionerRole?organization.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
+*Example:* `GET [base]/PractitionerRole?organization.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
 
-*Support* Mandatory to support search by HPI-O.
+*Support:* MUST support search by HPI-O.
 
 *Implementation Notes:* [(how to search by token)]
-
-* Chained search (via Organisation) based on identifier token.
-* Equivalent to ELS listInteractions for target.
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
 
 -----------
 **Search: Provider Practitioner HPI-I**
+Chained search (via Practitioner) based on identifier token.
+ 
+`GET [base]/PractitionerRole?practitioner.identifier=[system]|[value]`
 
-`GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]`
+*Example:* `GET [base]/PractitionerRole?practitioner.identifier=http://ns.electronichealth.net.au/id/hi/hpii/1.0|8003610833334085`
 
-*Example:* 
-`GET [base]/PractitionerRole?practitioner.identifier=http://ns.electronichealth.net.au/id/hi/hpii/1.0|8003610833334085`
-
-*Support* Mandatory to support search by HPI-I.
+*Support:* MUST support search PractitionerRole by HPI-I.
 
 *Implementation Notes:* [(how to search by token)]
 
-* Chained search (via Practitioner) based on identifier token.
-* Equivalent to ELS listInteractions for target individual provider.
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
 
 -----------
 **Search: Provider Number**
+Search based on identifier.
 
-`GET [base]/PractitionerRole?identifier=[system]|[code]`
+`GET [base]/PractitionerRole?identifier=[system]|[value]`
 
-*Example:* 
-`GET [base]/PractitionerRole?identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|2426621B`
+*Example:* `GET [base]/PractitionerRole?identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|2426621B`
 
-*Support* Mandatory to support search by Provider Number.
+*Support:* MUST support search PractitionerRole by Provider Number.
 
 *Implementation Notes:* [(how to search by token)]
 
-* Equivalent to ELS listInteractions for target individual provider.
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
-
 -----------
-
 **Search: Location Address Parts**
+Chained search (via Location) based on address parts for postcode, suburb, and state.
 
 `GET [base]/PractitionerRole?location.address-postalcode=[postcode]`
 
 `GET [base]/PractitionerRole?location.address-city=[suburb]`
 
+`GET [base]/PractitionerRole?location.address-state=[state]`
+
 *Example:* 
+
 `GET [base]/PractitionerRole?location.address-postalcode=3101`
 
 `GET [base]/PractitionerRole?location.address-city=Bundaberg`
 
-*Support* Mandatory to support search by Provider Number.
+`GET [base]/PractitionerRole?location.address-state=VIC`
 
-*Implementation Notes:* [(how to search by token)]
+*Support:* MUST support search PractitionerRole by location address parts address-postalcode, address-city, address-state.
 
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
+*Implementation Notes:* 
+[(how to search by token)]
 
 -----------
-
 **Search: Location Distance**
+Chained search (via Location) for a location within a nominated distance.
 
-`GET [base]/PractitionerRole?location.near=[lat]|[long]&location.near-distance=NNNN`
+`GET [base]/PractitionerRole?location.near=[latitude]:[longitude]&location.near-distance=[prefix][value]|[units-system]|[units]`
 
-*Example:* 
-`GET [base]/PractitionerRole?`
+*Example:* `GET [base]/PractitionerRole?location.near==-83.694810:42.256500&location.near-distance=le10.0|http://unitsofmeasure.org|km`
 
-*Support* Mandatory to support search by Provider Number.
+*Support:* SHOULD support search PractitionerRole by location within a distance.
 
-*Implementation Notes:* [(how to search by token)]
+*Implementation Notes:* 
+[(how to search by token)] and [(how to search by quantity)]
 
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
+[prefix] fixed 'le' is less than or equal to distance
+[value] is a decimal quantity number
+[units-system] fixed 'http://unitsofmeasure.org' identifies standard distance units are used
+[units] distance units must support 'km' or 'm'
+
+-----------
+**Search: Include References**
+The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type.
+
+*Example:* `GET [base]/PractitionerRole?_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
+
+*Support:* MUST support _include PractitionerRole references location, organization, endpoint.
+
+-----------
+**Search: Combination**
+
+* The following searches MUST be able to be perfomed together in a single request using logical AND for criteria. e.g specialty cardiologist in post code 4846
 
 -----------
 
@@ -124,3 +142,5 @@
  [(how to search by token)]: http://hl7.org/fhir/search.html#token
  [(how to search by date)]: http://hl7.org/fhir/search.html#date
  [(how to search by string)]: http://hl7.org/fhir/search.html#string
+ [(how to search by quantity)]: http://hl7.org/fhir/search.html#quantity
+ [(how to read resource)]: http://hl7.org/fhir/http.html#read

@@ -1,69 +1,128 @@
+-----------
+**Read: HealthcareService**
+Read identified healthcare service resource content.
+
+`GET [base]/HealthcareService/[id]`
+
+*Example:* `GET [base]/HealthcareService/1234`
+
+*Support:* MUST support read HealthcareService
+
+*Implementation Notes:*  [[(how to read resource)]
 
 -----------
-**Search: Healthcare Service Name**
+**Search: Name**
+Search for a healthcare service by name.
 
 `GET [base]/HealthcareService?name=[string]`
 
-*Example:* 
-`GET [base]/HealthcareService?name=southern%20clinic`
+*Example:* `GET [base]/HealthcareService?name=southern%20clinic`
 
-*Support:* Mandatory to support search by HealthcareService name.
+*Support:* MUST support search by HealthcareService name.
 
 *Implementation Notes:* [(how to search by string)]
-
-* Search based on HealthcareService name
-* Can _include details of managing organisation, endpoints and location by adding  
-`&_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
 
 -----------
 **Search: Healthcare Service Managing Organisation Name**
+Chained search (via Organisation) based on text name.
 
 `GET [base]/HealthcareService?organization.name=[string]`
 
-*Example:* 
-`GET [base]/HealthcareService?organization.name=clinigroup`
+*Example:* `GET [base]/HealthcareService?organization.name=clinigroup`
 
-*Support:* Mandatory to support search by Organization name.
+*Support:* MUST support search by Organization name.
 
 *Implementation Notes:* [(how to search by string)]
 
-* Chained search (via Organisation) based on text name.
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
-
-
 -----------
-**Search: Healthcare Service Type**
+**Search: Healthcare Service offered Specialties**
+Search for healthcare service based on specialties offered
 
-`GET [base]/HealthcareService?type=[system]|[code]`
+`GET [base]/HealthcareService?specialty=[system]|[code]`
 
-*Example:* 
-`GET [base]/HealthcareService?type=[]|[]`
+*Example:* `GET [base]/HealthcareService?specialty=[]|[]`
 
-*Support:* Mandatory to support search by HealthcareService type.
+*Support:* MUST support search by HealthcareService specialty offered.
 
 *Implementation Notes:* [(how to search by token)]
 
-* Search based on type.
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
-
 -----------
-**Search: Healthcare Service Managing Organisation HPI-O**
+**Search: Healthcare Service by Managing Organisation HPI-O**
+Chained search (via Organisation) based on identifier token.
 
 `GET [base]/HealthcareService?organization.identifier=[system]|[code]`
 
-*Example:* 
-`GET [base]/HealthcareService?organization.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
+*Example:* `GET [base]/HealthcareService?organization.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
 
-*Support:* Mandatory to support search by HPI-O.
+*Support:* MUST support search by HPI-O.
 
 *Implementation Notes:* [(how to search by token)]
 
-* Chained search (via Organisation) based on identifier token.
-* Equivalent to ELS listInteractions for target.
-* Can _include details of managing organisation, endpoints and location by adding 
-`&_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
+-----------
+**Search: HPI-O**
+Search based on identifier token. Direct HPI-O allocation to the service; may be different than the managing organisation but within the HPI-O hierarchy.
+
+`GET [base]/Organization?identifier=[system]|[value]`
+
+*Example:* `GET [base]/Organization?identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
+
+*Support:* SHOULD support search by HPI-O.
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
+**Search: Location Address Parts**
+Chained search (via Location) based on address parts for postcode, suburb, and state.
+
+`GET [base]/HealthcareService?location.address-postalcode=[postcode]`
+
+`GET [base]/HealthcareService?location.address-city=[suburb]`
+
+`GET [base]/HealthcareService?location.address-state=[state]`
+
+*Example:* 
+
+`GET [base]/HealthcareService?location.address-postalcode=3101`
+
+`GET [base]/HealthcareService?location.address-city=Bundaberg`
+
+`GET [base]/HealthcareService?location.address-state=VIC`
+
+*Support:* MUST support search PractitionerRole by location address parts address-postalcode, address-city, address-state.
+
+*Implementation Notes:* 
+[(how to search by token)]
+
+-----------
+**Search: Location Distance**
+Chained search (via Location) for a location within a nominated distance.
+
+`GET [base]/HealthcareService?location.near=[latitude]:[longitude]&location.near-distance=[prefix][value]|[units-system]|[units]`
+
+*Example:* `GET [base]/HealthcareService?location.near==-83.694810:42.256500&location.near-distance=le10.0|http://unitsofmeasure.org|km`
+
+*Support:* SHOULD support search PractitionerRole by location within a distance.
+
+*Implementation Notes:* 
+[(how to search by token)] and [(how to search by quantity)]
+
+[prefix] fixed 'le' is less than or equal to distance
+[value] is a decimal quantity number
+[units-system] fixed 'http://unitsofmeasure.org' identifies standard distance units are used
+[units] distance units must support 'km' or 'm'
+
+-----------
+**Search: Include References**
+The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type.
+
+*Example:* `GET [base]/HealthcareService?_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
+
+*Support:* MUST support _include HealthcareService references location, organization, endpoint.
+
+-----------
+**Search: Combination**
+
+* The following searches MUST be able to be perfomed together in a single request using logical AND for criteria. e.g specialty cardiologist in post code 4846
 
 -----------
 
@@ -71,3 +130,6 @@
  [(how to search by token)]: http://hl7.org/fhir/search.html#token
  [(how to search by date)]: http://hl7.org/fhir/search.html#date
  [(how to search by string)]: http://hl7.org/fhir/search.html#string
+ [(how to search by quantity)]: http://hl7.org/fhir/search.html#quantity
+ [(how to read resource)]: http://hl7.org/fhir/http.html#read
+
