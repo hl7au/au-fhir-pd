@@ -84,6 +84,42 @@
 
 -----------
 
+**Search: Location Address Parts**
+
+`GET [base]/PractitionerRole?location.address-postalcode=[postcode]`
+
+`GET [base]/PractitionerRole?location.address-city=[suburb]`
+
+*Example:* 
+`GET [base]/PractitionerRole?location.address-postalcode=3101`
+
+`GET [base]/PractitionerRole?location.address-city=Bundaberg`
+
+*Support* Mandatory to support search by Provider Number.
+
+*Implementation Notes:* [(how to search by token)]
+
+* Can _include details of managing organisation, endpoints and location by adding 
+`&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
+
+-----------
+
+**Search: Location Distance**
+
+`GET [base]/PractitionerRole?location.near=[lat]|[long]&location.near-distance=NNNN`
+
+*Example:* 
+`GET [base]/PractitionerRole?`
+
+*Support* Mandatory to support search by Provider Number.
+
+*Implementation Notes:* [(how to search by token)]
+
+* Can _include details of managing organisation, endpoints and location by adding 
+`&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
+
+-----------
+
  [(how to search by reference)]: http://hl7.org/fhir/search.html#reference
  [(how to search by token)]: http://hl7.org/fhir/search.html#token
  [(how to search by date)]: http://hl7.org/fhir/search.html#date
