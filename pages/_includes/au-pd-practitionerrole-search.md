@@ -89,6 +89,19 @@ Search based on identifier.
 *Implementation Notes:* [(how to search by token)]
 
 -----------
+**Search: National Provider at Organisation Identifier**
+
+Search based on identifier. Note NPIO format is <HPI-I>@<HPI-O>.
+
+`GET [base]/PractitionerRole?identifier=[system]|[value]`
+
+*Example:* `GET [base]/PractitionerRole?identifier=http://ns.electronichealth.net.au/id/npio|8003610833334085@8003627500000328`
+
+*Support:* MUST support search PractitionerRole by National Provider at Organisation Identifier.
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
 **Search: Location Address Parts**
 
 Chained search (via Location) based on address parts for postcode, suburb, and state.
