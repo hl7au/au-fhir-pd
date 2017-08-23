@@ -29,7 +29,7 @@
 		</element>
 		<element id="Practitioner.identifier.hpii">
 			<path value="Practitioner.identifier"/>
-			<sliceName value="HPI-I"/>
+			<sliceName value="hpii"/>
 			<short value="HPI-I"/>
 			<definition value="National identifier for the individual provider"/>
 			<mustSupport value="true"/>
@@ -50,7 +50,6 @@
 				<rules value="openAtEnd"/>
 			</slicing>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element>
 			<path value="Practitioner.name"/>
@@ -58,6 +57,7 @@
 			<short value="Usual practitioner name"/>
 			<definition value="Name used by practitioner that may be searched for in this directory entry"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element>
 			<path value="Practitioner.name.use"/>

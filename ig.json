@@ -8,6 +8,7 @@
        "location" : "http://build.fhir.org/ig/hl7au/au-fhir-base"
     }
   ], 
+  
   "spreadsheets": [],
   "special-urls": [ "http://ns.electronichealth.net.au/smd/intf" ],
   "extraTemplates": [ "mappings" ],
@@ -85,6 +86,9 @@
 	},
 	"StructureDefinition/au-receivingfacility": {
 	  "base": "StructureDefinition-au-receivingfacility.html"
+	},
+	"StructureDefinition/au-assigningauthority": {
+	  "base": "StructureDefinition-au-assigningauthority.html"
 	},
 	"StructureDefinition/au-receivingapplication": {
 	  "base": "StructureDefinition-au-receivingapplication.html"

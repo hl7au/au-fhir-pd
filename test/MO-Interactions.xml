@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<InteractionType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ns.electronichealth.net.au/els/xsd/DataTypes/2010">
+ <target>http://ns.electronichealth.net.au/id/hi/hpio/1.0/8003626566690030</target>
+ <serviceCategory>http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706</serviceCategory>
+ <serviceInterface>http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010</serviceInterface>
+ <serviceEndpoint>https://pretend-endpoint.smd.test.medical-objects.com.au:443/smd/tls</serviceEndpoint>
+ <serviceProvider>http://ns.electronichealth.net.au/id/hi/csp/1.0/8003631566685949</serviceProvider>
+ <certRef>
+  <useQualifier>http://ns.electronichealth.net.au/smd/qcr/use/payload/keyenc/2010</useQualifier>
+  <qualifiedCertRef xmlns="http://ns.electronichealth.net.au/qcr/xsd/QualifiedCertRef/2010">
+   <type>http://ns.electronichealth.net.au/qcr/type/pem/2010</type>
+   <value>-----BEGIN CERTIFICATE-----&#13;
+MIIFhDCCBGygAwIBAgIDBiShMA0GCSqGSIb3DQEBBQUAMH8xCzAJBgNVBAYTAkFV&#13;
+MQwwCgYDVQQKEwNHT1YxGzAZBgNVBAsTEk1lZGljYXJlIEF1c3RyYWxpYTFFMEMG&#13;
+A1UEAxM8VGVzdCBNZWRpY2FyZSBBdXN0cmFsaWEgT3JnYW5pc2F0aW9uIENlcnRp&#13;
+ZmljYXRpb24gQXV0aG9yaXR5MB4XDTE2MDEyMjAxNTIyMVoXDTE4MDEyMjAxNTIy&#13;
+MVowgdkxEjAQBgoJkiaJk/IsZAEZFgJhdTETMBEGCgmSJomT8ixkARkWA25ldDEg&#13;
+MB4GCgmSJomT8ixkARkWEGVsZWN0cm9uaWNoZWFsdGgxEjAQBgoJkiaJk/IsZAEZ&#13;
+FgJpZDEgMB4GCgmSJomT8ixkARkWEDgwMDM2MjY1NjY2OTAwMzAxGDAWBgNVBAoT&#13;
+D0RIU0lURVNUT1JHWkk0NzE8MDoGA1UEAxMzZ2VuZXJhbC44MDAzNjI2NTY2Njkw&#13;
+MDMwLmlkLmVsZWN0cm9uaWNoZWFsdGgubmV0LmF1MIIBIjANBgkqhkiG9w0BAQEF&#13;
+AAOCAQ8AMIIBCgKCAQEArkDYNWs9dJ7MMiSWs0TcM4bRRat+rKszO9sQXnxyV+VA&#13;
+wzG7lD6fnsRthQ1ecZYf8wYVGFo938mr6iq8/ckNs+iFIq+WXDxSvgqQOU3mffQz&#13;
+viHFMAvSrKkaihmeFJxL9lt/h4xs6m3K8r03QIJFOXCTI1Cch52Bc76CH7JlDDjq&#13;
+jRgUqY6+TYriZHbz/ANjt/Ctt+YNeVsrmys9/Kp/7R7i9bul5xBDsQEL+G5UghAM&#13;
+kWJtRQkUicfdNSsArqS+LsRzn5InpMf12X4udS+j1Bx2baKjCEAFPCfR6i/QHotp&#13;
+ABA31qoXpTaipYRD78a40xANOxZ2MwSJE6JA0bKnIwIDAQABo4IBrDCCAagwDAYD&#13;
+VR0TAQH/BAIwADCBogYDVR0gBIGaMIGXMIGUBgoqJNL+gHcBCgEBMIGFMFUGCCsG&#13;
+AQUFBwICMEkaR0NlcnRpZmljYXRlcyBpc3N1ZWQgdW5kZXIgdGhpcyBDUCBhcmUg&#13;
+Zm9yIGRldmVsb3BtZW50IGFuZCB0ZXN0aW5nIG9ubHkuMCwGCCsGAQUFBwIBFiBo&#13;
+dHRwOi8vd3d3Lmh1bWFuc2VydmljZXMuZ292LmF1LzAZBgkqJKOQlRcBzhkEDBYK&#13;
+MTI0NjkyNTkzNTBNBgNVHREERjBEhkJodHRwOi8vbnMuZWxlY3Ryb25pY2hlYWx0&#13;
+aC5uZXQuYXUvaWQvaGkvaHBpLW8vMS4wLzgwMDM2MjY1NjY2OTAwMzAwDgYDVR0P&#13;
+AQH/BAQDAgSwMBMGA1UdIwQMMAqACECvQwoiM+vJMFEGA1UdHwRKMEgwRqBEoEKG&#13;
+QGh0dHA6Ly9tYXRlc3QuY2VydGlmaWNhdGVzLWF1c3RyYWxpYS5jb20uYXUvVGVz&#13;
+dE1BT0NBL2xhdGVzdC5jcmwwEQYDVR0OBAoECE2eNiB4O1+cMA0GCSqGSIb3DQEB&#13;
+BQUAA4IBAQCZwGmzUgBhSiHc+S+50FbE+NKHIjKKfRAw+6LCcSZbw5jr95EimKWn&#13;
+acRgVKnhvehOy12MFhL+QtDI1jDxDpW+cc7fM8iQt1qlVoy4Ql7pRi5gwNIeOoYW&#13;
+u9I9Ul7CR3SlduZWXFG35JJspmw6iPtGyM0o5JJvYMIjVClR7S3/5/uJIvZIz6m1&#13;
+0LYSyrDDVZfUvP2Ee1lQsJXQ5c8SV/ELsLq5hn1ALOadPrW3jFKU6fgImt7Vs8f5&#13;
+jHVZKOJao/CimaQ7RSVK5KpF+Fg8hsa9sSMGla99XROstsfiqxxoGygXxeutHtSw&#13;
+WOwmYymx2WR+hA+oX0nAAKwNOfJjjtjL&#13;
+-----END CERTIFICATE-----&#13;
+</value>
+  </qualifiedCertRef>
+ </certRef>
+</InteractionType>

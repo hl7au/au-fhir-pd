@@ -36,11 +36,12 @@ implementation. This implementation guide will be used as the basis for Australi
 ## Collaboration
 This guide is the product of collaborative work undertaken with participants from:
 
-* Australian Digital Health Agency
 * Secure Messaging Technical Working Group
-* Australian FHIR Implementers' Community
 * HL7 Australia Patient Administration Working Group
+* Australian Digital Health Agency
+* Australian FHIR Implementers' Community
 * HL7 Australia Members 
+
 
 
 

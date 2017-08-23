@@ -1,0 +1,42 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+	<id value="0"/>
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://hl7.org/fhir/v2/0203"/>
+				<code value="PRN"/>
+				<display value="Provider Number"/>
+			</coding>
+			<text value="Medicare Provider Number"/>
+		</type>
+		<system value="http://ns.electronichealth.net.au/id/provider-number"/>
+		<value value="2426622C"/>
+	</identifier>
+	<active value="true"/>
+	<practitioner>
+		<reference value="Practitioner/1"/>
+	</practitioner>
+	<organization>
+		<reference value="Organization/1"/>
+	</organization>
+	<code>
+		<coding>
+			<system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+			<code value="253111"/>
+			<display value="General Practitioner"/>
+		</coding>
+	</code>
+	<location>
+		<reference value="Location/1"/>
+	</location>
+	<telecom>
+		<system value="phone"/>
+		<value value="0399512222"/>
+		<use value="work"/>
+	</telecom>
+	<telecom>
+		<system value="email"/>
+		<value value="brian.lamb@mainstclinic.com.au"/>
+		<use value="work"/>
+	</telecom>
+</PractitionerRole>

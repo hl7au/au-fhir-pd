@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Endpoint xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/endpoint.xsd">
+<Endpoint xmlns="http://hl7.org/fhir">
 	<id value="example0"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2017-08-18T05:47:30.879+00:00"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<b>Medical Objects Test Secure Messaging Endpoint</b>
+			<hr/>
+			<span style="color: gray;">Work - Email:</span> jared@example.org
+		</div>
+	</text>
 	<extension url="http://hl7.org.au/fhir/StructureDefinition/encrypting-qualified-certificate-reference">
 		<valueString value="-----BEGIN CERTIFICATE-----MIICVjCCAb8CAg37MA0GCSqGSIb3DQEBBQUAMIGbMQswCQYDVQQGEwJKUDEOMAwGA1UECBMFVG9reW8xEDAOBgNVBAcTB0NodW8ta3UxETAPBgNVBAoTCEZyYW5rNEREMRgwFgYDVQQLEw9XZWJDZXJ0IFN1cHBvcnQxGDAWBgNVBAMTD0ZyYW5rNEREIFdlYiBDQTEjMCEGCSqGSIb3DQEJARYUc3VwcG9ydEBmcmFuazRkZC5jb20wHhcNMTIwODIyMDUyNzIzWhcNMTcwODIxMDUyNzIzWjBKMQswCQYDVQQGEwJKUDEOMAwGA1UECAwFVG9reW8xETAPBgNVBAoMCEZyYW5rNEREMRgwFgYDVQQDDA93d3cuZXhhbXBsZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMYBBrx5PlP0WNI/ZdzD+6Pktmurn+F2kQYbtc7XQh8/LTBvCo+P6iZoLEmUA9e7EXLRxgU1CVqeAi7QcAn9MwBlc8ksFJHB0rtf9pmf8Oza9E0Bynlq/4/Kb1x+d+AyhL7oK9tQwB24uHOueHi1C/iVv8CSWKiYe6hzN1txYe8rAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAASPdjigJkXCqKWpnZ/Oc75EUcMi6HztaW8abUMlYXPIgkV2F7YanHOB7K4f7OOLjiz8DTPFfjC9UeuErhaA/zzWi8ewMTFZW/WshOrm3fNvcMrMLKtH534JKvcdMg6qIdjTFINIrevnAhf0cwULaebn+lMs8Pdl7y37+sfluVok=-----END CERTIFICATE-----"/>
 	</extension>
 	<extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility">
-		<extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility/namespace-id">
-			<valueString value="Oridashi MD"/>
+		<extension url="namespace-id">
+			<valueString value="Buderim Medical Center"/>
 		</extension>
-		<extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility/universal-id">
-			<valueString value="9097848A-DF94-4D55-901E-976B3AF2C7EF"/>
+		<extension url="universal-id">
+			<valueString value="877F9695-1298-4E6A-B432-0FDD46AD80B8"/>
 		</extension>
-		<extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility/universal-id-type">
+		<extension url="universal-id-type">
 			<valueString value="GUID"/>
 		</extension>
 	</extension>
 	<extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication">
-		<extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication/namespace-id">
-			<valueString value="AUSHICPR.MO307100044"/>
+		<extension url="namespace-id">
+			<valueString value="Equator"/>
 		</extension>
-		<extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication/universal-id">
-			<valueString value="MO307100044.ORIDASHI.MD"/>
+		<extension url="universal-id">
+			<valueString value="Equator:3.1.4"/>
 		</extension>
-		<extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication/universal-id-type">
+		<extension url="universal-id-type">
 			<valueString value="L"/>
 		</extension>
 	</extension>
@@ -30,18 +42,30 @@
 	<connectionType>
 		<system value="http://ns.electronichealth.net.au/smd/intf"/>
 		<code value="http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010"/>
-		<display value="Sealed Message Delivery"/>
 	</connectionType>
+	<name value="Medical Objects Test Secure Messaging Endpoint"/>
 	<managingOrganization>
 		<display value="Medical Objects"/>
 	</managingOrganization>
+	<contact>
+		<system value="email"/>
+		<value value="jared@example.org"/>
+		<use value="work"/>
+	</contact>
+	<period>
+		<start value="2017-08-18"/>
+	</period>
 	<payloadType>
 		<coding>
-			<system value=" http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type"/>
-			<code value="https://ns.hl7.org.au/ref/draft-HL7AU-REF-SIMPLIFIED-201706"/>
-			<display value="Draft HL7 V2.4 REF message for Secure Messaging proof of concept"/>
+			<system value="http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type"/>
+			<code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706"/>
+		</coding>
+		<coding>
+			<system value="http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type"/>
+			<code value="http://ns.electronichealth.net.au/ds/sc/deliver/hl7Mdm/2012"/>
 		</coding>
 	</payloadType>
-	<address value="https://medical-objects.com.au/endpoint"/>
+	<payloadMimeType value="application/hl7-v2"/>
+	<address value="https://smd-ep.test.medical-objects.com.au/smd/2010"/>
 </Endpoint>
 
