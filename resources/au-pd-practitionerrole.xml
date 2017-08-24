@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-08-24T10:16:28.446+10:00" />
+    <lastUpdated value="2017-08-24T11:30:23.214+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -101,9 +101,8 @@
     <element id="PractitionerRole.identifier:pdvendor.extension:pdvendorassigningauthority">
       <path value="PractitionerRole.identifier.extension" />
       <sliceName value="pdvendorassigningauthority" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <min value="0" />
+      <short value="Optional HL7 V2 routing content" />
+      <definition value="Optional HL7 V2 routing content" />
       <max value="1" />
       <type>
         <code value="Extension" />

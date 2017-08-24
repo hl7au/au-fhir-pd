@@ -81,7 +81,7 @@
 				<reference value="StructureDefinition/au-assigningauthority"/>
 			</sourceReference>
 		</resource>
-			<resource>
+		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/encrypting-qualified-certificate-reference"/>
