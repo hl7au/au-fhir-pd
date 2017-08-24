@@ -145,7 +145,7 @@ Chained search (via Location) for a location within a nominated distance.
 [units] distance units must support 'km' or 'm'
 
 -----------
-**Search: Connection Type (Service Interface)*
+**Search: Connection Type (Service Interface)**
 
 Chaned search (via Endpoint) based on token for a protocol to be used to connnect to the endpoint.
  
@@ -153,7 +153,7 @@ Chaned search (via Endpoint) based on token for a protocol to be used to connnec
 
 *Example:* `GET [base]/PractitionerRole?endpoint.connection-type=http://hl7.org.au.fhir/ValueSet/au-serviceinterfaces|http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010`
 
-*Support:* SHOULD support search by PractitionerRole by endpoint connection type.
+*Support:* MUST support search by PractitionerRole by endpoint connection type.
 
 *Implementation Notes:* [(how to search by token)]
 

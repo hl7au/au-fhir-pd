@@ -12,7 +12,7 @@ Read identified endpoint resource content.
 *Implementation Notes:*  [[(how to read resource)]
 
 -----------
-**Search: Connection Type (Service Interface)*
+**Search: Connection Type (Service Interface)**
 
 Search based on token for a protocol to be used to connnect to the endpoint.
  

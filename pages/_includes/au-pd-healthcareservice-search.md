@@ -119,6 +119,32 @@ Chained search (via Location) for a location within a nominated distance.
 [units] distance units must support 'km' or 'm'
 
 -----------
+**Search: Connection Type (Service Interface)**
+
+Chaned search (via Endpoint) based on token for a protocol to be used to connnect to the endpoint.
+ 
+`GET [base]/HealthcareService?endpoint.connection-type=[system]|[value]`
+
+*Example:* `GET [base]/HealthcareService?endpoint.connection-type=http://hl7.org.au.fhir/ValueSet/au-serviceinterfaces|http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010`
+
+*Support:* MUST support search by HealthcareService by endpoint connection type.
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
+**Search: Payload Type (Service Category)**
+
+Chaned search (via Endpoint) based on token for the type of content supported by the endpoint.
+ 
+`GET [base]/HealthcareService?endpint.payload-type=[system]|[value]`
+
+*Example:* `GET [base]/HealthcareService?endpoint.payload-type=http://hl7.org.au.fhir/ValueSet/valueset-au-endpoint-payload-type|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
+
+*Support:* MUST support search HealthcareService by endpoint payload type.
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
 **Search: Include References**
 
 The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type.
