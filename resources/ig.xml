@@ -90,13 +90,13 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="CodeSystem/codesystem-au-serviceinterfaces"/>
+				<reference value="CodeSystem/codesystem-au-sm-serviceinterface"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/valueset-au-serviceinterfaces"/>
+				<reference value="ValueSet/valueset-au-serviceinterface"/>
 			</sourceReference>
 		</resource>
 		<resource>

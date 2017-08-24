@@ -37,7 +37,7 @@ Search based on family, given and/or any name.
 -----------
 **Search: HPI-I**
 
-Search based based on identifier token.
+Search based on identifier token.
  
 `GET [base]/Practitioner?identifier=[system]|[value]`
 
