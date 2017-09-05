@@ -1,23 +1,23 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="codesystem-nhsd-practitioner-role"/>
+	<id value="codesystem-nhsd-core-services"/>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">
-			<h2>NHSD Practitioner Role</h2>
-			<p>Practitioner roles.</p>
+			<h2>NHSD Core Services Terminology</h2>
+			<p></p>
 		</div>
 	</text>
-	<url value="http://hl7.org.au/fhir/CodeSystem/codesystem-nhsd-practitioner-role"/>
+	<url value="http://hl7.org.au/fhir/CodeSystem/codesystem-nhsd-core-services"/>
 	<version value="1"/>
-	<name value="(Informative) Practitioner Role NHSD"/>
+	<name value="NHSD Core Services Terminology"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2017-07-04"/>
+	<date value="2017-09-05"/>
 	<publisher value="HL7 Australia"/>
 	<contact>
 		<name value="hl7.org.au"/>
 	</contact>
-	<description value="NHSD Practitioner Role"/>
+	<description value="NHSD Core Services Terminology"/>
 	<caseSensitive value="true"/>
 	<valueSet value="http://hl7.org.au.fhir/ValueSet/valueset-nhsd-practitioner-role"/>
 	<compositional value="false"/>
@@ -42,7 +42,7 @@
 			<display value="Nursing Clinical Director"/>
 			<definition value="Nursing Clinical Director"/>
 			<concept>
-				<code value="1342-12.4"/>
+				<code value="1342-12-4"/>
 				<display value="Director of Nursing"/>
 				<definition value="Director of Nursing"/>
 			</concept>
@@ -93,11 +93,11 @@
 			</concept>
 		</concept>
 		<concept>
-			<code value="2511.12"/>
+			<code value="2511-12"/>
 			<display value="Nutritionist"/>
 			<definition value="Nutritionist"/>
 			<concept>
-				<code value="2511.12.0"/>
+				<code value="2511-12-0"/>
 				<display value="Nutritionist"/>
 				<definition value="Nutritionist"/>
 			</concept>
@@ -112,7 +112,7 @@
 			<display value="Medical Diagnostic Radiographer"/>
 			<definition value="Medical Diagnostic Radiographer"/>
 			<concept>
-				<code value="2512-11.0"/>
+				<code value="2512-11-0"/>
 				<display value="Medical Diagnostic Radiographer"/>
 				<definition value="Medical Diagnostic Radiographer"/>
 			</concept>
@@ -287,7 +287,7 @@
 				<definition value="Chinese Herbalist"/>
 			</concept>
 			<concept>
-				<code value="2522-14.2"/>
+				<code value="2522-14-2"/>
 				<display value="Chinese Medicine Practitioner"/>
 				<definition value="Chinese Medicine Practitioner"/>
 			</concept>
@@ -317,17 +317,17 @@
 				<definition value="Music Therapist"/>
 			</concept>
 			<concept>
-				<code value="2522-99.5"/>
+				<code value="2522-99-5"/>
 				<display value="Herbalist (Other than Chinese)"/>
 				<definition value="Herbalist (Other than Chinese)"/>
 			</concept>
 		</concept>
 		<concept>
-			<code value="2522.16"/>
+			<code value="2522-16"/>
 			<display value="Myotherapist"/>
 			<definition value="Myotherapist"/>
 			<concept>
-				<code value="2522.16.0"/>
+				<code value="2522-16-0"/>
 				<display value="Myotherapist"/>
 				<definition value="Myotherapist"/>
 			</concept>
@@ -377,7 +377,7 @@
 				<definition value="Prosthodontist"/>
 			</concept>
 			<concept>
-				<code value="2523-11.0"/>
+				<code value="2523-11-0"/>
 				<display value="Dental Specialist"/>
 				<definition value="Dental Specialist"/>
 			</concept>
@@ -387,7 +387,7 @@
 			<display value="Dentist/ Dental Practitioner/ Dental Surgeon"/>
 			<definition value="Dentist/ Dental Practitioner/ Dental Surgeon"/>
 			<concept>
-				<code value="2523-12.6"/>
+				<code value="2523-12-6"/>
 				<display value="Dentist / Dental Practitioner"/>
 				<definition value="Dentist / Dental Practitioner"/>
 			</concept>
@@ -417,7 +417,7 @@
 			<display value="Physiotherapist"/>
 			<definition value="Physiotherapist"/>
 			<concept>
-				<code value="2525-11.0"/>
+				<code value="2525-11-0"/>
 				<display value="Physiotherapist"/>
 				<definition value="Physiotherapist"/>
 			</concept>
@@ -432,7 +432,7 @@
 			<display value="Podiatrist"/>
 			<definition value="Podiatrist"/>
 			<concept>
-				<code value="2526-11.0"/>
+				<code value="2526-11-0"/>
 				<display value="Podiatrist"/>
 				<definition value="Podiatrist"/>
 			</concept>
@@ -472,7 +472,7 @@
 			<display value="General Medical Practitioner"/>
 			<definition value="General Medical Practitioner"/>
 			<concept>
-				<code value="2531-11.0"/>
+				<code value="2531-11-0"/>
 				<display value="General Medical Practitioner"/>
 				<definition value="General Medical Practitioner"/>
 			</concept>
@@ -497,7 +497,7 @@
 			<display value="Anaesthetist"/>
 			<definition value="Anaesthetist"/>
 			<concept>
-				<code value="2532-11.0"/>
+				<code value="2532-11-0"/>
 				<display value="Anaesthetist"/>
 				<definition value="Anaesthetist"/>
 			</concept>
@@ -552,7 +552,7 @@
 			<display value="Endocrinologist"/>
 			<definition value="Endocrinologist"/>
 			<concept>
-				<code value="2533-15.0"/>
+				<code value="2533-15-0"/>
 				<display value="Endocrinologist"/>
 				<definition value="Endocrinologist"/>
 			</concept>
@@ -607,7 +607,7 @@
 				<definition value="General Paediatrics Specialist"/>
 			</concept>
 			<concept>
-				<code value="2533-21.25"/>
+				<code value="2533-21-25"/>
 				<display value="Paediatric Dermatologist"/>
 				<definition value="Paediatric Dermatologist"/>
 			</concept>
@@ -622,7 +622,7 @@
 				<definition value="Renal Medicine Specialist / Nephrologist / Renal Medicine Physician"/>
 			</concept>
 			<concept>
-				<code value="2533-22.1"/>
+				<code value="2533-22-1"/>
 				<display value="Nephrologist"/>
 				<definition value="Nephrologist"/>
 			</concept>
@@ -652,7 +652,7 @@
 				<definition value="Thoracic Medicine Physician"/>
 			</concept>
 			<concept>
-				<code value="2533-24.3"/>
+				<code value="2533-24-3"/>
 				<display value="Pulmonary Specialist"/>
 				<definition value="Pulmonary Specialist"/>
 			</concept>
@@ -702,12 +702,12 @@
 				<definition value="Rehabilitation Medicine Physician"/>
 			</concept>
 			<concept>
-				<code value="2533-99.0"/>
+				<code value="2533-99-0"/>
 				<display value="Specialist Physicians nec"/>
 				<definition value="Specialist Physicians nec"/>
 			</concept>
 			<concept>
-				<code value="2533-99.13"/>
+				<code value="2533-99-13"/>
 				<display value="Respiratory and Sleep Physician"/>
 				<definition value="Respiratory and Sleep Physician"/>
 			</concept>
@@ -742,7 +742,7 @@
 				<definition value="Medical Psychotherapist"/>
 			</concept>
 			<concept>
-				<code value="2534-11.0"/>
+				<code value="2534-11-0"/>
 				<display value="Psychiatrist"/>
 				<definition value="Psychiatrist"/>
 			</concept>
@@ -777,7 +777,7 @@
 				<definition value="Surgical Oncologist"/>
 			</concept>
 			<concept>
-				<code value="2535-11.0"/>
+				<code value="2535-11-0"/>
 				<display value="Surgeon"/>
 				<definition value="Surgeon"/>
 			</concept>
@@ -792,7 +792,7 @@
 				<definition value="Cardiothoracic Surgeon"/>
 			</concept>
 			<concept>
-				<code value="2535-12.1"/>
+				<code value="2535-12-1"/>
 				<display value="Thoracic Surgeon"/>
 				<definition value="Thoracic Surgeon"/>
 			</concept>
@@ -822,7 +822,7 @@
 			<display value="Otorhinolaryngologist / Ear Nose and Throat Specialist"/>
 			<definition value="Otorhinolaryngologist / Ear Nose and Throat Specialist"/>
 			<concept>
-				<code value="2535-15.4"/>
+				<code value="2535-15-4"/>
 				<display value="Otorhinolaryngologist - Ear/Nose/Throat Surgeon"/>
 				<definition value="Otorhinolaryngologist - Ear/Nose/Throat Surgeon"/>
 			</concept>
@@ -907,12 +907,12 @@
 				<definition value="Urogynaecologist"/>
 			</concept>
 			<concept>
-				<code value="2539-13.0"/>
+				<code value="2539-13-0"/>
 				<display value="Obstetrician and Gynaecologist"/>
 				<definition value="Obstetrician and Gynaecologist"/>
 			</concept>
 			<concept>
-				<code value="2539-13.6"/>
+				<code value="2539-13-6"/>
 				<display value="Gynaecologist"/>
 				<definition value="Gynaecologist"/>
 			</concept>
@@ -952,17 +952,17 @@
 				<definition value="Medical Microbiologist"/>
 			</concept>
 			<concept>
-				<code value="2539-15.10"/>
+				<code value="2539-15-10"/>
 				<display value="Histopathologist"/>
 				<definition value="Histopathologist"/>
 			</concept>
 			<concept>
-				<code value="2539-15.11"/>
+				<code value="2539-15-11"/>
 				<display value="Haematologist"/>
 				<definition value="Haematologist"/>
 			</concept>
 			<concept>
-				<code value="2539-15.0"/>
+				<code value="2539-15-0"/>
 				<display value="Pathologist"/>
 				<definition value="Pathologist"/>
 			</concept>
@@ -997,7 +997,7 @@
 			<display value="Medical Practitioners nec"/>
 			<definition value="Medical Practitioners nec"/>
 			<concept>
-				<code value="2539-99.0"/>
+				<code value="2539-99-0"/>
 				<display value="Medical Practitioners nec"/>
 				<definition value="Medical Practitioners nec"/>
 			</concept>
@@ -1017,12 +1017,12 @@
 				<definition value="Sports Physician"/>
 			</concept>
 			<concept>
-				<code value="2539-99.5"/>
+				<code value="2539-99-5"/>
 				<display value="Non Clinical Specialist"/>
 				<definition value="Non Clinical Specialist"/>
 			</concept>
 			<concept>
-				<code value="2539-99.1"/>
+				<code value="2539-99-1"/>
 				<display value="Sonologist"/>
 				<definition value="Sonologist"/>
 			</concept>
@@ -1082,7 +1082,7 @@
 			<display value="Registered Nurse (Developmental Disability)"/>
 			<definition value="Registered Nurse (Developmental Disability)"/>
 			<concept>
-				<code value="2544-16.0"/>
+				<code value="2544-16-0"/>
 				<display value="Registered Nurse (Developmental Disability)"/>
 				<definition value="Registered Nurse (Developmental Disability)"/>
 			</concept>
@@ -1102,7 +1102,7 @@
 			<display value="Registered Nurse (Medical Practice)/Practice Nurse"/>
 			<definition value="Registered Nurse (Medical Practice)/Practice Nurse"/>
 			<concept>
-				<code value="2544-21.1"/>
+				<code value="2544-21-1"/>
 				<display value="Registered Nurse (Medical Practice)/Practice Nurse"/>
 				<definition value="Registered Nurse (Medical Practice)/Practice Nurse"/>
 			</concept>
@@ -1112,7 +1112,7 @@
 			<display value="Registered Nurse (Mental Health)/Phychiatric"/>
 			<definition value="Registered Nurse (Mental Health)/Phychiatric"/>
 			<concept>
-				<code value="2544-22.5"/>
+				<code value="2544-22-5"/>
 				<display value="Registered Nurse (Mental Health)/Psychiatric"/>
 				<definition value="Registered Nurse (Mental Health)/Psychiatric"/>
 			</concept>
@@ -1127,7 +1127,7 @@
 			<display value="Careers Counsellor"/>
 			<definition value="Careers Counsellor"/>
 			<concept>
-				<code value="2721-11.0"/>
+				<code value="2721-11-0"/>
 				<display value="Careers Counsellor"/>
 				<definition value="Careers Counsellor"/>
 			</concept>
@@ -1172,7 +1172,7 @@
 				<definition value="Counsellors nec"/>
 			</concept>
 			<concept>
-				<code value="2721-99.8"/>
+				<code value="2721-99-8"/>
 				<display value="Family Therapist"/>
 				<definition value="Family Therapist"/>
 			</concept>
@@ -1182,7 +1182,7 @@
 			<display value="Student Counsellor"/>
 			<definition value="Student Counsellor"/>
 			<concept>
-				<code value="2721-15.0"/>
+				<code value="2721-15-0"/>
 				<display value="Student Counsellor"/>
 				<definition value="Student Counsellor"/>
 			</concept>
@@ -1197,7 +1197,7 @@
 			<display value="Clinical Psychologist"/>
 			<definition value="Clinical Psychologist"/>
 			<concept>
-				<code value="2723-11.0"/>
+				<code value="2723-11-0"/>
 				<display value="Clinical Psychologist"/>
 				<definition value="Clinical Psychologist"/>
 			</concept>
@@ -1252,7 +1252,7 @@
 			<display value="Social Worker"/>
 			<definition value="Social Worker"/>
 			<concept>
-				<code value="2725-11.1"/>
+				<code value="2725-11-1"/>
 				<display value="Mental Health Social Worker"/>
 				<definition value="Mental Health Social Worker"/>
 			</concept>
@@ -1312,7 +1312,7 @@
 			<display value="Dental Technician"/>
 			<definition value="Dental Technician"/>
 			<concept>
-				<code value="4112-13.0"/>
+				<code value="4112-13-0"/>
 				<display value="Dental Technician"/>
 				<definition value="Dental Technician"/>
 			</concept>
@@ -1382,7 +1382,7 @@
 			<display value="Community Worker"/>
 			<definition value="Community Worker"/>
 			<concept>
-				<code value="4117-11.0"/>
+				<code value="4117-11-0"/>
 				<display value="Community Worker"/>
 				<definition value="Community Worker"/>
 			</concept>
@@ -1392,7 +1392,7 @@
 			<display value="Disabilities Services Officer"/>
 			<definition value="Disabilities Services Officer"/>
 			<concept>
-				<code value="4117-12.0"/>
+				<code value="4117-12-0"/>
 				<display value="Disabilities Services Officer"/>
 				<definition value="Disabilities Services Officer"/>
 			</concept>
@@ -1402,7 +1402,7 @@
 			<display value="Youth Worker"/>
 			<definition value="Youth Worker"/>
 			<concept>
-				<code value="4117-16.0"/>
+				<code value="4117-16-0"/>
 				<display value="Youth Worker"/>
 				<definition value="Youth Worker"/>
 			</concept>
@@ -1412,7 +1412,7 @@
 			<display value="Residential Care Officer"/>
 			<definition value="Residential Care Officer"/>
 			<concept>
-				<code value="4117-15.0"/>
+				<code value="4117-15-0"/>
 				<display value="Residential Care Officer"/>
 				<definition value="Residential Care Officer"/>
 			</concept>
@@ -1422,7 +1422,7 @@
 			<display value="Family Support Worker"/>
 			<definition value="Family Support Worker"/>
 			<concept>
-				<code value="4117-13.0"/>
+				<code value="4117-13-0"/>
 				<display value="Family Support Worker"/>
 				<definition value="Family Support Worker"/>
 			</concept>
@@ -1432,7 +1432,7 @@
 			<display value="Parole or Probation Officer"/>
 			<definition value="Parole or Probation Officer"/>
 			<concept>
-				<code value="4117-14.0"/>
+				<code value="4117-14-0"/>
 				<display value="Parole or Probation Officer"/>
 				<definition value="Parole or Probation Officer"/>
 			</concept>
@@ -1447,7 +1447,7 @@
 			<display value="Child Care Worker"/>
 			<definition value="Child Care Worker"/>
 			<concept>
-				<code value="4211-11.0"/>
+				<code value="4211-11-0"/>
 				<display value="Child Care Worker"/>
 				<definition value="Child Care Worker"/>
 			</concept>
@@ -1457,7 +1457,7 @@
 			<display value="Family Day Care Worker"/>
 			<definition value="Family Day Care Worker"/>
 			<concept>
-				<code value="4211-12.0"/>
+				<code value="4211-12-0"/>
 				<display value="Family Day Care Worker"/>
 				<definition value="Family Day Care Worker"/>
 			</concept>
@@ -1507,7 +1507,7 @@
 			<display value="Child or Youth Residential Care Assistant"/>
 			<definition value="Child or Youth Residential Care Assistant"/>
 			<concept>
-				<code value="4234-11.0"/>
+				<code value="4234-11-0"/>
 				<display value="Child or Youth Residential Care Assistant"/>
 				<definition value="Child or Youth Residential Care Assistant"/>
 			</concept>
@@ -1517,7 +1517,7 @@
 			<display value="Refuge Worker"/>
 			<definition value="Refuge Worker"/>
 			<concept>
-				<code value="4234-13.0"/>
+				<code value="4234-13-0"/>
 				<display value="Refuge Worker"/>
 				<definition value="Refuge Worker"/>
 			</concept>
@@ -1527,7 +1527,7 @@
 			<display value="Hostel Parent"/>
 			<definition value="Hostel Parent"/>
 			<concept>
-				<code value="4234-12.0"/>
+				<code value="4234-12-0"/>
 				<display value="Hostel Parent"/>
 				<definition value="Hostel Parent"/>
 			</concept>
@@ -1587,7 +1587,7 @@
 			<display value="Recruitment Consultant"/>
 			<definition value="Recruitment Consultant"/>
 			<concept>
-				<code value="2231-12.0"/>
+				<code value="2231-12-0"/>
 				<display value="Recruitment Consultant"/>
 				<definition value="Recruitment Consultant"/>
 			</concept>
@@ -1602,7 +1602,7 @@
 			<display value="Special Needs Teacher"/>
 			<definition value="Special Needs Teacher"/>
 			<concept>
-				<code value="2415-11.0"/>
+				<code value="2415-11-0"/>
 				<display value="Special Needs Teacher"/>
 				<definition value="Special Needs Teacher"/>
 			</concept>
@@ -1612,7 +1612,7 @@
 			<display value="Special Education Teachers nec"/>
 			<definition value="Special Education Teachers nec"/>
 			<concept>
-				<code value="2415-99.0"/>
+				<code value="2415-99-0"/>
 				<display value="Special Education Teachers nec"/>
 				<definition value="Special Education Teachers nec"/>
 			</concept>
@@ -1622,7 +1622,7 @@
 			<display value="Teacher of the Hearing Impaired"/>
 			<definition value="Teacher of the Hearing Impaired"/>
 			<concept>
-				<code value="2415-12.0"/>
+				<code value="2415-12-0"/>
 				<display value="Teacher of the Hearing Impaired"/>
 				<definition value="Teacher of the Hearing Impaired"/>
 			</concept>
@@ -1632,7 +1632,7 @@
 			<display value="Teacher of the Sight Impaired"/>
 			<definition value="Teacher of the Sight Impaired"/>
 			<concept>
-				<code value="2415-13.0"/>
+				<code value="2415-13-0"/>
 				<display value="Teacher of the Sight Impaired"/>
 				<definition value="Teacher of the Sight Impaired"/>
 			</concept>
@@ -1647,7 +1647,7 @@
 			<display value="Minister of Religion"/>
 			<definition value="Minister of Religion"/>
 			<concept>
-				<code value="2722-11.0"/>
+				<code value="2722-11-0"/>
 				<display value="Minister of Religion"/>
 				<definition value="Minister of Religion"/>
 			</concept>
@@ -1662,7 +1662,7 @@
 			<display value="Barrister"/>
 			<definition value="Barrister"/>
 			<concept>
-				<code value="2711-11.0"/>
+				<code value="2711-11-0"/>
 				<display value="Barrister"/>
 				<definition value="Barrister"/>
 			</concept>
@@ -1677,7 +1677,7 @@
 			<display value="Solicitor"/>
 			<definition value="Solicitor"/>
 			<concept>
-				<code value="2713-11.0"/>
+				<code value="2713-11-0"/>
 				<display value="Solicitor"/>
 				<definition value="Solicitor"/>
 			</concept>
@@ -1692,7 +1692,7 @@
 			<display value="Judicial and Other Legal Professionals nec"/>
 			<definition value="Judicial and Other Legal Professionals nec"/>
 			<concept>
-				<code value="2712-99.0"/>
+				<code value="2712-99-0"/>
 				<display value="Judicial and Other Legal Professionals nec"/>
 				<definition value="Judicial and Other Legal Professionals nec"/>
 			</concept>
@@ -1707,7 +1707,7 @@
 			<display value="Outdoor Adventure Guides"/>
 			<definition value="Outdoor Adventure Guides"/>
 			<concept>
-				<code value="4522-00.0"/>
+				<code value="4522-00-0"/>
 				<display value="Outdoor Adventure Guides"/>
 				<definition value="Outdoor Adventure Guides"/>
 			</concept>
@@ -1722,7 +1722,7 @@
 			<display value="Early Childhood (Pre-primary School) Teacher"/>
 			<definition value="Early Childhood (Pre-primary School) Teacher"/>
 			<concept>
-				<code value="2411-11.0"/>
+				<code value="2411-11-0"/>
 				<display value="Early Childhood (Pre-primary School) Teacher"/>
 				<definition value="Early Childhood (Pre-primary School) Teacher"/>
 			</concept>
@@ -1737,7 +1737,7 @@
 			<display value="Secondary School Teacher"/>
 			<definition value="Secondary School Teacher"/>
 			<concept>
-				<code value="2414-11.0"/>
+				<code value="2414-11-0"/>
 				<display value="Secondary School Teacher"/>
 				<definition value="Secondary School Teacher"/>
 			</concept>
@@ -1752,7 +1752,7 @@
 			<display value="Teachers' Aide"/>
 			<definition value="Teachers' Aide"/>
 			<concept>
-				<code value="4221-16.0"/>
+				<code value="4221-16-0"/>
 				<display value="Teachers' Aide"/>
 				<definition value="Teachers' Aide"/>
 			</concept>
@@ -1767,12 +1767,12 @@
 			<display value="School Principal"/>
 			<definition value="School Principal"/>
 			<concept>
-				<code value="1343-11.1"/>
+				<code value="1343-11-1"/>
 				<display value="Primary School Principal"/>
 				<definition value="Primary School Principal"/>
 			</concept>
 			<concept>
-				<code value="1343-11.2"/>
+				<code value="1343-11-2"/>
 				<display value="Secondary School Principal"/>
 				<definition value="Secondary School Principal"/>
 			</concept>
@@ -1787,7 +1787,7 @@
 			<display value="Private Tutors and Teachers nec"/>
 			<definition value="Private Tutors and Teachers nec"/>
 			<concept>
-				<code value="2492-99.0"/>
+				<code value="2492-99-0"/>
 				<display value="Private Tutors and Teachers nec"/>
 				<definition value="Private Tutors and Teachers nec"/>
 			</concept>
@@ -1802,7 +1802,7 @@
 			<display value="Primary School Teacher"/>
 			<definition value="Primary School Teacher"/>
 			<concept>
-				<code value="2412-13.0"/>
+				<code value="2412-13-0"/>
 				<display value="Primary School Teacher"/>
 				<definition value="Primary School Teacher"/>
 			</concept>
@@ -1813,11 +1813,11 @@
 		<display value="Other"/>
 		<definition value="Other"/>
 		<concept>
-			<code value="9999.99"/>
+			<code value="9999-99"/>
 			<display value="Other"/>
 			<definition value="Other"/>
 			<concept>
-				<code value="9999.99.0"/>
+				<code value="9999-99-0"/>
 				<display value="Other"/>
 				<definition value="Other"/>
 			</concept>

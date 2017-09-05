@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-08-24T11:30:23.214+10:00" />
+    <lastUpdated value="2017-09-05T17:43:21.367+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -31,7 +31,7 @@
       <definition value="Directory entry practitioner role provider number" />
       <mustSupport value="true" />
     </element>
-    <element>
+    <element id="PractitionerRole.identifier:providernumber.extension">
       <path value="PractitionerRole.identifier.extension" />
       <slicing>
         <discriminator>
@@ -59,7 +59,7 @@
       <definition value="Directory entry provider at organisation identifier" />
       <mustSupport value="true" />
     </element>
-    <element>
+    <element id="PractitionerRole.identifier:nationalprovideratorganisation.extension">
       <path value="PractitionerRole.identifier.extension" />
       <slicing>
         <discriminator>
@@ -88,7 +88,7 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element>
+    <element id="PractitionerRole.identifier:pdvendor.extension">
       <path value="PractitionerRole.identifier.extension" />
       <slicing>
         <discriminator>
@@ -208,10 +208,30 @@
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <short value="Specific specialties of the practitioner" />
       <definition value="Specialties define the advertised capabilities of the practitioner in this role." />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.specialty:nhsdcore">
+      <path value="PractitionerRole.specialty" />
+      <sliceName value="nhsdcore" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PractitionerSpecialty" />
+        </extension>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-nhsd-core-services" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="PractitionerRole.location">
       <path value="PractitionerRole.location" />

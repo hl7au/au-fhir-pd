@@ -30,6 +30,24 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="StructureDefinition/au-receivingapplication"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/au-receivingfacility"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/au-assigningauthority"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/au-pd-practitioner"/>
 			</sourceReference>
 		</resource>
@@ -61,24 +79,6 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/au-pd-healthcareservice"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/au-receivingapplication"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/au-receivingfacility"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/au-assigningauthority"/>
 			</sourceReference>
 		</resource>
 		<resource>
