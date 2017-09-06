@@ -8,7 +8,8 @@ Read identified location resource content.
 
 *Example:*  `GET [base]/Location/1234`
 
-*Support:* MUST support read Location
+*Support:*
+* MUST support read Location
 
 *Implementation Notes:*  [[(how to read resource)]
 
@@ -32,7 +33,9 @@ Search based on address parts for postcode, suburb, and state.
 
 `GET [base]/Location?address-state=VIC`
 
-*Support:* SHOULD support search Location by address parts address-postalcode, address-city, address-state.
+*Support:*
+* SHOULD support search Location by address parts address-postalcode, address-city, address-state.
+* SHOULD support basic **param=[string]** search which is case and accent-insensitive search;  field equals or starts with the string value.
 
 *Implementation Notes:* 
 [(how to search by token)]
@@ -46,15 +49,17 @@ Search based on address within a nominated distance.
 
 *Example:* `GET [base]/Location?location.near==-83.694810:42.256500&location.near-distance=le10.0|http://unitsofmeasure.org|km`
 
-*Support:* SHOULD support search Location within a distance.
-
-*Implementation Notes:* 
-[(how to search by token)] and [(how to search by quantity)]
-
+*Support:* 
+* SHOULD support search Location within a distance.
+* SHOULD support:
 [prefix] fixed 'le' is less than or equal to distance
 [value] is a decimal quantity number
 [units-system] fixed 'http://unitsofmeasure.org' identifies standard distance units are used
 [units] distance units must support 'km' or 'm'
+
+*Implementation Notes:* 
+[(how to search by token)] and [(how to search by quantity)]
+
 
 -----------
 **Search: Combination**

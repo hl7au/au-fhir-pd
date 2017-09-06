@@ -1,129 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/structuredefinition.xsd">
-	<id value="au-pd-sm-endpoint"/>
-	<meta>
-		<lastUpdated value="2017-06-10T14:05:59.563+10:00"/>
-	</meta>
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<p>AU PD SM Endpoint</p>
-		</div>
-	</text>
-	<url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-sm-endpoint"/>
-	<name value="Australian Secure Message Endpoint Directory Entry"/>
-	<title value="Australian Secure Message Endpoint Directory Entry"/>
-	<status value="draft"/>
-	<date value="2017-05-12T16:13:53.3444155+10:00"/>
-	<description value="Endpoint for secure message delivery"/>
-	<fhirVersion value="3.0.1"/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Endpoint"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Endpoint"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element>
-			<path value="Endpoint"/>
-		</element>
-		<element>
-			<path value="Endpoint.extension"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="url"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-		</element>
-		<element>
-			<path value="Endpoint.extension"/>
-			<sliceName value="receivingFacility"/>
-			<short value="Receiving Facility Details"/>
-			<definition value="Details of the HL7 V2 receiving facility."/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility"/>
-			</type>
-		</element>
-		<element>
-			<path value="Endpoint.extension"/>
-			<sliceName value="receivingApplication"/>
-			<short value="Receiving Application Details"/>
-			<definition value="Details of the HL7 V2 receiving application."/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication"/>
-			</type>
-		</element>
-		<element>
-			<path value="Endpoint.extension"/>
-			<sliceName value="dataEnciphermentCertificate"/>
-			<short value="Encrypting certificate details"/>
-			<definition value="Encrypting certificate reference or value for use on this endpoint with specified payloadType and payloadMimeType."/>
-			<min value="0"/>
-			<max value="*"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org.au/fhir/StructureDefinition/encrypting-qualified-certificate-reference"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Endpoint.status">
-			<path value="Endpoint.status"/>
-			<short value="active | suspended | error | off | entered-in-error | test"/>
-			<definition value="Secure messaging endpoint activation status."/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Endpoint.connectionType">
-			<path value="Endpoint.connectionType"/>
-			<short value="Service interface type"/>
-			<definition value="Protocol/Profile/Standard the endpoint supports."/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-au-serviceinterface"/>
-			</binding>
-		</element>
-		<element id="Endpoint.managingOrganization">
-			<path value="Endpoint.managingOrganization"/>
-			<short value="Directory entry managing organisation."/>
-			<definition value="Details of the organisation that is managing the supply of this directory entry."/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Endpoint.managingOrganization.display">
-			<path value="Endpoint.managingOrganization.display"/>
-			<short value="Directroy entry managing organisation display details"/>
-			<definition value="Details to display for the directory entry managing organisation, typically the name."/>
-			<min value="1"/>
-		</element>
-		<element id="Endpoint.contact">
-			<path value="Endpoint.contact"/>
-			<short value="Endpoint operator contact"/>
-			<definition value="Details to contact operator of the endpoint responsible for it's support and maintenance."/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Endpoint.payloadType">
-			<path value="Endpoint.payloadType"/>
-			<short value="Payload type "/>
-			<definition value="Reference  to identify the type of payload content (service category)."/>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-au-endpoint-payload-type"/>
-			</binding>
-		</element>
-		<element id="Endpoint.address">
-			<path value="Endpoint.address"/>
-			<short value="URL address of the endpoint "/>
-			<definition value="Actual endpoint URL for communications"/>
-			<mustSupport value="true"/>
-		</element>
-	</differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="au-pd-sm-endpoint" />
+  <meta>
+    <lastUpdated value="2017-09-06T23:02:55.485+10:00" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+		  <p>AU PD SM Endpoint</p>
+	</div>
+  </text>
+  <url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-sm-endpoint" />
+  <name value="Australian Secure Message Endpoint Directory Entry" />
+  <title value="Australian Secure Message Endpoint Directory Entry" />
+  <status value="draft" />
+  <date value="2017-05-12T16:13:53.3444155+10:00" />
+  <description value="Endpoint for secure message delivery" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Endpoint" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Endpoint" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Endpoint">
+      <path value="Endpoint" />
+      <short value="Australian Secure Message Directory Endpoint Record" />
+      <definition value="Enpoint defined for use in secure message addressing." />
+    </element>
+    <element id="Endpoint.extension">
+      <path value="Endpoint.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Endpoint.extension:receivingFacility">
+      <path value="Endpoint.extension" />
+      <sliceName value="receivingFacility" />
+      <short value="Receiving Facility Details" />
+      <definition value="Details of the HL7 V2 receiving facility." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility" />
+      </type>
+    </element>
+    <element id="Endpoint.extension:receivingApplication">
+      <path value="Endpoint.extension" />
+      <sliceName value="receivingApplication" />
+      <short value="Receiving Application Details" />
+      <definition value="Details of the HL7 V2 receiving application." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication" />
+      </type>
+    </element>
+    <element id="Endpoint.extension:dataEnciphermentCertificate">
+      <path value="Endpoint.extension" />
+      <sliceName value="dataEnciphermentCertificate" />
+      <short value="Encrypting certificate details" />
+      <definition value="Encrypting certificate reference or value for use on this endpoint with specified payloadType and payloadMimeType." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/encrypting-qualified-certificate-reference" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.status">
+      <path value="Endpoint.status" />
+      <definition value="Secure messaging endpoint activation status." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.connectionType">
+      <path value="Endpoint.connectionType" />
+      <short value="Service interface type" />
+      <definition value="Protocol/Profile/Standard the endpoint supports." />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-au-serviceinterface" />
+      </binding>
+    </element>
+    <element id="Endpoint.name">
+      <path value="Endpoint.name" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.managingOrganization">
+      <path value="Endpoint.managingOrganization" />
+      <short value="Directory entry managing organisation." />
+      <definition value="Details of the organisation that is managing the supply of this directory entry." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.managingOrganization.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Endpoint.managingOrganization.display" />
+      <short value="Directroy entry managing organisation display details" />
+      <definition value="Details to display for the directory entry managing organisation, typically the name." />
+      <min value="1" />
+    </element>
+    <element id="Endpoint.contact">
+      <path value="Endpoint.contact" />
+      <short value="Endpoint operator contact" />
+      <definition value="Details to contact operator of the endpoint responsible for it's support and maintenance." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.payloadType">
+      <path value="Endpoint.payloadType" />
+      <short value="Payload type " />
+      <definition value="Reference  to identify the type of payload content (service category)." />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-au-endpoint-payload-type" />
+      </binding>
+    </element>
+    <element id="Endpoint.address">
+      <path value="Endpoint.address" />
+      <short value="URL address of the endpoint " />
+      <definition value="Actual endpoint URL for communications" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>

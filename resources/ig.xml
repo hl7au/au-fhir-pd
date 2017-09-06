@@ -120,7 +120,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/valueset-mo-practitioner-role"/>
+				<reference value="ValueSet/valueset-snomed-practitioner-role"/>
 			</sourceReference>
 		</resource>
 		<resource>

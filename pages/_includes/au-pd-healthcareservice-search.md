@@ -7,7 +7,8 @@ Read identified healthcare service resource content.
 
 *Example:* `GET [base]/HealthcareService/1234`
 
-*Support:* MUST support read HealthcareService
+*Support:*
+* MUST support read HealthcareService
 
 *Implementation Notes:*  [[(how to read resource)]
 
@@ -20,12 +21,13 @@ Search for a healthcare service by name.
 
 *Example:* `GET [base]/HealthcareService?name=southern%20clinic`
 
-*Support:* MUST support search by HealthcareService name.
+*Support:*
+* MUST support search by HealthcareService name.
 
 *Implementation Notes:* [(how to search by string)]
 
 -----------
-**Search: Healthcare Service Managing Organisation Name**
+**Search: Organisation Provider of Healthcare Service Name**
 
 Chained search (via Organisation) based on text name.
 
@@ -33,7 +35,8 @@ Chained search (via Organisation) based on text name.
 
 *Example:* `GET [base]/HealthcareService?organization.name=clinigroup`
 
-*Support:* MUST support search by Organization name.
+*Support:*
+* MUST support search by Organization name.
 
 *Implementation Notes:* [(how to search by string)]
 
@@ -46,12 +49,13 @@ Search for healthcare service based on specialties offered
 
 *Example:* `GET [base]/HealthcareService?specialty=http://snomed.info/sct|17561000`
 
-*Support:* MUST support search by HealthcareService specialty offered.
+*Support:*
+* MUST support search by HealthcareService specialty offered.
 
 *Implementation Notes:* [(how to search by token)]
 
 -----------
-**Search: Healthcare Service by Managing Organisation HPI-O**
+**Search: Organisation provider of Healthcare Service HPI-O**
 
 Chained search (via Organisation) based on identifier token.
 
@@ -59,19 +63,21 @@ Chained search (via Organisation) based on identifier token.
 
 *Example:* `GET [base]/HealthcareService?organization.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
 
-*Support:* MUST support search by HPI-O.
+*Support:*
+* MUST support search by HPI-O.
 
 *Implementation Notes:* [(how to search by token)]
 
 -----------
 **Search: HPI-O**
-Search based on identifier token. Direct HPI-O allocation to the service; may be different than the managing organisation but within the HPI-O hierarchy.
+Search based on identifier token. Direct HPI-O allocation to the service; may be different than the providing organisation but within the HPI-O hierarchy.
 
 `GET [base]/Organization?identifier=[system]|[value]`
 
 *Example:* `GET [base]/Organization?identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
 
-*Support:* SHOULD support search by HPI-O.
+*Support:*
+* SHOULD support search by HPI-O.
 
 *Implementation Notes:* [(how to search by token)]
 
@@ -94,7 +100,9 @@ Chained search (via Location) based on address parts for postcode, suburb, and s
 
 `GET [base]/HealthcareService?location.address-state=VIC`
 
-*Support:* MUST support search PractitionerRole by location address parts address-postalcode, address-city, address-state.
+*Support:*
+* MUST support search PractitionerRole by location address parts address-postalcode, address-city, address-state.
+* MUST support basic **param=[string]** search which is case and accent-insensitive search;  field equals or starts with the string value.
 
 *Implementation Notes:* 
 [(how to search by token)]
@@ -108,15 +116,16 @@ Chained search (via Location) for a location within a nominated distance.
 
 *Example:* `GET [base]/HealthcareService?location.near==-83.694810:42.256500&location.near-distance=le10.0|http://unitsofmeasure.org|km`
 
-*Support:* SHOULD support search PractitionerRole by location within a distance.
-
-*Implementation Notes:* 
-[(how to search by token)] and [(how to search by quantity)]
-
+*Support:*
+* SHOULD support search PractitionerRole by location within a distance.
+* SHOULD support:
 [prefix] fixed 'le' is less than or equal to distance
 [value] is a decimal quantity number
 [units-system] fixed 'http://unitsofmeasure.org' identifies standard distance units are used
 [units] distance units must support 'km' or 'm'
+
+*Implementation Notes:* 
+[(how to search by token)] and [(how to search by quantity)]
 
 -----------
 **Search: Connection Type (Service Interface)**
@@ -127,7 +136,8 @@ Chaned search (via Endpoint) based on token for a protocol to be used to connnec
 
 *Example:* `GET [base]/HealthcareService?endpoint.connection-type=http://hl7.org.au.fhir/ValueSet/au-serviceinterfaces|http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010`
 
-*Support:* MUST support search by HealthcareService by endpoint connection type.
+*Support:*
+* MUST support search by HealthcareService by endpoint connection type.
 
 *Implementation Notes:* [(how to search by token)]
 
@@ -140,7 +150,8 @@ Chaned search (via Endpoint) based on token for the type of content supported by
 
 *Example:* `GET [base]/HealthcareService?endpoint.payload-type=http://hl7.org.au.fhir/ValueSet/valueset-au-endpoint-payload-type|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
 
-*Support:* MUST support search HealthcareService by endpoint payload type.
+*Support:*
+* MUST support search HealthcareService by endpoint payload type.
 
 *Implementation Notes:* [(how to search by token)]
 
@@ -151,7 +162,8 @@ The [_include](http://hl7.org/fhir/search.html#include) argument allows the auto
 
 *Example:* `GET [base]/HealthcareService?_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
 
-*Support:* MUST support _include HealthcareService references location, organization, endpoint.
+*Support:*
+* MUST support _include HealthcareService references location, organization, endpoint.
 
 -----------
 **Search: Combination**

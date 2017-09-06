@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-09-06T15:11:30.121+10:00" />
+    <lastUpdated value="2017-09-06T23:22:48.677+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -208,17 +208,17 @@
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <rules value="openAtEnd" />
-      </slicing>
       <min value="1" />
       <mustSupport value="true" />
     </element>
-     <element id="PractitionerRole.specialty:nhsdcoreservice">
+    <element id="PractitionerRole.specialty:specialtyrole">
+      <path value="PractitionerRole.specialty" />
+      <sliceName value="specialtyrole" />
+      <short value="Practitioner Specialty (ANZSCO)" />
+      <definition value="Specialties this practitioner has using ANZSCO coding." />
+      <max value="*" />
+    </element>
+    <element id="PractitionerRole.specialty:nhsdcoreservice">
       <path value="PractitionerRole.specialty" />
       <sliceName value="nhsdcoreservice" />
       <short value="NHSD core service coding" />
@@ -231,6 +231,22 @@
         <description value="NHSD Core Services" />
         <valueSetReference>
           <reference value="http://hl7.org.au/fhir/ValueSet/valueset-nhsd-core-services" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="PractitionerRole.specialty:snomedrole">
+      <path value="PractitionerRole.specialty" />
+      <sliceName value="snomedrole" />
+      <short value="SNOMED-CT Healthcare Professional Subset" />
+      <definition value="Healthcare professional subset" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PractitionerSpecialty" />
+        </extension>
+        <strength value="required" />
+        <description value="Healthcare professional subset" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-snomed-practitioner-role" />
         </valueSetReference>
       </binding>
     </element>
