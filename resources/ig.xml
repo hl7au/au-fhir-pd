@@ -130,6 +130,12 @@
 			</sourceReference>
 		</resource>
 			<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ConceptMap/conceptmap-snomed-nhsd-core"/>
+			</sourceReference>
+		</resource>
+			<resource>
 			<example value="true"/>
 			<sourceReference>
 				<reference value="Practitioner/example0"/>
