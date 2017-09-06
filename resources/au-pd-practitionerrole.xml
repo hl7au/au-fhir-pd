@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
@@ -213,15 +213,12 @@
           <type value="value" />
           <path value="coding.system" />
         </discriminator>
-        <description value="coding by system" />
         <rules value="openAtEnd" />
       </slicing>
-      <short value="Specific specialties of the practitioner" />
-      <definition value="Specialties define the advertised capabilities of the practitioner in this role." />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="PractitionerRole.specialty:nhsdcoreservice">
+     <element id="PractitionerRole.specialty:nhsdcoreservice">
       <path value="PractitionerRole.specialty" />
       <sliceName value="nhsdcoreservice" />
       <short value="NHSD core service coding" />

@@ -102,8 +102,11 @@
 	"ValueSet/valueset-au-serviceinterfaces": {
 	  "base": "ValueSet-valueset-au-serviceinterfaces.html"
 	},
-	"ValueSet/valueset-nhsd-core-services.html": {
+	"ValueSet/valueset-nhsd-core-services": {
 	  "base": "ValueSet-valueset-nhsd-core-services.html"
+	},
+	"CodeSystem/codesystem-nhsd-core-services": {
+	  "base": "CodeSystem-codesystem-nhsd-core-services.html"
 	},
 	"CodeSystem/codesystem-au-endpoint-payload-type": {
 	  "base": "CodeSystem-codesystem-au-endpoint-payload-type.html"
