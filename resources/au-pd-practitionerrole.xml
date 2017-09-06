@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-09-05T17:43:21.367+10:00" />
+    <lastUpdated value="2017-09-06T14:31:52.614+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -213,7 +213,7 @@
           <type value="value" />
           <path value="coding.system" />
         </discriminator>
-        <rules value="open" />
+        <rules value="openAtEnd" />
       </slicing>
       <short value="Specific specialties of the practitioner" />
       <definition value="Specialties define the advertised capabilities of the practitioner in this role." />
