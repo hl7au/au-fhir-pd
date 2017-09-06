@@ -4,7 +4,7 @@
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<h2>NHSD Core Services Terminology</h2>
-			<p></p>
+			<p>as used by NHSD</p>
 		</div>
 	</text>
 	<url value="http://hl7.org.au/fhir/CodeSystem/codesystem-nhsd-core-services"/>
