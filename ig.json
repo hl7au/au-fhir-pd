@@ -108,6 +108,12 @@
 	"CodeSystem/codesystem-nhsd-core-services": {
 	  "base": "CodeSystem-codesystem-nhsd-core-services.html"
 	},
+		"ValueSet/valueset-nhsd-healthcareservice-services": {
+	  "base": "ValueSet-valueset-nhsd-healthcareservice-services.html"
+	},
+	"CodeSystem/codesystem-nhsd-healthcareservice-services": {
+	  "base": "CodeSystem-codesystem-nhsd-healthcareservice-services.html"
+	},
 	"CodeSystem/codesystem-au-endpoint-payload-type": {
 	  "base": "CodeSystem-codesystem-au-endpoint-payload-type.html"
 	},

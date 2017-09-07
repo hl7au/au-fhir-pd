@@ -120,6 +120,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="CodeSystem/codesystem-nhsd-healthcareservice-role"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/valueset-snomed-practitioner-role"/>
 			</sourceReference>
 		</resource>
@@ -127,6 +133,12 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/valueset-nhsd-practitioner-role"/>
+			</sourceReference>
+		</resource>
+				<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/valueset-nhsd-healthcareservice-role"/>
 			</sourceReference>
 		</resource>
 			<resource>

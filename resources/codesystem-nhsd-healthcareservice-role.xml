@@ -1,0 +1,2586 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="codesystem-nhsd-healthcareservice-services"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>NHSD Core Services Terminology</h2>
+            <p></p>
+        </div>
+    </text>
+    <url value="http://hl7.org.au/fhir/CodeSystem/codesystem-nhsd-healthcareservice-services"/>
+    <version value="1"/>
+    <name value="NHSD Healthcare Service Specialties Terminology"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2017-09-05"/>
+    <publisher value="HL7 Australia"/>
+    <contact>
+        <name value="hl7.org.au"/>
+    </contact>
+    <description value="NHSD Healthcare Service Specialties Terminology"/>
+    <caseSensitive value="true"/>
+    <valueSet value="http://hl7.org.au.fhir/ValueSet/valueset-nhsd-healthcareservice-services"/>
+    <compositional value="false"/>
+    <versionNeeded value="true"/>
+    <content value="complete"/>
+<concept>
+		<code value="42-7-1"/>
+		<display value="Pharmacy"/>
+		<definition value="Pharmacy"/>
+		<concept>
+			<code value="42-7-1-2"/>
+			<display value="Community Pharmacy"/>
+			<definition value="Community Pharmacy"/>
+			<concept>
+				<code value="42-7-1-2.0"/>
+				<display value="Community Pharmacy"/>
+				<definition value="Community Pharmacy"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="42-7-1.3"/>
+			<display value="Hospital Pharmacy"/>
+			<definition value="Hospital Pharmacy"/>
+		</concept>
+	</concept>
+	<concept>
+		<code value="69-9-9"/>
+		<display value="Other Professional, Scientific and Technical Services n.e.c."/>
+		<definition value="Other Professional, Scientific and Technical Services n.e.c."/>
+		<concept>
+			<code value="69-9-9-1"/>
+			<display value="Interpretation Service"/>
+			<definition value="Interpretation Service"/>
+			<concept>
+				<code value="69-9-9-1-1"/>
+				<display value="Interpretation Service"/>
+				<definition value="Interpretation Service"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="69-9-9-2"/>
+			<display value="Professional, scientific and technical services nec"/>
+			<definition value="Professional, scientific and technical services nec"/>
+		</concept>
+		<concept>
+			<code value="69-9-9-3"/>
+			<display value="Translation service"/>
+			<definition value="Translation service"/>
+			<concept>
+				<code value="69-9-9-3-1"/>
+				<display value="Translation service"/>
+				<definition value="Translation service"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="69-9-9.4"/>
+			<display value="Transcription Service"/>
+			<definition value="Transcription Service"/>
+			<concept>
+				<code value="69-9-9.4.1"/>
+				<display value="Transcription"/>
+				<definition value="Transcription"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="84-0-1"/>
+		<display value="Hospitals"/>
+		<definition value="Hospitals"/>
+		<concept>
+			<code value="84-0-1-13"/>
+			<display value="Private Same-Day Centre/Hospital"/>
+			<definition value="Private Same-Day Centre/Hospital"/>
+		</concept>
+		<concept>
+			<code value="84-0-1-6"/>
+			<display value="Hospital"/>
+			<definition value="Hospital"/>
+			<concept>
+				<code value="84-0-1-6.2"/>
+				<display value="Outpatients"/>
+				<definition value="Outpatients"/>
+			</concept>
+			<concept>
+				<code value="84-0-1-6.1"/>
+				<display value="Inpatients"/>
+				<definition value="Inpatients"/>
+			</concept>
+			<concept>
+				<code value="84-0-1-6.0"/>
+				<display value="Hospital"/>
+				<definition value="Hospital"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="85-1-1"/>
+		<display value="General Practice Medical Services"/>
+		<definition value="General Practice Medical Services"/>
+		<concept>
+			<code value="85-1-1-2"/>
+			<display value="General medical practitioner service"/>
+			<definition value="General medical practitioner service"/>
+			<concept>
+				<code value="85-1-1-2.1"/>
+				<display value="General Practice/GP (doctor)"/>
+				<definition value="General Practice/GP (doctor)"/>
+			</concept>
+			<concept>
+				<code value="85-1-1-2.2"/>
+				<display value="Deputising Service"/>
+				<definition value="Deputising Service"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="85-1-2"/>
+		<display value="Specialist Medical Services"/>
+		<definition value="Specialist Medical Services"/>
+		<concept>
+			<code value="85-1-2-11"/>
+			<display value="Paediatric service"/>
+			<definition value="Paediatric service"/>
+			<concept>
+				<code value="85-1-2-11-1"/>
+				<display value="Neonatology &amp; Perinatology"/>
+				<definition value="Neonatology &amp; Perinatology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-10"/>
+				<display value="Paediatric intensive care medicine"/>
+				<definition value="Paediatric intensive care medicine"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-11"/>
+				<display value="Paediatric Medical Oncology"/>
+				<definition value="Paediatric Medical Oncology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-12"/>
+				<display value="Paediatric Medicine"/>
+				<definition value="Paediatric Medicine"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-13"/>
+				<display value="Paediatric Nephrology"/>
+				<definition value="Paediatric Nephrology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-14"/>
+				<display value="Paediatric Neurology"/>
+				<definition value="Paediatric Neurology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-15"/>
+				<display value="Paediatric Nuclear Medicine"/>
+				<definition value="Paediatric Nuclear Medicine"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-16"/>
+				<display value="Paediatric Rehabilitation Medicine"/>
+				<definition value="Paediatric Rehabilitation Medicine"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-17"/>
+				<display value="Paediatric Rheumatology"/>
+				<definition value="Paediatric Rheumatology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-18"/>
+				<display value="Paediatric Sleep Medicine"/>
+				<definition value="Paediatric Sleep Medicine"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-19"/>
+				<display value="Paediatric Thoracic Medicine"/>
+				<definition value="Paediatric Thoracic Medicine"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-2"/>
+				<display value="Paediatric Cardiology"/>
+				<definition value="Paediatric Cardiology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-21"/>
+				<display value="Paediatric Dermatology"/>
+				<definition value="Paediatric Dermatology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-24"/>
+				<display value="Paediatric Otolaryngology"/>
+				<definition value="Paediatric Otolaryngology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-27"/>
+				<display value="Paediatric Respiratory"/>
+				<definition value="Paediatric Respiratory"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-3"/>
+				<display value="Paediatric Clinical Genetics"/>
+				<definition value="Paediatric Clinical Genetics"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-4"/>
+				<display value="Paediatric Clinical Pharmacology"/>
+				<definition value="Paediatric Clinical Pharmacology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-5"/>
+				<display value="Paediatric Endocrinology"/>
+				<definition value="Paediatric Endocrinology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-6"/>
+				<display value="Paediatric Gastroenterology &amp; Hepatology"/>
+				<definition value="Paediatric Gastroenterology &amp; Hepatology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-7"/>
+				<display value="Paediatric Haematology"/>
+				<definition value="Paediatric Haematology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-8"/>
+				<display value="Paediatric Immunology &amp; Allergy"/>
+				<definition value="Paediatric Immunology &amp; Allergy"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-11-9"/>
+				<display value="Paediatric Infectious diseases"/>
+				<definition value="Paediatric Infectious diseases"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-1-2-12"/>
+			<display value="Psychiatry service"/>
+			<definition value="Psychiatry service"/>
+			<concept>
+				<code value="85-1-2-12-15"/>
+				<display value="Forensic Psychiatry"/>
+				<definition value="Forensic Psychiatry"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-12.0"/>
+				<display value="Psychiatry"/>
+				<definition value="Psychiatry"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-1-2-14"/>
+			<display value="Specialist medical clinic service"/>
+			<definition value="Specialist medical clinic service"/>
+			<concept>
+				<code value="85-1-2-14-1"/>
+				<display value="Clinical Genetics Services"/>
+				<definition value="Clinical Genetics Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-10"/>
+				<display value="Rheumatology Services"/>
+				<definition value="Rheumatology Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-11"/>
+				<display value="Sleep Medicine Services"/>
+				<definition value="Sleep Medicine Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-12"/>
+				<display value="Thoracic medicine Services"/>
+				<definition value="Thoracic medicine Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-13"/>
+				<display value="Rehabilitation Medicine Services"/>
+				<definition value="Rehabilitation Medicine Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-14"/>
+				<display value="Occupational Medicine Services"/>
+				<definition value="Occupational Medicine Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-15"/>
+				<display value="Palliative Medicine Services"/>
+				<definition value="Palliative Medicine Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-16"/>
+				<display value="Clinical Haematology Services"/>
+				<definition value="Clinical Haematology Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-18"/>
+				<display value="Clinical Allergy &amp; Immunology"/>
+				<definition value="Clinical Allergy &amp; Immunology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-2"/>
+				<display value="Endocrinology Services"/>
+				<definition value="Endocrinology Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-3"/>
+				<display value="Gastroenterology and Hepatology Services"/>
+				<definition value="Gastroenterology and Hepatology Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-4"/>
+				<display value="Geriatric medicine Services"/>
+				<definition value="Geriatric medicine Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-5"/>
+				<display value="Infectious diseases Services"/>
+				<definition value="Infectious diseases Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-6"/>
+				<display value="Intensive care Services"/>
+				<definition value="Intensive care Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-7"/>
+				<display value="Clinical Oncology Services"/>
+				<definition value="Clinical Oncology Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-8"/>
+				<display value="Nephrology Services"/>
+				<definition value="Nephrology Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14-9"/>
+				<display value="Neurology Services"/>
+				<definition value="Neurology Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.20"/>
+				<display value="Hepatology"/>
+				<definition value="Hepatology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.19"/>
+				<display value="Cardiology"/>
+				<definition value="Cardiology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.27"/>
+				<display value="Gastroenterology"/>
+				<definition value="Gastroenterology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.21"/>
+				<display value="Medical Research"/>
+				<definition value="Medical Research"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.22"/>
+				<display value="Respiratory Medicine"/>
+				<definition value="Respiratory Medicine"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.23"/>
+				<display value="General Medicine"/>
+				<definition value="General Medicine"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.24"/>
+				<display value="Sport and Exercise Medicine"/>
+				<definition value="Sport and Exercise Medicine"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.25"/>
+				<display value="Pain Medicine Service"/>
+				<definition value="Pain Medicine Service"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.26"/>
+				<display value="Clinical Pharmacology"/>
+				<definition value="Clinical Pharmacology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-14.28"/>
+				<display value="Addiction Medicine Service"/>
+				<definition value="Addiction Medicine Service"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-1-2-15"/>
+			<display value="Specialist medical practitioner service n.e.c."/>
+			<definition value="Specialist medical practitioner service n.e.c."/>
+			<concept>
+				<code value="85-1-2-15-5"/>
+				<display value="GP Surgery GP Skin Cancer Services"/>
+				<definition value="GP Surgery GP Skin Cancer Services"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-15.1"/>
+				<display value="Further Description - Specialist Medical"/>
+				<definition value="Further Description - Specialist Medical"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-15.27"/>
+				<display value="Public Health Medicine"/>
+				<definition value="Public Health Medicine"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-1-2-16"/>
+			<display value="Specialist surgical service"/>
+			<definition value="Specialist surgical service"/>
+			<concept>
+				<code value="85-1-2-16-1"/>
+				<display value="Cardiothoracic surgery"/>
+				<definition value="Cardiothoracic surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-12"/>
+				<display value="Otolaryngology/Facial Plastic Surgery"/>
+				<definition value="Otolaryngology/Facial Plastic Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-13"/>
+				<display value="Transplant Surgery"/>
+				<definition value="Transplant Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-14"/>
+				<display value="Dermatological Surgery"/>
+				<definition value="Dermatological Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-15"/>
+				<display value="Paediatric Orthopaedic Surgery"/>
+				<definition value="Paediatric Orthopaedic Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-16"/>
+				<display value="Paediatric Surgery"/>
+				<definition value="Paediatric Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-18"/>
+				<display value="Hand Surgery"/>
+				<definition value="Hand Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-2"/>
+				<display value="Neurosurgery"/>
+				<definition value="Neurosurgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-20"/>
+				<display value="Foot and Ankle Surgery"/>
+				<definition value="Foot and Ankle Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-22"/>
+				<display value="Trauma Surgery"/>
+				<definition value="Trauma Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-24"/>
+				<display value="Surgical Oncology"/>
+				<definition value="Surgical Oncology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-25"/>
+				<display value="Colon &amp; Rectal Surgery"/>
+				<definition value="Colon &amp; Rectal Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-3"/>
+				<display value="Ophthalmology"/>
+				<definition value="Ophthalmology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-4"/>
+				<display value="Orthopaedic surgery"/>
+				<definition value="Orthopaedic surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-5"/>
+				<display value="Plastic and Reconstructive Surgery"/>
+				<definition value="Plastic and Reconstructive Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-6"/>
+				<display value="Surgery - General"/>
+				<definition value="Surgery - General"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-7"/>
+				<display value="Urology"/>
+				<definition value="Urology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-8"/>
+				<display value="Vascular surgery"/>
+				<definition value="Vascular surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16-9"/>
+				<display value="Oral and Maxillofacial Surgery"/>
+				<definition value="Oral and Maxillofacial Surgery"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-16.0"/>
+				<display value="Specialist Surgical Service nec"/>
+				<definition value="Specialist Surgical Service nec"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-1-2-19"/>
+			<display value="Emergency Department Services"/>
+			<definition value="Emergency Department Services"/>
+			<concept>
+				<code value="85-1-2-19.0"/>
+				<display value="Emergency Department Services nec"/>
+				<definition value="Emergency Department Services nec"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-1-2-2"/>
+			<display value="Anaesthetist Service"/>
+			<definition value="Anaesthetist Service"/>
+		</concept>
+		<concept>
+			<code value="85-1-2-3"/>
+			<display value="Dermatology service"/>
+			<definition value="Dermatology service"/>
+		</concept>
+		<concept>
+			<code value="85-1-2-5"/>
+			<display value="Gynaecology service"/>
+			<definition value="Gynaecology service"/>
+			<concept>
+				<code value="85-1-2-5-1"/>
+				<display value="Gynaecological Oncology"/>
+				<definition value="Gynaecological Oncology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-5-2"/>
+				<display value="Obstetrics and Gynaecology"/>
+				<definition value="Obstetrics and Gynaecology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-5-3"/>
+				<display value="Reproductive Endocrinology &amp; Infertility"/>
+				<definition value="Reproductive Endocrinology &amp; Infertility"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-5-4"/>
+				<display value="Urogynaecology"/>
+				<definition value="Urogynaecology"/>
+			</concept>
+			<concept>
+				<code value="85-1-2-5.5"/>
+				<display value="Gynaecology"/>
+				<definition value="Gynaecology"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-1-2-8"/>
+			<display value="Obstetrics service"/>
+			<definition value="Obstetrics service"/>
+		</concept>
+		<concept>
+			<code value="85-1-2.20"/>
+			<display value="Specialist Surgical Services nec"/>
+			<definition value="Specialist Surgical Services nec"/>
+			<concept>
+				<code value="85-1-2.20.1"/>
+				<display value="Endoscopy Service"/>
+				<definition value="Endoscopy Service"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="85-2-0"/>
+		<display value="Pathology and Diagnostic Imaging Services"/>
+		<definition value="Pathology and Diagnostic Imaging Services"/>
+		<concept>
+			<code value="85-2-0-1"/>
+			<display value="Diagnostic imaging service"/>
+			<definition value="Diagnostic imaging service"/>
+			<concept>
+				<code value="85-2-0-1-1"/>
+				<display value="Diagnostic Radiology"/>
+				<definition value="Diagnostic Radiology"/>
+			</concept>
+			<concept>
+				<code value="85-2-0-1-2"/>
+				<display value="Diagnostic Ultrasound/Sonography"/>
+				<definition value="Diagnostic Ultrasound/Sonography"/>
+			</concept>
+			<concept>
+				<code value="85-2-0-1-3"/>
+				<display value="Magnetic resonance imaging (MRI)"/>
+				<definition value="Magnetic resonance imaging (MRI)"/>
+			</concept>
+			<concept>
+				<code value="85-2-0-1-4"/>
+				<display value="Obstetric &amp; Gynaecological Ultrasound"/>
+				<definition value="Obstetric &amp; Gynaecological Ultrasound"/>
+			</concept>
+			<concept>
+				<code value="85-2-0-1-5"/>
+				<display value="Nuclear Medicine"/>
+				<definition value="Nuclear Medicine"/>
+			</concept>
+			<concept>
+				<code value="85-2-0-1-6"/>
+				<display value="Medical radiation therapy/Radiation oncology"/>
+				<definition value="Medical radiation therapy/Radiation oncology"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-2-0-2"/>
+			<display value="Medical laboratory service"/>
+			<definition value="Medical laboratory service"/>
+			<concept>
+				<code value="85-2-0-2-2"/>
+				<display value="Pathology - General Services"/>
+				<definition value="Pathology - General Services"/>
+			</concept>
+			<concept>
+				<code value="85-2-0-2-3"/>
+				<display value="Genetic Services"/>
+				<definition value="Genetic Services"/>
+			</concept>
+			<concept>
+				<code value="85-2-0-2-5"/>
+				<display value="Immunology Services"/>
+				<definition value="Immunology Services"/>
+			</concept>
+			<concept>
+				<code value="85-2-0-2-6"/>
+				<display value="Microbiology Services"/>
+				<definition value="Microbiology Services"/>
+			</concept>
+			<concept>
+				<code value="85-2-0-2-7"/>
+				<display value="Chemical Pathology"/>
+				<definition value="Chemical Pathology"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-2-0-3"/>
+			<display value="Pathology laboratory service"/>
+			<definition value="Pathology laboratory service"/>
+			<concept>
+				<code value="85-2-0-3-1"/>
+				<display value="Anatomical Pathology (including Cytopathology and Forensic Pathology)"/>
+				<definition value="Anatomical Pathology (including Cytopathology and Forensic Pathology)"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="85-3-1"/>
+		<display value="Dental Services"/>
+		<definition value="Dental Services"/>
+		<concept>
+			<code value="85-3-1-10"/>
+			<display value="Paediatric Dentistry"/>
+			<definition value="Paediatric Dentistry"/>
+		</concept>
+		<concept>
+			<code value="85-3-1-11"/>
+			<display value="Periodontic service"/>
+			<definition value="Periodontic service"/>
+		</concept>
+		<concept>
+			<code value="85-3-1-12"/>
+			<display value="Prosthodontics service"/>
+			<definition value="Prosthodontics service"/>
+		</concept>
+		<concept>
+			<code value="85-3-1-4"/>
+			<display value="Dental practitioner service"/>
+			<definition value="Dental practitioner service"/>
+			<concept>
+				<code value="85-3-1-4.0"/>
+				<display value="Dental practitioner service"/>
+				<definition value="Dental practitioner service"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-3-1-6"/>
+			<display value="Endodontic service"/>
+			<definition value="Endodontic service"/>
+		</concept>
+		<concept>
+			<code value="85-3-1-8"/>
+			<display value="Oral surgery service"/>
+			<definition value="Oral surgery service"/>
+		</concept>
+		<concept>
+			<code value="85-3-1-9"/>
+			<display value="Orthodontic service"/>
+			<definition value="Orthodontic service"/>
+		</concept>
+		<concept>
+			<code value="85-3-1-13"/>
+			<display value="Oral medicine"/>
+			<definition value="Oral medicine"/>
+		</concept>
+	</concept>
+	<concept>
+		<code value="85-3-2"/>
+		<display value="Optometry and Optical Dispensing"/>
+		<definition value="Optometry and Optical Dispensing"/>
+		<concept>
+			<code value="85-3-2-5"/>
+			<display value="Orthoptic service"/>
+			<definition value="Orthoptic service"/>
+		</concept>
+		<concept>
+			<code value="85-3-2.7"/>
+			<display value="Optometry"/>
+			<definition value="Optometry"/>
+		</concept>
+	</concept>
+	<concept>
+		<code value="85-3-3"/>
+		<display value="Physiotherapy Services"/>
+		<definition value="Physiotherapy Services"/>
+		<concept>
+			<code value="85-3-3-1"/>
+			<display value="Physiotherapy service"/>
+			<definition value="Physiotherapy service"/>
+		</concept>
+	</concept>
+	<concept>
+		<code value="85-3-4"/>
+		<display value="Chiropractic and Osteopathic Services"/>
+		<definition value="Chiropractic and Osteopathic Services"/>
+		<concept>
+			<code value="85-3-4-1"/>
+			<display value="Chiropractic service"/>
+			<definition value="Chiropractic service"/>
+			<concept>
+				<code value="85-3-4-1-1"/>
+				<display value="Chiropractic"/>
+				<definition value="Chiropractic"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-3-4-2"/>
+			<display value="Osteopathic service"/>
+			<definition value="Osteopathic service"/>
+			<concept>
+				<code value="85-3-4-2-1"/>
+				<display value="Osteopathic Services"/>
+				<definition value="Osteopathic Services"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="85-3-9"/>
+		<display value="Other Allied Health Services"/>
+		<definition value="Other Allied Health Services"/>
+		<concept>
+			<code value="85-3-9-1"/>
+			<display value="Acupuncture service"/>
+			<definition value="Acupuncture service"/>
+			<concept>
+				<code value="85-3-9-18-1"/>
+				<display value="Alexander technique therapy"/>
+				<definition value="Alexander technique therapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-10"/>
+				<display value="Meditation"/>
+				<definition value="Meditation"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-11"/>
+				<display value="Myotherapy"/>
+				<definition value="Myotherapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-12"/>
+				<display value="Naturopathy"/>
+				<definition value="Naturopathy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-13"/>
+				<display value="Reflexology"/>
+				<definition value="Reflexology"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-14"/>
+				<display value="Reiki"/>
+				<definition value="Reiki"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-15"/>
+				<display value="Relaxation therapy"/>
+				<definition value="Relaxation therapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-16"/>
+				<display value="Shiatsu"/>
+				<definition value="Shiatsu"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-17"/>
+				<display value="Western herbal medicine"/>
+				<definition value="Western herbal medicine"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-3"/>
+				<display value="Biorhythm services"/>
+				<definition value="Biorhythm services"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-4"/>
+				<display value="Bowen therapy"/>
+				<definition value="Bowen therapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-5"/>
+				<display value="Chinese herbal medicine"/>
+				<definition value="Chinese herbal medicine"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-6"/>
+				<display value="Feldenkrais"/>
+				<definition value="Feldenkrais"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-7"/>
+				<display value="Hypnotherapy"/>
+				<definition value="Hypnotherapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-8"/>
+				<display value="Kinesiology"/>
+				<definition value="Kinesiology"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-9"/>
+				<display value="Magnetic therapy"/>
+				<definition value="Magnetic therapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-16.0"/>
+				<display value="Speech pathology service"/>
+				<definition value="Speech pathology service"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18.18"/>
+				<display value="Cranio-Sacral Therapy"/>
+				<definition value="Cranio-Sacral Therapy"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-3-9-10"/>
+			<display value="Hydropathic service"/>
+			<definition value="Hydropathic service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-11"/>
+			<display value="Midwifery service"/>
+			<definition value="Midwifery service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-13"/>
+			<display value="Nursing service"/>
+			<definition value="Nursing service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-14"/>
+			<display value="Occupational therapy service"/>
+			<definition value="Occupational therapy service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-15"/>
+			<display value="Podiatry service"/>
+			<definition value="Podiatry service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-16"/>
+			<display value="Speech pathology service"/>
+			<definition value="Speech pathology service"/>
+			<concept>
+				<code value="85-3-9-16.0"/>
+				<display value="Speech pathology service"/>
+				<definition value="Speech pathology service"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-3-9-17"/>
+			<display value="Therapeutic massage service"/>
+			<definition value="Therapeutic massage service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-18"/>
+			<display value="Extended Allied Health services"/>
+			<definition value="Extended Allied Health services"/>
+			<concept>
+				<code value="85-3-9-18-1"/>
+				<display value="Alexander technique therapy"/>
+				<definition value="Alexander technique therapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-10"/>
+				<display value="Meditation"/>
+				<definition value="Meditation"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-11"/>
+				<display value="Myotherapy"/>
+				<definition value="Myotherapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-12"/>
+				<display value="Naturopathy"/>
+				<definition value="Naturopathy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-13"/>
+				<display value="Reflexology"/>
+				<definition value="Reflexology"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-14"/>
+				<display value="Reiki"/>
+				<definition value="Reiki"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-15"/>
+				<display value="Relaxation therapy"/>
+				<definition value="Relaxation therapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-16"/>
+				<display value="Shiatsu"/>
+				<definition value="Shiatsu"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-17"/>
+				<display value="Western herbal medicine"/>
+				<definition value="Western herbal medicine"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-3"/>
+				<display value="Biorhythm services"/>
+				<definition value="Biorhythm services"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-4"/>
+				<display value="Bowen therapy"/>
+				<definition value="Bowen therapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-5"/>
+				<display value="Chinese herbal medicine"/>
+				<definition value="Chinese herbal medicine"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-6"/>
+				<display value="Feldenkrais"/>
+				<definition value="Feldenkrais"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-7"/>
+				<display value="Hypnotherapy"/>
+				<definition value="Hypnotherapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-8"/>
+				<display value="Kinesiology"/>
+				<definition value="Kinesiology"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18-9"/>
+				<display value="Magnetic therapy"/>
+				<definition value="Magnetic therapy"/>
+			</concept>
+			<concept>
+				<code value="85-3-9-18.18"/>
+				<display value="Cranio-Sacral Therapy"/>
+				<definition value="Cranio-Sacral Therapy"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-3-9-2"/>
+			<display value="Aromatherapy service"/>
+			<definition value="Aromatherapy service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-3"/>
+			<display value="Audiology service"/>
+			<definition value="Audiology service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-5"/>
+			<display value="Dental hygiene service"/>
+			<definition value="Dental hygiene service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-6"/>
+			<display value="Dietician service"/>
+			<definition value="Dietician service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-7"/>
+			<display value="Hearing aid dispensing"/>
+			<definition value="Hearing aid dispensing"/>
+		</concept>
+		<concept>
+			<code value="85-3-9-9"/>
+			<display value="Homoeopathic service"/>
+			<definition value="Homoeopathic service"/>
+		</concept>
+		<concept>
+			<code value="85-3-9.21"/>
+			<display value="Exercise Physiology"/>
+			<definition value="Exercise Physiology"/>
+		</concept>
+		<concept>
+			<code value="85-3-9.25"/>
+			<display value="Prosthetics &amp; Orthotics"/>
+			<definition value="Prosthetics &amp; Orthotics"/>
+		</concept>
+		<concept>
+			<code value="85-3-9.23"/>
+			<display value="Music Therapy"/>
+			<definition value="Music Therapy"/>
+		</concept>
+		<concept>
+			<code value="85-3-9.22"/>
+			<display value="Home Nursing"/>
+			<definition value="Home Nursing"/>
+		</concept>
+		<concept>
+			<code value="85-3-9.26"/>
+			<display value="Social Work"/>
+			<definition value="Social Work"/>
+		</concept>
+		<concept>
+			<code value="85-3-9.0"/>
+			<display value="Psychology service"/>
+			<definition value="Psychology service"/>
+			<concept>
+				<code value="85-3-9.0.1"/>
+				<display value="Psychology Service nec"/>
+				<definition value="Psychology Service nec"/>
+			</concept>
+			<concept>
+				<code value="85-3-9.0.2"/>
+				<display value="Neuropsychology Service"/>
+				<definition value="Neuropsychology Service"/>
+			</concept>
+			<concept>
+				<code value="85-3-9.0.3"/>
+				<display value="Clinical Psychology Service"/>
+				<definition value="Clinical Psychology Service"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-3-9.19"/>
+			<display value="Aboriginal Health Worker Service"/>
+			<definition value="Aboriginal Health Worker Service"/>
+			<concept>
+				<code value="85-3-9.19.0"/>
+				<display value="Aboriginal Health Worker"/>
+				<definition value="Aboriginal Health Worker"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-3-9.20"/>
+			<display value="Diabetes Educator"/>
+			<definition value="Diabetes Educator"/>
+		</concept>
+		<concept>
+			<code value="85-3-9.24"/>
+			<display value="Nutrition"/>
+			<definition value="Nutrition"/>
+		</concept>
+	</concept>
+	<concept>
+		<code value="85-9-9"/>
+		<display value="Other Health Care Services n.e.c."/>
+		<definition value="Other Health Care Services n.e.c."/>
+		<concept>
+			<code value="85-9-9.10"/>
+			<display value="Community Health Care"/>
+			<definition value="Community Health Care"/>
+			<concept>
+				<code value="85-9-9.10.22"/>
+				<display value="Walk in Centre / non emergency"/>
+				<definition value="Walk in Centre / non emergency"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.16"/>
+				<display value="Outreach Service"/>
+				<definition value="Outreach Service"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.2"/>
+				<display value="Community Cancer Services nec"/>
+				<definition value="Community Cancer Services nec"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.24"/>
+				<display value="Youth drop in/assistance/support"/>
+				<definition value="Youth drop in/assistance/support"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.3"/>
+				<display value="Culturally tailored health promotion"/>
+				<definition value="Culturally tailored health promotion"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.14"/>
+				<display value="Nurse Practitioner led Clinic/s"/>
+				<definition value="Nurse Practitioner led Clinic/s"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.13"/>
+				<display value="Nurse led Clinic/s"/>
+				<definition value="Nurse led Clinic/s"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.12"/>
+				<display value="Men's Health Clinic"/>
+				<definition value="Men's Health Clinic"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.15"/>
+				<display value="Migrant Health Clinic"/>
+				<definition value="Migrant Health Clinic"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.23"/>
+				<display value="Women's Health Clinic"/>
+				<definition value="Women's Health Clinic"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.21"/>
+				<display value="Veterans Services"/>
+				<definition value="Veterans Services"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.17"/>
+				<display value="Refugee Health Clinic"/>
+				<definition value="Refugee Health Clinic"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.6"/>
+				<display value="Further Description - Community Health Care"/>
+				<definition value="Further Description - Community Health Care"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.19"/>
+				<display value="Social Support"/>
+				<definition value="Social Support"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.5"/>
+				<display value="Food Relief/food/meals"/>
+				<definition value="Food Relief/food/meals"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.1"/>
+				<display value="Blood Donation"/>
+				<definition value="Blood Donation"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.4"/>
+				<display value="Family Planning"/>
+				<definition value="Family Planning"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.7"/>
+				<display value="Health Advocacy"/>
+				<definition value="Health Advocacy"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.8"/>
+				<display value="Health information/referral"/>
+				<definition value="Health information/referral"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.9"/>
+				<display value="Home Medicine Review"/>
+				<definition value="Home Medicine Review"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.10"/>
+				<display value="Immunisation"/>
+				<definition value="Immunisation"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.11"/>
+				<display value="Maternal, Child and Family Health"/>
+				<definition value="Maternal, Child and Family Health"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.18"/>
+				<display value="Sexual Health"/>
+				<definition value="Sexual Health"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.10.20"/>
+				<display value="Aboriginal Health Clinic"/>
+				<definition value="Aboriginal Health Clinic"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-9-9.11"/>
+			<display value="Drug/Alcohol Services"/>
+			<definition value="Drug/Alcohol Services"/>
+			<concept>
+				<code value="85-9-9.11.1"/>
+				<display value="Drug and/or alcohol counselling"/>
+				<definition value="Drug and/or alcohol counselling"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.11.2"/>
+				<display value="Drug and/or alcohol information/referral"/>
+				<definition value="Drug and/or alcohol information/referral"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.11.3"/>
+				<display value="Needle &amp; Syringe Program"/>
+				<definition value="Needle &amp; Syringe Program"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.11.4"/>
+				<display value="Non-residential alcohol and/or drug dependence treatment"/>
+				<definition value="Non-residential alcohol and/or drug dependence treatment"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.11.5"/>
+				<display value="Pharmacotherapy (eg. methadone) program"/>
+				<definition value="Pharmacotherapy (eg. methadone) program"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.11.6"/>
+				<display value="Quit program"/>
+				<definition value="Quit program"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.11.7"/>
+				<display value="Residential alcohol and/or drug dependence treatment"/>
+				<definition value="Residential alcohol and/or drug dependence treatment"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.11.8"/>
+				<display value="Drug and/or alcohol support groups"/>
+				<definition value="Drug and/or alcohol support groups"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-9-9.12"/>
+			<display value="Mental Health"/>
+			<definition value="Mental Health"/>
+			<concept>
+				<code value="85-9-9.12.1"/>
+				<display value="General Mental Health Services"/>
+				<definition value="General Mental Health Services"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.2"/>
+				<display value="Mental health residential rehabilitation/community care unit"/>
+				<definition value="Mental health residential rehabilitation/community care unit"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.3"/>
+				<display value="Mental health advocacy"/>
+				<definition value="Mental health advocacy"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.4"/>
+				<display value="Mental health case management/continuing care"/>
+				<definition value="Mental health case management/continuing care"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.5"/>
+				<display value="Mental health information/referral"/>
+				<definition value="Mental health information/referral"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.6"/>
+				<display value="Mental health inpatient services (hospital psychiatric unit) - requires referral"/>
+				<definition value="Mental health inpatient services (hospital psychiatric unit) - requires referral"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.7"/>
+				<display value="Mental health non-residential rehabilitation"/>
+				<definition value="Mental health non-residential rehabilitation"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.8"/>
+				<display value="Mental health assessment/triage/crisis response"/>
+				<definition value="Mental health assessment/triage/crisis response"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.9"/>
+				<display value="Child and Adolescent Mental Health Services"/>
+				<definition value="Child and Adolescent Mental Health Services"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.10"/>
+				<display value="Adult Mental Health Services"/>
+				<definition value="Adult Mental Health Services"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.12.11"/>
+				<display value="Perinatal Mental Health"/>
+				<definition value="Perinatal Mental Health"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-9-9.13"/>
+			<display value="Pain Management"/>
+			<definition value="Pain Management"/>
+			<concept>
+				<code value="85-9-9.13.1"/>
+				<display value="Chronic Pain Service"/>
+				<definition value="Chronic Pain Service"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.13.2"/>
+				<display value="Acute Pain Service"/>
+				<definition value="Acute Pain Service"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.13.3"/>
+				<display value="Pain Management Service nec"/>
+				<definition value="Pain Management Service nec"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-9-9.14"/>
+			<display value="Chronic Disease Management Service"/>
+			<definition value="Chronic Disease Management Service"/>
+		</concept>
+		<concept>
+			<code value="85-9-9.15"/>
+			<display value="Correctional Services"/>
+			<definition value="Correctional Services"/>
+			<concept>
+				<code value="85-9-9.15.1"/>
+				<display value="Prison Health Service"/>
+				<definition value="Prison Health Service"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="85-9-9.16"/>
+			<display value="Cancer Services"/>
+			<definition value="Cancer Services"/>
+			<concept>
+				<code value="85-9-9.16.1"/>
+				<display value="Community Cancer Service nec"/>
+				<definition value="Community Cancer Service nec"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.16.2"/>
+				<display value="Chemotherapy Service"/>
+				<definition value="Chemotherapy Service"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.16.3"/>
+				<display value="Mammogram Service"/>
+				<definition value="Mammogram Service"/>
+			</concept>
+			<concept>
+				<code value="85-9-9.16.4"/>
+				<display value="Skin Cancer Clinic"/>
+				<definition value="Skin Cancer Clinic"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="86-0-1"/>
+		<display value="Aged Care Residential Services"/>
+		<definition value="Aged Care Residential Services"/>
+		<concept>
+			<code value="86-0-1.7"/>
+			<display value="Aged Care Residential"/>
+			<definition value="Aged Care Residential"/>
+			<concept>
+				<code value="86-0-1.7.1"/>
+				<display value="Aged Care Residential Permanent"/>
+				<definition value="Aged Care Residential Permanent"/>
+			</concept>
+			<concept>
+				<code value="86-0-1.7.2"/>
+				<display value="Aged Care Residential Respite Low Care"/>
+				<definition value="Aged Care Residential Respite Low Care"/>
+			</concept>
+			<concept>
+				<code value="86-0-1.7.3"/>
+				<display value="Aged Care Residential Respite High Care"/>
+				<definition value="Aged Care Residential Respite High Care"/>
+			</concept>
+			<concept>
+				<code value="86-0-1.7.0"/>
+				<display value="Aged Care Residential nec"/>
+				<definition value="Aged Care Residential nec"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="87-9-0"/>
+		<display value="Other Social Assistance Services"/>
+		<definition value="Other Social Assistance Services"/>
+		<concept>
+			<code value="87-9-0-1"/>
+			<display value="Adoption service"/>
+			<definition value="Adoption service"/>
+			<concept>
+				<code value="87-9-0-1.2"/>
+				<display value="Adoption &amp; permanent care information/support"/>
+				<definition value="Adoption &amp; permanent care information/support"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="87-9-0-3"/>
+			<display value="Aged care assistance service"/>
+			<definition value="Aged care assistance service"/>
+			<concept>
+				<code value="87-9-0-3-1"/>
+				<display value="Aged care assessment service"/>
+				<definition value="Aged care assessment service"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-3-10"/>
+				<display value="Aged Care Planned Activity Groups"/>
+				<definition value="Aged Care Planned Activity Groups"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-3-2"/>
+				<display value="Aged Care information/referral"/>
+				<definition value="Aged Care information/referral"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-3-3"/>
+				<display value="Case management for older persons"/>
+				<definition value="Case management for older persons"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-3-4"/>
+				<display value="Delivered Meals"/>
+				<definition value="Delivered Meals"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-3-5"/>
+				<display value="Friendly visiting"/>
+				<definition value="Friendly visiting"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-3-6"/>
+				<display value="Home care/housekeeping assistance"/>
+				<definition value="Home care/housekeeping assistance"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-3-7"/>
+				<display value="Home maintenance and repair"/>
+				<definition value="Home maintenance and repair"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-3-8"/>
+				<display value="Personal alarms/alerts"/>
+				<definition value="Personal alarms/alerts"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-3-9"/>
+				<display value="Personal care for older persons"/>
+				<definition value="Personal care for older persons"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="87-9-0-5"/>
+			<display value="Disabilities assistance service"/>
+			<definition value="Disabilities assistance service"/>
+			<concept>
+				<code value="87-9-0-5-1"/>
+				<display value="Acquired brain injury information/referral"/>
+				<definition value="Acquired brain injury information/referral"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-5-2"/>
+				<display value="Disability advocacy"/>
+				<definition value="Disability advocacy"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-5-3"/>
+				<display value="Disability aids &amp; equipment"/>
+				<definition value="Disability aids &amp; equipment"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-5-4"/>
+				<display value="Disability case management"/>
+				<definition value="Disability case management"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-5-5"/>
+				<display value="Disability day programs &amp; activities"/>
+				<definition value="Disability day programs &amp; activities"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-5-6"/>
+				<display value="Disability information/referral"/>
+				<definition value="Disability information/referral"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-5-7"/>
+				<display value="Disability support packages"/>
+				<definition value="Disability support packages"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-5-8"/>
+				<display value="Disability supported accommodation"/>
+				<definition value="Disability supported accommodation"/>
+			</concept>
+			<concept>
+				<code value="87-9-0-5.9"/>
+				<display value="Early childhood intervention"/>
+				<definition value="Early childhood intervention"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="87-9-0-8"/>
+			<display value="Welfare counselling service"/>
+			<definition value="Welfare counselling service"/>
+		</concept>
+		<concept>
+			<code value="87-9-0.10"/>
+			<display value="Housing/Homelessness"/>
+			<definition value="Housing/Homelessness"/>
+			<concept>
+				<code value="87-9-0.10.4"/>
+				<display value="Housing information/referral"/>
+				<definition value="Housing information/referral"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.10.3"/>
+				<display value="Homelessness support"/>
+				<definition value="Homelessness support"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.10.5"/>
+				<display value="Public rental housing"/>
+				<definition value="Public rental housing"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.10.1"/>
+				<display value="Accommodation placement and/or support"/>
+				<definition value="Accommodation placement and/or support"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.10.2"/>
+				<display value="Crisis/emergency accommodation"/>
+				<definition value="Crisis/emergency accommodation"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="87-9-0.11"/>
+			<display value="Child Protection &amp; Family Services"/>
+			<definition value="Child Protection &amp; Family Services"/>
+			<concept>
+				<code value="87-9-0.11.3"/>
+				<display value="Integrated Family Services"/>
+				<definition value="Integrated Family Services"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.11.6"/>
+				<display value="Residential/ out of home care"/>
+				<definition value="Residential/ out of home care"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.11.1"/>
+				<display value="Child protection/child abuse report"/>
+				<definition value="Child protection/child abuse report"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.11.2"/>
+				<display value="Foster care"/>
+				<definition value="Foster care"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.11.5"/>
+				<display value="Placement Protection"/>
+				<definition value="Placement Protection"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.11.4"/>
+				<display value="Kinship Care"/>
+				<definition value="Kinship Care"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.11.7"/>
+				<display value="Domestic and Family Violence Service"/>
+				<definition value="Domestic and Family Violence Service"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.11.8"/>
+				<display value="Support for young people leaving care"/>
+				<definition value="Support for young people leaving care"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="87-9-0.12"/>
+			<display value="Counselling"/>
+			<definition value="Counselling"/>
+			<concept>
+				<code value="87-9-0.12.1"/>
+				<display value="Bereavement counselling"/>
+				<definition value="Bereavement counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.2"/>
+				<display value="Crisis counselling"/>
+				<definition value="Crisis counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.3"/>
+				<display value="Family counselling and/or family therapy"/>
+				<definition value="Family counselling and/or family therapy"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.4"/>
+				<display value="Family violence counselling"/>
+				<definition value="Family violence counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.5"/>
+				<display value="Generalist counselling"/>
+				<definition value="Generalist counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.6"/>
+				<display value="Genetic counselling"/>
+				<definition value="Genetic counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.7"/>
+				<display value="Health counselling"/>
+				<definition value="Health counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.8"/>
+				<display value="Mediation"/>
+				<definition value="Mediation"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.9"/>
+				<display value="Problem gambling counselling"/>
+				<definition value="Problem gambling counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.10"/>
+				<display value="Relationship counselling"/>
+				<definition value="Relationship counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.11"/>
+				<display value="Sexual assault counselling"/>
+				<definition value="Sexual assault counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.12"/>
+				<display value="Trauma counselling"/>
+				<definition value="Trauma counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.13"/>
+				<display value="Victims of crime counselling"/>
+				<definition value="Victims of crime counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.14"/>
+				<display value="Financial counselling"/>
+				<definition value="Financial counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.15"/>
+				<display value="Spiritual Counselling"/>
+				<definition value="Spiritual Counselling"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.12.16"/>
+				<display value="Telephone Counselling"/>
+				<definition value="Telephone Counselling"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="87-9-0.13"/>
+			<display value="Respite/Carer Support"/>
+			<definition value="Respite/Carer Support"/>
+			<concept>
+				<code value="87-9-0.13.1"/>
+				<display value="Carer support"/>
+				<definition value="Carer support"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.13.2"/>
+				<display value="Respite care"/>
+				<definition value="Respite care"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="87-9-0.14"/>
+			<display value="Support Group/s"/>
+			<definition value="Support Group/s"/>
+			<concept>
+				<code value="87-9-0.14.1"/>
+				<display value="Culturally tailored support groups"/>
+				<definition value="Culturally tailored support groups"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.14.2"/>
+				<display value="Cancer Support Groups"/>
+				<definition value="Cancer Support Groups"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.14.3"/>
+				<display value="One on One Support/Mentoring/Coaching"/>
+				<definition value="One on One Support/Mentoring/Coaching"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.14.4"/>
+				<display value="Support groups"/>
+				<definition value="Support groups"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="87-9-0.15"/>
+			<display value="Home Support Services"/>
+			<definition value="Home Support Services"/>
+			<concept>
+				<code value="87-9-0.15.1"/>
+				<display value="Home Modifications Service"/>
+				<definition value="Home Modifications Service"/>
+			</concept>
+			<concept>
+				<code value="87-9-0.15.2"/>
+				<display value="Garden Maintenance Service"/>
+				<definition value="Garden Maintenance Service"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.1"/>
+		<display value="Transport"/>
+		<definition value="Transport"/>
+		<concept>
+			<code value="ex.1.1.0"/>
+			<display value="Transport"/>
+			<definition value="Transport"/>
+			<concept>
+				<code value="ex.1.1.0.8"/>
+				<display value="Patient transport"/>
+				<definition value="Patient transport"/>
+			</concept>
+			<concept>
+				<code value="ex.1.1.0.5"/>
+				<display value="Community bus"/>
+				<definition value="Community bus"/>
+			</concept>
+			<concept>
+				<code value="ex.1.1.0.6"/>
+				<display value="Disability Care Transport"/>
+				<definition value="Disability Care Transport"/>
+			</concept>
+			<concept>
+				<code value="ex.1.1.0.2"/>
+				<display value="Aged Care Transport"/>
+				<definition value="Aged Care Transport"/>
+			</concept>
+			<concept>
+				<code value="ex.1.1.0.7"/>
+				<display value="Flying doctor service"/>
+				<definition value="Flying doctor service"/>
+			</concept>
+			<concept>
+				<code value="ex.1.1.0.1"/>
+				<display value="Air ambulance"/>
+				<definition value="Air ambulance"/>
+			</concept>
+			<concept>
+				<code value="ex.1.1.0.3"/>
+				<display value="Ambulance"/>
+				<definition value="Ambulance"/>
+			</concept>
+			<concept>
+				<code value="ex.1.1.0.4"/>
+				<display value="Blood transport"/>
+				<definition value="Blood transport"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="ex.1.10.0"/>
+			<display value="Legal"/>
+			<definition value="Legal"/>
+			<concept>
+				<code value="ex.1.10.0.2"/>
+				<display value="Legal information/advice/referral"/>
+				<definition value="Legal information/advice/referral"/>
+			</concept>
+			<concept>
+				<code value="ex.1.10.0.1"/>
+				<display value="Legal advocacy"/>
+				<definition value="Legal advocacy"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="ex.1.11.0"/>
+			<display value="Physical Activity &amp; Recreation"/>
+			<definition value="Physical Activity &amp; Recreation"/>
+			<concept>
+				<code value="ex.1.11.0.3"/>
+				<display value="Physical activity programs"/>
+				<definition value="Physical activity programs"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.4"/>
+				<display value="Physical activity group"/>
+				<definition value="Physical activity group"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.6"/>
+				<display value="Pilates"/>
+				<definition value="Pilates"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.2"/>
+				<display value="Personal fitness training"/>
+				<definition value="Personal fitness training"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.1"/>
+				<display value="Martial arts"/>
+				<definition value="Martial arts"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.7"/>
+				<display value="Self defence"/>
+				<definition value="Self defence"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.5"/>
+				<display value="Physical fitness testing"/>
+				<definition value="Physical fitness testing"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.8"/>
+				<display value="Sporting club"/>
+				<definition value="Sporting club"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.9"/>
+				<display value="Yoga"/>
+				<definition value="Yoga"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="ex.1.12.0"/>
+			<display value="Regulation"/>
+			<definition value="Regulation"/>
+			<concept>
+				<code value="ex.1.12.0.1"/>
+				<display value="Food safety"/>
+				<definition value="Food safety"/>
+			</concept>
+			<concept>
+				<code value="ex.1.12.0.2"/>
+				<display value="Workplace health and/or safety inspection and/or certification"/>
+				<definition value="Workplace health and/or safety inspection and/or certification"/>
+			</concept>
+			<concept>
+				<code value="ex.1.12.0.3"/>
+				<display value="Health regulatory, inspection and/or certification"/>
+				<definition value="Health regulatory, inspection and/or certification"/>
+			</concept>
+		</concept>
+		<concept>
+			<code value="ex.1.13.1"/>
+			<display value="Assess-Skill, Ability, Needs"/>
+			<definition value="Assess-Skill, Ability, Needs"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.2"/>
+			<display value="Assist Access/Maintain Employ"/>
+			<definition value="Assist Access/Maintain Employ"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.3"/>
+			<display value="Assist Prod-Pers Care/Safety"/>
+			<definition value="Assist Prod-Pers Care/Safety"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.4"/>
+			<display value="Assist-Integrate School/Ed"/>
+			<definition value="Assist-Integrate School/Ed"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.5"/>
+			<display value="Assistive Equip-General Tasks"/>
+			<definition value="Assistive Equip-General Tasks"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.6"/>
+			<display value="Assistive Equip-Recreation"/>
+			<definition value="Assistive Equip-Recreation"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.7"/>
+			<display value="Assistive Prod-Household Task"/>
+			<definition value="Assistive Prod-Household Task"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.8"/>
+			<display value="Assist-Life Stage, Transition"/>
+			<definition value="Assist-Life Stage, Transition"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.9"/>
+			<display value="Assist-Personal Activities"/>
+			<definition value="Assist-Personal Activities"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.10"/>
+			<display value="Assist-Travel/Transport"/>
+			<definition value="Assist-Travel/Transport"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.11"/>
+			<display value="Behaviour Support"/>
+			<definition value="Behaviour Support"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.12"/>
+			<display value="Community Nursing Care"/>
+			<definition value="Community Nursing Care"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.13"/>
+			<display value="Daily Tasks/Shared Living"/>
+			<definition value="Daily Tasks/Shared Living"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.14"/>
+			<display value="Development-Life Skills"/>
+			<definition value="Development-Life Skills"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.15"/>
+			<display value="Early Childhood Supports"/>
+			<definition value="Early Childhood Supports"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.16"/>
+			<display value="Hearing Equipment"/>
+			<definition value="Hearing Equipment"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.17"/>
+			<display value="Vision Equipment"/>
+			<definition value="Vision Equipment"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.18"/>
+			<display value="Accommodation/Tenancy"/>
+			<definition value="Accommodation/Tenancy"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.19"/>
+			<display value="Home Modification"/>
+			<definition value="Home Modification"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.20"/>
+			<display value="Interpret/Translate"/>
+			<definition value="Interpret/Translate"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.21"/>
+			<display value="Comms &amp; Info Equipment"/>
+			<definition value="Comms &amp; Info Equipment"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.22"/>
+			<display value="Equipment Special Assess Setup"/>
+			<definition value="Equipment Special Assess Setup"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.23"/>
+			<display value="Household Tasks"/>
+			<definition value="Household Tasks"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.24"/>
+			<display value="Other Innovative Supports"/>
+			<definition value="Other Innovative Supports"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.25"/>
+			<display value="Participate Community"/>
+			<definition value="Participate Community"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.26"/>
+			<display value="Personal Mobility Equipment"/>
+			<definition value="Personal Mobility Equipment"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.27"/>
+			<display value="Physical Wellbeing"/>
+			<definition value="Physical Wellbeing"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.28"/>
+			<display value="Plan Management"/>
+			<definition value="Plan Management"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.29"/>
+			<display value="Therapeutic Supports"/>
+			<definition value="Therapeutic Supports"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.30"/>
+			<display value="Training-Travel Independence"/>
+			<definition value="Training-Travel Independence"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.31"/>
+			<display value="Vehicle modifications"/>
+			<definition value="Vehicle modifications"/>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.2"/>
+		<display value="Child Care and/or Kindergarten"/>
+		<definition value="Child Care and/or Kindergarten"/>
+		<concept>
+			<code value="ex.1.2.0"/>
+			<display value="Child Care and/or Kindergarten"/>
+			<definition value="Child Care and/or Kindergarten"/>
+			<concept>
+				<code value="ex.1.2.0.4"/>
+				<display value="Kindergarten/preschool"/>
+				<definition value="Kindergarten/preschool"/>
+			</concept>
+			<concept>
+				<code value="ex.1.2.0.5"/>
+				<display value="Long day child care"/>
+				<definition value="Long day child care"/>
+			</concept>
+			<concept>
+				<code value="ex.1.2.0.6"/>
+				<display value="Occasional child care"/>
+				<definition value="Occasional child care"/>
+			</concept>
+			<concept>
+				<code value="ex.1.2.0.1"/>
+				<display value="Family day care"/>
+				<definition value="Family day care"/>
+			</concept>
+			<concept>
+				<code value="ex.1.2.0.7"/>
+				<display value="Holiday programs"/>
+				<definition value="Holiday programs"/>
+			</concept>
+			<concept>
+				<code value="ex.1.2.0.2"/>
+				<display value="Outside school hours care"/>
+				<definition value="Outside school hours care"/>
+			</concept>
+			<concept>
+				<code value="ex.1.2.0.3"/>
+				<display value="Kindergarten inclusion support for children with a disability"/>
+				<definition value="Kindergarten inclusion support for children with a disability"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.3"/>
+		<display value="Child Development"/>
+		<definition value="Child Development"/>
+		<concept>
+			<code value="ex.1.3.0"/>
+			<display value="Child Development"/>
+			<definition value="Child Development"/>
+			<concept>
+				<code value="ex.1.3.0.1"/>
+				<display value="Children's play programs"/>
+				<definition value="Children's play programs"/>
+			</concept>
+			<concept>
+				<code value="ex.1.3.0.3"/>
+				<display value="Parenting &amp; family support/education"/>
+				<definition value="Parenting &amp; family support/education"/>
+			</concept>
+			<concept>
+				<code value="ex.1.3.0.4"/>
+				<display value="Playgroup"/>
+				<definition value="Playgroup"/>
+			</concept>
+			<concept>
+				<code value="ex.1.3.0.5"/>
+				<display value="Toy library"/>
+				<definition value="Toy library"/>
+			</concept>
+			<concept>
+				<code value="ex.1.3.0.2"/>
+				<display value="School nursing"/>
+				<definition value="School nursing"/>
+			</concept>
+			<concept>
+				<code value="ex.1.3.0.6"/>
+				<display value="Early Parenting Support"/>
+				<definition value="Early Parenting Support"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.4"/>
+		<display value="Crisis Line (GPAH Use Only)"/>
+		<definition value="Crisis Line (GPAH Use Only)"/>
+		<concept>
+			<code value="ex.1.4.0"/>
+			<display value="HDA use only"/>
+			<definition value="HDA use only"/>
+			<concept>
+				<code value="ex.1.4.0.2"/>
+				<display value="HDA use only"/>
+				<definition value="HDA use only"/>
+			</concept>
+			<concept>
+				<code value="ex.1.4.0.1"/>
+				<display value="Crisis - Mental Health"/>
+				<definition value="Crisis - Mental Health"/>
+			</concept>
+			<concept>
+				<code value="ex.1.4.0.3"/>
+				<display value="Sexual Assault"/>
+				<definition value="Sexual Assault"/>
+			</concept>
+			<concept>
+				<code value="ex.1.4.0.4"/>
+				<display value="Youth Crisis"/>
+				<definition value="Youth Crisis"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.5"/>
+		<display value="Death Services"/>
+		<definition value="Death Services"/>
+		<concept>
+			<code value="ex.1.5.0"/>
+			<display value="Death Services"/>
+			<definition value="Death Services"/>
+			<concept>
+				<code value="ex.1.5.0.4"/>
+				<display value="Funeral services"/>
+				<definition value="Funeral services"/>
+			</concept>
+			<concept>
+				<code value="ex.1.5.0.3"/>
+				<display value="Death service information"/>
+				<definition value="Death service information"/>
+			</concept>
+			<concept>
+				<code value="ex.1.5.0.1"/>
+				<display value="Cemetery operation"/>
+				<definition value="Cemetery operation"/>
+			</concept>
+			<concept>
+				<code value="ex.1.5.0.2"/>
+				<display value="Cremation"/>
+				<definition value="Cremation"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.6"/>
+		<display value="Education &amp; Learning"/>
+		<definition value="Education &amp; Learning"/>
+		<concept>
+			<code value="ex.1.6.0"/>
+			<display value="Education &amp; Learning"/>
+			<definition value="Education &amp; Learning"/>
+			<concept>
+				<code value="ex.1.6.0.3"/>
+				<display value="Health education/Health awareness program"/>
+				<definition value="Health education/Health awareness program"/>
+			</concept>
+			<concept>
+				<code value="ex.1.6.0.8"/>
+				<display value="Training &amp; vocational education"/>
+				<definition value="Training &amp; vocational education"/>
+			</concept>
+			<concept>
+				<code value="ex.1.6.0.5"/>
+				<display value="Library"/>
+				<definition value="Library"/>
+			</concept>
+			<concept>
+				<code value="ex.1.6.0.7"/>
+				<display value="Secondary education"/>
+				<definition value="Secondary education"/>
+			</concept>
+			<concept>
+				<code value="ex.1.6.0.6"/>
+				<display value="Primary education"/>
+				<definition value="Primary education"/>
+			</concept>
+			<concept>
+				<code value="ex.1.6.0.2"/>
+				<display value="Education information/referral"/>
+				<definition value="Education information/referral"/>
+			</concept>
+			<concept>
+				<code value="ex.1.6.0.4"/>
+				<display value="Higher education"/>
+				<definition value="Higher education"/>
+			</concept>
+			<concept>
+				<code value="ex.1.6.0.1"/>
+				<display value="Adult/Community Education"/>
+				<definition value="Adult/Community Education"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.7"/>
+		<display value="Employment"/>
+		<definition value="Employment"/>
+		<concept>
+			<code value="ex.1.7.0"/>
+			<display value="Employment"/>
+			<definition value="Employment"/>
+			<concept>
+				<code value="ex.1.7.0.2"/>
+				<display value="Employment placement and/or support"/>
+				<definition value="Employment placement and/or support"/>
+			</concept>
+			<concept>
+				<code value="ex.1.7.0.1"/>
+				<display value="Workplace safety and/or accident prevention"/>
+				<definition value="Workplace safety and/or accident prevention"/>
+			</concept>
+			<concept>
+				<code value="ex.1.7.0.3"/>
+				<display value="Vocational Rehabilitation"/>
+				<definition value="Vocational Rehabilitation"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.8"/>
+		<display value="Financial &amp; Material Aid"/>
+		<definition value="Financial &amp; Material Aid"/>
+		<concept>
+			<code value="ex.1.8.0"/>
+			<display value="Financial &amp; Material Aid"/>
+			<definition value="Financial &amp; Material Aid"/>
+			<concept>
+				<code value="ex.1.8.0.2"/>
+				<display value="Material aid"/>
+				<definition value="Material aid"/>
+			</concept>
+			<concept>
+				<code value="ex.1.8.0.1"/>
+				<display value="Financial assistance"/>
+				<definition value="Financial assistance"/>
+			</concept>
+			<concept>
+				<code value="ex.1.8.0.3"/>
+				<display value="Financial information/advice"/>
+				<definition value="Financial information/advice"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.9"/>
+		<display value="Justice"/>
+		<definition value="Justice"/>
+		<concept>
+			<code value="ex.1.9.0"/>
+			<display value="Justice"/>
+			<definition value="Justice"/>
+			<concept>
+				<code value="ex.1.9.0.1"/>
+				<display value="Community Hours"/>
+				<definition value="Community Hours"/>
+			</concept>
+			<concept>
+				<code value="ex.1.9.0.2"/>
+				<display value="Juvenile Justice"/>
+				<definition value="Juvenile Justice"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.10"/>
+		<display value="Legal"/>
+		<definition value="Legal"/>
+		<concept>
+			<code value="ex.1.10.0"/>
+			<display value="Legal"/>
+			<definition value="Legal"/>
+			<concept>
+				<code value="ex.1.10.0.2"/>
+				<display value="Legal information/advice/referral"/>
+				<definition value="Legal information/advice/referral"/>
+			</concept>
+			<concept>
+				<code value="ex.1.10.0.1"/>
+				<display value="Legal advocacy"/>
+				<definition value="Legal advocacy"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.11"/>
+		<display value="Physical Activity &amp; Recreation"/>
+		<definition value="Physical Activity &amp; Recreation"/>
+		<concept>
+			<code value="ex.1.11.0"/>
+			<display value="Physical Activity &amp; Recreation"/>
+			<definition value="Physical Activity &amp; Recreation"/>
+			<concept>
+				<code value="ex.1.11.0.3"/>
+				<display value="Physical activity programs"/>
+				<definition value="Physical activity programs"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.4"/>
+				<display value="Physical activity group"/>
+				<definition value="Physical activity group"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.6"/>
+				<display value="Pilates"/>
+				<definition value="Pilates"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.2"/>
+				<display value="Personal fitness training"/>
+				<definition value="Personal fitness training"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.1"/>
+				<display value="Martial arts"/>
+				<definition value="Martial arts"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.7"/>
+				<display value="Self defence"/>
+				<definition value="Self defence"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.5"/>
+				<display value="Physical fitness testing"/>
+				<definition value="Physical fitness testing"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.8"/>
+				<display value="Sporting club"/>
+				<definition value="Sporting club"/>
+			</concept>
+			<concept>
+				<code value="ex.1.11.0.9"/>
+				<display value="Yoga"/>
+				<definition value="Yoga"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.12"/>
+		<display value="Regulation"/>
+		<definition value="Regulation"/>
+		<concept>
+			<code value="ex.1.12.0"/>
+			<display value="Regulation"/>
+			<definition value="Regulation"/>
+			<concept>
+				<code value="ex.1.12.0.1"/>
+				<display value="Food safety"/>
+				<definition value="Food safety"/>
+			</concept>
+			<concept>
+				<code value="ex.1.12.0.2"/>
+				<display value="Workplace health and/or safety inspection and/or certification"/>
+				<definition value="Workplace health and/or safety inspection and/or certification"/>
+			</concept>
+			<concept>
+				<code value="ex.1.12.0.3"/>
+				<display value="Health regulatory, inspection and/or certification"/>
+				<definition value="Health regulatory, inspection and/or certification"/>
+			</concept>
+		</concept>
+	</concept>
+	<concept>
+		<code value="ex.1.13"/>
+		<display value="NDIA"/>
+		<definition value="NDIA"/>
+		<concept>
+			<code value="ex.1.13.1"/>
+			<display value="Assess-Skill, Ability, Needs"/>
+			<definition value="Assess-Skill, Ability, Needs"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.2"/>
+			<display value="Assist Access/Maintain Employ"/>
+			<definition value="Assist Access/Maintain Employ"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.3"/>
+			<display value="Assist Prod-Pers Care/Safety"/>
+			<definition value="Assist Prod-Pers Care/Safety"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.4"/>
+			<display value="Assist-Integrate School/Ed"/>
+			<definition value="Assist-Integrate School/Ed"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.5"/>
+			<display value="Assistive Equip-General Tasks"/>
+			<definition value="Assistive Equip-General Tasks"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.6"/>
+			<display value="Assistive Equip-Recreation"/>
+			<definition value="Assistive Equip-Recreation"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.7"/>
+			<display value="Assistive Prod-Household Task"/>
+			<definition value="Assistive Prod-Household Task"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.8"/>
+			<display value="Assist-Life Stage, Transition"/>
+			<definition value="Assist-Life Stage, Transition"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.9"/>
+			<display value="Assist-Personal Activities"/>
+			<definition value="Assist-Personal Activities"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.10"/>
+			<display value="Assist-Travel/Transport"/>
+			<definition value="Assist-Travel/Transport"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.11"/>
+			<display value="Behaviour Support"/>
+			<definition value="Behaviour Support"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.12"/>
+			<display value="Community Nursing Care"/>
+			<definition value="Community Nursing Care"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.13"/>
+			<display value="Daily Tasks/Shared Living"/>
+			<definition value="Daily Tasks/Shared Living"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.14"/>
+			<display value="Development-Life Skills"/>
+			<definition value="Development-Life Skills"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.15"/>
+			<display value="Early Childhood Supports"/>
+			<definition value="Early Childhood Supports"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.16"/>
+			<display value="Hearing Equipment"/>
+			<definition value="Hearing Equipment"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.17"/>
+			<display value="Vision Equipment"/>
+			<definition value="Vision Equipment"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.18"/>
+			<display value="Accommodation/Tenancy"/>
+			<definition value="Accommodation/Tenancy"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.19"/>
+			<display value="Home Modification"/>
+			<definition value="Home Modification"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.20"/>
+			<display value="Interpret/Translate"/>
+			<definition value="Interpret/Translate"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.21"/>
+			<display value="Comms &amp; Info Equipment"/>
+			<definition value="Comms &amp; Info Equipment"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.22"/>
+			<display value="Equipment Special Assess Setup"/>
+			<definition value="Equipment Special Assess Setup"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.23"/>
+			<display value="Household Tasks"/>
+			<definition value="Household Tasks"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.24"/>
+			<display value="Other Innovative Supports"/>
+			<definition value="Other Innovative Supports"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.25"/>
+			<display value="Participate Community"/>
+			<definition value="Participate Community"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.26"/>
+			<display value="Personal Mobility Equipment"/>
+			<definition value="Personal Mobility Equipment"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.27"/>
+			<display value="Physical Wellbeing"/>
+			<definition value="Physical Wellbeing"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.28"/>
+			<display value="Plan Management"/>
+			<definition value="Plan Management"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.29"/>
+			<display value="Therapeutic Supports"/>
+			<definition value="Therapeutic Supports"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.30"/>
+			<display value="Training-Travel Independence"/>
+			<definition value="Training-Travel Independence"/>
+		</concept>
+		<concept>
+			<code value="ex.1.13.31"/>
+			<display value="Vehicle modifications"/>
+			<definition value="Vehicle modifications"/>
+		</concept>
+	</concept>
+</CodeSystem>
