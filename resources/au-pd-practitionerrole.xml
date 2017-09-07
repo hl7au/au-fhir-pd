@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-09-07T01:08:23.14+10:00" />
+    <lastUpdated value="2017-09-07T12:43:13.593+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -84,7 +84,7 @@
       <path value="PractitionerRole.identifier" />
       <sliceName value="pdvendor" />
       <short value="Vendor Directory Identifier" />
-      <definition value="Vendor allocated directory routing identifier." />
+      <definition value="Vendor allocated directory identifier this can be used for search for specific practitioner role directory entry and/or for routing of messages." />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -136,6 +136,7 @@
       <min value="1" />
       <max value="1" />
       <fixedCoding>
+        <system value="http://hl7.org.au/fhir/v2/0203" />
         <code value="VDI" />
         <display value="Vendor Directory Identifier" />
       </fixedCoding>
@@ -145,10 +146,10 @@
         <valueBoolean value="true" />
       </extension>
       <path value="PractitionerRole.identifier.type.text" />
-      <short value="Provider Number Identifier Type Descriptive Text" />
-      <definition value="Provider number identifier type descriptive text" />
+      <short value="Vendoe Directory Identifier Type" />
+      <definition value="Vendor Directory Identifier type descripition" />
       <min value="1" />
-      <fixedString value="Medicare Provider Number" />
+      <fixedString value="Vendor Directory Identifier" />
     </element>
     <element id="PractitionerRole.identifier:pdvendor.system">
       <path value="PractitionerRole.identifier.system" />
@@ -158,8 +159,8 @@
     </element>
     <element id="PractitionerRole.identifier:pdvendor.value">
       <path value="PractitionerRole.identifier.value" />
-      <short value="Vendor Identifier Value" />
-      <definition value="Assigning vendor's identifier value." />
+      <short value="Vendor Directory Identifier Value" />
+      <definition value="Assigning directoy vendor's identifier value." />
       <min value="1" />
       <example>
         <label value="Provider number" />

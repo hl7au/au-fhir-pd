@@ -129,6 +129,12 @@
 				<reference value="ValueSet/valueset-snomed-practitioner-role"/>
 			</sourceReference>
 		</resource>
+				<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/valueset-snomed-healthcareservice-role"/>
+			</sourceReference>
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>

@@ -108,7 +108,7 @@
 	"CodeSystem/codesystem-nhsd-core-services": {
 	  "base": "CodeSystem-codesystem-nhsd-core-services.html"
 	},
-		"ValueSet/valueset-nhsd-healthcareservice-services": {
+	"ValueSet/valueset-nhsd-healthcareservice-services": {
 	  "base": "ValueSet-valueset-nhsd-healthcareservice-services.html"
 	},
 	"CodeSystem/codesystem-nhsd-healthcareservice-services": {
