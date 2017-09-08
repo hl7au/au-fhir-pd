@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-receivingapplication" />
   <meta>
-    <lastUpdated value="2017-09-08T14:00:03.771+10:00" />
+    <lastUpdated value="2017-09-08T16:23:03.287+10:00" />
   </meta>
   <url value="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication" />
   <name value="HL7 V2 Receiving Application" />
@@ -18,6 +18,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="HL7 V2 Receiving Application" />
+      <definition value="Values for routing HLV2 message payloads associated with an endpoint. Suitable for MSH-5." />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
