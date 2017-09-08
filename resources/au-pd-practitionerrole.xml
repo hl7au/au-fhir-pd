@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-09-07T12:43:13.593+10:00" />
+    <lastUpdated value="2017-09-07T12:50:05.807+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -162,10 +162,6 @@
       <short value="Vendor Directory Identifier Value" />
       <definition value="Assigning directoy vendor's identifier value." />
       <min value="1" />
-      <example>
-        <label value="Provider number" />
-        <valueString value="2426621B" />
-      </example>
     </element>
     <element id="PractitionerRole.identifier:pdvendor.assigner">
       <path value="PractitionerRole.identifier.assigner" />
