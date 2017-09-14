@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-healthcareservice" />
   <meta>
-    <lastUpdated value="2017-08-24T10:15:17.191+10:00" />
+    <lastUpdated value="2017-09-14T16:47:56.044+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -61,7 +61,7 @@
       </constraint>
       <mustSupport value="true" />
     </element>
-    <element>
+    <element id="HealthcareService.identifier:hpio.extension">
       <path value="HealthcareService.identifier.extension" />
       <slicing>
         <discriminator>
@@ -134,9 +134,11 @@
     <element id="HealthcareService.identifier:pdvendor">
       <path value="HealthcareService.identifier" />
       <sliceName value="pdvendor" />
+      <short value="Secure Messaging Vendor's Healthcare Service Identifier" />
+      <definition value="Vendor allocated directory identifier this can be used for search for specific healtchare service directory entry and/or for routing of messages." />
       <mustSupport value="true" />
     </element>
-    <element>
+    <element id="HealthcareService.identifier:pdvendor.extension">
       <path value="HealthcareService.identifier.extension" />
       <slicing>
         <discriminator>
@@ -151,7 +153,6 @@
       <sliceName value="pdvendorassigningauthority" />
       <short value="Optional Extensions Element" />
       <definition value="Optional Extension Element - found in all resources." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -164,14 +165,6 @@
       <short value="Vendor Directory Identifier Type" />
       <definition value="Element describing the type of identifier" />
       <min value="1" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://hl7.org.au/fhir/v2/0203" />
-          <code value="VDI" />
-          <display value="Vendor Directory Identifier" />
-        </coding>
-        <text value="Vendor Directory Identifier" />
-      </fixedCodeableConcept>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType" />
@@ -185,15 +178,24 @@
     </element>
     <element id="HealthcareService.identifier:pdvendor.type.coding">
       <path value="HealthcareService.identifier.type.coding" />
+      <short value="Vendor Directory Identifier" />
+      <definition value="Type code for vendor directory identifier" />
       <min value="1" />
       <max value="1" />
+      <fixedCoding>
+        <code value="VDI" />
+        <display value="Vendor Directory Identifier" />
+      </fixedCoding>
     </element>
     <element id="HealthcareService.identifier:pdvendor.type.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="HealthcareService.identifier.type.text" />
+      <short value="Vendor Directory Identifier Type" />
+      <definition value="Vendor Directory Identifier type descripition" />
       <min value="1" />
+      <fixedString value="Vendor Directory Identifier" />
     </element>
     <element id="HealthcareService.identifier:pdvendor.system">
       <path value="HealthcareService.identifier.system" />

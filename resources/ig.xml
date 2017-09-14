@@ -147,10 +147,16 @@
 				<reference value="ValueSet/valueset-nhsd-healthcareservice-role"/>
 			</sourceReference>
 		</resource>
-			<resource>
+		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ConceptMap/conceptmap-snomed-nhsd-core"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ConceptMap/conceptmap-snomed-nhsd-healthcareservice-role"/>
 			</sourceReference>
 		</resource>
 			<resource>
