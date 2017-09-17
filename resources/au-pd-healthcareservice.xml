@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-healthcareservice" />
   <meta>
-    <lastUpdated value="2017-09-14T16:47:56.044+10:00" />
+    <lastUpdated value="2017-09-17T11:59:54.246+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -38,7 +38,7 @@
           <type value="value" />
           <path value="type" />
         </discriminator>
-        <rules value="openAtEnd" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="HealthcareService.identifier:hpio">
@@ -230,8 +230,43 @@
     </element>
     <element id="HealthcareService.specialty">
       <path value="HealthcareService.specialty" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.specialty:nhsdhealthcareservicerole">
+      <path value="HealthcareService.specialty" />
+      <sliceName value="nhsdhealthcareservicerole" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="service-specialty" />
+        </extension>
+        <strength value="required" />
+        <description value="NHSD Healthcare Service Roles" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-nhsd-healthcareservice-services" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="HealthcareService.specialty:snomedservicerole">
+      <path value="HealthcareService.specialty" />
+      <sliceName value="snomedservicerole" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="service-specialty" />
+        </extension>
+        <strength value="required" />
+        <description value="Healthcare Service Role" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-snomed-healthcareservice-role" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="HealthcareService.location">
       <path value="HealthcareService.location" />

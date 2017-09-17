@@ -14,9 +14,9 @@
 	</category>
 	<type>
 		<coding>
-			<system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
-			<code value="8401-15"/>
-			<display value="Public acute care Hospital"/>
+			<system value="http://snomed.info/sct"/>
+			<code value="310000008"/>
+			<display value="Accident and Emergency service"/>
 		</coding>
 	</type>
 	<location>

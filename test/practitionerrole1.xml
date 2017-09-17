@@ -4,8 +4,8 @@
 		<type>
 			<coding>
 				<system value="http://hl7.org/fhir/v2/0203"/>
-				<code value="PRN"/>
-				<display value="Provider Number"/>
+				<code value="UPIN"/>
+				<display value="Medicare/CMS (formerly HCFA)'s Universal Physician Identification number"/>
 			</coding>
 			<text value="Medicare Provider Number"/>
 		</type>
@@ -21,7 +21,7 @@
 	</organization>
 	<code>
 		<coding>
-			<system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+			<system value=""/>
 			<code value="253111"/>
 			<display value="General Practitioner"/>
 		</coding>
