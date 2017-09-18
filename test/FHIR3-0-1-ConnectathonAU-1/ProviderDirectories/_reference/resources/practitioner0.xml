@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Practitioner xmlns="http://hl7.org/fhir">
-	<id value="0"/>
+	<id value="practitioner0"/>
 	<identifier>
 		<type>
 			<coding>
@@ -26,6 +27,7 @@
 	</identifier>
 	<active value="true"/>
 	<name>
+		<use value="usual"/>
 		<family value="Mayo"/>
 		<given value="Helen"/>
 		<prefix value="Dr"/>

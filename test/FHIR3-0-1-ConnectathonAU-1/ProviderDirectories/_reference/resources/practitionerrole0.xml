@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <PractitionerRole xmlns="http://hl7.org/fhir">
-	<id value="0"/>
+	<id value="practitionerrole0"/>
 	<identifier>
 		<type>
 			<coding>
@@ -14,10 +15,10 @@
 	</identifier>
 	<active value="true"/>
 	<practitioner>
-		<reference value="Practitioner/0"/>
+		<reference value="Practitioner/practitioner0"/>
 	</practitioner>
 	<organization>
-		<reference value="Organization/0"/>
+		<reference value="Organization/organization0"/>
 	</organization>
 	<code>
 		<coding>
@@ -27,7 +28,7 @@
 		</coding>
 	</code>
 	<location>
-		<reference value="Location/0"/>
+		<reference value="Location/location0"/>
 	</location>
 	<telecom>
 		<system value="phone"/>
@@ -40,6 +41,6 @@
 		<use value="work"/>
 	</telecom>
 	<endpoint>
-		<reference value="Endpoint/0"/>
+		<reference value="Endpoint/endpoint0"/>
 	</endpoint>
 </PractitionerRole>

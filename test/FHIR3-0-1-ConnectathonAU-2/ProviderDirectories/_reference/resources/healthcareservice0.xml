@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="example0"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href="Organization-example0.html">Generated Summary: id: example0; HPI-O = 8003627500000328; active; <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401}">Hospitals (except Psychiatric Hospitals)</span>, <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401-15}">Public acute care Hospital</span>; name: Downunder Hospital; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>category</b>: Hospitals (except Psychiatric Hospitals) <span style="background: LightGoldenRodYellow">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 code '8401' = 'Hospitals (except Psychiatric Hospitals)', given as 'Hospitals (except Psychiatric Hospitals)'})</span></p><p><b>type</b>: Accident and Emergency service <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '310000008' = 'Accident and Emergency service (qualifier value)', given as 'Accident and Emergency service'})</span></p><p><b>location</b>: <a href="Location-example0.html">Generated Summary: id: example0; status: active; name: Downunder Hospital Blacktown; ph: 025553555(WORK)</a></p></div>
+  </text>
+  <active value="true"/>
+  <providedBy>
+    <reference value="Organization/example0"/>
+  </providedBy>
+  <category>
+    <coding>
+      <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
+      <code value="8401"/>
+      <display value="Hospitals (except Psychiatric Hospitals)"/>
+    </coding>
+  </category>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="310000008"/>
+      <display value="Accident and Emergency service"/>
+    </coding>
+  </type>
+  <location>
+    <reference value="Location/example0"/>
+  </location>
+</HealthcareService>

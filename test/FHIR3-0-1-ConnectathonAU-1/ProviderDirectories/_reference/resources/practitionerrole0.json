@@ -1,0 +1,64 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "practitionerrole0",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span style=\"color: gray;\">role:</span> Cardiologist<br /><span style=\"color: gray;\">Work - Phone:</span> 025553333<br /><span style=\"color: gray;\">Work - Email:</span> helen.mayo@downunderhospital.com.au<br /><span style=\"color: gray;\">Medicare Provider Number:</span> 2426621B\r\n</div>"
+    },
+    "identifier": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/v2/0203",
+                        "code": "PRN",
+                        "display": "Provider Number"
+                    }
+                ],
+                "text": "Medicare Provider Number"
+            },
+            "system": "http://ns.electronichealth.net.au/id/medicare-provider-number",
+            "value": "2426621B"
+        }
+    ],
+    "active": true,
+    "practitioner": {
+        "reference": "Practitioner/practitioner0"
+    },
+    "organization": {
+        "reference": "Organization/organization0"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0",
+                    "code": "253312",
+                    "display": "Cardiologist"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "reference": "Location/location0"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "025553333",
+            "use": "work"
+        },
+        {
+            "system": "email",
+            "value": "helen.mayo@downunderhospital.com.au",
+            "use": "work"
+        }
+    ],
+    "endpoint": [
+        {
+            "reference": "Endpoint/endpoint0"
+        }
+    ]
+}

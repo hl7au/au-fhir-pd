@@ -50,7 +50,7 @@ Search for healthcare service based on specialties offered
 
 `GET [base]/HealthcareService?specialty=[system]|[code]`
 
-*Example:* `GET [base]/HealthcareService?specialty=http://snomed.info/sct|17561000`
+*Example:* `GET [base]/HealthcareService?specialty=http://snomed.info/sct|3471000175103`
 
 *Support:*
 

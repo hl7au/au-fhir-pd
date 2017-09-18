@@ -22,4 +22,13 @@
 	<location>
 		<reference value="Location/example0"/>
 	</location>
+	<name value="Downunder Hospital Accident and Emergency"/>
+	<telecom>
+		<system value="phone"/>
+		<value value="025553333"/>
+		<use value="work"/>
+	</telecom>
+	<endpoint>
+		<reference value="Endpoint/example0"/>
+	</endpoint>
 </HealthcareService>

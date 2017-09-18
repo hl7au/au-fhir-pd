@@ -1,0 +1,43 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "example0",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>identifier</b>: Medicare Provider Number = 2426621B</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-example0.html\">Generated Summary: id: example0; HPI-I = 8003610833334085, Prescriber Number = 453221; active; Helen Mayo ; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>organization</b>: <a href=\"Organization-example0.html\">Generated Summary: id: example0; HPI-O = 8003627500000328; active; <span title=\"Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401}\">Hospitals (except Psychiatric Hospitals)</span>, <span title=\"Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401-15}\">Public acute care Hospital</span>; name: Downunder Hospital; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>location</b>: <a href=\"Location-example0.html\">Generated Summary: id: example0; status: active; name: Downunder Hospital Blacktown; ph: 025553555(WORK)</a></p><p><b>telecom</b>: ph: 025553333(WORK)</p></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Medicare Provider Number"
+      },
+      "system": "http://ns.electronichealth.net.au/id/provider-number",
+      "value": "2426621B"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/example0"
+  },
+  "organization": {
+    "reference": "Organization/example0"
+  },
+  "location": [
+    {
+      "reference": "Location/example0"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "025553333",
+      "use": "work"
+    }
+  ]
+}

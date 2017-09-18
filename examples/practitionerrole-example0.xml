@@ -72,4 +72,7 @@
 		<value value="025553333"/>
 		<use value="work"/>
 	</telecom>
+	<endpoint>
+		<reference value="Endpoint/example0"/>
+	</endpoint>
 </PractitionerRole>

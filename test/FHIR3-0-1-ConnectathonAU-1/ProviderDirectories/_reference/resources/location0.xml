@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Location xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/location.xsd">
-	<id value="0"/>
+<Location xmlns="http://hl7.org/fhir">
+	<id value="location0"/>
 	<status value="active"/>
 	<name value="Downunder Hospital Blacktown"/>
 	<telecom>

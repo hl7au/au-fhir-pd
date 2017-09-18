@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<HealthcareService xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/healthcareservice.xsd">
-	<id value="0"/>
+<HealthcareService xmlns="http://hl7.org/fhir">
+	<id value="healthcareservice0"/>
 	<active value="true"/>
 	<providedBy>
-		<reference value="Organization/0"/>
+		<reference value="Organization/organization0"/>
 	</providedBy>
 	<category>
 		<coding>
@@ -20,7 +20,7 @@
 		</coding>
 	</type>
 	<location>
-		<reference value="Location/0"/>
+		<reference value="Location/location0"/>
 	</location>
 	<name value="Downunder Hospital"/>
 	<telecom>
@@ -29,6 +29,6 @@
 		<use value="work"/>
 	</telecom>
 	<endpoint>
-		<reference value="Endpoint/0"/>
+		<reference value="Endpoint/endpoint0"/>
 	</endpoint>
 </HealthcareService>
