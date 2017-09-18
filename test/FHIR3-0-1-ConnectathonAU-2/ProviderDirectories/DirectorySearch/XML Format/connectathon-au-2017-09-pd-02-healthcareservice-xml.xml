@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestScript xmlns="http://hl7.org/fhir">
+	<id value="connectathon-au-2017-09-pd-02-healthcareservice-xml"/>
+	<url value="http://hl7.org.au/fhir3-0-1/TestScript/connectathon-au-2017-09-pd-02-practitionerrole-xml"/>
+	<name value="FHIR Connectathon AU September 2017 - Provider Directory - Scenario 2 - HelathcareService Search - XML"/>
+	<status value="draft"/>
+	<date value="2017-09-17"/>
+	<publisher value="AEGIS.net, Inc."/>
+	<contact>
+		<name value="HL7 Australia"/>
+		<telecom>
+			<system value="url"/>
+			<value value="http://www.hl7.org.au"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="Contact Oridashi"/>
+		<telecom>
+			<system value="email"/>
+			<value value="info@oridashi.com.au"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="Touchstone Support"/>
+		<telecom>
+			<system value="email"/>
+			<value value="Touchstone_Support@aegis.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="PractitionerRole search capabilities tests; resource format XML; test a FHIR server's PractitionerRole search operation support using the parameters: identifier, practitioner.name, practitioner.family, practitioner.given. Default values for the search parameters are based on the Practitioner Resource Example and can be modified to allow testing against other known PractitionerRole and Practitioner resource instances."/>
+	<copyright value="© HL7 AU 2017; © Oridashi 2017; © AEGIS.net, Inc. 2015+"/>
+	<metadata>
+		<capability>
+			<required value="true"/>
+			<description value="PractitionerRole read and search operations"/>
+			<link value="http://hl7.org/fhir/STU3/http.html#read"/>
+			<link value="http://hl7.org/fhir/STU3/http.html#search"/>
+			<capabilities>
+				<reference value="../../_reference/capabilities/PractitionerRoleCapabilityStatement.xml"/>
+			</capabilities>
+		</capability>
+	</metadata>
+	<profile id="practitionerrole-profile">
+		<reference value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+	</profile>
+	<profile id="au-pd-practitionerrole-profile">
+		<reference value="http://hl7.org.au/fhir/StructureDefinition/au-pd-healthcareservice"/>
+	</profile>
+	<variable>
+		<name value="HealthcareServiceSearchIdentifierSystemCriteria"/>
+		<defaultValue value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
+	</variable>
+	<variable>
+		<name value="HealthcareServiceSearchIdentifierValueCriteria"/>
+		<defaultValue value="8003627500000328"/>
+	</variable>
+	<variable>
+		<name value="HealthcareServiceSearchNameCriteria"/>
+		<defaultValue value="Downunder Hospital Accident and Emergency"/>
+	</variable>
+	<variable>
+		<name value="OrganizationSearchNameCriteria"/>
+		<defaultValue value="Downunder Hospital"/>
+	</variable>
+	<variable>
+		<name value="HealthcareServiceSearchSpecialtySystemCriteria"/>
+		<defaultValue value="http://snomed.info/sct"/>
+	</variable>
+	<variable>
+		<name value="HealthcareServiceSearchSpecialtyValueCriteria"/>
+		<defaultValue value="310000008"/>
+	</variable>
+	<variable>
+		<name value="HealthcareServiceResourceId"/>
+		<path value="HealthcareService/id"/>
+		<sourceId value="search-response"/>
+	</variable>
+	<test id="01-HealthcareServiceSearchIdentifier">
+		<name value="HealthcareServiceSearchIdentifier"/>
+		<description value="Search HealthcareService using the identifier search parameter with the provided identifier.system and identifier.value data values. Include the referenced Organization, EndPoint and Location resources."/>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="search"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<description value="Search for HealthcareService matches using the practitioner.identifier search parameter."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="?identifier=${HealthcareServiceSearchIdentifierSystemCriteria}|${HealthcareServiceSearchIdentifierValueCriteria}&amp;_include=HealthcareService:organization&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
+				<responseId value="search-response"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<response value="okay"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is Bundle."/>
+				<direction value="response"/>
+				<resource value="Bundle"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that there is at least one record returned. Although not expected, there could be other HealthcareService records returned."/>
+				<direction value="response"/>
+				<operator value="greaterThan"/>
+				<path value="/Bundle/total"/>
+				<value value="0"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="read"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<description value="Read the first HealthcareService found in the practitioner.identifier search and verify the contents."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="/${HealthcareServiceResourceId}"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<responseCode value="200"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is HealthcareService"/>
+				<direction value="response"/>
+				<resource value="HealthcareService"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the base FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the HL7 AU Provider Directory IG FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="au-pd-healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+	</test>
+	<test id="02-HealthcareServiceSearchName">
+		<name value="HealthcareServiceSearchName"/>
+		<description value="Search HealthcareService using the name search parameter with the provided service name value. Include the referenced Organization, EndPoint and Location resources."/>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="search"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<description value="Search for HealthcareService matches using the name search."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="?name=${HealthcareServiceSearchNameCriteria}&amp;_include=HealthcareService:organization&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
+				<responseId value="search-response"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<response value="okay"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is Bundle."/>
+				<direction value="response"/>
+				<resource value="Bundle"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that there is at least one record returned. Although not expected, there could be other HealthcareService records returned."/>
+				<direction value="response"/>
+				<operator value="greaterThan"/>
+				<path value="/Bundle/total"/>
+				<value value="0"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="read"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<description value="Read the first HealthcareService found in the practitioner.name search and verify the contents contain a telecom and physical location."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="/${HealthcareServiceResourceId}"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<responseCode value="200"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is HealthcareService"/>
+				<direction value="response"/>
+				<resource value="HealthcareService"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the base FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the HL7 AU Provider Directory IG FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="au-pd-healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+	</test>
+	<test id="03-OrganizationSearchName">
+		<name value="OrganizationSearchName"/>
+		<description value="Search HealthcareService using the organization.name search parameter with the provided organization name value. Include the referenced Organization, EndPoint and Location resources."/>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="search"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<description value="Search for HealthcareService matches using the name search."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="?organization.name=${OrganizationSearchNameCriteria}&amp;_include=HealthcareService:organization&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
+				<responseId value="search-response"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<response value="okay"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is Bundle."/>
+				<direction value="response"/>
+				<resource value="Bundle"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that there is at least one record returned. Although not expected, there could be other HealthcareService records returned."/>
+				<direction value="response"/>
+				<operator value="greaterThan"/>
+				<path value="/Bundle/total"/>
+				<value value="0"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="read"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<description value="Read the first HealthcareService found in the practitioner.name search and verify the contents contain a telecom and physical location."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="/${HealthcareServiceResourceId}"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<responseCode value="200"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is HealthcareService"/>
+				<direction value="response"/>
+				<resource value="HealthcareService"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the base FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the HL7 AU Provider Directory IG FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="au-pd-healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+	</test>
+	<test id="04-HealthcareServiceSearchSpecialty">
+		<name value="HealthcareServiceSearchSpecialty"/>
+		<description value="Search HealthcareService using the specialty search parameter with the provided specialty data value. Include the referenced Organization, EndPoint and Location resources."/>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="search"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<description value="Search for HealthcareService matches using the specialty search. Search with system url specified."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="?specialty=${HealthcareServiceSearchSpecialtySystemCriteria}|{HealthcareServiceSearchSpecialtyValueCriteria}&amp;_include=PractitionerRole:organization&amp;_include=PractitionerRole:endpoint&amp;_include=PractitionerRole:location"/>
+				<responseId value="search-response"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<response value="okay"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is Bundle."/>
+				<direction value="response"/>
+				<resource value="Bundle"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that there is at least one record returned. Although not expected, there could be other HealthcareService records returned."/>
+				<direction value="response"/>
+				<operator value="greaterThan"/>
+				<path value="/Bundle/total"/>
+				<value value="0"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="read"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<description value="Read the first HealthcareService found in the specialty search and verify the contents."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="/${HealthcareServiceResourceId}"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<responseCode value="200"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is HealthcareService"/>
+				<direction value="response"/>
+				<resource value="HealthcareService"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the base FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the HL7 AU Provider Directory IG FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="au-pd-healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+	</test>
+	<test id="05-HealthcareServiceSearchOrganizationIdentifier">
+		<name value="HealthcareServiceSearchOrganizationIdentifier"/>
+		<description value="Search HealthcareService using the organization.identifier search parameters. Include the referenced Organization, EndPoint and Location resources."/>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="search"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<description value="Search HealthcareService matches using the organization.identifier search parameters."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="?organization.identifier=${HealthcareServiceSearchIdentifierSystemCriteria}|${HealthcareServiceSearchIdentifierValueCriteria}&amp;_include=HealthcareService:organization&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
+				<responseId value="search-response"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<response value="okay"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is Bundle."/>
+				<direction value="response"/>
+				<resource value="Bundle"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that there is at least one record returned. Although not expected, there could be other HealthcareService records returned."/>
+				<direction value="response"/>
+				<operator value="greaterThan"/>
+				<path value="/Bundle/total"/>
+				<value value="0"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="read"/>
+				</type>
+				<resource value="PractitionerRole"/>
+				<description value="Read the first HealthcareService found in theorganization.identifier search and verify the contents."/>
+				<accept value="xml"/>
+				<contentType value="none"/>
+				<params value="/${PractitionerRoleResourceId}"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK)."/>
+				<direction value="response"/>
+				<responseCode value="200"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP Header Content-Type contains the FHIR mime-type 'application/xml+fhir'."/>
+				<direction value="response"/>
+				<contentType value="xml"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned resource type is HealthcareService"/>
+				<direction value="response"/>
+				<resource value="HealthcareService"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the base FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HealthcareService conforms to the HL7 AU Provider Directory IG FHIR specification. Warning only to allow for Example code systems."/>
+				<direction value="response"/>
+				<validateProfileId value="au-pd-healthcareservice-profile"/>
+				<warningOnly value="true"/>
+			</assert>
+		</action>
+	</test>
+</TestScript>
