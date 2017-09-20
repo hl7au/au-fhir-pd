@@ -1,6 +1,6 @@
 {
   "resourceType": "Endpoint",
-  "id": "example0",
+  "id": "endpoint0",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2017-08-18T05:47:30.879+00:00"

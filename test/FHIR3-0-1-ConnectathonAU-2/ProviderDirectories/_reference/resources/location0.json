@@ -1,6 +1,6 @@
 {
   "resourceType": "Location",
-  "id": "example0",
+  "id": "location0",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>status</b>: active</p><p><b>name</b>: Downunder Hospital Blacktown</p><p><b>telecom</b>: ph: 025553555(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p></div>"

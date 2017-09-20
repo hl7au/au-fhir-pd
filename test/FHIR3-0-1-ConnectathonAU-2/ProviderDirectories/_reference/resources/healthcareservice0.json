@@ -1,13 +1,13 @@
 {
   "resourceType": "HealthcareService",
-  "id": "example0",
+  "id": "healthcareservice0",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-example0.html\">Generated Summary: id: example0; HPI-O = 8003627500000328; active; <span title=\"Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401}\">Hospitals (except Psychiatric Hospitals)</span>, <span title=\"Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401-15}\">Public acute care Hospital</span>; name: Downunder Hospital; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>category</b>: Hospitals (except Psychiatric Hospitals) <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 code '8401' = 'Hospitals (except Psychiatric Hospitals)', given as 'Hospitals (except Psychiatric Hospitals)'})</span></p><p><b>type</b>: Accident and Emergency service <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '310000008' = 'Accident and Emergency service (qualifier value)', given as 'Accident and Emergency service'})</span></p><p><b>location</b>: <a href=\"Location-example0.html\">Generated Summary: id: example0; status: active; name: Downunder Hospital Blacktown; ph: 025553555(WORK)</a></p><p><b>name</b>: Downunder Hospital Accident and Emergency</p><p><b>telecom</b>: ph: 025553333(WORK)</p><p><b>endpoint</b>: <a href=\"Endpoint-example0.html\">Generated Summary: id: example0; status: active; <span title=\"{http://ns.electronichealth.net.au/smd/intf http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010}\">Sealed Message Delivery</span>; name: Medical Objects Test Secure Messaging Endpoint; jared@example.org(WORK); period: 18/08/2017 --&gt; (ongoing); <span title=\"Codes: {http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706}, {http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type http://ns.electronichealth.net.au/ds/sc/deliver/hl7Mdm/2012}\">Simplified Profile for HL7 V2.4 REF message</span>; payloadMimeType: application/hl7-v2; address: https://smd-ep.test.medical-objects.com.au/smd/2010</a></p></div>"
   },
   "active": true,
   "providedBy": {
-    "reference": "Organization/example0"
+    "reference": "Organization/organization0"
   },
   "category": {
     "coding": [
@@ -31,7 +31,7 @@
   ],
   "location": [
     {
-      "reference": "Location/example0"
+      "reference": "Location/location0"
     }
   ],
   "name": "Downunder Hospital Accident and Emergency",
@@ -44,7 +44,7 @@
   ],
   "endpoint": [
     {
-      "reference": "Endpoint/example0"
+      "reference": "Endpoint/endpoint0"
     }
   ]
 }

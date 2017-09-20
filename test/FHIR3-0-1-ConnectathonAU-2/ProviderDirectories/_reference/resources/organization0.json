@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "example0",
+  "id": "organization0",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>identifier</b>: HPI-O = 8003627500000328</p><p><b>active</b>: true</p><p><b>type</b>: Hospitals (except Psychiatric Hospitals) <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 code '8401' = 'Hospitals (except Psychiatric Hospitals)', given as 'Hospitals (except Psychiatric Hospitals)'})</span>, Public acute care Hospital <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 code '8401-15' = 'Public acute care Hospital', given as 'Public acute care Hospital'})</span></p><p><b>name</b>: Downunder Hospital</p><p><b>telecom</b>: helen.mayo@downunderhospital.com.au(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p></div>"

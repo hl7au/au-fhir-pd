@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Endpoint xmlns="http://hl7.org/fhir">
-  <id value="example0"/>
+  <id value="endpoint0"/>
   <meta>
     <versionId value="1"/>
     <lastUpdated value="2017-08-18T05:47:30.879+00:00"/>

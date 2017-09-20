@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "example0",
+  "id": "practitioner0",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>identifier</b>: HPI-I = 8003610833334085, Prescriber Number = 453221</p><p><b>active</b>: true</p><p><b>name</b>: Helen Mayo </p><p><b>telecom</b>: helen.mayo@downunderhospital.com.au(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p></div>"

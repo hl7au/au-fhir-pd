@@ -4,7 +4,7 @@
 	<url value="http://hl7.org.au/fhir3-0-1/TestScript/connectathon-au-2017-09-pd-02-practitionerrole-xml"/>
 	<name value="FHIR Connectathon AU September 2017 - Provider Directory - Scenario 2 - HelathcareService Search - XML"/>
 	<status value="draft"/>
-	<date value="2017-09-17"/>
+	<date value="2017-09-18"/>
 	<publisher value="AEGIS.net, Inc."/>
 	<contact>
 		<name value="HL7 Australia"/>
@@ -30,25 +30,27 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="PractitionerRole search capabilities tests; resource format XML; test a FHIR server's PractitionerRole search operation support using the parameters: identifier, practitioner.name, practitioner.family, practitioner.given. Default values for the search parameters are based on the Practitioner Resource Example and can be modified to allow testing against other known PractitionerRole and Practitioner resource instances."/>
+	<description value="HealthcareService search capabilities tests; resource format XML; test a FHIR server's HealthcareService search operation support using the parameters: identifier, (service) name, organization.name, specialty, organization.identifier. Default values for the search parameters are based on the HealthcareService Resource Example and can be modified to allow testing against other known HealthcareService resource instances."/>
 	<copyright value="© HL7 AU 2017; © Oridashi 2017; © AEGIS.net, Inc. 2015+"/>
 	<metadata>
 		<capability>
 			<required value="true"/>
-			<description value="PractitionerRole read and search operations"/>
+			<description value="HealthcareService read and search operations"/>
 			<link value="http://hl7.org/fhir/STU3/http.html#read"/>
 			<link value="http://hl7.org/fhir/STU3/http.html#search"/>
 			<capabilities>
-				<reference value="../../_reference/capabilities/PractitionerRoleCapabilityStatement.xml"/>
+				<reference value="../../_reference/capabilities/HealthcareServiceCapabilityStatement.xml"/>
 			</capabilities>
 		</capability>
 	</metadata>
-	<profile id="practitionerrole-profile">
-		<reference value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+
+	<profile id="healthcareservice-profile">
+		<reference value="http://hl7.org.au/fhir/StructureDefinition/HealthcareService"/>
 	</profile>
-	<profile id="au-pd-practitionerrole-profile">
+	<profile id="au-pd-healthcareservice-profile">
 		<reference value="http://hl7.org.au/fhir/StructureDefinition/au-pd-healthcareservice"/>
 	</profile>
+
 	<variable>
 		<name value="HealthcareServiceSearchIdentifierSystemCriteria"/>
 		<defaultValue value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
@@ -78,6 +80,7 @@
 		<path value="HealthcareService/id"/>
 		<sourceId value="search-response"/>
 	</variable>
+
 	<test id="01-HealthcareServiceSearchIdentifier">
 		<name value="HealthcareServiceSearchIdentifier"/>
 		<description value="Search HealthcareService using the identifier search parameter with the provided identifier.system and identifier.value data values. Include the referenced Organization, EndPoint and Location resources."/>
@@ -125,6 +128,7 @@
 				<value value="0"/>
 			</assert>
 		</action>
+
 		<action>
 			<operation>
 				<type>
@@ -176,6 +180,7 @@
 			</assert>
 		</action>
 	</test>
+
 	<test id="02-HealthcareServiceSearchName">
 		<name value="HealthcareServiceSearchName"/>
 		<description value="Search HealthcareService using the name search parameter with the provided service name value. Include the referenced Organization, EndPoint and Location resources."/>
@@ -223,6 +228,7 @@
 				<value value="0"/>
 			</assert>
 		</action>
+
 		<action>
 			<operation>
 				<type>
@@ -274,6 +280,7 @@
 			</assert>
 		</action>
 	</test>
+
 	<test id="03-OrganizationSearchName">
 		<name value="OrganizationSearchName"/>
 		<description value="Search HealthcareService using the organization.name search parameter with the provided organization name value. Include the referenced Organization, EndPoint and Location resources."/>
@@ -321,6 +328,7 @@
 				<value value="0"/>
 			</assert>
 		</action>
+
 		<action>
 			<operation>
 				<type>
@@ -372,6 +380,7 @@
 			</assert>
 		</action>
 	</test>
+
 	<test id="04-HealthcareServiceSearchSpecialty">
 		<name value="HealthcareServiceSearchSpecialty"/>
 		<description value="Search HealthcareService using the specialty search parameter with the provided specialty data value. Include the referenced Organization, EndPoint and Location resources."/>
@@ -419,6 +428,7 @@
 				<value value="0"/>
 			</assert>
 		</action>
+
 		<action>
 			<operation>
 				<type>
@@ -470,6 +480,7 @@
 			</assert>
 		</action>
 	</test>
+
 	<test id="05-HealthcareServiceSearchOrganizationIdentifier">
 		<name value="HealthcareServiceSearchOrganizationIdentifier"/>
 		<description value="Search HealthcareService using the organization.identifier search parameters. Include the referenced Organization, EndPoint and Location resources."/>
@@ -517,6 +528,7 @@
 				<value value="0"/>
 			</assert>
 		</action>
+
 		<action>
 			<operation>
 				<type>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-09-14T16:42:29.057+10:00" />
+    <lastUpdated value="2017-09-20T09:04:00.102+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -85,6 +85,7 @@
       <sliceName value="pdvendor" />
       <short value="Secure Messaging Vendor's Provider Identifier" />
       <definition value="Vendor allocated directory identifier this can be used for search for specific practitioner role directory entry and/or for routing of messages." />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.identifier:pdvendor.extension">
@@ -122,7 +123,9 @@
           <valueBoolean value="true" />
         </extension>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-au-hl7v2-0203" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-au-hl7v2-0203" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="PractitionerRole.identifier:pdvendor.type.coding">
@@ -152,12 +155,17 @@
       <short value="Vendor allocated URL" />
       <definition value="Unique namespace for the assigning vendor's identifier value." />
       <min value="1" />
+      <fixedUri value="http://ns.electronichealth.net.au/id/medicare-provider-number" />
     </element>
     <element id="PractitionerRole.identifier:pdvendor.value">
       <path value="PractitionerRole.identifier.value" />
       <short value="Vendor Directory Identifier Value" />
       <definition value="Assigning directoy vendor's identifier value." />
       <min value="1" />
+      <example>
+        <label value="Provider number" />
+        <valueString value="2426621B" />
+      </example>
     </element>
     <element id="PractitionerRole.identifier:pdvendor.assigner">
       <path value="PractitionerRole.identifier.assigner" />
