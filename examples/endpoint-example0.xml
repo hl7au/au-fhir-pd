@@ -38,6 +38,14 @@
 			<valueString value="L"/>
 		</extension>
 	</extension>
+	<identifier>
+		<system value="http://ns.electronichealth.net.au/smd/target"/>
+		<value value="http://ns.argusdca.com.au/smd/id/hostname/ACC5966010000000"/>
+	</identifier>
+	<identifier>
+		<system value="http://ns.electronichealth.net.au/smd/target"/>
+		<value value="http://ns.electronichealth.net.au/id/hi/hpio/1.0/8003627500000328"/>
+	</identifier>
 	<status value="active"/>
 	<connectionType>
 		<system value="http://ns.electronichealth.net.au/smd/intf"/>
@@ -68,4 +76,3 @@
 	<payloadMimeType value="application/hl7-v2"/>
 	<address value="https://smd-ep.test.medical-objects.com.au/smd/2010"/>
 </Endpoint>
-

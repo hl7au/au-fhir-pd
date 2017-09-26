@@ -64,11 +64,11 @@
 	</variable>
 	<variable>
 		<name value="PractitionerRoleSearchIdentifier2SystemCriteria"/>
-		<defaultValue value="http://ns.electronichealth.net.au/id/npio"/>
+		<defaultValue value="http://ns.medical-objects.com.au/id/routing-id"/>
 	</variable>
 	<variable>
 		<name value="PractitionerRoleSearchIdentifier2ValueCriteria"/>
-		<defaultValue value="8003610833334085@8003627500000328"/>
+		<defaultValue value="BD6000000X9"/>
 	</variable>
 	<variable>
 		<name value="PractitionerSearchNameFamilyCriteria"/>
@@ -329,7 +329,7 @@
 				<description value="Search for PractitionerRole matches using the specialty search. Search with system url specified."/>
 				<accept value="xml"/>
 				<contentType value="none"/>
-				<params value="?specialty=${PractitionerRoleSearchSpecialtySystemCriteria}|{PractitionerRoleSearchSpecialtyValueCriteria}&amp;_include=PractitionerRole:organization&amp;_include=PractitionerRole:endpoint&amp;_include=PractitionerRole:location"/>
+				<params value="?specialty=${PractitionerRoleSearchSpecialtySystemCriteria}|${PractitionerRoleSearchSpecialtyValueCriteria}&amp;_include=PractitionerRole:organization&amp;_include=PractitionerRole:endpoint&amp;_include=PractitionerRole:location"/>
 				<responseId value="search-response"/>
 			</operation>
 		</action>

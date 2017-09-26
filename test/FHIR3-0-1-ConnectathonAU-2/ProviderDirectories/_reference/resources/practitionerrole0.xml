@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <PractitionerRole xmlns="http://hl7.org/fhir">
-  <id value="example0"/>
+  <id value="practitionerrole0"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>identifier</b>: Medicare Provider Number = 2426621B, Vendor Delivery Identifier = BD6000000X9</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-example0.html">Generated Summary: id: example0; HPI-I = 8003610833334085, Prescriber Number = 453221; active; Helen Mayo ; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>organization</b>: <a href="Organization-example0.html">Generated Summary: id: example0; HPI-O = 8003627500000328; active; <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401}">Hospitals (except Psychiatric Hospitals)</span>, <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401-15}">Public acute care Hospital</span>; name: Downunder Hospital; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>code</b>: Cardiologist <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '17561000' = 'Cardiologist', given as 'Cardiologist'})</span></p><p><b>location</b>: <a href="Location-example0.html">Generated Summary: id: example0; status: active; name: Downunder Hospital Blacktown; ph: 025553555(WORK)</a></p><p><b>telecom</b>: ph: 025553333(WORK)</p><p><b>endpoint</b>: <a href="Endpoint-example0.html">Generated Summary: id: example0; status: active; <span title="{http://ns.electronichealth.net.au/smd/intf http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010}">Sealed Message Delivery</span>; name: Medical Objects Test Secure Messaging Endpoint; jared@example.org(WORK); period: 18/08/2017 --&gt; (ongoing); <span title="Codes: {http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706}, {http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type http://ns.electronichealth.net.au/ds/sc/deliver/hl7Mdm/2012}">Simplified Profile for HL7 V2.4 REF message</span>; payloadMimeType: application/hl7-v2; address: https://smd-ep.test.medical-objects.com.au/smd/2010</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: practitionerrole0</p><p><b>identifier</b>: Medicare Provider Number = 2426621B, Vendor Delivery Identifier = BD6000000X9</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-example0.html">Generated Summary: id: example0; HPI-I = 8003610833334085, Prescriber Number = 453221; active; Helen Mayo ; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>organization</b>: <a href="Organization-example0.html">Generated Summary: id: example0; HPI-O = 8003627500000328; active; <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401}">Hospitals (except Psychiatric Hospitals)</span>, <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401-15}">Public acute care Hospital</span>; name: Downunder Hospital; helen.mayo@downunderhospital.com.au(WORK)</a></p><p><b>code</b>: Cardiologist <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '17561000' = 'Cardiologist', given as 'Cardiologist'})</span></p><p><b>location</b>: <a href="Location-example0.html">Generated Summary: id: example0; status: active; name: Downunder Hospital Blacktown; ph: 025553555(WORK)</a></p><p><b>telecom</b>: ph: 025553333(WORK)</p><p><b>endpoint</b>: <a href="Endpoint-example0.html">Generated Summary: id: example0; status: active; <span title="{http://ns.electronichealth.net.au/smd/intf http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010}">Sealed Message Delivery</span>; name: Medical Objects Test Secure Messaging Endpoint; jared@example.org(WORK); period: 18/08/2017 --&gt; (ongoing); <span title="Codes: {http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706}, {http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type http://ns.electronichealth.net.au/ds/sc/deliver/hl7Mdm/2012}">Simplified Profile for HL7 V2.4 REF message</span>; payloadMimeType: application/hl7-v2; address: https://smd-ep.test.medical-objects.com.au/smd/2010</a></p></div>
   </text>
   <identifier>
     <extension url="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority">
@@ -21,11 +21,11 @@
       <coding>
         <system value="http://hl7.org/fhir/v2/0203"/>
         <code value="UPIN"/>
-        <display value="Medicare/CMS (formerly HCFA)&#39;s Universal Physician Identification number"/>
+        <display value="Medicare/CMS (formerly HCFA)&#39;s Universal Physician Identification numbers"/>
       </coding>
       <text value="Medicare Provider Number"/>
     </type>
-    <system value="http://ns.electronichealth.net.au/id/provider-number"/>
+    <system value="http://ns.electronichealth.net.au/id/medicare-provider-number"/>
     <value value="2426621B"/>
   </identifier>
   <identifier>
@@ -44,9 +44,9 @@
       <coding>
         <system value="http://hl7.org.au/fhir/v2/0203"/>
         <code value="VDI"/>
-        <display value="Vendor Delivery Identifier"/>
+        <display value="Vendor Directory Identifier"/>
       </coding>
-      <text value="Vendor Delivery Identifier"/>
+      <text value="Vendor Directory Identifier"/>
     </type>
     <system value="http://ns.medical-objects.com.au/id/routing-id"/>
     <value value="BD6000000X9"/>
@@ -57,20 +57,20 @@
   </identifier>
   <active value="true"/>
   <practitioner>
-    <reference value="Practitioner/example0"/>
+    <reference value="Practitioner/practitioner0"/>
   </practitioner>
   <organization>
-    <reference value="Organization/example0"/>
+    <reference value="Organization/organization0"/>
   </organization>
-  <code>
+  <specialty>
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="17561000"/>
       <display value="Cardiologist"/>
     </coding>
-  </code>
+  </specialty>
   <location>
-    <reference value="Location/example0"/>
+    <reference value="Location/location0"/>
   </location>
   <telecom>
     <system value="phone"/>
@@ -78,6 +78,6 @@
     <use value="work"/>
   </telecom>
   <endpoint>
-    <reference value="Endpoint/example0"/>
+    <reference value="Endpoint/endpoint0"/>
   </endpoint>
 </PractitionerRole>

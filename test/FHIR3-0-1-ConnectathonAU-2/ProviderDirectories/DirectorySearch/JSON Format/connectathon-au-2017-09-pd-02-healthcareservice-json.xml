@@ -45,7 +45,7 @@
 	</metadata>
 
 	<profile id="healthcareservice-profile">
-		<reference value="http://hl7.org.au/fhir/StructureDefinition/HealthcareService"/>
+		<reference value="http://hl7.org/fhir/StructureDefinition/HealthcareService"/>
 	</profile>
 	<profile id="au-pd-healthcareservice-profile">
 		<reference value="http://hl7.org.au/fhir/StructureDefinition/au-pd-healthcareservice"/>
@@ -394,7 +394,7 @@
 				<description value="Search for HealthcareService matches using the specialty search. Search with system url specified."/>
 				<accept value="json"/>
 				<contentType value="none"/>
-				<params value="?specialty=${HealthcareServiceSearchSpecialtySystemCriteria}|{HealthcareServiceSearchSpecialtyValueCriteria}&amp;_include=PractitionerRole:organization&amp;_include=PractitionerRole:endpoint&amp;_include=PractitionerRole:location"/>
+				<params value="?specialty=${HealthcareServiceSearchSpecialtySystemCriteria}|${HealthcareServiceSearchSpecialtyValueCriteria}&amp;_include=PractitionerRole:organization&amp;_include=PractitionerRole:endpoint&amp;_include=PractitionerRole:location"/>
 				<responseId value="search-response"/>
 			</operation>
 		</action>
@@ -535,11 +535,11 @@
 					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
 					<code value="read"/>
 				</type>
-				<resource value="PractitionerRole"/>
-				<description value="Read the first HealthcareService found in theorganization.identifier search and verify the contents."/>
+				<resource value="HealthcareService"/>
+				<description value="Read the first HealthcareService found in the organization.identifier search and verify the contents."/>
 				<accept value="json"/>
 				<contentType value="none"/>
-				<params value="/${PractitionerRoleResourceId}"/>
+				<params value="/${HealthcareServiceResourceId}"/>
 			</operation>
 		</action>
 		<action>
