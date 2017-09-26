@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-sm-endpoint" />
   <meta>
-    <lastUpdated value="2017-09-26T12:52:56.908+10:00" />
+    <lastUpdated value="2017-09-26T13:32:33.283+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -84,6 +84,7 @@
       <sliceName value="smdtarget" />
       <short value="Secure Messaging Target Identifier" />
       <definition value="Secure messaging interface target identity included in addressing metadata.  Thiis is the complete URL identifier that can be directly used in secure messaging.  This identifier should be matched when selecting the encrypting certificate data used for payload encryption also referenced from this endpoint." />
+      <mustSupport value="true" />
     </element>
     <element id="Endpoint.identifier:smdtarget.system">
       <path value="Endpoint.identifier.system" />
