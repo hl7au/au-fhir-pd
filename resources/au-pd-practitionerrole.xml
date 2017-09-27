@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-09-21T13:29:28.027+10:00" />
+    <lastUpdated value="2017-09-27T10:11:47.046+10:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -51,6 +51,15 @@
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
       </type>
+    </element>
+    <element id="PractitionerRole.identifier:providernumber.type">
+      <path value="PractitionerRole.identifier.type" />
+      <definition value="Identifier type of provider number for this practitioner role. Required for Provider Directory." />
+    </element>
+    <element id="PractitionerRole.identifier:providernumber.type.coding">
+      <path value="PractitionerRole.identifier.type.coding" />
+      <definition value="Provider number identifier type coding. Required for Provider Directory." />
+      <min value="1" />
     </element>
     <element id="PractitionerRole.identifier:nationalprovideratorganisation">
       <path value="PractitionerRole.identifier" />
@@ -155,13 +164,16 @@
       <short value="Vendor allocated URL" />
       <definition value="Unique namespace for the assigning vendor's identifier value." />
       <min value="1" />
-      <fixedUri value="http://ns.electronichealth.net.au/id/medicare-provider-number" />
     </element>
     <element id="PractitionerRole.identifier:pdvendor.value">
       <path value="PractitionerRole.identifier.value" />
       <short value="Vendor Directory Identifier Value" />
       <definition value="Assigning directoy vendor's identifier value." />
       <min value="1" />
+      <example>
+        <label value="Provider number" />
+        <valueString value="2426621B" />
+      </example>
     </element>
     <element id="PractitionerRole.identifier:pdvendor.assigner">
       <path value="PractitionerRole.identifier.assigner" />
