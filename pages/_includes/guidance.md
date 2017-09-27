@@ -6,17 +6,38 @@
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-## Overview
+
+## Provider Directory Core Entity Relationships
+
+For directory service profiles the PractitonerRole resource has constrained relationships to Location, Organization, and Practitioner resource types.
+<div>
+<img src="assets/images/erd1.jpg"/>
+</div>
+<br/>
+<br/>
+
+For directory service profiles the HealthcareService resource has constrained relationships to Location, and Organization resource types.
+<div>
+<img src="assets/images/erd2.jpg"/>
+</div>
+<br/>
+<br/>
+
+## Simplified Provider Directory Sequence for Secure Messaging
+
+<div>
+<img src="assets/images/sequence1.jpg"/>
+</div>
+<br/>
+<br/>
+
+## Provider Directory Service Roles
 
 This implementation guide is defined to allow multiple consumer systems to call multiple provider directory services reliably with a consistent interface and available data support.  
 
 **Provider Directory Consumer** implementations are client software systems that call provider directory services and consume data.
 
 **Provider Directory Supplier** implementations are server software systems that supply a provider directory service interface and data.
-
-
-## Interpretation
-
 
 * AU Provider Directory Suppliers SHALL be capable of providing all resource types included in this guide.
 * AU Provider Directory Suppliers SHALL be capable of providing all profile data elements marked as MUST SUPPORT.
