@@ -43,6 +43,7 @@
 			<target>
 				<code value="4112"/>
 				<equivalence value="inexact"/>
+				<comment value="similar area"/>
 			</target>
 		</element>
 	</group>
