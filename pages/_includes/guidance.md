@@ -35,7 +35,6 @@ For directory service profiles the HealthcareService resource has constrained re
 
 This implementation guide is defined to allow multiple consumer systems to call multiple provider directory services reliably with a consistent interface and available data support.  
 
-**Provider Directory Consumer** implementations are client software systems that call provider directory services and consume data.
 
 **Provider Directory Supplier** implementations are server software systems that supply a provider directory service interface and data.
 
@@ -45,6 +44,8 @@ This implementation guide is defined to allow multiple consumer systems to call 
 * AU Provider Directory Suppliers SHALL be capable of responding meaningfully to all search requests (in each resource definiition) that are marked as MUST SUPPORT.
 * AU Provider Directory Suppliers MAY be capable of responding to search requests (in each resource definiition) that are marked as OPTIONAL.
 * AU Provider Directory Suppliers MAY be capable of responding to other search requests that are FHIR core compliant OR custom searches (defined using CapabilityStatement supplied by the server).
+
+**Provider Directory Consumer** implementations are client software systems that call provider directory services and consume data.
 
 * AU Provider Directory Consumers SHALL support meaningful consumption of all data elements marked as MUST SUPPORT.
 * AU Provider Directory Consumers SHALL allow receipt of the all resource types in this guide.

@@ -1,0 +1,361 @@
+﻿NHSD_Code,Display,Definition,SNOMED-CT-AU_Expression,Mapping_rating,Comments,Submit for inclusion into SNOMED-CT-AU?
+1342,Health and Welfare Service Managers,Health and Welfare Service Managers,224579007,2,mapped to 224579007 |Healthcare service manager (occupation)| as NHSD children do not contain welfare managers,
+  1342-11,Medical Administrator (Aus) / Medical Superintendent (NZ),Medical Administrator (Aus) / Medical Superintendent (NZ),,5,,Y
+    1342-11-2,Director of Medical Services,Director of Medical Services,,5,,Y
+  1342-12,Nursing Clinical Director,Nursing Clinical Director,,5,,Y
+    1342-12.4,Director of Nursing,Director of Nursing,,5,,Y
+2349,Other Natural and Physical Science Professionals,Other Natural and Physical Science Professionals,308027003,3,"abstract term, so no need to explicitly map?",
+  2349-99,Natural and Physical Science Professionals nec,Natural and Physical Science Professionals nec,308027003,3,Snomed rejects nec's!,
+    2349-99-2,Exercise Physiologist,Exercise Physiologist,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+2500,Health Professionals,Health Professionals,223366009,2,,
+  2500-00,Health Professionals nfd (Australian use only),Health Professionals nfd (Australian use only),223366009,2,,
+    2500-00-0,Health Professionals nfd,Health Professionals nfd,223366009,2,,
+2511,Dietitians,Dietitians,159033005,2,,
+  2511-11,Dietitian,Dietitian,159033005,1,,
+    2511-11-0,Dietitian,Dietitian,159033005,1,,
+  2511.12,Nutritionist,Nutritionist,,5,would be child of 159033005 |Dietitian (occupation)| as 60008001 |Public health nutritionist (occupation)| currently is,Y
+    2511.12.0,Nutritionist,Nutritionist,,5,would be child of 159033005 |Dietitian (occupation)| as 60008001 |Public health nutritionist (occupation)| currently is,Y
+2512,Medical Imaging Professionals,Medical Imaging Professionals,,5,,
+  2512-11,Medical Diagnostic Radiographer,Medical Diagnostic Radiographer,159016003,2,,
+    2512-11.0,Medical Diagnostic Radiographer,Medical Diagnostic Radiographer,159016003,2,,
+  2512-12,Medical Radiation Therapist,Medical Radiation Therapist,,5,not the same as 3430008 |Radiation therapist (occupation)|.  3430008 refers to medical specialists. This role is one undertaken by radiographers not doctors,Y
+    2512-12-0,Medical Radiation Therapist,Medical Radiation Therapist,,5,not the same as 3430008 |Radiation therapist (occupation)|.  3430008 refers to medical specialists. This role is one undertaken by radiographers not doctors,Y
+  2512-13,Nuclear Medicine Technologist,Nuclear Medicine Technologist,,5,,Y
+    2512-13-0,Nuclear Medicine Technologist,Nuclear Medicine Technologist,,5,,Y
+  2512-14,Sonographer,Sonographer,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+    2512-14-0,Sonographer,Sonographer,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+2514,Optometrists and Orthoptists,Optometrists and Orthoptists,106295001 ,2,,
+  2514-11,Optometrist,Optometrist,28229004,1,,
+    2514-11-0,Optometrist,Optometrist,28229004,1,,
+  2514-12,Orthoptist,Orthoptist,159027001,1,,
+    2514-12-0,Orthoptist,Orthoptist,159027001,1,,
+2515,Pharmacists,Pharmacists,46255001,2,,
+  2515-13,Retail/ Community Pharmacist,Retail/ Community Pharmacist,159011008,2,,
+    2515-13-1,Retail/Community Pharmacist,Retail/Community Pharmacist,159011008,2,,
+    2515-13-2,Consultant Pharmacist,Consultant Pharmacist,159011008,3,,
+2519,Other Health Diagnostic and Promotion Professionals,Other Health Diagnostic and Promotion Professionals,308027003,3,"abstract term, so no need to explicitly map?",
+  2519-11,Health Promotion Officer/Community Health Worker/Health Educator,Health Promotion Officer/Community Health Worker/Health Educator,409974004,2,,
+    2519-11-3,Diabetes Educator,Diabetes Educator,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+  2519-12,Orthotist or Prosthetist,Orthotist or Prosthetist,309428008,4,Have asked the professional body ,
+    2519-12-0,Orthotist or Prosthetist,Orthotist or Prosthetist,309428008,4,,
+2521,Chiropractors and Osteopaths,Chiropractors and Osteopaths,,3,,
+  2521-11,Chiropractor,Chiropractor,3842006,1,,
+    2521-11-0,Chiropractor,Chiropractor,3842006,1,,
+  2521-12,Osteopath,Osteopath,76231001,1,,
+    2521-12-0,Osteopath,Osteopath,76231001,1,,
+2522,Complementary Health Therapists,Complementary Health Therapists,224609002,2,,
+  2522-11,Acupuncturist,Acupuncturist,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+    2522-11-0,Acupuncturist,Acupuncturist,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+  2522-12,Homoeopath,Homoeopath,,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+    2522-12-0,Homoeopath,Homoeopath,,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+  2522-13,Naturopath,Naturopath,,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+    2522-13-0,Naturopath,Naturopath,,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+  2522-14,Traditional Chinese Medicine Practitioner,Traditional Chinese Medicine Practitioner,,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+    2522-14-1,Chinese Herbalist,Chinese Herbalist,,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+    2522-14.2,Chinese Medicine Practitioner,Chinese Medicine Practitioner,,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+  2522-99,Complementary Health Therapists nec,Complementary Health Therapists nec,224609002,2,,
+    2522-99-0,Complementary Health Therapists nec,Complementary Health Therapists nec,224609002,2,,
+    2522-99-1,Dance Therapist,Dance Therapist,309411005,1,,
+    2522-99-3,Hypnotherapist,Hypnotherapist,444912007 ,1,,
+    2522-99-4,Music Therapist,Music Therapist,309412003,1,,
+    2522-99.5,Herbalist (Other than Chinese),Herbalist (Other than Chinese),,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+  2522.16,Myotherapist,Myotherapist,,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+    2522.16.0,Myotherapist,Myotherapist,,5,sugest child of 224609002 |Complementary health worker (occupation)|,y
+2523,Dental Practitioners,Dental Practitioners,106289002 ,2,,
+  2523-11,Dental Specialist,Dental Specialist,158978000 ,2,,
+    2523-11-1,Endodontist,Endodontist,50149000,1,,
+    2523-11-2,Oral and Maxillofacial Surgeon,Oral and Maxillofacial Surgeon,49993003 ,2,,
+    2523-11-3,Oral Pathologist,Oral Pathologist,66476003,1,,
+    2523-11-4,Orthodontist,Orthodontist,37504001,1,,
+    2523-11-5,Paedodontist,Paedodontist,90201008,1,,
+    2523-11-6,Periodontist,Periodontist,37154003,1,,
+    2523-11-7,Prosthodontist,Prosthodontist,68950000,1,,
+    2523-11.0,Dental Specialist,Dental Specialist,158978000 ,2,,
+  2523-12,Dentist/ Dental Practitioner/ Dental Surgeon,Dentist/ Dental Practitioner/ Dental Surgeon,106289002 ,2,,
+    2523-12.6,Dentist / Dental Practitioner,Dentist / Dental Practitioner,106289002 ,2,,
+2524,Occupational Therapists,Occupational Therapists,80546007,2,,
+  2524-11,Occupational Therapist,Occupational Therapist,80546007,1,,
+    2524-11-0,Occupational Therapist,Occupational Therapist,80546007,1,,
+2525,Physiotherapists,Physiotherapists,36682004,2,,
+  2525-11,Physiotherapist,Physiotherapist,36682004,1,,
+    2525-11.0,Physiotherapist,Physiotherapist,36682004,1,,
+2526,Podiatrists,Podiatrists,159034004,2,,
+  2526-11,Podiatrist,Podiatrist,159034004,1,,
+    2526-11.0,Podiatrist,Podiatrist,159034004,1,,
+2527,Speech Professionals and Audiologists,Speech Professionals and Audiologists,,6,,
+  2527-11,Audiologist,Audiologist,309418004,1,,
+    2527-11-0,Audiologist,Audiologist,309418004,1,,
+  2527-12,Speech Pathologist,Speech Pathologist,159026005 ,2,,
+    2527-12-0,Speech Pathologist,Speech Pathologist,159026005 ,2,,
+2531,Generalist Medical Practitioners,Generalist Medical Practitioners,62247001 ,2,,
+  2531-11,General Medical Practitioner,General Medical Practitioner,62247001 ,2,,
+    2531-11.0,General Medical Practitioner,General Medical Practitioner,62247001 ,2,,
+  2531-12,Resident Medical Officer,Resident Medical Officer,158972004 ,2,could suggest change to Australian terms - ie a new synonym for 158972004 |House officer (occupation)|,
+    2531-12-9,Career Medical Officer/ Senior Medical Officer nec,Career Medical Officer/ Senior Medical Officer nec,224532007 ,2,could suggest change to Australian terms - ie a new synonym for 224532007 |Senior house officer (occupation)|,
+2532,Anaesthetists,Anaesthetists,158970007,2,,
+  2532-11,Anaesthetist,Anaesthetist,158970007,1,,
+    2532-11.0,Anaesthetist,Anaesthetist,158970007,1,,
+2533,Specialists Physicians,Specialists Physicians,69280009 ,2,,
+  2533-11,Specialist Physician (General Medicine),Specialist Physician (General Medicine),39677007 ,2,,
+    2533-11-1,Specialist Physician (General Medicine),Specialist Physician (General Medicine),39677007 ,2,,
+  2533-12,Cardiologist,Cardiologist,17561000,1,,
+    2533-12-0,Cardiologist,Cardiologist,17561000,1,,
+  2533-13,Clinical Haematologist,Clinical Haematologist,309347007,1,,
+    2533-13-0,Clinical Haematologist,Clinical Haematologist,309347007,1,,
+  2533-14,Medical Oncologist,Medical Oncologist,310512001,1,,
+    2533-14-0,Medical Oncologist,Medical Oncologist,310512001,1,,
+  2533-15,Endocrinologist,Endocrinologist,61894003,1,,
+    2533-15.0,Endocrinologist,Endocrinologist,61894003,1,,
+  2533-16,Gastroenterologist,Gastroenterologist,71838004,1,,
+    2533-16-0,Gastroenterologist,Gastroenterologist,71838004,1,,
+  2533-17,Intensive Care Specialist,Intensive Care Specialist,309338004,1,,
+    2533-17-0,Intensive Care Specialist,Intensive Care Specialist,309338004,1,,
+  2533-18,Neurologist,Neurologist,56397003,1,,
+    2533-18-0,Neurologist,Neurologist,56397003,1,,
+  2533-21,Paediatrician,Paediatrician,82296001,1,,
+    2533-21-1,Neonatologist,Neonatologist,28411006,1,,
+    2533-21-19,Paediatric Thoracic Medicine Specialist / Respiratory Specialist / Sleep Specialist,Paediatric Thoracic Medicine Specialist / Respiratory Specialist / Sleep Specialist,,5,could be added under 720503005 | sleep specialist,Y
+    2533-21-21,General Paediatrics Specialist,General Paediatrics Specialist,82296001 ,2,,
+    2533-21.25,Paediatric Dermatologist,Paediatric Dermatologist,,5,could be added under 18803008 |Dermatologist (occupation)|,Y
+  2533-22,Renal Medicine Specialist,Renal Medicine Specialist,11911009,2,,
+    2533-22-0,Renal Medicine Specialist / Nephrologist / Renal Medicine Physician,Renal Medicine Specialist / Nephrologist / Renal Medicine Physician,11911009,2,,
+    2533-22.1,Nephrologist,Nephrologist,11911009,2,,
+  2533-23,Rheumatologist,Rheumatologist,45440000,1,,
+    2533-23-0,Rheumatologist,Rheumatologist,45440000,1,,
+  2533-24,Thoracic Medicine Specialist,Thoracic Medicine Specialist,309345004 ,2,,
+    2533-24-1,Respiratory Medicine Physician,Respiratory Medicine Physician,41672002 ,2,,
+    2533-24-2,Thoracic Medicine Physician,Thoracic Medicine Physician,309346003 ,2,,
+    2533-24.3,Pulmonary Specialist,Pulmonary Specialist,41672002 ,2,not sure of the dictinctions here but have tried to use the little hierarchy in snomed appropriately to mirror the  NHSD hierarchy,
+  2533-99,Specialist Physians nec,Specialist Physians nec,309343006 ,2,snomed deprecates nec!,
+    2533-99-12,Addiction Medicine Specialist,Addiction Medicine Specialist,446701002 ,1,,
+    2533-99-3,Clinical Immunologist,Clinical Immunologist,63098009,1,,
+    2533-99-4,Clinical Pharmacologist,Clinical Pharmacologist,310173006,1,,
+    2533-99-5,Geriatrician,Geriatrician,90655003 ,1,,
+    2533-99-6,Industrial Medicine Specialist,Industrial Medicine Specialist,158973009 ,2,,
+    2533-99-7,Infectious Diseases Specialist,Infectious Diseases Specialist,76899008 ,1,,
+    2533-99-8,Palliative Medicine Specialist,Palliative Medicine Specialist,309359006 ,2,,
+    2533-99-9,Rehabilitation Medicine Physician,Rehabilitation Medicine Physician,309360001 ,2,,
+    2533-99.0,Specialist Physicians nec,Specialist Physicians nec,309343006 ,2,,
+    2533-99.13,Respiratory and Sleep Physician,Respiratory and Sleep Physician,,5,,Y
+2534,Psychiatrists,Psychiatrists,80584001,2,,
+  2534-11,Psychiatrist,Psychiatrist,80584001,1,,
+    2534-11-1,Adolescent Psychiatrist,Adolescent Psychiatrist,309361002 ,3,,
+    2534-11-3,Child Psychiatrist,Child Psychiatrist,309361002 ,3,,
+    2534-11-4,Forensic Psychiatrist,Forensic Psychiatrist,309362009,1,,
+    2534-11-6,Medical Psychotherapist,Medical Psychotherapist,224588003 ,2,"doesn't have to be a psychiatrist, bt this code is no longer for a doctor",
+    2534-11.0,Psychiatrist,Psychiatrist,80584001,1,,
+2535,Surgeons,Surgeons,304292004,2,,
+  2535-11,Surgeon (General),Surgeon (General),304292004,2,,
+    2535-11-1,Breast Surgeon,Breast Surgeon,309368008,1,,
+    2535-11-2,Transplant Surgeon,Transplant Surgeon,309385005,1,,
+    2535-11-4,Colorectal Surgeon,Colorectal Surgeon,309379003,1,,
+    2535-11-6,Surgical Oncologist,Surgical Oncologist,309295000 ,3,,
+    2535-11.0,Surgeon,Surgeon,304292004,1,,
+  2535-12,Cardiothoracic Surgeon,Cardiothoracic Surgeon,309369000,1,,
+    2535-12-0,Cardiothoracic Surgeon,Cardiothoracic Surgeon,309369000,1,,
+    2535-12.1,Thoracic Surgeon,Thoracic Surgeon,22983004,1,,
+  2535-13,Neurosurgeon,Neurosurgeon,45544007,1,,
+    2535-13-0,Neurosurgeon,Neurosurgeon,45544007,1,,
+  2535-14,Orthopaedic Surgeon,Orthopaedic Surgeon,22731001,1,,
+    2535-14-0,Orthopaedic Surgeon,Orthopaedic Surgeon,22731001,1,,
+  2535-15,Otorhinolaryngologist / Ear Nose and Throat Specialist,Otorhinolaryngologist / Ear Nose and Throat Specialist,61345009 ,2,,
+    2535-15.4,Otorhinolaryngologist - Ear/Nose/Throat Surgeon,Otorhinolaryngologist - Ear/Nose/Throat Surgeon,61345009 ,2,,
+  2535-16,Paediatric Surgeon,Paediatric Surgeon,309383003,1,,
+    2535-16-0,Paediatric Surgeon,Paediatric Surgeon,309383003,1,,
+  2535-17,Plastic and Reconstructive Surgeon,Plastic and Reconstructive Surgeon,8724009,2,,
+    2535-17-0,Plastic and Reconstructive Surgeon,Plastic and Reconstructive Surgeon,8724009,2,,
+  2535-18,Urologist,Urologist,24590004,1,,
+    2535-18-0,Urologist,Urologist,24590004,1,,
+  2535-21,Vascular Surgeon,Vascular Surgeon,309388007,1,,
+    2535-21-0,Vascular Surgeon,Vascular Surgeon,309388007,1,,
+2539,Other Medical Practitioners,Other Medical Practitioners,158965000 ,2,,
+  2539-11,Dermatologist,Dermatologist,18803008,1,,
+    2539-11-0,Dermatologist,Dermatologist,18803008,1,,
+  2539-12,Emergency Medicine Specialist / Emergency Physician,Emergency Medicine Specialist / Emergency Physician,309294001,4,,Y
+    2539-12-0,Emergency Medicine Specialist,Emergency Medicine Specialist,309294001,4,,
+  2539-13,Obstetrician and Gynaecologist,Obstetrician and Gynaecologist,309367003,1,,
+    2539-13-1,Gynaecological Oncologist,Gynaecological Oncologist,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+    2539-13-3,Urogynaecologist,Urogynaecologist,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+    2539-13.0,Obstetrician and Gynaecologist,Obstetrician and Gynaecologist,309367003,1,,
+    2539-13.6,Gynaecologist,Gynaecologist,83685006,1,,
+  2539-14,Ophthalmologist / Eye Specialist/ Eye Surgeon,Ophthalmologist / Eye Specialist/ Eye Surgeon,422234006,2,,
+    2539-14-0,Ophthalmologist / Eye Specialist/ Eye Surgeon,Ophthalmologist / Eye Specialist/ Eye Surgeon,422234006,2,,
+  2539-15,Pathologist,Pathologist,61207006 ,2,,
+    2539-15-1,Clinical Cytopathologist,Clinical Cytopathologist,,5,,Y
+    2539-15-2,Forensic Pathologist,Forensic Pathologist,,5,,Y
+    2539-15-3,General Anatomic Pathologist,General Anatomic Pathologist,83273008 ,2,,
+    2539-15-8,Medical Microbiologist,Medical Microbiologist,14698002,1,,
+    2539-15.10,Histopathologist,Histopathologist,309342001,1,,
+    2539-15.11,Haematologist,Haematologist,40204001,1,,
+    2539-15.0,Pathologist,Pathologist,61207006 ,2,,
+  2539-17,Diagnostic and Interventional Radiologist,Diagnostic and Interventional Radiologist,66862007 ,2,,
+    2539-17-1,Diagnostic Radiologist,Diagnostic Radiologist,78729002,1,,
+    2539-17-3,Nuclear Medicine Specialist,Nuclear Medicine Specialist,80933006,1,,
+  2539-18,Radiation Oncologist,Radiation Oncologist,,5,,Y
+    2539-18-1,Radiation Oncologist,Radiation Oncologist,,5,,Y
+  2539-99,Medical Practitioners nec,Medical Practitioners nec,158965000 ,2,snomed abhors nec!,
+    2539-99.0,Medical Practitioners nec,Medical Practitioners nec,158965000 ,2,,
+    2539-99-1,Occupational Medicine and Environmental Specialist,Occupational Medicine and Environmental Specialist,158973009 ,2,,
+    2539-99-2,Public Health Physician,Public Health Physician,56466003,1,,
+    2539-99-3,Sports Physician,Sports Physician,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+    2539-99.5,Non Clinical Specialist,Non Clinical Specialist,,6,,
+    2539-99.1,Sonologist,Sonologist,,5,Has previously been submitted for inclusion to  SNOMED-CT-AU,
+2540,Midwifery and Nursing Professionals,Midwifery and Nursing Professionals,158992006 ,2,,
+  2540-00,Midwifery and Nursing Professionals nfd (Australian use only),Midwifery and Nursing Professionals nfd (Australian use only),158992006 ,2,,
+    2540-00-0,Midwifery and Nursing Professionals nfd,Midwifery and Nursing Professionals nfd,158992006 ,2,,
+2541,Midwives,Midwives,158992006 ,2,,
+  2541-11,Midwife/Certified Midwife/Registered Midwife,Midwife/Certified Midwife/Registered Midwife,158992006 ,2,,
+    2541-11-1,Community Midwife,Community Midwife,158999002,1,,
+    2541-11-2,Midwife Practitioner,Midwife Practitioner,158992006 ,2,,
+2544,Registered Nurses,Registered Nurses,224535009 ,2,,
+  2544-11,Nurse Practitioner,Nurse Practitioner,224571005,1,,
+    2544-11-0,Nurse Practitioner,Nurse Practitioner,224571005,1,,
+  2544-16,Registered Nurse (Developmental Disability),Registered Nurse (Developmental Disability),224535009 ,4,,
+    2544-16.0,Registered Nurse (Developmental Disability),Registered Nurse (Developmental Disability),224535009 ,4,,
+  2544-18,Registered Nurse (Medical),Registered Nurse (Medical),224570006,3,,
+    2544-18-0,Registered Nurse (Medical),Registered Nurse (Medical),224570006,2,,
+  2544-21,Registered Nurse (Medical Practice)/Practice Nurse,Registered Nurse (Medical Practice)/Practice Nurse,159002008 ,2,,
+    2544-21.1,Registered Nurse (Medical Practice)/Practice Nurse,Registered Nurse (Medical Practice)/Practice Nurse,159002008 ,2,,
+  2544-22,Registered Nurse (Mental Health)/Phychiatric,Registered Nurse (Mental Health)/Phychiatric,224563006 ,2,,
+    2544-22.5,Registered Nurse (Mental Health)/Psychiatric,Registered Nurse (Mental Health)/Psychiatric,224563006 ,2,,
+2721,Counsellors,Counsellors,224595007,2,,
+  2721-11,Careers Counsellor,Careers Counsellor,224595007,3,,
+    2721-11.0,Careers Counsellor,Careers Counsellor,224595007,3,,
+  2721-12,Drug and Alcohol Counsellor,Drug and Alcohol Counsellor,224595007,3,,
+    2721-12-0,Drug and Alcohol Counsellor,Drug and Alcohol Counsellor,224595007,3,,
+  2721-13,Family and Marriage Counsellor,Family and Marriage Counsellor,224596008 ,2,,
+    2721-13-0,Family Mediator/Family and Marriage Counsellor,Family Mediator/Family and Marriage Counsellor,224595007,3,,
+  2721-14,Rehabilitation Counsellor,Rehabilitation Counsellor,224595007,3,,
+    2721-14-0,Rehabilitation Counsellor,Rehabilitation Counsellor,224595007,3,,
+  2721-99,Counsellors nec,Counsellors nec,224595007,2,,
+    2721-99-0,Counsellors nec,Counsellors nec,224595007,2,,
+    2721-99.8,Family Therapist,Family Therapist,224595007,3,,
+  2721-15,Student Counsellor,Student Counsellor,224595007,3,,
+    2721-15.0,Student Counsellor,Student Counsellor,224595007,3,,
+2723,Psychologists,Psychologists,59944000 ,2,,
+  2723-11,Clinical Psychologist,Clinical Psychologist,310191001,1,,
+    2723-11.0,Clinical Psychologist,Clinical Psychologist,310191001,1,,
+  2723-12,Educational Psychologist,Educational Psychologist,310192008,1,,
+    2723-12-0,Educational Psychologist,Educational Psychologist,310192008,1,,
+  2723-13,Organisational Psychologist,Organisational Psychologist,,5,,Y
+    2723-13-0,Organisational Psychologist,Organisational Psychologist,,5,,Y
+  2723-14,Psychotherapist,Psychotherapist,224588003,1,,
+    2723-14-0,Psychotherapist,Psychotherapist,224588003,1,,
+  2723-99,Psychologists nec,Psychologists nec,59944000 ,2,,
+    2723-99-0,Psychologists nec,Psychologists nec,59944000 ,2,,
+2725,Social Workers,Social Workers,106328005 ,2,,
+  2725-11,Social Worker,Social Worker,106328005 ,1,,
+    2725-11.1,Mental Health Social Worker,Mental Health Social Worker,80292009 ,2,,
+    2725-11-0,Social Worker,Social Worker,106328005 ,1,,
+3999,Other Miscellaneous Technicians and Trades Workers,Other Miscellaneous Technicians and Trades Workers,,6,,
+  3999-13,Optical Dispenser / Dispensing Optician,Optical Dispenser / Dispensing Optician,,5,,Y
+    3999-13-0,Optical Dispenser,Optical Dispenser,,5,,Y
+4110,Health and Welfare Support Workers,Health and Welfare Support Workers,,5,,Y
+  4110-00,Health and Welfare Support Workers nfd (Australian use only),Health and Welfare Support Workers nfd (Australian use only),,6,,
+    4110-00-0,Health and Welfare Support Workers nfd,Health and Welfare Support Workers nfd,,6,,
+4112,"Dental Hygienists, Technicians and Therapists","Dental Hygienists, Technicians and Therapists",,6,,
+  4112-11,Dental Hygienist,Dental Hygienist,26042002,1,,
+    4112-11-0,Dental Hygienist,Dental Hygienist,26042002,1,,
+  4112-13,Dental Technician,Dental Technician,160008000,1,,
+    4112-13.0,Dental Technician,Dental Technician,160008000,1,,
+  4112-14,Dental Therapist,Dental Therapist,,5,https://www.adansw.com.au/Careers/Dental-Therapist.aspx,Y
+    4112-14-0,Dental Therapist,Dental Therapist,,5,https://www.adansw.com.au/Careers/Dental-Therapist.aspx,Y
+4113,Diversional Therapists,Diversional Therapists,,5,http://diversionaltherapy.org.au/About-DTA/What-is-DT,Y
+  4113-11,Diversional Therapist,Diversional Therapist,,5,http://diversionaltherapy.org.au/About-DTA/What-is-DT,Y
+    4113-11-0,Diversional Therapist,Diversional Therapist,,5,http://diversionaltherapy.org.au/About-DTA/What-is-DT,Y
+4115,Indigenous Health Workers,Indigenous Health Workers,826241000168109 ,2,,
+  4115-11,Aboriginal and Torres Strait Islander Health Worker,Aboriginal and Torres Strait Islander Health Worker,826241000168109 ,2,,
+    4115-11-0,Aboriginal and Torres Strait Islander Health Worker,Aboriginal and Torres Strait Islander Health Worker,826241000168109 ,2,,
+4116,Massage Therapists,Massage Therapists,826281000168104 ,2,,
+  4116-11,Massage Therapist,Massage Therapist,826281000168104 ,1,,
+    4116-11-0,Massage Therapist,Massage Therapist,826281000168104 ,1,,
+4117,Welfare Support Workers,Welfare Support Workers,265935008 ,2,,
+  4117-11,Community Worker,Community Worker,,5,,Y
+    4117-11.0,Community Worker,Community Worker,,5,,Y
+  4117-12,Disabilities Services Officer,Disabilities Services Officer,,5,,Y
+    4117-12.0,Disabilities Services Officer,Disabilities Services Officer,,5,,Y
+  4117-16,Youth Worker,Youth Worker,,5,youth leader as a concept prob could be replaced,Y
+    4117-16.0,Youth Worker,Youth Worker,,5,youth leader as a concept prob could be replaced,Y
+  4117-15,Residential Care Officer,Residential Care Officer,,5,this whole subhierarchy needs modelling in SNOMED-CT-AU,Y
+    4117-15.0,Residential Care Officer,Residential Care Officer,,5,this whole subhierarchy needs modelling in SNOMED-CT-AU,Y
+  4117-13,Family Support Worker,Family Support Worker,,5,this whole subhierarchy needs modelling in SNOMED-CT-AU,Y
+    4117-13.0,Family Support Worker,Family Support Worker,,5,this whole subhierarchy needs modelling in SNOMED-CT-AU,Y
+  4117-14,Parole or Probation Officer,Parole or Probation Officer,158936006,2,,
+    4117-14.0,Parole or Probation Officer,Parole or Probation Officer,158936006,2,,
+4211,Child Carers,Child Carers,,5,"""child care officer"" is under welfare so not the same thing",Y
+  4211-11,Child Care Worker,Child Care Worker,,5,,Y
+    4211-11.0,Child Care Worker,Child Care Worker,,5,,Y
+  4211-12,Family Day Care Worker,Family Day Care Worker,,5,,Y
+    4211-12.0,Family Day Care Worker,Family Day Care Worker,,5,,Y
+4231,Aged or Disabled Carer,Aged or Disabled Carer,,5,,Y
+  4231-11,Aged or Disabled Carer,Aged or Disabled Carer,,5,,Y
+    4231-11-2,Personal Carer,Personal Carer,229774002 ,2,,
+    4231-11-4,Aged or Disabled Carer Worker,Aged or Disabled Carer Worker,,5,,Y
+4233,Nursing Support and Personal Care Workers,Nursing Support and Personal Care Workers,,6,,
+  4233-13,Personal Care Assistant,Personal Care Assistant,224576000 ,2,,
+    4233-13-0,Personal Care Assistant,Personal Care Assistant,224576000 ,2,,
+4234,Special Care Workers,Special Care Workers,,6,,
+  4234-11,Child or Youth Residential Care Assistant,Child or Youth Residential Care Assistant,158943000 ,2,,
+    4234-11.0,Child or Youth Residential Care Assistant,Child or Youth Residential Care Assistant,158943000 ,2,,
+  4234-13,Refuge Worker,Refuge Worker,,5,,Y
+    4234-13.0,Refuge Worker,Refuge Worker,,5,,Y
+  4234-12,Hostel Parent,Hostel Parent,,5,,
+    4234-12.0,Hostel Parent,Hostel Parent,,5,,
+4515,Personal Care Consultants,Personal Care Consultants,,6,,
+  4515-11,Natural Remedy Consultant,Natural Remedy Consultant,,6,,
+    4515-11-0,Natural Remedy Consultant,Natural Remedy Consultant,,6,,
+    4515-11-5,Kinesiologist,Kinesiologist,,5,,Y
+  4515-12,Weight Loss Consultant,Weight Loss Consultant,,6,,
+    4515-12-0,Weight Loss Consultant,Weight Loss Consultant,,6,,
+4521,Fitness Instructors,Fitness Instructors,,5,,Y
+  4521-11,Fitness Instructor,Fitness Instructor,,5,,Y
+    4521-11-3,Physical Fitness Trainer,Physical Fitness Trainer,,5,,Y
+2231,Human Resource Professionals,Human Resource Professionals,,5,,Y
+  2231-12,Recruitment Consultant,Recruitment Consultant,,5,,Y
+    2231-12.0,Recruitment Consultant,Recruitment Consultant,,5,,Y
+2415,Special Education Teachers,Special Education Teachers,106309003 ,2,,
+  2415-11,Special Needs Teacher,Special Needs Teacher,106309003 ,2,,
+    2415-11.0,Special Needs Teacher,Special Needs Teacher,106309003 ,2,,
+  2415-99,Special Education Teachers nec,Special Education Teachers nec,106309003 ,2,,
+    2415-99.0,Special Education Teachers nec,Special Education Teachers nec,106309003 ,2,,
+  2415-12,Teacher of the Hearing Impaired,Teacher of the Hearing Impaired,310197002 ,1,,
+    2415-12.0,Teacher of the Hearing Impaired,Teacher of the Hearing Impaired,310197002 ,1,,
+  2415-13,Teacher of the Sight Impaired,Teacher of the Sight Impaired,34718002 ,2,add synonym,Y
+    2415-13.0,Teacher of the Sight Impaired,Teacher of the Sight Impaired,34718002 ,2,add synonym,Y
+2722,Ministers of Religion,Ministers of Religion,11015003 ,2,,
+  2722-11,Minister of Religion,Minister of Religion,11015003 ,1,,
+    2722-11.0,Minister of Religion,Minister of Religion,11015003 ,1,,
+2711,Barristers,Barristers,307790001,2,,
+  2711-11,Barrister,Barrister,307790001,1,,
+    2711-11.0,Barrister,Barrister,307790001,1,,
+2713,Solicitors,Solicitors,158762005 ,2,,
+  2713-11,Solicitor,Solicitor,158762005 ,1,,
+    2713-11.0,Solicitor,Solicitor,158762005 ,1,,
+2712,Judicial and Other Legal Professionals,Judicial and Other Legal Professionals,271554005,2,,
+  2712-99,Judicial and Other Legal Professionals nec,Judicial and Other Legal Professionals nec,271554005,2,,
+    2712-99.0,Judicial and Other Legal Professionals nec,Judicial and Other Legal Professionals nec,271554005,2,,
+4522,Outdoor Adventure Guides,Outdoor Adventure Guides,,5,,
+  4522-00,Outdoor Adventure Guides,Outdoor Adventure Guides,,5,,
+    4522-00.0,Outdoor Adventure Guides,Outdoor Adventure Guides,,5,,
+2411,Early Childhood (Pre-primary School) Teachers,Early Childhood (Pre-primary School) Teachers,106308006,2,,
+  2411-11,Early Childhood (Pre-primary School) Teacher,Early Childhood (Pre-primary School) Teacher,106308006,2,,
+    2411-11.0,Early Childhood (Pre-primary School) Teacher,Early Childhood (Pre-primary School) Teacher,106308006,2,,
+2414,Secondary School Teachers,Secondary School Teachers,158903005 ,1,,
+  2414-11,Secondary School Teacher,Secondary School Teacher,158903005 ,1,,
+    2414-11.0,Secondary School Teacher,Secondary School Teacher,158903005 ,1,,
+4221,Education Aides,Education Aides,,6,,
+  4221-16,Teachers' Aide,Teachers' Aide,,5,,Y
+    4221-16.0,Teachers' Aide,Teachers' Aide,,5,,Y
+1343,School Principals,School Principals,80407007 ,2,,
+  1343-11,School Principal,School Principal,80407007 ,2,,
+    1343-11.1,Primary School Principal,Primary School Principal,,5,,Y
+    1343-11.2,Secondary School Principal,Secondary School Principal,,5,,Y
+2492,Private Tutors and Teachers,Private Tutors and Teachers,307979002 ,3,,
+  2492-99,Private Tutors and Teachers nec,Private Tutors and Teachers nec,307979002 ,3,,
+    2492-99.0,Private Tutors and Teachers nec,Private Tutors and Teachers nec,307979002 ,3,,
+2412,Primary School Teachers,Primary School Teachers,106307001 ,2,,
+  2412-13,Primary School Teacher,Primary School Teacher,106307001 ,2,,
+    2412-13.0,Primary School Teacher,Primary School Teacher,106307001 ,2,,
+9999,Other,Other,,6,,
+  9999.99,Other,Other,,6,,
+    9999.99.0,Other,Other,,6,,

@@ -1,50 +1,3660 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ConceptMap xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/structuredefinition.xsd">
-	<id value="conceptmap-snomed-nhsd-core"/>
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<h1>SNOMED-CT to NHSD core service</h1>
-		</div>
-	</text>
-	<name value="SNOMED-CT to NHSD core service"/>
-	<title value="SNOMED-CT to NHSD core service"/>
-	<status value="active"/>
-	<experimental value="false"/>
-	<date value="2013-07-25"/>
-	<sourceReference>
-		<reference value="http://hl7.org.au/fhir/ValueSet/valueset-snomed-practitioner-role"/>
-	</sourceReference>
-	<targetReference>
-		<reference value="http://hl7.org.au/fhir/ValueSet/valueset-nhsd-core-services"/>
-	</targetReference>
-	<group>
-		<element>
-			<code value="1421009"/>
-			<target>
-				<code value="2535-11.0"/>
-				<equivalence value="wider"/>
-			</target>
-		</element>
-		<element>
-			<code value="3430008"/>
-			<target>
-				<code value="2512-12-0"/>
-			</target>
-		</element>
-		<element>
-			<code value="3842006"/>
-			<target>
-				<code value="2521-11-0"/>
-			</target>
-		</element>
-		<element>
-			<code value="4162009"/>
-			<target>
-				<code value="4112"/>
-				<equivalence value="inexact"/>
-				<comment value="similar area"/>
-			</target>
-		</element>
-	</group>
+  <id value="conceptmap-snomed-nhsd-core"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>SNOMED-CT to NHSD Core Concept Map</h2>
+      Practitioner roles mapping.
+      <table  border="1">
+        <tbody>
+          <tr>
+            <th style="width:30%">Name</th>
+            <th style="width:10%">Equivalence</th>
+            <th style="width:10%">SNOMED</th>
+            <th style="width:10%">NHSD Core</th>
+            <th style="width:40%">Comment</th>
+          </tr>
+          <tr>
+            <td>Health and Welfare Service Managers</td>
+            <td>inexact</td>
+            <td>224579007</td>
+            <td>1342</td>
+            <td>mapped to 224579007 |Healthcare service manager (occupation)| as NHSD children do not contain welfare managers</td>
+          </tr>
+          <tr>
+            <td>Other Natural and Physical Science Professionals</td>
+            <td>inexact</td>
+            <td>308027003</td>
+            <td>2349</td>
+            <td>abstract term, so no need to explicitly map?</td>
+          </tr>
+          <tr>
+            <td>Natural and Physical Science Professionals nec</td>
+            <td>inexact</td>
+            <td>308027003</td>
+            <td>2349-99</td>
+            <td>Snomed rejects nec's!</td>
+          </tr>
+          <tr>
+            <td>Health Professionals</td>
+            <td>inexact</td>
+            <td>223366009</td>
+            <td>2500</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Health Professionals nfd (Australian use only)</td>
+            <td>inexact</td>
+            <td>223366009</td>
+            <td>2500-00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Health Professionals nfd</td>
+            <td>inexact</td>
+            <td>223366009</td>
+            <td>2500-00-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dietitians</td>
+            <td>inexact</td>
+            <td>159033005</td>
+            <td>2511</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dietitian</td>
+            <td>equivalent</td>
+            <td>159033005</td>
+            <td>2511-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dietitian</td>
+            <td>equivalent</td>
+            <td>159033005</td>
+            <td>2511-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Medical Diagnostic Radiographer</td>
+            <td>inexact</td>
+            <td>159016003</td>
+            <td>2512-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Medical Diagnostic Radiographer</td>
+            <td>inexact</td>
+            <td>159016003</td>
+            <td>2512-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Optometrists and Orthoptists</td>
+            <td>inexact</td>
+            <td>106295001</td>
+            <td>2514</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Optometrist</td>
+            <td>equivalent</td>
+            <td>28229004</td>
+            <td>2514-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Optometrist</td>
+            <td>equivalent</td>
+            <td>28229004</td>
+            <td>2514-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Orthoptist</td>
+            <td>equivalent</td>
+            <td>159027001</td>
+            <td>2514-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Orthoptist</td>
+            <td>equivalent</td>
+            <td>159027001</td>
+            <td>2514-12-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Pharmacists</td>
+            <td>inexact</td>
+            <td>46255001</td>
+            <td>2515</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Retail/ Community Pharmacist</td>
+            <td>inexact</td>
+            <td>159011008</td>
+            <td>2515-13</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Retail/Community Pharmacist</td>
+            <td>inexact</td>
+            <td>159011008</td>
+            <td>2515-13-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Consultant Pharmacist</td>
+            <td>inexact</td>
+            <td>159011008</td>
+            <td>2515-13-2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Other Health Diagnostic and Promotion Professionals</td>
+            <td>inexact</td>
+            <td>308027003</td>
+            <td>2519</td>
+            <td>abstract term, so no need to explicitly map?</td>
+          </tr>
+          <tr>
+            <td>Health Promotion Officer/Community Health Worker/Health Educator</td>
+            <td>inexact</td>
+            <td>409974004</td>
+            <td>2519-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Orthotist or Prosthetist</td>
+            <td>inexact</td>
+            <td>309428008</td>
+            <td>2519-12</td>
+            <td>Have asked the professional body</td>
+          </tr>
+          <tr>
+            <td>Orthotist or Prosthetist</td>
+            <td>inexact</td>
+            <td>309428008</td>
+            <td>2519-12-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Chiropractor</td>
+            <td>equivalent</td>
+            <td>3842006</td>
+            <td>2521-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Chiropractor</td>
+            <td>equivalent</td>
+            <td>3842006</td>
+            <td>2521-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Osteopath</td>
+            <td>equivalent</td>
+            <td>76231001</td>
+            <td>2521-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Osteopath</td>
+            <td>equivalent</td>
+            <td>76231001</td>
+            <td>2521-12-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Complementary Health Therapists</td>
+            <td>inexact</td>
+            <td>224609002</td>
+            <td>2522</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Complementary Health Therapists nec</td>
+            <td>inexact</td>
+            <td>224609002</td>
+            <td>2522-99</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Complementary Health Therapists nec</td>
+            <td>inexact</td>
+            <td>224609002</td>
+            <td>2522-99-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dance Therapist</td>
+            <td>equivalent</td>
+            <td>309411005</td>
+            <td>2522-99-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Hypnotherapist</td>
+            <td>equivalent</td>
+            <td>444912007</td>
+            <td>2522-99-3</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Music Therapist</td>
+            <td>equivalent</td>
+            <td>309412003</td>
+            <td>2522-99-4</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dental Practitioners</td>
+            <td>inexact</td>
+            <td>106289002</td>
+            <td>2523</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dental Specialist</td>
+            <td>inexact</td>
+            <td>158978000</td>
+            <td>2523-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Endodontist</td>
+            <td>equivalent</td>
+            <td>50149000</td>
+            <td>2523-11-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Oral and Maxillofacial Surgeon</td>
+            <td>inexact</td>
+            <td>49993003</td>
+            <td>2523-11-2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Oral Pathologist</td>
+            <td>equivalent</td>
+            <td>66476003</td>
+            <td>2523-11-3</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Orthodontist</td>
+            <td>equivalent</td>
+            <td>37504001</td>
+            <td>2523-11-4</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Paedodontist</td>
+            <td>equivalent</td>
+            <td>90201008</td>
+            <td>2523-11-5</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Periodontist</td>
+            <td>equivalent</td>
+            <td>37154003</td>
+            <td>2523-11-6</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Prosthodontist</td>
+            <td>equivalent</td>
+            <td>68950000</td>
+            <td>2523-11-7</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dental Specialist</td>
+            <td>inexact</td>
+            <td>158978000</td>
+            <td>2523-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dentist/ Dental Practitioner/ Dental Surgeon</td>
+            <td>inexact</td>
+            <td>106289002</td>
+            <td>2523-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dentist / Dental Practitioner</td>
+            <td>inexact</td>
+            <td>106289002</td>
+            <td>2523-12.6</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Occupational Therapists</td>
+            <td>inexact</td>
+            <td>80546007</td>
+            <td>2524</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Occupational Therapist</td>
+            <td>equivalent</td>
+            <td>80546007</td>
+            <td>2524-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Occupational Therapist</td>
+            <td>equivalent</td>
+            <td>80546007</td>
+            <td>2524-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Physiotherapists</td>
+            <td>inexact</td>
+            <td>36682004</td>
+            <td>2525</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Physiotherapist</td>
+            <td>equivalent</td>
+            <td>36682004</td>
+            <td>2525-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Physiotherapist</td>
+            <td>equivalent</td>
+            <td>36682004</td>
+            <td>2525-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Podiatrists</td>
+            <td>inexact</td>
+            <td>159034004</td>
+            <td>2526</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Podiatrist</td>
+            <td>equivalent</td>
+            <td>159034004</td>
+            <td>2526-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Podiatrist</td>
+            <td>equivalent</td>
+            <td>159034004</td>
+            <td>2526-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Audiologist</td>
+            <td>equivalent</td>
+            <td>309418004</td>
+            <td>2527-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Audiologist</td>
+            <td>equivalent</td>
+            <td>309418004</td>
+            <td>2527-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Speech Pathologist</td>
+            <td>inexact</td>
+            <td>159026005</td>
+            <td>2527-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Speech Pathologist</td>
+            <td>inexact</td>
+            <td>159026005</td>
+            <td>2527-12-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Generalist Medical Practitioners</td>
+            <td>inexact</td>
+            <td>62247001</td>
+            <td>2531</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>General Medical Practitioner</td>
+            <td>inexact</td>
+            <td>62247001</td>
+            <td>2531-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>General Medical Practitioner</td>
+            <td>inexact</td>
+            <td>62247001</td>
+            <td>2531-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Resident Medical Officer</td>
+            <td>inexact</td>
+            <td>158972004</td>
+            <td>2531-12</td>
+            <td>could suggest change to Australian terms - ie a new synonym for 158972004 |House officer (occupation)|</td>
+          </tr>
+          <tr>
+            <td>Career Medical Officer/ Senior Medical Officer nec</td>
+            <td>inexact</td>
+            <td>224532007</td>
+            <td>2531-12-9</td>
+            <td>could suggest change to Australian terms - ie a new synonym for 224532007 |Senior house officer (occupation)|</td>
+          </tr>
+          <tr>
+            <td>Anaesthetists</td>
+            <td>inexact</td>
+            <td>158970007</td>
+            <td>2532</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Anaesthetist</td>
+            <td>equivalent</td>
+            <td>158970007</td>
+            <td>2532-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Anaesthetist</td>
+            <td>equivalent</td>
+            <td>158970007</td>
+            <td>2532-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Specialists Physicians</td>
+            <td>inexact</td>
+            <td>69280009</td>
+            <td>2533</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Specialist Physician (General Medicine)</td>
+            <td>inexact</td>
+            <td>39677007</td>
+            <td>2533-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Specialist Physician (General Medicine)</td>
+            <td>inexact</td>
+            <td>39677007</td>
+            <td>2533-11-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Cardiologist</td>
+            <td>equivalent</td>
+            <td>17561000</td>
+            <td>2533-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Cardiologist</td>
+            <td>equivalent</td>
+            <td>17561000</td>
+            <td>2533-12-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Clinical Haematologist</td>
+            <td>equivalent</td>
+            <td>309347007</td>
+            <td>2533-13</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Clinical Haematologist</td>
+            <td>equivalent</td>
+            <td>309347007</td>
+            <td>2533-13-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Medical Oncologist</td>
+            <td>equivalent</td>
+            <td>310512001</td>
+            <td>2533-14</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Medical Oncologist</td>
+            <td>equivalent</td>
+            <td>310512001</td>
+            <td>2533-14-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Endocrinologist</td>
+            <td>equivalent</td>
+            <td>61894003</td>
+            <td>2533-15</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Endocrinologist</td>
+            <td>equivalent</td>
+            <td>61894003</td>
+            <td>2533-15.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Gastroenterologist</td>
+            <td>equivalent</td>
+            <td>71838004</td>
+            <td>2533-16</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Gastroenterologist</td>
+            <td>equivalent</td>
+            <td>71838004</td>
+            <td>2533-16-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Intensive Care Specialist</td>
+            <td>equivalent</td>
+            <td>309338004</td>
+            <td>2533-17</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Intensive Care Specialist</td>
+            <td>equivalent</td>
+            <td>309338004</td>
+            <td>2533-17-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Neurologist</td>
+            <td>equivalent</td>
+            <td>56397003</td>
+            <td>2533-18</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Neurologist</td>
+            <td>equivalent</td>
+            <td>56397003</td>
+            <td>2533-18-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Paediatrician</td>
+            <td>equivalent</td>
+            <td>82296001</td>
+            <td>2533-21</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Neonatologist</td>
+            <td>equivalent</td>
+            <td>28411006</td>
+            <td>2533-21-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>General Paediatrics Specialist</td>
+            <td>inexact</td>
+            <td>82296001</td>
+            <td>2533-21-21</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Renal Medicine Specialist</td>
+            <td>inexact</td>
+            <td>11911009</td>
+            <td>2533-22</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Renal Medicine Specialist / Nephrologist / Renal Medicine Physician</td>
+            <td>inexact</td>
+            <td>11911009</td>
+            <td>2533-22-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Nephrologist</td>
+            <td>inexact</td>
+            <td>11911009</td>
+            <td>2533-22.1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Rheumatologist</td>
+            <td>equivalent</td>
+            <td>45440000</td>
+            <td>2533-23</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Rheumatologist</td>
+            <td>equivalent</td>
+            <td>45440000</td>
+            <td>2533-23-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Thoracic Medicine Specialist</td>
+            <td>inexact</td>
+            <td>309345004</td>
+            <td>2533-24</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Respiratory Medicine Physician</td>
+            <td>inexact</td>
+            <td>41672002</td>
+            <td>2533-24-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Thoracic Medicine Physician</td>
+            <td>inexact</td>
+            <td>309346003</td>
+            <td>2533-24-2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Pulmonary Specialist</td>
+            <td>inexact</td>
+            <td>41672002</td>
+            <td>2533-24.3</td>
+            <td>not sure of the dictinctions here but have tried to use the little hierarchy in snomed appropriately to mirror the  NHSD hierarchy</td>
+          </tr>
+          <tr>
+            <td>Specialist Physians nec</td>
+            <td>inexact</td>
+            <td>309343006</td>
+            <td>2533-99</td>
+            <td>snomed deprecates nec!</td>
+          </tr>
+          <tr>
+            <td>Addiction Medicine Specialist</td>
+            <td>equivalent</td>
+            <td>446701002</td>
+            <td>2533-99-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Clinical Immunologist</td>
+            <td>equivalent</td>
+            <td>63098009</td>
+            <td>2533-99-3</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Clinical Pharmacologist</td>
+            <td>equivalent</td>
+            <td>310173006</td>
+            <td>2533-99-4</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Geriatrician</td>
+            <td>equivalent</td>
+            <td>90655003</td>
+            <td>2533-99-5</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Industrial Medicine Specialist</td>
+            <td>inexact</td>
+            <td>158973009</td>
+            <td>2533-99-6</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Infectious Diseases Specialist</td>
+            <td>equivalent</td>
+            <td>76899008</td>
+            <td>2533-99-7</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Palliative Medicine Specialist</td>
+            <td>inexact</td>
+            <td>309359006</td>
+            <td>2533-99-8</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Rehabilitation Medicine Physician</td>
+            <td>inexact</td>
+            <td>309360001</td>
+            <td>2533-99-9</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Specialist Physicians nec</td>
+            <td>inexact</td>
+            <td>309343006</td>
+            <td>2533-99.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Psychiatrists</td>
+            <td>inexact</td>
+            <td>80584001</td>
+            <td>2534</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Psychiatrist</td>
+            <td>equivalent</td>
+            <td>80584001</td>
+            <td>2534-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Adolescent Psychiatrist</td>
+            <td>inexact</td>
+            <td>309361002</td>
+            <td>2534-11-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Child Psychiatrist</td>
+            <td>inexact</td>
+            <td>309361002</td>
+            <td>2534-11-3</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Forensic Psychiatrist</td>
+            <td>equivalent</td>
+            <td>309362009</td>
+            <td>2534-11-4</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Medical Psychotherapist</td>
+            <td>inexact</td>
+            <td>224588003</td>
+            <td>2534-11-6</td>
+            <td>doesn't have to be a psychiatrist, bt this code is no longer for a doctor</td>
+          </tr>
+          <tr>
+            <td>Psychiatrist</td>
+            <td>equivalent</td>
+            <td>80584001</td>
+            <td>2534-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Surgeons</td>
+            <td>inexact</td>
+            <td>304292004</td>
+            <td>2535</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Surgeon (General)</td>
+            <td>inexact</td>
+            <td>304292004</td>
+            <td>2535-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Breast Surgeon</td>
+            <td>equivalent</td>
+            <td>309368008</td>
+            <td>2535-11-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Transplant Surgeon</td>
+            <td>equivalent</td>
+            <td>309385005</td>
+            <td>2535-11-2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Colorectal Surgeon</td>
+            <td>equivalent</td>
+            <td>309379003</td>
+            <td>2535-11-4</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Surgical Oncologist</td>
+            <td>inexact</td>
+            <td>309295000</td>
+            <td>2535-11-6</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Surgeon</td>
+            <td>equivalent</td>
+            <td>304292004</td>
+            <td>2535-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Cardiothoracic Surgeon</td>
+            <td>equivalent</td>
+            <td>309369000</td>
+            <td>2535-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Cardiothoracic Surgeon</td>
+            <td>equivalent</td>
+            <td>309369000</td>
+            <td>2535-12-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Thoracic Surgeon</td>
+            <td>equivalent</td>
+            <td>22983004</td>
+            <td>2535-12.1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Neurosurgeon</td>
+            <td>equivalent</td>
+            <td>45544007</td>
+            <td>2535-13</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Neurosurgeon</td>
+            <td>equivalent</td>
+            <td>45544007</td>
+            <td>2535-13-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Orthopaedic Surgeon</td>
+            <td>equivalent</td>
+            <td>22731001</td>
+            <td>2535-14</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Orthopaedic Surgeon</td>
+            <td>equivalent</td>
+            <td>22731001</td>
+            <td>2535-14-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Otorhinolaryngologist / Ear Nose and Throat Specialist</td>
+            <td>inexact</td>
+            <td>61345009</td>
+            <td>2535-15</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Otorhinolaryngologist - Ear/Nose/Throat Surgeon</td>
+            <td>inexact</td>
+            <td>61345009</td>
+            <td>2535-15.4</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Paediatric Surgeon</td>
+            <td>equivalent</td>
+            <td>309383003</td>
+            <td>2535-16</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Paediatric Surgeon</td>
+            <td>equivalent</td>
+            <td>309383003</td>
+            <td>2535-16-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Plastic and Reconstructive Surgeon</td>
+            <td>inexact</td>
+            <td>8724009</td>
+            <td>2535-17</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Plastic and Reconstructive Surgeon</td>
+            <td>inexact</td>
+            <td>8724009</td>
+            <td>2535-17-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Urologist</td>
+            <td>equivalent</td>
+            <td>24590004</td>
+            <td>2535-18</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Urologist</td>
+            <td>equivalent</td>
+            <td>24590004</td>
+            <td>2535-18-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Vascular Surgeon</td>
+            <td>equivalent</td>
+            <td>309388007</td>
+            <td>2535-21</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Vascular Surgeon</td>
+            <td>equivalent</td>
+            <td>309388007</td>
+            <td>2535-21-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Other Medical Practitioners</td>
+            <td>inexact</td>
+            <td>158965000</td>
+            <td>2539</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dermatologist</td>
+            <td>equivalent</td>
+            <td>18803008</td>
+            <td>2539-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dermatologist</td>
+            <td>equivalent</td>
+            <td>18803008</td>
+            <td>2539-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Emergency Medicine Specialist / Emergency Physician</td>
+            <td>inexact</td>
+            <td>309294001</td>
+            <td>2539-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Emergency Medicine Specialist</td>
+            <td>inexact</td>
+            <td>309294001</td>
+            <td>2539-12-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Obstetrician and Gynaecologist</td>
+            <td>equivalent</td>
+            <td>309367003</td>
+            <td>2539-13</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Obstetrician and Gynaecologist</td>
+            <td>equivalent</td>
+            <td>309367003</td>
+            <td>2539-13.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Gynaecologist</td>
+            <td>equivalent</td>
+            <td>83685006</td>
+            <td>2539-13.6</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Ophthalmologist / Eye Specialist/ Eye Surgeon</td>
+            <td>inexact</td>
+            <td>422234006</td>
+            <td>2539-14</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Ophthalmologist / Eye Specialist/ Eye Surgeon</td>
+            <td>inexact</td>
+            <td>422234006</td>
+            <td>2539-14-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Pathologist</td>
+            <td>inexact</td>
+            <td>61207006</td>
+            <td>2539-15</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>General Anatomic Pathologist</td>
+            <td>inexact</td>
+            <td>83273008</td>
+            <td>2539-15-3</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Medical Microbiologist</td>
+            <td>equivalent</td>
+            <td>14698002</td>
+            <td>2539-15-8</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Histopathologist</td>
+            <td>equivalent</td>
+            <td>309342001</td>
+            <td>2539-15.10</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Haematologist</td>
+            <td>equivalent</td>
+            <td>40204001</td>
+            <td>2539-15.11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Pathologist</td>
+            <td>inexact</td>
+            <td>61207006</td>
+            <td>2539-15.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Diagnostic and Interventional Radiologist</td>
+            <td>inexact</td>
+            <td>66862007</td>
+            <td>2539-17</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Diagnostic Radiologist</td>
+            <td>equivalent</td>
+            <td>78729002</td>
+            <td>2539-17-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Nuclear Medicine Specialist</td>
+            <td>equivalent</td>
+            <td>80933006</td>
+            <td>2539-17-3</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Medical Practitioners nec</td>
+            <td>inexact</td>
+            <td>158965000</td>
+            <td>2539-99</td>
+            <td>snomed abhors nec!</td>
+          </tr>
+          <tr>
+            <td>Medical Practitioners nec</td>
+            <td>inexact</td>
+            <td>158965000</td>
+            <td>2539-99.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Occupational Medicine and Environmental Specialist</td>
+            <td>inexact</td>
+            <td>158973009</td>
+            <td>2539-99-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Public Health Physician</td>
+            <td>equivalent</td>
+            <td>56466003</td>
+            <td>2539-99-2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Midwifery and Nursing Professionals</td>
+            <td>inexact</td>
+            <td>158992006</td>
+            <td>2540</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Midwifery and Nursing Professionals nfd (Australian use only)</td>
+            <td>inexact</td>
+            <td>158992006</td>
+            <td>2540-00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Midwifery and Nursing Professionals nfd</td>
+            <td>inexact</td>
+            <td>158992006</td>
+            <td>2540-00-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Midwives</td>
+            <td>inexact</td>
+            <td>158992006</td>
+            <td>2541</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Midwife/Certified Midwife/Registered Midwife</td>
+            <td>inexact</td>
+            <td>158992006</td>
+            <td>2541-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Community Midwife</td>
+            <td>equivalent</td>
+            <td>158999002</td>
+            <td>2541-11-1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Midwife Practitioner</td>
+            <td>inexact</td>
+            <td>158992006</td>
+            <td>2541-11-2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Registered Nurses</td>
+            <td>inexact</td>
+            <td>224535009</td>
+            <td>2544</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Nurse Practitioner</td>
+            <td>equivalent</td>
+            <td>224571005</td>
+            <td>2544-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Nurse Practitioner</td>
+            <td>equivalent</td>
+            <td>224571005</td>
+            <td>2544-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Registered Nurse (Developmental Disability)</td>
+            <td>inexact</td>
+            <td>224535009</td>
+            <td>2544-16</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Registered Nurse (Developmental Disability)</td>
+            <td>inexact</td>
+            <td>224535009</td>
+            <td>2544-16.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Registered Nurse (Medical)</td>
+            <td>inexact</td>
+            <td>224570006</td>
+            <td>2544-18</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Registered Nurse (Medical)</td>
+            <td>inexact</td>
+            <td>224570006</td>
+            <td>2544-18-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Registered Nurse (Medical Practice)/Practice Nurse</td>
+            <td>inexact</td>
+            <td>159002008</td>
+            <td>2544-21</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Registered Nurse (Medical Practice)/Practice Nurse</td>
+            <td>inexact</td>
+            <td>159002008</td>
+            <td>2544-21.1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Registered Nurse (Mental Health)/Phychiatric</td>
+            <td>inexact</td>
+            <td>224563006</td>
+            <td>2544-22</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Registered Nurse (Mental Health)/Psychiatric</td>
+            <td>inexact</td>
+            <td>224563006</td>
+            <td>2544-22.5</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Counsellors</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Careers Counsellor</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Careers Counsellor</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Drug and Alcohol Counsellor</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Drug and Alcohol Counsellor</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-12-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Family and Marriage Counsellor</td>
+            <td>inexact</td>
+            <td>224596008</td>
+            <td>2721-13</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Family Mediator/Family and Marriage Counsellor</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-13-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Rehabilitation Counsellor</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-14</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Rehabilitation Counsellor</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-14-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Counsellors nec</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-99</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Counsellors nec</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-99-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Family Therapist</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-99.8</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Student Counsellor</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-15</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Student Counsellor</td>
+            <td>inexact</td>
+            <td>224595007</td>
+            <td>2721-15.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Psychologists</td>
+            <td>inexact</td>
+            <td>59944000</td>
+            <td>2723</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Clinical Psychologist</td>
+            <td>equivalent</td>
+            <td>310191001</td>
+            <td>2723-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Clinical Psychologist</td>
+            <td>equivalent</td>
+            <td>310191001</td>
+            <td>2723-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Educational Psychologist</td>
+            <td>equivalent</td>
+            <td>310192008</td>
+            <td>2723-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Educational Psychologist</td>
+            <td>equivalent</td>
+            <td>310192008</td>
+            <td>2723-12-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Psychotherapist</td>
+            <td>equivalent</td>
+            <td>224588003</td>
+            <td>2723-14</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Psychotherapist</td>
+            <td>equivalent</td>
+            <td>224588003</td>
+            <td>2723-14-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Psychologists nec</td>
+            <td>inexact</td>
+            <td>59944000</td>
+            <td>2723-99</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Psychologists nec</td>
+            <td>inexact</td>
+            <td>59944000</td>
+            <td>2723-99-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Social Workers</td>
+            <td>inexact</td>
+            <td>106328005</td>
+            <td>2725</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Social Worker</td>
+            <td>equivalent</td>
+            <td>106328005</td>
+            <td>2725-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Mental Health Social Worker</td>
+            <td>inexact</td>
+            <td>80292009</td>
+            <td>2725-11.1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Social Worker</td>
+            <td>equivalent</td>
+            <td>106328005</td>
+            <td>2725-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dental Hygienist</td>
+            <td>equivalent</td>
+            <td>26042002</td>
+            <td>4112-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dental Hygienist</td>
+            <td>equivalent</td>
+            <td>26042002</td>
+            <td>4112-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dental Technician</td>
+            <td>equivalent</td>
+            <td>160008000</td>
+            <td>4112-13</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Dental Technician</td>
+            <td>equivalent</td>
+            <td>160008000</td>
+            <td>4112-13.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Indigenous Health Workers</td>
+            <td>inexact</td>
+            <td>826241000168109</td>
+            <td>4115</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Aboriginal and Torres Strait Islander Health Worker</td>
+            <td>inexact</td>
+            <td>826241000168109</td>
+            <td>4115-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Aboriginal and Torres Strait Islander Health Worker</td>
+            <td>inexact</td>
+            <td>826241000168109</td>
+            <td>4115-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Massage Therapists</td>
+            <td>inexact</td>
+            <td>826281000168104</td>
+            <td>4116</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Massage Therapist</td>
+            <td>equivalent</td>
+            <td>826281000168104</td>
+            <td>4116-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Massage Therapist</td>
+            <td>equivalent</td>
+            <td>826281000168104</td>
+            <td>4116-11-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Welfare Support Workers</td>
+            <td>inexact</td>
+            <td>265935008</td>
+            <td>4117</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Parole or Probation Officer</td>
+            <td>inexact</td>
+            <td>158936006</td>
+            <td>4117-14</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Parole or Probation Officer</td>
+            <td>inexact</td>
+            <td>158936006</td>
+            <td>4117-14.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Personal Carer</td>
+            <td>inexact</td>
+            <td>229774002</td>
+            <td>4231-11-2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Personal Care Assistant</td>
+            <td>inexact</td>
+            <td>224576000</td>
+            <td>4233-13</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Personal Care Assistant</td>
+            <td>inexact</td>
+            <td>224576000</td>
+            <td>4233-13-0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Child or Youth Residential Care Assistant</td>
+            <td>inexact</td>
+            <td>158943000</td>
+            <td>4234-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Child or Youth Residential Care Assistant</td>
+            <td>inexact</td>
+            <td>158943000</td>
+            <td>4234-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Special Education Teachers</td>
+            <td>inexact</td>
+            <td>106309003</td>
+            <td>2415</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Special Needs Teacher</td>
+            <td>inexact</td>
+            <td>106309003</td>
+            <td>2415-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Special Needs Teacher</td>
+            <td>inexact</td>
+            <td>106309003</td>
+            <td>2415-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Special Education Teachers nec</td>
+            <td>inexact</td>
+            <td>106309003</td>
+            <td>2415-99</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Special Education Teachers nec</td>
+            <td>inexact</td>
+            <td>106309003</td>
+            <td>2415-99.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Teacher of the Hearing Impaired</td>
+            <td>equivalent</td>
+            <td>310197002</td>
+            <td>2415-12</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Teacher of the Hearing Impaired</td>
+            <td>equivalent</td>
+            <td>310197002</td>
+            <td>2415-12.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Teacher of the Sight Impaired</td>
+            <td>inexact</td>
+            <td>34718002</td>
+            <td>2415-13</td>
+            <td>add synonym</td>
+          </tr>
+          <tr>
+            <td>Teacher of the Sight Impaired</td>
+            <td>inexact</td>
+            <td>34718002</td>
+            <td>2415-13.0</td>
+            <td>add synonym</td>
+          </tr>
+          <tr>
+            <td>Ministers of Religion</td>
+            <td>inexact</td>
+            <td>11015003</td>
+            <td>2722</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Minister of Religion</td>
+            <td>equivalent</td>
+            <td>11015003</td>
+            <td>2722-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Minister of Religion</td>
+            <td>equivalent</td>
+            <td>11015003</td>
+            <td>2722-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Barristers</td>
+            <td>inexact</td>
+            <td>307790001</td>
+            <td>2711</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Barrister</td>
+            <td>equivalent</td>
+            <td>307790001</td>
+            <td>2711-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Barrister</td>
+            <td>equivalent</td>
+            <td>307790001</td>
+            <td>2711-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Solicitors</td>
+            <td>inexact</td>
+            <td>158762005</td>
+            <td>2713</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Solicitor</td>
+            <td>equivalent</td>
+            <td>158762005</td>
+            <td>2713-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Solicitor</td>
+            <td>equivalent</td>
+            <td>158762005</td>
+            <td>2713-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Judicial and Other Legal Professionals</td>
+            <td>inexact</td>
+            <td>271554005</td>
+            <td>2712</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Judicial and Other Legal Professionals nec</td>
+            <td>inexact</td>
+            <td>271554005</td>
+            <td>2712-99</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Judicial and Other Legal Professionals nec</td>
+            <td>inexact</td>
+            <td>271554005</td>
+            <td>2712-99.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Early Childhood (Pre-primary School) Teachers</td>
+            <td>inexact</td>
+            <td>106308006</td>
+            <td>2411</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Early Childhood (Pre-primary School) Teacher</td>
+            <td>inexact</td>
+            <td>106308006</td>
+            <td>2411-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Early Childhood (Pre-primary School) Teacher</td>
+            <td>inexact</td>
+            <td>106308006</td>
+            <td>2411-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Secondary School Teachers</td>
+            <td>equivalent</td>
+            <td>158903005</td>
+            <td>2414</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Secondary School Teacher</td>
+            <td>equivalent</td>
+            <td>158903005</td>
+            <td>2414-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Secondary School Teacher</td>
+            <td>equivalent</td>
+            <td>158903005</td>
+            <td>2414-11.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>School Principals</td>
+            <td>inexact</td>
+            <td>80407007</td>
+            <td>1343</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>School Principal</td>
+            <td>inexact</td>
+            <td>80407007</td>
+            <td>1343-11</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Private Tutors and Teachers</td>
+            <td>inexact</td>
+            <td>307979002</td>
+            <td>2492</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Private Tutors and Teachers nec</td>
+            <td>inexact</td>
+            <td>307979002</td>
+            <td>2492-99</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Private Tutors and Teachers nec</td>
+            <td>inexact</td>
+            <td>307979002</td>
+            <td>2492-99.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Primary School Teachers</td>
+            <td>inexact</td>
+            <td>106307001</td>
+            <td>2412</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Primary School Teacher</td>
+            <td>inexact</td>
+            <td>106307001</td>
+            <td>2412-13</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Primary School Teacher</td>
+            <td>inexact</td>
+            <td>106307001</td>
+            <td>2412-13.0</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </text>
+  <name value="SNOMED-CT to NHSD core service"/>
+  <title value="SNOMED-CT to NHSD core service"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2013-07-25"/>
+  <sourceReference>
+    <reference value="http://hl7.org.au/fhir/ValueSet/valueset-snomed-practitioner-role"/>
+  </sourceReference>
+  <targetReference>
+    <reference value="http://hl7.org.au/fhir/ValueSet/valueset-nhsd-core-services"/>
+  </targetReference>
+  <group>
+    <element>
+      <code value="224579007"/>
+      <target>
+        <code value="1342"/>
+        <equivalence value="inexact"/>
+        <comment value="mapped to 224579007 |Healthcare service manager (occupation)| as NHSD children do not contain welfare managers"/>
+      </target>
+    </element>
+    <element>
+      <code value="308027003"/>
+      <target>
+        <code value="2349"/>
+        <equivalence value="inexact"/>
+        <comment value="abstract term, so no need to explicitly map?"/>
+      </target>
+    </element>
+    <element>
+      <code value="308027003"/>
+      <target>
+        <code value="2349-99"/>
+        <equivalence value="inexact"/>
+        <comment value="Snomed rejects nec's!"/>
+      </target>
+    </element>
+    <element>
+      <code value="223366009"/>
+      <target>
+        <code value="2500"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="223366009"/>
+      <target>
+        <code value="2500-00"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="223366009"/>
+      <target>
+        <code value="2500-00-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159033005"/>
+      <target>
+        <code value="2511"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159033005"/>
+      <target>
+        <code value="2511-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="159033005"/>
+      <target>
+        <code value="2511-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="159016003"/>
+      <target>
+        <code value="2512-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159016003"/>
+      <target>
+        <code value="2512-11.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106295001"/>
+      <target>
+        <code value="2514"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="28229004"/>
+      <target>
+        <code value="2514-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="28229004"/>
+      <target>
+        <code value="2514-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="159027001"/>
+      <target>
+        <code value="2514-12"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="159027001"/>
+      <target>
+        <code value="2514-12-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="46255001"/>
+      <target>
+        <code value="2515"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159011008"/>
+      <target>
+        <code value="2515-13"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159011008"/>
+      <target>
+        <code value="2515-13-1"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159011008"/>
+      <target>
+        <code value="2515-13-2"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="308027003"/>
+      <target>
+        <code value="2519"/>
+        <equivalence value="inexact"/>
+        <comment value="abstract term, so no need to explicitly map?"/>
+      </target>
+    </element>
+    <element>
+      <code value="409974004"/>
+      <target>
+        <code value="2519-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309428008"/>
+      <target>
+        <code value="2519-12"/>
+        <equivalence value="inexact"/>
+        <comment value="Have asked the professional body"/>
+      </target>
+    </element>
+    <element>
+      <code value="309428008"/>
+      <target>
+        <code value="2519-12-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="3842006"/>
+      <target>
+        <code value="2521-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="3842006"/>
+      <target>
+        <code value="2521-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="76231001"/>
+      <target>
+        <code value="2521-12"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="76231001"/>
+      <target>
+        <code value="2521-12-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="224609002"/>
+      <target>
+        <code value="2522"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224609002"/>
+      <target>
+        <code value="2522-99"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224609002"/>
+      <target>
+        <code value="2522-99-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309411005"/>
+      <target>
+        <code value="2522-99-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="444912007"/>
+      <target>
+        <code value="2522-99-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309412003"/>
+      <target>
+        <code value="2522-99-4"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="106289002"/>
+      <target>
+        <code value="2523"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158978000"/>
+      <target>
+        <code value="2523-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="50149000"/>
+      <target>
+        <code value="2523-11-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="49993003"/>
+      <target>
+        <code value="2523-11-2"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="66476003"/>
+      <target>
+        <code value="2523-11-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="37504001"/>
+      <target>
+        <code value="2523-11-4"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="90201008"/>
+      <target>
+        <code value="2523-11-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="37154003"/>
+      <target>
+        <code value="2523-11-6"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="68950000"/>
+      <target>
+        <code value="2523-11-7"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158978000"/>
+      <target>
+        <code value="2523-11.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106289002"/>
+      <target>
+        <code value="2523-12"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106289002"/>
+      <target>
+        <code value="2523-12.6"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="80546007"/>
+      <target>
+        <code value="2524"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="80546007"/>
+      <target>
+        <code value="2524-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="80546007"/>
+      <target>
+        <code value="2524-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="36682004"/>
+      <target>
+        <code value="2525"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="36682004"/>
+      <target>
+        <code value="2525-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="36682004"/>
+      <target>
+        <code value="2525-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="159034004"/>
+      <target>
+        <code value="2526"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159034004"/>
+      <target>
+        <code value="2526-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="159034004"/>
+      <target>
+        <code value="2526-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309418004"/>
+      <target>
+        <code value="2527-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309418004"/>
+      <target>
+        <code value="2527-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="159026005"/>
+      <target>
+        <code value="2527-12"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159026005"/>
+      <target>
+        <code value="2527-12-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="62247001"/>
+      <target>
+        <code value="2531"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="62247001"/>
+      <target>
+        <code value="2531-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="62247001"/>
+      <target>
+        <code value="2531-11.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158972004"/>
+      <target>
+        <code value="2531-12"/>
+        <equivalence value="inexact"/>
+        <comment value="could suggest change to Australian terms - ie a new synonym for 158972004 |House officer (occupation)|"/>
+      </target>
+    </element>
+    <element>
+      <code value="224532007"/>
+      <target>
+        <code value="2531-12-9"/>
+        <equivalence value="inexact"/>
+        <comment value="could suggest change to Australian terms - ie a new synonym for 224532007 |Senior house officer (occupation)|"/>
+      </target>
+    </element>
+    <element>
+      <code value="158970007"/>
+      <target>
+        <code value="2532"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158970007"/>
+      <target>
+        <code value="2532-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158970007"/>
+      <target>
+        <code value="2532-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="69280009"/>
+      <target>
+        <code value="2533"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="39677007"/>
+      <target>
+        <code value="2533-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="39677007"/>
+      <target>
+        <code value="2533-11-1"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="17561000"/>
+      <target>
+        <code value="2533-12"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="17561000"/>
+      <target>
+        <code value="2533-12-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309347007"/>
+      <target>
+        <code value="2533-13"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309347007"/>
+      <target>
+        <code value="2533-13-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="310512001"/>
+      <target>
+        <code value="2533-14"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="310512001"/>
+      <target>
+        <code value="2533-14-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="61894003"/>
+      <target>
+        <code value="2533-15"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="61894003"/>
+      <target>
+        <code value="2533-15.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="71838004"/>
+      <target>
+        <code value="2533-16"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="71838004"/>
+      <target>
+        <code value="2533-16-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309338004"/>
+      <target>
+        <code value="2533-17"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309338004"/>
+      <target>
+        <code value="2533-17-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="56397003"/>
+      <target>
+        <code value="2533-18"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="56397003"/>
+      <target>
+        <code value="2533-18-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="82296001"/>
+      <target>
+        <code value="2533-21"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="28411006"/>
+      <target>
+        <code value="2533-21-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="82296001"/>
+      <target>
+        <code value="2533-21-21"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="11911009"/>
+      <target>
+        <code value="2533-22"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="11911009"/>
+      <target>
+        <code value="2533-22-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="11911009"/>
+      <target>
+        <code value="2533-22.1"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="45440000"/>
+      <target>
+        <code value="2533-23"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="45440000"/>
+      <target>
+        <code value="2533-23-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309345004"/>
+      <target>
+        <code value="2533-24"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="41672002"/>
+      <target>
+        <code value="2533-24-1"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309346003"/>
+      <target>
+        <code value="2533-24-2"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="41672002"/>
+      <target>
+        <code value="2533-24.3"/>
+        <equivalence value="inexact"/>
+        <comment value="not sure of the dictinctions here but have tried to use the little hierarchy in snomed appropriately to mirror the  NHSD hierarchy"/>
+      </target>
+    </element>
+    <element>
+      <code value="309343006"/>
+      <target>
+        <code value="2533-99"/>
+        <equivalence value="inexact"/>
+        <comment value="snomed deprecates nec!"/>
+      </target>
+    </element>
+    <element>
+      <code value="446701002"/>
+      <target>
+        <code value="2533-99-12"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="63098009"/>
+      <target>
+        <code value="2533-99-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="310173006"/>
+      <target>
+        <code value="2533-99-4"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="90655003"/>
+      <target>
+        <code value="2533-99-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158973009"/>
+      <target>
+        <code value="2533-99-6"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="76899008"/>
+      <target>
+        <code value="2533-99-7"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309359006"/>
+      <target>
+        <code value="2533-99-8"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309360001"/>
+      <target>
+        <code value="2533-99-9"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309343006"/>
+      <target>
+        <code value="2533-99.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="80584001"/>
+      <target>
+        <code value="2534"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="80584001"/>
+      <target>
+        <code value="2534-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309361002"/>
+      <target>
+        <code value="2534-11-1"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309361002"/>
+      <target>
+        <code value="2534-11-3"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309362009"/>
+      <target>
+        <code value="2534-11-4"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="224588003"/>
+      <target>
+        <code value="2534-11-6"/>
+        <equivalence value="inexact"/>
+        <comment value="doesn't have to be a psychiatrist, bt this code is no longer for a doctor"/>
+      </target>
+    </element>
+    <element>
+      <code value="80584001"/>
+      <target>
+        <code value="2534-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="304292004"/>
+      <target>
+        <code value="2535"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="304292004"/>
+      <target>
+        <code value="2535-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309368008"/>
+      <target>
+        <code value="2535-11-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309385005"/>
+      <target>
+        <code value="2535-11-2"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309379003"/>
+      <target>
+        <code value="2535-11-4"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309295000"/>
+      <target>
+        <code value="2535-11-6"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="304292004"/>
+      <target>
+        <code value="2535-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309369000"/>
+      <target>
+        <code value="2535-12"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309369000"/>
+      <target>
+        <code value="2535-12-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="22983004"/>
+      <target>
+        <code value="2535-12.1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="45544007"/>
+      <target>
+        <code value="2535-13"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="45544007"/>
+      <target>
+        <code value="2535-13-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="22731001"/>
+      <target>
+        <code value="2535-14"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="22731001"/>
+      <target>
+        <code value="2535-14-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="61345009"/>
+      <target>
+        <code value="2535-15"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="61345009"/>
+      <target>
+        <code value="2535-15.4"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309383003"/>
+      <target>
+        <code value="2535-16"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309383003"/>
+      <target>
+        <code value="2535-16-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="8724009"/>
+      <target>
+        <code value="2535-17"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="8724009"/>
+      <target>
+        <code value="2535-17-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="24590004"/>
+      <target>
+        <code value="2535-18"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="24590004"/>
+      <target>
+        <code value="2535-18-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309388007"/>
+      <target>
+        <code value="2535-21"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309388007"/>
+      <target>
+        <code value="2535-21-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158965000"/>
+      <target>
+        <code value="2539"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="18803008"/>
+      <target>
+        <code value="2539-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="18803008"/>
+      <target>
+        <code value="2539-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309294001"/>
+      <target>
+        <code value="2539-12"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309294001"/>
+      <target>
+        <code value="2539-12-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="309367003"/>
+      <target>
+        <code value="2539-13"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309367003"/>
+      <target>
+        <code value="2539-13.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="83685006"/>
+      <target>
+        <code value="2539-13.6"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="422234006"/>
+      <target>
+        <code value="2539-14"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="422234006"/>
+      <target>
+        <code value="2539-14-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="61207006"/>
+      <target>
+        <code value="2539-15"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="83273008"/>
+      <target>
+        <code value="2539-15-3"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="14698002"/>
+      <target>
+        <code value="2539-15-8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="309342001"/>
+      <target>
+        <code value="2539-15.10"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="40204001"/>
+      <target>
+        <code value="2539-15.11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="61207006"/>
+      <target>
+        <code value="2539-15.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="66862007"/>
+      <target>
+        <code value="2539-17"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="78729002"/>
+      <target>
+        <code value="2539-17-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="80933006"/>
+      <target>
+        <code value="2539-17-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158965000"/>
+      <target>
+        <code value="2539-99"/>
+        <equivalence value="inexact"/>
+        <comment value="snomed abhors nec!"/>
+      </target>
+    </element>
+    <element>
+      <code value="158965000"/>
+      <target>
+        <code value="2539-99.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158973009"/>
+      <target>
+        <code value="2539-99-1"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="56466003"/>
+      <target>
+        <code value="2539-99-2"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158992006"/>
+      <target>
+        <code value="2540"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158992006"/>
+      <target>
+        <code value="2540-00"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158992006"/>
+      <target>
+        <code value="2540-00-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158992006"/>
+      <target>
+        <code value="2541"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158992006"/>
+      <target>
+        <code value="2541-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158999002"/>
+      <target>
+        <code value="2541-11-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158992006"/>
+      <target>
+        <code value="2541-11-2"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224535009"/>
+      <target>
+        <code value="2544"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224571005"/>
+      <target>
+        <code value="2544-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="224571005"/>
+      <target>
+        <code value="2544-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="224535009"/>
+      <target>
+        <code value="2544-16"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224535009"/>
+      <target>
+        <code value="2544-16.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224570006"/>
+      <target>
+        <code value="2544-18"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224570006"/>
+      <target>
+        <code value="2544-18-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159002008"/>
+      <target>
+        <code value="2544-21"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="159002008"/>
+      <target>
+        <code value="2544-21.1"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224563006"/>
+      <target>
+        <code value="2544-22"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224563006"/>
+      <target>
+        <code value="2544-22.5"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-11.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-12"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-12-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224596008"/>
+      <target>
+        <code value="2721-13"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-13-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-14"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-14-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-99"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-99-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-99.8"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-15"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224595007"/>
+      <target>
+        <code value="2721-15.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="59944000"/>
+      <target>
+        <code value="2723"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="310191001"/>
+      <target>
+        <code value="2723-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="310191001"/>
+      <target>
+        <code value="2723-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="310192008"/>
+      <target>
+        <code value="2723-12"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="310192008"/>
+      <target>
+        <code value="2723-12-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="224588003"/>
+      <target>
+        <code value="2723-14"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="224588003"/>
+      <target>
+        <code value="2723-14-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="59944000"/>
+      <target>
+        <code value="2723-99"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="59944000"/>
+      <target>
+        <code value="2723-99-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106328005"/>
+      <target>
+        <code value="2725"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106328005"/>
+      <target>
+        <code value="2725-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="80292009"/>
+      <target>
+        <code value="2725-11.1"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106328005"/>
+      <target>
+        <code value="2725-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="26042002"/>
+      <target>
+        <code value="4112-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="26042002"/>
+      <target>
+        <code value="4112-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="160008000"/>
+      <target>
+        <code value="4112-13"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="160008000"/>
+      <target>
+        <code value="4112-13.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="826241000168109"/>
+      <target>
+        <code value="4115"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="826241000168109"/>
+      <target>
+        <code value="4115-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="826241000168109"/>
+      <target>
+        <code value="4115-11-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="826281000168104"/>
+      <target>
+        <code value="4116"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="826281000168104"/>
+      <target>
+        <code value="4116-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="826281000168104"/>
+      <target>
+        <code value="4116-11-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="265935008"/>
+      <target>
+        <code value="4117"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158936006"/>
+      <target>
+        <code value="4117-14"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158936006"/>
+      <target>
+        <code value="4117-14.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="229774002"/>
+      <target>
+        <code value="4231-11-2"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224576000"/>
+      <target>
+        <code value="4233-13"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="224576000"/>
+      <target>
+        <code value="4233-13-0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158943000"/>
+      <target>
+        <code value="4234-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158943000"/>
+      <target>
+        <code value="4234-11.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106309003"/>
+      <target>
+        <code value="2415"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106309003"/>
+      <target>
+        <code value="2415-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106309003"/>
+      <target>
+        <code value="2415-11.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106309003"/>
+      <target>
+        <code value="2415-99"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106309003"/>
+      <target>
+        <code value="2415-99.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="310197002"/>
+      <target>
+        <code value="2415-12"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="310197002"/>
+      <target>
+        <code value="2415-12.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="34718002"/>
+      <target>
+        <code value="2415-13"/>
+        <equivalence value="inexact"/>
+        <comment value="add synonym"/>
+      </target>
+    </element>
+    <element>
+      <code value="34718002"/>
+      <target>
+        <code value="2415-13.0"/>
+        <equivalence value="inexact"/>
+        <comment value="add synonym"/>
+      </target>
+    </element>
+    <element>
+      <code value="11015003"/>
+      <target>
+        <code value="2722"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="11015003"/>
+      <target>
+        <code value="2722-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="11015003"/>
+      <target>
+        <code value="2722-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="307790001"/>
+      <target>
+        <code value="2711"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="307790001"/>
+      <target>
+        <code value="2711-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="307790001"/>
+      <target>
+        <code value="2711-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158762005"/>
+      <target>
+        <code value="2713"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158762005"/>
+      <target>
+        <code value="2713-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158762005"/>
+      <target>
+        <code value="2713-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="271554005"/>
+      <target>
+        <code value="2712"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="271554005"/>
+      <target>
+        <code value="2712-99"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="271554005"/>
+      <target>
+        <code value="2712-99.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106308006"/>
+      <target>
+        <code value="2411"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106308006"/>
+      <target>
+        <code value="2411-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106308006"/>
+      <target>
+        <code value="2411-11.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="158903005"/>
+      <target>
+        <code value="2414"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158903005"/>
+      <target>
+        <code value="2414-11"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="158903005"/>
+      <target>
+        <code value="2414-11.0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="80407007"/>
+      <target>
+        <code value="1343"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="80407007"/>
+      <target>
+        <code value="1343-11"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="307979002"/>
+      <target>
+        <code value="2492"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="307979002"/>
+      <target>
+        <code value="2492-99"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="307979002"/>
+      <target>
+        <code value="2492-99.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106307001"/>
+      <target>
+        <code value="2412"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106307001"/>
+      <target>
+        <code value="2412-13"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+    <element>
+      <code value="106307001"/>
+      <target>
+        <code value="2412-13.0"/>
+        <equivalence value="inexact"/>
+      </target>
+    </element>
+  </group>
 </ConceptMap>

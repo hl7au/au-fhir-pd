@@ -1,0 +1,3026 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Peter</Author>
+  <LastAuthor>brett</LastAuthor>
+  <Created>2017-09-11T22:32:07Z</Created>
+  <LastSaved>2017-11-01T18:47:19Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>15615</WindowHeight>
+  <WindowWidth>10380</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <NoAutoRecover/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s34">
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="360" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s34" ss:AutoFitWidth="0" ss:Width="173.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="206.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="286.5"/>
+   <Column ss:StyleID="s34" ss:AutoFitWidth="0" ss:Width="144.75"/>
+   <Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="564.75"/>
+   <Row>
+    <Cell><Data ss:Type="String">1342</Data></Cell>
+    <Cell><Data ss:Type="String">Health and Welfare Service Managers</Data></Cell>
+    <Cell><Data ss:Type="String">Health and Welfare Service Managers</Data></Cell>
+    <Cell><Data ss:Type="Number">224579007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">mapped to 224579007 |Healthcare service manager (occupation)| as NHSD children do not contain welfare managers</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">1342-11</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Administrator (Aus) / Medical Superintendent (NZ)</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Administrator (Aus) / Medical Superintendent (NZ)</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">1342-11-2</Data></Cell>
+    <Cell><Data ss:Type="String">Director of Medical Services</Data></Cell>
+    <Cell><Data ss:Type="String">Director of Medical Services</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">1342-12</Data></Cell>
+    <Cell><Data ss:Type="String">Nursing Clinical Director</Data></Cell>
+    <Cell><Data ss:Type="String">Nursing Clinical Director</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">1342-12.4</Data></Cell>
+    <Cell><Data ss:Type="String">Director of Nursing</Data></Cell>
+    <Cell><Data ss:Type="String">Director of Nursing</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2349</Data></Cell>
+    <Cell><Data ss:Type="String">Other Natural and Physical Science Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">Other Natural and Physical Science Professionals</Data></Cell>
+    <Cell><Data ss:Type="Number">308027003</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">abstract term, so no need to explicitly map?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2349-99</Data></Cell>
+    <Cell><Data ss:Type="String">Natural and Physical Science Professionals nec</Data></Cell>
+    <Cell><Data ss:Type="String">Natural and Physical Science Professionals nec</Data></Cell>
+    <Cell><Data ss:Type="Number">308027003</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Snomed rejects nec's!</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2349-99-2</Data></Cell>
+    <Cell><Data ss:Type="String">Exercise Physiologist</Data></Cell>
+    <Cell><Data ss:Type="String">Exercise Physiologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2500</Data></Cell>
+    <Cell><Data ss:Type="String">Health Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">Health Professionals</Data></Cell>
+    <Cell><Data ss:Type="Number">223366009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2500-00</Data></Cell>
+    <Cell><Data ss:Type="String">Health Professionals nfd (Australian use only)</Data></Cell>
+    <Cell><Data ss:Type="String">Health Professionals nfd (Australian use only)</Data></Cell>
+    <Cell><Data ss:Type="Number">223366009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2500-00-0</Data></Cell>
+    <Cell><Data ss:Type="String">Health Professionals nfd</Data></Cell>
+    <Cell><Data ss:Type="String">Health Professionals nfd</Data></Cell>
+    <Cell><Data ss:Type="Number">223366009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2511</Data></Cell>
+    <Cell><Data ss:Type="String">Dietitians</Data></Cell>
+    <Cell><Data ss:Type="String">Dietitians</Data></Cell>
+    <Cell><Data ss:Type="String">159033005</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2511-11</Data></Cell>
+    <Cell><Data ss:Type="String">Dietitian</Data></Cell>
+    <Cell><Data ss:Type="String">Dietitian</Data></Cell>
+    <Cell><Data ss:Type="String">159033005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2511-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Dietitian</Data></Cell>
+    <Cell><Data ss:Type="String">Dietitian</Data></Cell>
+    <Cell><Data ss:Type="String">159033005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2511.12</Data></Cell>
+    <Cell><Data ss:Type="String">Nutritionist</Data></Cell>
+    <Cell><Data ss:Type="String">Nutritionist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">would be child of 159033005 |Dietitian (occupation)| as 60008001 |Public health nutritionist (occupation)| currently is</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2511.12.0</Data></Cell>
+    <Cell><Data ss:Type="String">Nutritionist</Data></Cell>
+    <Cell><Data ss:Type="String">Nutritionist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">would be child of 159033005 |Dietitian (occupation)| as 60008001 |Public health nutritionist (occupation)| currently is</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2512</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Imaging Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Imaging Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2512-11</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Diagnostic Radiographer</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Diagnostic Radiographer</Data></Cell>
+    <Cell><Data ss:Type="Number">159016003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2512-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Diagnostic Radiographer</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Diagnostic Radiographer</Data></Cell>
+    <Cell><Data ss:Type="Number">159016003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2512-12</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Radiation Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Radiation Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">not the same as 3430008 |Radiation therapist (occupation)|.  3430008 refers to medical specialists. This role is one undertaken by radiographers not doctors</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2512-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Radiation Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Radiation Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">not the same as 3430008 |Radiation therapist (occupation)|.  3430008 refers to medical specialists. This role is one undertaken by radiographers not doctors</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2512-13</Data></Cell>
+    <Cell><Data ss:Type="String">Nuclear Medicine Technologist</Data></Cell>
+    <Cell><Data ss:Type="String">Nuclear Medicine Technologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2512-13-0</Data></Cell>
+    <Cell><Data ss:Type="String">Nuclear Medicine Technologist</Data></Cell>
+    <Cell><Data ss:Type="String">Nuclear Medicine Technologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2512-14</Data></Cell>
+    <Cell><Data ss:Type="String">Sonographer</Data></Cell>
+    <Cell><Data ss:Type="String">Sonographer</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2512-14-0</Data></Cell>
+    <Cell><Data ss:Type="String">Sonographer</Data></Cell>
+    <Cell><Data ss:Type="String">Sonographer</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2514</Data></Cell>
+    <Cell><Data ss:Type="String">Optometrists and Orthoptists</Data></Cell>
+    <Cell><Data ss:Type="String">Optometrists and Orthoptists</Data></Cell>
+    <Cell><Data ss:Type="String">106295001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2514-11</Data></Cell>
+    <Cell><Data ss:Type="String">Optometrist</Data></Cell>
+    <Cell><Data ss:Type="String">Optometrist</Data></Cell>
+    <Cell><Data ss:Type="Number">28229004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2514-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Optometrist</Data></Cell>
+    <Cell><Data ss:Type="String">Optometrist</Data></Cell>
+    <Cell><Data ss:Type="String">28229004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2514-12</Data></Cell>
+    <Cell><Data ss:Type="String">Orthoptist</Data></Cell>
+    <Cell><Data ss:Type="String">Orthoptist</Data></Cell>
+    <Cell><Data ss:Type="Number">159027001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2514-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Orthoptist</Data></Cell>
+    <Cell><Data ss:Type="String">Orthoptist</Data></Cell>
+    <Cell><Data ss:Type="String">159027001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2515</Data></Cell>
+    <Cell><Data ss:Type="String">Pharmacists</Data></Cell>
+    <Cell><Data ss:Type="String">Pharmacists</Data></Cell>
+    <Cell><Data ss:Type="Number">46255001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2515-13</Data></Cell>
+    <Cell><Data ss:Type="String">Retail/ Community Pharmacist</Data></Cell>
+    <Cell><Data ss:Type="String">Retail/ Community Pharmacist</Data></Cell>
+    <Cell><Data ss:Type="Number">159011008</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2515-13-1</Data></Cell>
+    <Cell><Data ss:Type="String">Retail/Community Pharmacist</Data></Cell>
+    <Cell><Data ss:Type="String">Retail/Community Pharmacist</Data></Cell>
+    <Cell><Data ss:Type="Number">159011008</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2515-13-2</Data></Cell>
+    <Cell><Data ss:Type="String">Consultant Pharmacist</Data></Cell>
+    <Cell><Data ss:Type="String">Consultant Pharmacist</Data></Cell>
+    <Cell><Data ss:Type="Number">159011008</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2519</Data></Cell>
+    <Cell><Data ss:Type="String">Other Health Diagnostic and Promotion Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">Other Health Diagnostic and Promotion Professionals</Data></Cell>
+    <Cell><Data ss:Type="Number">308027003</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">abstract term, so no need to explicitly map?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2519-11</Data></Cell>
+    <Cell><Data ss:Type="String">Health Promotion Officer/Community Health Worker/Health Educator</Data></Cell>
+    <Cell><Data ss:Type="String">Health Promotion Officer/Community Health Worker/Health Educator</Data></Cell>
+    <Cell><Data ss:Type="Number">409974004</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2519-11-3</Data></Cell>
+    <Cell><Data ss:Type="String">Diabetes Educator</Data></Cell>
+    <Cell><Data ss:Type="String">Diabetes Educator</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2519-12</Data></Cell>
+    <Cell><Data ss:Type="String">Orthotist or Prosthetist</Data></Cell>
+    <Cell><Data ss:Type="String">Orthotist or Prosthetist</Data></Cell>
+    <Cell><Data ss:Type="Number">309428008</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Have asked the professional body </Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2519-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Orthotist or Prosthetist</Data></Cell>
+    <Cell><Data ss:Type="String">Orthotist or Prosthetist</Data></Cell>
+    <Cell><Data ss:Type="Number">309428008</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2521</Data></Cell>
+    <Cell><Data ss:Type="String">Chiropractors and Osteopaths</Data></Cell>
+    <Cell><Data ss:Type="String">Chiropractors and Osteopaths</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2521-11</Data></Cell>
+    <Cell><Data ss:Type="String">Chiropractor</Data></Cell>
+    <Cell><Data ss:Type="String">Chiropractor</Data></Cell>
+    <Cell><Data ss:Type="String">3842006</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2521-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Chiropractor</Data></Cell>
+    <Cell><Data ss:Type="String">Chiropractor</Data></Cell>
+    <Cell><Data ss:Type="String">3842006</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2521-12</Data></Cell>
+    <Cell><Data ss:Type="String">Osteopath</Data></Cell>
+    <Cell><Data ss:Type="String">Osteopath</Data></Cell>
+    <Cell><Data ss:Type="String">76231001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2521-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Osteopath</Data></Cell>
+    <Cell><Data ss:Type="String">Osteopath</Data></Cell>
+    <Cell><Data ss:Type="String">76231001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2522</Data></Cell>
+    <Cell><Data ss:Type="String">Complementary Health Therapists</Data></Cell>
+    <Cell><Data ss:Type="String">Complementary Health Therapists</Data></Cell>
+    <Cell><Data ss:Type="Number">224609002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-11</Data></Cell>
+    <Cell><Data ss:Type="String">Acupuncturist</Data></Cell>
+    <Cell><Data ss:Type="String">Acupuncturist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Acupuncturist</Data></Cell>
+    <Cell><Data ss:Type="String">Acupuncturist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-12</Data></Cell>
+    <Cell><Data ss:Type="String">Homoeopath</Data></Cell>
+    <Cell><Data ss:Type="String">Homoeopath</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Homoeopath</Data></Cell>
+    <Cell><Data ss:Type="String">Homoeopath</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-13</Data></Cell>
+    <Cell><Data ss:Type="String">Naturopath</Data></Cell>
+    <Cell><Data ss:Type="String">Naturopath</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-13-0</Data></Cell>
+    <Cell><Data ss:Type="String">Naturopath</Data></Cell>
+    <Cell><Data ss:Type="String">Naturopath</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-14</Data></Cell>
+    <Cell><Data ss:Type="String">Traditional Chinese Medicine Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">Traditional Chinese Medicine Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-14-1</Data></Cell>
+    <Cell><Data ss:Type="String">Chinese Herbalist</Data></Cell>
+    <Cell><Data ss:Type="String">Chinese Herbalist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-14.2</Data></Cell>
+    <Cell><Data ss:Type="String">Chinese Medicine Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">Chinese Medicine Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-99</Data></Cell>
+    <Cell><Data ss:Type="String">Complementary Health Therapists nec</Data></Cell>
+    <Cell><Data ss:Type="String">Complementary Health Therapists nec</Data></Cell>
+    <Cell><Data ss:Type="Number">224609002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-99-0</Data></Cell>
+    <Cell><Data ss:Type="String">Complementary Health Therapists nec</Data></Cell>
+    <Cell><Data ss:Type="String">Complementary Health Therapists nec</Data></Cell>
+    <Cell><Data ss:Type="Number">224609002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-99-1</Data></Cell>
+    <Cell><Data ss:Type="String">Dance Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Dance Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">309411005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-99-3</Data></Cell>
+    <Cell><Data ss:Type="String">Hypnotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">Hypnotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">444912007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-99-4</Data></Cell>
+    <Cell><Data ss:Type="String">Music Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Music Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">309412003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522-99.5</Data></Cell>
+    <Cell><Data ss:Type="String">Herbalist (Other than Chinese)</Data></Cell>
+    <Cell><Data ss:Type="String">Herbalist (Other than Chinese)</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522.16</Data></Cell>
+    <Cell><Data ss:Type="String">Myotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">Myotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2522.16.0</Data></Cell>
+    <Cell><Data ss:Type="String">Myotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">Myotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">sugest child of 224609002 |Complementary health worker (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2523</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Practitioners</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Practitioners</Data></Cell>
+    <Cell><Data ss:Type="String">106289002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-11</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">158978000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-11-1</Data></Cell>
+    <Cell><Data ss:Type="String">Endodontist</Data></Cell>
+    <Cell><Data ss:Type="String">Endodontist</Data></Cell>
+    <Cell><Data ss:Type="String">50149000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-11-2</Data></Cell>
+    <Cell><Data ss:Type="String">Oral and Maxillofacial Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Oral and Maxillofacial Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">49993003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-11-3</Data></Cell>
+    <Cell><Data ss:Type="String">Oral Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">Oral Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">66476003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-11-4</Data></Cell>
+    <Cell><Data ss:Type="String">Orthodontist</Data></Cell>
+    <Cell><Data ss:Type="String">Orthodontist</Data></Cell>
+    <Cell><Data ss:Type="String">37504001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-11-5</Data></Cell>
+    <Cell><Data ss:Type="String">Paedodontist</Data></Cell>
+    <Cell><Data ss:Type="String">Paedodontist</Data></Cell>
+    <Cell><Data ss:Type="String">90201008</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-11-6</Data></Cell>
+    <Cell><Data ss:Type="String">Periodontist</Data></Cell>
+    <Cell><Data ss:Type="String">Periodontist</Data></Cell>
+    <Cell><Data ss:Type="String">37154003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-11-7</Data></Cell>
+    <Cell><Data ss:Type="String">Prosthodontist</Data></Cell>
+    <Cell><Data ss:Type="String">Prosthodontist</Data></Cell>
+    <Cell><Data ss:Type="String">68950000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">158978000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-12</Data></Cell>
+    <Cell><Data ss:Type="String">Dentist/ Dental Practitioner/ Dental Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Dentist/ Dental Practitioner/ Dental Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">106289002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2523-12.6</Data></Cell>
+    <Cell><Data ss:Type="String">Dentist / Dental Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">Dentist / Dental Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">106289002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2524</Data></Cell>
+    <Cell><Data ss:Type="String">Occupational Therapists</Data></Cell>
+    <Cell><Data ss:Type="String">Occupational Therapists</Data></Cell>
+    <Cell><Data ss:Type="String">80546007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2524-11</Data></Cell>
+    <Cell><Data ss:Type="String">Occupational Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Occupational Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">80546007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2524-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Occupational Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Occupational Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">80546007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2525</Data></Cell>
+    <Cell><Data ss:Type="String">Physiotherapists</Data></Cell>
+    <Cell><Data ss:Type="String">Physiotherapists</Data></Cell>
+    <Cell><Data ss:Type="String">36682004</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2525-11</Data></Cell>
+    <Cell><Data ss:Type="String">Physiotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">Physiotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">36682004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2525-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Physiotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">Physiotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">36682004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2526</Data></Cell>
+    <Cell><Data ss:Type="String">Podiatrists</Data></Cell>
+    <Cell><Data ss:Type="String">Podiatrists</Data></Cell>
+    <Cell><Data ss:Type="String">159034004</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2526-11</Data></Cell>
+    <Cell><Data ss:Type="String">Podiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">Podiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">159034004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2526-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Podiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">Podiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">159034004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2527</Data></Cell>
+    <Cell><Data ss:Type="String">Speech Professionals and Audiologists</Data></Cell>
+    <Cell><Data ss:Type="String">Speech Professionals and Audiologists</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2527-11</Data></Cell>
+    <Cell><Data ss:Type="String">Audiologist</Data></Cell>
+    <Cell><Data ss:Type="String">Audiologist</Data></Cell>
+    <Cell><Data ss:Type="String">309418004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2527-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Audiologist</Data></Cell>
+    <Cell><Data ss:Type="String">Audiologist</Data></Cell>
+    <Cell><Data ss:Type="String">309418004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2527-12</Data></Cell>
+    <Cell><Data ss:Type="String">Speech Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">Speech Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">159026005</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2527-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Speech Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">Speech Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">159026005</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2531</Data></Cell>
+    <Cell><Data ss:Type="String">Generalist Medical Practitioners</Data></Cell>
+    <Cell><Data ss:Type="String">Generalist Medical Practitioners</Data></Cell>
+    <Cell><Data ss:Type="String">62247001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2531-11</Data></Cell>
+    <Cell><Data ss:Type="String">General Medical Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">General Medical Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">62247001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2531-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">General Medical Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">General Medical Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">62247001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2531-12</Data></Cell>
+    <Cell><Data ss:Type="String">Resident Medical Officer</Data></Cell>
+    <Cell><Data ss:Type="String">Resident Medical Officer</Data></Cell>
+    <Cell><Data ss:Type="String">158972004</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">could suggest change to Australian terms - ie a new synonym for 158972004 |House officer (occupation)|</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2531-12-9</Data></Cell>
+    <Cell><Data ss:Type="String">Career Medical Officer/ Senior Medical Officer nec</Data></Cell>
+    <Cell><Data ss:Type="String">Career Medical Officer/ Senior Medical Officer nec</Data></Cell>
+    <Cell><Data ss:Type="String">224532007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">could suggest change to Australian terms - ie a new synonym for 224532007 |Senior house officer (occupation)|</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2532</Data></Cell>
+    <Cell><Data ss:Type="String">Anaesthetists</Data></Cell>
+    <Cell><Data ss:Type="String">Anaesthetists</Data></Cell>
+    <Cell><Data ss:Type="String">158970007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2532-11</Data></Cell>
+    <Cell><Data ss:Type="String">Anaesthetist</Data></Cell>
+    <Cell><Data ss:Type="String">Anaesthetist</Data></Cell>
+    <Cell><Data ss:Type="String">158970007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2532-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Anaesthetist</Data></Cell>
+    <Cell><Data ss:Type="String">Anaesthetist</Data></Cell>
+    <Cell><Data ss:Type="String">158970007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2533</Data></Cell>
+    <Cell><Data ss:Type="String">Specialists Physicians</Data></Cell>
+    <Cell><Data ss:Type="String">Specialists Physicians</Data></Cell>
+    <Cell><Data ss:Type="String">69280009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-11</Data></Cell>
+    <Cell><Data ss:Type="String">Specialist Physician (General Medicine)</Data></Cell>
+    <Cell><Data ss:Type="String">Specialist Physician (General Medicine)</Data></Cell>
+    <Cell><Data ss:Type="String">39677007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-11-1</Data></Cell>
+    <Cell><Data ss:Type="String">Specialist Physician (General Medicine)</Data></Cell>
+    <Cell><Data ss:Type="String">Specialist Physician (General Medicine)</Data></Cell>
+    <Cell><Data ss:Type="String">39677007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-12</Data></Cell>
+    <Cell><Data ss:Type="String">Cardiologist</Data></Cell>
+    <Cell><Data ss:Type="String">Cardiologist</Data></Cell>
+    <Cell><Data ss:Type="String">17561000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Cardiologist</Data></Cell>
+    <Cell><Data ss:Type="String">Cardiologist</Data></Cell>
+    <Cell><Data ss:Type="String">17561000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-13</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Haematologist</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Haematologist</Data></Cell>
+    <Cell><Data ss:Type="String">309347007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-13-0</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Haematologist</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Haematologist</Data></Cell>
+    <Cell><Data ss:Type="String">309347007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-14</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">310512001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-14-0</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">310512001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-15</Data></Cell>
+    <Cell><Data ss:Type="String">Endocrinologist</Data></Cell>
+    <Cell><Data ss:Type="String">Endocrinologist</Data></Cell>
+    <Cell><Data ss:Type="String">61894003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-15.0</Data></Cell>
+    <Cell><Data ss:Type="String">Endocrinologist</Data></Cell>
+    <Cell><Data ss:Type="String">Endocrinologist</Data></Cell>
+    <Cell><Data ss:Type="String">61894003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-16</Data></Cell>
+    <Cell><Data ss:Type="String">Gastroenterologist</Data></Cell>
+    <Cell><Data ss:Type="String">Gastroenterologist</Data></Cell>
+    <Cell><Data ss:Type="String">71838004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-16-0</Data></Cell>
+    <Cell><Data ss:Type="String">Gastroenterologist</Data></Cell>
+    <Cell><Data ss:Type="String">Gastroenterologist</Data></Cell>
+    <Cell><Data ss:Type="Number">71838004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-17</Data></Cell>
+    <Cell><Data ss:Type="String">Intensive Care Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Intensive Care Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">309338004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-17-0</Data></Cell>
+    <Cell><Data ss:Type="String">Intensive Care Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Intensive Care Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">309338004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-18</Data></Cell>
+    <Cell><Data ss:Type="String">Neurologist</Data></Cell>
+    <Cell><Data ss:Type="String">Neurologist</Data></Cell>
+    <Cell><Data ss:Type="String">56397003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-18-0</Data></Cell>
+    <Cell><Data ss:Type="String">Neurologist</Data></Cell>
+    <Cell><Data ss:Type="String">Neurologist</Data></Cell>
+    <Cell><Data ss:Type="String">56397003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-21</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatrician</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatrician</Data></Cell>
+    <Cell><Data ss:Type="String">82296001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-21-1</Data></Cell>
+    <Cell><Data ss:Type="String">Neonatologist</Data></Cell>
+    <Cell><Data ss:Type="String">Neonatologist</Data></Cell>
+    <Cell><Data ss:Type="String">28411006</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-21-19</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatric Thoracic Medicine Specialist / Respiratory Specialist / Sleep Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatric Thoracic Medicine Specialist / Respiratory Specialist / Sleep Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">could be added under 720503005 | sleep specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-21-21</Data></Cell>
+    <Cell><Data ss:Type="String">General Paediatrics Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">General Paediatrics Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">82296001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-21.25</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatric Dermatologist</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatric Dermatologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">could be added under 18803008 |Dermatologist (occupation)|</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-22</Data></Cell>
+    <Cell><Data ss:Type="String">Renal Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Renal Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="Number">11911009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-22-0</Data></Cell>
+    <Cell><Data ss:Type="String">Renal Medicine Specialist / Nephrologist / Renal Medicine Physician</Data></Cell>
+    <Cell><Data ss:Type="String">Renal Medicine Specialist / Nephrologist / Renal Medicine Physician</Data></Cell>
+    <Cell><Data ss:Type="String">11911009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-22.1</Data></Cell>
+    <Cell><Data ss:Type="String">Nephrologist</Data></Cell>
+    <Cell><Data ss:Type="String">Nephrologist</Data></Cell>
+    <Cell><Data ss:Type="String">11911009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-23</Data></Cell>
+    <Cell><Data ss:Type="String">Rheumatologist</Data></Cell>
+    <Cell><Data ss:Type="String">Rheumatologist</Data></Cell>
+    <Cell><Data ss:Type="Number">45440000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-23-0</Data></Cell>
+    <Cell><Data ss:Type="String">Rheumatologist</Data></Cell>
+    <Cell><Data ss:Type="String">Rheumatologist</Data></Cell>
+    <Cell><Data ss:Type="String">45440000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-24</Data></Cell>
+    <Cell><Data ss:Type="String">Thoracic Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Thoracic Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">309345004</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-24-1</Data></Cell>
+    <Cell><Data ss:Type="String">Respiratory Medicine Physician</Data></Cell>
+    <Cell><Data ss:Type="String">Respiratory Medicine Physician</Data></Cell>
+    <Cell><Data ss:Type="String">41672002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-24-2</Data></Cell>
+    <Cell><Data ss:Type="String">Thoracic Medicine Physician</Data></Cell>
+    <Cell><Data ss:Type="String">Thoracic Medicine Physician</Data></Cell>
+    <Cell><Data ss:Type="String">309346003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-24.3</Data></Cell>
+    <Cell><Data ss:Type="String">Pulmonary Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Pulmonary Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">41672002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">not sure of the dictinctions here but have tried to use the little hierarchy in snomed appropriately to mirror the  NHSD hierarchy</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99</Data></Cell>
+    <Cell><Data ss:Type="String">Specialist Physians nec</Data></Cell>
+    <Cell><Data ss:Type="String">Specialist Physians nec</Data></Cell>
+    <Cell><Data ss:Type="String">309343006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">snomed deprecates nec!</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99-12</Data></Cell>
+    <Cell><Data ss:Type="String">Addiction Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Addiction Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">446701002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99-3</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Immunologist</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Immunologist</Data></Cell>
+    <Cell><Data ss:Type="String">63098009</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99-4</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Pharmacologist</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Pharmacologist</Data></Cell>
+    <Cell><Data ss:Type="String">310173006</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99-5</Data></Cell>
+    <Cell><Data ss:Type="String">Geriatrician</Data></Cell>
+    <Cell><Data ss:Type="String">Geriatrician</Data></Cell>
+    <Cell><Data ss:Type="String">90655003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99-6</Data></Cell>
+    <Cell><Data ss:Type="String">Industrial Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Industrial Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">158973009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99-7</Data></Cell>
+    <Cell><Data ss:Type="String">Infectious Diseases Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Infectious Diseases Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">76899008</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99-8</Data></Cell>
+    <Cell><Data ss:Type="String">Palliative Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Palliative Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">309359006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99-9</Data></Cell>
+    <Cell><Data ss:Type="String">Rehabilitation Medicine Physician</Data></Cell>
+    <Cell><Data ss:Type="String">Rehabilitation Medicine Physician</Data></Cell>
+    <Cell><Data ss:Type="String">309360001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99.0</Data></Cell>
+    <Cell><Data ss:Type="String">Specialist Physicians nec</Data></Cell>
+    <Cell><Data ss:Type="String">Specialist Physicians nec</Data></Cell>
+    <Cell><Data ss:Type="String">309343006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2533-99.13</Data></Cell>
+    <Cell><Data ss:Type="String">Respiratory and Sleep Physician</Data></Cell>
+    <Cell><Data ss:Type="String">Respiratory and Sleep Physician</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2534</Data></Cell>
+    <Cell><Data ss:Type="String">Psychiatrists</Data></Cell>
+    <Cell><Data ss:Type="String">Psychiatrists</Data></Cell>
+    <Cell><Data ss:Type="String">80584001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2534-11</Data></Cell>
+    <Cell><Data ss:Type="String">Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">80584001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2534-11-1</Data></Cell>
+    <Cell><Data ss:Type="String">Adolescent Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">Adolescent Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">309361002</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2534-11-3</Data></Cell>
+    <Cell><Data ss:Type="String">Child Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">Child Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">309361002</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2534-11-4</Data></Cell>
+    <Cell><Data ss:Type="String">Forensic Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">Forensic Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">309362009</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2534-11-6</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Psychotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Psychotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">224588003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">doesn't have to be a psychiatrist, bt this code is no longer for a doctor</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2534-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">Psychiatrist</Data></Cell>
+    <Cell><Data ss:Type="String">80584001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2535</Data></Cell>
+    <Cell><Data ss:Type="String">Surgeons</Data></Cell>
+    <Cell><Data ss:Type="String">Surgeons</Data></Cell>
+    <Cell><Data ss:Type="String">304292004</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-11</Data></Cell>
+    <Cell><Data ss:Type="String">Surgeon (General)</Data></Cell>
+    <Cell><Data ss:Type="String">Surgeon (General)</Data></Cell>
+    <Cell><Data ss:Type="String">304292004</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-11-1</Data></Cell>
+    <Cell><Data ss:Type="String">Breast Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Breast Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">309368008</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-11-2</Data></Cell>
+    <Cell><Data ss:Type="String">Transplant Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Transplant Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">309385005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-11-4</Data></Cell>
+    <Cell><Data ss:Type="String">Colorectal Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Colorectal Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">309379003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-11-6</Data></Cell>
+    <Cell><Data ss:Type="String">Surgical Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">Surgical Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">309295000</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">304292004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-12</Data></Cell>
+    <Cell><Data ss:Type="String">Cardiothoracic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Cardiothoracic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">309369000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Cardiothoracic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Cardiothoracic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">309369000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-12.1</Data></Cell>
+    <Cell><Data ss:Type="String">Thoracic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Thoracic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">22983004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-13</Data></Cell>
+    <Cell><Data ss:Type="String">Neurosurgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Neurosurgeon</Data></Cell>
+    <Cell><Data ss:Type="String">45544007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-13-0</Data></Cell>
+    <Cell><Data ss:Type="String">Neurosurgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Neurosurgeon</Data></Cell>
+    <Cell><Data ss:Type="Number">45544007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-14</Data></Cell>
+    <Cell><Data ss:Type="String">Orthopaedic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Orthopaedic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">22731001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-14-0</Data></Cell>
+    <Cell><Data ss:Type="String">Orthopaedic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Orthopaedic Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">22731001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-15</Data></Cell>
+    <Cell><Data ss:Type="String">Otorhinolaryngologist / Ear Nose and Throat Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Otorhinolaryngologist / Ear Nose and Throat Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">61345009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-15.4</Data></Cell>
+    <Cell><Data ss:Type="String">Otorhinolaryngologist - Ear/Nose/Throat Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Otorhinolaryngologist - Ear/Nose/Throat Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">61345009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-16</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatric Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatric Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">309383003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-16-0</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatric Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Paediatric Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">309383003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-17</Data></Cell>
+    <Cell><Data ss:Type="String">Plastic and Reconstructive Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Plastic and Reconstructive Surgeon</Data></Cell>
+    <Cell><Data ss:Type="Number">8724009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-17-0</Data></Cell>
+    <Cell><Data ss:Type="String">Plastic and Reconstructive Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Plastic and Reconstructive Surgeon</Data></Cell>
+    <Cell><Data ss:Type="Number">8724009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-18</Data></Cell>
+    <Cell><Data ss:Type="String">Urologist</Data></Cell>
+    <Cell><Data ss:Type="String">Urologist</Data></Cell>
+    <Cell><Data ss:Type="String">24590004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-18-0</Data></Cell>
+    <Cell><Data ss:Type="String">Urologist</Data></Cell>
+    <Cell><Data ss:Type="String">Urologist</Data></Cell>
+    <Cell><Data ss:Type="String">24590004</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-21</Data></Cell>
+    <Cell><Data ss:Type="String">Vascular Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Vascular Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">309388007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2535-21-0</Data></Cell>
+    <Cell><Data ss:Type="String">Vascular Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Vascular Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">309388007</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2539</Data></Cell>
+    <Cell><Data ss:Type="String">Other Medical Practitioners</Data></Cell>
+    <Cell><Data ss:Type="String">Other Medical Practitioners</Data></Cell>
+    <Cell><Data ss:Type="String">158965000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-11</Data></Cell>
+    <Cell><Data ss:Type="String">Dermatologist</Data></Cell>
+    <Cell><Data ss:Type="String">Dermatologist</Data></Cell>
+    <Cell><Data ss:Type="String">18803008</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Dermatologist</Data></Cell>
+    <Cell><Data ss:Type="String">Dermatologist</Data></Cell>
+    <Cell><Data ss:Type="String">18803008</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-12</Data></Cell>
+    <Cell><Data ss:Type="String">Emergency Medicine Specialist / Emergency Physician</Data></Cell>
+    <Cell><Data ss:Type="String">Emergency Medicine Specialist / Emergency Physician</Data></Cell>
+    <Cell><Data ss:Type="Number">309294001</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Emergency Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Emergency Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="Number">309294001</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-13</Data></Cell>
+    <Cell><Data ss:Type="String">Obstetrician and Gynaecologist</Data></Cell>
+    <Cell><Data ss:Type="String">Obstetrician and Gynaecologist</Data></Cell>
+    <Cell><Data ss:Type="String">309367003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-13-1</Data></Cell>
+    <Cell><Data ss:Type="String">Gynaecological Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">Gynaecological Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-13-3</Data></Cell>
+    <Cell><Data ss:Type="String">Urogynaecologist</Data></Cell>
+    <Cell><Data ss:Type="String">Urogynaecologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-13.0</Data></Cell>
+    <Cell><Data ss:Type="String">Obstetrician and Gynaecologist</Data></Cell>
+    <Cell><Data ss:Type="String">Obstetrician and Gynaecologist</Data></Cell>
+    <Cell><Data ss:Type="String">309367003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-13.6</Data></Cell>
+    <Cell><Data ss:Type="String">Gynaecologist</Data></Cell>
+    <Cell><Data ss:Type="String">Gynaecologist</Data></Cell>
+    <Cell><Data ss:Type="String">83685006</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-14</Data></Cell>
+    <Cell><Data ss:Type="String">Ophthalmologist / Eye Specialist/ Eye Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Ophthalmologist / Eye Specialist/ Eye Surgeon</Data></Cell>
+    <Cell><Data ss:Type="Number">422234006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-14-0</Data></Cell>
+    <Cell><Data ss:Type="String">Ophthalmologist / Eye Specialist/ Eye Surgeon</Data></Cell>
+    <Cell><Data ss:Type="String">Ophthalmologist / Eye Specialist/ Eye Surgeon</Data></Cell>
+    <Cell><Data ss:Type="Number">422234006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-15</Data></Cell>
+    <Cell><Data ss:Type="String">Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">61207006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-15-1</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Cytopathologist</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Cytopathologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-15-2</Data></Cell>
+    <Cell><Data ss:Type="String">Forensic Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">Forensic Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-15-3</Data></Cell>
+    <Cell><Data ss:Type="String">General Anatomic Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">General Anatomic Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">83273008</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-15-8</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Microbiologist</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Microbiologist</Data></Cell>
+    <Cell><Data ss:Type="String">14698002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-15.10</Data></Cell>
+    <Cell><Data ss:Type="String">Histopathologist</Data></Cell>
+    <Cell><Data ss:Type="String">Histopathologist</Data></Cell>
+    <Cell><Data ss:Type="String">309342001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-15.11</Data></Cell>
+    <Cell><Data ss:Type="String">Haematologist</Data></Cell>
+    <Cell><Data ss:Type="String">Haematologist</Data></Cell>
+    <Cell><Data ss:Type="String">40204001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-15.0</Data></Cell>
+    <Cell><Data ss:Type="String">Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">Pathologist</Data></Cell>
+    <Cell><Data ss:Type="String">61207006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-17</Data></Cell>
+    <Cell><Data ss:Type="String">Diagnostic and Interventional Radiologist</Data></Cell>
+    <Cell><Data ss:Type="String">Diagnostic and Interventional Radiologist</Data></Cell>
+    <Cell><Data ss:Type="String">66862007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-17-1</Data></Cell>
+    <Cell><Data ss:Type="String">Diagnostic Radiologist</Data></Cell>
+    <Cell><Data ss:Type="String">Diagnostic Radiologist</Data></Cell>
+    <Cell><Data ss:Type="String">78729002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-17-3</Data></Cell>
+    <Cell><Data ss:Type="String">Nuclear Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Nuclear Medicine Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">80933006</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-18</Data></Cell>
+    <Cell><Data ss:Type="String">Radiation Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">Radiation Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-18-1</Data></Cell>
+    <Cell><Data ss:Type="String">Radiation Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">Radiation Oncologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-99</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Practitioners nec</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Practitioners nec</Data></Cell>
+    <Cell><Data ss:Type="String">158965000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">snomed abhors nec!</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-99.0</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Practitioners nec</Data></Cell>
+    <Cell><Data ss:Type="String">Medical Practitioners nec</Data></Cell>
+    <Cell><Data ss:Type="String">158965000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-99-1</Data></Cell>
+    <Cell><Data ss:Type="String">Occupational Medicine and Environmental Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Occupational Medicine and Environmental Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">158973009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-99-2</Data></Cell>
+    <Cell><Data ss:Type="String">Public Health Physician</Data></Cell>
+    <Cell><Data ss:Type="String">Public Health Physician</Data></Cell>
+    <Cell><Data ss:Type="String">56466003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-99-3</Data></Cell>
+    <Cell><Data ss:Type="String">Sports Physician</Data></Cell>
+    <Cell><Data ss:Type="String">Sports Physician</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-99.5</Data></Cell>
+    <Cell><Data ss:Type="String">Non Clinical Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">Non Clinical Specialist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2539-99.1</Data></Cell>
+    <Cell><Data ss:Type="String">Sonologist</Data></Cell>
+    <Cell><Data ss:Type="String">Sonologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Has previously been submitted for inclusion to  SNOMED-CT-AU</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2540</Data></Cell>
+    <Cell><Data ss:Type="String">Midwifery and Nursing Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">Midwifery and Nursing Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">158992006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2540-00</Data></Cell>
+    <Cell><Data ss:Type="String">Midwifery and Nursing Professionals nfd (Australian use only)</Data></Cell>
+    <Cell><Data ss:Type="String">Midwifery and Nursing Professionals nfd (Australian use only)</Data></Cell>
+    <Cell><Data ss:Type="String">158992006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2540-00-0</Data></Cell>
+    <Cell><Data ss:Type="String">Midwifery and Nursing Professionals nfd</Data></Cell>
+    <Cell><Data ss:Type="String">Midwifery and Nursing Professionals nfd</Data></Cell>
+    <Cell><Data ss:Type="String">158992006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2541</Data></Cell>
+    <Cell><Data ss:Type="String">Midwives</Data></Cell>
+    <Cell><Data ss:Type="String">Midwives</Data></Cell>
+    <Cell><Data ss:Type="String">158992006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2541-11</Data></Cell>
+    <Cell><Data ss:Type="String">Midwife/Certified Midwife/Registered Midwife</Data></Cell>
+    <Cell><Data ss:Type="String">Midwife/Certified Midwife/Registered Midwife</Data></Cell>
+    <Cell><Data ss:Type="String">158992006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2541-11-1</Data></Cell>
+    <Cell><Data ss:Type="String">Community Midwife</Data></Cell>
+    <Cell><Data ss:Type="String">Community Midwife</Data></Cell>
+    <Cell><Data ss:Type="String">158999002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2541-11-2</Data></Cell>
+    <Cell><Data ss:Type="String">Midwife Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">Midwife Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">158992006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2544</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurses</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurses</Data></Cell>
+    <Cell><Data ss:Type="String">224535009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-11</Data></Cell>
+    <Cell><Data ss:Type="String">Nurse Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">Nurse Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">224571005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Nurse Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">Nurse Practitioner</Data></Cell>
+    <Cell><Data ss:Type="String">224571005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-16</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Developmental Disability)</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Developmental Disability)</Data></Cell>
+    <Cell><Data ss:Type="String">224535009</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-16.0</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Developmental Disability)</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Developmental Disability)</Data></Cell>
+    <Cell><Data ss:Type="String">224535009</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-18</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Medical)</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Medical)</Data></Cell>
+    <Cell><Data ss:Type="Number">224570006</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-18-0</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Medical)</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Medical)</Data></Cell>
+    <Cell><Data ss:Type="Number">224570006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-21</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Medical Practice)/Practice Nurse</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Medical Practice)/Practice Nurse</Data></Cell>
+    <Cell><Data ss:Type="String">159002008</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-21.1</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Medical Practice)/Practice Nurse</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Medical Practice)/Practice Nurse</Data></Cell>
+    <Cell><Data ss:Type="String">159002008</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-22</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Mental Health)/Phychiatric</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Mental Health)/Phychiatric</Data></Cell>
+    <Cell><Data ss:Type="String">224563006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2544-22.5</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Mental Health)/Psychiatric</Data></Cell>
+    <Cell><Data ss:Type="String">Registered Nurse (Mental Health)/Psychiatric</Data></Cell>
+    <Cell><Data ss:Type="String">224563006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2721</Data></Cell>
+    <Cell><Data ss:Type="String">Counsellors</Data></Cell>
+    <Cell><Data ss:Type="String">Counsellors</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-11</Data></Cell>
+    <Cell><Data ss:Type="String">Careers Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Careers Counsellor</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Careers Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Careers Counsellor</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-12</Data></Cell>
+    <Cell><Data ss:Type="String">Drug and Alcohol Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Drug and Alcohol Counsellor</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Drug and Alcohol Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Drug and Alcohol Counsellor</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-13</Data></Cell>
+    <Cell><Data ss:Type="String">Family and Marriage Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Family and Marriage Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">224596008</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-13-0</Data></Cell>
+    <Cell><Data ss:Type="String">Family Mediator/Family and Marriage Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Family Mediator/Family and Marriage Counsellor</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-14</Data></Cell>
+    <Cell><Data ss:Type="String">Rehabilitation Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Rehabilitation Counsellor</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-14-0</Data></Cell>
+    <Cell><Data ss:Type="String">Rehabilitation Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Rehabilitation Counsellor</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-99</Data></Cell>
+    <Cell><Data ss:Type="String">Counsellors nec</Data></Cell>
+    <Cell><Data ss:Type="String">Counsellors nec</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-99-0</Data></Cell>
+    <Cell><Data ss:Type="String">Counsellors nec</Data></Cell>
+    <Cell><Data ss:Type="String">Counsellors nec</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-99.8</Data></Cell>
+    <Cell><Data ss:Type="String">Family Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Family Therapist</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-15</Data></Cell>
+    <Cell><Data ss:Type="String">Student Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Student Counsellor</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2721-15.0</Data></Cell>
+    <Cell><Data ss:Type="String">Student Counsellor</Data></Cell>
+    <Cell><Data ss:Type="String">Student Counsellor</Data></Cell>
+    <Cell><Data ss:Type="Number">224595007</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2723</Data></Cell>
+    <Cell><Data ss:Type="String">Psychologists</Data></Cell>
+    <Cell><Data ss:Type="String">Psychologists</Data></Cell>
+    <Cell><Data ss:Type="String">59944000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-11</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">310191001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">310191001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-12</Data></Cell>
+    <Cell><Data ss:Type="String">Educational Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">Educational Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">310192008</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Educational Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">Educational Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">310192008</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-13</Data></Cell>
+    <Cell><Data ss:Type="String">Organisational Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">Organisational Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-13-0</Data></Cell>
+    <Cell><Data ss:Type="String">Organisational Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">Organisational Psychologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-14</Data></Cell>
+    <Cell><Data ss:Type="String">Psychotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">Psychotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">224588003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-14-0</Data></Cell>
+    <Cell><Data ss:Type="String">Psychotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">Psychotherapist</Data></Cell>
+    <Cell><Data ss:Type="String">224588003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-99</Data></Cell>
+    <Cell><Data ss:Type="String">Psychologists nec</Data></Cell>
+    <Cell><Data ss:Type="String">Psychologists nec</Data></Cell>
+    <Cell><Data ss:Type="String">59944000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2723-99-0</Data></Cell>
+    <Cell><Data ss:Type="String">Psychologists nec</Data></Cell>
+    <Cell><Data ss:Type="String">Psychologists nec</Data></Cell>
+    <Cell><Data ss:Type="String">59944000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2725</Data></Cell>
+    <Cell><Data ss:Type="String">Social Workers</Data></Cell>
+    <Cell><Data ss:Type="String">Social Workers</Data></Cell>
+    <Cell><Data ss:Type="String">106328005</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2725-11</Data></Cell>
+    <Cell><Data ss:Type="String">Social Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Social Worker</Data></Cell>
+    <Cell><Data ss:Type="String">106328005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2725-11.1</Data></Cell>
+    <Cell><Data ss:Type="String">Mental Health Social Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Mental Health Social Worker</Data></Cell>
+    <Cell><Data ss:Type="String">80292009</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2725-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Social Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Social Worker</Data></Cell>
+    <Cell><Data ss:Type="String">106328005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3999</Data></Cell>
+    <Cell><Data ss:Type="String">Other Miscellaneous Technicians and Trades Workers</Data></Cell>
+    <Cell><Data ss:Type="String">Other Miscellaneous Technicians and Trades Workers</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3999-13</Data></Cell>
+    <Cell><Data ss:Type="String">Optical Dispenser / Dispensing Optician</Data></Cell>
+    <Cell><Data ss:Type="String">Optical Dispenser / Dispensing Optician</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3999-13-0</Data></Cell>
+    <Cell><Data ss:Type="String">Optical Dispenser</Data></Cell>
+    <Cell><Data ss:Type="String">Optical Dispenser</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4110</Data></Cell>
+    <Cell><Data ss:Type="String">Health and Welfare Support Workers</Data></Cell>
+    <Cell><Data ss:Type="String">Health and Welfare Support Workers</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4110-00</Data></Cell>
+    <Cell><Data ss:Type="String">Health and Welfare Support Workers nfd (Australian use only)</Data></Cell>
+    <Cell><Data ss:Type="String">Health and Welfare Support Workers nfd (Australian use only)</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4110-00-0</Data></Cell>
+    <Cell><Data ss:Type="String">Health and Welfare Support Workers nfd</Data></Cell>
+    <Cell><Data ss:Type="String">Health and Welfare Support Workers nfd</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4112</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Hygienists, Technicians and Therapists</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Hygienists, Technicians and Therapists</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4112-11</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Hygienist</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Hygienist</Data></Cell>
+    <Cell><Data ss:Type="String">26042002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4112-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Hygienist</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Hygienist</Data></Cell>
+    <Cell><Data ss:Type="String">26042002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4112-13</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Technician</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Technician</Data></Cell>
+    <Cell><Data ss:Type="String">160008000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4112-13.0</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Technician</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Technician</Data></Cell>
+    <Cell><Data ss:Type="String">160008000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4112-14</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">https://www.adansw.com.au/Careers/Dental-Therapist.aspx</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4112-14-0</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Dental Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">https://www.adansw.com.au/Careers/Dental-Therapist.aspx</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4113</Data></Cell>
+    <Cell><Data ss:Type="String">Diversional Therapists</Data></Cell>
+    <Cell><Data ss:Type="String">Diversional Therapists</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">http://diversionaltherapy.org.au/About-DTA/What-is-DT</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4113-11</Data></Cell>
+    <Cell><Data ss:Type="String">Diversional Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Diversional Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">http://diversionaltherapy.org.au/About-DTA/What-is-DT</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4113-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Diversional Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Diversional Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">http://diversionaltherapy.org.au/About-DTA/What-is-DT</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4115</Data></Cell>
+    <Cell><Data ss:Type="String">Indigenous Health Workers</Data></Cell>
+    <Cell><Data ss:Type="String">Indigenous Health Workers</Data></Cell>
+    <Cell><Data ss:Type="String">826241000168109</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4115-11</Data></Cell>
+    <Cell><Data ss:Type="String">Aboriginal and Torres Strait Islander Health Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Aboriginal and Torres Strait Islander Health Worker</Data></Cell>
+    <Cell><Data ss:Type="String">826241000168109</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4115-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Aboriginal and Torres Strait Islander Health Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Aboriginal and Torres Strait Islander Health Worker</Data></Cell>
+    <Cell><Data ss:Type="String">826241000168109</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4116</Data></Cell>
+    <Cell><Data ss:Type="String">Massage Therapists</Data></Cell>
+    <Cell><Data ss:Type="String">Massage Therapists</Data></Cell>
+    <Cell><Data ss:Type="String">826281000168104</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4116-11</Data></Cell>
+    <Cell><Data ss:Type="String">Massage Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Massage Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">826281000168104</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4116-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Massage Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">Massage Therapist</Data></Cell>
+    <Cell><Data ss:Type="String">826281000168104</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4117</Data></Cell>
+    <Cell><Data ss:Type="String">Welfare Support Workers</Data></Cell>
+    <Cell><Data ss:Type="String">Welfare Support Workers</Data></Cell>
+    <Cell><Data ss:Type="String">265935008</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-11</Data></Cell>
+    <Cell><Data ss:Type="String">Community Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Community Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Community Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Community Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-12</Data></Cell>
+    <Cell><Data ss:Type="String">Disabilities Services Officer</Data></Cell>
+    <Cell><Data ss:Type="String">Disabilities Services Officer</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-12.0</Data></Cell>
+    <Cell><Data ss:Type="String">Disabilities Services Officer</Data></Cell>
+    <Cell><Data ss:Type="String">Disabilities Services Officer</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-16</Data></Cell>
+    <Cell><Data ss:Type="String">Youth Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Youth Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">youth leader as a concept prob could be replaced</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-16.0</Data></Cell>
+    <Cell><Data ss:Type="String">Youth Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Youth Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">youth leader as a concept prob could be replaced</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-15</Data></Cell>
+    <Cell><Data ss:Type="String">Residential Care Officer</Data></Cell>
+    <Cell><Data ss:Type="String">Residential Care Officer</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">this whole subhierarchy needs modelling in SNOMED-CT-AU</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-15.0</Data></Cell>
+    <Cell><Data ss:Type="String">Residential Care Officer</Data></Cell>
+    <Cell><Data ss:Type="String">Residential Care Officer</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">this whole subhierarchy needs modelling in SNOMED-CT-AU</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-13</Data></Cell>
+    <Cell><Data ss:Type="String">Family Support Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Family Support Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">this whole subhierarchy needs modelling in SNOMED-CT-AU</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-13.0</Data></Cell>
+    <Cell><Data ss:Type="String">Family Support Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Family Support Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">this whole subhierarchy needs modelling in SNOMED-CT-AU</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-14</Data></Cell>
+    <Cell><Data ss:Type="String">Parole or Probation Officer</Data></Cell>
+    <Cell><Data ss:Type="String">Parole or Probation Officer</Data></Cell>
+    <Cell><Data ss:Type="Number">158936006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4117-14.0</Data></Cell>
+    <Cell><Data ss:Type="String">Parole or Probation Officer</Data></Cell>
+    <Cell><Data ss:Type="String">Parole or Probation Officer</Data></Cell>
+    <Cell><Data ss:Type="Number">158936006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4211</Data></Cell>
+    <Cell><Data ss:Type="String">Child Carers</Data></Cell>
+    <Cell><Data ss:Type="String">Child Carers</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">&quot;child care officer&quot; is under welfare so not the same thing</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4211-11</Data></Cell>
+    <Cell><Data ss:Type="String">Child Care Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Child Care Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4211-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Child Care Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Child Care Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4211-12</Data></Cell>
+    <Cell><Data ss:Type="String">Family Day Care Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Family Day Care Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4211-12.0</Data></Cell>
+    <Cell><Data ss:Type="String">Family Day Care Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Family Day Care Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4231</Data></Cell>
+    <Cell><Data ss:Type="String">Aged or Disabled Carer</Data></Cell>
+    <Cell><Data ss:Type="String">Aged or Disabled Carer</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4231-11</Data></Cell>
+    <Cell><Data ss:Type="String">Aged or Disabled Carer</Data></Cell>
+    <Cell><Data ss:Type="String">Aged or Disabled Carer</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4231-11-2</Data></Cell>
+    <Cell><Data ss:Type="String">Personal Carer</Data></Cell>
+    <Cell><Data ss:Type="String">Personal Carer</Data></Cell>
+    <Cell><Data ss:Type="String">229774002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4231-11-4</Data></Cell>
+    <Cell><Data ss:Type="String">Aged or Disabled Carer Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Aged or Disabled Carer Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4233</Data></Cell>
+    <Cell><Data ss:Type="String">Nursing Support and Personal Care Workers</Data></Cell>
+    <Cell><Data ss:Type="String">Nursing Support and Personal Care Workers</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4233-13</Data></Cell>
+    <Cell><Data ss:Type="String">Personal Care Assistant</Data></Cell>
+    <Cell><Data ss:Type="String">Personal Care Assistant</Data></Cell>
+    <Cell><Data ss:Type="String">224576000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4233-13-0</Data></Cell>
+    <Cell><Data ss:Type="String">Personal Care Assistant</Data></Cell>
+    <Cell><Data ss:Type="String">Personal Care Assistant</Data></Cell>
+    <Cell><Data ss:Type="String">224576000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4234</Data></Cell>
+    <Cell><Data ss:Type="String">Special Care Workers</Data></Cell>
+    <Cell><Data ss:Type="String">Special Care Workers</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4234-11</Data></Cell>
+    <Cell><Data ss:Type="String">Child or Youth Residential Care Assistant</Data></Cell>
+    <Cell><Data ss:Type="String">Child or Youth Residential Care Assistant</Data></Cell>
+    <Cell><Data ss:Type="String">158943000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4234-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Child or Youth Residential Care Assistant</Data></Cell>
+    <Cell><Data ss:Type="String">Child or Youth Residential Care Assistant</Data></Cell>
+    <Cell><Data ss:Type="String">158943000</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4234-13</Data></Cell>
+    <Cell><Data ss:Type="String">Refuge Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Refuge Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4234-13.0</Data></Cell>
+    <Cell><Data ss:Type="String">Refuge Worker</Data></Cell>
+    <Cell><Data ss:Type="String">Refuge Worker</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4234-12</Data></Cell>
+    <Cell><Data ss:Type="String">Hostel Parent</Data></Cell>
+    <Cell><Data ss:Type="String">Hostel Parent</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4234-12.0</Data></Cell>
+    <Cell><Data ss:Type="String">Hostel Parent</Data></Cell>
+    <Cell><Data ss:Type="String">Hostel Parent</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4515</Data></Cell>
+    <Cell><Data ss:Type="String">Personal Care Consultants</Data></Cell>
+    <Cell><Data ss:Type="String">Personal Care Consultants</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4515-11</Data></Cell>
+    <Cell><Data ss:Type="String">Natural Remedy Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">Natural Remedy Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4515-11-0</Data></Cell>
+    <Cell><Data ss:Type="String">Natural Remedy Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">Natural Remedy Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4515-11-5</Data></Cell>
+    <Cell><Data ss:Type="String">Kinesiologist</Data></Cell>
+    <Cell><Data ss:Type="String">Kinesiologist</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4515-12</Data></Cell>
+    <Cell><Data ss:Type="String">Weight Loss Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">Weight Loss Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4515-12-0</Data></Cell>
+    <Cell><Data ss:Type="String">Weight Loss Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">Weight Loss Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4521</Data></Cell>
+    <Cell><Data ss:Type="String">Fitness Instructors</Data></Cell>
+    <Cell><Data ss:Type="String">Fitness Instructors</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4521-11</Data></Cell>
+    <Cell><Data ss:Type="String">Fitness Instructor</Data></Cell>
+    <Cell><Data ss:Type="String">Fitness Instructor</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4521-11-3</Data></Cell>
+    <Cell><Data ss:Type="String">Physical Fitness Trainer</Data></Cell>
+    <Cell><Data ss:Type="String">Physical Fitness Trainer</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2231</Data></Cell>
+    <Cell><Data ss:Type="String">Human Resource Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">Human Resource Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2231-12</Data></Cell>
+    <Cell><Data ss:Type="String">Recruitment Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">Recruitment Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2231-12.0</Data></Cell>
+    <Cell><Data ss:Type="String">Recruitment Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">Recruitment Consultant</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2415</Data></Cell>
+    <Cell><Data ss:Type="String">Special Education Teachers</Data></Cell>
+    <Cell><Data ss:Type="String">Special Education Teachers</Data></Cell>
+    <Cell><Data ss:Type="String">106309003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2415-11</Data></Cell>
+    <Cell><Data ss:Type="String">Special Needs Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">Special Needs Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">106309003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2415-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Special Needs Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">Special Needs Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">106309003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2415-99</Data></Cell>
+    <Cell><Data ss:Type="String">Special Education Teachers nec</Data></Cell>
+    <Cell><Data ss:Type="String">Special Education Teachers nec</Data></Cell>
+    <Cell><Data ss:Type="String">106309003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2415-99.0</Data></Cell>
+    <Cell><Data ss:Type="String">Special Education Teachers nec</Data></Cell>
+    <Cell><Data ss:Type="String">Special Education Teachers nec</Data></Cell>
+    <Cell><Data ss:Type="String">106309003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2415-12</Data></Cell>
+    <Cell><Data ss:Type="String">Teacher of the Hearing Impaired</Data></Cell>
+    <Cell><Data ss:Type="String">Teacher of the Hearing Impaired</Data></Cell>
+    <Cell><Data ss:Type="String">310197002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2415-12.0</Data></Cell>
+    <Cell><Data ss:Type="String">Teacher of the Hearing Impaired</Data></Cell>
+    <Cell><Data ss:Type="String">Teacher of the Hearing Impaired</Data></Cell>
+    <Cell><Data ss:Type="String">310197002</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2415-13</Data></Cell>
+    <Cell><Data ss:Type="String">Teacher of the Sight Impaired</Data></Cell>
+    <Cell><Data ss:Type="String">Teacher of the Sight Impaired</Data></Cell>
+    <Cell><Data ss:Type="String">34718002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">add synonym</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2415-13.0</Data></Cell>
+    <Cell><Data ss:Type="String">Teacher of the Sight Impaired</Data></Cell>
+    <Cell><Data ss:Type="String">Teacher of the Sight Impaired</Data></Cell>
+    <Cell><Data ss:Type="String">34718002</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">add synonym</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2722</Data></Cell>
+    <Cell><Data ss:Type="String">Ministers of Religion</Data></Cell>
+    <Cell><Data ss:Type="String">Ministers of Religion</Data></Cell>
+    <Cell><Data ss:Type="String">11015003</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2722-11</Data></Cell>
+    <Cell><Data ss:Type="String">Minister of Religion</Data></Cell>
+    <Cell><Data ss:Type="String">Minister of Religion</Data></Cell>
+    <Cell><Data ss:Type="String">11015003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2722-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Minister of Religion</Data></Cell>
+    <Cell><Data ss:Type="String">Minister of Religion</Data></Cell>
+    <Cell><Data ss:Type="String">11015003</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2711</Data></Cell>
+    <Cell><Data ss:Type="String">Barristers</Data></Cell>
+    <Cell><Data ss:Type="String">Barristers</Data></Cell>
+    <Cell><Data ss:Type="Number">307790001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2711-11</Data></Cell>
+    <Cell><Data ss:Type="String">Barrister</Data></Cell>
+    <Cell><Data ss:Type="String">Barrister</Data></Cell>
+    <Cell><Data ss:Type="Number">307790001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2711-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Barrister</Data></Cell>
+    <Cell><Data ss:Type="String">Barrister</Data></Cell>
+    <Cell><Data ss:Type="Number">307790001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2713</Data></Cell>
+    <Cell><Data ss:Type="String">Solicitors</Data></Cell>
+    <Cell><Data ss:Type="String">Solicitors</Data></Cell>
+    <Cell><Data ss:Type="String">158762005</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2713-11</Data></Cell>
+    <Cell><Data ss:Type="String">Solicitor</Data></Cell>
+    <Cell><Data ss:Type="String">Solicitor</Data></Cell>
+    <Cell><Data ss:Type="String">158762005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2713-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Solicitor</Data></Cell>
+    <Cell><Data ss:Type="String">Solicitor</Data></Cell>
+    <Cell><Data ss:Type="String">158762005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2712</Data></Cell>
+    <Cell><Data ss:Type="String">Judicial and Other Legal Professionals</Data></Cell>
+    <Cell><Data ss:Type="String">Judicial and Other Legal Professionals</Data></Cell>
+    <Cell><Data ss:Type="Number">271554005</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2712-99</Data></Cell>
+    <Cell><Data ss:Type="String">Judicial and Other Legal Professionals nec</Data></Cell>
+    <Cell><Data ss:Type="String">Judicial and Other Legal Professionals nec</Data></Cell>
+    <Cell><Data ss:Type="Number">271554005</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2712-99.0</Data></Cell>
+    <Cell><Data ss:Type="String">Judicial and Other Legal Professionals nec</Data></Cell>
+    <Cell><Data ss:Type="String">Judicial and Other Legal Professionals nec</Data></Cell>
+    <Cell><Data ss:Type="Number">271554005</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4522</Data></Cell>
+    <Cell><Data ss:Type="String">Outdoor Adventure Guides</Data></Cell>
+    <Cell><Data ss:Type="String">Outdoor Adventure Guides</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4522-00</Data></Cell>
+    <Cell><Data ss:Type="String">Outdoor Adventure Guides</Data></Cell>
+    <Cell><Data ss:Type="String">Outdoor Adventure Guides</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4522-00.0</Data></Cell>
+    <Cell><Data ss:Type="String">Outdoor Adventure Guides</Data></Cell>
+    <Cell><Data ss:Type="String">Outdoor Adventure Guides</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2411</Data></Cell>
+    <Cell><Data ss:Type="String">Early Childhood (Pre-primary School) Teachers</Data></Cell>
+    <Cell><Data ss:Type="String">Early Childhood (Pre-primary School) Teachers</Data></Cell>
+    <Cell><Data ss:Type="Number">106308006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2411-11</Data></Cell>
+    <Cell><Data ss:Type="String">Early Childhood (Pre-primary School) Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">Early Childhood (Pre-primary School) Teacher</Data></Cell>
+    <Cell><Data ss:Type="Number">106308006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2411-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Early Childhood (Pre-primary School) Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">Early Childhood (Pre-primary School) Teacher</Data></Cell>
+    <Cell><Data ss:Type="Number">106308006</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2414</Data></Cell>
+    <Cell><Data ss:Type="String">Secondary School Teachers</Data></Cell>
+    <Cell><Data ss:Type="String">Secondary School Teachers</Data></Cell>
+    <Cell><Data ss:Type="String">158903005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2414-11</Data></Cell>
+    <Cell><Data ss:Type="String">Secondary School Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">Secondary School Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">158903005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2414-11.0</Data></Cell>
+    <Cell><Data ss:Type="String">Secondary School Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">Secondary School Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">158903005</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4221</Data></Cell>
+    <Cell><Data ss:Type="String">Education Aides</Data></Cell>
+    <Cell><Data ss:Type="String">Education Aides</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4221-16</Data></Cell>
+    <Cell><Data ss:Type="String">Teachers' Aide</Data></Cell>
+    <Cell><Data ss:Type="String">Teachers' Aide</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4221-16.0</Data></Cell>
+    <Cell><Data ss:Type="String">Teachers' Aide</Data></Cell>
+    <Cell><Data ss:Type="String">Teachers' Aide</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1343</Data></Cell>
+    <Cell><Data ss:Type="String">School Principals</Data></Cell>
+    <Cell><Data ss:Type="String">School Principals</Data></Cell>
+    <Cell><Data ss:Type="String">80407007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">1343-11</Data></Cell>
+    <Cell><Data ss:Type="String">School Principal</Data></Cell>
+    <Cell><Data ss:Type="String">School Principal</Data></Cell>
+    <Cell><Data ss:Type="String">80407007</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">1343-11.1</Data></Cell>
+    <Cell><Data ss:Type="String">Primary School Principal</Data></Cell>
+    <Cell><Data ss:Type="String">Primary School Principal</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">1343-11.2</Data></Cell>
+    <Cell><Data ss:Type="String">Secondary School Principal</Data></Cell>
+    <Cell><Data ss:Type="String">Secondary School Principal</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2492</Data></Cell>
+    <Cell><Data ss:Type="String">Private Tutors and Teachers</Data></Cell>
+    <Cell><Data ss:Type="String">Private Tutors and Teachers</Data></Cell>
+    <Cell><Data ss:Type="String">307979002</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2492-99</Data></Cell>
+    <Cell><Data ss:Type="String">Private Tutors and Teachers nec</Data></Cell>
+    <Cell><Data ss:Type="String">Private Tutors and Teachers nec</Data></Cell>
+    <Cell><Data ss:Type="String">307979002</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2492-99.0</Data></Cell>
+    <Cell><Data ss:Type="String">Private Tutors and Teachers nec</Data></Cell>
+    <Cell><Data ss:Type="String">Private Tutors and Teachers nec</Data></Cell>
+    <Cell><Data ss:Type="String">307979002</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2412</Data></Cell>
+    <Cell><Data ss:Type="String">Primary School Teachers</Data></Cell>
+    <Cell><Data ss:Type="String">Primary School Teachers</Data></Cell>
+    <Cell><Data ss:Type="String">106307001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2412-13</Data></Cell>
+    <Cell><Data ss:Type="String">Primary School Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">Primary School Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">106307001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2412-13.0</Data></Cell>
+    <Cell><Data ss:Type="String">Primary School Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">Primary School Teacher</Data></Cell>
+    <Cell><Data ss:Type="String">106307001</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">9999</Data></Cell>
+    <Cell><Data ss:Type="String">Other</Data></Cell>
+    <Cell><Data ss:Type="String">Other</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">9999.99</Data></Cell>
+    <Cell><Data ss:Type="String">Other</Data></Cell>
+    <Cell><Data ss:Type="String">Other</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">9999.99.0</Data></Cell>
+    <Cell><Data ss:Type="String">Other</Data></Cell>
+    <Cell><Data ss:Type="String">Other</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-3</HorizontalResolution>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>348</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>66</ActiveRow>
+     <ActiveCol>5</ActiveCol>
+     <RangeSelection>C6</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
