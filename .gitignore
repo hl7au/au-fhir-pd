@@ -10,3 +10,4 @@ org.hl7.fhir.igpublisher.jar.3.0.1
 resources/resources/
 resources/au-fhir-base/
 private/
+resources/au-fhir-base
