@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-organisation" />
   <meta>
-    <lastUpdated value="2017-11-24T00:06:33.283+11:00" />
+    <lastUpdated value="2017-11-24T00:45:53.812+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -20,6 +20,10 @@
   <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-organisation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Organization">
+      <path value="Organization" />
+      <short value="Australian Organisation Directory Entry" />
+    </element>
     <element id="Organization.active">
       <path value="Organization.active" />
       <min value="1" />
