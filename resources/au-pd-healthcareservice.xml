@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-healthcareservice" />
   <meta>
-    <lastUpdated value="2017-11-19T23:37:30.739+11:00" />
+    <lastUpdated value="2017-11-24T00:03:08.246+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -12,10 +12,11 @@
     <valueCode value="pa" />
   </extension>
   <url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-healthcareservice" />
-  <name value="Australian Healthcare Service Directory Entry" />
+  <name value="AU PD Healthcare Service" />
+  <title value="AU PD Healthcare Service" />
   <status value="draft" />
   <date value="2017-06-09T16:54:42.8062171+10:00" />
-  <description value="Australian healthcare service provider directory directory entry " />
+  <description value="Australian healthcare service provider directory directory entry" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -241,23 +242,23 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="HealthcareService.specialty:nhsdhealthcareservicerole">
+    <element id="HealthcareService.specialty:healthcareServiceRole">
       <path value="HealthcareService.specialty" />
-      <sliceName value="nhsdhealthcareservicerole" />
+      <sliceName value="healthcareServiceRole" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="service-specialty" />
         </extension>
         <strength value="required" />
-        <description value="NHSD Healthcare Service Roles" />
+        <description value="Healthcare Service Roles" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-nhsd-healthcareservice-services" />
+          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-pd-healthcareservice-role" />
         </valueSetReference>
       </binding>
     </element>
-    <element id="HealthcareService.specialty:snomedservicerole">
+    <element id="HealthcareService.specialty:snomedRole">
       <path value="HealthcareService.specialty" />
-      <sliceName value="snomedservicerole" />
+      <sliceName value="snomedRole" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="service-specialty" />

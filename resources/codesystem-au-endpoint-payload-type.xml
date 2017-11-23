@@ -26,41 +26,41 @@
 	<concept>
 		<code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706"/>
 		<display value="Simplified Profile for HL7 V2.4 REF message"/>
-		<definition value=""/>
+		<definition value="Profile on HL7 V2.4 REF message"/>
 	</concept>
 	<concept>
 		<code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706/RRI"/>
 		<display value="Simplified Profile for HL7 V2.4 REF referral response message"/>
-		<definition value=""/>
+		<definition value="Profile for ACK for Simplified Profile for HL7 2.4 REF"/>
 	</concept>
 	<concept>
 		<code value="http://ns.electronichealth.net.au/ack/sc/deliver/hl7Ack/2012"/>
 		<display value="HL7 V2 Acknowledgment"/>
-		<definition value=""/>
+		<definition value="Profile for ACK"/>
 	</concept>
 	<concept>
 		<code value="http://ns.electronichealth.net.au/ds/sc/deliver/hl7Mdm/2012"/>
 		<display value="HL7 V2 MDM Discharge Summary"/>
-		<definition value=""/>
+		<definition value="Discharge Summary CDA contained in MDM message"/>
 	</concept>
 	<concept>
 		<code value="http://ns.electronichealth.net.au/er/sc/deliver/hl7Mdm/2012"/>
 		<display value="HL7 V2 MDM eReferral"/>
-		<definition value=""/>
+		<definition value="eReferral CDA contained in MDM message"/>
 	</concept>
 	<concept>
 		<code value="http://ns.electronichealth.net.au/es/sc/deliver/hl7Mdm/2012"/>
 		<display value="HL7 V2 MDM Event Summary"/>
-		<definition value=""/>
+		<definition value="Event Summary CDA contained in MDM message"/>
 	</concept>
 	<concept>
 		<code value="http://ns.electronichealth.net.au/shs/sc/deliver/hl7Mdm/2012"/>
 		<display value="HL7 V2 MDM Shared Health Summary"/>
-		<definition value=""/>
+		<definition value="Shared Health Summary CDA contained in MDM message"/>
 	</concept>
 	<concept>
 		<code value="http://ns.electronichealth.net.au/sl/sc/deliver/hl7Mdm/2012"/>
 		<display value="HL7 V2 MDM Specialist Letter"/>
-		<definition value=""/>
+		<definition value="Specialist Letter CDA contained in MDM message"/>
 	</concept>
 </CodeSystem>

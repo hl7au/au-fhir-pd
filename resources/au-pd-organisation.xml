@@ -1,56 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="au-pd-organisation"/>
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<p>AU PD Organisation</p>
-		</div>
-	</text>
-	<meta>
-		<lastUpdated value="2017-06-09T20:06:45.067+10:00"/>
-	</meta>
-	<url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-organisation"/>
-	<name value="Australian Healthcare Organisation Directory Entry"/>
-	<title value="Australian Organisation Directory Entry"/>
-	<status value="draft"/>
-	<date value="2017-05-05T17:01:18.5856309+10:00"/>
-	<fhirVersion value="3.0.1"/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Organization"/>
-	<baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-organisation"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Organization">
-			<path value="Organization"/>
-		</element>
-		<element id="Organization.identifier.hpio">
-			<path value="Organization.identifier"/>
-			<sliceName value="HPI-O"/>
-			<short value="HPI-O"/>
-			<definition value="Health Provider Identifier for Organisation"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Organization.active">
-			<path value="Organization.active"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Organization.name">
-			<path value="Organization.name"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Organization.telecom">
-			<path value="Organization.telecom"/>
-			<min value="0"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Organization.address">
-			<path value="Organization.address"/>
-			<min value="0"/>
-			<mustSupport value="true"/>
-		</element>
-	</differential>
+  <id value="au-pd-organisation" />
+  <meta>
+    <lastUpdated value="2017-11-24T00:06:33.283+11:00" />
+  </meta>
+  <text>
+    <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>AU PD Organisation</p>
+</div></text>
+  <url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-organisation" />
+  <name value="AU PD Organisation" />
+  <title value="AU PD Organisation" />
+  <status value="draft" />
+  <date value="2017-05-05T17:01:18.5856309+10:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-organisation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.active">
+      <path value="Organization.active" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>

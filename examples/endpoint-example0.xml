@@ -73,10 +73,6 @@
     </coding>
     <coding>
       <system value="http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type"/>
-      <code value="http://smxchange.net.au/smd/sc/HL7v2.3.1~REF_I12/eRTF"/>
-    </coding>
-    <coding>
-      <system value="http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type"/>
       <code value="http://ns.electronichealth.net.au/ack/sc/deliver/hl7Ack/2012"/>
     </coding>
   </payloadType>

@@ -40,13 +40,14 @@ A subset of FHIR possible interactions are required for this profile.
 
 
 ## Type Level Search/Include
+Expected scope of search/include support.
 
 |Resource Type|Profile|Search Parameters|Includes|
 |---|---|---|---|
-|[Organization](#organization)| Australian Organisation Directory Entry | name, identifier ||
-|[Practitioner](#practitioner)| Australian Practitioner Directory Entry | identifier, family, given, name ||
-|[PractitionerRole](#practitionerrole)| Australian PractitionerRole Directory Entry | identifier, location.address-city, location.address-postalcode, location.address-state, location.near, location.near-distance, organization.identiifer, practitioner.name, practitioner.family, practitioner.given | location, organization, endpoint |
-|[HealthcareService](#healthcareservice)| Australian HealthcareService Directory Entry | name, location.address-city, location.address-postalcode, location.address-state, location.near, location.near-distance, organization.identiifer | location, organization, endpoint |
-|[Location](#location)| Australian Location Directory Entry | address-city, address-postalcode, address-state, near, near-distance ||
-|[Endpoint](#endpoint)| Australian Endpoint Directory Entry | ||
+|[Organization](/StructureDefinition-au-pd-organisation.html#search)| Australian Organisation Directory Entry | name, identifier ||
+|[Practitioner](/StructureDefinition-au-pd-practitioner.html#search)| Australian Practitioner Directory Entry | identifier, family, given, name ||
+|[PractitionerRole](/StructureDefinition-au-pd-practitionerrole.html#search)| Australian PractitionerRole Directory Entry | identifier, location.address-city, location.address-postalcode, location.address-state, location.near, location.near-distance, organization.identiifer, practitioner.name, practitioner.family, practitioner.given | location, organization, endpoint |
+|[HealthcareService](/StructureDefinition-au-pd-healthcareservice.html#search)| Australian HealthcareService Directory Entry | name, location.address-city, location.address-postalcode, location.address-state, location.near, location.near-distance, organization.identiifer | location, organization, endpoint |
+|[Location](/StructureDefinition-au-pd-location.html#search)| Australian Location Directory Entry | address-city, address-postalcode, address-state, near, near-distance ||
+|[Endpoint](/StructureDefinition-au-pd-sm-endpoint.html#search)| Australian Endpoint Directory Entry | connection-type, payload-type, au-receivingfacility-namespace-id, au-receivingfacility-universal-id, au-receivingfacility-universal-id-type ||
 {:.grid}
