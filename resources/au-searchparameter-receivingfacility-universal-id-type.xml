@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///D:/Oridashi/Repositories/au-fhir-base/fhir-all-xsd/searchparameter.xsd">
+	<id value="au-searchparameter-receivingfacility-universal-id-type" />
+  <meta>
+    <lastUpdated value="2017-09-08T16:22:39.374+10:00" />
+  </meta>
+  <url value="http://hl7.org.au/fhir/SearchParameter/au-searchparameter-receivingfacility-universal-id-type" />
+	<name value="Search Endpoint Receiving Facility Extension Universal Id Type"/>
+	<status value="draft"/>
+	<code value="au-receivingfacility-universal-id-type"/>
+	<base value="Endpoint"/>
+	<type value="string"/>
+	<description value="Find a matching receiving facility universal id type"/>
+	<expression value="extension(‘http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility’).extension(‘universal-id-type’).value"/>
+	<modifier value="exact"/>
+	<modifier value="missing"/>
+</SearchParameter>

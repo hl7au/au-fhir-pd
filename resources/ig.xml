@@ -159,6 +159,24 @@
 				<reference value="ConceptMap/conceptmap-snomed-nhsd-healthcareservice-role"/>
 			</sourceReference>
 		</resource>
+	  <resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="SearchParameter/au-searchparameter-receivingfacility-namespace-id"/>
+			</sourceReference>
+		</resource>
+		  <resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="SearchParameter/au-searchparameter-receivingfacility-universal-id"/>
+			</sourceReference>
+		</resource>
+		  <resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="SearchParameter/au-searchparameter-receivingfacility-universal-id-type"/>
+			</sourceReference>
+		</resource>
 			<resource>
 			<example value="true"/>
 			<sourceReference>
