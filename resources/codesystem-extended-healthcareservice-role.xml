@@ -1,5 +1,5 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="codesystem-nhsd-healthcareservice-services"/>
+    <id value="codesystem-extended-healthcareservice-role"/>
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">
@@ -7,9 +7,9 @@
             <p></p>
         </div>
     </text>
-    <url value="http://hl7.org.au/fhir/CodeSystem/codesystem-nhsd-healthcareservice-services"/>
+    <url value="http://hl7.org.au/fhir/CodeSystem/codesystem-extended-healthcareservice-role"/>
     <version value="1"/>
-    <name value="NHSD Healthcare Service Specialties Terminology"/>
+    <name value="Healthcare Service Role Extended Terminology"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2017-09-05"/>
@@ -17,9 +17,9 @@
     <contact>
         <name value="hl7.org.au"/>
     </contact>
-    <description value="NHSD Healthcare Service Specialties Terminology"/>
+    <description value="Healthcare Service Role Extended Terminology"/>
     <caseSensitive value="true"/>
-    <valueSet value="http://hl7.org.au.fhir/ValueSet/valueset-nhsd-healthcareservice-services"/>
+    <valueSet value="http://hl7.org.au.fhir/ValueSet/valueset-pd-healthcareservice-role"/>
     <compositional value="false"/>
     <versionNeeded value="true"/>
     <content value="complete"/>

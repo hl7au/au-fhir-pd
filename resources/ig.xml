@@ -114,13 +114,13 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="CodeSystem/codesystem-nhsd-practitioner-role"/>
+				<reference value="CodeSystem/codesystem-extended-practitioner-role"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="CodeSystem/codesystem-nhsd-healthcareservice-role"/>
+				<reference value="CodeSystem/codesystem-extended-healthcareservice-role"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -138,25 +138,25 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/valueset-nhsd-practitioner-role"/>
+				<reference value="ValueSet/valueset-pd-practitioner-role"/>
 			</sourceReference>
 		</resource>
 				<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/valueset-nhsd-healthcareservice-role"/>
+				<reference value="ValueSet/valueset-pd-healthcareservice-role"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ConceptMap/conceptmap-snomed-nhsd-core"/>
+				<reference value="ConceptMap/conceptmap-snomed-pd-practitioner-role"/>
 			</sourceReference>
 		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ConceptMap/conceptmap-snomed-nhsd-healthcareservice-role"/>
+				<reference value="ConceptMap/conceptmap-snomed-pd-healthcareservice-role"/>
 			</sourceReference>
 		</resource>
 	  <resource>
