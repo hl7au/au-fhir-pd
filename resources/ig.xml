@@ -202,9 +202,15 @@
 			</sourceReference>
 		</resource>
 		<resource>
-			<example value="true"/>
+		<example value="true"/>
 			<sourceReference>
 				<reference value="Endpoint/example0"/>
+			</sourceReference>
+		</resource>
+	<resource>
+		<example value="true"/>
+			<sourceReference>
+				<reference value="Endpoint/example1"/>
 			</sourceReference>
 		</resource>
 		<resource>

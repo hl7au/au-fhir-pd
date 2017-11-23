@@ -1,0 +1,62 @@
+<Endpoint xmlns="http://hl7.org/fhir">
+  <id value="example1"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <b>Medical Objects Test Secure Messaging Endpoint</b>
+      <hr/>
+      <span style="color: gray;">Work - Email:</span> jared@example.org
+</div>
+  </text>
+  <extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility">
+    <extension url="namespace-id">
+      <valueString value="Buderim Medical Center"/>
+    </extension>
+    <extension url="universal-id">
+      <valueString value="877F9695-1298-4E6A-B432-0FDD46AD80B8"/>
+    </extension>
+    <extension url="universal-id-type">
+      <valueString value="GUID"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication">
+    <extension url="namespace-id">
+      <valueString value="Equator"/>
+    </extension>
+    <extension url="universal-id">
+      <valueString value="Equator:3.1.4"/>
+    </extension>
+    <extension url="universal-id-type">
+      <valueString value="L"/>
+    </extension>
+  </extension>
+  <status value="active"/>
+  <connectionType>
+    <system value="http://ns.electronichealth.net.au/smd/intf"/>
+    <code value="http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010"/>
+  </connectionType>
+  <name value="Medical Objects Test Secure Messaging Endpoint"/>
+  <managingOrganization>
+    <display value="Medical Objects"/>
+  </managingOrganization>
+  <contact>
+    <system value="email"/>
+    <value value="jared@example.org"/>
+    <use value="work"/>
+  </contact>
+  <period>
+    <start value="2017-08-18"/>
+  </period>
+  <payloadType>
+    <coding>
+      <system value="http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type"/>
+      <code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type"/>
+      <code value="http://ns.electronichealth.net.au/ds/sc/deliver/hl7Mdm/2012"/>
+    </coding>
+  </payloadType>
+  <payloadMimeType value="application/hl7-v2"/>
+  <address value="https://smd-ep.test.medical-objects.com.au/smd/2010"/>
+</Endpoint>
