@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-organisation" />
   <meta>
-    <lastUpdated value="2017-11-24T00:45:53.812+11:00" />
+    <lastUpdated value="2017-11-24T01:04:08.579+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -23,6 +23,7 @@
     <element id="Organization">
       <path value="Organization" />
       <short value="Australian Organisation Directory Entry" />
+      <definition value="Directory entry Australian realm Organisation profile often healthcare or related service provision." />
     </element>
     <element id="Organization.active">
       <path value="Organization.active" />
