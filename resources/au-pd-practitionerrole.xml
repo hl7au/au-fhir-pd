@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-11-24T00:09:30.084+11:00" />
+    <lastUpdated value="2017-11-29T23:20:41.784+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -164,7 +164,6 @@
       <short value="Vendor allocated URL" />
       <definition value="Unique namespace for the assigning vendor's identifier value." />
       <min value="1" />
-      <fixedUri value="http://ns.electronichealth.net.au/id/medicare-provider-number" />
     </element>
     <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.value">
       <path value="PractitionerRole.identifier.value" />
