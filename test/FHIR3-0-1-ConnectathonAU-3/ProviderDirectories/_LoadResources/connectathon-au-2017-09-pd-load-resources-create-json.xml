@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestScript xmlns="http://hl7.org/fhir">
+	<id value="connectathon-au-2017-09-pd-load-resources-create-json"/>
+
+	<url value="http://hl7.org.au/fhir3-0-1/TestScript/connectathon-au-2017-09-pd-load-resources-create-json"/>
+	<name value="FHIR Connectathon AU September 2017 - Provider Directories - Load Test Resources - Create - JSON"/>
+	<status value="draft"/>
+	<date value="2017-09-18"/>
+	<publisher value="AEGIS.net, Inc."/>
+	<contact>
+		<name value="HL7 Australia"/>
+		<telecom>
+			<system value="url"/>
+			<value value="http://www.hl7.org.au"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="Contact Oridashi"/>
+		<telecom>
+			<system value="email"/>
+			<value value="info@oridashi.com.au"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<contact>
+		<name value="Touchstone Support"/>
+		<telecom>
+			<system value="email"/>
+			<value value="Touchstone_Support@aegis.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="[OPTIONAL] Load (create) Provider Directories test resources in JSON format using the update (PUT) operation of the target FHIR server for use in FHIR Connectathon AU September 2017 Provider Directories Track tests. All resource ids are pre-defined. The target FHIR server is expected to support resource create via the update (PUT) operation for client assigned ids."/>
+	<copyright value="© HL7 AU 2017; © Oridashi 2017; © AEGIS.net, Inc. 2015+"/>
+
+	<metadata>
+		<capability>
+			<required value="true"/>
+			<description value="Location, Endpoint, Organization, Practitioner and PractitionerRole update Operation"/>
+			<link value="http://hl7.org/fhir/STU3/http.html#update"/>
+			<link value="http://hl7.org/fhir/STU3/endpoint.html"/>
+			<link value="http://hl7.org/fhir/STU3/location.html"/>
+			<link value="http://hl7.org/fhir/STU3/organization.html"/>
+			<link value="http://hl7.org/fhir/STU3/practitioner.html"/>
+			<link value="http://hl7.org/fhir/STU3/practitionerrole.html"/>	
+			<capabilities>
+				<reference value="../_reference/capabilities/LoadTestResourcesCapabilitiesStatement.xml" />
+			</capabilities>
+		</capability>
+	</metadata>	
+
+	<fixture id="endpoint0">
+		<resource>
+			<reference value="../_reference/resources/endpoint0.json"/>
+		</resource>
+	</fixture>
+	<fixture id="location0">
+		<resource>
+			<reference value="../_reference/resources/location0.json"/>
+		</resource>
+	</fixture>
+	<fixture id="organization0">
+		<resource>
+			<reference value="../_reference/resources/organization0.json"/>
+		</resource>
+	</fixture>
+	<fixture id="practitioner0">
+		<resource>
+			<reference value="../_reference/resources/practitioner0.json"/>
+		</resource>
+	</fixture>
+	<fixture id="practitionerrole0">
+		<resource>
+			<reference value="../_reference/resources/practitionerrole0.json"/>
+		</resource>
+	</fixture>
+	<fixture id="healthcareservice0">
+		<resource>
+			<reference value="../_reference/resources/healthcareservice0.json"/>
+		</resource>
+	</fixture>
+
+	<variable>
+		<name value="location0-id"/>
+		<path value="Location/id"/>
+		<sourceId value="location0"/>
+	</variable>
+	<variable>
+		<name value="endpoint0-id"/>
+		<path value="Endpoint/id"/>
+		<sourceId value="endpoint0"/>
+	</variable>
+	<variable>
+		<name value="organization0-id"/>
+		<path value="Organization/id"/>
+		<sourceId value="organization0"/>
+	</variable>
+	<variable>
+		<name value="practitioner0-id"/>
+		<path value="Practitioner/id"/>
+		<sourceId value="practitioner0"/>
+	</variable>
+	<variable>
+		<name value="practitionerrole0-id"/>
+		<path value="PractitionerRole/id"/>
+		<sourceId value="practitionerrole0"/>
+	</variable>
+		<variable>
+		<name value="healthcareservice0-id"/>
+		<path value="HealthcareService/id"/>
+		<sourceId value="healthcareservice0"/>
+	</variable>
+
+	<!-- No Setup -->
+
+	<test id="Step1-LoadTestResourceCreate">
+		<name value="Step1-LoadTestResourceCreate"/>
+		<description value="[OPTIONAL] Load (create) Provider Directories test resources using the update (PUT) operation of the target FHIR server for use in FHIR Connectathon AU September 2017 Provider Directories Track tests."/>
+
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="updateCreate"/>
+				</type>
+				<resource value="Location"/>
+				<accept value="json"/>
+				<contentType value="json"/>
+				<params value="/${location0-id}"/>
+				<sourceId value="location0"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
+				<operator value="in"/>
+				<responseCode value="200,201"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="updateCreate"/>
+				</type>
+				<resource value="Organization"/>
+				<accept value="json"/>
+				<contentType value="json"/>
+				<params value="/${organization0-id}"/>
+				<sourceId value="organization0"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
+				<operator value="in"/>
+				<responseCode value="200,201"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="updateCreate"/>
+				</type>
+				<resource value="Practitioner"/>
+				<accept value="json"/>
+				<contentType value="json"/>
+				<params value="/${practitioner0-id}"/>
+				<sourceId value="practitioner0"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
+				<operator value="in"/>
+				<responseCode value="200,201"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="updateCreate"/>
+				</type>
+				<resource value="PractitionerRole"/>
+				<accept value="json"/>
+				<contentType value="json"/>
+				<params value="/${practitionerrole0-id}"/>
+				<sourceId value="practitionerrole0"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
+				<operator value="in"/>
+				<responseCode value="200,201"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="updateCreate"/>
+				</type>
+				<resource value="Endpoint"/>
+				<accept value="json"/>
+				<contentType value="json"/>
+				<params value="/${endpoint0-id}"/>
+				<sourceId value="endpoint0"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
+				<operator value="in"/>
+				<responseCode value="200,201"/>
+			</assert>
+		</action>
+		<action>
+			<operation>
+				<type>
+					<system value="http://hl7.org/fhir/testscript-operation-codes"/>
+					<code value="updateCreate"/>
+				</type>
+				<resource value="HealthcareService"/>
+				<accept value="json"/>
+				<contentType value="json"/>
+				<params value="/${healthcareservice0-id}"/>
+				<sourceId value="healthcareservice0"/>
+			</operation>
+		</action>
+		<action>
+			<assert>
+				<description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
+				<operator value="in"/>
+				<responseCode value="200,201"/>
+			</assert>
+		</action>
+	</test>
+</TestScript>
