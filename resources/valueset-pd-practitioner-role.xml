@@ -14,6 +14,9 @@
 	<description value="Practitioner Role (ANZSCO based) Valueset"/>
 	<compose>
 		<include>
+			<system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+		</include>
+		<include>
 			<system value="http://hl7.org.au/fhir/CodeSystem/codesystem-extended-practitioner-role"/>
 		</include>
 	</compose>

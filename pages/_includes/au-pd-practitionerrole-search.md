@@ -220,11 +220,11 @@ Chaned search (via Endpoint) based on token for the type of content supported by
 
 The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type.
 
-*Example:* `GET [base]/PractitionerRole?_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
+*Example:* `GET [base]/PractitionerRole?_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
 
 *Support:*
 
-* MUST support _include PractitionerRole references location, organization, endpoint.
+* MUST support _include PractitionerRole references practitioner, location, organization, endpoint.
 
 -----------
 **Search: Combination**

@@ -1,1826 +1,419 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="codesystem-extended-practitioner-role"/>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <h2>Practitioner Role Extended Terminology</h2>
-            <p></p>
-        </div>
-    </text>
-    <url value="http://hl7.org.au/fhir/CodeSystem/codesystem-extended-practitioner-role"/>
-    <version value="1"/>
-    <name value="Practitioner Role Extended Terminology"/>
-    <status value="draft"/>
-    <experimental value="true"/>
-    <date value="2017-11-23"/>
-    <publisher value="HL7 Australia"/>
-    <contact>
-        <name value="hl7.org.au"/>
-    </contact>
-    <description value="Practitioner Role Extended Terminology"/>
-    <caseSensitive value="true"/>
-    <valueSet value="http://hl7.org.au.fhir/ValueSet/valueset-pd-practitioner-role"/>
-    <compositional value="false"/>
-    <versionNeeded value="true"/>
-    <content value="complete"/>
-	<concept>
-		<code value="1342"/>
-		<display value="Health and Welfare Service Managers"/>
-		<definition value="Health and Welfare Service Managers"/>
-		<concept>
-			<code value="1342-11"/>
-			<display value="Medical Administrator (Aus) / Medical Superintendent (NZ)"/>
-			<definition value="Medical Administrator (Aus) / Medical Superintendent (NZ)"/>
-			<concept>
-				<code value="1342-11-2"/>
-				<display value="Director of Medical Services"/>
-				<definition value="Director of Medical Services"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="1342-12"/>
-			<display value="Nursing Clinical Director"/>
-			<definition value="Nursing Clinical Director"/>
-			<concept>
-				<code value="1342-12.4"/>
-				<display value="Director of Nursing"/>
-				<definition value="Director of Nursing"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2349"/>
-		<display value="Other Natural and Physical Science Professionals"/>
-		<definition value="Other Natural and Physical Science Professionals"/>
-		<concept>
-			<code value="2349-99"/>
-			<display value="Natural and Physical Science Professionals nec"/>
-			<definition value="Natural and Physical Science Professionals nec"/>
-			<concept>
-				<code value="2349-99-2"/>
-				<display value="Exercise Physiologist"/>
-				<definition value="Exercise Physiologist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2500"/>
-		<display value="Health Professionals"/>
-		<definition value="Health Professionals"/>
-		<concept>
-			<code value="2500-00"/>
-			<display value="Health Professionals nfd (Australian use only)"/>
-			<definition value="Health Professionals nfd (Australian use only)"/>
-			<concept>
-				<code value="2500-00-0"/>
-				<display value="Health Professionals nfd"/>
-				<definition value="Health Professionals nfd"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2511"/>
-		<display value="Dietitians"/>
-		<definition value="Dietitians"/>
-		<concept>
-			<code value="2511-11"/>
-			<display value="Dietitian"/>
-			<definition value="Dietitian"/>
-			<concept>
-				<code value="2511-11-0"/>
-				<display value="Dietitian"/>
-				<definition value="Dietitian"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2511.12"/>
-			<display value="Nutritionist"/>
-			<definition value="Nutritionist"/>
-			<concept>
-				<code value="2511.12.0"/>
-				<display value="Nutritionist"/>
-				<definition value="Nutritionist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2512"/>
-		<display value="Medical Imaging Professionals"/>
-		<definition value="Medical Imaging Professionals"/>
-		<concept>
-			<code value="2512-11"/>
-			<display value="Medical Diagnostic Radiographer"/>
-			<definition value="Medical Diagnostic Radiographer"/>
-			<concept>
-				<code value="2512-11.0"/>
-				<display value="Medical Diagnostic Radiographer"/>
-				<definition value="Medical Diagnostic Radiographer"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2512-12"/>
-			<display value="Medical Radiation Therapist"/>
-			<definition value="Medical Radiation Therapist"/>
-			<concept>
-				<code value="2512-12-0"/>
-				<display value="Medical Radiation Therapist"/>
-				<definition value="Medical Radiation Therapist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2512-13"/>
-			<display value="Nuclear Medicine Technologist"/>
-			<definition value="Nuclear Medicine Technologist"/>
-			<concept>
-				<code value="2512-13-0"/>
-				<display value="Nuclear Medicine Technologist"/>
-				<definition value="Nuclear Medicine Technologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2512-14"/>
-			<display value="Sonographer"/>
-			<definition value="Sonographer"/>
-			<concept>
-				<code value="2512-14-0"/>
-				<display value="Sonographer"/>
-				<definition value="Sonographer"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2514"/>
-		<display value="Optometrists and Orthoptists"/>
-		<definition value="Optometrists and Orthoptists"/>
-		<concept>
-			<code value="2514-11"/>
-			<display value="Optometrist"/>
-			<definition value="Optometrist"/>
-			<concept>
-				<code value="2514-11-0"/>
-				<display value="Optometrist"/>
-				<definition value="Optometrist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2514-12"/>
-			<display value="Orthoptist"/>
-			<definition value="Orthoptist"/>
-			<concept>
-				<code value="2514-12-0"/>
-				<display value="Orthoptist"/>
-				<definition value="Orthoptist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2515"/>
-		<display value="Pharmacists"/>
-		<definition value="Pharmacists"/>
-		<concept>
-			<code value="2515-13"/>
-			<display value="Retail/ Community Pharmacist"/>
-			<definition value="Retail/ Community Pharmacist"/>
-			<concept>
-				<code value="2515-13-1"/>
-				<display value="Retail/Community Pharmacist"/>
-				<definition value="Retail/Community Pharmacist"/>
-			</concept>
-			<concept>
-				<code value="2515-13-2"/>
-				<display value="Consultant Pharmacist"/>
-				<definition value="Consultant Pharmacist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2519"/>
-		<display value="Other Health Diagnostic and Promotion Professionals"/>
-		<definition value="Other Health Diagnostic and Promotion Professionals"/>
-		<concept>
-			<code value="2519-11"/>
-			<display value="Health Promotion Officer/Community Health Worker/Health Educator"/>
-			<definition value="Health Promotion Officer/Community Health Worker/Health Educator"/>
-			<concept>
-				<code value="2519-11-3"/>
-				<display value="Diabetes Educator"/>
-				<definition value="Diabetes Educator"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2519-12"/>
-			<display value="Orthotist or Prosthetist"/>
-			<definition value="Orthotist or Prosthetist"/>
-			<concept>
-				<code value="2519-12-0"/>
-				<display value="Orthotist or Prosthetist"/>
-				<definition value="Orthotist or Prosthetist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2521"/>
-		<display value="Chiropractors and Osteopaths"/>
-		<definition value="Chiropractors and Osteopaths"/>
-		<concept>
-			<code value="2521-11"/>
-			<display value="Chiropractor"/>
-			<definition value="Chiropractor"/>
-			<concept>
-				<code value="2521-11-0"/>
-				<display value="Chiropractor"/>
-				<definition value="Chiropractor"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2521-12"/>
-			<display value="Osteopath"/>
-			<definition value="Osteopath"/>
-			<concept>
-				<code value="2521-12-0"/>
-				<display value="Osteopath"/>
-				<definition value="Osteopath"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2522"/>
-		<display value="Complementary Health Therapists"/>
-		<definition value="Complementary Health Therapists"/>
-		<concept>
-			<code value="2522-11"/>
-			<display value="Acupuncturist"/>
-			<definition value="Acupuncturist"/>
-			<concept>
-				<code value="2522-11-0"/>
-				<display value="Acupuncturist"/>
-				<definition value="Acupuncturist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2522-12"/>
-			<display value="Homoeopath"/>
-			<definition value="Homoeopath"/>
-			<concept>
-				<code value="2522-12-0"/>
-				<display value="Homoeopath"/>
-				<definition value="Homoeopath"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2522-13"/>
-			<display value="Naturopath"/>
-			<definition value="Naturopath"/>
-			<concept>
-				<code value="2522-13-0"/>
-				<display value="Naturopath"/>
-				<definition value="Naturopath"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2522-14"/>
-			<display value="Traditional Chinese Medicine Practitioner"/>
-			<definition value="Traditional Chinese Medicine Practitioner"/>
-			<concept>
-				<code value="2522-14-1"/>
-				<display value="Chinese Herbalist"/>
-				<definition value="Chinese Herbalist"/>
-			</concept>
-			<concept>
-				<code value="2522-14.2"/>
-				<display value="Chinese Medicine Practitioner"/>
-				<definition value="Chinese Medicine Practitioner"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2522-99"/>
-			<display value="Complementary Health Therapists nec"/>
-			<definition value="Complementary Health Therapists nec"/>
-			<concept>
-				<code value="2522-99-0"/>
-				<display value="Complementary Health Therapists nec"/>
-				<definition value="Complementary Health Therapists nec"/>
-			</concept>
-			<concept>
-				<code value="2522-99-1"/>
-				<display value="Dance Therapist"/>
-				<definition value="Dance Therapist"/>
-			</concept>
-			<concept>
-				<code value="2522-99-3"/>
-				<display value="Hypnotherapist"/>
-				<definition value="Hypnotherapist"/>
-			</concept>
-			<concept>
-				<code value="2522-99-4"/>
-				<display value="Music Therapist"/>
-				<definition value="Music Therapist"/>
-			</concept>
-			<concept>
-				<code value="2522-99.5"/>
-				<display value="Herbalist (Other than Chinese)"/>
-				<definition value="Herbalist (Other than Chinese)"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2522.16"/>
-			<display value="Myotherapist"/>
-			<definition value="Myotherapist"/>
-			<concept>
-				<code value="2522.16.0"/>
-				<display value="Myotherapist"/>
-				<definition value="Myotherapist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2523"/>
-		<display value="Dental Practitioners"/>
-		<definition value="Dental Practitioners"/>
-		<concept>
-			<code value="2523-11"/>
-			<display value="Dental Specialist"/>
-			<definition value="Dental Specialist"/>
-			<concept>
-				<code value="2523-11-1"/>
-				<display value="Endodontist"/>
-				<definition value="Endodontist"/>
-			</concept>
-			<concept>
-				<code value="2523-11-2"/>
-				<display value="Oral and Maxillofacial Surgeon"/>
-				<definition value="Oral and Maxillofacial Surgeon"/>
-			</concept>
-			<concept>
-				<code value="2523-11-3"/>
-				<display value="Oral Pathologist"/>
-				<definition value="Oral Pathologist"/>
-			</concept>
-			<concept>
-				<code value="2523-11-4"/>
-				<display value="Orthodontist"/>
-				<definition value="Orthodontist"/>
-			</concept>
-			<concept>
-				<code value="2523-11-5"/>
-				<display value="Paedodontist"/>
-				<definition value="Paedodontist"/>
-			</concept>
-			<concept>
-				<code value="2523-11-6"/>
-				<display value="Periodontist"/>
-				<definition value="Periodontist"/>
-			</concept>
-			<concept>
-				<code value="2523-11-7"/>
-				<display value="Prosthodontist"/>
-				<definition value="Prosthodontist"/>
-			</concept>
-			<concept>
-				<code value="2523-11.0"/>
-				<display value="Dental Specialist"/>
-				<definition value="Dental Specialist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2523-12"/>
-			<display value="Dentist/ Dental Practitioner/ Dental Surgeon"/>
-			<definition value="Dentist/ Dental Practitioner/ Dental Surgeon"/>
-			<concept>
-				<code value="2523-12.6"/>
-				<display value="Dentist / Dental Practitioner"/>
-				<definition value="Dentist / Dental Practitioner"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2524"/>
-		<display value="Occupational Therapists"/>
-		<definition value="Occupational Therapists"/>
-		<concept>
-			<code value="2524-11"/>
-			<display value="Occupational Therapist"/>
-			<definition value="Occupational Therapist"/>
-			<concept>
-				<code value="2524-11-0"/>
-				<display value="Occupational Therapist"/>
-				<definition value="Occupational Therapist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2525"/>
-		<display value="Physiotherapists"/>
-		<definition value="Physiotherapists"/>
-		<concept>
-			<code value="2525-11"/>
-			<display value="Physiotherapist"/>
-			<definition value="Physiotherapist"/>
-			<concept>
-				<code value="2525-11.0"/>
-				<display value="Physiotherapist"/>
-				<definition value="Physiotherapist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2526"/>
-		<display value="Podiatrists"/>
-		<definition value="Podiatrists"/>
-		<concept>
-			<code value="2526-11"/>
-			<display value="Podiatrist"/>
-			<definition value="Podiatrist"/>
-			<concept>
-				<code value="2526-11.0"/>
-				<display value="Podiatrist"/>
-				<definition value="Podiatrist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2527"/>
-		<display value="Speech Professionals and Audiologists"/>
-		<definition value="Speech Professionals and Audiologists"/>
-		<concept>
-			<code value="2527-11"/>
-			<display value="Audiologist"/>
-			<definition value="Audiologist"/>
-			<concept>
-				<code value="2527-11-0"/>
-				<display value="Audiologist"/>
-				<definition value="Audiologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2527-12"/>
-			<display value="Speech Pathologist"/>
-			<definition value="Speech Pathologist"/>
-			<concept>
-				<code value="2527-12-0"/>
-				<display value="Speech Pathologist"/>
-				<definition value="Speech Pathologist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2531"/>
-		<display value="Generalist Medical Practitioners"/>
-		<definition value="Generalist Medical Practitioners"/>
-		<concept>
-			<code value="2531-11"/>
-			<display value="General Medical Practitioner"/>
-			<definition value="General Medical Practitioner"/>
-			<concept>
-				<code value="2531-11.0"/>
-				<display value="General Medical Practitioner"/>
-				<definition value="General Medical Practitioner"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2531-12"/>
-			<display value="Resident Medical Officer"/>
-			<definition value="Resident Medical Officer"/>
-			<concept>
-				<code value="2531-12-9"/>
-				<display value="Career Medical Officer/ Senior Medical Officer nec"/>
-				<definition value="Career Medical Officer/ Senior Medical Officer nec"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2532"/>
-		<display value="Anaesthetists"/>
-		<definition value="Anaesthetists"/>
-		<concept>
-			<code value="2532-11"/>
-			<display value="Anaesthetist"/>
-			<definition value="Anaesthetist"/>
-			<concept>
-				<code value="2532-11.0"/>
-				<display value="Anaesthetist"/>
-				<definition value="Anaesthetist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2533"/>
-		<display value="Specialists Physicians"/>
-		<definition value="Specialists Physicians"/>
-		<concept>
-			<code value="2533-11"/>
-			<display value="Specialist Physician (General Medicine)"/>
-			<definition value="Specialist Physician (General Medicine)"/>
-			<concept>
-				<code value="2533-11-1"/>
-				<display value="Specialist Physician (General Medicine)"/>
-				<definition value="Specialist Physician (General Medicine)"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-12"/>
-			<display value="Cardiologist"/>
-			<definition value="Cardiologist"/>
-			<concept>
-				<code value="2533-12-0"/>
-				<display value="Cardiologist"/>
-				<definition value="Cardiologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-13"/>
-			<display value="Clinical Haematologist"/>
-			<definition value="Clinical Haematologist"/>
-			<concept>
-				<code value="2533-13-0"/>
-				<display value="Clinical Haematologist"/>
-				<definition value="Clinical Haematologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-14"/>
-			<display value="Medical Oncologist"/>
-			<definition value="Medical Oncologist"/>
-			<concept>
-				<code value="2533-14-0"/>
-				<display value="Medical Oncologist"/>
-				<definition value="Medical Oncologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-15"/>
-			<display value="Endocrinologist"/>
-			<definition value="Endocrinologist"/>
-			<concept>
-				<code value="2533-15.0"/>
-				<display value="Endocrinologist"/>
-				<definition value="Endocrinologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-16"/>
-			<display value="Gastroenterologist"/>
-			<definition value="Gastroenterologist"/>
-			<concept>
-				<code value="2533-16-0"/>
-				<display value="Gastroenterologist"/>
-				<definition value="Gastroenterologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-17"/>
-			<display value="Intensive Care Specialist"/>
-			<definition value="Intensive Care Specialist"/>
-			<concept>
-				<code value="2533-17-0"/>
-				<display value="Intensive Care Specialist"/>
-				<definition value="Intensive Care Specialist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-18"/>
-			<display value="Neurologist"/>
-			<definition value="Neurologist"/>
-			<concept>
-				<code value="2533-18-0"/>
-				<display value="Neurologist"/>
-				<definition value="Neurologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-21"/>
-			<display value="Paediatrician"/>
-			<definition value="Paediatrician"/>
-			<concept>
-				<code value="2533-21-1"/>
-				<display value="Neonatologist"/>
-				<definition value="Neonatologist"/>
-			</concept>
-			<concept>
-				<code value="2533-21-19"/>
-				<display value="Paediatric Thoracic Medicine Specialist / Respiratory Specialist / Sleep Specialist"/>
-				<definition value="Paediatric Thoracic Medicine Specialist / Respiratory Specialist / Sleep Specialist"/>
-			</concept>
-			<concept>
-				<code value="2533-21-21"/>
-				<display value="General Paediatrics Specialist"/>
-				<definition value="General Paediatrics Specialist"/>
-			</concept>
-			<concept>
-				<code value="2533-21.25"/>
-				<display value="Paediatric Dermatologist"/>
-				<definition value="Paediatric Dermatologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-22"/>
-			<display value="Renal Medicine Specialist"/>
-			<definition value="Renal Medicine Specialist"/>
-			<concept>
-				<code value="2533-22-0"/>
-				<display value="Renal Medicine Specialist / Nephrologist / Renal Medicine Physician"/>
-				<definition value="Renal Medicine Specialist / Nephrologist / Renal Medicine Physician"/>
-			</concept>
-			<concept>
-				<code value="2533-22.1"/>
-				<display value="Nephrologist"/>
-				<definition value="Nephrologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-23"/>
-			<display value="Rheumatologist"/>
-			<definition value="Rheumatologist"/>
-			<concept>
-				<code value="2533-23-0"/>
-				<display value="Rheumatologist"/>
-				<definition value="Rheumatologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-24"/>
-			<display value="Thoracic Medicine Specialist"/>
-			<definition value="Thoracic Medicine Specialist"/>
-			<concept>
-				<code value="2533-24-1"/>
-				<display value="Respiratory Medicine Physician"/>
-				<definition value="Respiratory Medicine Physician"/>
-			</concept>
-			<concept>
-				<code value="2533-24-2"/>
-				<display value="Thoracic Medicine Physician"/>
-				<definition value="Thoracic Medicine Physician"/>
-			</concept>
-			<concept>
-				<code value="2533-24.3"/>
-				<display value="Pulmonary Specialist"/>
-				<definition value="Pulmonary Specialist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2533-99"/>
-			<display value="Specialist Physians nec"/>
-			<definition value="Specialist Physians nec"/>
-			<concept>
-				<code value="2533-99-12"/>
-				<display value="Addiction Medicine Specialist"/>
-				<definition value="Addiction Medicine Specialist"/>
-			</concept>
-			<concept>
-				<code value="2533-99-3"/>
-				<display value="Clinical Immunologist"/>
-				<definition value="Clinical Immunologist"/>
-			</concept>
-			<concept>
-				<code value="2533-99-4"/>
-				<display value="Clinical Pharmacologist"/>
-				<definition value="Clinical Pharmacologist"/>
-			</concept>
-			<concept>
-				<code value="2533-99-5"/>
-				<display value="Geriatrician"/>
-				<definition value="Geriatrician"/>
-			</concept>
-			<concept>
-				<code value="2533-99-6"/>
-				<display value="Industrial Medicine Specialist"/>
-				<definition value="Industrial Medicine Specialist"/>
-			</concept>
-			<concept>
-				<code value="2533-99-7"/>
-				<display value="Infectious Diseases Specialist"/>
-				<definition value="Infectious Diseases Specialist"/>
-			</concept>
-			<concept>
-				<code value="2533-99-8"/>
-				<display value="Palliative Medicine Specialist"/>
-				<definition value="Palliative Medicine Specialist"/>
-			</concept>
-			<concept>
-				<code value="2533-99-9"/>
-				<display value="Rehabilitation Medicine Physician"/>
-				<definition value="Rehabilitation Medicine Physician"/>
-			</concept>
-			<concept>
-				<code value="2533-99.0"/>
-				<display value="Specialist Physicians nec"/>
-				<definition value="Specialist Physicians nec"/>
-			</concept>
-			<concept>
-				<code value="2533-99.13"/>
-				<display value="Respiratory and Sleep Physician"/>
-				<definition value="Respiratory and Sleep Physician"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2534"/>
-		<display value="Psychiatrists"/>
-		<definition value="Psychiatrists"/>
-		<concept>
-			<code value="2534-11"/>
-			<display value="Psychiatrist"/>
-			<definition value="Psychiatrist"/>
-			<concept>
-				<code value="2534-11-1"/>
-				<display value="Adolescent Psychiatrist"/>
-				<definition value="Adolescent Psychiatrist"/>
-			</concept>
-			<concept>
-				<code value="2534-11-3"/>
-				<display value="Child Psychiatrist"/>
-				<definition value="Child Psychiatrist"/>
-			</concept>
-			<concept>
-				<code value="2534-11-4"/>
-				<display value="Forensic Psychiatrist"/>
-				<definition value="Forensic Psychiatrist"/>
-			</concept>
-			<concept>
-				<code value="2534-11-6"/>
-				<display value="Medical Psychotherapist"/>
-				<definition value="Medical Psychotherapist"/>
-			</concept>
-			<concept>
-				<code value="2534-11.0"/>
-				<display value="Psychiatrist"/>
-				<definition value="Psychiatrist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2535"/>
-		<display value="Surgeons"/>
-		<definition value="Surgeons"/>
-		<concept>
-			<code value="2535-11"/>
-			<display value="Surgeon (General)"/>
-			<definition value="Surgeon (General)"/>
-			<concept>
-				<code value="2535-11-1"/>
-				<display value="Breast Surgeon"/>
-				<definition value="Breast Surgeon"/>
-			</concept>
-			<concept>
-				<code value="2535-11-2"/>
-				<display value="Transplant Surgeon"/>
-				<definition value="Transplant Surgeon"/>
-			</concept>
-			<concept>
-				<code value="2535-11-4"/>
-				<display value="Colorectal Surgeon"/>
-				<definition value="Colorectal Surgeon"/>
-			</concept>
-			<concept>
-				<code value="2535-11-6"/>
-				<display value="Surgical Oncologist"/>
-				<definition value="Surgical Oncologist"/>
-			</concept>
-			<concept>
-				<code value="2535-11.0"/>
-				<display value="Surgeon"/>
-				<definition value="Surgeon"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2535-12"/>
-			<display value="Cardiothoracic Surgeon"/>
-			<definition value="Cardiothoracic Surgeon"/>
-			<concept>
-				<code value="2535-12-0"/>
-				<display value="Cardiothoracic Surgeon"/>
-				<definition value="Cardiothoracic Surgeon"/>
-			</concept>
-			<concept>
-				<code value="2535-12.1"/>
-				<display value="Thoracic Surgeon"/>
-				<definition value="Thoracic Surgeon"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2535-13"/>
-			<display value="Neurosurgeon"/>
-			<definition value="Neurosurgeon"/>
-			<concept>
-				<code value="2535-13-0"/>
-				<display value="Neurosurgeon"/>
-				<definition value="Neurosurgeon"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2535-14"/>
-			<display value="Orthopaedic Surgeon"/>
-			<definition value="Orthopaedic Surgeon"/>
-			<concept>
-				<code value="2535-14-0"/>
-				<display value="Orthopaedic Surgeon"/>
-				<definition value="Orthopaedic Surgeon"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2535-15"/>
-			<display value="Otorhinolaryngologist / Ear Nose and Throat Specialist"/>
-			<definition value="Otorhinolaryngologist / Ear Nose and Throat Specialist"/>
-			<concept>
-				<code value="2535-15.4"/>
-				<display value="Otorhinolaryngologist - Ear/Nose/Throat Surgeon"/>
-				<definition value="Otorhinolaryngologist - Ear/Nose/Throat Surgeon"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2535-16"/>
-			<display value="Paediatric Surgeon"/>
-			<definition value="Paediatric Surgeon"/>
-			<concept>
-				<code value="2535-16-0"/>
-				<display value="Paediatric Surgeon"/>
-				<definition value="Paediatric Surgeon"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2535-17"/>
-			<display value="Plastic and Reconstructive Surgeon"/>
-			<definition value="Plastic and Reconstructive Surgeon"/>
-			<concept>
-				<code value="2535-17-0"/>
-				<display value="Plastic and Reconstructive Surgeon"/>
-				<definition value="Plastic and Reconstructive Surgeon"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2535-18"/>
-			<display value="Urologist"/>
-			<definition value="Urologist"/>
-			<concept>
-				<code value="2535-18-0"/>
-				<display value="Urologist"/>
-				<definition value="Urologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2535-21"/>
-			<display value="Vascular Surgeon"/>
-			<definition value="Vascular Surgeon"/>
-			<concept>
-				<code value="2535-21-0"/>
-				<display value="Vascular Surgeon"/>
-				<definition value="Vascular Surgeon"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2539"/>
-		<display value="Other Medical Practitioners"/>
-		<definition value="Other Medical Practitioners"/>
-		<concept>
-			<code value="2539-11"/>
-			<display value="Dermatologist"/>
-			<definition value="Dermatologist"/>
-			<concept>
-				<code value="2539-11-0"/>
-				<display value="Dermatologist"/>
-				<definition value="Dermatologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2539-12"/>
-			<display value="Emergency Medicine Specialist / Emergency Physician"/>
-			<definition value="Emergency Medicine Specialist / Emergency Physician"/>
-			<concept>
-				<code value="2539-12-0"/>
-				<display value="Emergency Medicine Specialist"/>
-				<definition value="Emergency Medicine Specialist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2539-13"/>
-			<display value="Obstetrician and Gynaecologist"/>
-			<definition value="Obstetrician and Gynaecologist"/>
-			<concept>
-				<code value="2539-13-1"/>
-				<display value="Gynaecological Oncologist"/>
-				<definition value="Gynaecological Oncologist"/>
-			</concept>
-			<concept>
-				<code value="2539-13-3"/>
-				<display value="Urogynaecologist"/>
-				<definition value="Urogynaecologist"/>
-			</concept>
-			<concept>
-				<code value="2539-13.0"/>
-				<display value="Obstetrician and Gynaecologist"/>
-				<definition value="Obstetrician and Gynaecologist"/>
-			</concept>
-			<concept>
-				<code value="2539-13.6"/>
-				<display value="Gynaecologist"/>
-				<definition value="Gynaecologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2539-14"/>
-			<display value="Ophthalmologist / Eye Specialist/ Eye Surgeon"/>
-			<definition value="Ophthalmologist / Eye Specialist/ Eye Surgeon"/>
-			<concept>
-				<code value="2539-14-0"/>
-				<display value="Ophthalmologist / Eye Specialist/ Eye Surgeon"/>
-				<definition value="Ophthalmologist / Eye Specialist/ Eye Surgeon"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2539-15"/>
-			<display value="Pathologist"/>
-			<definition value="Pathologist"/>
-			<concept>
-				<code value="2539-15-1"/>
-				<display value="Clinical Cytopathologist"/>
-				<definition value="Clinical Cytopathologist"/>
-			</concept>
-			<concept>
-				<code value="2539-15-2"/>
-				<display value="Forensic Pathologist"/>
-				<definition value="Forensic Pathologist"/>
-			</concept>
-			<concept>
-				<code value="2539-15-3"/>
-				<display value="General Anatomic Pathologist"/>
-				<definition value="General Anatomic Pathologist"/>
-			</concept>
-			<concept>
-				<code value="2539-15-8"/>
-				<display value="Medical Microbiologist"/>
-				<definition value="Medical Microbiologist"/>
-			</concept>
-			<concept>
-				<code value="2539-15.10"/>
-				<display value="Histopathologist"/>
-				<definition value="Histopathologist"/>
-			</concept>
-			<concept>
-				<code value="2539-15.11"/>
-				<display value="Haematologist"/>
-				<definition value="Haematologist"/>
-			</concept>
-			<concept>
-				<code value="2539-15.0"/>
-				<display value="Pathologist"/>
-				<definition value="Pathologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2539-17"/>
-			<display value="Diagnostic and Interventional Radiologist"/>
-			<definition value="Diagnostic and Interventional Radiologist"/>
-			<concept>
-				<code value="2539-17-1"/>
-				<display value="Diagnostic Radiologist"/>
-				<definition value="Diagnostic Radiologist"/>
-			</concept>
-			<concept>
-				<code value="2539-17-3"/>
-				<display value="Nuclear Medicine Specialist"/>
-				<definition value="Nuclear Medicine Specialist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2539-18"/>
-			<display value="Radiation Oncologist"/>
-			<definition value="Radiation Oncologist"/>
-			<concept>
-				<code value="2539-18-1"/>
-				<display value="Radiation Oncologist"/>
-				<definition value="Radiation Oncologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2539-99"/>
-			<display value="Medical Practitioners nec"/>
-			<definition value="Medical Practitioners nec"/>
-			<concept>
-				<code value="2539-99.0"/>
-				<display value="Medical Practitioners nec"/>
-				<definition value="Medical Practitioners nec"/>
-			</concept>
-			<concept>
-				<code value="2539-99-1"/>
-				<display value="Occupational Medicine and Environmental Specialist"/>
-				<definition value="Occupational Medicine and Environmental Specialist"/>
-			</concept>
-			<concept>
-				<code value="2539-99-2"/>
-				<display value="Public Health Physician"/>
-				<definition value="Public Health Physician"/>
-			</concept>
-			<concept>
-				<code value="2539-99-3"/>
-				<display value="Sports Physician"/>
-				<definition value="Sports Physician"/>
-			</concept>
-			<concept>
-				<code value="2539-99.5"/>
-				<display value="Non Clinical Specialist"/>
-				<definition value="Non Clinical Specialist"/>
-			</concept>
-			<concept>
-				<code value="2539-99.1"/>
-				<display value="Sonologist"/>
-				<definition value="Sonologist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2540"/>
-		<display value="Midwifery and Nursing Professionals"/>
-		<definition value="Midwifery and Nursing Professionals"/>
-		<concept>
-			<code value="2540-00"/>
-			<display value="Midwifery and Nursing Professionals nfd (Australian use only)"/>
-			<definition value="Midwifery and Nursing Professionals nfd (Australian use only)"/>
-			<concept>
-				<code value="2540-00-0"/>
-				<display value="Midwifery and Nursing Professionals nfd"/>
-				<definition value="Midwifery and Nursing Professionals nfd"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2541"/>
-		<display value="Midwives"/>
-		<definition value="Midwives"/>
-		<concept>
-			<code value="2541-11"/>
-			<display value="Midwife/Certified Midwife/Registered Midwife"/>
-			<definition value="Midwife/Certified Midwife/Registered Midwife"/>
-			<concept>
-				<code value="2541-11-1"/>
-				<display value="Community Midwife"/>
-				<definition value="Community Midwife"/>
-			</concept>
-			<concept>
-				<code value="2541-11-2"/>
-				<display value="Midwife Practitioner"/>
-				<definition value="Midwife Practitioner"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2544"/>
-		<display value="Registered Nurses"/>
-		<definition value="Registered Nurses"/>
-		<concept>
-			<code value="2544-11"/>
-			<display value="Nurse Practitioner"/>
-			<definition value="Nurse Practitioner"/>
-			<concept>
-				<code value="2544-11-0"/>
-				<display value="Nurse Practitioner"/>
-				<definition value="Nurse Practitioner"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2544-16"/>
-			<display value="Registered Nurse (Developmental Disability)"/>
-			<definition value="Registered Nurse (Developmental Disability)"/>
-			<concept>
-				<code value="2544-16.0"/>
-				<display value="Registered Nurse (Developmental Disability)"/>
-				<definition value="Registered Nurse (Developmental Disability)"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2544-18"/>
-			<display value="Registered Nurse (Medical)"/>
-			<definition value="Registered Nurse (Medical)"/>
-			<concept>
-				<code value="2544-18-0"/>
-				<display value="Registered Nurse (Medical)"/>
-				<definition value="Registered Nurse (Medical)"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2544-21"/>
-			<display value="Registered Nurse (Medical Practice)/Practice Nurse"/>
-			<definition value="Registered Nurse (Medical Practice)/Practice Nurse"/>
-			<concept>
-				<code value="2544-21.1"/>
-				<display value="Registered Nurse (Medical Practice)/Practice Nurse"/>
-				<definition value="Registered Nurse (Medical Practice)/Practice Nurse"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2544-22"/>
-			<display value="Registered Nurse (Mental Health)/Phychiatric"/>
-			<definition value="Registered Nurse (Mental Health)/Phychiatric"/>
-			<concept>
-				<code value="2544-22.5"/>
-				<display value="Registered Nurse (Mental Health)/Psychiatric"/>
-				<definition value="Registered Nurse (Mental Health)/Psychiatric"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2721"/>
-		<display value="Counsellors"/>
-		<definition value="Counsellors"/>
-		<concept>
-			<code value="2721-11"/>
-			<display value="Careers Counsellor"/>
-			<definition value="Careers Counsellor"/>
-			<concept>
-				<code value="2721-11.0"/>
-				<display value="Careers Counsellor"/>
-				<definition value="Careers Counsellor"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2721-12"/>
-			<display value="Drug and Alcohol Counsellor"/>
-			<definition value="Drug and Alcohol Counsellor"/>
-			<concept>
-				<code value="2721-12-0"/>
-				<display value="Drug and Alcohol Counsellor"/>
-				<definition value="Drug and Alcohol Counsellor"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2721-13"/>
-			<display value="Family and Marriage Counsellor"/>
-			<definition value="Family and Marriage Counsellor"/>
-			<concept>
-				<code value="2721-13-0"/>
-				<display value="Family Mediator/Family and Marriage Counsellor"/>
-				<definition value="Family Mediator/Family and Marriage Counsellor"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2721-14"/>
-			<display value="Rehabilitation Counsellor"/>
-			<definition value="Rehabilitation Counsellor"/>
-			<concept>
-				<code value="2721-14-0"/>
-				<display value="Rehabilitation Counsellor"/>
-				<definition value="Rehabilitation Counsellor"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2721-99"/>
-			<display value="Counsellors nec"/>
-			<definition value="Counsellors nec"/>
-			<concept>
-				<code value="2721-99-0"/>
-				<display value="Counsellors nec"/>
-				<definition value="Counsellors nec"/>
-			</concept>
-			<concept>
-				<code value="2721-99.8"/>
-				<display value="Family Therapist"/>
-				<definition value="Family Therapist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2721-15"/>
-			<display value="Student Counsellor"/>
-			<definition value="Student Counsellor"/>
-			<concept>
-				<code value="2721-15.0"/>
-				<display value="Student Counsellor"/>
-				<definition value="Student Counsellor"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2723"/>
-		<display value="Psychologists"/>
-		<definition value="Psychologists"/>
-		<concept>
-			<code value="2723-11"/>
-			<display value="Clinical Psychologist"/>
-			<definition value="Clinical Psychologist"/>
-			<concept>
-				<code value="2723-11.0"/>
-				<display value="Clinical Psychologist"/>
-				<definition value="Clinical Psychologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2723-12"/>
-			<display value="Educational Psychologist"/>
-			<definition value="Educational Psychologist"/>
-			<concept>
-				<code value="2723-12-0"/>
-				<display value="Educational Psychologist"/>
-				<definition value="Educational Psychologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2723-13"/>
-			<display value="Organisational Psychologist"/>
-			<definition value="Organisational Psychologist"/>
-			<concept>
-				<code value="2723-13-0"/>
-				<display value="Organisational Psychologist"/>
-				<definition value="Organisational Psychologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2723-14"/>
-			<display value="Psychotherapist"/>
-			<definition value="Psychotherapist"/>
-			<concept>
-				<code value="2723-14-0"/>
-				<display value="Psychotherapist"/>
-				<definition value="Psychotherapist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2723-99"/>
-			<display value="Psychologists nec"/>
-			<definition value="Psychologists nec"/>
-			<concept>
-				<code value="2723-99-0"/>
-				<display value="Psychologists nec"/>
-				<definition value="Psychologists nec"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2725"/>
-		<display value="Social Workers"/>
-		<definition value="Social Workers"/>
-		<concept>
-			<code value="2725-11"/>
-			<display value="Social Worker"/>
-			<definition value="Social Worker"/>
-			<concept>
-				<code value="2725-11.1"/>
-				<display value="Mental Health Social Worker"/>
-				<definition value="Mental Health Social Worker"/>
-			</concept>
-			<concept>
-				<code value="2725-11-0"/>
-				<display value="Social Worker"/>
-				<definition value="Social Worker"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="3999"/>
-		<display value="Other Miscellaneous Technicians and Trades Workers"/>
-		<definition value="Other Miscellaneous Technicians and Trades Workers"/>
-		<concept>
-			<code value="3999-13"/>
-			<display value="Optical Dispenser / Dispensing Optician"/>
-			<definition value="Optical Dispenser / Dispensing Optician"/>
-			<concept>
-				<code value="3999-13-0"/>
-				<display value="Optical Dispenser"/>
-				<definition value="Optical Dispenser"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4110"/>
-		<display value="Health and Welfare Support Workers"/>
-		<definition value="Health and Welfare Support Workers"/>
-		<concept>
-			<code value="4110-00"/>
-			<display value="Health and Welfare Support Workers nfd (Australian use only)"/>
-			<definition value="Health and Welfare Support Workers nfd (Australian use only)"/>
-			<concept>
-				<code value="4110-00-0"/>
-				<display value="Health and Welfare Support Workers nfd"/>
-				<definition value="Health and Welfare Support Workers nfd"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4112"/>
-		<display value="Dental Hygienists, Technicians and Therapists"/>
-		<definition value="Dental Hygienists, Technicians and Therapists"/>
-		<concept>
-			<code value="4112-11"/>
-			<display value="Dental Hygienist"/>
-			<definition value="Dental Hygienist"/>
-			<concept>
-				<code value="4112-11-0"/>
-				<display value="Dental Hygienist"/>
-				<definition value="Dental Hygienist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4112-13"/>
-			<display value="Dental Technician"/>
-			<definition value="Dental Technician"/>
-			<concept>
-				<code value="4112-13.0"/>
-				<display value="Dental Technician"/>
-				<definition value="Dental Technician"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4112-14"/>
-			<display value="Dental Therapist"/>
-			<definition value="Dental Therapist"/>
-			<concept>
-				<code value="4112-14-0"/>
-				<display value="Dental Therapist"/>
-				<definition value="Dental Therapist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4113"/>
-		<display value="Diversional Therapists"/>
-		<definition value="Diversional Therapists"/>
-		<concept>
-			<code value="4113-11"/>
-			<display value="Diversional Therapist"/>
-			<definition value="Diversional Therapist"/>
-			<concept>
-				<code value="4113-11-0"/>
-				<display value="Diversional Therapist"/>
-				<definition value="Diversional Therapist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4115"/>
-		<display value="Indigenous Health Workers"/>
-		<definition value="Indigenous Health Workers"/>
-		<concept>
-			<code value="4115-11"/>
-			<display value="Aboriginal and Torres Strait Islander Health Worker"/>
-			<definition value="Aboriginal and Torres Strait Islander Health Worker"/>
-			<concept>
-				<code value="4115-11-0"/>
-				<display value="Aboriginal and Torres Strait Islander Health Worker"/>
-				<definition value="Aboriginal and Torres Strait Islander Health Worker"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4116"/>
-		<display value="Massage Therapists"/>
-		<definition value="Massage Therapists"/>
-		<concept>
-			<code value="4116-11"/>
-			<display value="Massage Therapist"/>
-			<definition value="Massage Therapist"/>
-			<concept>
-				<code value="4116-11-0"/>
-				<display value="Massage Therapist"/>
-				<definition value="Massage Therapist"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4117"/>
-		<display value="Welfare Support Workers"/>
-		<definition value="Welfare Support Workers"/>
-		<concept>
-			<code value="4117-11"/>
-			<display value="Community Worker"/>
-			<definition value="Community Worker"/>
-			<concept>
-				<code value="4117-11.0"/>
-				<display value="Community Worker"/>
-				<definition value="Community Worker"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4117-12"/>
-			<display value="Disabilities Services Officer"/>
-			<definition value="Disabilities Services Officer"/>
-			<concept>
-				<code value="4117-12.0"/>
-				<display value="Disabilities Services Officer"/>
-				<definition value="Disabilities Services Officer"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4117-16"/>
-			<display value="Youth Worker"/>
-			<definition value="Youth Worker"/>
-			<concept>
-				<code value="4117-16.0"/>
-				<display value="Youth Worker"/>
-				<definition value="Youth Worker"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4117-15"/>
-			<display value="Residential Care Officer"/>
-			<definition value="Residential Care Officer"/>
-			<concept>
-				<code value="4117-15.0"/>
-				<display value="Residential Care Officer"/>
-				<definition value="Residential Care Officer"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4117-13"/>
-			<display value="Family Support Worker"/>
-			<definition value="Family Support Worker"/>
-			<concept>
-				<code value="4117-13.0"/>
-				<display value="Family Support Worker"/>
-				<definition value="Family Support Worker"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4117-14"/>
-			<display value="Parole or Probation Officer"/>
-			<definition value="Parole or Probation Officer"/>
-			<concept>
-				<code value="4117-14.0"/>
-				<display value="Parole or Probation Officer"/>
-				<definition value="Parole or Probation Officer"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4211"/>
-		<display value="Child Carers"/>
-		<definition value="Child Carers"/>
-		<concept>
-			<code value="4211-11"/>
-			<display value="Child Care Worker"/>
-			<definition value="Child Care Worker"/>
-			<concept>
-				<code value="4211-11.0"/>
-				<display value="Child Care Worker"/>
-				<definition value="Child Care Worker"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4211-12"/>
-			<display value="Family Day Care Worker"/>
-			<definition value="Family Day Care Worker"/>
-			<concept>
-				<code value="4211-12.0"/>
-				<display value="Family Day Care Worker"/>
-				<definition value="Family Day Care Worker"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4231"/>
-		<display value="Aged or Disabled Carer"/>
-		<definition value="Aged or Disabled Carer"/>
-		<concept>
-			<code value="4231-11"/>
-			<display value="Aged or Disabled Carer"/>
-			<definition value="Aged or Disabled Carer"/>
-			<concept>
-				<code value="4231-11-2"/>
-				<display value="Personal Carer"/>
-				<definition value="Personal Carer"/>
-			</concept>
-			<concept>
-				<code value="4231-11-4"/>
-				<display value="Aged or Disabled Carer Worker"/>
-				<definition value="Aged or Disabled Carer Worker"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4233"/>
-		<display value="Nursing Support and Personal Care Workers"/>
-		<definition value="Nursing Support and Personal Care Workers"/>
-		<concept>
-			<code value="4233-13"/>
-			<display value="Personal Care Assistant"/>
-			<definition value="Personal Care Assistant"/>
-			<concept>
-				<code value="4233-13-0"/>
-				<display value="Personal Care Assistant"/>
-				<definition value="Personal Care Assistant"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4234"/>
-		<display value="Special Care Workers"/>
-		<definition value="Special Care Workers"/>
-		<concept>
-			<code value="4234-11"/>
-			<display value="Child or Youth Residential Care Assistant"/>
-			<definition value="Child or Youth Residential Care Assistant"/>
-			<concept>
-				<code value="4234-11.0"/>
-				<display value="Child or Youth Residential Care Assistant"/>
-				<definition value="Child or Youth Residential Care Assistant"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4234-13"/>
-			<display value="Refuge Worker"/>
-			<definition value="Refuge Worker"/>
-			<concept>
-				<code value="4234-13.0"/>
-				<display value="Refuge Worker"/>
-				<definition value="Refuge Worker"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4234-12"/>
-			<display value="Hostel Parent"/>
-			<definition value="Hostel Parent"/>
-			<concept>
-				<code value="4234-12.0"/>
-				<display value="Hostel Parent"/>
-				<definition value="Hostel Parent"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4515"/>
-		<display value="Personal Care Consultants"/>
-		<definition value="Personal Care Consultants"/>
-		<concept>
-			<code value="4515-11"/>
-			<display value="Natural Remedy Consultant"/>
-			<definition value="Natural Remedy Consultant"/>
-			<concept>
-				<code value="4515-11-0"/>
-				<display value="Natural Remedy Consultant"/>
-				<definition value="Natural Remedy Consultant"/>
-			</concept>
-			<concept>
-				<code value="4515-11-5"/>
-				<display value="Kinesiologist"/>
-				<definition value="Kinesiologist"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="4515-12"/>
-			<display value="Weight Loss Consultant"/>
-			<definition value="Weight Loss Consultant"/>
-			<concept>
-				<code value="4515-12-0"/>
-				<display value="Weight Loss Consultant"/>
-				<definition value="Weight Loss Consultant"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4521"/>
-		<display value="Fitness Instructors"/>
-		<definition value="Fitness Instructors"/>
-		<concept>
-			<code value="4521-11"/>
-			<display value="Fitness Instructor"/>
-			<definition value="Fitness Instructor"/>
-			<concept>
-				<code value="4521-11-3"/>
-				<display value="Physical Fitness Trainer"/>
-				<definition value="Physical Fitness Trainer"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2231"/>
-		<display value="Human Resource Professionals"/>
-		<definition value="Human Resource Professionals"/>
-		<concept>
-			<code value="2231-12"/>
-			<display value="Recruitment Consultant"/>
-			<definition value="Recruitment Consultant"/>
-			<concept>
-				<code value="2231-12.0"/>
-				<display value="Recruitment Consultant"/>
-				<definition value="Recruitment Consultant"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2415"/>
-		<display value="Special Education Teachers"/>
-		<definition value="Special Education Teachers"/>
-		<concept>
-			<code value="2415-11"/>
-			<display value="Special Needs Teacher"/>
-			<definition value="Special Needs Teacher"/>
-			<concept>
-				<code value="2415-11.0"/>
-				<display value="Special Needs Teacher"/>
-				<definition value="Special Needs Teacher"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2415-99"/>
-			<display value="Special Education Teachers nec"/>
-			<definition value="Special Education Teachers nec"/>
-			<concept>
-				<code value="2415-99.0"/>
-				<display value="Special Education Teachers nec"/>
-				<definition value="Special Education Teachers nec"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2415-12"/>
-			<display value="Teacher of the Hearing Impaired"/>
-			<definition value="Teacher of the Hearing Impaired"/>
-			<concept>
-				<code value="2415-12.0"/>
-				<display value="Teacher of the Hearing Impaired"/>
-				<definition value="Teacher of the Hearing Impaired"/>
-			</concept>
-		</concept>
-		<concept>
-			<code value="2415-13"/>
-			<display value="Teacher of the Sight Impaired"/>
-			<definition value="Teacher of the Sight Impaired"/>
-			<concept>
-				<code value="2415-13.0"/>
-				<display value="Teacher of the Sight Impaired"/>
-				<definition value="Teacher of the Sight Impaired"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2722"/>
-		<display value="Ministers of Religion"/>
-		<definition value="Ministers of Religion"/>
-		<concept>
-			<code value="2722-11"/>
-			<display value="Minister of Religion"/>
-			<definition value="Minister of Religion"/>
-			<concept>
-				<code value="2722-11.0"/>
-				<display value="Minister of Religion"/>
-				<definition value="Minister of Religion"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2711"/>
-		<display value="Barristers"/>
-		<definition value="Barristers"/>
-		<concept>
-			<code value="2711-11"/>
-			<display value="Barrister"/>
-			<definition value="Barrister"/>
-			<concept>
-				<code value="2711-11.0"/>
-				<display value="Barrister"/>
-				<definition value="Barrister"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2713"/>
-		<display value="Solicitors"/>
-		<definition value="Solicitors"/>
-		<concept>
-			<code value="2713-11"/>
-			<display value="Solicitor"/>
-			<definition value="Solicitor"/>
-			<concept>
-				<code value="2713-11.0"/>
-				<display value="Solicitor"/>
-				<definition value="Solicitor"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2712"/>
-		<display value="Judicial and Other Legal Professionals"/>
-		<definition value="Judicial and Other Legal Professionals"/>
-		<concept>
-			<code value="2712-99"/>
-			<display value="Judicial and Other Legal Professionals nec"/>
-			<definition value="Judicial and Other Legal Professionals nec"/>
-			<concept>
-				<code value="2712-99.0"/>
-				<display value="Judicial and Other Legal Professionals nec"/>
-				<definition value="Judicial and Other Legal Professionals nec"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4522"/>
-		<display value="Outdoor Adventure Guides"/>
-		<definition value="Outdoor Adventure Guides"/>
-		<concept>
-			<code value="4522-00"/>
-			<display value="Outdoor Adventure Guides"/>
-			<definition value="Outdoor Adventure Guides"/>
-			<concept>
-				<code value="4522-00.0"/>
-				<display value="Outdoor Adventure Guides"/>
-				<definition value="Outdoor Adventure Guides"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2411"/>
-		<display value="Early Childhood (Pre-primary School) Teachers"/>
-		<definition value="Early Childhood (Pre-primary School) Teachers"/>
-		<concept>
-			<code value="2411-11"/>
-			<display value="Early Childhood (Pre-primary School) Teacher"/>
-			<definition value="Early Childhood (Pre-primary School) Teacher"/>
-			<concept>
-				<code value="2411-11.0"/>
-				<display value="Early Childhood (Pre-primary School) Teacher"/>
-				<definition value="Early Childhood (Pre-primary School) Teacher"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2414"/>
-		<display value="Secondary School Teachers"/>
-		<definition value="Secondary School Teachers"/>
-		<concept>
-			<code value="2414-11"/>
-			<display value="Secondary School Teacher"/>
-			<definition value="Secondary School Teacher"/>
-			<concept>
-				<code value="2414-11.0"/>
-				<display value="Secondary School Teacher"/>
-				<definition value="Secondary School Teacher"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="4221"/>
-		<display value="Education Aides"/>
-		<definition value="Education Aides"/>
-		<concept>
-			<code value="4221-16"/>
-			<display value="Teachers' Aide"/>
-			<definition value="Teachers' Aide"/>
-			<concept>
-				<code value="4221-16.0"/>
-				<display value="Teachers' Aide"/>
-				<definition value="Teachers' Aide"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="1343"/>
-		<display value="School Principals"/>
-		<definition value="School Principals"/>
-		<concept>
-			<code value="1343-11"/>
-			<display value="School Principal"/>
-			<definition value="School Principal"/>
-			<concept>
-				<code value="1343-11.1"/>
-				<display value="Primary School Principal"/>
-				<definition value="Primary School Principal"/>
-			</concept>
-			<concept>
-				<code value="1343-11.2"/>
-				<display value="Secondary School Principal"/>
-				<definition value="Secondary School Principal"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2492"/>
-		<display value="Private Tutors and Teachers"/>
-		<definition value="Private Tutors and Teachers"/>
-		<concept>
-			<code value="2492-99"/>
-			<display value="Private Tutors and Teachers nec"/>
-			<definition value="Private Tutors and Teachers nec"/>
-			<concept>
-				<code value="2492-99.0"/>
-				<display value="Private Tutors and Teachers nec"/>
-				<definition value="Private Tutors and Teachers nec"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="2412"/>
-		<display value="Primary School Teachers"/>
-		<definition value="Primary School Teachers"/>
-		<concept>
-			<code value="2412-13"/>
-			<display value="Primary School Teacher"/>
-			<definition value="Primary School Teacher"/>
-			<concept>
-				<code value="2412-13.0"/>
-				<display value="Primary School Teacher"/>
-				<definition value="Primary School Teacher"/>
-			</concept>
-		</concept>
-	</concept>
-	<concept>
-		<code value="9999"/>
-		<display value="Other"/>
-		<definition value="Other"/>
-		<concept>
-			<code value="9999.99"/>
-			<display value="Other"/>
-			<definition value="Other"/>
-			<concept>
-				<code value="9999.99.0"/>
-				<display value="Other"/>
-				<definition value="Other"/>
-			</concept>
-		</concept>
-	</concept>
+  <id value="codesystem-extended-practitioner-role"/>
+  <text>
+    <status value="generated"/>
+   	<div xmlns="http://www.w3.org/1999/xhtml">
+    </div>
+  </text>
+  <url value="http://hl7.org.au/fhir/CodeSystem/codesystem-extended-practitioner-role"/>
+  <version value="1"/>
+  <name value="Practitioner Role Extended Terminology"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2017-11-23"/>
+  <publisher value="HL7 Australia"/>
+  <contact>
+    <name value="hl7orgau"/>
+  </contact>
+  <description value="Practitioner Role Extended Terminology"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org.au/fhir/ValueSet/valueset-pd-practitionerrole"/>
+  <compositional value="false"/>
+  <versionNeeded value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="1342124"/>
+    <display value="Director of Nursing"/>
+    <definition value="Director of Nursing"/>
+  </concept>
+  <concept>
+    <code value="2522142"/>
+    <display value="Chinese Medicine Practitioner"/>
+    <definition value="Chinese Medicine Practitioner"/>
+  </concept>
+  <concept>
+    <code value="2522991"/>
+    <display value="Dance Therapist"/>
+    <definition value="Dance Therapist"/>
+  </concept>
+  <concept>
+    <code value="2522993"/>
+    <display value="Hypnotherapist"/>
+    <definition value="Hypnotherapist"/>
+  </concept>
+  <concept>
+    <code value="2522994"/>
+    <display value="Music Therapist"/>
+    <definition value="Music Therapist"/>
+  </concept>
+  <concept>
+    <code value="2522995"/>
+    <display value="Herbalist (Other than Chinese)"/>
+    <definition value="Herbalist (Other than Chinese)"/>
+  </concept>
+  <concept>
+    <code value="2523111"/>
+    <display value="Endodontist"/>
+    <definition value="Endodontist"/>
+  </concept>
+  <concept>
+    <code value="2523112"/>
+    <display value="Oral and Maxillofacial Surgeon"/>
+    <definition value="Oral and Maxillofacial Surgeon"/>
+  </concept>
+  <concept>
+    <code value="2523113"/>
+    <display value="Oral Pathologist"/>
+    <definition value="Oral Pathologist"/>
+  </concept>
+  <concept>
+    <code value="2523114"/>
+    <display value="Orthodontist"/>
+    <definition value="Orthodontist"/>
+  </concept>
+  <concept>
+    <code value="2523115"/>
+    <display value="Paedodontist"/>
+    <definition value="Paedodontist"/>
+  </concept>
+  <concept>
+    <code value="2523116"/>
+    <display value="Periodontist"/>
+    <definition value="Periodontist"/>
+  </concept>
+  <concept>
+    <code value="2523117"/>
+    <display value="Prosthodontist"/>
+    <definition value="Prosthodontist"/>
+  </concept>
+  <concept>
+    <code value="2523110"/>
+    <display value="Dental Specialist"/>
+    <definition value="Dental Specialist"/>
+  </concept>
+  <concept>
+    <code value="2523126"/>
+    <display value="Dentist / Dental Practitioner"/>
+    <definition value="Dentist / Dental Practitioner"/>
+  </concept>
+  <concept>
+    <code value="2531129"/>
+    <display value="Career Medical Officer/ Senior Medical Officer nec"/>
+    <definition value="Career Medical Officer/ Senior Medical Officer nec"/>
+  </concept>
+  <concept>
+    <code value="2533211"/>
+    <display value="Neonatologist"/>
+    <definition value="Neonatologist"/>
+  </concept>
+  <concept>
+    <code value="25332119"/>
+    <display value="Paediatric Thoracic Medicine Specialist / Respiratory Specialist / Sleep Specialist"/>
+    <definition value="Paediatric Thoracic Medicine Specialist / Respiratory Specialist / Sleep Specialist"/>
+  </concept>
+  <concept>
+    <code value="25332121"/>
+    <display value="General Paediatrics Specialist"/>
+    <definition value="General Paediatrics Specialist"/>
+  </concept>
+  <concept>
+    <code value="25332125"/>
+    <display value="Paediatric Dermatologist"/>
+    <definition value="Paediatric Dermatologist"/>
+  </concept>
+  <concept>
+    <code value="2533220"/>
+    <display value="Renal Medicine Specialist / Nephrologist / Renal Medicine Physician"/>
+    <definition value="Renal Medicine Specialist / Nephrologist / Renal Medicine Physician"/>
+  </concept>
+  <concept>
+    <code value="2533221"/>
+    <display value="Nephrologist"/>
+    <definition value="Nephrologist"/>
+  </concept>
+  <concept>
+    <code value="2533241"/>
+    <display value="Respiratory Medicine Physician"/>
+    <definition value="Respiratory Medicine Physician"/>
+  </concept>
+  <concept>
+    <code value="2533242"/>
+    <display value="Thoracic Medicine Physician"/>
+    <definition value="Thoracic Medicine Physician"/>
+  </concept>
+  <concept>
+    <code value="2533243"/>
+    <display value="Pulmonary Specialist"/>
+    <definition value="Pulmonary Specialist"/>
+  </concept>
+  <concept>
+    <code value="25339912"/>
+    <display value="Addiction Medicine Specialist"/>
+    <definition value="Addiction Medicine Specialist"/>
+  </concept>
+  <concept>
+    <code value="2533993"/>
+    <display value="Clinical Immunologist"/>
+    <definition value="Clinical Immunologist"/>
+  </concept>
+  <concept>
+    <code value="2533994"/>
+    <display value="Clinical Pharmacologist"/>
+    <definition value="Clinical Pharmacologist"/>
+  </concept>
+  <concept>
+    <code value="2533995"/>
+    <display value="Geriatrician"/>
+    <definition value="Geriatrician"/>
+  </concept>
+  <concept>
+    <code value="2533996"/>
+    <display value="Industrial Medicine Specialist"/>
+    <definition value="Industrial Medicine Specialist"/>
+  </concept>
+  <concept>
+    <code value="2533997"/>
+    <display value="Infectious Diseases Specialist"/>
+    <definition value="Infectious Diseases Specialist"/>
+  </concept>
+  <concept>
+    <code value="2533998"/>
+    <display value="Palliative Medicine Specialist"/>
+    <definition value="Palliative Medicine Specialist"/>
+  </concept>
+  <concept>
+    <code value="2533999"/>
+    <display value="Rehabilitation Medicine Physician"/>
+    <definition value="Rehabilitation Medicine Physician"/>
+  </concept>
+  <concept>
+    <code value="2533990"/>
+    <display value="Specialist Physicians nec"/>
+    <definition value="Specialist Physicians nec"/>
+  </concept>
+  <concept>
+    <code value="25339913"/>
+    <display value="Respiratory and Sleep Physician"/>
+    <definition value="Respiratory and Sleep Physician"/>
+  </concept>
+  <concept>
+    <code value="2534111"/>
+    <display value="Adolescent Psychiatrist"/>
+    <definition value="Adolescent Psychiatrist"/>
+  </concept>
+  <concept>
+    <code value="2534113"/>
+    <display value="Child Psychiatrist"/>
+    <definition value="Child Psychiatrist"/>
+  </concept>
+  <concept>
+    <code value="2534114"/>
+    <display value="Forensic Psychiatrist"/>
+    <definition value="Forensic Psychiatrist"/>
+  </concept>
+  <concept>
+    <code value="2534116"/>
+    <display value="Medical Psychotherapist"/>
+    <definition value="Medical Psychotherapist"/>
+  </concept>
+  <concept>
+    <code value="2534110"/>
+    <display value="Psychiatrist"/>
+    <definition value="Psychiatrist"/>
+  </concept>
+  <concept>
+    <code value="2535111"/>
+    <display value="Breast Surgeon"/>
+    <definition value="Breast Surgeon"/>
+  </concept>
+  <concept>
+    <code value="2535112"/>
+    <display value="Transplant Surgeon"/>
+    <definition value="Transplant Surgeon"/>
+  </concept>
+  <concept>
+    <code value="2535114"/>
+    <display value="Colorectal Surgeon"/>
+    <definition value="Colorectal Surgeon"/>
+  </concept>
+  <concept>
+    <code value="2535116"/>
+    <display value="Surgical Oncologist"/>
+    <definition value="Surgical Oncologist"/>
+  </concept>
+  <concept>
+    <code value="2535110"/>
+    <display value="Surgeon"/>
+    <definition value="Surgeon"/>
+  </concept>
+  <concept>
+    <code value="2535121"/>
+    <display value="Thoracic Surgeon"/>
+    <definition value="Thoracic Surgeon"/>
+  </concept>
+  <concept>
+    <code value="253516"/>
+    <display value="Paediatric Surgeon"/>
+    <definition value="Paediatric Surgeon"/>
+  </concept>
+  <concept>
+    <code value="2539120"/>
+    <display value="Emergency Medicine Specialist"/>
+    <definition value="Emergency Medicine Specialist"/>
+  </concept>
+  <concept>
+    <code value="2539133"/>
+    <display value="Urogynaecologist"/>
+    <definition value="Urogynaecologist"/>
+  </concept>
+  <concept>
+    <code value="2539130"/>
+    <display value="Obstetrician and Gynaecologist"/>
+    <definition value="Obstetrician and Gynaecologist"/>
+  </concept>
+  <concept>
+    <code value="2539136"/>
+    <display value="Gynaecologist"/>
+    <definition value="Gynaecologist"/>
+  </concept>
+  <concept>
+    <code value="2539151"/>
+    <display value="Clinical Cytopathologist"/>
+    <definition value="Clinical Cytopathologist"/>
+  </concept>
+  <concept>
+    <code value="2539152"/>
+    <display value="Forensic Pathologist"/>
+    <definition value="Forensic Pathologist"/>
+  </concept>
+  <concept>
+    <code value="2539153"/>
+    <display value="General Anatomic Pathologist"/>
+    <definition value="General Anatomic Pathologist"/>
+  </concept>
+  <concept>
+    <code value="2539158"/>
+    <display value="Medical Microbiologist"/>
+    <definition value="Medical Microbiologist"/>
+  </concept>
+  <concept>
+    <code value="25391510"/>
+    <display value="Histopathologist"/>
+    <definition value="Histopathologist"/>
+  </concept>
+  <concept>
+    <code value="25391511"/>
+    <display value="Haematologist"/>
+    <definition value="Haematologist"/>
+  </concept>
+  <concept>
+    <code value="2539150"/>
+    <display value="Pathologist"/>
+    <definition value="Pathologist"/>
+  </concept>
+  <concept>
+    <code value="2539171"/>
+    <display value="Diagnostic Radiologist"/>
+    <definition value="Diagnostic Radiologist"/>
+  </concept>
+  <concept>
+    <code value="2539173"/>
+    <display value="Nuclear Medicine Specialist"/>
+    <definition value="Nuclear Medicine Specialist"/>
+  </concept>
+  <concept>
+    <code value="2539991"/>
+    <display value="Occupational Medicine and Environmental Specialist"/>
+    <definition value="Occupational Medicine and Environmental Specialist"/>
+  </concept>
+  <concept>
+    <code value="2539992"/>
+    <display value="Public Health Physician"/>
+    <definition value="Public Health Physician"/>
+  </concept>
+  <concept>
+    <code value="2539993"/>
+    <display value="Sports Physician"/>
+    <definition value="Sports Physician"/>
+  </concept>
+  <concept>
+    <code value="2539995"/>
+    <display value="Non Clinical Specialist"/>
+    <definition value="Non Clinical Specialist"/>
+  </concept>
+  <concept>
+    <code value="2539991"/>
+    <display value="Sonologist"/>
+    <definition value="Sonologist"/>
+  </concept>
+  <concept>
+    <code value="2541111"/>
+    <display value="Community Midwife"/>
+    <definition value="Community Midwife"/>
+  </concept>
+  <concept>
+    <code value="2541112"/>
+    <display value="Midwife Practitioner"/>
+    <definition value="Midwife Practitioner"/>
+  </concept>
+  <concept>
+    <code value="2721130"/>
+    <display value="Family Mediator/Family and Marriage Counsellor"/>
+    <definition value="Family Mediator/Family and Marriage Counsellor"/>
+  </concept>
+  <concept>
+    <code value="2721998"/>
+    <display value="Family Therapist"/>
+    <definition value="Family Therapist"/>
+  </concept>
+  <concept>
+    <code value="2725111"/>
+    <display value="Mental Health Social Worker"/>
+    <definition value="Mental Health Social Worker"/>
+  </concept>
+  <concept>
+    <code value="2725110"/>
+    <display value="Social Worker"/>
+    <definition value="Social Worker"/>
+  </concept>
+  <concept>
+    <code value="3999130"/>
+    <display value="Optical Dispenser"/>
+    <definition value="Optical Dispenser"/>
+  </concept>
+  <concept>
+    <code value="4231112"/>
+    <display value="Personal Carer"/>
+    <definition value="Personal Carer"/>
+  </concept>
+  <concept>
+    <code value="4231114"/>
+    <display value="Aged or Disabled Carer Worker"/>
+    <definition value="Aged or Disabled Carer Worker"/>
+  </concept>
+  <concept>
+    <code value="4515115"/>
+    <display value="Kinesiologist"/>
+    <definition value="Kinesiologist"/>
+  </concept>
+  <concept>
+    <code value="4521113"/>
+    <display value="Physical Fitness Trainer"/>
+    <definition value="Physical Fitness Trainer"/>
+  </concept>
+  <concept>
+    <code value="1343111"/>
+    <display value="Primary School Principal"/>
+    <definition value="Primary School Principal"/>
+  </concept>
+  <concept>
+    <code value="1343112"/>
+    <display value="Secondary School Principal"/>
+    <definition value="Secondary School Principal"/>
+  </concept>
+  <concept>
+    <code value="9999"/>
+    <display value="Other"/>
+    <definition value="Other"/>
+  </concept>
 </CodeSystem>

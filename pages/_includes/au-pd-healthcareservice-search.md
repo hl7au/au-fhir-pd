@@ -75,15 +75,15 @@ Chained search (via Organisation) based on identifier token.
 
 -----------
 **Search: HPI-O**
-Search based on identifier token. Direct HPI-O allocation to the service; may be different than the providing organisation but within the HPI-O hierarchy.
+Search based on identifier token. Direct HPI-O allocation to the service; may be different than the providing organisation but within the HPI-O hierarchy (networked HPI-O).
 
-`GET [base]/Organization?identifier=[system]|[value]`
+`GET [base]/HealthcareService?identifier=[system]|[value]`
 
-*Example:* `GET [base]/Organization?identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
+*Example:* `GET [base]/HealthcareService?identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003627500000328`
 
 *Support:*
 
-* SHOULD support search by HPI-O.
+* MUST support search by HPI-O.
 
 *Implementation Notes:* [(how to search by token)]
 
@@ -140,7 +140,7 @@ Chained search (via Location) for a location within a nominated distance.
 
 Chaned search (via Endpoint) based on token for a protocol to be used to connnect to the endpoint.
  
-`GET [base]/HealthcareService?endpoint.connection-type=[system]|[value]`
+`GET [base]/HealthcareService?endpoint.connection-type=[system]|[code]`
 
 *Example:* `GET [base]/HealthcareService?endpoint.connection-type=http://hl7.org.au.fhir/ValueSet/au-serviceinterfaces|http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010`
 
@@ -155,7 +155,7 @@ Chaned search (via Endpoint) based on token for a protocol to be used to connnec
 
 Chaned search (via Endpoint) based on token for the type of content supported by the endpoint.
  
-`GET [base]/HealthcareService?endpint.payload-type=[system]|[value]`
+`GET [base]/HealthcareService?endpoint.payload-type=[system]|[code]`
 
 *Example:* `GET [base]/HealthcareService?endpoint.payload-type=http://hl7.org.au.fhir/ValueSet/valueset-au-endpoint-payload-type|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
 
