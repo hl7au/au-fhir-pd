@@ -15,11 +15,20 @@ This document is a working specification that is expected to be implemented and 
 
 ## Scope
 
-* Organisation Directory Entry: managing organisations
-* Practitioner Directory Entry: individual practitioners
-* Practitioner Role Directory Entry: role participants at a location for an organisation
-* Healthcare Service Directory Entry: services delivered at a location for an organization
-* Secure Messaging Endpoint Directory Entry: connection details for secure messaging
+Information
+* **Organisation Directory Entry**: managing organisations
+* **Practitioner Directory Entry**: individual practitioners
+* **Practitioner Role Directory Entry**: role participants at a location for an organisation
+* **Healthcare Service Directory Entry**: services delivered at a location for an organization
+* **Secure Messaging Endpoint Directory Entry**: connection details for secure messaging
+
+Interactions
+* **Search** allows the selection of relevant entries based on criteria
+* **Read** allows the retrieval of a specifc entry
+
+Patterns of Use
+* **Federated Directory** approach to supply responses based on a combination of results from multiple directory service providers
+* **Synchronisation** approach to allow service supplied directory entry updates or deletion to be systematically synchronised with a local directory
 
 ## Usage
 

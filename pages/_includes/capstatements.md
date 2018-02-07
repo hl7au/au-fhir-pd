@@ -2,19 +2,22 @@
 
 ## Scope of Resource Profiles
 
+A subset of FHIR resource types are used in this specification. These are profiled to ensure minimal elements needed for secure messaging are supported by the directory service.
+
 * **Location** is physical location, where service delivery occurs.
 * **Organization** is an entity providing practitioner roles and/or healthcare service.
-* **PractitionerRole** (provider) is a practitioner acting in a role at one location for one organisation.
-* **Practitioner** is an individual that maybe acting in a practitioner role.
+* **PractitionerRole** (provider) is a practitioner acting roles at one location for one organisation.
+* **Practitioner** details of an individual that maybe acting in a practitioner role.
 * **HealthcareService** describes the services delivered at one location for one organisation.
 
 
-## Interactions Overview
+## Service Interactions Overview
 
-A subset of FHIR possible interactions are required for this profile.
+A subset of FHIR possible interactions are required for this specification. This applies to core directory services offered by a directory 
+provider and also federated services combining results from multiple directory service sources.
 
-### Instance Level Interactions	
 ----------
+### Instance Level Interactions	
 
 * **[read](http://hl7.org/fhir/STU3/http.html#read)** PractitionerRole, Practitioner, HealthcareService, Location, Organization, Endpoint
 * **vread** Not Required 
@@ -23,24 +26,25 @@ A subset of FHIR possible interactions are required for this profile.
 * **delete** Not Required
 * **history** Not Required
 
-### Type Level Interactions
 ----------
+### Type Level Interactions
 
 * **create** Not Required
 * **[search](http://hl7.org/fhir/STU3/http.html#search)** PractitionerRole, Practitioner, HealthcareService, Location, Organization, Endpoint
 * **history** Not Required
 
-### Whole System Interactions
 ----------
+### Whole System Interactions
 
 * **capabilities** Required
 * **batch/transaction** Not Required
 * **history** Not Required
 * **search** Not required
 
+----------
+### Type Level Search
 
-## Type Level Search/Include
-Expected scope of search/include support.
+Expected scope of search/include support:
 
 |Resource Type|Profile|Search Parameters|Includes|
 |---|---|---|---|
@@ -51,3 +55,14 @@ Expected scope of search/include support.
 |[Location](/StructureDefinition-au-pd-location.html#search)| Australian Location Directory Entry | address-city, address-postalcode, address-state, near, near-distance ||
 |[Endpoint](/StructureDefinition-au-pd-sm-endpoint.html#search)| Australian Endpoint Directory Entry | connection-type, payload-type, au-receivingfacility-namespace-id, au-receivingfacility-universal-id, au-receivingfacility-universal-id-type ||
 {:.grid}
+
+Expected adherence to seach parameters:
+* _include parameter SHALL be supported to the extent described in above table.
+* _count parameter SHALL be honoured by directory service provider to limit the result count as requested by client consumers.
+
+Expected Bundle result support and behaviour:
+* Bundle.link (paging) MAY be supplied by directory service provider, this is most useful as _count limit on result count suggests paging is desirable.
+* Bundle.link (paging) with relation 'next' (http://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1) MUST be supported by client consuming system to allow next page retrieval when available.
+
+
+
