@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2017-11-29T23:20:41.784+11:00" />
+    <lastUpdated value="2018-02-07T13:35:59.884+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -164,6 +164,7 @@
       <short value="Vendor allocated URL" />
       <definition value="Unique namespace for the assigning vendor's identifier value." />
       <min value="1" />
+      <fixedUri value="http://ns.electronichealth.net.au/id/medicare-provider-number" />
     </element>
     <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.value">
       <path value="PractitionerRole.identifier.value" />
@@ -208,42 +209,12 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="PractitionerRole.specialty">
-      <path value="PractitionerRole.specialty" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="PractitionerRole.specialty:practitionerRole">
-      <path value="PractitionerRole.specialty" />
-      <sliceName value="practitionerRole" />
-      <short value="Practitioner Role Extended Coding" />
-      <definition value="Coding of specialties which this practitioner can perform." />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="PractitionerSpecialty" />
-        </extension>
-        <strength value="required" />
-        <description value="Practitioner Role Extended Coding" />
-        <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-pd-practitioner-role" />
-        </valueSetReference>
-      </binding>
-    </element>
     <element id="PractitionerRole.specialty:snomedRole">
       <path value="PractitionerRole.specialty" />
       <sliceName value="snomedRole" />
-      <short value="SNOMED-CT Healthcare Professional Subset" />
-      <definition value="Healthcare professional subset" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="PractitionerSpecialty" />
-        </extension>
-        <strength value="required" />
-        <description value="Healthcare professional subset" />
-        <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ValueSet/valueset-snomed-practitioner-role" />
-        </valueSetReference>
-      </binding>
+      <short value="Directory SNOMED-CT Practitioner Specialty" />
+      <definition value="Healthcare professional subset for directory lookup" />
+      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.location">
       <path value="PractitionerRole.location" />

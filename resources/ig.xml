@@ -111,54 +111,6 @@
 				<reference value="ValueSet/valueset-au-endpoint-payload-type"/>
 			</sourceReference>
 		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="CodeSystem/codesystem-extended-practitioner-role"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="CodeSystem/codesystem-extended-healthcareservice-role"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="ValueSet/valueset-snomed-practitioner-role"/>
-			</sourceReference>
-		</resource>
-				<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="ValueSet/valueset-snomed-healthcareservice-role"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="ValueSet/valueset-pd-practitioner-role"/>
-			</sourceReference>
-		</resource>
-				<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="ValueSet/valueset-pd-healthcareservice-role"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="ConceptMap/conceptmap-snomed-pd-practitioner-role"/>
-			</sourceReference>
-		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="ConceptMap/conceptmap-snomed-pd-healthcareservice-role"/>
-			</sourceReference>
-		</resource>
 	  <resource>
 			<example value="false"/>
 			<sourceReference>
