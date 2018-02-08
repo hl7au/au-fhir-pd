@@ -28,6 +28,17 @@ FED01 Directory service source providers SHALL supply adequate core registration
 * Core registration information may be public but this is not required.
 * Core registration information is defined as:
 
+|Property|Description|
+|---|---||
+|Name|A user-friendly description of the registered server e.g. Argus Directory|
+|Contact Details|Details of who to contact for support issues|
+|Enpoint URL|The URL of the server to send federated requests to (base URL of the FHIR server) (this should also be used as the issuer in the identity JWT)|
+|Authentication Details|Any details required to authenticate to the server e.g. API key (simple fixed value), authorization header (fixed/long living bearer token), client ID/secret (OAuth details)|
+|Vendor Thumbprint|The thumbprint of the certificate to use to connect to the vendor|
+|Id Prefix|Suitable prefix that may be prepended to all id fields to make unique|
+|Identifier Namespace|The namespace that will be used for messaging vendor-created identifiers|
+{:.grid}
+
 ```
 FED02 Directory service results content is defined by the federated service supplier
 ```
@@ -60,5 +71,8 @@ FED05 Resource referencing in federated results MUST be adequate for client use 
 ```
 FED06 Tracking HTTP headers SHOULD be implemented to allow support investigation
 ```
-
+* Custom header X-Request-Id SHOULD always be included in every response.
+* Custom header X-Request-Id MAY be included in requests from client systems and reflected in the responses.
+* This header supports tracking for support and federated results.
+* If no header is populated it SHOULD be populated by provider directory servers.
 
