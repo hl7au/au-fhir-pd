@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2018-02-07T13:35:59.884+11:00" />
+    <lastUpdated value="2018-02-13T15:36:25.744+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -55,10 +55,12 @@
     </element>
     <element id="PractitionerRole.identifier:providerNumber.type">
       <path value="PractitionerRole.identifier.type" />
+      <short value="Required Provider Number Identifier Type " />
       <definition value="Identifier type of provider number for this practitioner role. Required for Provider Directory." />
     </element>
     <element id="PractitionerRole.identifier:providerNumber.type.coding">
       <path value="PractitionerRole.identifier.type.coding" />
+      <short value="Required Provider Number Identifier Type Code" />
       <definition value="Provider number identifier type coding. Required for Provider Directory." />
       <min value="1" />
     </element>
@@ -164,7 +166,6 @@
       <short value="Vendor allocated URL" />
       <definition value="Unique namespace for the assigning vendor's identifier value." />
       <min value="1" />
-      <fixedUri value="http://ns.electronichealth.net.au/id/medicare-provider-number" />
     </element>
     <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.value">
       <path value="PractitionerRole.identifier.value" />
@@ -178,6 +179,7 @@
     </element>
     <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.assigner">
       <path value="PractitionerRole.identifier.assigner" />
+      <short value="Secure messaging vendor organisation" />
       <min value="1" />
     </element>
     <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.assigner.display">
@@ -185,7 +187,14 @@
         <valueBoolean value="true" />
       </extension>
       <path value="PractitionerRole.identifier.assigner.display" />
+      <short value="Secure messaging vendor organisation name" />
       <min value="1" />
+    </element>
+    <element id="PractitionerRole.active">
+      <path value="PractitionerRole.active" />
+      <short value="Required status" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
@@ -235,7 +244,7 @@
     </element>
     <element id="PractitionerRole.endpoint">
       <path value="PractitionerRole.endpoint" />
-      <short value="Service based communication points" />
+      <short value="Technical endpoints for this practitioner role, including secure messaging endpoints" />
       <definition value="Details for service based communication with the practitioner in this role. This can include web services, messaging profiles and other protocol based communication." />
       <type>
         <code value="Reference" />

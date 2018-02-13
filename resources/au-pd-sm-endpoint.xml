@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-sm-endpoint" />
   <meta>
-    <lastUpdated value="2017-11-24T00:13:14.798+11:00" />
+    <lastUpdated value="2018-02-13T16:18:38.143+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -95,10 +95,12 @@
     </element>
     <element id="Endpoint.identifier:smdtarget.value">
       <path value="Endpoint.identifier.value" />
+      <short value="Secure messaging target identifier value" />
       <min value="1" />
     </element>
     <element id="Endpoint.status">
       <path value="Endpoint.status" />
+      <short value="Required status" />
       <definition value="Secure messaging endpoint activation status." />
       <mustSupport value="true" />
     </element>
@@ -114,6 +116,7 @@
     </element>
     <element id="Endpoint.name">
       <path value="Endpoint.name" />
+      <short value="Friendly name for the endpoint" />
       <mustSupport value="true" />
     </element>
     <element id="Endpoint.managingOrganization">

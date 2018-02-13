@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitioner" />
   <meta>
-    <lastUpdated value="2017-11-24T00:46:40.604+11:00" />
+    <lastUpdated value="2018-02-13T15:17:15.461+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -34,6 +34,8 @@
     </element>
     <element id="Practitioner.active">
       <path value="Practitioner.active" />
+      <short value="Required status" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Practitioner.name">

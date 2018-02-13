@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-location" />
   <meta>
-    <lastUpdated value="2017-11-24T00:04:46.396+11:00" />
+    <lastUpdated value="2018-02-13T15:16:59.578+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -24,6 +24,12 @@
     <element id="Location">
       <path value="Location" />
       <short value="Australian Location Directory Entry" />
+    </element>
+    <element id="Location.status">
+      <path value="Location.status" />
+      <short value="Required status" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Location.address">
       <path value="Location.address" />
