@@ -39,27 +39,27 @@ This implementation guide is defined to allow multiple consumer systems to call 
 **Provider Directory Supplier** implementations are server software systems that supply a provider directory service interface and data.
 
 ```
-SUP01 Servers SHALL be capable of providing all resource types included in this guide.
+SRV01 Servers SHALL be capable of providing all resource types included in this guide.
 ```
 
 ```
-SUP02 Servers SHALL be capable of providing all profile data elements marked as MUST SUPPORT.
+SRV02 Servers SHALL be capable of providing all profile data elements marked as MUST SUPPORT.
 ```
 
 ```
-SUP03 Servers SHALL comply to AU Provider Directory Implmementation Guide, AU Base Implmementation Guide and FHIR STU3 core constraints for all resource instances.
+SRV03 Servers SHALL comply to AU Provider Directory Implmementation Guide, AU Base Implmementation Guide and FHIR STU3 core constraints for all resource instances.
 ```
 
 ```
-SUP04 Servers SHALL be capable of responding meaningfully to all search requests (in each resource definiition) that are marked as MUST SUPPORT.
+SRV04 Servers SHALL be capable of responding meaningfully to all search requests (in each resource definiition) that are marked as MUST SUPPORT.
 ```
 
 ```
-SUP05 Servers MAY be capable of responding to search requests (in each resource definiition) that are marked as OPTIONAL.
+SRV05 Servers MAY be capable of responding to search requests (in each resource definiition) that are marked as OPTIONAL.
 ```
 
 ```
-SUP06 Servers MAY be capable of responding to other search requests that are FHIR core compliant OR custom searches (defined using CapabilityStatement supplied by the server).
+SRV06 Servers MAY be capable of responding to other search requests that are FHIR core compliant OR custom searches (defined using CapabilityStatement supplied by the server).
 ```
 
 **Provider Directory Consumer** implementations are client software systems that call provider directory services and consume data.
