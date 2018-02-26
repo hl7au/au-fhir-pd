@@ -24,6 +24,7 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
+	<fhirVersion value="3.0.1"/>
 	<package>
 		<name value="base"/>
 		<description value="Guidance on the implementation of provider directories using FHIR in an Australian usage context"/>
