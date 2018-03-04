@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2018-02-20T11:28:07.953+11:00" />
+    <lastUpdated value="2018-03-05T01:14:00.385+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
   <p>AU PD Practitioner Role</p>
 </div></text>
   <url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-practitionerrole" />
-  <name value="AUPDPractitioner Role" />
+  <name value="AUPDPractitionerRole" />
   <title value="AU PD Practitioner Role" />
   <status value="draft" />
   <date value="2017-06-09T16:36:38.9010786+10:00" />
@@ -24,6 +24,33 @@
     <element id="PractitionerRole">
       <path value="PractitionerRole" />
       <definition value="Directory entry for a provider at a location for an organisation." />
+    </element>
+    <element id="PractitionerRole.meta">
+      <path value="PractitionerRole.meta" />
+      <short value="Metadata about the resource (extended)" />
+    </element>
+    <element id="PractitionerRole.meta.extension">
+      <path value="PractitionerRole.meta.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PractitionerRole.meta.extension:source">
+      <path value="PractitionerRole.meta.extension" />
+      <sliceName value="source" />
+      <short value="Preadopt STU4 Meta.source" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/meta-source" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.identifier:providerNumber">
       <path value="PractitionerRole.identifier" />

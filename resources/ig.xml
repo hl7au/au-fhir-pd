@@ -85,7 +85,13 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="StructureDefinition/encrypting-qualified-certificate-reference"/>
+				<reference value="StructureDefinition/encryption-certificate-pem-x509"/>
+			</sourceReference>
+		</resource>
+				<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/meta-source"/>
 			</sourceReference>
 		</resource>
 		<resource>

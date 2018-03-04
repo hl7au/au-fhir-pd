@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-organisation" />
   <meta>
-    <lastUpdated value="2017-11-24T01:04:08.579+11:00" />
+    <lastUpdated value="2018-03-05T01:14:06.533+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
   <p>AU PD Organisation</p>
 </div></text>
   <url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-organisation" />
-  <name value="AU PD Organisation" />
+  <name value="AUPDOrganisation" />
   <title value="AU PD Organisation" />
   <status value="draft" />
   <date value="2017-05-05T17:01:18.5856309+10:00" />
@@ -24,6 +24,32 @@
       <path value="Organization" />
       <short value="Australian Organisation Directory Entry" />
       <definition value="Directory entry Australian realm Organisation profile often healthcare or related service provision." />
+    </element>
+    <element id="Organization.meta">
+      <path value="Organization.meta" />
+      <short value="Metadata about the resource (extended)" />
+    </element>
+    <element id="Organization.meta.extension">
+      <path value="Organization.meta.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.meta.extension:source">
+      <path value="Organization.meta.extension" />
+      <sliceName value="source" />
+      <short value="Preadopt STU4 Meta.source" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/meta-source" />
+      </type>
     </element>
     <element id="Organization.active">
       <path value="Organization.active" />

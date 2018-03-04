@@ -9,7 +9,7 @@ Read identified practitioner resource content.
 
 *Support:* MUST support read Practitioner
 
-*Implementation Notes:*  [[(how to read resource)]
+*Implementation Notes:*  [(how to read resource)]
 
 -----------
 **Search: Practitioner Name**

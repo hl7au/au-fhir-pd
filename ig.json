@@ -5,7 +5,7 @@
   "dependencyList": [ 
     {
        "name" : "aubase",
-       "location" : "http://build.fhir.org/ig/hl7au/au-fhir-base"
+       "location" : "http://hl7.org.au/fhir/base2018Mar"
     }
   ], 
   
@@ -93,8 +93,11 @@
 	"StructureDefinition/au-receivingapplication": {
 	  "base": "StructureDefinition-au-receivingapplication.html"
 	},
-	"StructureDefinition/encrypting-qualified-certificate-reference": {
-	  "base": "StructureDefinition-encrypting-qualified-certificate-reference.html"
+	"StructureDefinition/encryption-certificate-pem-x509": {
+	  "base": "StructureDefinition-encryption-certificate-pem-x509.html"
+	},
+		"StructureDefinition/meta-source": {
+	  "base": "StructureDefinition-meta-source.html"
 	},
 	"CodeSystem/codesystem-au-sm-serviceinterface": {
 	  "base": "CodeSystem-codesystem-au-sm-serviceinterface.html"

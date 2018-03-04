@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-sm-endpoint" />
   <meta>
-    <lastUpdated value="2018-02-13T16:18:38.143+11:00" />
+    <lastUpdated value="2018-03-05T01:13:27.089+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
   <p>AU PD SM Endpoint</p>
 </div></text>
   <url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-sm-endpoint" />
-  <name value="AU PD Secure Messaging Endpoint" />
+  <name value="AUPDSecureMessagingEndpoint" />
   <title value="AU PD Secure Messaging Endpoint" />
   <status value="draft" />
   <date value="2017-05-12T16:13:53.3444155+10:00" />
@@ -25,6 +25,33 @@
       <path value="Endpoint" />
       <short value="Australian Secure Message Directory Endpoint Record" />
       <definition value="Enpoint defined for use in secure message addressing." />
+    </element>
+    <element id="Endpoint.meta">
+      <path value="Endpoint.meta" />
+      <short value="Metadata about the resource (extended)" />
+    </element>
+    <element id="Endpoint.meta.extension">
+      <path value="Endpoint.meta.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Endpoint.meta.extension:source">
+      <path value="Endpoint.meta.extension" />
+      <sliceName value="source" />
+      <short value="Preadopt STU4 Meta.source" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/meta-source" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Endpoint.extension">
       <path value="Endpoint.extension" />
@@ -61,13 +88,16 @@
     <element id="Endpoint.extension:dataEnciphermentCertificate">
       <path value="Endpoint.extension" />
       <sliceName value="dataEnciphermentCertificate" />
-      <short value="Encrypting certificate details" />
-      <definition value="Encrypting certificate reference or value for use on this endpoint with specified payloadType and payloadMimeType." />
+      <short value="PEM X509 Certificate" />
+      <definition value="Mechanism hold the value of an X509 certificate as a string (base64 encoded PEM certificate)" />
+      <min value="0" />
+      <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/encrypting-qualified-certificate-reference" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/encryption-certificate-pem-x509" />
       </type>
       <mustSupport value="true" />
+      <isModifier value="false" />
     </element>
     <element id="Endpoint.identifier">
       <path value="Endpoint.identifier" />
