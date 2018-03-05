@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <meta>
-    <lastUpdated value="2018-03-05T16:32:00.09+11:00" />
+    <lastUpdated value="2018-03-05T16:36:05.054+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -117,10 +117,12 @@
     </element>
     <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.type">
       <path value="PractitionerRole.identifier.type" />
+      <short value="Required National Provider at Organisation Identifier Type" />
       <definition value="Directory Identifier type provider at organisation identifier for this practitioner role" />
     </element>
     <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.type.coding">
       <path value="PractitionerRole.identifier.type.coding" />
+      <short value="Required Code defined by a terminology system" />
       <min value="1" />
     </element>
     <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier">
