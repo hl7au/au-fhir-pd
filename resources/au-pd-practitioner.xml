@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitioner" />
   <meta>
-    <lastUpdated value="2018-03-05T01:13:50.447+11:00" />
+    <lastUpdated value="2018-03-05T15:53:25.374+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -43,10 +43,6 @@
     <element id="Practitioner.meta.extension:source">
       <path value="Practitioner.meta.extension" />
       <sliceName value="source" />
-      <short value="Preadopt STU4 Meta.source" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/meta-source" />
@@ -56,6 +52,7 @@
     <element id="Practitioner.identifier:hpii">
       <path value="Practitioner.identifier" />
       <sliceName value="hpii" />
+      <short value="Directory Entry HPI-I " />
       <definition value="National identifier for the individual provider" />
       <mustSupport value="true" />
     </element>

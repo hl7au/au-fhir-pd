@@ -5,13 +5,13 @@
 	<providedBy>
 		<reference value="Organization/example0"/>
 	</providedBy>
-	<category>
+	<type>
 		<coding>
 			<system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
 			<code value="8401"/>
 			<display value="Hospitals (except Psychiatric Hospitals)"/>
 		</coding>
-	</category>
+	</type>
 	<type>
 		<coding>
 			<system value="http://snomed.info/sct"/>
