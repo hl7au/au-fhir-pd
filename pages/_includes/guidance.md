@@ -6,10 +6,22 @@
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+## Introduction
+There are a number of FHIR resource types used to record provider directory entries.
+
+PractitionerRole and HealthcareService are the main searchable concepts and can be related to other resources, Practitioner, Organization, Location and Endpoint.
+
+Searching for suitable PractitionerRole or HealthcareService can be made by search parameters on these resource types and/or via chained searches to the related resource types.
+
+In this usage the PractitionerRole and HealthcareService resources are related to Endpoints (containing service connection details, such as secure messaging) and this allows communications to be made to a practitioner (in a role) or healthcare service based on the content of the associated Endpoint resource used.
+
 
 ## Provider Directory Core Entity Relationships
 
-For directory service profiles the PractitonerRole resource has constrained relationships to Location, Organization, and Practitioner resource types.
+For directory service profiles the PractitionerRole resource has constrained relationships to Location, Organization, and Practitioner resource types.
+
+This ensures that all practitioners in a role are associated to a location, organisation (providing services), and an individual practitioner (person) to support searching.
+
 <div>
 <img src="assets/images/erd1.jpg"/>
 </div>
@@ -17,6 +29,9 @@ For directory service profiles the PractitonerRole resource has constrained rela
 <br/>
 
 For directory service profiles the HealthcareService resource has constrained relationships to Location, and Organization resource types.
+
+This ensures that all health care service are associated to one or more locations, and an organisation (providing service) to support searching.
+
 <div>
 <img src="assets/images/erd2.jpg"/>
 </div>
@@ -25,6 +40,28 @@ For directory service profiles the HealthcareService resource has constrained re
 
 ## Simplified Provider Directory Sequence for Secure Messaging
 
+The sequence of searches typically used for secure messaging of a HL7 V2 messaging:
+
+* A User performs a Provider Search 
+	* This searches for a PractitionerRole or HealthcareService using desired search parameters (include via related resources using a chained search)
+	* A FHIR Bundle is retured as a searchset result with matching resources and any included related resources
+* Results are presented to the User; each destination will be related to a PractitionerRole or HealthcareService and a specific Endpoint (secure messaging endpoint for SM send, including the payload type supported)
+* A User will Choose Destination
+* A destination will have an associated secure messaging Endpoint
+	* Details in the PractitionerRole/HealthcareService include one or more identifier associated with a HL7 V2 assigning authority (HPI-O, NPIO, vendor allocated, Medicare provider number)
+	* Details in the Endpoint include details of:
+		* An encrypting certificate (NASH or vendor - for SM message payload encryption)
+		* HL7 V2 receiving facility (for HL7 V2 message content)
+		* HL7 V2 receiving application (for HL7 V2 message content)
+		* Secure message gateway URL (for SM message content)
+		* Secure messaging target identifier (for SM message content)
+* A Secure Message Sender will format the HL7 V2 REF/MDM Message using these details; for delivery to the chosen specific destination
+* A Secure Message Sender will deliver the HL7 V2 REF/MDM Message via the secure message agent to a Secure Message Receiver
+* The receiving system will respond with a HL7 V2 ACK Message which needs to be directed back to the sending system; this requires a search to find secure messaging details to recieve the ACK
+* The acknowledging receiving system will search for an Endpoint with matching HL7 V2 receiving application, connection type (secure messaging), and payload type (ACK type)
+* The acknowledging system can then format an HL7 V2 ACK response and secure messaging agent can send a secure message response (using details from the Endpoint) 
+	
+	
 <div>
 <img src="assets/images/sequence1.jpg"/>
 </div>
