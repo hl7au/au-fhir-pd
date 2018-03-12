@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-healthcareservice" />
   <meta>
-    <lastUpdated value="2018-03-09T15:52:51.225+11:00" />
+    <lastUpdated value="2018-03-12T23:33:42.94+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -46,6 +46,10 @@
     <element id="HealthcareService.meta.extension:source">
       <path value="HealthcareService.meta.extension" />
       <sliceName value="source" />
+      <short value="Preadopt STU4 Meta.source" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/meta-source" />
