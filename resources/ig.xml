@@ -97,7 +97,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="CodeSystem/codesystem-au-sm-serviceinterface"/>
+				<reference value="CodeSystem/smd-interfaces"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -109,7 +109,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="CodeSystem/codesystem-au-endpoint-payload-type"/>
+				<reference value="CodeSystem/endpoint-payload-type"/>
 			</sourceReference>
 		</resource>
 		<resource>

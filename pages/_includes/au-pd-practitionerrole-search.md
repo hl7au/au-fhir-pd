@@ -173,7 +173,7 @@ Chained search (via Location) for a location within a nominated distance.
 
 `GET [base]/PractitionerRole?location.near=[latitude]:[longitude]&location.near-distance=[prefix][value]|[units-system]|[units]`
 
-*Example:* `GET [base]/PractitionerRole?location.near==-83.694810:42.256500&location.near-distance=le10.0|http://unitsofmeasure.org|km`
+*Example:* `GET [base]/PractitionerRole?location.near=-83.694810:42.256500&location.near-distance=le10.0|http://unitsofmeasure.org|km`
 
 *Support:* 
 
@@ -193,7 +193,7 @@ Chaned search (via Endpoint) based on token for a protocol to be used to connnec
  
 `GET [base]/PractitionerRole?endpoint.connection-type=[system]|[value]`
 
-*Example:* `GET [base]/PractitionerRole?endpoint.connection-type=http://hl7.org.au.fhir/ValueSet/au-serviceinterfaces|http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010`
+*Example:* `GET [base]/PractitionerRole?endpoint.connection-type=http://hl7.org.au/fhir/CodeSystem/smd-interfaces|http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010`
 
 *Support:*
 
@@ -208,7 +208,7 @@ Chaned search (via Endpoint) based on token for the type of content supported by
  
 `GET [base]/PractitionerRole?endpoint.payload-type=[system]|[value]`
 
-*Example:* `GET [base]/PractitionerRole?endpoint.payload-type=http://hl7.org.au.fhir/ValueSet/valueset-au-endpoint-payload-type|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
+*Example:* `GET [base]/PractitionerRole?endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/smd-interfaces|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
 
 *Support:*
 
