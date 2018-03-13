@@ -47,7 +47,7 @@ Search based on address within a nominated distance.
 
 `GET [base]/Location?location.near=[latitude]:[longitude]&location.near-distance=[prefix][value]|[units-system]|[units]`
 
-*Example:* `GET [base]/Location?location.near==-83.694810:42.256500&location.near-distance=le10.0|http://unitsofmeasure.org|km`
+*Example:* `GET [base]/Location?near=-83.694810:42.256500&near-distance=le10.0|http://unitsofmeasure.org|km`
 
 *Support:* 
 * SHOULD support search Location within a distance.

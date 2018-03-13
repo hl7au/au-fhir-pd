@@ -99,8 +99,8 @@
 		"StructureDefinition/meta-source": {
 	  "base": "StructureDefinition-meta-source.html"
 	},
-	"CodeSystem/codesystem-au-sm-serviceinterface": {
-	  "base": "CodeSystem-codesystem-au-sm-serviceinterface.html"
+	"CodeSystem/smd-interfaces": {
+	  "base": "CodeSystem-smd-interfaces.html"
 	},
 	"CodeSystem/codesystem-extended-practitioner-role": {
 	  "base": "CodeSystem-codesystem-extended-practitioner-role.html"
@@ -108,8 +108,8 @@
 	"CodeSystem/codesystem-extended-healthcareservice-role": {
 	  "base": "CodeSystem-codesystem-extended-healthcareservice-role.html"
 	},
-	"CodeSystem/codesystem-au-endpoint-payload-type": {
-	  "base": "CodeSystem-codesystem-au-endpoint-payload-type.html"
+	"CodeSystem/endpoint-payload-type": {
+	  "base": "CodeSystem-endpoint-payload-type.html"
 	},
 	"ValueSet/valueset-au-endpoint-payload-type": {
 	  "base": "ValueSet-valueset-au-endpoint-payload-type.html"

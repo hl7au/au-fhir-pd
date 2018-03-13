@@ -14,7 +14,7 @@
 	<description value="Enumeration of well known endpoint payload types"/>
 	<compose>
 		<include>
-			<system value="http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type"/>
+			<system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type"/>
 		</include>
 	</compose>
 </ValueSet>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitioner" />
   <meta>
-    <lastUpdated value="2018-03-05T15:53:25.374+11:00" />
+    <lastUpdated value="2018-03-13T12:12:14.419+11:00" />
   </meta>
   <text>
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
@@ -52,7 +52,7 @@
     <element id="Practitioner.identifier:hpii">
       <path value="Practitioner.identifier" />
       <sliceName value="hpii" />
-      <short value="Directory Entry HPI-I " />
+      <short value="Directory Entry HPI-I" />
       <definition value="National identifier for the individual provider" />
       <mustSupport value="true" />
     </element>
