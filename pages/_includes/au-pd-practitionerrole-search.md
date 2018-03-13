@@ -191,7 +191,7 @@ Chained search (via Location) for a location within a nominated distance.
 
 Chaned search (via Endpoint) based on token for a protocol to be used to connnect to the endpoint.
  
-`GET [base]/PractitionerRole?endpoint.connection-type=[system]|[value]`
+`GET [base]/PractitionerRole?endpoint.connection-type=[system]|[code]`
 
 *Example:* `GET [base]/PractitionerRole?endpoint.connection-type=http://hl7.org.au/fhir/CodeSystem/smd-interfaces|http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010`
 
@@ -206,7 +206,7 @@ Chaned search (via Endpoint) based on token for a protocol to be used to connnec
 
 Chaned search (via Endpoint) based on token for the type of content supported by the endpoint.
  
-`GET [base]/PractitionerRole?endpoint.payload-type=[system]|[value]`
+`GET [base]/PractitionerRole?endpoint.payload-type=[system]|[code]`
 
 *Example:* `GET [base]/PractitionerRole?endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/smd-interfaces|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
 
