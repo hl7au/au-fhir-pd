@@ -10,7 +10,7 @@
   ], 
   
   "spreadsheets": [],
-  "special-urls": [ "http://ns.electronichealth.net.au/smd/intf" ],
+  "special-urls": [ ],
   "extraTemplates": [ "mappings" ],
   "defaults": {
     "ConceptMap": { "template-base": "cm.html" },
