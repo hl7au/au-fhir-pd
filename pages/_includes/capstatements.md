@@ -50,13 +50,13 @@ Expected scope of search/include support:
 |---|---|---|---|
 |[Organization](/StructureDefinition-au-pd-organisation.html#search)| Australian Organisation Directory Entry | name, identifier ||
 |[Practitioner](/StructureDefinition-au-pd-practitioner.html#search)| Australian Practitioner Directory Entry | identifier, family, given, name ||
-|[PractitionerRole](/StructureDefinition-au-pd-practitionerrole.html#search)| Australian PractitionerRole Directory Entry | identifier, location.address-city, location.address-postalcode, location.address-state, location.near, location.near-distance, organization.identifier, practitioner.name, practitioner.family, practitioner.given | location, organization, endpoint |
+|[PractitionerRole](/StructureDefinition-au-pd-practitionerrole.html#search)| Australian PractitionerRole Directory Entry | identifier, location.address-city, location.address-postalcode, location.address-state, location.near, location.near-distance, organization.identifier, practitioner.name, practitioner.family, practitioner.given | location, organization, endpoint, practitioner |
 |[HealthcareService](/StructureDefinition-au-pd-healthcareservice.html#search)| Australian HealthcareService Directory Entry | name, location.address-city, location.address-postalcode, location.address-state, location.near, location.near-distance, organization.identifier | location, organization, endpoint |
 |[Location](/StructureDefinition-au-pd-location.html#search)| Australian Location Directory Entry | address-city, address-postalcode, address-state, near, near-distance ||
 |[Endpoint](/StructureDefinition-au-pd-sm-endpoint.html#search)| Australian Endpoint Directory Entry | connection-type, payload-type, au-receivingfacility-namespace-id, au-receivingfacility-universal-id, au-receivingfacility-universal-id-type ||
 {:.grid}
 
-Expected adherence to seach parameters:
+Expected adherence to search parameters:
 * _include parameter SHALL be supported to the extent described in above table.
 * _count parameter SHALL be honoured by directory service provider to limit the result count as requested by client consumers.
 

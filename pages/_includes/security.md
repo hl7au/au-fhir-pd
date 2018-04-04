@@ -1,6 +1,6 @@
 # {{ page.title }}
 
-## Secure Messaging Certficate Usage
+## Secure Messaging Certificate Usage
 
 ''Vendor'' refers to a secure messaging vendor
 
@@ -21,7 +21,7 @@ SEC04 Vendor allocated certificates MAY be used in Endpoint encrypting certifica
 ```
 
 ```
-SEC05 Vendor certificate allocation written policy statement SHOULD be made avaialble for users of these certificates.
+SEC05 Vendor certificate allocation written policy statement SHOULD be made available for users of these certificates.
 ```
 
 ```
@@ -33,7 +33,7 @@ SEC07 Vendor allocated Endpoint.identifier (Secure Messaging Target Identifier) 
 ```
 
 ```
-SEC08 Endoint published vendor encrypting certificates MUST be issued by a CA where trust chain can be checked
+SEC08 Endpoint published vendor encrypting certificates MUST be issued by a CA where trust chain can be checked
 ```
 
 ```
@@ -41,5 +41,5 @@ SEC09 Vendor certificate secure message signed payload MUST provide a certificat
 ```
 
 ```
-SEC10 Secure message metdata senderOrganisation (URI) MUST be present in the signing certificate Subject Alternative Names property
+SEC10 Secure message metadata senderOrganisation (URI) MUST be present in the signing certificate Subject Alternative Names property
 ```
