@@ -167,10 +167,6 @@
       <definition value="Type code for vendor directory identifier" />
       <min value="1" />
       <max value="1" />
-      <patternCoding>
-        <system value="http://hl7.org.au/fhir/v2/0203" />
-        <code value="VDI" />
-      </patternCoding>
       <binding>
         <strength value="required" />
         <valueSetReference>
