@@ -38,6 +38,7 @@
   "active": true,
   "name": [
     {
+	  "use": "usual",
       "family": "Mayo",
       "given": [
         "Helen"
