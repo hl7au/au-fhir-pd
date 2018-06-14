@@ -10,7 +10,7 @@ Read identified organisation resource content.
 
 *Support:* MUST support read Organisation
 
-*Implementation Notes:*  [[(how to read resource)]
+*Implementation Notes:*  [(how to read resource)]
 
 -----------
 **Search: HPI-O**
@@ -24,6 +24,7 @@ Search based on identifier token.
 *Support:* SHOULD support search by HPI-O.
 
 *Implementation Notes:* [(how to search by token)]
+
 -----------
 
  [(how to search by reference)]: http://hl7.org/fhir/search.html#reference

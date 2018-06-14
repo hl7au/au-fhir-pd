@@ -12,7 +12,7 @@
   <name value="AUPDOrganisation" />
   <title value="AU PD Organisation" />
   <status value="draft" />
-  <date value="2018-08-06"/>
+  <date value="2018-08-06" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -69,6 +69,16 @@
     <element id="Organization.address">
       <path value="Organization.address" />
       <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.state">
+      <path value="Organization.address.state" />
+      <binding>
+        <strength value="required" />
+        <description value="well known state representation" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/pd/ValueSet/au-physical-states-territories" />
+        </valueSetReference>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
