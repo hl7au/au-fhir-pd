@@ -11,7 +11,7 @@ Read identified location resource content.
 *Support:*
 * MUST support read Location
 
-*Implementation Notes:*  [[(how to read resource)]
+*Implementation Notes:*  [(how to read resource)]
 
 -----------
 

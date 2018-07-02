@@ -32,6 +32,12 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="CapabilityStatement/au-pd-capability"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/au-pd-practitioner"/>
 			</sourceReference>
 		</resource>

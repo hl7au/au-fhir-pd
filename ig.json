@@ -8,7 +8,7 @@
        "location" : "http://hl7.org.au/fhir",
 	   "version" : "current"
     }
-  ], 
+  ],  
   "spreadsheets": [],
   "special-urls": [ "http://hl7.org.au/fhir/CodeSystem/smd-interfaces",  "http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" ],
   "extraTemplates": [ "mappings" ],
@@ -89,12 +89,6 @@
 	"CodeSystem/smd-interfaces": {
 	  "base": "CodeSystem-smd-interfaces.html"
 	},
-	"CodeSystem/codesystem-extended-practitioner-role": {
-	  "base": "CodeSystem-codesystem-extended-practitioner-role.html"
-	},
-	"CodeSystem/codesystem-extended-healthcareservice-role": {
-	  "base": "CodeSystem-codesystem-extended-healthcareservice-role.html"
-	},
 	"CodeSystem/endpoint-payload-type": {
 	  "base": "CodeSystem-endpoint-payload-type.html"
 	},
@@ -104,17 +98,8 @@
 	"ValueSet/valueset-au-serviceinterface": {
 	  "base": "ValueSet-valueset-au-serviceinterface.html"
 	},
-	"ValueSet/valueset-pd-healthcareservice-role": {
-	  "base": "ValueSet-valueset-pd-healthcareservice-role.html"
-	},
-	"ValueSet/valueset-pd-practitioner-role": {
-	  "base": "ValueSet-valueset-pd-practitioner-role.html"
-	},
-	"ValueSet/valueset-snomed-healthcareservice-role": {
-	  "base": "ValueSet-valueset-snomed-healthcareservice-role.html"
-	},
-	"ValueSet/valueset-snomed-practitioner-role": {
-	  "base": "ValueSet-valueset-snomed-practitioner-role.html"
+	"ValueSet/au-physical-states-territories": {
+	  "base": "ValueSet-au-physical-states-territories.html"
 	}
   }
 }
