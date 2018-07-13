@@ -12,7 +12,7 @@
   <name value="AUPDSecureMessagingEndpoint" />
   <title value="AU PD Secure Messaging Endpoint" />
   <status value="draft" />
-  <date value="2018-08-06"/>
+  <date value="2018-08-06" />
   <description value="Endpoint for secure message delivery" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -97,7 +97,6 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/encryption-certificate-pem-x509" />
       </type>
       <mustSupport value="true" />
-      <isModifier value="false" />
     </element>
     <element id="Endpoint.identifier">
       <path value="Endpoint.identifier" />
@@ -141,7 +140,9 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-au-serviceinterface" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/pd/ValueSet/au-serviceinterface" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Endpoint.name">
@@ -177,8 +178,10 @@
       <definition value="Reference  to identify the type of payload content (service category)." />
       <mustSupport value="true" />
       <binding>
-        <strength value="preferred" />
-        <valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-au-endpoint-payload-type" />
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/pd/ValueSet/au-endpoint-payload-type" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Endpoint.address">

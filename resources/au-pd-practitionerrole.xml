@@ -12,7 +12,7 @@
   <name value="AUPDPractitionerRole" />
   <title value="AU PD Practitioner Role" />
   <status value="draft" />
-  <date value="2018-08-06"/>
+  <date value="2018-08-06" />
   <description value="Provider directory entry for a practitioner role" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -75,11 +75,13 @@
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
       </type>
+	  <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.identifier:providerNumber.type">
       <path value="PractitionerRole.identifier.type" />
       <short value="Required Provider Number Identifier Type" />
       <definition value="Identifier type of provider number for this practitioner role. Required for Provider Directory." />
+	  <min value="1" />
     </element>
     <element id="PractitionerRole.identifier:providerNumber.type.coding">
       <path value="PractitionerRole.identifier.type.coding" />
@@ -114,26 +116,28 @@
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
       </type>
+	  <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.type">
       <path value="PractitionerRole.identifier.type" />
       <short value="Required National Provider at Organisation Identifier Type" />
       <definition value="Directory Identifier type provider at organisation identifier for this practitioner role" />
+	  <min value="1" />
     </element>
     <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.type.coding">
       <path value="PractitionerRole.identifier.type.coding" />
       <short value="Required Code defined by a terminology system" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier">
       <path value="PractitionerRole.identifier" />
-      <sliceName value="secureMessagingVendorProviderIdentifier" />
+      <sliceName value="vendorAssignedDirectoryIdentifier" />
       <short value="Secure Messaging Vendor's Provider Identifier" />
       <definition value="Vendor allocated directory identifier this can be used for search for specific practitioner role directory entry and/or for routing of messages." />
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.extension">
+	  <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension">
       <path value="PractitionerRole.identifier.extension" />
       <slicing>
         <discriminator>
@@ -143,9 +147,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.extension:pdvendorassigningauthority">
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:vendorAssignedDirectoryIdentifierauthority">
       <path value="PractitionerRole.identifier.extension" />
-      <sliceName value="pdvendorassigningauthority" />
+      <sliceName value="vendorassignedsirectoryidentifierassigningauthority" />
       <short value="Optional HL7 V2 routing content" />
       <definition value="Optional HL7 V2 routing content" />
       <max value="1" />
@@ -153,75 +157,54 @@
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
       </type>
-      <mustSupport value="true" />
+	  <mustSupport value="true" />
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.type">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type">
       <path value="PractitionerRole.identifier.type" />
-      <short value="Vendor Directory Identifier Type" />
-      <definition value="Element describing the type of identifier" />
+	  <short value="Vendor assigned directory identifier type" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.type.coding">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.coding">
       <path value="PractitionerRole.identifier.type.coding" />
-      <short value="Vendor Directory Identifier" />
-      <definition value="Type code for vendor directory identifier" />
+	  <short value="Vendor assigned directory identifier type code" />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203" />
-        </valueSetReference>
-      </binding>
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.type.coding.system">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.coding.system">
       <path value="PractitionerRole.identifier.type.coding.system" />
       <min value="1" />
       <fixedUri value="http://hl7.org.au/fhir/v2/0203" />
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.type.coding.code">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.coding.code">
       <path value="PractitionerRole.identifier.type.coding.code" />
       <min value="1" />
-      <fixedCode value="UPIN" />
+      <fixedCode value="VDI" />
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.type.text">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="PractitionerRole.identifier.type.text" />
-      <short value="Vendor Directory Identifier Type" />
-      <definition value="Vendor Directory Identifier type descripition" />
       <min value="1" />
-      <fixedString value="Vendor Directory Identifier" />
+      <fixedString value="Vendor Directory Identifier Type" />
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.system">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.system">
       <path value="PractitionerRole.identifier.system" />
       <short value="Vendor allocated URI" />
       <definition value="Unique namespace for the assigning vendor's identifier value." />
       <min value="1" />
-      <fixedUri value="http://ns.electronichealth.net.au/id/medicare-provider-number" />
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.value">
-      <path value="PractitionerRole.identifier.value" />
-      <short value="Vendor Directory Identifier Value" />
-      <definition value="Assigning directoy vendor's identifier value." />
-      <min value="1" />
-      <example>
-        <label value="Provider number" />
-        <valueString value="2426621B" />
-      </example>
-    </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.assigner">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.assigner">
       <path value="PractitionerRole.identifier.assigner" />
-      <short value="Secure messaging vendor organisation" />
+	  <short value="Assigning vendor reference" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.identifier:secureMessagingVendorProviderIdentifier.assigner.display">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="PractitionerRole.identifier.assigner.display" />
-      <short value="Secure messaging vendor organisation name" />
+	  <short value="Assigning vendor name" />
       <min value="1" />
     </element>
     <element id="PractitionerRole.active">
