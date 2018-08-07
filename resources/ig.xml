@@ -80,7 +80,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/valueset-au-serviceinterface"/>
+				<reference value="ValueSet/service-interface"/>
 			</sourceReference>
 		</resource>
 		<resource>
@@ -98,7 +98,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/valueset-au-endpoint-payload-type"/>
+				<reference value="ValueSet/endpoint-payload-type"/>
 			</sourceReference>
 		</resource>
 	  <resource>
