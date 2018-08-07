@@ -92,11 +92,11 @@
 	"CodeSystem/endpoint-payload-type": {
 	  "base": "CodeSystem-endpoint-payload-type.html"
 	},
-	"ValueSet/au-endpoint-payload-type": {
-	  "base": "ValueSet-au-endpoint-payload-type.html"
+	"ValueSet/endpoint-payload-type": {
+	  "base": "ValueSet-endpoint-payload-type.html"
 	},
-	"ValueSet/au-serviceinterface": {
-	  "base": "ValueSet-au-serviceinterface.html"
+	"ValueSet/service-interface": {
+	  "base": "ValueSet-service-interface.html"
 	},
 	"ValueSet/au-physical-states-territories": {
 	  "base": "ValueSet-au-physical-states-territories.html"
