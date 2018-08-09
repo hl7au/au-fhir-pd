@@ -138,7 +138,7 @@
       <binding>
         <strength value="required" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/pd/ValueSet/service-interfaces" />
+          <reference value="http://hl7.org.au/fhir/pd/ValueSet/service-interface" />
         </valueSetReference>
       </binding>
     </element>
