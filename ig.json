@@ -95,8 +95,8 @@
 	"ValueSet/endpoint-payload-type": {
 	  "base": "ValueSet-endpoint-payload-type.html"
 	},
-	"ValueSet/service-interface": {
-	  "base": "ValueSet-service-interface.html"
+	"ValueSet/service-interfaces": {
+	  "base": "ValueSet-service-interfaces.html"
 	},
 	"ValueSet/au-physical-states-territories": {
 	  "base": "ValueSet-au-physical-states-territories.html"
