@@ -31,7 +31,7 @@ Search based on token for the type of content supported by the endpoint.
  
 `GET [base]/Endpoint?payload-type=[system]|[code]`
 
-*Example:* `GET [base]/Endpoint?payload-type=http://hl7.org.au/fhir/CodeSystem/smd-interfaces|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
+*Example:* `GET [base]/Endpoint?payload-type=http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
 
 *Support:* MUST support search by Payload Type.
 
