@@ -80,7 +80,7 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
-				<reference value="ValueSet/service-interface"/>
+				<reference value="ValueSet/service-interfaces"/>
 			</sourceReference>
 		</resource>
 		<resource>

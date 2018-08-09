@@ -94,7 +94,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/encryption-certificate-pem-x509" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Endpoint.identifier">
       <path value="Endpoint.identifier" />
@@ -139,7 +138,7 @@
       <binding>
         <strength value="required" />
         <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/pd/ValueSet/service-interface" />
+          <reference value="http://hl7.org.au/fhir/pd/ValueSet/service-interfaces" />
         </valueSetReference>
       </binding>
     </element>
