@@ -5,7 +5,8 @@
 		<lastUpdated value="2017-02-20T18:54:35.273-05:00"/>
 	</meta>
 	<url value="http://hl7.org.au/fhir/pd/ValueSet/service-interfaces"/>
-	<name value="Australian Service Interfaces"/>
+	<name value="AustralianServiceInterfaces"/>
+	<title value="Australian Service Interfaces"/>
 	<status value="draft"/>
 	<publisher value="Health Level Seven Australia"/>
 	<contact>
