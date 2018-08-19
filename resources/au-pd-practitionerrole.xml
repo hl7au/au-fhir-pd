@@ -75,7 +75,31 @@
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
       </type>
-	  <mustSupport value="true" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:namespace-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="namespace-id" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:namespace-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id-type">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id-type" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id-type.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
     </element>
     <element id="PractitionerRole.identifier:providerNumber.type">
       <path value="PractitionerRole.identifier.type" />
@@ -116,7 +140,31 @@
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
       </type>
-	  <mustSupport value="true" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:namespace-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="namespace-id" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:namespace-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id-type">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id-type" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id-type.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
     </element>
     <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.type">
       <path value="PractitionerRole.identifier.type" />
@@ -137,7 +185,7 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
-	  <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier2.extension">
       <path value="PractitionerRole.identifier.extension" />
       <slicing>
         <discriminator>
@@ -147,12 +195,13 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:vendorAssignedDirectoryIdentifierauthority">
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority">
       <path value="PractitionerRole.identifier.extension" />
-      <sliceName value="vendorassignedsirectoryidentifierassigningauthority" />
-      <short value="Optional HL7 V2 routing content" />
-      <definition value="Optional HL7 V2 routing content" />
       <max value="1" />
+      <sliceName value="vdiAssigningAuthority" />
+      <short value="HL7 V2 Assigning Authority" />
+      <definition value="Values for routing HLV2 messages, useful for PRD-7 provider identifier." />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
@@ -161,7 +210,7 @@
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type">
       <path value="PractitionerRole.identifier.type" />
-	  <short value="Vendor assigned directory identifier type" />
+      <short value="Vendor assigned directory identifier type" />
       <min value="1" />
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.coding">
@@ -190,8 +239,6 @@
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.system">
       <path value="PractitionerRole.identifier.system" />
-      <short value="Vendor allocated URI" />
-      <definition value="Unique namespace for the assigning vendor's identifier value." />
       <min value="1" />
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.assigner">
