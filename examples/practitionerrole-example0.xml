@@ -9,7 +9,7 @@
 				<valueString value="33443682-91F6-11D2-8F2C-444553540123"/>
 			</extension>
 			<extension url="universal-id-type">
-				<valueCode value="GUID"/>
+				<valueString value="GUID"/>
 			</extension>
 		</extension>
 		<type>
@@ -31,7 +31,7 @@
 				<valueString value="33443682-91F6-11D2-8F2C-444553540123"/>
 			</extension>
 			<extension url="universal-id-type">
-				<valueCode value="GUID"/>
+				<valueString value="GUID"/>
 			</extension>
 		</extension>
 		<type>
