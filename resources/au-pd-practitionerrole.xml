@@ -133,7 +133,7 @@
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.coding.system">
       <path value="PractitionerRole.identifier.type.coding.system" />
-      <short value="Vendor assigned directory identifier type code" />
+      <short value="Vendor assigned directory identifier type coding system" />
       <min value="1" />
       <fixedUri value="http://hl7.org.au/fhir/v2/0203" />
     </element>
@@ -152,6 +152,7 @@
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.system">
       <path value="PractitionerRole.identifier.system" />
+	  <short value="Required vendor assigned identifier system URI" />
       <min value="1" />
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.assigner">
