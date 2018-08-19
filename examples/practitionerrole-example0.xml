@@ -55,13 +55,13 @@
 	<organization>
 		<reference value="Organization/example0"/>
 	</organization>
-	<code>
+	<specialty>
 		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="17561000"/>
 			<display value="Cardiologist"/>
 		</coding>
-	</code>
+	</specialty>
 	<location>
 		<reference value="Location/example0"/>
 	</location>
