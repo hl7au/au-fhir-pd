@@ -69,37 +69,48 @@
   "npm-name" : "hl7.fhir.au.pd",
   "resources": {
 	"StructureDefinition/au-pd-practitioner": {
-	  "base": "StructureDefinition-au-pd-practitioner.html"
+	  "base": "StructureDefinition-au-pd-practitioner.html",
+	  "defns": "StructureDefinition-au-pd-practitioner-definitions.html"
 	},
 	"StructureDefinition/au-pd-practitionerrole": {
-	  "base": "StructureDefinition-au-pd-practitionerrole.html"
+	  "base": "StructureDefinition-au-pd-practitionerrole.html",
+	  "defns": "StructureDefinition-au-pd-practitionerrole-definitions.html"
 	},
 	"StructureDefinition/au-pd-organisation": {
-	  "base": "StructureDefinition-au-pd-organisation.html"
+	  "base": "StructureDefinition-au-pd-organisation.html",
+	  "defns": "StructureDefinition-au-pd-organisation-definitions.html"
 	},
 	"StructureDefinition/au-pd-sm-endpoint": {
-	  "base": "StructureDefinition-au-pd-sm-endpoint.html"
+	  "base": "StructureDefinition-au-pd-sm-endpoint.html",
+	  "defns": "StructureDefinition-au-pd-sm-endpoint-definitions.html"
 	},
 	"StructureDefinition/au-pd-healthcareservice": {
-	  "base": "StructureDefinition-au-pd-healthcareservice.html"
+	  "base": "StructureDefinition-au-pd-healthcareservice.html",
+	  "defns": "StructureDefinition-au-pd-healthcareservice-definitions.html"
 	},
 	"StructureDefinition/au-pd-location": {
-	  "base": "StructureDefinition-au-pd-location.html"
+	  "base": "StructureDefinition-au-pd-location.html",
+	  "defns": "StructureDefinition-au-pd-location-definitions.html"
 	},
 	"CodeSystem/smd-interfaces": {
-	  "base": "CodeSystem-smd-interfaces.html"
+	  "base": "CodeSystem-smd-interfaces.html",
+	  "defns": "CodeSystem-smd-interfaces-definitions.html"
 	},
 	"CodeSystem/endpoint-payload-type": {
-	  "base": "CodeSystem-endpoint-payload-type.html"
+	  "base": "CodeSystem-endpoint-payload-type.html",
+	  "defns": "CodeSystem-endpoint-payload-type-definitions.html"
 	},
 	"ValueSet/endpoint-payload-type": {
-	  "base": "ValueSet-endpoint-payload-type.html"
+	  "base": "ValueSet-endpoint-payload-type.html",
+	  "defns": "ValueSet-endpoint-payload-type-definitions.html"
 	},
 	"ValueSet/service-interfaces": {
-	  "base": "ValueSet-service-interfaces.html"
+	  "base": "ValueSet-service-interfaces.html",
+	  "defns": "ValueSet-service-interfaces-definitions.html"
 	},
 	"ValueSet/au-physical-states-territories": {
-	  "base": "ValueSet-au-physical-states-territories.html"
+	  "base": "ValueSet-au-physical-states-territories.html",
+	  "defns": "ValueSet-au-physical-states-territories-definitions.html"
 	}
   }
 }

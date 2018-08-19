@@ -19,7 +19,7 @@
 	</contact>
 	<contact>
 		<name value="Secure Messaging Technical Working Group"/>
-		<telecom>
+		<telecom> 
 			<system value="url"/>
 			<value value="https://collaborate.digitalhealth.gov.au/display/SMT/Secure+Messaging+TWG+Home"/>
 			<use value="work"/>
