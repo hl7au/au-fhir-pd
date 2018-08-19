@@ -67,16 +67,6 @@
       </constraint>
       <mustSupport value="true" />
     </element>
-    <element id="HealthcareService.identifier:hpio.extension">
-      <path value="HealthcareService.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="HealthcareService.identifier:hpio.extension:hpioassigningauthority">
       <path value="HealthcareService.identifier.extension" />
       <sliceName value="hpioassigningauthority" />
@@ -117,16 +107,6 @@
       <short value="Secure Messaging Vendor's Healthcare Service Identifier" />
       <definition value="Vendor allocated directory identifier this can be used for search for specific healtchare service directory entry and/or for routing of messages." />
       <mustSupport value="true" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.extension">
-      <path value="HealthcareService.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="HealthcareService.identifier:pdvendor.extension:pdvendorassigningauthority">
       <path value="HealthcareService.identifier.extension" />
