@@ -29,16 +29,6 @@
       <path value="Organization.meta" />
       <short value="Metadata about the resource (extended)" />
     </element>
-    <element id="Organization.meta.extension">
-      <path value="Organization.meta.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Organization.meta.extension:source">
       <path value="Organization.meta.extension" />
       <sliceName value="source" />

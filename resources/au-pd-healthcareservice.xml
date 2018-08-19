@@ -30,16 +30,6 @@
       <path value="HealthcareService.meta" />
       <short value="Metadata about the resource (extended)" />
     </element>
-    <element id="HealthcareService.meta.extension">
-      <path value="HealthcareService.meta.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="HealthcareService.meta.extension:source">
       <path value="HealthcareService.meta.extension" />
       <sliceName value="source" />
