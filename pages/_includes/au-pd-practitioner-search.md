@@ -22,7 +22,7 @@ Search based on active status of the practitioner record.
 
 *Support:*
 
-* MUST support search Practitioner by active status.
+* MUST support search Practitioner by active status (true \| false).
 
 *Implementation Notes:* [(how to search by token)]
 

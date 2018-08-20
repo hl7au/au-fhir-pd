@@ -24,7 +24,7 @@ Search based on active status of the healthcare service record.
 
 *Support:*
 
-* MUST support search HealthcareService by active status (true | false).
+* MUST support search HealthcareService by active status (true \| false).
 
 *Implementation Notes:* [(how to search by token)]
 

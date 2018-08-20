@@ -1,5 +1,6 @@
 Australian Secure Messaging Endpoint Directory Entry
 
+1. Must Support Optional: Meta-Source (uri)
 1. Must Support Required: Active Status (code)
 1. Must Support Required: Connection Type - Service Interface Type (Coding)
 1. Must Support Required: Managing Organisation (with display text) (Organization Reference)

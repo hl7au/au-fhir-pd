@@ -23,7 +23,7 @@ Search based on active status of the organisation record.
 
 *Support:*
 
-* MUST support search Organization by active status (true | false).
+* MUST support search Organization by active status (true \| false).
 
 *Implementation Notes:* [(how to search by token)]
 

@@ -25,7 +25,7 @@ Search based on active status of the practitioner role record.
 
 *Support:*
 
-* MUST support search PractitionerRole by active status (true | false).
+* MUST support search PractitionerRole by active status (true \| false).
 
 *Implementation Notes:* [(how to search by token)]
 

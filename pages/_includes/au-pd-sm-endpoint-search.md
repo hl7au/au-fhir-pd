@@ -22,7 +22,7 @@ Search based on active status of the endpoint record.
 
 *Support:*
 
-* MUST support search Organization by active status code (active | suspended | error | off | entered-in-error | test)
+* MUST support search Organization by active status code (active \| suspended \| error \| off \| entered-in-error \| test)
 
 *Implementation Notes:* [(how to search by token)]
 
