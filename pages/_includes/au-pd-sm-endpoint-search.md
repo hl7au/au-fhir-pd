@@ -66,10 +66,10 @@ Search based string element content in the au-receivingfacility extension. (name
 
 *Implementation Notes:* [(how to search by string)]
 
-* For searching explicitly for empty elements use *:missing=true*  e.g. au-receivingfacility-universal-id-type:missing=true
-* Definition: au-receivingfacility-namespace-id search extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('namespace-id').value	(MSH-6.1)
-* Definition: au-receivingfacility-universal-id	search extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('universal-id').value	(MSH-6.2)
-* Definition: au-receivingfacility-universal-id-type search extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('universal-id-type').value (MSH-6.3)
+* For searching explicitly for empty elements use *:missing=true*  e.g. `au-receivingfacility-universal-id-type:missing=true`
+* Definition: `au-receivingfacility-namespace-id search extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('namespace-id').value`	(MSH-6.1)
+* Definition: `au-receivingfacility-universal-id search extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('universal-id').value`	(MSH-6.2)
+* Definition: `au-receivingfacility-universal-id-type search extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('universal-id-type').value` (MSH-6.3)
 
 -----------
 
