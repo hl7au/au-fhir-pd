@@ -12,9 +12,22 @@ Read identified location resource content.
 * MUST support read Location
 
 *Implementation Notes:*  [(how to read resource)]
+-----------
+**Search: Active Status**
+
+Search based on active status of the endpoint record.
+
+`GET [base]/Endpoint?status=[code]`
+
+*Example:* `GET [base]/Endpoint?status=active`
+
+*Support:*
+
+* MUST support search Organization by active status code (active \| suspended \| inactive)
+
+*Implementation Notes:* [(how to search by token)]
 
 -----------
-
 **Search: Location Address Parts**
 
 Search based on address parts for postcode, suburb, and state.
@@ -37,8 +50,7 @@ Search based on address parts for postcode, suburb, and state.
 * SHOULD support search Location by address parts address-postalcode, address-city, address-state.
 * SHOULD support basic **param=[string]** search which is case and accent-insensitive search;  field equals or starts with the string value.
 
-*Implementation Notes:* 
-[(how to search by token)]
+*Implementation Notes:* [(how to search by token)]
 
 -----------
 **Search: Location Distance**
