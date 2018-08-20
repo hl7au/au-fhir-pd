@@ -12,6 +12,7 @@ Read identified location resource content.
 * MUST support read Location
 
 *Implementation Notes:*  [(how to read resource)]
+
 -----------
 **Search: Active Status**
 
