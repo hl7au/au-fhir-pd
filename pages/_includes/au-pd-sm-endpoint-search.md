@@ -12,6 +12,22 @@ Read identified endpoint resource content.
 *Implementation Notes:*  [[(how to read resource)]
 
 -----------
+**Search: Active Status**
+
+Search based on active status of the endpoint record.
+
+`GET [base]/Endpoint?status=[code]`
+
+*Example:* `GET [base]/Endpoint?status=active`
+
+*Support:*
+
+* MUST support search Organization by active status code (active | suspended | error | off | entered-in-error | test)
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
+
 **Search: Connection Type (Service Interface)**
 
 Search based on token for a protocol to be used to connnect to the endpoint.

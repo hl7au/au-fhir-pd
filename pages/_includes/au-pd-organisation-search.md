@@ -13,6 +13,21 @@ Read identified organisation resource content.
 *Implementation Notes:*  [(how to read resource)]
 
 -----------
+**Search: Active Status**
+
+Search based on active status of the organisation record.
+
+`GET [base]/Organization?active=[status]`
+
+*Example:* `GET [base]/Organization?active=true`
+
+*Support:*
+
+* MUST support search Organization by active status (true | false).
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
 **Search: HPI-O**
 
 Search based on identifier token.

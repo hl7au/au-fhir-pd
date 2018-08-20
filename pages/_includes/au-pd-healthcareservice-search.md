@@ -14,6 +14,21 @@ Read identified healthcare service resource content.
 *Implementation Notes:*  [[(how to read resource)]
 
 -----------
+**Search: Active Status**
+
+Search based on active status of the healthcare service record.
+
+`GET [base]/HealthcareService?active=[status]`
+
+*Example:* `GET [base]/HealthcareService?active=true`
+
+*Support:*
+
+* MUST support search HealthcareService by active status (true | false).
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
 **Search: Name**
 
 Search for a healthcare service by name.
