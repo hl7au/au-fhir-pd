@@ -143,30 +143,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:namespace-id">
-      <path value="PractitionerRole.identifier.extension.extension" />
-      <sliceName value="namespace-id" />
-    </element>
-    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:namespace-id.valueString:valueString">
-      <path value="PractitionerRole.identifier.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id">
-      <path value="PractitionerRole.identifier.extension.extension" />
-      <sliceName value="universal-id" />
-    </element>
-    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id.valueString:valueString">
-      <path value="PractitionerRole.identifier.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id-type">
-      <path value="PractitionerRole.identifier.extension.extension" />
-      <sliceName value="universal-id-type" />
-    </element>
-    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id-type.valueString:valueString">
-      <path value="PractitionerRole.identifier.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
     <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.type">
       <path value="PractitionerRole.identifier.type" />
       <short value="Required National Provider at Organisation Identifier Type" />
@@ -206,30 +182,6 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:namespace-id">
-      <path value="PractitionerRole.identifier.extension.extension" />
-      <sliceName value="namespace-id" />
-    </element>
-    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:namespace-id.valueString:valueString">
-      <path value="PractitionerRole.identifier.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:universal-id">
-      <path value="PractitionerRole.identifier.extension.extension" />
-      <sliceName value="universal-id" />
-    </element>
-    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:universal-id.valueString:valueString">
-      <path value="PractitionerRole.identifier.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:universal-id-type">
-      <path value="PractitionerRole.identifier.extension.extension" />
-      <sliceName value="universal-id-type" />
-    </element>
-    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:universal-id-type.valueString:valueString">
-      <path value="PractitionerRole.identifier.extension.extension.valueString" />
-      <sliceName value="valueString" />
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type">
       <path value="PractitionerRole.identifier.type" />
