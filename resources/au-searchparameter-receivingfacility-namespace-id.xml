@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2017-09-08T16:22:39.374+10:00" />
   </meta>
-  <url value="http://hl7.org.au/pd/fhir/SearchParameter/au-searchparameter-receivingfacility-namespace-id" />
+  <url value="http://hl7.org.au/fhir/pd/SearchParameter/au-searchparameter-receivingfacility-namespace-id" />
 	<name value="Search Endpoint Receiving Facility Extension Namespace Id"/>
 	<status value="draft"/>
 	<code value="au-receivingfacility-namespace-id"/>
