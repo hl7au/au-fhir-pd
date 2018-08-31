@@ -29,6 +29,16 @@
       <path value="PractitionerRole.meta" />
       <short value="Metadata about the resource (extended)" />
     </element>
+    <element id="PractitionerRole.meta.extension">
+      <path value="PractitionerRole.meta.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="PractitionerRole.meta.extension:source">
       <path value="PractitionerRole.meta.extension" />
       <sliceName value="source" />
@@ -47,6 +57,16 @@
       <definition value="Directory entry practitioner role Medicare provider number" />
       <mustSupport value="true" />
     </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension">
+      <path value="PractitionerRole.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority">
       <path value="PractitionerRole.identifier.extension" />
       <sliceName value="providernumberassigningauthority" />
@@ -59,11 +79,34 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:namespace-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="namespace-id" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:namespace-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id-type">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id-type" />
+    </element>
+    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id-type.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
     <element id="PractitionerRole.identifier:providerNumber.type">
       <path value="PractitionerRole.identifier.type" />
       <short value="Required Provider Number Identifier Type" />
       <definition value="Identifier type of provider number for this practitioner role. Required for Provider Directory." />
-	  <min value="1" />
     </element>
     <element id="PractitionerRole.identifier:providerNumber.type.coding">
       <path value="PractitionerRole.identifier.type.coding" />
@@ -78,6 +121,16 @@
       <definition value="Directory identifier for a compound practitioner at organisation identifier; formatted as [HPI-I]@[HPI-O]" />
       <mustSupport value="true" />
     </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension">
+      <path value="PractitionerRole.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority">
       <path value="PractitionerRole.identifier.extension" />
       <sliceName value="nationalprovideratorganisationassigningauthority" />
@@ -89,6 +142,30 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:namespace-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="namespace-id" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:namespace-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id-type">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id-type" />
+    </element>
+    <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:nationalprovideratorganisationassigningauthority.extension:universal-id-type.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
     </element>
     <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.type">
       <path value="PractitionerRole.identifier.type" />
@@ -105,8 +182,17 @@
       <sliceName value="vendorAssignedDirectoryIdentifier" />
       <short value="Secure Messaging Vendor's Provider Identifier" />
       <definition value="Vendor allocated directory identifier this can be used for search for specific practitioner role directory entry and/or for routing of messages." />
-      <max value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension">
+      <path value="PractitionerRole.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority">
       <path value="PractitionerRole.identifier.extension" />
@@ -121,25 +207,45 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:namespace-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="namespace-id" />
+    </element>
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:namespace-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:universal-id">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id" />
+    </element>
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:universal-id.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:universal-id-type">
+      <path value="PractitionerRole.identifier.extension.extension" />
+      <sliceName value="universal-id-type" />
+    </element>
+    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority.extension:universal-id-type.valueString:valueString">
+      <path value="PractitionerRole.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type">
       <path value="PractitionerRole.identifier.type" />
       <short value="Vendor assigned directory identifier type" />
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.coding">
       <path value="PractitionerRole.identifier.type.coding" />
-	  <short value="Vendor assigned directory identifier type code" />
+      <short value="Vendor assigned directory identifier type code" />
       <min value="1" />
-      <max value="1" />
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.coding.system">
       <path value="PractitionerRole.identifier.type.coding.system" />
       <short value="Vendor assigned directory identifier type coding system" />
-      <min value="1" />
-      <fixedUri value="http://hl7.org.au/fhir/v2/0203" />
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.coding.code">
       <path value="PractitionerRole.identifier.type.coding.code" />
-      <min value="1" />
       <fixedCode value="VDI" />
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.type.text">
@@ -152,8 +258,9 @@
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.system">
       <path value="PractitionerRole.identifier.system" />
-	  <short value="Required vendor assigned identifier system URI" />
-      <min value="1" />
+      <short value="Required vendor assigned identifier system URI" />
+	  <min value="1" />
+	  <max value="1" />
     </element>
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.assigner">
       <path value="PractitionerRole.identifier.assigner" />
