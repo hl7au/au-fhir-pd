@@ -29,6 +29,16 @@
       <path value="Organization.meta" />
       <short value="Metadata about the resource (extended)" />
     </element>
+    <element id="Organization.meta.extension">
+      <path value="Organization.meta.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Organization.meta.extension:source">
       <path value="Organization.meta.extension" />
       <sliceName value="source" />
@@ -37,27 +47,36 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/meta-source" />
       </type>
     </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <short value="Organisation Directroy Entry Identifiers" />
+    </element>
     <element id="Organization.identifier:hpio">
       <path value="Organization.identifier" />
       <sliceName value="hpio" />
+      <short value="HPI-O for Directory Entty Organisation" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.active">
       <path value="Organization.active" />
+      <short value="Status of Directroy Entry Organisation" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
+      <short value="Name of Directroy Entry Organisation" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
+      <short value="Contact Details of Directroy Entry Organisation" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
+      <short value="Addresses of Directroy Entry Organisation" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.address.state">

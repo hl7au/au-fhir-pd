@@ -79,30 +79,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:namespace-id">
-      <path value="PractitionerRole.identifier.extension.extension" />
-      <sliceName value="namespace-id" />
-    </element>
-    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:namespace-id.valueString:valueString">
-      <path value="PractitionerRole.identifier.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id">
-      <path value="PractitionerRole.identifier.extension.extension" />
-      <sliceName value="universal-id" />
-    </element>
-    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id.valueString:valueString">
-      <path value="PractitionerRole.identifier.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id-type">
-      <path value="PractitionerRole.identifier.extension.extension" />
-      <sliceName value="universal-id-type" />
-    </element>
-    <element id="PractitionerRole.identifier:providerNumber.extension:providernumberassigningauthority.extension:universal-id-type.valueString:valueString">
-      <path value="PractitionerRole.identifier.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
     <element id="PractitionerRole.identifier:providerNumber.type">
       <path value="PractitionerRole.identifier.type" />
       <short value="Required Provider Number Identifier Type" />
