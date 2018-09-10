@@ -23,9 +23,7 @@ Search based on active status of the practitioner role record.
 
 *Example:* `GET [base]/PractitionerRole?active=true`
 
-*Support:*
-
-* MUST support search PractitionerRole by active status (true \| false).
+*Support:* MUST support search PractitionerRole by active status (true \| false).
 
 *Implementation Notes:* [(how to search by token)]
 

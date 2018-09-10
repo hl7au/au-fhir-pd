@@ -20,9 +20,20 @@ Search based on active status of the endpoint record.
 
 *Example:* `GET [base]/Endpoint?status=active`
 
-*Support:*
+*Support:* MUST support search Organization by active status code (active \| suspended \| error \| off \| entered-in-error \| test)
 
-* MUST support search Organization by active status code (active \| suspended \| error \| off \| entered-in-error \| test)
+*Implementation Notes:* [(how to search by token)]
+
+-----------
+**Search: HPI-O**
+
+Search based on identifier token.
+
+`GET [base]/Endpoint?identifier=[system]|[value]`
+
+*Example:* `GET [base]/Endpoint?identifier=http://ns.electronichealth.net.au/smd/target|http://ns.argusdca.com.au/smd/id/hostname/ACC5959010000000`
+
+*Support:* MUST support search by Secure Messaging Target Identifier
 
 *Implementation Notes:* [(how to search by token)]
 

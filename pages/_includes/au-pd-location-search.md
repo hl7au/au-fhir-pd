@@ -22,9 +22,7 @@ Search based on active status of the endpoint record.
 
 *Example:* `GET [base]/Endpoint?status=active`
 
-*Support:*
-
-* MUST support search Organization by active status code (active \| suspended \| inactive)
+*Support:* MUST support search Organization by active status code (active \| suspended \| inactive)
 
 *Implementation Notes:* [(how to search by token)]
 
