@@ -1,0 +1,323 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="search2" />
+    <meta>
+        <lastUpdated value="2018-09-11T05:14:32.921+00:00" />
+    </meta>
+    <type value="searchset" />
+    <total value="1" />
+    <link>
+        <relation value="self" />
+        <url value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService?active=true&amp;name=Downunder&amp;endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type%7Chttp://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location&amp;_include=HealthcareService:organization&amp;_snapshot=636722396729219835" />
+    </link>
+    <link>
+        <relation value="first" />
+        <url value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService?active=true&amp;name=Downunder&amp;endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type%7Chttp://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location&amp;_include=HealthcareService:organization&amp;_snapshot=636722396729219835" />
+    </link>
+    <link>
+        <relation value="last" />
+        <url value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService?active=true&amp;name=Downunder&amp;endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type%7Chttp://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location&amp;_include=HealthcareService:organization&amp;_snapshot=636722396729219835&amp;_page=0" />
+    </link>
+    <entry>
+        <fullUrl value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService/healthcareservice0" />
+        <resource>
+            <HealthcareService>
+                <id value="healthcareservice0" />
+                <meta>
+                    <versionId value="12" />
+                    <lastUpdated value="2018-04-19T05:34:08.193+00:00" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative with Details</b>
+                        </p>
+                        <p>
+                            <b>id</b>: example0
+                        </p>
+                        <p>
+                            <b>active</b>: true
+                        </p>
+                        <p>
+                            <b>providedBy</b>:
+                            <a href="Organization-example0.html">Generated Summary: id: example0; HPI-O = 8003627500000328; active; 
+                    
+                                <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401}">Hospitals (except Psychiatric Hospitals)</span>,
+                                <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8401-15}">Public acute care Hospital</span>; name: Downunder Hospital; helen.mayo@downunderhospital.com.au(WORK)
+                            </a>
+                        </p>
+                        <p>
+                            <b>category</b>: Hospitals (except Psychiatric Hospitals)
+                            <span style="background: LightGoldenRodYellow">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 code '8401' = 'Hospitals (except Psychiatric Hospitals)', given as 'Hospitals (except Psychiatric Hospitals)'})</span>
+                        </p>
+                        <p>
+                            <b>type</b>: Accident and Emergency service
+                            <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '310000008' = 'Accident and Emergency service (qualifier value)', given as 'Accident and Emergency service'})</span>
+                        </p>
+                        <p>
+                            <b>location</b>:
+                            <a href="Location-example0.html">Generated Summary: id: example0; status: active; name: Downunder Hospital Blacktown; ph: 025553555(WORK)</a>
+                        </p>
+                        <p>
+                            <b>name</b>: Downunder Hospital Accident and Emergency
+                        </p>
+                        <p>
+                            <b>telecom</b>: ph: 025553333(WORK)
+                        </p>
+                        <p>
+                            <b>endpoint</b>:
+                            <a href="Endpoint-example0.html">Generated Summary: id: example0; status: active; 
+                    
+                                <span title="{http://ns.electronichealth.net.au/smd/intf http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010}">Sealed Message Delivery</span>; name: Medical Objects Test Secure Messaging Endpoint; jared@example.org(WORK); period: 18/08/2017 --&gt; (ongoing);
+                                <span title="Codes: {http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706}, {http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type http://ns.electronichealth.net.au/ds/sc/deliver/hl7Mdm/2012}">Simplified Profile for HL7 V2.4 REF message</span>; payloadMimeType: application/hl7-v2; address: https://smd-ep.test.medical-objects.com.au/smd/2010
+                            </a>
+                        </p>
+                    </div>
+                </text>
+                <identifier>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0" />
+                    <value value="8003627500000328" />
+                </identifier>
+                <active value="true" />
+                <providedBy>
+                    <reference value="Organization/organization0" />
+                    <display value="Downunder Hospital" />
+                </providedBy>
+                <category>
+                    <coding>
+                        <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0" />
+                        <code value="8401" />
+                        <display value="Hospitals (except Psychiatric Hospitals)" />
+                    </coding>
+                </category>
+                <specialty>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="310000008" />
+                        <display value="Accident and Emergency service" />
+                    </coding>
+                </specialty>
+                <location>
+                    <reference value="Location/location0" />
+                </location>
+                <name value="Downunder Hospital Accident and Emergency" />
+                <telecom>
+                    <system value="phone" />
+                    <value value="025553333" />
+                    <use value="work" />
+                </telecom>
+                <endpoint>
+                    <reference value="Endpoint/endpoint0" />
+                </endpoint>
+            </HealthcareService>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://sqlonfhir-aupd.azurewebsites.net/fhir/Endpoint/endpoint0" />
+        <resource>
+            <Endpoint>
+                <id value="endpoint0" />
+                <meta>
+                    <versionId value="18" />
+                    <lastUpdated value="2018-04-19T05:34:07.568+00:00" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <b>Medical Objects Test Secure Messaging Endpoint</b>
+                        <hr />
+                        <span style="color: gray;">Work - Email:</span> jared@example.org
+                    </div>
+                </text>
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/encryption-certificate-pem-x509">
+                    <valueString value="-----BEGIN CERTIFICATE-----MIICVjCCAb8CAg37MA0GCSqGSIb3DQEBBQUAMIGbMQswCQYDVQQGEwJKUDEOMAwGA1UECBMFVG9reW8xEDAOBgNVBAcTB0NodW8ta3UxETAPBgNVBAoTCEZyYW5rNEREMRgwFgYDVQQLEw9XZWJDZXJ0IFN1cHBvcnQxGDAWBgNVBAMTD0ZyYW5rNEREIFdlYiBDQTEjMCEGCSqGSIb3DQEJARYUc3VwcG9ydEBmcmFuazRkZC5jb20wHhcNMTIwODIyMDUyNzIzWhcNMTcwODIxMDUyNzIzWjBKMQswCQYDVQQGEwJKUDEOMAwGA1UECAwFVG9reW8xETAPBgNVBAoMCEZyYW5rNEREMRgwFgYDVQQDDA93d3cuZXhhbXBsZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMYBBrx5PlP0WNI/ZdzD+6Pktmurn+F2kQYbtc7XQh8/LTBvCo+P6iZoLEmUA9e7EXLRxgU1CVqeAi7QcAn9MwBlc8ksFJHB0rtf9pmf8Oza9E0Bynlq/4/Kb1x+d+AyhL7oK9tQwB24uHOueHi1C/iVv8CSWKiYe6hzN1txYe8rAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAASPdjigJkXCqKWpnZ/Oc75EUcMi6HztaW8abUMlYXPIgkV2F7YanHOB7K4f7OOLjiz8DTPFfjC9UeuErhaA/zzWi8ewMTFZW/WshOrm3fNvcMrMLKtH534JKvcdMg6qIdjTFINIrevnAhf0cwULaebn+lMs8Pdl7y37+sfluVok=-----END CERTIFICATE-----" />
+                </extension>
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility">
+                    <extension url="namespace-id">
+                        <valueString value="Buderim Medical Center" />
+                    </extension>
+                    <extension url="universal-id">
+                        <valueString value="877F9695-1298-4E6A-B432-0FDD46AD80B8" />
+                    </extension>
+                    <extension url="universal-id-type">
+                        <valueString value="GUID" />
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication">
+                    <extension url="namespace-id">
+                        <valueString value="Equator" />
+                    </extension>
+                    <extension url="universal-id">
+                        <valueString value="Equator:3.1.4" />
+                    </extension>
+                    <extension url="universal-id-type">
+                        <valueString value="L" />
+                    </extension>
+                </extension>
+                <status value="active" />
+                <connectionType>
+                    <system value="http://hl7.org.au/fhir/CodeSystem/smd-interfaces" />
+                    <code value="http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010" />
+                </connectionType>
+                <name value="Medical Objects Test Secure Messaging Endpoint" />
+                <managingOrganization>
+                    <display value="Medical Objects" />
+                </managingOrganization>
+                <contact>
+                    <system value="email" />
+                    <value value="jared@example.org" />
+                    <use value="work" />
+                </contact>
+                <period>
+                    <start value="2017-08-18" />
+                </period>
+                <payloadType>
+                    <coding>
+                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
+                        <code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706" />
+                    </coding>
+                    <coding>
+                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
+                        <code value="http://ns.electronichealth.net.au/ds/sc/deliver/hl7Mdm/2012" />
+                    </coding>
+                </payloadType>
+                <payloadMimeType value="application/hl7-v2" />
+                <address value="https://smd-ep.test.medical-objects.com.au/smd/2010" />
+            </Endpoint>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://sqlonfhir-aupd.azurewebsites.net/fhir/Location/location0" />
+        <resource>
+            <Location>
+                <id value="location0" />
+                <meta>
+                    <versionId value="18" />
+                    <lastUpdated value="2018-04-19T05:33:11.811+00:00" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative with Details</b>
+                        </p>
+                        <p>
+                            <b>id</b>: example0
+                        </p>
+                        <p>
+                            <b>status</b>: active
+                        </p>
+                        <p>
+                            <b>name</b>: Downunder Hospital Blacktown
+                        </p>
+                        <p>
+                            <b>telecom</b>: ph: 025553555(WORK)
+                        </p>
+                        <p>
+                            <b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)
+                        </p>
+                    </div>
+                </text>
+                <status value="active" />
+                <name value="Downunder Hospital Blacktown" />
+                <telecom>
+                    <system value="phone" />
+                    <value value="025553555" />
+                    <use value="work" />
+                </telecom>
+                <address>
+                    <use value="work" />
+                    <line value="3 McGregor Street" />
+                    <city value="Blacktown" />
+                    <state value="NSW" />
+                    <postalCode value="2148" />
+                    <country value="Australia" />
+                </address>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://sqlonfhir-aupd.azurewebsites.net/fhir/Organization/organization0" />
+        <resource>
+            <Organization>
+                <id value="organization0" />
+                <meta>
+                    <versionId value="22" />
+                    <lastUpdated value="2018-04-19T05:34:05.14+00:00" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Generated Narrative with Details</b>
+                        </p>
+                        <p>
+                            <b>id</b>: example0
+                        </p>
+                        <p>
+                            <b>identifier</b>: HPI-O = 8003627500000328
+                        </p>
+                        <p>
+                            <b>active</b>: true
+                        </p>
+                        <p>
+                            <b>type</b>: Hospitals (except Psychiatric Hospitals)
+                            <span style="background: LightGoldenRodYellow">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 code '8401' = 'Hospitals (except Psychiatric Hospitals)', given as 'Hospitals (except Psychiatric Hospitals)'})</span>, Public acute care Hospital
+                            <span style="background: LightGoldenRodYellow">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 code '8401-15' = 'Public acute care Hospital', given as 'Public acute care Hospital'})</span>
+                        </p>
+                        <p>
+                            <b>name</b>: Downunder Hospital
+                        </p>
+                        <p>
+                            <b>telecom</b>: helen.mayo@downunderhospital.com.au(WORK)
+                        </p>
+                        <p>
+                            <b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)
+                        </p>
+                    </div>
+                </text>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org.au/fhir/v2/0203" />
+                            <code value="NOI" />
+                            <display value="National Organization Identifier" />
+                        </coding>
+                        <text value="HPI-O" />
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0" />
+                    <value value="8003627500000328" />
+                </identifier>
+                <active value="true" />
+                <type>
+                    <coding>
+                        <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0" />
+                        <code value="8401" />
+                        <display value="Hospitals (except Psychiatric Hospitals)" />
+                    </coding>
+                </type>
+                <type>
+                    <coding>
+                        <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0" />
+                        <code value="8401-15" />
+                        <display value="Public acute care Hospital" />
+                    </coding>
+                </type>
+                <name value="Downunder Hospital" />
+                <telecom>
+                    <system value="email" />
+                    <value value="helen.mayo@downunderhospital.com.au" />
+                    <use value="work" />
+                </telecom>
+                <address>
+                    <use value="work" />
+                    <line value="3 McGregor Street" />
+                    <city value="Blacktown" />
+                    <state value="NSW" />
+                    <postalCode value="2148" />
+                    <country value="Australia" />
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+</Bundle>

@@ -149,11 +149,29 @@
 				<reference value="Endpoint/example0"/>
 			</sourceReference>
 		</resource>
-	<resource>
-		<example value="true"/>
-			<sourceReference>
-				<reference value="Endpoint/example1"/>
-			</sourceReference>
+	    <resource>
+		  <example value="true"/>
+	      <sourceReference>
+			<reference value="Endpoint/example1"/>
+		  </sourceReference>
+		</resource>
+		<resource>
+		  <example value="true"/>
+	      <sourceReference>
+			<reference value="Bundle/search1"/>
+		  </sourceReference>
+		</resource>
+		<resource>
+		  <example value="true"/>
+	      <sourceReference>
+			<reference value="Bundle/search2"/>
+		  </sourceReference>
+		</resource>
+		<resource>
+		  <example value="true"/>
+	      <sourceReference>
+			<reference value="Bundle/search3"/>
+		  </sourceReference>
 		</resource>
 		<resource>
 		<example value="true"/>

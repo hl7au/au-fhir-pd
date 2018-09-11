@@ -52,6 +52,10 @@
 	"Endpoint": { 
 		"template-base": "ex.html",
 		"template-format": "ex-format.html" 
+	},
+	"Bundle": { 
+		"template-base": "ex.html",
+		"template-format": "ex-format.html" 
 	}
   },
   "tool": "jekyll",
