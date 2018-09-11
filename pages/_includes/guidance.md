@@ -96,6 +96,7 @@ This ensures that all health care service are associated to one location, and an
 <br/>
 <br/>
 
+
 ## Provider Directory Usage Sequence for Secure Messaging
 
 Typical sequence describing endpoint search, HL7 V2 generation, secure message composition, secure message delivery via intermediary, acknowledgement response addressing, generation and delivery.
