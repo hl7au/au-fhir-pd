@@ -88,6 +88,30 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="HealthcareService.identifier:hpio.extension:hpioassigningauthority.extension:namespace-id">
+      <path value="HealthcareService.identifier.extension.extension" />
+      <sliceName value="namespace-id" />
+    </element>
+    <element id="HealthcareService.identifier:hpio.extension:hpioassigningauthority.extension:namespace-id.valueString:valueString">
+      <path value="HealthcareService.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="HealthcareService.identifier:hpio.extension:hpioassigningauthority.extension:universal-id">
+      <path value="HealthcareService.identifier.extension.extension" />
+      <sliceName value="universal-id" />
+    </element>
+    <element id="HealthcareService.identifier:hpio.extension:hpioassigningauthority.extension:universal-id.valueString:valueString">
+      <path value="HealthcareService.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="HealthcareService.identifier:hpio.extension:hpioassigningauthority.extension:universal-id-type">
+      <path value="HealthcareService.identifier.extension.extension" />
+      <sliceName value="universal-id-type" />
+    </element>
+    <element id="HealthcareService.identifier:hpio.extension:hpioassigningauthority.extension:universal-id-type.valueString:valueString">
+      <path value="HealthcareService.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
     <element id="HealthcareService.identifier:hpio.type">
       <path value="HealthcareService.identifier.type" />
       <short value="HPI-O Identifier Type" />
@@ -138,6 +162,30 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.extension:pdvendorassigningauthority.extension:namespace-id">
+      <path value="HealthcareService.identifier.extension.extension" />
+      <sliceName value="namespace-id" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.extension:pdvendorassigningauthority.extension:namespace-id.valueString:valueString">
+      <path value="HealthcareService.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.extension:pdvendorassigningauthority.extension:universal-id">
+      <path value="HealthcareService.identifier.extension.extension" />
+      <sliceName value="universal-id" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.extension:pdvendorassigningauthority.extension:universal-id.valueString:valueString">
+      <path value="HealthcareService.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.extension:pdvendorassigningauthority.extension:universal-id-type">
+      <path value="HealthcareService.identifier.extension.extension" />
+      <sliceName value="universal-id-type" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.extension:pdvendorassigningauthority.extension:universal-id-type.valueString:valueString">
+      <path value="HealthcareService.identifier.extension.extension.valueString" />
+      <sliceName value="valueString" />
     </element>
     <element id="HealthcareService.identifier:pdvendor.type">
       <path value="HealthcareService.identifier.type" />
@@ -234,8 +282,9 @@
     </element>
     <element id="HealthcareService.location">
       <path value="HealthcareService.location" />
-      <short value="Location(s) where health service is provided" />
+      <short value="Single location for this service" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-location" />
