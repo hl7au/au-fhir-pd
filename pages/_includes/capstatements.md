@@ -62,7 +62,7 @@ Expected adherence to search parameters:
 
 Expected Bundle result support and behaviour:
 * Bundle.link (paging) MAY be supplied by directory service provider, this is most useful as _count limit on result count suggests paging is desirable.
-* Bundle.link (paging) with IANA link relation 'next'[1](http://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1) MUST be supported by client consuming system to allow next page retrieval when available.
+* Bundle.link (paging) with IANA link relation 'next'[<sup>[1]</sup>](http://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1) MUST be supported by client consuming system to allow next page retrieval when available.
 
 
 
