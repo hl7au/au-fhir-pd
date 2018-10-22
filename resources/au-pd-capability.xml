@@ -1,0 +1,1832 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/capabilitystatement.xsd">
+	<id value="au-pd-capability"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			Example PD minimum capability statement
+		</div>
+	</text>
+	<url value="http://hl7.org.au/fhir/pd/CapabilityStatement/au-pd-capability"/>
+	<version value="1.0"/>
+	<name value="au-pd-capability"/>
+	<status value="active"/>
+	<experimental value="true"/>
+	<date value="2017-11-21T11:05:09.725+00:00"/>
+	<publisher value="HL7 AU"/>
+	<description value="HL7 AU example provider directory service capability statement"/>
+	<copyright value="HL7 AU"/>
+	<kind value="instance"/>
+	<fhirVersion value="3.0.1"/>
+	<acceptUnknown value="extensions"/>
+	<format value="xml"/>
+	<format value="json"/>
+	<rest>
+		<mode value="server"/>
+		<security>
+			<cors value="true"/>
+		</security>
+		<resource>
+			<type value="Practitioner"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchParam>
+				<name value="address"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-city"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-country"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-postalcode"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-state"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-use"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="email"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="family"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="gender"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="given"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="phone"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="phonetic"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="telecom"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="active"/>
+				<type value="token"/>
+				<documentation value="Whether the practitioner record is active"/>
+			</searchParam>
+			<searchParam>
+				<name value="communication"/>
+				<type value="token"/>
+				<documentation value="One of the languages that the practitioner can communicate with"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="A practitioner's Identifier"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Organization"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="endpoint"/>
+			<searchInclude value="partof"/>
+			<searchParam>
+				<name value="active"/>
+				<type value="token"/>
+				<documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
+			</searchParam>
+			<searchParam>
+				<name value="address"/>
+				<type value="string"/>
+				<documentation value="A (part of the) address of the organization"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-city"/>
+				<type value="string"/>
+				<documentation value="A city specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-country"/>
+				<type value="string"/>
+				<documentation value="A country specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-postalcode"/>
+				<type value="string"/>
+				<documentation value="A postal code specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-state"/>
+				<type value="string"/>
+				<documentation value="A state specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-use"/>
+				<type value="token"/>
+				<documentation value="A use code specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="endpoint"/>
+				<type value="reference"/>
+				<documentation value="Technical endpoints providing access to services operated for the organization"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="Any identifier for the organization (not the accreditation issuer's identifier)"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="A portion of the organization's name or alias"/>
+			</searchParam>
+			<searchParam>
+				<name value="partof"/>
+				<type value="reference"/>
+				<documentation value="An organization of which this organization forms a part"/>
+			</searchParam>
+			<searchParam>
+				<name value="phonetic"/>
+				<type value="string"/>
+				<documentation value="A portion of the organization's name using some kind of phonetic matching algorithm"/>
+			</searchParam>
+			<searchParam>
+				<name value="type"/>
+				<type value="token"/>
+				<documentation value="A code for the type of organization"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="ValueSet"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="The value set publication date"/>
+			</searchParam>
+			<searchParam>
+				<name value="description"/>
+				<type value="string"/>
+				<documentation value="The description of the value set"/>
+			</searchParam>
+			<searchParam>
+				<name value="expansion"/>
+				<type value="uri"/>
+				<documentation value="Uniquely identifies this expansion"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="External identifier for the value set"/>
+			</searchParam>
+			<searchParam>
+				<name value="jurisdiction"/>
+				<type value="token"/>
+				<documentation value="Intended jurisdiction for the value set"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="Computationally friendly name of the value set"/>
+			</searchParam>
+			<searchParam>
+				<name value="publisher"/>
+				<type value="string"/>
+				<documentation value="Name of the publisher of the value set"/>
+			</searchParam>
+			<searchParam>
+				<name value="reference"/>
+				<type value="uri"/>
+				<documentation value="A code system included or excluded in the value set or an imported value set"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current status of the value set"/>
+			</searchParam>
+			<searchParam>
+				<name value="title"/>
+				<type value="string"/>
+				<documentation value="The human-friendly name of the value set"/>
+			</searchParam>
+			<searchParam>
+				<name value="url"/>
+				<type value="uri"/>
+				<documentation value="The uri that identifies the value set"/>
+			</searchParam>
+			<searchParam>
+				<name value="version"/>
+				<type value="token"/>
+				<documentation value="The business version of the value set"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Location"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="endpoint"/>
+			<searchInclude value="organization"/>
+			<searchInclude value="partof"/>
+			<searchParam>
+				<name value="address"/>
+				<type value="string"/>
+				<documentation value="A (part of the) address of the location"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-city"/>
+				<type value="string"/>
+				<documentation value="A city specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-country"/>
+				<type value="string"/>
+				<documentation value="A country specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-postalcode"/>
+				<type value="string"/>
+				<documentation value="A postal code specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-state"/>
+				<type value="string"/>
+				<documentation value="A state specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-use"/>
+				<type value="token"/>
+				<documentation value="A use code specified in an address"/>
+			</searchParam>
+			<searchParam>
+				<name value="endpoint"/>
+				<type value="reference"/>
+				<documentation value="Technical endpoints providing access to services operated for the location"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="An identifier for the location"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="A portion of the location's name or alias"/>
+			</searchParam>
+			<searchParam>
+				<name value="near"/>
+				<type value="token"/>
+				<documentation value="The coordinates expressed as [latitude]:[longitude] (using the WGS84 datum, see notes) to find locations near to (servers may search using a square rather than a circle for efficiency)&#xD;&#xA;&#xD;&#xA;Requires the near-distance parameter to be provided also"/>
+			</searchParam>
+			<searchParam>
+				<name value="near-distance"/>
+				<type value="quantity"/>
+				<documentation value="A distance quantity to limit the near search to locations within a specific distance&#xD;&#xA;&#xD;&#xA;Requires the near parameter to also be included"/>
+			</searchParam>
+			<searchParam>
+				<name value="operational-status"/>
+				<type value="token"/>
+				<documentation value="Searches for locations (typically bed/room) that have an operational status (e.g. contaminated, housekeeping)"/>
+			</searchParam>
+			<searchParam>
+				<name value="organization"/>
+				<type value="reference"/>
+				<documentation value="Searches for locations that are managed by the provided organization"/>
+			</searchParam>
+			<searchParam>
+				<name value="partof"/>
+				<type value="reference"/>
+				<documentation value="A location of which this location is a part"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="Searches for locations with a specific kind of status"/>
+			</searchParam>
+			<searchParam>
+				<name value="type"/>
+				<type value="token"/>
+				<documentation value="A code for the type of location"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="PractitionerRole"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="endpoint"/>
+			<searchInclude value="location"/>
+			<searchInclude value="organization"/>
+			<searchInclude value="practitioner"/>
+			<searchInclude value="service"/>
+			<searchParam>
+				<name value="email"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="phone"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="telecom"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="active"/>
+				<type value="token"/>
+				<documentation value="Whether this practitioner's record is in active use"/>
+			</searchParam>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="The period during which the practitioner is authorized to perform in these role(s)"/>
+			</searchParam>
+			<searchParam>
+				<name value="endpoint"/>
+				<type value="reference"/>
+				<documentation value="Technical endpoints providing access to services operated for the practitioner with this role"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="A practitioner's Identifier"/>
+			</searchParam>
+			<searchParam>
+				<name value="location"/>
+				<type value="reference"/>
+				<documentation value="One of the locations at which this practitioner provides care"/>
+			</searchParam>
+			<searchParam>
+				<name value="organization"/>
+				<type value="reference"/>
+				<documentation value="The identity of the organization the practitioner represents / acts on behalf of"/>
+			</searchParam>
+			<searchParam>
+				<name value="practitioner"/>
+				<type value="reference"/>
+				<documentation value="Practitioner that is able to provide the defined services for the organation"/>
+			</searchParam>
+			<searchParam>
+				<name value="role"/>
+				<type value="token"/>
+				<documentation value="The practitioner can perform this role at for the organization"/>
+			</searchParam>
+			<searchParam>
+				<name value="service"/>
+				<type value="reference"/>
+				<documentation value="The list of healthcare services that this worker provides for this role's Organization/Location(s)"/>
+			</searchParam>
+			<searchParam>
+				<name value="specialty"/>
+				<type value="token"/>
+				<documentation value="The practitioner has this specialty at an organization"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="AuditEvent"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="agent"/>
+			<searchInclude value="entity"/>
+			<searchInclude value="patient"/>
+			<searchParam>
+				<name value="action"/>
+				<type value="token"/>
+				<documentation value="Type of action performed during the event"/>
+			</searchParam>
+			<searchParam>
+				<name value="address"/>
+				<type value="string"/>
+				<documentation value="Identifier for the network access point of the user device"/>
+			</searchParam>
+			<searchParam>
+				<name value="agent"/>
+				<type value="reference"/>
+				<documentation value="Direct reference to resource"/>
+			</searchParam>
+			<searchParam>
+				<name value="agent-name"/>
+				<type value="string"/>
+				<documentation value="Human-meaningful name for the agent"/>
+			</searchParam>
+			<searchParam>
+				<name value="agent-role"/>
+				<type value="token"/>
+				<documentation value="Agent role in the event"/>
+			</searchParam>
+			<searchParam>
+				<name value="altid"/>
+				<type value="token"/>
+				<documentation value="Alternative User id e.g. authentication"/>
+			</searchParam>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="Time when the event occurred on source"/>
+			</searchParam>
+			<searchParam>
+				<name value="entity"/>
+				<type value="reference"/>
+				<documentation value="Specific instance of resource"/>
+			</searchParam>
+			<searchParam>
+				<name value="entity-id"/>
+				<type value="token"/>
+				<documentation value="Specific instance of object"/>
+			</searchParam>
+			<searchParam>
+				<name value="entity-name"/>
+				<type value="string"/>
+				<documentation value="Descriptor for entity"/>
+			</searchParam>
+			<searchParam>
+				<name value="entity-role"/>
+				<type value="token"/>
+				<documentation value="What role the entity played"/>
+			</searchParam>
+			<searchParam>
+				<name value="entity-type"/>
+				<type value="token"/>
+				<documentation value="Type of entity involved"/>
+			</searchParam>
+			<searchParam>
+				<name value="outcome"/>
+				<type value="token"/>
+				<documentation value="Whether the event succeeded or failed"/>
+			</searchParam>
+			<searchParam>
+				<name value="patient"/>
+				<type value="reference"/>
+				<documentation value="Direct reference to resource"/>
+			</searchParam>
+			<searchParam>
+				<name value="policy"/>
+				<type value="uri"/>
+				<documentation value="Policy that authorized event"/>
+			</searchParam>
+			<searchParam>
+				<name value="site"/>
+				<type value="token"/>
+				<documentation value="Logical source location within the enterprise"/>
+			</searchParam>
+			<searchParam>
+				<name value="source"/>
+				<type value="token"/>
+				<documentation value="The identity of source detecting the event"/>
+			</searchParam>
+			<searchParam>
+				<name value="subtype"/>
+				<type value="token"/>
+				<documentation value="More specific type/id for the event"/>
+			</searchParam>
+			<searchParam>
+				<name value="type"/>
+				<type value="token"/>
+				<documentation value="Type/identifier of event"/>
+			</searchParam>
+			<searchParam>
+				<name value="user"/>
+				<type value="token"/>
+				<documentation value="Unique identifier for the user"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Questionnaire"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchParam>
+				<name value="code"/>
+				<type value="token"/>
+				<documentation value="A code that corresponds to one of its items in the questionnaire"/>
+			</searchParam>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="The questionnaire publication date"/>
+			</searchParam>
+			<searchParam>
+				<name value="description"/>
+				<type value="string"/>
+				<documentation value="The description of the questionnaire"/>
+			</searchParam>
+			<searchParam>
+				<name value="effective"/>
+				<type value="date"/>
+				<documentation value="The time during which the questionnaire is intended to be in use"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="External identifier for the questionnaire"/>
+			</searchParam>
+			<searchParam>
+				<name value="jurisdiction"/>
+				<type value="token"/>
+				<documentation value="Intended jurisdiction for the questionnaire"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="Computationally friendly name of the questionnaire"/>
+			</searchParam>
+			<searchParam>
+				<name value="publisher"/>
+				<type value="string"/>
+				<documentation value="Name of the publisher of the questionnaire"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current status of the questionnaire"/>
+			</searchParam>
+			<searchParam>
+				<name value="title"/>
+				<type value="string"/>
+				<documentation value="The human-friendly name of the questionnaire"/>
+			</searchParam>
+			<searchParam>
+				<name value="url"/>
+				<type value="uri"/>
+				<documentation value="The uri that identifies the questionnaire"/>
+			</searchParam>
+			<searchParam>
+				<name value="version"/>
+				<type value="token"/>
+				<documentation value="The business version of the questionnaire"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="QuestionnaireResponse"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="author"/>
+			<searchInclude value="based-on"/>
+			<searchInclude value="context"/>
+			<searchInclude value="parent"/>
+			<searchInclude value="patient"/>
+			<searchInclude value="questionnaire"/>
+			<searchInclude value="source"/>
+			<searchInclude value="subject"/>
+			<searchParam>
+				<name value="author"/>
+				<type value="reference"/>
+				<documentation value="The author of the questionnaire response"/>
+			</searchParam>
+			<searchParam>
+				<name value="authored"/>
+				<type value="date"/>
+				<documentation value="When the questionnaire response was last changed"/>
+			</searchParam>
+			<searchParam>
+				<name value="based-on"/>
+				<type value="reference"/>
+				<documentation value="Plan/proposal/order fulfilled by this questionnaire response"/>
+			</searchParam>
+			<searchParam>
+				<name value="context"/>
+				<type value="reference"/>
+				<documentation value="Encounter or episode associated with the questionnaire response"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="The unique identifier for the questionnaire response"/>
+			</searchParam>
+			<searchParam>
+				<name value="parent"/>
+				<type value="reference"/>
+				<documentation value="Procedure or observation this questionnaire response was performed as a part of"/>
+			</searchParam>
+			<searchParam>
+				<name value="patient"/>
+				<type value="reference"/>
+				<documentation value="The patient that is the subject of the questionnaire response"/>
+			</searchParam>
+			<searchParam>
+				<name value="questionnaire"/>
+				<type value="reference"/>
+				<documentation value="The questionnaire the answers are provided for"/>
+			</searchParam>
+			<searchParam>
+				<name value="source"/>
+				<type value="reference"/>
+				<documentation value="The individual providing the information reflected in the questionnaire respose"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The status of the questionnaire response"/>
+			</searchParam>
+			<searchParam>
+				<name value="subject"/>
+				<type value="reference"/>
+				<documentation value="The subject of the questionnaire response"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="CodeSystem"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchParam>
+				<name value="code"/>
+				<type value="token"/>
+				<documentation value="A code defined in the code system"/>
+			</searchParam>
+			<searchParam>
+				<name value="content-mode"/>
+				<type value="token"/>
+				<documentation value="not-present | example | fragment | complete"/>
+			</searchParam>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="The code system publication date"/>
+			</searchParam>
+			<searchParam>
+				<name value="description"/>
+				<type value="string"/>
+				<documentation value="The description of the code system"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="External identifier for the code system"/>
+			</searchParam>
+			<searchParam>
+				<name value="jurisdiction"/>
+				<type value="token"/>
+				<documentation value="Intended jurisdiction for the code system"/>
+			</searchParam>
+			<searchParam>
+				<name value="language"/>
+				<type value="token"/>
+				<documentation value="A language in which a designation is provided"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="Computationally friendly name of the code system"/>
+			</searchParam>
+			<searchParam>
+				<name value="publisher"/>
+				<type value="string"/>
+				<documentation value="Name of the publisher of the code system"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current status of the code system"/>
+			</searchParam>
+			<searchParam>
+				<name value="system"/>
+				<type value="uri"/>
+				<documentation value="The system for any codes defined by this code system (same as 'url')"/>
+			</searchParam>
+			<searchParam>
+				<name value="title"/>
+				<type value="string"/>
+				<documentation value="The human-friendly name of the code system"/>
+			</searchParam>
+			<searchParam>
+				<name value="url"/>
+				<type value="uri"/>
+				<documentation value="The uri that identifies the code system"/>
+			</searchParam>
+			<searchParam>
+				<name value="version"/>
+				<type value="token"/>
+				<documentation value="The business version of the code system"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="HealthcareService"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="endpoint"/>
+			<searchInclude value="location"/>
+			<searchInclude value="organization"/>
+			<searchParam>
+				<name value="active"/>
+				<type value="token"/>
+				<documentation value="The Healthcare Service is currently marked as active"/>
+			</searchParam>
+			<searchParam>
+				<name value="category"/>
+				<type value="token"/>
+				<documentation value="Service Category of the Healthcare Service"/>
+			</searchParam>
+			<searchParam>
+				<name value="characteristic"/>
+				<type value="token"/>
+				<documentation value="One of the HealthcareService's characteristics"/>
+			</searchParam>
+			<searchParam>
+				<name value="endpoint"/>
+				<type value="reference"/>
+				<documentation value="Technical endpoints providing access to services operated for the location"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="External identifiers for this item"/>
+			</searchParam>
+			<searchParam>
+				<name value="location"/>
+				<type value="reference"/>
+				<documentation value="The location of the Healthcare Service"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="A portion of the Healthcare service name"/>
+			</searchParam>
+			<searchParam>
+				<name value="organization"/>
+				<type value="reference"/>
+				<documentation value="The organization that provides this Healthcare Service"/>
+			</searchParam>
+			<searchParam>
+				<name value="programname"/>
+				<type value="string"/>
+				<documentation value="One of the Program Names serviced by this HealthcareService"/>
+			</searchParam>
+			<searchParam>
+				<name value="type"/>
+				<type value="token"/>
+				<documentation value="The type of service provided by this healthcare service"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="OperationDefinition"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="base"/>
+			<searchInclude value="param-profile"/>
+			<searchParam>
+				<name value="base"/>
+				<type value="reference"/>
+				<documentation value="Marks this as a profile of the base"/>
+			</searchParam>
+			<searchParam>
+				<name value="code"/>
+				<type value="token"/>
+				<documentation value="Name used to invoke the operation"/>
+			</searchParam>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="The operation definition publication date"/>
+			</searchParam>
+			<searchParam>
+				<name value="description"/>
+				<type value="string"/>
+				<documentation value="The description of the operation definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="instance"/>
+				<type value="token"/>
+				<documentation value="Invoke on an instance?"/>
+			</searchParam>
+			<searchParam>
+				<name value="jurisdiction"/>
+				<type value="token"/>
+				<documentation value="Intended jurisdiction for the operation definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="kind"/>
+				<type value="token"/>
+				<documentation value="operation | query"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="Computationally friendly name of the operation definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="param-profile"/>
+				<type value="reference"/>
+				<documentation value="Profile on the type"/>
+			</searchParam>
+			<searchParam>
+				<name value="publisher"/>
+				<type value="string"/>
+				<documentation value="Name of the publisher of the operation definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current status of the operation definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="system"/>
+				<type value="token"/>
+				<documentation value="Invoke at the system level?"/>
+			</searchParam>
+			<searchParam>
+				<name value="type"/>
+				<type value="token"/>
+				<documentation value="Invole at the type level?"/>
+			</searchParam>
+			<searchParam>
+				<name value="url"/>
+				<type value="uri"/>
+				<documentation value="The uri that identifies the operation definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="version"/>
+				<type value="token"/>
+				<documentation value="The business version of the operation definition"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="StructureDefinition"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="valueset"/>
+			<searchParam>
+				<name value="abstract"/>
+				<type value="token"/>
+				<documentation value="Whether the structure is abstract"/>
+			</searchParam>
+			<searchParam>
+				<name value="base"/>
+				<type value="uri"/>
+				<documentation value="Definition that this type is constrained/specialized from"/>
+			</searchParam>
+			<searchParam>
+				<name value="base-path"/>
+				<type value="token"/>
+				<documentation value="Path that identifies the base element"/>
+			</searchParam>
+			<searchParam>
+				<name value="context-type"/>
+				<type value="token"/>
+				<documentation value="resource | datatype | extension"/>
+			</searchParam>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="The structure definition publication date"/>
+			</searchParam>
+			<searchParam>
+				<name value="derivation"/>
+				<type value="token"/>
+				<documentation value="specialization | constraint - How relates to base definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="description"/>
+				<type value="string"/>
+				<documentation value="The description of the structure definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="experimental"/>
+				<type value="token"/>
+				<documentation value="For testing purposes, not real usage"/>
+			</searchParam>
+			<searchParam>
+				<name value="ext-context"/>
+				<type value="string"/>
+				<documentation value="Where the extension can be used in instances"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="External identifier for the structure definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="jurisdiction"/>
+				<type value="token"/>
+				<documentation value="Intended jurisdiction for the structure definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="keyword"/>
+				<type value="token"/>
+				<documentation value="A code for the profile"/>
+			</searchParam>
+			<searchParam>
+				<name value="kind"/>
+				<type value="token"/>
+				<documentation value="primitive-type | complex-type | resource | logical"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="Computationally friendly name of the structure definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="path"/>
+				<type value="token"/>
+				<documentation value="A path that is constrained in the profile"/>
+			</searchParam>
+			<searchParam>
+				<name value="publisher"/>
+				<type value="string"/>
+				<documentation value="Name of the publisher of the structure definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current status of the structure definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="title"/>
+				<type value="string"/>
+				<documentation value="The human-friendly name of the structure definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="type"/>
+				<type value="token"/>
+				<documentation value="Type defined or constrained by this structure"/>
+			</searchParam>
+			<searchParam>
+				<name value="url"/>
+				<type value="uri"/>
+				<documentation value="The uri that identifies the structure definition"/>
+			</searchParam>
+			<searchParam>
+				<name value="valueset"/>
+				<type value="reference"/>
+				<documentation value="A vocabulary binding reference"/>
+			</searchParam>
+			<searchParam>
+				<name value="version"/>
+				<type value="token"/>
+				<documentation value="The business version of the structure definition"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="ConceptMap"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="source"/>
+			<searchInclude value="source-uri"/>
+			<searchInclude value="target"/>
+			<searchInclude value="target-uri"/>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="The concept map publication date"/>
+			</searchParam>
+			<searchParam>
+				<name value="dependson"/>
+				<type value="uri"/>
+				<documentation value="Reference to property mapping depends on"/>
+			</searchParam>
+			<searchParam>
+				<name value="description"/>
+				<type value="string"/>
+				<documentation value="The description of the concept map"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="External identifier for the concept map"/>
+			</searchParam>
+			<searchParam>
+				<name value="jurisdiction"/>
+				<type value="token"/>
+				<documentation value="Intended jurisdiction for the concept map"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="Computationally friendly name of the concept map"/>
+			</searchParam>
+			<searchParam>
+				<name value="other"/>
+				<type value="uri"/>
+				<documentation value="Canonical URL for other concept map"/>
+			</searchParam>
+			<searchParam>
+				<name value="product"/>
+				<type value="uri"/>
+				<documentation value="Reference to property mapping depends on"/>
+			</searchParam>
+			<searchParam>
+				<name value="publisher"/>
+				<type value="string"/>
+				<documentation value="Name of the publisher of the concept map"/>
+			</searchParam>
+			<searchParam>
+				<name value="source"/>
+				<type value="reference"/>
+				<documentation value="Identifies the source of the concepts which are being mapped"/>
+			</searchParam>
+			<searchParam>
+				<name value="source-code"/>
+				<type value="token"/>
+				<documentation value="Identifies element being mapped"/>
+			</searchParam>
+			<searchParam>
+				<name value="source-system"/>
+				<type value="uri"/>
+				<documentation value="Code System (if value set crosses code systems)"/>
+			</searchParam>
+			<searchParam>
+				<name value="source-uri"/>
+				<type value="reference"/>
+				<documentation value="Identifies the source of the concepts which are being mapped"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current status of the concept map"/>
+			</searchParam>
+			<searchParam>
+				<name value="target"/>
+				<type value="reference"/>
+				<documentation value="Provides context to the mappings"/>
+			</searchParam>
+			<searchParam>
+				<name value="target-code"/>
+				<type value="token"/>
+				<documentation value="Code that identifies the target element"/>
+			</searchParam>
+			<searchParam>
+				<name value="target-system"/>
+				<type value="uri"/>
+				<documentation value="System of the target (if necessary)"/>
+			</searchParam>
+			<searchParam>
+				<name value="target-uri"/>
+				<type value="reference"/>
+				<documentation value="Provides context to the mappings"/>
+			</searchParam>
+			<searchParam>
+				<name value="title"/>
+				<type value="string"/>
+				<documentation value="The human-friendly name of the concept map"/>
+			</searchParam>
+			<searchParam>
+				<name value="url"/>
+				<type value="uri"/>
+				<documentation value="The uri that identifies the concept map"/>
+			</searchParam>
+			<searchParam>
+				<name value="version"/>
+				<type value="token"/>
+				<documentation value="The business version of the concept map"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="SearchParameter"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="component"/>
+			<searchParam>
+				<name value="base"/>
+				<type value="token"/>
+				<documentation value="The resource type(s) this search parameter applies to"/>
+			</searchParam>
+			<searchParam>
+				<name value="code"/>
+				<type value="token"/>
+				<documentation value="Code used in URL"/>
+			</searchParam>
+			<searchParam>
+				<name value="component"/>
+				<type value="reference"/>
+				<documentation value="Defines how the part works"/>
+			</searchParam>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="The search parameter publication date"/>
+			</searchParam>
+			<searchParam>
+				<name value="derived-from"/>
+				<type value="uri"/>
+				<documentation value="Original Definition for the search parameter"/>
+			</searchParam>
+			<searchParam>
+				<name value="description"/>
+				<type value="string"/>
+				<documentation value="The description of the search parameter"/>
+			</searchParam>
+			<searchParam>
+				<name value="jurisdiction"/>
+				<type value="token"/>
+				<documentation value="Intended jurisdiction for the search parameter"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="Computationally friendly name of the search parameter"/>
+			</searchParam>
+			<searchParam>
+				<name value="publisher"/>
+				<type value="string"/>
+				<documentation value="Name of the publisher of the search parameter"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current status of the search parameter"/>
+			</searchParam>
+			<searchParam>
+				<name value="target"/>
+				<type value="token"/>
+				<documentation value="Types of resource (if a resource reference)"/>
+			</searchParam>
+			<searchParam>
+				<name value="type"/>
+				<type value="token"/>
+				<documentation value="number | date | string | token | reference | composite | quantity | uri"/>
+			</searchParam>
+			<searchParam>
+				<name value="url"/>
+				<type value="uri"/>
+				<documentation value="The uri that identifies the search parameter"/>
+			</searchParam>
+			<searchParam>
+				<name value="version"/>
+				<type value="token"/>
+				<documentation value="The business version of the search parameter"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Endpoint"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="organization"/>
+			<searchParam>
+				<name value="connection-type"/>
+				<type value="token"/>
+				<documentation value="Protocol/Profile/Standard to be used with this endpoint connection"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+				<documentation value="Identifies this endpoint across multiple systems"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="A name that this endpoint can be identified by"/>
+			</searchParam>
+			<searchParam>
+				<name value="organization"/>
+				<type value="reference"/>
+				<documentation value="The organization that is managing the endpoint"/>
+			</searchParam>
+			<searchParam>
+				<name value="payload-type"/>
+				<type value="token"/>
+				<documentation value="The type of content that may be used at this endpoint (e.g. XDS Discharge summaries)"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current status of the Endpoint (usually expected to be active)"/>
+			</searchParam>
+			<searchParam>
+				<name value="au-receivingfacility-namespace-id"/>
+				<type value="token"/>
+				<documentation value="HL7 V2 Receiving Application"/>
+			</searchParam>
+			<searchParam>
+				<name value="au-receivingfacility-universal-id"/>
+				<type value="token"/>
+				<documentation value="HL7 V2 Receiving Facility"/>
+			</searchParam>
+			<searchParam>
+				<name value="au-receivingfacility-universal-id-type"/>
+				<type value="token"/>
+				<documentation value="HL7 V2 Assigning Authority"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="ImplementationGuide"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchInclude value="resource"/>
+			<searchParam>
+				<name value="date"/>
+				<type value="date"/>
+				<documentation value="The implementation guide publication date"/>
+			</searchParam>
+			<searchParam>
+				<name value="dependency"/>
+				<type value="uri"/>
+				<documentation value="Where to find dependency"/>
+			</searchParam>
+			<searchParam>
+				<name value="description"/>
+				<type value="string"/>
+				<documentation value="The description of the implementation guide"/>
+			</searchParam>
+			<searchParam>
+				<name value="experimental"/>
+				<type value="token"/>
+				<documentation value="For testing purposes, not real usage"/>
+			</searchParam>
+			<searchParam>
+				<name value="jurisdiction"/>
+				<type value="token"/>
+				<documentation value="Intended jurisdiction for the implementation guide"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+				<documentation value="Computationally friendly name of the implementation guide"/>
+			</searchParam>
+			<searchParam>
+				<name value="publisher"/>
+				<type value="string"/>
+				<documentation value="Name of the publisher of the implementation guide"/>
+			</searchParam>
+			<searchParam>
+				<name value="resource"/>
+				<type value="reference"/>
+				<documentation value="Location of the resource"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current status of the implementation guide"/>
+			</searchParam>
+			<searchParam>
+				<name value="url"/>
+				<type value="uri"/>
+				<documentation value="The uri that identifies the implementation guide"/>
+			</searchParam>
+			<searchParam>
+				<name value="version"/>
+				<type value="token"/>
+				<documentation value="The business version of the implementation guide"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Subscription"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+			<searchParam>
+				<name value="add-tag"/>
+				<type value="token"/>
+				<documentation value="A tag to be added to the resource matching the criteria"/>
+			</searchParam>
+			<searchParam>
+				<name value="contact"/>
+				<type value="token"/>
+				<documentation value="Contact details for the subscription"/>
+			</searchParam>
+			<searchParam>
+				<name value="criteria"/>
+				<type value="string"/>
+				<documentation value="The search rules used to determine when to send a notification"/>
+			</searchParam>
+			<searchParam>
+				<name value="payload"/>
+				<type value="string"/>
+				<documentation value="The mime-type of the notification payload"/>
+			</searchParam>
+			<searchParam>
+				<name value="status"/>
+				<type value="token"/>
+				<documentation value="The current state of the subscription"/>
+			</searchParam>
+			<searchParam>
+				<name value="type"/>
+				<type value="token"/>
+				<documentation value="The type of channel for the sent notifications"/>
+			</searchParam>
+			<searchParam>
+				<name value="url"/>
+				<type value="uri"/>
+				<documentation value="The uri that will receive the notifications"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="OperationOutcome"/>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<code value="history-type"/>
+			</interaction>
+			<versioning value="versioned"/>
+			<readHistory value="true"/>
+			<updateCreate value="true"/>
+			<conditionalCreate value="true"/>
+			<conditionalUpdate value="true"/>
+			<conditionalDelete value="single"/>
+		</resource>
+		<operation>
+			<name value="registered-endpoints"/>
+			<definition>
+				<display value="Registered Endpoints"/>
+			</definition>
+		</operation>
+	</rest>
+</CapabilityStatement>

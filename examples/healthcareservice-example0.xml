@@ -5,20 +5,13 @@
 	<providedBy>
 		<reference value="Organization/example0"/>
 	</providedBy>
-	<type>
-		<coding>
-			<system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
-			<code value="8401"/>
-			<display value="Hospitals (except Psychiatric Hospitals)"/>
-		</coding>
-	</type>
-	<type>
+	<specialty>
 		<coding>
 			<system value="http://snomed.info/sct"/>
 			<code value="310000008"/>
 			<display value="Accident and Emergency service"/>
 		</coding>
-	</type>
+	</specialty>
 	<location>
 		<reference value="Location/example0"/>
 	</location>

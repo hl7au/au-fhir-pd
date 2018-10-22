@@ -12,8 +12,3 @@ Code systems used in this implementation guide.
 {% include list-simple-codesystems.xhtml %}
 
 
-#### Concept Maps
-
-Concept maps defined in this implementation guide.
-
-  {% include list-simple-conceptmaps.xhtml %}

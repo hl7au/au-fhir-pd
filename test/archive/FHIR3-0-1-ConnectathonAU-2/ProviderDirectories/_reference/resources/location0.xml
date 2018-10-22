@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="location0"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example0</p><p><b>status</b>: active</p><p><b>name</b>: Downunder Hospital Blacktown</p><p><b>telecom</b>: ph: 025553555(WORK)</p><p><b>address</b>: 3 McGregor Street Blacktown NSW 2148 Australia (WORK)</p></div>
+  </text>
+  <status value="active"/>
+  <name value="Downunder Hospital Blacktown"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="025553555"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <line value="3 McGregor Street"/>
+    <city value="Blacktown"/>
+    <state value="NSW"/>
+    <postalCode value="2148"/>
+    <country value="Australia"/>
+  </address>
+</Location>

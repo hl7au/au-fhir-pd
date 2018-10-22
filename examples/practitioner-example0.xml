@@ -24,6 +24,7 @@
 	</identifier>
 	<active value="true"/>
 	<name>
+	  <use value="usual"/>
 		<family value="Mayo"/>
 		<given value="Helen"/>
 		<prefix value="Dr"/>

@@ -12,6 +12,33 @@ Read identified endpoint resource content.
 *Implementation Notes:*  [[(how to read resource)]
 
 -----------
+**Search: Active Status**
+
+Search based on active status of the endpoint record.
+
+`GET [base]/Endpoint?status=[code]`
+
+*Example:* `GET [base]/Endpoint?status=active`
+
+*Support:* MUST support search Organization by active status code (active \| suspended \| error \| off \| entered-in-error \| test)
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
+**Search: HPI-O**
+
+Search based on identifier token.
+
+`GET [base]/Endpoint?identifier=[system]|[value]`
+
+*Example:* `GET [base]/Endpoint?identifier=http://ns.electronichealth.net.au/smd/target|http://ns.argusdca.com.au/smd/id/hostname/ACC5959010000000`
+
+*Support:* MUST support search by Secure Messaging Target Identifier
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
+
 **Search: Connection Type (Service Interface)**
 
 Search based on token for a protocol to be used to connnect to the endpoint.
@@ -31,7 +58,7 @@ Search based on token for the type of content supported by the endpoint.
  
 `GET [base]/Endpoint?payload-type=[system]|[code]`
 
-*Example:* `GET [base]/Endpoint?payload-type=http://hl7.org.au/fhir/CodeSystem/smd-interfaces|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
+*Example:* `GET [base]/Endpoint?payload-type=http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type|http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706`
 
 *Support:* MUST support search by Payload Type.
 
@@ -50,10 +77,10 @@ Search based string element content in the au-receivingfacility extension. (name
 
 *Implementation Notes:* [(how to search by string)]
 
-* For searching explicitly for empty elements use *:missing=true*  e.g. au-receivingfacility-universal-id-type:missing=true
-* Definition: au-receivingfacility-namespace-id search extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('namespace-id').value	(MSH-6.1)
-* Definition: au-receivingfacility-universal-id	search extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('universal-id').value	(MSH-6.2)
-* Definition: au-receivingfacility-universal-id-type search extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('universal-id-type').value (MSH-6.3)
+* For searching explicitly for empty elements use *:missing=true*  e.g. `au-receivingfacility-universal-id-type:missing=true`
+* Definition: au-receivingfacility-namespace-id (MSH-6.1) search `extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('namespace-id').value`
+* Definition: au-receivingfacility-universal-id (MSH-6.2) search `extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('universal-id').value`
+* Definition: au-receivingfacility-universal-id-type (MSH-6.3) search `extension('http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility').extension('universal-id-type').value`
 
 -----------
 

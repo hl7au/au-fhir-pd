@@ -24,7 +24,7 @@ Information
 
 Interactions
 * **Search** allows the selection of relevant entries based on criteria
-* **Read** allows the retrieval of a specifc entry
+* **Read** allows the retrieval of a specific entry
 
 Patterns of Use
 * **Federated Directory** approach to supply responses based on a combination of results from multiple directory service providers
@@ -36,7 +36,7 @@ This document is a working specification that may be directly implemented by FHI
 
 Information contained in this document provides a minimal requirement level for use in secure message end point location and addressing. 
 To that end it specifies key entities and elements thereof needed for secure message addressing and also needed interface interactions
-to achieve basic searchability operations with diretories. This common core set of capability of systems enables an agreed technical
+to achieve basic searchability operations with directories. This common core set of capability of systems enables an agreed technical
 profile for searching provider directories to obtain information required for secure message addressing.
 
 FHIR<sup>&reg;&copy;</sup> connectathon events are key to the verification of the guide as being suitable for 

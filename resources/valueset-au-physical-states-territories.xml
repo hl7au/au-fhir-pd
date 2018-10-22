@@ -1,0 +1,53 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/valueset.xsd">
+	<id value="au-physical-states-territories"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2018-06-14T11:00:00+11:00"/>
+	</meta>
+	<url value="http://hl7.org.au/fhir/pd/ValueSet/au-physical-states-territories"/>
+	<name value="AustralianStatesandTerritories"/>
+	<title value="Australian States and Territories"/>
+	<status value="draft"/>
+	<publisher value="Health Level Seven Australia"/>
+	<contact>
+		<name value="hl7.org.au"/>
+	</contact>
+	<description value="Enumeration of physical states and territories"/>
+	<compose>
+		<include>
+			<system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1"/>
+			 <concept>
+				<code value="ACT"/>
+				<display value="Australian Capital Territory"/>
+			</concept>
+			<concept>
+				<code value="NSW"/>
+				<display value="New South Wales"/>
+			</concept>
+			<concept>
+				<code value="NT"/>
+				<display value="Northern Territory"/>
+			</concept>
+			<concept>
+				<code value="QLD"/>
+				<display value="Queensland"/>
+			</concept>
+			<concept>
+				<code value="SA"/>
+				<display value="South Australia"/>
+			</concept>
+			<concept>
+				<code value="TAS"/>
+				<display value="Tasmania"/>
+			</concept>
+			<concept>
+				<code value="VIC"/>
+				<display value="Victoria"/>
+			</concept>
+			<concept>
+				<code value="WA"/>
+				<display value="Western Australia"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

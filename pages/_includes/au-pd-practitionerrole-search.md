@@ -15,6 +15,19 @@ Read identified practitioner role resource content.
 *Implementation Notes:*  [[(how to read resource)]
 
 -----------
+**Search: Active Status**
+
+Search based on active status of the practitioner role record.
+
+`GET [base]/PractitionerRole?active=[status]`
+
+*Example:* `GET [base]/PractitionerRole?active=true`
+
+*Support:* MUST support search PractitionerRole by active status (true \| false).
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
 **Search: Provider Practitioner Name**
 
 Chained search (via Practitioner) based on family, given and/or any name.

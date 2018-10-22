@@ -26,7 +26,12 @@
 	<concept>
 		<code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706"/>
 		<display value="Simplified Profile for HL7 V2.4 REF message"/>
-		<definition value="Profile on HL7 V2.4 REF message"/>
+		<definition value="Profile on HL7 V2.4 REF message Level 2 profile (HL7AUSD-DFC-OO-ADRM-2018.1 Australian Diagnostics and Referral Messaging - Localisation of HL7 Version 2.4)"/>
+		<concept>
+			<code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706-L1"/>
+			<display value="Simplified Profile for HL7 V2.4 REF message (Level 1)"/>
+			<definition value="Profile on HL7 V2.4 REF message Level 1 profile (HL7AUSD-DFC-OO-ADRM-2018.1 Australian Diagnostics and Referral Messaging - Localisation of HL7 Version 2.4)"/>
+		</concept>
 	</concept>
 	<concept>
 		<code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706/RRI"/>

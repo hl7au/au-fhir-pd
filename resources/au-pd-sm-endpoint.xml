@@ -8,11 +8,11 @@
     <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
   <p>AU PD SM Endpoint</p>
 </div></text>
-  <url value="http://hl7.org.au/fhir/StructureDefinition/au-pd-sm-endpoint" />
+  <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-sm-endpoint" />
   <name value="AUPDSecureMessagingEndpoint" />
   <title value="AU PD Secure Messaging Endpoint" />
   <status value="draft" />
-  <date value="2017-05-12T16:13:53.3444155+10:00" />
+  <date value="2018-08-06" />
   <description value="Endpoint for secure message delivery" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -43,10 +43,6 @@
     <element id="Endpoint.meta.extension:source">
       <path value="Endpoint.meta.extension" />
       <sliceName value="source" />
-      <short value="Preadopt STU4 Meta.source" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/meta-source" />
@@ -66,38 +62,68 @@
     <element id="Endpoint.extension:receivingFacility">
       <path value="Endpoint.extension" />
       <sliceName value="receivingFacility" />
-      <short value="Receiving Facility Details" />
-      <definition value="Details of the HL7 V2 receiving facility." />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility" />
       </type>
     </element>
+    <element id="Endpoint.extension:receivingFacility.extension:namespace-id">
+      <path value="Endpoint.extension.extension" />
+      <sliceName value="namespace-id" />
+    </element>
+    <element id="Endpoint.extension:receivingFacility.extension:namespace-id.valueString:valueString">
+      <path value="Endpoint.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="Endpoint.extension:receivingFacility.extension:universal-id">
+      <path value="Endpoint.extension.extension" />
+      <sliceName value="universal-id" />
+    </element>
+    <element id="Endpoint.extension:receivingFacility.extension:universal-id.valueString:valueString">
+      <path value="Endpoint.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
     <element id="Endpoint.extension:receivingApplication">
       <path value="Endpoint.extension" />
       <sliceName value="receivingApplication" />
-      <short value="Receiving Application Details" />
-      <definition value="Details of the HL7 V2 receiving application." />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication" />
       </type>
     </element>
+    <element id="Endpoint.extension:receivingApplication.extension:namespace-id">
+      <path value="Endpoint.extension.extension" />
+      <sliceName value="namespace-id" />
+    </element>
+    <element id="Endpoint.extension:receivingApplication.extension:namespace-id.valueString:valueString">
+      <path value="Endpoint.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="Endpoint.extension:receivingApplication.extension:universal-id">
+      <path value="Endpoint.extension.extension" />
+      <sliceName value="universal-id" />
+    </element>
+    <element id="Endpoint.extension:receivingApplication.extension:universal-id.valueString:valueString">
+      <path value="Endpoint.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
+    <element id="Endpoint.extension:receivingApplication.extension:universal-id-type">
+      <path value="Endpoint.extension.extension" />
+      <sliceName value="universal-id-type" />
+    </element>
+    <element id="Endpoint.extension:receivingApplication.extension:universal-id-type.valueString:valueString">
+      <path value="Endpoint.extension.extension.valueString" />
+      <sliceName value="valueString" />
+    </element>
     <element id="Endpoint.extension:dataEnciphermentCertificate">
       <path value="Endpoint.extension" />
       <sliceName value="dataEnciphermentCertificate" />
-      <short value="PEM X509 Certificate" />
-      <definition value="Mechanism hold the value of an X509 certificate as a string (base64 encoded PEM certificate)" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/encryption-certificate-pem-x509" />
       </type>
-      <mustSupport value="true" />
-      <isModifier value="false" />
     </element>
     <element id="Endpoint.identifier">
       <path value="Endpoint.identifier" />
@@ -140,8 +166,10 @@
       <definition value="Protocol/Profile/Standard the endpoint supports." />
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
-        <valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-au-serviceinterface" />
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/pd/ValueSet/service-interfaces" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Endpoint.name">
@@ -177,8 +205,10 @@
       <definition value="Reference  to identify the type of payload content (service category)." />
       <mustSupport value="true" />
       <binding>
-        <strength value="preferred" />
-        <valueSetUri value="http://hl7.org.au/fhir/ValueSet/valueset-au-endpoint-payload-type" />
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/pd/ValueSet/endpoint-payload-type" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Endpoint.address">
