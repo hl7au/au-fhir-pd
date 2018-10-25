@@ -9,10 +9,11 @@
   <p>AU PD Location</p>
 </div></text>
   <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-location" />
+  <version value="1.0.0"/>
   <name value="AUPDLocation" />
   <title value="AU PD Location" />
   <status value="draft" />
-  <date value="2018-08-06" />
+  <date value="2018-10-25" />
   <description value="Australian provider directory entry for location." />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />

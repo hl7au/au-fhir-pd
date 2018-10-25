@@ -6,11 +6,11 @@
     </div>
   </text>
   <url value="http://hl7.org.au/fhir/CodeSystem/codesystem-extended-practitioner-role"/>
-  <version value="1"/>
+  <version value="1.0.0"/>
   <name value="Practitioner Role Extended Terminology"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2017-11-23"/>
+  <date value="2018-10-25"/>
   <publisher value="HL7 Australia"/>
   <contact>
     <name value="hl7orgau"/>

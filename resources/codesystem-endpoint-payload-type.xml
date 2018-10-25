@@ -8,11 +8,11 @@
 		</div>
 	</text>
 	<url value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type"/>
-	<version value="1"/>
+	<version value="1.0.0"/>
 	<name value="Australian Endpoint Payload Types."/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2017-06-23"/>
+	<date value="2018-10-25"/>
 	<publisher value="HL7 Australia"/>
 	<contact>
 		<name value="hl7.org.au"/>

@@ -11,7 +11,7 @@
 	<name value="au-pd-capability"/>
 	<status value="active"/>
 	<experimental value="true"/>
-	<date value="2017-11-21T11:05:09.725+00:00"/>
+	<date value="2018-10-25"/>
 	<publisher value="HL7 AU"/>
 	<description value="HL7 AU example provider directory service capability statement"/>
 	<copyright value="HL7 AU"/>

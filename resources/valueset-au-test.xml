@@ -5,6 +5,7 @@
 		<lastUpdated value="2017-02-20T18:54:35.273-05:00"/>
 	</meta>
 	<url value="http://hl7.org.au/fhir/ValueSet/valueset-au-test"/>
+	<version value="1.0.0"/>
 	<name value="v2 Identifier Type - AU Extended"/>
 	<status value="draft"/>
 	<publisher value="Health Level Seven Australia (Patient Administration)"/>

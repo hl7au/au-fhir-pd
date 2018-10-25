@@ -9,10 +9,11 @@
   <p>AU PD Practitioner</p>
 </div></text>
   <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitioner" />
+  <version value="1.0.0"/>
   <name value="AUPDPractitioner" />
   <title value="AU PD Practitioner" />
   <status value="draft" />
-  <date value="2018-08-06"/>
+  <date value="2018-10-25"/>
   <description value="Base profile for Australian context Practitioner for provider directory usage" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />

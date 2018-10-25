@@ -9,10 +9,11 @@
   <p>AU PD SM Endpoint</p>
 </div></text>
   <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-sm-endpoint" />
+  <version value="1.0.0"/>
   <name value="AUPDSecureMessagingEndpoint" />
   <title value="AU PD Secure Messaging Endpoint" />
   <status value="draft" />
-  <date value="2018-08-06" />
+  <date value="2018-10-25"/>
   <description value="Endpoint for secure message delivery" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
