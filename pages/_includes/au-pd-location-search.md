@@ -49,14 +49,14 @@ Search based on address parts for postcode, suburb, and state.
 * SHOULD support search Location by address parts address-postalcode, address-city, address-state.
 * SHOULD support basic **param=[string]** search which is case and accent-insensitive search;  field equals or starts with the string value.
 
-*Implementation Notes:* [(how to search by token)]
+*Implementation Notes:* [(how to search by string)]
 
 -----------
 **Search: Location Distance**
 
 Search based on address within a nominated distance.
 
-`GET [base]/Location?location.near=[latitude]:[longitude]&location.near-distance=[prefix][value]|[units-system]|[units]`
+`GET [base]/Location?near=[latitude]:[longitude]&near-distance=[prefix][value]|[units-system]|[units]`
 
 *Example:* `GET [base]/Location?near=-83.694810:42.256500&near-distance=le10.0|http://unitsofmeasure.org|km`
 

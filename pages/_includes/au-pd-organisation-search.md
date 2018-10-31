@@ -39,6 +39,26 @@ Search based on identifier token.
 *Implementation Notes:* [(how to search by token)]
 
 -----------
+**Search: Name**
+
+Search for a organisation by name.
+
+`GET [base]/Organization?name=[string]`
+
+*Example:* `GET [base]/Organization?name=southern%20clinic`
+
+*Support:*
+
+* MUST support search by Organisation name.
+
+*Implementation Notes:* [(how to search by string)]
+
+-----------
+**Search: Combination**
+
+* Searches MUST be able to be perfomed in a single request using logical AND for criteria. e.g name and status
+
+-----------
 
  [(how to search by reference)]: http://hl7.org/fhir/search.html#reference
  [(how to search by token)]: http://hl7.org/fhir/search.html#token
@@ -46,3 +66,5 @@ Search based on identifier token.
  [(how to search by string)]: http://hl7.org/fhir/search.html#string
  [(how to search by quantity)]: http://hl7.org/fhir/search.html#quantity
  [(how to read resource)]: http://hl7.org/fhir/http.html#read
+
+ 

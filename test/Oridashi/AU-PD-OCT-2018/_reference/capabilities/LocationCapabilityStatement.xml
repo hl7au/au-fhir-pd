@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir">
 	<status value="draft"/>
-	<date value="2017-09-18T09:00:00-05:00"/>
+	<date value="2018-10-31"/>
 	<description value="FHIR CapabilityStatement"/>
 	<kind value="capability"/>
 	<fhirVersion value="3.0.1"/>
@@ -11,20 +11,33 @@
 	<rest>
 		<mode value="server"/>
 		<resource>
-			<type value="Organization"/>
+			<type value="Location"/>
 			<interaction>
 				<code value="read"/>
 			</interaction>
-			<interaction>
-				<code value="search-type"/>
-			</interaction>
 			<searchParam>
-				<name value="identifier"/>
+				<name value="status"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
-				<name value="name"/>
+				<name value="address-postalcode"/>
 				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-city"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="address-state"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="near"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="near-distance"/>
+				<type value="quantity"/>
 			</searchParam>
 		</resource>
 	</rest>

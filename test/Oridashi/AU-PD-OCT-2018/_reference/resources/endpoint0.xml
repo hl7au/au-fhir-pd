@@ -58,7 +58,7 @@
   <payloadType>
     <coding>
       <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type"/>
-      <code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706"/>
+      <code value="http://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706-L1"/>
     </coding>
     <coding>
       <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type"/>
