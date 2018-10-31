@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir">
 	<status value="draft"/>
-	<date value="2017-09-18T09:00:00-05:00"/>
+	<date value="2018-10-31"/>
 	<description value="FHIR CapabilityStatement"/>
 	<kind value="capability"/>
 	<fhirVersion value="3.0.1"/>
@@ -11,7 +11,7 @@
 	<rest>
 		<mode value="server"/>
 		<resource>
-			<type value="HealthcareService"/>
+			<type value="PractitionerRole"/>
 			<interaction>
 				<code value="read"/>
 			</interaction>
@@ -23,23 +23,27 @@
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
-				<name value="organization"/>
+				<name value="active"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="practitioner"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
-				<name value="name"/>
-				<type value="string"/>
+				<name value="organization"/>
+				<type value="reference"/>
 			</searchParam>
 			<searchParam>
 				<name value="specialty"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
-				<name value="location"/>
+				<name value="endpoint"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
-				<name value="endpoint"/>
+				<name value="location"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
