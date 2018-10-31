@@ -25,7 +25,7 @@ Search based on active status of the endpoint record.
 *Implementation Notes:* [(how to search by token)]
 
 -----------
-**Search: HPI-O**
+**Search: Identifier (Secure Messaging Target Identifier)**
 
 Search based on identifier token.
 
