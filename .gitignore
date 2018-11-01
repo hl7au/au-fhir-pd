@@ -12,3 +12,7 @@ resources/au-fhir-base/
 private/
 resources/au-fhir-base
 content/pd-sequence-01.ldb
+resources/ig-validation-parameters.json
+resources/ig-expansion-parameters.json
+resources/ig-new.xml
+resources/ig-new.json
