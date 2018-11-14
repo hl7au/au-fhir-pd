@@ -151,7 +151,7 @@ Chained search (via Location) for a location within a nominated distance.
 -----------
 **Search: Connection Type (Service Interface)**
 
-Chaned search (via Endpoint) based on token for a protocol to be used to connnect to the endpoint.
+Chained search (via Endpoint) based on token for a protocol to be used to connnect to the endpoint.
  
 `GET [base]/HealthcareService?endpoint.connection-type=[system]|[code]`
 
@@ -166,7 +166,7 @@ Chaned search (via Endpoint) based on token for a protocol to be used to connnec
 -----------
 **Search: Payload Type (Service Category)**
 
-Chaned search (via Endpoint) based on token for the type of content supported by the endpoint.
+Chained search (via Endpoint) based on token for the type of content supported by the endpoint.
  
 `GET [base]/HealthcareService?endpoint.payload-type=[system]|[code]`
 
@@ -179,15 +179,30 @@ Chaned search (via Endpoint) based on token for the type of content supported by
 *Implementation Notes:* [(how to search by token)]
 
 -----------
+**Search: Active Practitioner Role by Identifier Exists**
+
+Reverse chained search<sup>[1](http://hl7.org/fhir/stu3/search.html#has)</sup> based on token to ensure practitioner role with specific identifier is active and is referring to this HealthcareService.
+ 
+`GET [base]/HealthcareService?_has:PractitionerRole:service:identifier=[system]|[value]&_has:PractitionerRole:service:active=[status]`
+
+*Example:* `GET [base]/HealthcareService?_has:PractitionerRole:service:identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|444455AA&_has:PractitionerRole:service:active=true`
+
+*Support:*
+
+* MAY support search HealthcareService for existence of active practitioner role with specific identifier.
+
+*Implementation Notes:* [(how to search by token)], [(how to check for existence of referring resource)]
+
+-----------
 **Search: Include References**
 
-The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type.
+The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type<sup>[1](http://hl7.org/fhir/STU3/healthcareservice.html#search)</sup>.
 
 *Example:* `GET [base]/HealthcareService?_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
 
 *Support:*
 
-* MUST support _include HealthcareService references location, organization, endpoint.
+* MUST support _include HealthcareService references *location* (Location), *organization* (Organization), *endpoint* (Endpoint).
 
 -----------
 **Search: Combination**
@@ -202,4 +217,5 @@ The [_include](http://hl7.org/fhir/search.html#include) argument allows the auto
  [(how to search by string)]: http://hl7.org/fhir/search.html#string
  [(how to search by quantity)]: http://hl7.org/fhir/search.html#quantity
  [(how to read resource)]: http://hl7.org/fhir/http.html#read
+ [(how to check for existence of referring resource)]: http://hl7.org/fhir/stu3/search.html#has
 

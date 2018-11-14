@@ -67,7 +67,7 @@ Search based on token for the type of content supported by the endpoint.
 -----------
 **Search: Receiving Facility Extension Elements (Custom)**
 
-Search based string element content in the au-receivingfacility extension. (namespace-id, universal-id, universal-id-type)
+Search based string element content in the au-receivingfacility extension<sup>[1](searchparams.html)</sup>. (namespace-id, universal-id, universal-id-type)
  
 `GET [base]/Endpoint?au-receivingfacility-namespace-id=[string]&au-receivingfacility-universal-id=[string]&au-receivingfacility-universal-id-type=[string]`
 

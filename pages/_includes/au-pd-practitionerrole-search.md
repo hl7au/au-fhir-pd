@@ -232,13 +232,13 @@ Chaned search (via Endpoint) based on token for the type of content supported by
 -----------
 **Search: Include References**
 
-The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type.
+The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type<sup>[1](http://hl7.org/fhir/STU3/practitionerrole.html#search)</sup>.
 
 *Example:* `GET [base]/PractitionerRole?_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:endpoint&_include=PractitionerRole:location`
 
 *Support:*
 
-* MUST support _include PractitionerRole references practitioner, location, organization, endpoint.
+* MUST support _include PractitionerRole references *practitioner* (Practitioner), *location* (Location), *organization* (Organization), *endpoint* (Endpoint), *service* (HealthcareService).
 
 -----------
 **Search: Combination**
