@@ -181,7 +181,7 @@ Chained search (via Endpoint) based on token for the type of content supported b
 -----------
 **Search: Active Practitioner Role by Identifier Exists**
 
-Reverse chained search<sup>[1](http://hl7.org/fhir/stu3/search.html#has)</sup> based on token to ensure practitioner role with specific identifier is active and is referring to this HealthcareService.
+Reverse chained search [_has](http://hl7.org/fhir/stu3/search.html#has) argument based on token to ensure practitioner role with a specific identifier is active and is referring to this service.
 
 This uses existing search parameters on PractitionerRole search capability where PractitionerRole.healthcareService is referencing the subject healthcare service.
  
