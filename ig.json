@@ -6,7 +6,7 @@
     {
        "name" : "aubase",
        "location" : "http://hl7.org.au/fhir",
-	   "version" : "current"
+	   "version" : "1.0.1"
     }
   ],  
   "spreadsheets": [],
