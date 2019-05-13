@@ -13,7 +13,7 @@
   <name value="AUPDSecureMessagingEndpoint" />
   <title value="AU PD Secure Messaging Endpoint" />
   <status value="draft" />
-  <date value="2018-10-25"/>
+  <date value="2019-05-14"/>
   <description value="Endpoint for secure message delivery" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
