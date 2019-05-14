@@ -74,6 +74,8 @@
     <element id="PractitionerRole.identifier:medicareProviderNumber.extension:mpnAssigningAuthority">
       <path value="PractitionerRole.identifier.extension" />
       <sliceName value="mpnAssigningAuthority" />
+      <short value="Optional HL7 V2 Assigning Authority" />
+      <definition value="Values for routing HLV2 messages, useful for PRD-7 provider identifier." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -100,6 +102,8 @@
     <element id="PractitionerRole.identifier:nationalProviderAtOrganisation.extension:npoAssigningAuthority">
       <path value="PractitionerRole.identifier.extension" />
       <sliceName value="npoAssigningAuthority" />
+      <short value="Optional HL7 V2 Assigning Authority" />
+      <definition value="Values for routing HLV2 messages, useful for PRD-7 provider identifier." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -168,6 +172,7 @@
     <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier.extension:vdiAssigningAuthority">
       <path value="PractitionerRole.identifier.extension" />
       <sliceName value="vdiAssigningAuthority" />
+      <short value="Optional HL7 V2 Assigning Authority" />
       <max value="1" />
       <type>
         <code value="Extension" />
