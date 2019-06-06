@@ -57,7 +57,7 @@ Chained search (via Organisation) based on text name.
 *Implementation Notes:* [(how to search by string)]
 
 -----------
-**Search: Healthcare Service offered Specialties**
+**Search: Healthcare Service offered Specialties (Custom: pre-adopt R4)**
 
 Search for healthcare service based on specialties offered
 

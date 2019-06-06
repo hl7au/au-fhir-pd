@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir">
+	<id value="au-searchparameter-healthcareservice-speciality" />
+	<meta>
+		<lastUpdated value="2019-06-06T11:13:39.374+10:00" />
+	</meta>
+	<url value="http://hl7.org.au/fhir/pd/SearchParameter/au-searchparameter-healthcareservice-specialty" />
+	<version value="1.0.0"/>
+	<name value="Healthcare service specialty search"/>
+	<status value="draft"/>
+	<code value="au-healthcareservice-speciality"/>
+	<base value="HealthcareService"/>
+	<type value="token"/>
+	<description value="Find a matching healthcare service by specialty"/>
+	<expression value="specialty"/>
+</SearchParameter>
