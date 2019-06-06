@@ -113,7 +113,7 @@ Typical sequence describing endpoint search, HL7 V2 generation, secure message c
 1. PMS/CIS SENDER
 * The practice management system or clinical information system) formatting and sending a HL7 V2 REF/MDM message.
 1. SM CLIENT (SENDER)
-* Secure messaging client component/system that can deliver payloads using secure messaging standard [AS 5552—2013 — E-Health Secure Message Delivery](http://infostore.saiglobal.com/store/Details.aspx?ProductID=1696543).
+* Secure messaging client component/system that can deliver payloads using secure messaging standard [ATS 5822—2010 — E-Health Secure Message Delivery](https://infostore.saiglobal.com/en-au/Standards/Product-Details-129644_SAIG_AS_AS_274353/?productID=129644_SAIG_AS_AS_274353).
 1. SM INTERMEDIARY
 * Secure messaging intermediary providing store and forward .
 * May provide routing to other secure messaging suppliers.
@@ -121,7 +121,7 @@ Typical sequence describing endpoint search, HL7 V2 generation, secure message c
 * Provider directory FHIR API service adhering to this implementation guide.
 * May be federated across multiple provider directory suppliers to allow addressing suitable for forwarding to other secure messaging suppliers.
 1. SM CLIENT (RECEIVER)
-* Secure messaging client component/system that can receive payloads using secure messaging standard [AS 5552—2013 — E-Health Secure Message Delivery](http://infostore.saiglobal.com/store/Details.aspx?ProductID=1696543).
+* Secure messaging client component/system that can receive payloads using secure messaging standard [ATS 5822—2010 — E-Health Secure Message Delivery](https://infostore.saiglobal.com/en-au/Standards/Product-Details-129644_SAIG_AS_AS_274353/?productID=129644_SAIG_AS_AS_274353).
 1. PMS/CIS (RECEIVER)
 * The practice management system or clinical information system) receiving the HL7 V2 REF/MDM message and processsing it.
 * On accept/reject of the received message formatting and sending a HL7 V2 ACK message.
