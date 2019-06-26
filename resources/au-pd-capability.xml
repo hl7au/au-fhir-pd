@@ -16,7 +16,7 @@
 	<description value="HL7 AU example provider directory service capability statement"/>
 	<copyright value="HL7 AU"/>
 	<kind value="instance"/>
-	<fhirVersion value="3.0.1"/>
+	<fhirVersion value="4.0.0"/>
 	<acceptUnknown value="extensions"/>
 	<format value="xml"/>
 	<format value="json"/>

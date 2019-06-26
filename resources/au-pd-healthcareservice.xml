@@ -15,7 +15,8 @@
   <status value="draft" />
   <date value="2019-05-14"/>
   <description value="Australian healthcare service provider directory directory entry" />
-  <fhirVersion value="3.0.1" />
+	<kind value="instance"/>
+	<fhirVersion value="4.0.0"/>
   <kind value="resource" />
   <abstract value="false" />
   <type value="HealthcareService" />
