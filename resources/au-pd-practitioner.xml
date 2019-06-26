@@ -43,7 +43,7 @@
     <element id="Practitioner.identifier:hpii">
       <path value="Practitioner.identifier" />
       <sliceName value="hpii" />
-      <short value="Directory Entry HPI-I" />
+      <short value="HPI-I for Directory Entry Practitioner" />
       <definition value="National identifier for the individual provider" />
       <mustSupport value="true" />
     </element>

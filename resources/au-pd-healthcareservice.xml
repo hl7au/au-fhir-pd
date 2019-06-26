@@ -44,6 +44,7 @@
     <element id="HealthcareService.identifier:hpio">
       <path value="HealthcareService.identifier" />
       <sliceName value="hpio" />
+      <short value="HPI-O for Directory Entry Organisation" />
       <definition value="National identifier Health Provider Identifier for Organisations for Healthcare Service" />
       <mustSupport value="true" />
     </element>
