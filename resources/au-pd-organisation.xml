@@ -31,6 +31,10 @@
       <short value="Australian Organisation Directory Entry" />
       <definition value="Directory entry Australian realm Organisation profile often healthcare or related service provision." />
     </element>
+    <element id="Organization.meta">
+      <path value="Organization.meta" />
+      <short value="Metadata on Organisation" />
+    </element>
     <element id="Organization.meta.source">
       <path value="Organization.meta.source" />
       <mustSupport value="true" />

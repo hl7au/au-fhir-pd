@@ -29,6 +29,10 @@
       <short value="Healthcare Service Directory Entry" />
       <definition value="The details of a healthcare service for directory use." />
     </element>
+    <element id="HealthcareService.meta">
+      <path value="HealthcareService.meta" />
+      <short value="Metadata on Healthcare Service" />
+    </element>
     <element id="HealthcareService.meta.source">
       <path value="HealthcareService.meta.source" />
       <mustSupport value="true" />

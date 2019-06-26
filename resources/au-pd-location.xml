@@ -31,6 +31,10 @@
       <path value="Location" />
       <short value="Australian Location Directory Entry" />
     </element>
+    <element id="Location.meta">
+      <path value="Location.meta" />
+      <short value="Metadata on Location" />
+    </element>
     <element id="Location.meta.source">
       <path value="Location.meta.source" />
       <mustSupport value="true" />

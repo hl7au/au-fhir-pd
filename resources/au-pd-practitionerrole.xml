@@ -32,6 +32,10 @@
       <definition value="Directory entry for a provider at a location for an organisation." />
       <mustSupport value="true" />
     </element>
+    <element id="PractitionerRole.meta">
+      <path value="PractitionerRole.meta" />
+      <short value="Metadata on Practitoner Role" />
+    </element>
     <element id="PractitionerRole.identifier:medicareProviderNumber">
       <path value="PractitionerRole.identifier" />
       <sliceName value="medicareProviderNumber" />

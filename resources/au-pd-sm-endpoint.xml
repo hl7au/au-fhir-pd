@@ -29,6 +29,10 @@
       <short value="Australian Secure Message Directory Endpoint Record" />
       <definition value="Enpoint defined for use in secure message addressing." />
     </element>
+    <element id="Endpoint.meta">
+      <path value="Endpoint.meta" />
+      <short value="Metadata on Endpoint" />
+    </element>
     <element id="Endpoint.meta.source">
       <path value="Endpoint.meta.source" />
       <mustSupport value="true" />

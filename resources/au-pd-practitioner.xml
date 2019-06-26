@@ -32,6 +32,10 @@
       <short value="Australian Practitioner Directory Entry" />
       <definition value="Directory entry for a person who is directly or indirectly involved in the provisioning of healthcare." />
     </element>
+    <element id="Practitioner.meta">
+      <path value="Practitioner.meta" />
+      <short value="Metadata on Practitioner" />
+    </element>
     <element id="Practitioner.meta.source">
       <path value="Practitioner.meta.source" />
       <mustSupport value="true" />
