@@ -1,21 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitioner" />
   <meta>
     <lastUpdated value="2018-03-13T12:12:14.419+11:00" />
   </meta>
   <text>
-    <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
-  <p>AU PD Practitioner</p>
-</div></text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>AU PD Practitioner</p>
+    </div>
+  </text>
   <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitioner" />
-  <version value="1.0.0"/>
+  <version value="1.0.0" />
   <name value="AUPDPractitioner" />
   <title value="AU PD Practitioner" />
   <status value="draft" />
-  <date value="2019-05-14"/>
+  <date value="2019-05-14" />
   <description value="Base profile for Australian context Practitioner for provider directory usage" />
-	<fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Practitioner" />
@@ -23,21 +25,15 @@
   <derivation value="constraint" />
   <differential>
     <element id="Practitioner">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="trial-use" />
+      </extension>
       <path value="Practitioner" />
       <short value="Australian Practitioner Directory Entry" />
       <definition value="Directory entry for a person who is directly or indirectly involved in the provisioning of healthcare." />
     </element>
-    <element id="Practitioner.meta">
-      <path value="Practitioner.meta" />
-      <short value="Metadata about the resource  (extended)" />
-    </element>
-    <element id="Practitioner.meta.extension:source">
-      <path value="Practitioner.meta.extension" />
-      <sliceName value="source" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/meta-source" />
-      </type>
+    <element id="Practitioner.meta.source">
+      <path value="Practitioner.meta.source" />
       <mustSupport value="true" />
     </element>
     <element id="Practitioner.identifier:hpii">

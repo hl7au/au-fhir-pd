@@ -39,13 +39,6 @@
     </grouping>
     <resource>
       <reference>
-        <reference value="CapabilityStatement/au-pd-capability"/>
-      </reference>
-      <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/au-pd-practitioner"/>
       </reference>
       <exampleBoolean value="false"/>

@@ -1,21 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-sm-endpoint" />
   <meta>
     <lastUpdated value="2018-03-05T01:13:27.089+11:00" />
   </meta>
   <text>
-    <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
-  <p>AU PD SM Endpoint</p>
-</div></text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>AU PD SM Endpoint</p>
+    </div>
+  </text>
   <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-sm-endpoint" />
-  <version value="1.0.0"/>
+  <version value="1.0.0" />
   <name value="AUPDSecureMessagingEndpoint" />
   <title value="AU PD Secure Messaging Endpoint" />
   <status value="draft" />
-  <date value="2019-05-14"/>
+  <date value="2019-05-14" />
   <description value="Endpoint for secure message delivery" />
-	<fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Endpoint" />
@@ -27,27 +29,8 @@
       <short value="Australian Secure Message Directory Endpoint Record" />
       <definition value="Enpoint defined for use in secure message addressing." />
     </element>
-    <element id="Endpoint.meta">
-      <path value="Endpoint.meta" />
-      <short value="Metadata about the resource (extended)" />
-    </element>
-    <element id="Endpoint.meta.extension">
-      <path value="Endpoint.meta.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Endpoint.meta.extension:source">
-      <path value="Endpoint.meta.extension" />
-      <sliceName value="source" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/meta-source" />
-      </type>
+    <element id="Endpoint.meta.source">
+      <path value="Endpoint.meta.source" />
       <mustSupport value="true" />
     </element>
     <element id="Endpoint.extension">
@@ -69,22 +52,6 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility" />
       </type>
     </element>
-    <element id="Endpoint.extension:receivingFacility.extension:namespace-id">
-      <path value="Endpoint.extension.extension" />
-      <sliceName value="namespace-id" />
-    </element>
-    <element id="Endpoint.extension:receivingFacility.extension:namespace-id.valueString:valueString">
-      <path value="Endpoint.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="Endpoint.extension:receivingFacility.extension:universal-id">
-      <path value="Endpoint.extension.extension" />
-      <sliceName value="universal-id" />
-    </element>
-    <element id="Endpoint.extension:receivingFacility.extension:universal-id.valueString:valueString">
-      <path value="Endpoint.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
     <element id="Endpoint.extension:receivingApplication">
       <path value="Endpoint.extension" />
       <sliceName value="receivingApplication" />
@@ -93,30 +60,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-receivingapplication" />
       </type>
-    </element>
-    <element id="Endpoint.extension:receivingApplication.extension:namespace-id">
-      <path value="Endpoint.extension.extension" />
-      <sliceName value="namespace-id" />
-    </element>
-    <element id="Endpoint.extension:receivingApplication.extension:namespace-id.valueString:valueString">
-      <path value="Endpoint.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="Endpoint.extension:receivingApplication.extension:universal-id">
-      <path value="Endpoint.extension.extension" />
-      <sliceName value="universal-id" />
-    </element>
-    <element id="Endpoint.extension:receivingApplication.extension:universal-id.valueString:valueString">
-      <path value="Endpoint.extension.extension.valueString" />
-      <sliceName value="valueString" />
-    </element>
-    <element id="Endpoint.extension:receivingApplication.extension:universal-id-type">
-      <path value="Endpoint.extension.extension" />
-      <sliceName value="universal-id-type" />
-    </element>
-    <element id="Endpoint.extension:receivingApplication.extension:universal-id-type.valueString:valueString">
-      <path value="Endpoint.extension.extension.valueString" />
-      <sliceName value="valueString" />
     </element>
     <element id="Endpoint.extension:dataEnciphermentCertificate">
       <path value="Endpoint.extension" />
@@ -168,9 +111,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
-        <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/pd/ValueSet/service-interfaces" />
-        </valueSetReference>
+        <valueSet value="http://hl7.org.au/fhir/pd/ValueSet/service-interfaces" />
       </binding>
     </element>
     <element id="Endpoint.name">
@@ -186,9 +127,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Endpoint.managingOrganization.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Endpoint.managingOrganization.display" />
       <short value="Directroy entry managing organisation display details" />
       <definition value="Details to display for the directory entry managing organisation, typically the name." />
@@ -207,9 +145,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
-        <valueSetReference>
-          <reference value="http://hl7.org.au/fhir/pd/ValueSet/endpoint-payload-type" />
-        </valueSetReference>
+        <valueSet value="http://hl7.org.au/fhir/pd/ValueSet/endpoint-payload-type" />
       </binding>
     </element>
     <element id="Endpoint.address">
