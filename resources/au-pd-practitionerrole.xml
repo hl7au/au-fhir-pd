@@ -221,6 +221,7 @@
       </type>
       <type>
         <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Endpoint" />
       </type>
       <mustSupport value="true" />
     </element>
