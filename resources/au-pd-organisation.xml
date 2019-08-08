@@ -10,7 +10,7 @@
       <p>AU PD Organisation</p>
     </div>
   </text>
-  <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-organisation" />
+  <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-organization" />
   <version value="1.0.0" />
   <name value="AUPDOrganisation" />
   <title value="AU PD Organisation" />
