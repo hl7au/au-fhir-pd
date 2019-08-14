@@ -1,6 +1,0 @@
-{
-	"excludes": [
-		"/FHIR3-0-1-ConnectathonAU/ProviderDirectories/_LoadResources/connectathon-au-2017-09-pd-load-resources-create-json",
-		"/FHIR3-0-1-ConnectathonAU/ProviderDirectories/_LoadResources/connectathon-au-2017-09-pd-load-resources-create-xml"
-	]
-}
