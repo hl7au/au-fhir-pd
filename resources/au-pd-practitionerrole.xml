@@ -36,8 +36,21 @@
       <path value="PractitionerRole.meta" />
       <short value="Metadata on Practitoner Role" />
     </element>
-     <element id="PractitionerRole.identifier">
+    <element id="PractitionerRole.identifier">
       <path value="PractitionerRole.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="type" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="Practitioner role identifiers" />
+      <definition value="Business identifiers for practitioner in a role." />
     </element>
     <element id="PractitionerRole.identifier:medicareProviderNumber">
       <path value="PractitionerRole.identifier" />
