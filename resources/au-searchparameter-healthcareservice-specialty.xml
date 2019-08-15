@@ -5,7 +5,7 @@
 		<lastUpdated value="2019-06-06T11:13:39.374+10:00" />
 	</meta>
 	<url value="http://hl7.org.au/fhir/pd/SearchParameter/au-searchparameter-healthcareservice-specialty" />
-	<version value="1.0.0"/>
+  <version value="2.0.1" />
 	<name value="Healthcare service specialty search"/>
 	<status value="draft"/>
 	<code value="au-healthcareservice-speciality"/>

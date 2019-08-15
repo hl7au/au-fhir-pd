@@ -5,7 +5,7 @@
 		<lastUpdated value="2017-09-08T16:22:39.374+10:00" />
 	</meta>
 	<url value="http://hl7.org.au/fhir/pd/SearchParameter/au-searchparameter-receivingfacility-universal-id-type" />
-	<version value="1.0.0"/>
+  <version value="2.0.1" />
 	<name value="Search Endpoint Receiving Facility Extension Universal Id Type"/>
 	<status value="draft"/>
 	<code value="au-receivingfacility-universal-id-type"/>

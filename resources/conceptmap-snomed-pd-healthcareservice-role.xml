@@ -7,7 +7,7 @@
 			<h1>SNOMED-CT to Healthcare Service Extended Concept Map</h1>
 		</div>
 	</text>
-	<version value="1.0.0"/>
+  <version value="2.0.1" />
 	<name value="SNOMED-CT to Healthcare Service Extended Concept Map"/>
 	<title value="SNOMED-CT tHealthcare Service Extended Concept Map"/>
 	<status value="active"/>
