@@ -49,8 +49,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <short value="Practitioner role identifiers" />
-      <definition value="Business identifiers for practitioner in a role." />
+      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.identifier:medicareProviderNumber">
       <path value="PractitionerRole.identifier" />
@@ -198,9 +197,8 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="PractitionerRole.specialty:snomedRole">
+    <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
-      <sliceName value="snomedRole" />
       <short value="Directory SNOMED-CT Practitioner Specialty" />
       <definition value="Healthcare professional subset for directory lookup" />
       <mustSupport value="true" />

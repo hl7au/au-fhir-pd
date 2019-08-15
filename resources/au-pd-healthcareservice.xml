@@ -187,9 +187,8 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="HealthcareService.specialty:snomedRole">
+    <element id="HealthcareService.specialty">
       <path value="HealthcareService.specialty" />
-      <sliceName value="snomedRole" />
       <short value="Directory SNOMED-CT specialties offered by the HealthcareService" />
       <mustSupport value="true" />
     </element>
