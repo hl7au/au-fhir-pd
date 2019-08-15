@@ -7,6 +7,7 @@ Australian Healthcare Service Directory Entry
    * Must Support Optional Extension: Optional HL7 V2 routing content (Complex)
 1. Must Support Required: Active Status (boolean)
 1. Must Support Required: Organisation - provided by (Reference)
+1. Must Support 0 or more: Type Codes (Coding)
 1. Must Support 0 or more: Specialties (Coding)
 1. Must Support Required: Location (Reference)
 1. Must Support Required: Service Name (string)

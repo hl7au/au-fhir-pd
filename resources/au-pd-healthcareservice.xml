@@ -187,6 +187,11 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="HealthcareService.type">
+      <path value="HealthcareService.type" />
+      <short value="Directory SNOMED-CT service types" />
+      <mustSupport value="true" />
+    </element>
     <element id="HealthcareService.specialty">
       <path value="HealthcareService.specialty" />
       <short value="Directory SNOMED-CT specialties offered by the HealthcareService" />

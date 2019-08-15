@@ -10,6 +10,7 @@ Australian Practitioner Role Directory Entry
 1. Must Support Required: Active Status (boolean)
 1. Must Support Required: Practitioner (Reference)
 1. Must Support Required: Organisation (Reference)
+1. Must Support 0 or more: Role Codes (Coding)
 1. Must Support 0 or more: Specialties (Coding)
 1. Must Support 1 or more: Location (Reference)
 1. Must Support 0 or more: HealthcareService (Reference)

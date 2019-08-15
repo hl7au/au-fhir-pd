@@ -197,10 +197,16 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="PractitionerRole.code">
+      <path value="PractitionerRole.code" />
+      <short value="Directory SNOMED-CT Practitioner Role Code" />
+      <definition value="Healthcare role code for directory lookup" />
+      <mustSupport value="true" />
+    </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
       <short value="Directory SNOMED-CT Practitioner Specialty" />
-      <definition value="Healthcare professional subset for directory lookup" />
+      <definition value="Healthcare specialties for directory lookup" />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.location">
