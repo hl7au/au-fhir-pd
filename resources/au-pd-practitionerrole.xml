@@ -30,11 +30,14 @@
       </extension>
       <path value="PractitionerRole" />
       <definition value="Directory entry for a provider at a location for an organisation." />
-      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.meta">
       <path value="PractitionerRole.meta" />
       <short value="Metadata on Practitoner Role" />
+    </element>
+    <element id="PractitionerRole.meta.source">
+      <path value="PractitionerRole.meta.source" />
+      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.identifier">
       <path value="PractitionerRole.identifier" />
