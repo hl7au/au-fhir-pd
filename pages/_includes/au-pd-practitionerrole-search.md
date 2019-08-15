@@ -55,13 +55,28 @@ Chained search (via Practitioner) based on family, given and/or any name.
 *Implementation Notes:*  [(how to search by string)]
 
 -----------
+**Search: Provider Role**
+
+Search based on role code.
+
+`GET [base]/PractitionerRole?role=[system]|[code]`
+
+*Example:* `GET [base]/PractitionerRole?role=http://snomed.info/sct|397897005`
+
+*Support:*
+
+* MUST support search PractitionerRole by code.
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
 **Search: Provider Specialty**
 
 Search based on specialty code.
 
 `GET [base]/PractitionerRole?specialty=[system]|[code]`
 
-*Example:* `GET [base]/PractitionerRole?specialty=http://snomed.info/sct|17561000`
+*Example:* `GET [base]/PractitionerRole?specialty=http://snomed.info/sct|722165004`
 
 *Support:*
 

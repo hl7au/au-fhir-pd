@@ -57,13 +57,28 @@ Chained search (via Organisation) based on text name.
 *Implementation Notes:* [(how to search by string)]
 
 -----------
-**Search: Healthcare Service offered Specialties (Custom: pre-adopt R4)**
+**Search: Healthcare Service Type**
+
+Search for healthcare service based on type of service
+
+`GET [base]/HealthcareService?type=[system]|[code]`
+
+*Example:* `GET [base]/HealthcareService?type=http://snomed.info/sct|310030000`
+
+*Support:*
+
+* MUST support search by HealthcareService type.
+
+*Implementation Notes:* [(how to search by token)]
+
+-----------
+**Search: Healthcare Service offered Specialties**
 
 Search for healthcare service based on specialties offered
 
 `GET [base]/HealthcareService?specialty=[system]|[code]`
 
-*Example:* `GET [base]/HealthcareService?specialty=http://snomed.info/sct|3471000175103`
+*Example:* `GET [base]/HealthcareService?specialty=http://snomed.info/sct|394582007`
 
 *Support:*
 
