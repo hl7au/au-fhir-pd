@@ -7,15 +7,15 @@
     <total value="1" />
     <link>
         <relation value="self" />
-        <url value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService?active=true&amp;name=Downunder&amp;endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type%7Chttp://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location&amp;_include=HealthcareService:organization&amp;_snapshot=636722396729219835" />
+        <url value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService?active=true&amp;name=Downunder&amp;endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type%7Chttp://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location&amp;_include=HealthcareService:providedBy&amp;_snapshot=636722396729219835" />
     </link>
     <link>
         <relation value="first" />
-        <url value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService?active=true&amp;name=Downunder&amp;endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type%7Chttp://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location&amp;_include=HealthcareService:organization&amp;_snapshot=636722396729219835" />
+        <url value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService?active=true&amp;name=Downunder&amp;endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type%7Chttp://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location&amp;_include=HealthcareService:providedBy&amp;_snapshot=636722396729219835" />
     </link>
     <link>
         <relation value="last" />
-        <url value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService?active=true&amp;name=Downunder&amp;endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type%7Chttp://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location&amp;_include=HealthcareService:organization&amp;_snapshot=636722396729219835&amp;_page=0" />
+        <url value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService?active=true&amp;name=Downunder&amp;endpoint.payload-type=http://hl7.org.au/fhir/CodeSystem/codesystem-au-endpoint-payload-type%7Chttp://ns.hl7.org.au/hl7v2/profiles/HL7AU-OO-REF-SIMPLIFIED-201706&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location&amp;_include=HealthcareService:providedBy&amp;_snapshot=636722396729219835&amp;_page=0" />
     </link>
     <entry>
         <fullUrl value="https://sqlonfhir-aupd.azurewebsites.net/fhir/HealthcareService/healthcareservice0" />

@@ -94,7 +94,7 @@
 				<description value="Search for HealthcareService matches using the practitioner.identifier search parameter."/>
 				<accept value="xml"/>
 				<contentType value="none"/>
-				<params value="?identifier=${HealthcareServiceSearchIdentifierSystemCriteria}|${HealthcareServiceSearchIdentifierValueCriteria}&amp;_include=HealthcareService:organization&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
+				<params value="?identifier=${HealthcareServiceSearchIdentifierSystemCriteria}|${HealthcareServiceSearchIdentifierValueCriteria}&amp;_include=HealthcareService:providedBy&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
 				<responseId value="search-response"/>
 			</operation>
 		</action>
@@ -194,7 +194,7 @@
 				<description value="Search for HealthcareService matches using the name search."/>
 				<accept value="xml"/>
 				<contentType value="none"/>
-				<params value="?name=${HealthcareServiceSearchNameCriteria}&amp;_include=HealthcareService:organization&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
+				<params value="?name=${HealthcareServiceSearchNameCriteria}&amp;_include=HealthcareService:providedBy&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
 				<responseId value="search-response"/>
 			</operation>
 		</action>
@@ -294,7 +294,7 @@
 				<description value="Search for HealthcareService matches using the name search."/>
 				<accept value="xml"/>
 				<contentType value="none"/>
-				<params value="?organization.name=${OrganizationSearchNameCriteria}&amp;_include=HealthcareService:organization&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
+				<params value="?organization.name=${OrganizationSearchNameCriteria}&amp;_include=HealthcareService:providedBy&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
 				<responseId value="search-response"/>
 			</operation>
 		</action>
@@ -494,7 +494,7 @@
 				<description value="Search HealthcareService matches using the organization.identifier search parameters."/>
 				<accept value="xml"/>
 				<contentType value="none"/>
-				<params value="?organization.identifier=${HealthcareServiceSearchIdentifierSystemCriteria}|${HealthcareServiceSearchIdentifierValueCriteria}&amp;_include=HealthcareService:organization&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
+				<params value="?organization.identifier=${HealthcareServiceSearchIdentifierSystemCriteria}|${HealthcareServiceSearchIdentifierValueCriteria}&amp;_include=HealthcareService:providedBy&amp;_include=HealthcareService:endpoint&amp;_include=HealthcareService:location"/>
 				<responseId value="search-response"/>
 			</operation>
 		</action>

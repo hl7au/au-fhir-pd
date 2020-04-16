@@ -215,7 +215,7 @@ This uses existing search parameters on PractitionerRole search capability where
 
 The [_include](http://hl7.org/fhir/search.html#include) argument allows the automatic inclusion of referenced resources in the response for a search; based on search parameters defined for this resource type<sup>[1](http://hl7.org/fhir/STU3/healthcareservice.html#search)</sup>.
 
-*Example:* `GET [base]/HealthcareService?_include=HealthcareService:organization&_include=HealthcareService:endpoint&_include=HealthcareService:location`
+*Example:* `GET [base]/HealthcareService?_include=HealthcareService:providedBy&_include=HealthcareService:endpoint&_include=HealthcareService:location`
 
 *Support:*
 
