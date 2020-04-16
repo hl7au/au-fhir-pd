@@ -219,7 +219,7 @@ The [_include](http://hl7.org/fhir/search.html#include) argument allows the auto
 
 *Support:*
 
-* MUST support _include HealthcareService references *location* (Location), *organization* (Organization), *endpoint* (Endpoint).
+* MUST support _include HealthcareService references *location* (Location), *providedBy* (Organization), *endpoint* (Endpoint).
 
 -----------
 **Search: Combination**
