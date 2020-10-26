@@ -57,15 +57,15 @@ Chained search (via Practitioner) based on family, given and/or any name.
 -----------
 **Search: Provider Role**
 
-Search based on role.
+Search based on role code.
 
-`GET [base]/PractitionerRole?role=[system]|[code]`
+`GET [base]/PractitionerRole?code=[system]|[code]`
 
-*Example:* `GET [base]/PractitionerRole?role=http://snomed.info/sct|397897005`
+*Example:* `GET [base]/PractitionerRole?code=http://snomed.info/sct|397897005`
 
 *Support:*
 
-* MUST support search PractitionerRole by role.
+* MUST support search PractitionerRole by code.
 
 *Implementation Notes:* [(how to search by token)]
 
