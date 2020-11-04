@@ -55,6 +55,9 @@
 	<organization>
 		<reference value="Organization/example0"/>
 	</organization>
+	<healthcareService>
+		<reference value="HealthcareService/example0"/>
+	</healthcareService>
 	<specialty>
 		<coding>
 			<system value="http://snomed.info/sct"/>
