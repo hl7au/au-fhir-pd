@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
-  <meta>
-    <lastUpdated value="2018-03-05T16:36:05.054+11:00" />
-  </meta>
-  <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>AU PD Practitioner Role</p>
-    </div>
-  </text>
   <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitionerrole" />
-  <version value="2.0.1" />
+  <version value="2.1.0" />
   <name value="AUPDPractitionerRole" />
   <title value="AU PD Practitioner Role" />
   <status value="draft" />
-  <date value="2019-05-14" />
+  <publisher value="HL7 Australia"/>
   <description value="Provider directory entry for a practitioner role" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="PractitionerRole" />
@@ -191,7 +182,7 @@
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
-      <short value="Organisation providing this role" />
+      <short value="Organisation providing this role. Reference to be the same Organisation as the referenced HealthcareService for this role." />
       <definition value="Australian organisation directory entry providing this role." />
       <min value="1" />
       <type>
@@ -202,21 +193,22 @@
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
-      <short value="Directory SNOMED-CT Practitioner Role Code" />
-      <definition value="Healthcare role code for directory lookup" />
+      <short value="Directory SNOMED-CT Practitioner Role Code." />
+      <definition value="Healthcare role code for directory lookup." />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
-      <short value="Directory SNOMED-CT Practitioner Specialty" />
-      <definition value="Healthcare specialties for directory lookup" />
+      <short value="Directory SNOMED-CT Practitioner Specialty." />
+      <definition value="Healthcare specialties for directory lookup." />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.location">
       <path value="PractitionerRole.location" />
-      <short value="Location at which this role is provided" />
+      <short value="Location at which this role is provided. Reference to be the same Location as the referenced HealthcareService for this role." />
       <definition value="Location details describing where the role is being provided." />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-location" />
@@ -225,7 +217,14 @@
     </element>
     <element id="PractitionerRole.healthcareService">
       <path value="PractitionerRole.healthcareService" />
-      <short value="Healthcare services provided in this role" />
+      <short value="Healthcare service at which this role is provided." />
+      <definition value="Healthcare details describing where the role is being provided." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-healthcareservice" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.telecom">
@@ -236,7 +235,7 @@
     </element>
     <element id="PractitionerRole.endpoint">
       <path value="PractitionerRole.endpoint" />
-      <short value="Technical endpoints for this practitioner role, including secure messaging endpoints" />
+      <short value="Technical endpoints for this practitioner role, including secure messaging endpoints." />
       <definition value="Details for service based communication with the practitioner in this role. This can include web services, messaging profiles and other protocol based communication." />
       <type>
         <code value="Reference" />
