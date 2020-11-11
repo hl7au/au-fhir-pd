@@ -1,8 +1,22 @@
 {
-  "sct-edition": "http://snomed.info/sct/32506021000036107",
   "version": "4.0.1",
   "fixed-business-version" : "2.1.0",
+  "paths": {
+    "temp": "temp",
+    "resources": [ "resources", "examples" ],
+    "pages": "pages",
+    "txCache": "txCache",
+    "output": "output",
+    "qa": "qa",
+    "specification": "http://hl7.org/fhir/R4"
+  },
+  "sct-edition": "http://snomed.info/sct/32506021000036107",
+  "extraTemplates": [ "mappings","examples" ],
   "source": "ig.xml",
+  "npm-name" : "hl7.fhir.au.pd",
+  "tool": "jekyll",
+  "license": "CC0-1.0",
+  "canonicalBase": "http://hl7.org.au/fhir/pd",
   "dependencyList": [ 
     {
        "name" : "aubaser4",
@@ -12,7 +26,6 @@
   ],  
   "spreadsheets": [],
   "special-urls": [ "http://hl7.org.au/fhir/CodeSystem/smd-interfaces",  "http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type", "https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1" ],
-  "extraTemplates": [ "mappings" ],
   "defaults": {
     "ConceptMap": { "template-base": "cm.html" },
     "Any": {
@@ -22,7 +35,8 @@
     "StructureDefinition": {
       "template-base": "sd.html",
       "template-defns": "sd-definitions.html",
-      "template-mappings": "sd-mappings.html"
+	  "template-mappings": "sd-mappings.html",
+	  "template-examples": "sd-examples.html"
     },
     "ValueSet": { "template-base": "vs.html"},
     "CodeSystem": { "template-base": "cs.html" },
@@ -59,19 +73,6 @@
 		"template-format": "ex-format.html" 
 	}
   },
-  "tool": "jekyll",
-  "license": "CC0-1.0",
-  "canonicalBase": "http://hl7.org.au/fhir/pd",
-  "paths": {
-    "temp": "temp",
-    "resources": [ "resources", "examples" ],
-    "pages": "pages",
-    "txCache": "txCache",
-    "output": "output",
-    "qa": "qa",
-    "specification": "http://hl7.org/fhir/R4"
-  },
-  "npm-name" : "hl7.fhir.au.pd",
   "resources": {
 	"StructureDefinition/au-pd-practitioner": {
 	  "base": "StructureDefinition-au-pd-practitioner.html",
