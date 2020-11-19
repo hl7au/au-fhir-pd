@@ -15,12 +15,16 @@ Searching for suitable [PractitionerRole](StructureDefinition-au-pd-practitioner
 
 In this usage the [PractitionerRole](StructureDefinition-au-pd-practitionerrole.html) and [HealthcareService](StructureDefinition-au-pd-healthcareservice.html) resources are related to Endpoints (containing service connection details, such as secure messaging) and this allows communications to be made to a practitioner (in a role) or healthcare service based on the content of the associated Endpoint resource used.
 
+<br/>
+<br/>
+
 ## Provider Directory Service Roles
 
 This implementation guide is defined to allow multiple consumer systems to call multiple provider directory services reliably with a consistent interface and available data support.  
 
+### Provider Directory Supplier
 
-**Provider Directory Supplier** implementations are server software systems that supply a provider directory service interface and data.
+Provider Directory Supplier implementations are server software systems that supply a provider directory service interface and data.
 
 ```
 SRV01 Servers SHALL be capable of providing all resource types included in this guide.
@@ -31,22 +35,25 @@ SRV02 Servers SHALL be capable of providing all profile data elements marked as 
 ```
 
 ```
-SRV03 Servers SHALL comply to AU Provider Directory Implmementation Guide, AU Base Implmementation Guide and FHIR R4 core constraints for all resource instances.
+SRV03 Servers SHALL comply to AU Provider Directory Implementation Guide, AU Base Implementation Guide and FHIR R4 core constraints for all resource instances.
 ```
 
 ```
-SRV04 Servers SHALL be capable of responding meaningfully to all search requests (in each resource definiition) that are marked as MUST SUPPORT.
+SRV04 Servers SHALL be capable of responding meaningfully to all search requests (in each resource definition) that are marked as MUST SUPPORT.
 ```
 
 ```
-SRV05 Servers MAY be capable of responding to search requests (in each resource definiition) that are marked as OPTIONAL.
+SRV05 Servers MAY be capable of responding to search requests (in each resource definition) that are marked as OPTIONAL.
 ```
 
 ```
 SRV06 Servers MAY be capable of responding to other search requests that are FHIR core compliant OR custom searches (defined using CapabilityStatement supplied by the server).
 ```
+<br/>
 
-**Provider Directory Consumer** implementations are client software systems that call provider directory services and consume data.
+### Provider Directory Consumer 
+
+Provider Directory Consumer implementations are client software systems that call provider directory services and consume data.
 
 ```
 CLI01 Clients SHALL support meaningful consumption of all data elements marked as MUST SUPPORT.
@@ -57,7 +64,7 @@ CLI02 Clients SHALL allow receipt of the all resource types in this guide.
 ```
 
 ```
-CLI03 Clients SHALL allow receipt of resource instances that are valid according to the AU Provider Directory Implmementation Guide, AU Base Implmementation Guide and FHIR R4 core  core compliant elements not defined in this guide.
+CLI03 Clients SHALL allow receipt of resource instances that are valid according to the AU Provider Directory Implementation Guide, AU Base Implementation Guide and FHIR R4 core compliant elements not defined in this guide.
 ```
 
 ```
@@ -84,13 +91,40 @@ The [PractitionerRole](StructureDefinition-au-pd-practitionerrole.html) is used 
 <br/>
 <br/>
 
+### Endpoint Scenarios
+Given the implementation guide allows Endpoints to be referenced from PractitionerRoles, HealthcareServices and Locations, clarity is required as to what it means for an Endpoint to be referenced from each of these entities, and where a client should look for an endpoint. 
+
+```
+REL01 If a PractitionerRole is reachable through an Endpoint, the PractitionerRole MUST explicitly reference that Endpoint.
+```
+
+```
+REL02 Clients wishing to address a message to a PractitionerRole MUST use an Endpoint directly referenced by that PractitionerRole.
+```
+
+```
+REL03 Clients wishing to address a message to a HealthcareService MUST use an Endpoint directly referenced by that HealthcareService.
+```
+
+```
+REL04 Clients cannot assume that a PractitionerRole is reachable through an Endpoint referenced by the HealthcareService – unless the Endpoint is also directly referenced by the PractitionerRole.
+```
+<br/>
+
+### Location Relationships
+- Endpoints referenced from a Location are used to communicate with the Location itself (e.g. the building management), and not the HealthcareService or PractitionerRole at that Location.
+
+- Hours of operation at a Location are for the Location itself rather than the times any HealthcareService or PractitionerRole is available. Directory clients should be using the HealthcareService or PractitionerRole available times.
+
+<br/>
+<br/>
 
 ## Provider Directory Usage Sequence for Secure Messaging
 
 Typical sequence describing endpoint search, HL7 V2 generation, secure message composition, secure message delivery via intermediary, acknowledgement response addressing, generation and delivery.
 	
 <div>
-<img src="assets/images/sequence2.png"/>
+<img src="assets/images/sequence2.png" width="1200" height="800"/>
 </div>
 <br/>
 <br/>
