@@ -70,6 +70,21 @@ Search based on role.
 *Implementation Notes:* [(how to search by token)]
 
 -----------
+**Search: Provider at a HealthcareService**
+
+Search based on role.
+
+`GET [base]/PractitionerRole?service=[id]`
+
+*Example:* `GET [base]/PractitionerRole?service=1234`
+
+*Support:*
+
+* MUST support search PractitionerRole by service.
+
+*Implementation Notes:* [(how to search by reference)]
+
+-----------
 **Search: Provider Specialty**
 
 Search based on specialty code.
