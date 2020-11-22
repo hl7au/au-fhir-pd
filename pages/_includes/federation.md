@@ -3,7 +3,7 @@
 ## Description
 
 Multiple directory service sources (operating FHIR services under this implementation guide) may be combined to offer a federated service capability by suppliers. 
-This allows searches by client systems to be supported accross multiple directory service sources.  This allows directory entries to be provided to client systems that
+This allows searches by client systems to be supported across multiple directory service sources.  This allows directory entries to be provided to client systems that
 can be used to generate secure messages that can be exchanged via a preferred secure messaging provider to another secure messaging provider preferred by the receiving 
 client system. 
 
@@ -32,7 +32,7 @@ FED01 Directory service source providers SHALL supply adequate core registration
 |---|---||
 |Name|A user-friendly description of the registered server e.g. Argus Directory|
 |Contact Details|Details of who to contact for support issues|
-|Enpoint URL|The URL of the server to send federated requests to (base URL of the FHIR server) (this should also be used as the issuer in the identity JWT)|
+|Endpoint URL|The URL of the server to send federated requests to (base URL of the FHIR server) (this should also be used as the issuer in the identity JWT)|
 |Authentication Details|Any details required to authenticate to the server e.g. API key (simple fixed value), authorization header (fixed/long living bearer token), client ID/secret (OAuth details)|
 |Vendor Thumbprint|The thumbprint of the certificate to use to connect to the vendor|
 |Id Prefix|Suitable prefix that may be prepended to all id fields to make unique|
@@ -53,7 +53,7 @@ FED03 Federating directory services SHALL supply a CapabilityStatement conforman
 * The federator shall comply with core requirements as defined in the capability statements section of this implementation guide.
 
 ```
-FED04 Paging of directory service results MUST be supported by client systems
+FED04 Paging of directory service results MUST be supported by client and server systems
 ```
 * Paging (next page continuation) may be used by federators to allow responses to be provided before all source systems have provided results to the federator (performance).
 * Client systems must allow paging links supplied to be used by either automatic background calls to obtain next page or manual next page selection by user on search results.
