@@ -112,7 +112,7 @@ REL04 Clients cannot assume that a PractitionerRole is reachable through an Endp
 <br/>
 
 ### Location Relationships
-- Endpoints referenced from a Location are used to communicate with the Location itself (e.g. the building management), and not the HealthcareService or PractitionerRole at that Location.
+- Endpoints referenced from a Location are used to communicate with the Location itself (e.g. the building management), and not the HealthcareService or PractitionerRole at that Location. For this reason, clients should not use Endpoint references on Locations.
 
 - Hours of operation at a Location are for the Location itself rather than the times any HealthcareService or PractitionerRole is available. Directory clients should be using the HealthcareService or PractitionerRole available times.
 

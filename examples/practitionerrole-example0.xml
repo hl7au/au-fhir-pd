@@ -14,7 +14,7 @@
 		</extension>
 		<type>
 			<coding>
-				<system value="http://hl7.org.au/fhir/v2/0203"/>
+				<system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
 				<code value="UPIN"/>
 			</coding>
 			<text value="Medicare Provider Number"/>
@@ -36,7 +36,7 @@
 		</extension>
 		<type>
 			<coding>
-				<system value="http://hl7.org.au/fhir/v2/0203"/>
+				<system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
 				<code value="VDI"/>
 				<display value="Vendor Directory Identifier"/>
 			</coding>
@@ -55,9 +55,6 @@
 	<organization>
 		<reference value="Organization/example0"/>
 	</organization>
-	<healthcareService>
-		<reference value="HealthcareService/example0"/>
-	</healthcareService>
 	<specialty>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -68,6 +65,9 @@
 	<location>
 		<reference value="Location/example0"/>
 	</location>
+	<healthcareService>
+		<reference value="HealthcareService/example0"/>
+	</healthcareService>
 	<telecom>
 		<system value="phone"/>
 		<value value="025553333"/>

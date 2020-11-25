@@ -5,15 +5,19 @@ active: profiles
 ---
 {% include header.html %}
 {% include container-start.html %}
-{% include breadcrumbs.html %}
+<!-- ============BreadCrumb=============== -->
+<!--{% include breadcrumbs.html %}-->
 
   <!-- ============CONTENT CONTENT=============== -->
 
-<h2>{{[title]}}</h2>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Content</a></li>
+  <li class="{% if '{{[fmt]}}' == 'xml' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
+  <li class="{% if '{{[fmt]}}' == 'json' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
+  <li class="{% if '{{[fmt]}}' == 'ttl' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
+</ul>
 
-<p>
-Formats: <a href="{{[type]}}-{{[id]}}.xml.html">XML</a>, <a href="{{[type]}}-{{[id]}}.json.html">JSON</a>, <a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a>
-</p>
+<h2>{{[title]}}</h2>
 
 {% include {{[type]}}-{{[name]}}.xhtml %}
 

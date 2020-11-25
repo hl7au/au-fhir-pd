@@ -7,7 +7,8 @@ title: profile
 
 {% include header.html %}
 {% include container-start.html %}
-{% include breadcrumbs.html %}
+<!-- ============BreadCrumb=============== -->
+<!--{% include breadcrumbs.html %}-->
 
   <!-- ============CONTENT CONTENT=============== -->
 
@@ -21,10 +22,10 @@ title: profile
 	<li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
 </ul>
 
-<h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}<a name="intro"> </a></span>{{[type]}}-{{[id]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#intro"><img src="target.png"/></a></h3>
+<h1><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}<a name="intro"> </a></span>{{[type]}}-{{[id]}} <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#intro"><img src="target.png"/></a></h1>
 
 
-<!-- introductiontext here-->
+<!-- introduction text here-->
 <a name="introduction"> </a>
 
 
@@ -41,10 +42,10 @@ title: profile
 
 
 <a name="profile"> </a>
-<h4><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.1</span>
+<h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.1</span>
 Formal Views of Profile Content
  <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#profile"><img src="target.png"/></a>
-</h4>
+</h3>
 <!-- uri -->
 {% include {{[type]}}-{{[id]}}-header.xhtml %}
 
