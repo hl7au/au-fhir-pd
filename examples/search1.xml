@@ -83,7 +83,7 @@
                             <valueString value="33443682-91F6-11D2-8F2C-444553540123" />
                         </extension>
                         <extension url="universal-id-type">
-                            <valueCode value="GUID" />
+                            <valueString value="GUID" />
                         </extension>
                     </extension>
                     <type>
@@ -106,7 +106,7 @@
                             <valueString value="33443682-91F6-11D2-8F2C-444553540123" />
                         </extension>
                         <extension url="universal-id-type">
-                            <valueCode value="GUID" />
+                            <valueString value="GUID" />
                         </extension>
                     </extension>
                     <type>
@@ -120,7 +120,6 @@
                     <system value="http://ns.medical-objects.com.au/id/routing-id" />
                     <value value="BD6000000X9" />
                     <assigner>
-                        <reference value="Organization/Medical-Objects.33443682-91F6-11D2-8F2C-444553540123.GUID" />
                         <display value="Medical-Objects" />
                     </assigner>
                 </identifier>
@@ -401,7 +400,7 @@
                     <type>
                         <coding>
                             <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203" />
-                            <code value="NPI" />
+                            <code value="NPIO" />
                             <display value="National provider identifier" />
                         </coding>
                         <text value="HPI-I" />

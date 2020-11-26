@@ -9,7 +9,7 @@
 ## Introduction
 This guide covers capability requirements of FHIR services to implement a set of profiles and support interfaces in an Australian context for the purpose of implementation of provider directory services.
 
-Many of the resource profiles provided here are based on definitions from the Australian Base Profiles Implementation Guide.
+Many of the resource profiles provided here are based on definitions from the [Australian Base Profiles Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/).
 
 This document is a working specification that is expected to be implemented and tested by FHIR<sup>&reg;&copy;</sup> system producers to enable feedback to improve the content of this guide.
 
@@ -19,7 +19,7 @@ Information
 * **Organisation Directory Entry**: managing organisations
 * **Practitioner Directory Entry**: individual practitioners
 * **Practitioner Role Directory Entry**: role participants at a location for an organisation
-* **Healthcare Service Directory Entry**: services delivered at a location for an organization
+* **Healthcare Service Directory Entry**: services delivered at a location for an organisation
 * **Secure Messaging Endpoint Directory Entry**: connection details for secure messaging
 
 Interactions
