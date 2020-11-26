@@ -41,5 +41,5 @@ SEC09 Vendor certificate secure message signed payload MUST provide a certificat
 ```
 
 ```
-SEC10 Secure message metadata senderOrganisation (URI) MUST be present in the signing certificate Subject Alternative Names property
+SEC10 Secure message metadata sender Organisation (URI) MUST be present in the signing certificate Subject Alternative Names property
 ```

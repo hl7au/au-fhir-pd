@@ -8,14 +8,14 @@ active: profiles
 <!-- ============BreadCrumb=============== -->
 <!--{% include breadcrumbs.html %}-->
 
-  <!-- ============CONTENT CONTENT=============== -->
-
 <ul class="nav nav-tabs">
-  <li class="active"><a href="{{[type]}}-{{[id]}}.html">Narrative</a></li>
-  <li><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
-  <li><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
-  <li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
+  <li class="active"><a href="#">Content</a></li>
+  <li class="{% if '{{[fmt]}}' == 'xml' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
+  <li class="{% if '{{[fmt]}}' == 'json' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
+  <li class="{% if '{{[fmt]}}' == 'ttl' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
 </ul>
+
+  <!-- ============CONTENT CONTENT=============== -->
 
 <h2>Example: {{[type]}}-{{[id]}}</h2>
 
