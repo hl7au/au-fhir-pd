@@ -91,8 +91,8 @@ The [PractitionerRole](StructureDefinition-au-pd-practitionerrole.html) is used 
 <br/>
 <br/>
 
-### Endpoint Scenarios
-Given the implementation guide allows Endpoints to be referenced from PractitionerRoles, HealthcareServices and Locations, clarity is required as to what it means for an Endpoint to be referenced from each of these entities, and where a client should look for an endpoint. 
+### Relationship guidance
+Given the implementation guide allows Endpoints to be referenced from PractitionerRoles, HealthcareServices and Locations, clarity is required as to what it means for an Endpoint to be referenced from each of these entities, where a client should look for an endpoint and the supported payloads:
 
 ```
 REL01 If a PractitionerRole is reachable through an Endpoint, the PractitionerRole MUST explicitly reference that Endpoint.
@@ -109,12 +109,18 @@ REL03 Clients wishing to address a message to a HealthcareService MUST use an En
 ```
 REL04 Clients cannot assume that a PractitionerRole is reachable through an Endpoint referenced by the HealthcareService – unless the Endpoint is also directly referenced by the PractitionerRole.
 ```
-<br/>
 
-### Location Relationships
-- Endpoints referenced from a Location are used to communicate with the Location itself (e.g. the building management), and not the HealthcareService or PractitionerRole at that Location. For this reason, clients should not use Endpoint references on Locations.
+```
+REL05 Endpoints referenced from a Location are used to communicate with the Location itself (e.g. the building management), and not the HealthcareService or PractitionerRole at that Location. For this reason, clients should not use Endpoint references on Locations.
+```
 
-- Hours of operation at a Location are for the Location itself rather than the times any HealthcareService or PractitionerRole is available. Directory clients should be using the HealthcareService or PractitionerRole available times.
+```
+REL06 The binding to the valueset for Australian Endpoint Payload Types is extensible.  Implementers should use payload types defined in the valueset where possible. Where this is not possible, implementers may reach local agreements to use payload types that are not listed.
+```
+
+```
+REL07 Hours of operation at a Location are for the Location itself rather than the times any HealthcareService or PractitionerRole is available. Directory clients should be using the HealthcareService or PractitionerRole available times.
+```
 
 <br/>
 <br/>
@@ -191,7 +197,7 @@ http://sqlonfhir-aupd.azurewebsites.net/fhir/Endpoint?status=active&identifier=h
   * Fill HL7 V2 MSH-4, MSH-6 content as per [Australian Diagnostics and Referral Messaging - Facility/Organisational level addressing](https://confluence.hl7australia.com/pages/viewpage.action?pageId=31589320#Appendix10AddressingmessagesusingAustralianProfileforProviderDirectoryServices(Normative)-A10.1.1Facility/Organisationalleveladdressing).
   * Fill HL7 V2 PRD-1, PRD-2, PRD-3, PRD-5, PRD-7 and/or XCN datatype content as per [Australian Diagnostics and Referral Messaging - Intended Provider/Individual recipient level addressing](https://confluence.hl7australia.com/pages/viewpage.action?pageId=31589320#Appendix10AddressingmessagesusingAustralianProfileforProviderDirectoryServices(Normative)-A10.1.2IntendedProvider/Individualrecipientleveladdressing).
   * Fill HL7 V2 MSH-3, MSH-5 content as per [Australian Diagnostics and Referral Messaging - Application level addressing](https://confluence.hl7australia.com/pages/viewpage.action?pageId=31589320#Appendix10AddressingmessagesusingAustralianProfileforProviderDirectoryServices(Normative)-A10.1.3Applicationleveladdressing).
-1. SEND HL7 V2 REF/MDM 
+1. SEND HL7 V2 Message
 * Drop outbound HL7 V2 file or send via local SM CLIENT API.
 1. SEARCH (2) 
 * For independent HL7 V2 sender processing (no Endpoint knowledege) can lookup Endpoint details via search by Receiving Facility.
@@ -203,7 +209,7 @@ GET https://jdfhir.test.medical-objects.com.au/rest/fhir/Endpoint?status=active&
 GET http://sqlonfhir-aupd.azurewebsites.net/fhir/Endpoint?status=active&au-receivingfacility-namespace-id=CIB&au-receivingfacility-universal-id=877F9695-1298-4E6A-B432-0FDD46AD80B8&au-receivingfacility-universal-id-type=GUID&connection-type=http://hl7.org.au/fhir/CodeSystem/smd-interfaces|http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010&payload-type=http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type|http://ns.electronichealth.net.au/ack/sc/deliver/hl7Ack/2012
 ```
 1. SEARCH RESPONSE (2)
-* A FHIR Bundle (searchset) is returned with Endpoint details needed to deliver HL7 V2 REF/MDM
+* A FHIR Bundle (searchset) is returned with Endpoint details needed to deliver HL7 V2 Message
 * [Example an Endpoint search response](Bundle-search3.html) with one Endpoint resource returned.
 1. COMPOSE SECURE MESSAGE (1)
 * Use details in the Endpoint result to compose standard SMD messages [ATS 5822—2010 — E-Health Secure Message Delivery](https://infostore.saiglobal.com/en-au/Standards/Product-Details-129644_SAIG_AS_AS_274353/?productID=129644_SAIG_AS_AS_274353).
