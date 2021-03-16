@@ -6,8 +6,13 @@
   <name value="AUPDLocation" />
   <title value="AU PD Location" />
   <status value="draft" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+    </coding>
+  </jurisdiction>
   <publisher value="HL7 Australia"/>
-  <description value="Australian provider directory entry for location." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

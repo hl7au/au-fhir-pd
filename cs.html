@@ -3,20 +3,25 @@
 level: 2
 active: terminology
 ---
+
 {% include header.html %}
 {% include container-start.html %}
-{% include breadcrumbs.html %}
+<!-- ============BreadCrumb=============== -->
+<!--{% include breadcrumbs.html %}-->
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Content</a></li>
+  <li class="{% if '{{[fmt]}}' == 'xml' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
+  <li class="{% if '{{[fmt]}}' == 'json' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
+  <li class="{% if '{{[fmt]}}' == 'ttl' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
+</ul>
+
+<h2>{{[title]}}</h2>
 
   <!-- ============CONTENT CONTENT=============== -->
 
-
-<!-- <h2>{{[title]}}</h2> -->
-
-
 {% include {{[type]}}-{{[id]}}-summary.xhtml %}
-
 {% include {{[type]}}-{{[id]}}-xref.xhtml %}
-
 {% include {{[type]}}-{{[id]}}-content.xhtml %}
 
 

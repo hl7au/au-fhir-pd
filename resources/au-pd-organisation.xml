@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-organisation" />
-  <meta>
-    <lastUpdated value="2018-03-05T01:14:06.533+11:00" />
-  </meta>
-  <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>AU PD Organisation</p>
-    </div>
-  </text>
   <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-organisation" />
-  <version value="2.0.1" />
+  <version value="2.1.0" />
   <name value="AUPDOrganisation" />
   <title value="AU PD Organisation" />
   <status value="draft" />
-  <date value="2019-08-08" />
-  <fhirVersion value="4.0.0" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+    </coding>
+  </jurisdiction>
+  <publisher value="HL7 Australia"/>
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
@@ -51,7 +48,7 @@
     </element>
     <element id="Organization.active">
       <path value="Organization.active" />
-      <short value="Status of Directroy Entry Organisation" />
+      <short value="Status of Directory Entry Organisation" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
@@ -63,12 +60,12 @@
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
-      <short value="Contact Details of Directroy Entry Organisation" />
+      <short value="Contact Details of Directory Entry Organisation" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
-      <short value="Addresses of Directroy Entry Organisation" />
+      <short value="Addresses of Directory Entry Organisation" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.address.state">

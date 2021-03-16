@@ -30,7 +30,7 @@
                         <span style="color: gray;">identifier:</span> http://ns.argusdca.com.au/smd/id/hostname/ACC5408570000002
                     </div>
                 </text>
-                <extension url="http://hl7.org.au/fhir/StructureDefinition/encrypting-qualified-certificate-reference">
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/encryption-certificate-pem-x509">
                     <valueString value="-----BEGIN CERTIFICATE-----MIIEUjCCAzqgAwIBAgIGAdGpSiX5MA0GCSqGSIb3DQEBBQUAMFwxCzAJBgNVBAYTAkFVMRwwGgYDVQQKDBNBcmd1c0Nvbm5lY3RpbmdDYXJlMQ4wDAYDVQQLDAVBcmd1czEfMB0GA1UEAwwWQXJndXNDb25uZWN0aW5nQ2FyZU9DQTAeFw0xMzEyMTYyMzAwMDBaFw0yMjEyMTYyMzAwMDBaMFIxCzAJBgNVBAYTAkFVMRUwEwYDVQQKDAxBcmd1c0Nvbm5lY3QxLDAqBgNVBAMMI0FDQzU0MDg1NzAwMDAwMDIuaWQuYXJndXNkY2EuY29tLmF1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsIafjf8uOnu82omqUxjn/A/LyrNNgCfg2zU3bdyJiwSbBLEDPpLbeDVUUiM39YQLU7JSMAEYeWr8cCbMbmygRdpQDxfmev4D/L1UZxSZUhrwLktCBM1AZTV4FqMV6O2a7p0Yio21NcC4usP2MBY6Uh6pClUFaEz1wGEyaXFtaoFqsnFq+19Hqg/okpH71hUjsRmyDBrkWA0NyC+1X4MsOgheid7cNznLHBcXap1rWQLrmHxjE3NJ89/HztyC8L8er3PqdbmqsG+y6u2s5w97atHcsAt0RxBjc0/wZNDETupT+hHRd6MZ3iDplhLqX1YLWVJPtr6JjwHz17POKzVkjQIDAQABo4IBIjCCAR4wagYDVR0RBGMwYYIjQUNDNTQwODU3MDAwMDAwMi5pZC5hcmd1c2RjYS5jb20uYXWGOmh0dHA6Ly9ucy5hcmd1c2RjYS5jb20uYXUvc21kL2lkL2hvc3RuYW1lL0FDQzU0MDg1NzAwMDAwMDIwHwYDVR0jBBgwFoAUvLowVU1USjwCNjvruRZ9LgUSSPwwHQYDVR0OBBYEFHYEfqU6fYLM91x7XhHZXljls+dIMAwGA1UdEwEB/wQCMAAwGQYDVR0gBBIwEDAOBgwqJAGPUYdqAQEBBAMwNwYDVR0lBDAwLgYEVR0lAAYIKwYBBQUHAwEGCCsGAQUFBwMCBggrBgEFBQcDAwYIKwYBBQUHAwQwDgYDVR0PAQH/BAQDAgO4MA0GCSqGSIb3DQEBBQUAA4IBAQBbgaOHgMRTh+e3qoYA4WGQ1kqVrf5++4x9mbuPzKaDoCEOj+SqPnlIx7gFk+Hz5X75VoT/92ORjvJotyZgDRdkn5Lj8jmTjdB/wP5dbTRkb1Z2F1rdWHMz7FLw5X5wqSsKF5uT36t6qUSHYP9Ike/17muGfO+ByOmecU25MBnBnECQq6vz9VBLf6DizTaMi8bCgtevMWNhI18vJPT2nHzzNG1WZIklNZjvrMV4Si4R/uxP0JEG3zyUksgmRGtbBOzju6n2PkkEjPdnDIgT4VLclcXJc9bUOIABcjaEalB09jqZGX9/g4TTcBRWVymxsK75vgcJhrI5k9+kvFganiOd-----END CERTIFICATE-----" />
                 </extension>
                 <extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility">
@@ -77,42 +77,6 @@
                     <start value="2017-08-18" />
                 </period>
                 <payloadType>
-                    <coding>
-                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
-                        <code value="http://ns.ahml.com.au/smd/sc/HL7v2.3.1~AS4700.2-2006~ORU_R01" />
-                    </coding>
-                    <coding>
-                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
-                        <code value="http://smxchange.net.au/smd/sc/HL7v2.3.1~REF_I12/FT" />
-                    </coding>
-                    <coding>
-                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
-                        <code value="http://smxchange.net.au/smd/sc/HL7v2.3.1~REF_I12/RTF" />
-                    </coding>
-                    <coding>
-                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
-                        <code value="http://smxchange.net.au/smd/sc/HL7v2.3.1~REF_I12/RTF/FT" />
-                    </coding>
-                    <coding>
-                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
-                        <code value="http://smxchange.net.au/smd/sc/HL7v2.3.1~REF_I12/TEXT" />
-                    </coding>
-                    <coding>
-                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
-                        <code value="http://smxchange.net.au/smd/sc/HL7v2.3.1~REF_I12/RTF/PDF" />
-                    </coding>
-                    <coding>
-                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
-                        <code value="http://smxchange.net.au/smd/sc/HL7v2.3.1~REF_I12/PDF" />
-                    </coding>
-                    <coding>
-                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
-                        <code value="http://smxchange.net.au/smd/sc/HL7v2.3.1~REF_I12/PDF/FT" />
-                    </coding>
-                    <coding>
-                        <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
-                        <code value="http://smxchange.net.au/smd/sc/HL7v2.3.1~REF_I12/eRTF" />
-                    </coding>
                     <coding>
                         <system value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type" />
                         <code value="http://ns.electronichealth.net.au/er/sc/deliver/hl7Mdm/2012" />
