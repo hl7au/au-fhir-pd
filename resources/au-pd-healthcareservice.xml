@@ -6,13 +6,13 @@
   <name value="AUPDHealthcareService" />
   <title value="AU PD Healthcare Service" />
   <status value="draft" />
+  <publisher value="HL7 Australia" />
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="AU"/>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="AU" />
     </coding>
   </jurisdiction>
-  <publisher value="HL7 Australia"/>
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -35,7 +35,7 @@
       <path value="HealthcareService.meta.source" />
       <mustSupport value="true" />
     </element>
-  <element id="HealthcareService.identifier">
+    <element id="HealthcareService.identifier">
       <path value="HealthcareService.identifier" />
       <slicing>
         <discriminator>
@@ -50,14 +50,7 @@
       </slicing>
       <mustSupport value="true" />
     </element>
-    <element id="HealthcareService.identifier:hpio">
-      <path value="HealthcareService.identifier" />
-      <sliceName value="hpio" />
-      <short value="HPI-O for Directory Entry Organisation" />
-      <definition value="National identifier Health Provider Identifier for Organisations for Healthcare Service" />
-      <mustSupport value="true" />
-    </element>
-    <element id="HealthcareService.identifier:hpio.extension">
+    <element id="HealthcareService.identifier.extension">
       <path value="HealthcareService.identifier.extension" />
       <slicing>
         <discriminator>
@@ -67,118 +60,37 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="HealthcareService.identifier:hpio.extension:hpioassigningauthority">
+    <element id="HealthcareService.identifier.extension:routability">
       <path value="HealthcareService.identifier.extension" />
-      <sliceName value="hpioassigningauthority" />
-      <short value="Optional HL7 V2 routing content" />
-      <definition value="Optional HL7 V2 routing content" />
-      <max value="1" />
+      <sliceName value="routability" />
+      <min value="0" />
+      <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/identifier-routability" />
+      </type>
+    </element>
+    <element id="HealthcareService.identifier:hpio">
+      <path value="HealthcareService.identifier" />
+      <sliceName value="hpio" />
+      <short value="HPI-O for Directory Entry Organisation" />
+      <definition value="National identifier Health Provider Identifier for Organisations for Healthcare Service" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-hpio" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="HealthcareService.identifier:hpio.type">
-      <path value="HealthcareService.identifier.type" />
-      <short value="HPI-O Identifier Type" />
-      <definition value="Element describing the type of identifier" />
-    </element>
-    <element id="HealthcareService.identifier:hpio.type.coding">
-      <path value="HealthcareService.identifier.type.coding" />
-      <definition value="Coding for the identifier type" />
-      <min value="1" />
-    </element>
-    <element id="HealthcareService.identifier:hpio.type.text">
-      <path value="HealthcareService.identifier.type.text" />
-      <short value="HPI-O Identifier Type Descriptive Text" />
-      <definition value="Descriptive text for the identifier type" />
     </element>
     <element id="HealthcareService.identifier:pdvendor">
       <path value="HealthcareService.identifier" />
       <sliceName value="pdvendor" />
       <short value="Secure Messaging Vendor's Healthcare Service Identifier" />
       <definition value="Vendor allocated directory identifier this can be used for search for specific healtchare service directory entry and/or for routing of messages." />
-      <mustSupport value="true" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.extension">
-      <path value="HealthcareService.identifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.extension:pdvendorassigningauthority">
-      <path value="HealthcareService.identifier.extension" />
-      <sliceName value="pdvendorassigningauthority" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <max value="1" />
       <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-assigningauthority" />
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.type">
-      <path value="HealthcareService.identifier.type" />
-      <short value="Vendor Directory Identifier Type" />
-      <definition value="Element describing the type of identifier" />
-      <min value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="Local Identifier Type" />
-        <valueSet value="http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203" />
-      </binding>
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.type.coding">
-      <path value="HealthcareService.identifier.type.coding" />
-      <short value="Vendor Directory Identifier" />
-      <definition value="Type code for vendor directory identifier" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.type.coding.system">
-      <path value="HealthcareService.identifier.type.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://hl7.org.au/fhir/v2/0203" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.type.coding.code">
-      <path value="HealthcareService.identifier.type.coding.code" />
-      <min value="1" />
-      <fixedCode value="VDI" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.type.text">
-      <path value="HealthcareService.identifier.type.text" />
-      <short value="Vendor Directory Identifier Type" />
-      <definition value="Vendor Directory Identifier type descripition" />
-      <min value="1" />
-      <fixedString value="Vendor Directory Identifier" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.system">
-      <path value="HealthcareService.identifier.system" />
-      <short value="Vendor allocated URL" />
-      <definition value="Unique namespace for the assigning vendor's identifier value." />
-      <min value="1" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.value">
-      <path value="HealthcareService.identifier.value" />
-      <short value="Vendor Identifier Value" />
-      <definition value="Assigning vendor's identifier value." />
-      <min value="1" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.assigner">
-      <path value="HealthcareService.identifier.assigner" />
-      <short value="Secure messaging vendor organisation" />
-      <min value="1" />
-    </element>
-    <element id="HealthcareService.identifier:pdvendor.assigner.display">
-      <path value="HealthcareService.identifier.assigner.display" />
-      <short value="Secure messaging vendor organisation name" />
-      <min value="1" />
     </element>
     <element id="HealthcareService.active">
       <path value="HealthcareService.active" />
@@ -227,6 +139,54 @@
       <path value="HealthcareService.telecom" />
       <short value="Contact details" />
       <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.availableTime.availableStartTime.extension">
+      <path value="HealthcareService.availableTime.availableStartTime.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="HealthcareService.availableTime.availableStartTime.extension:timeZone">
+      <path value="HealthcareService.availableTime.availableStartTime.extension" />
+      <sliceName value="timeZone" />
+    </element>
+    <element id="HealthcareService.availableTime.availableStartTime.extension:timeZone.value[x]">
+      <path value="HealthcareService.availableTime.availableStartTime.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="HealthcareService.availableTime.availableEndTime.extension">
+      <path value="HealthcareService.availableTime.availableEndTime.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="HealthcareService.availableTime.availableEndTime.extension:timeZone">
+      <path value="HealthcareService.availableTime.availableEndTime.extension" />
+      <sliceName value="timeZone" />
+    </element>
+    <element id="HealthcareService.availableTime.availableEndTime.extension:timeZone.value[x]">
+      <path value="HealthcareService.availableTime.availableEndTime.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="HealthcareService.endpoint">
       <path value="HealthcareService.endpoint" />
