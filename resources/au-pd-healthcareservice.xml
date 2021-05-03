@@ -92,6 +92,63 @@
       </type>
       <mustSupport value="true" />
     </element>
+        <element id="HealthcareService.identifier:pdvendor.type">
+      <path value="HealthcareService.identifier.type" />
+      <short value="Vendor Directory Identifier Type" />
+      <definition value="Element describing the type of identifier" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Local Identifier Type" />
+        <valueSet value="http://hl7.org.au/fhir/ValueSet/au-hl7v2-0203" />
+      </binding>
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.type.coding">
+      <path value="HealthcareService.identifier.type.coding" />
+      <short value="Vendor Directory Identifier" />
+      <definition value="Type code for vendor directory identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.type.coding.system">
+      <path value="HealthcareService.identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org.au/fhir/v2/0203" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.type.coding.code">
+      <path value="HealthcareService.identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="VDI" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.type.text">
+      <path value="HealthcareService.identifier.type.text" />
+      <short value="Vendor Directory Identifier Type" />
+      <definition value="Vendor Directory Identifier type descripition" />
+      <min value="1" />
+      <fixedString value="Vendor Directory Identifier" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.system">
+      <path value="HealthcareService.identifier.system" />
+      <short value="Vendor allocated URL" />
+      <definition value="Unique namespace for the assigning vendor's identifier value." />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.value">
+      <path value="HealthcareService.identifier.value" />
+      <short value="Vendor Identifier Value" />
+      <definition value="Assigning vendor's identifier value." />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.assigner">
+      <path value="HealthcareService.identifier.assigner" />
+      <short value="Secure messaging vendor organisation" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.identifier:pdvendor.assigner.display">
+      <path value="HealthcareService.identifier.assigner.display" />
+      <short value="Secure messaging vendor organisation name" />
+      <min value="1" />
+    </element>
     <element id="HealthcareService.active">
       <path value="HealthcareService.active" />
       <short value="Required status" />
