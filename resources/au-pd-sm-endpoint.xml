@@ -6,13 +6,13 @@
   <name value="AUPDSecureMessagingEndpoint" />
   <title value="AU PD Secure Messaging Endpoint" />
   <status value="draft" />
+  <publisher value="HL7 Australia" />
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="AU"/>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="AU" />
     </coding>
   </jurisdiction>
-  <publisher value="HL7 Australia"/>
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -128,7 +128,7 @@
     </element>
     <element id="Endpoint.managingOrganization.display">
       <path value="Endpoint.managingOrganization.display" />
-      <short value="Directroy entry managing organisation display details" />
+      <short value="Directory entry managing organisation display details" />
       <definition value="Details to display for the directory entry managing organisation, typically the name." />
       <min value="1" />
     </element>
