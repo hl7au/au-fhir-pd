@@ -21,7 +21,7 @@
     {
        "name" : "aubaser4",
        "location" : "http://hl7.org.au/fhir",
-	   "version" : "2020Aug"
+	   "version" : "current"
     }
   ],  
   "spreadsheets": [],
