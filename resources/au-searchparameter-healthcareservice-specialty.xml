@@ -7,5 +7,11 @@
 	<base value="HealthcareService"/>
 	<type value="token"/>
 	<description value="Find a matching healthcare service by specialty"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="AU" />
+    </coding>
+  </jurisdiction>
 	<expression value="specialty"/>
 </SearchParameter>

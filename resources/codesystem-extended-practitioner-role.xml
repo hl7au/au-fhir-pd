@@ -12,6 +12,12 @@
   <experimental value="true"/>
   <date value="2019-05-14"/>
   <publisher value="HL7 Australia"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="AU" />
+    </coding>
+  </jurisdiction>
   <contact>
     <name value="hl7orgau"/>
   </contact>
