@@ -152,6 +152,9 @@
                 </endpoint>
             </PractitionerRole>
         </resource>
+        <search>
+            <mode value="match" />
+        </search>
     </entry>
     <entry>
         <fullUrl value="https://sqlonfhir-aupd.azurewebsites.net/fhir/Endpoint/endpoint0" />
@@ -226,6 +229,9 @@
                 <address value="https://smd-ep.test.medical-objects.com.au/smd/2010" />
             </Endpoint>
         </resource>
+        <search>
+            <mode value="include" />
+        </search>
     </entry>
     <entry>
         <fullUrl value="https://sqlonfhir-aupd.azurewebsites.net/fhir/Location/location0" />
@@ -276,6 +282,9 @@
                 </address>
             </Location>
         </resource>
+        <search>
+            <mode value="include" />
+        </search>
     </entry>
     <entry>
         <fullUrl value="https://sqlonfhir-aupd.azurewebsites.net/fhir/Organization/organization0" />
@@ -360,6 +369,9 @@
                 </address>
             </Organization>
         </resource>
+        <search>
+            <mode value="include" />
+        </search>
     </entry>
     <entry>
         <fullUrl value="https://sqlonfhir-aupd.azurewebsites.net/fhir/Practitioner/practitioner0" />
@@ -443,5 +455,8 @@
                 </address>
             </Practitioner>
         </resource>
+        <search>
+            <mode value="include" />
+        </search>
     </entry>
 </Bundle>

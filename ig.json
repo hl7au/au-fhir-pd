@@ -3,6 +3,7 @@
   "fixed-business-version" : "2.1.0",
   "paths": {
     "temp": "temp",
+	"history": "http://hl7.org.au/fhir/pd/history.html",
     "resources": [ "resources", "examples" ],
     "pages": "pages",
     "txCache": "txCache",
@@ -15,6 +16,7 @@
   "source": "ig.xml",
   "npm-name" : "hl7.fhir.au.pd",
   "tool": "jekyll",
+  "suppressedWarningFile": "ignoreWarnings.txt",
   "license": "CC0-1.0",
   "canonicalBase": "http://hl7.org.au/fhir/pd",
   "dependencyList": [ 
