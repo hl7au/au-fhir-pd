@@ -6,12 +6,5 @@ The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/clinical
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2 on element Practitioner.communication could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/service-type-1 on element HealthcareService.type could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/clinical-specialty-1 on element HealthcareService.specialty could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/healthcare-organisation-role-type-1 on element Organization.type could not be resolved
 
-# Core resource validation processing information messages
-
-# Resources validated against meta defined profiles
-
-# IG hints
-The Implementation Guide contains no examples for this data type profile
-The Implementation Guide contains no examples for this extension
-The Implementation Guide contains no examples for this profile
