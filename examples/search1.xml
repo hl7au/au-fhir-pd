@@ -90,7 +90,7 @@
                         <coding>
                             <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203" />
                             <code value="UPIN" />
-                            <display value="Medicare/CMS (formerly HCFA)'s Universal Physician Identification numbers" />
+                            <display value="Medicare Provider Number" />
                         </coding>
                         <text value="Medicare Provider Number" />
                     </type>
@@ -401,7 +401,7 @@
                         <coding>
                             <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203" />
                             <code value="NPIO" />
-                            <display value="National provider identifier" />
+                            <display value="National provider at organisation identifier" />
                         </coding>
                         <text value="HPI-I" />
                     </type>
