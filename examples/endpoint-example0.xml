@@ -1,16 +1,19 @@
 <Endpoint xmlns="http://hl7.org/fhir">
   <id value="example0"/>
+  <meta>
+    <profile value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-sm-endpoint"/>
+  </meta>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       <b>Telstra Health Secure Messaging Endpoint</b>
       <hr/>
       <span style="color: gray;">Work - Email:</span> cib@argus.net.au
-            <br/>
+      <br/>
       <span style="color: gray;">identifier:</span> Argus SupportUnknownL
-            <br/>
+      <br/>
       <span style="color: gray;">identifier:</span> http://ns.argusdca.com.au/smd/id/hostname/ACC5959010000000
-        </div>
+    </div>
   </text>
   <extension url="http://hl7.org.au/fhir/StructureDefinition/au-receivingfacility">
     <extension url="namespace-id">
