@@ -205,53 +205,23 @@
       <short value="Contact details" />
       <mustSupport value="true" />
     </element>
-    <element id="HealthcareService.availableTime.availableStartTime.extension">
-      <path value="HealthcareService.availableTime.availableStartTime.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="HealthcareService.availableTime.availableStartTime.extension:timeZone">
       <path value="HealthcareService.availableTime.availableStartTime.extension" />
       <sliceName value="timeZone" />
-    </element>
-    <element id="HealthcareService.availableTime.availableStartTime.extension:timeZone.value[x]">
-      <path value="HealthcareService.availableTime.availableStartTime.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="HealthcareService.availableTime.availableEndTime.extension">
-      <path value="HealthcareService.availableTime.availableEndTime.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-timezone" />
+      </type>
     </element>
     <element id="HealthcareService.availableTime.availableEndTime.extension:timeZone">
       <path value="HealthcareService.availableTime.availableEndTime.extension" />
       <sliceName value="timeZone" />
-    </element>
-    <element id="HealthcareService.availableTime.availableEndTime.extension:timeZone.value[x]">
-      <path value="HealthcareService.availableTime.availableEndTime.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-timezone" />
+      </type>
     </element>
     <element id="HealthcareService.endpoint">
       <path value="HealthcareService.endpoint" />
