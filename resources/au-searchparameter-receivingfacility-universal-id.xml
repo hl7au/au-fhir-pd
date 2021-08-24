@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchParameter xmlns="http://hl7.org/fhir">
 	<id value="au-searchparameter-receivingfacility-universal-id" />
-	<name value="Search Endpoint Receiving Facility Extension Universal Id"/>
+	<name value="SearchEndpointReceivingFacilityExtensionUniversalId"/>
 	<status value="draft"/>
 	<code value="au-receivingfacility-universal-id"/>
 	<base value="Endpoint"/>

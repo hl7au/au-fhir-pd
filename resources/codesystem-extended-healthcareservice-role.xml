@@ -9,7 +9,8 @@
     </text>
     <url value="http://hl7.org.au/fhir/CodeSystem/codesystem-extended-healthcareservice-role"/>
   <version value="2.0.1" />
-    <name value="Healthcare Service Role Extended Terminology"/>
+    <name value="HealthcareServiceRoleExtendedTerminology"/>
+    <title value="Healthcare Service Role Extended Terminology"/>
     <status value="draft"/>
     <experimental value="true"/>
 	<date value="2019-05-14"/>

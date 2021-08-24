@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <SearchParameter xmlns="http://hl7.org/fhir">
 	<id value="au-searchparameter-healthcareservice-speciality" />
-	<name value="Healthcare service specialty search"/>
+	<name value="HealthcareServiceSpecialtySearch"/>
 	<status value="draft"/>
 	<code value="au-healthcareservice-speciality"/>
 	<base value="HealthcareService"/>

@@ -3,7 +3,8 @@
   <id value="au-pd"/>
   <url value="http://hl7.org.au/fhir/pd/ImplementationGuide/au-pd"/>
   <version value="2.1.0"/>
-  <name value="Implementation Guide Template"/>
+  <name value="ImplementationGuideTemplate"/>
+  <title value="Implementation Guide Template"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="HL7 Australia"/>

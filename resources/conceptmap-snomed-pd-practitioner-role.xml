@@ -1826,7 +1826,7 @@
     </div>
   </text>
   <version value="1.0.0"/>
-  <name value="SNOMED-CT to Practioner Role Extended Concept Map"/>
+  <name value="SNOMEDtoPractionerRoleExtendedConceptMap"/>
   <title value="SNOMED-CT to Practioner Role Extended Concept Map"/>
   <status value="active"/>
   <experimental value="false"/>
