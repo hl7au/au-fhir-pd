@@ -8,3 +8,5 @@ The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/service-
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/clinical-specialty-1 on element HealthcareService.specialty could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/healthcare-organisation-role-type-1 on element Organization.type could not be resolved
 
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-specialty-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/healthcare-organisation-role-type-1 not found by validator
