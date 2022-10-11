@@ -141,7 +141,6 @@
         <reference value="SearchParameter/au-searchparameter-receivingfacility-universal-id-type"/>
       </reference>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
