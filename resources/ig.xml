@@ -138,7 +138,7 @@
 -->
     <resource>
       <reference>
-        <reference value="SearchParameter/au-pd-receivingfacility-universal-id-type"/>
+        <reference value="SearchParameter/au-searchparameter-receivingfacility-universal-id-type"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
