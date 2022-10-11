@@ -120,7 +120,7 @@
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
-	  <!--
+<!--
     <resource>
       <reference>
         <reference value="SearchParameter/au-searchparameter-receivingfacility-namespace-id"/>
@@ -128,7 +128,6 @@
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
-	  -->
     <resource>
       <reference>
         <reference value="SearchParameter/au-searchparameter-receivingfacility-universal-id"/>
@@ -143,6 +142,7 @@
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
     </resource>
+-->
     <resource>
       <reference>
         <reference value="Practitioner/example0"/>
