@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchParameter xmlns="http://hl7.org/fhir">
-	<id value="au-searchparameter-receivingfacility-universal-id" />
+	<id value="au-pd-receivingfacility-universal-id" />
 	<name value="SearchEndpointReceivingFacilityExtensionUniversalId"/>
 	<status value="draft"/>
-	<code value="au-receivingfacility-universal-id"/>
+	<code value="au-pd-universal-id"/>
 	<base value="Endpoint"/>
 	<type value="string"/>
 	<description value="Find a matching receiving facility universal id"/>
