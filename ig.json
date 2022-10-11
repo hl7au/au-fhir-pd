@@ -23,7 +23,7 @@
     {
        "name" : "aubaser4",
        "location" : "http://hl7.org.au/fhir",
-	   "version" : "2.2.0-ballot"
+	   "version" : "4.0.0"
     }
   ],  
   "spreadsheets": [],
