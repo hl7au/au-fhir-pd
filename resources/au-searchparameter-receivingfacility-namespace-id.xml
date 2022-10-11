@@ -3,7 +3,7 @@
 	<id value="au-searchparameter-receivingfacility-namespace-id" />
 	<name value="SearchEndpointReceivingFacilityExtensionNamespaceId"/>
 	<status value="draft"/>
-	<code value="au-receivingfacility-namespace-id"/>
+	<code value="au-searchparameter-receivingfacility-namespace-id"/>
 	<base value="Endpoint"/>
 	<type value="string"/>
 	<description value="Find a matching receiving facility namespace id"/>
