@@ -1624,12 +1624,12 @@
 			<searchParam>
 				<name value="au-receivingfacility-universal-id"/>
 				<type value="token"/>
-				<documentation value="HL7 V2 Receiving Facility"/>
+				<documentation value="HL7 V2 Receiving Facility Id"/>
 			</searchParam>
 			<searchParam>
-				<name value="au-receivingfacility-universal-id-type"/>
+				<name value="au-assigning-universal-id-type"/>
 				<type value="token"/>
-				<documentation value="HL7 V2 Assigning Authority"/>
+				<documentation value="HL7 V2 Receiving Facility Type"/>
 			</searchParam>
 		</resource>
 		<resource>

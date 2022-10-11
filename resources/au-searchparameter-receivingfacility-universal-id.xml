@@ -3,7 +3,7 @@
 	<id value="au-searchparameter-receivingfacility-universal-id" />
 	<name value="SearchEndpointReceivingFacilityExtensionUniversalId"/>
 	<status value="draft"/>
-	<code value="au-searchparameter-receivingfacility-universal-id"/>
+	<code value="au-receivingfacility-universal-id"/>
 	<base value="Endpoint"/>
 	<type value="string"/>
 	<description value="Find a matching receiving facility universal id"/>
