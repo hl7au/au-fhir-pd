@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchParameter xmlns="http://hl7.org/fhir">
-	<id value="au-searchparameter-receivingfacility-anamespace-id" />
+	<id value="au-searchparameter-receivingfacility-namespace-id" />
 	<name value="SearchEndpointReceivingFacilityExtensionNamespaceId"/>
 	<status value="draft"/>
-	<code value="au-receivingfacility-anamespace-id"/>
+	<code value="au-receivingfacility-namespace-id"/>
 	<base value="Endpoint"/>
 	<type value="string"/>
 	<description value="Find a matching receiving facility namespace id"/>
