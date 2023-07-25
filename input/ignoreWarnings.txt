@@ -7,6 +7,15 @@ The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/common-l
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/service-type-1 on element HealthcareService.type could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/clinical-specialty-1 on element HealthcareService.specialty could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/healthcare-organisation-role-type-1 on element Organization.type could not be resolved
+Code System URI 'http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0' is unknown so the code cannot be validated
 
-ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-specialty-1 not found by validator
-ValueSet https://healthterminologies.gov.au/fhir/ValueSet/healthcare-organisation-role-type-1 not found by validator
+# NCTS terminologies
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-specialty-1 not found
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/healthcare-organisation-role-type-1 not found
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/clinical-specialty-1 not found
+
+# HL7 core warnings
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
