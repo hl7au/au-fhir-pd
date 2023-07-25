@@ -1,12 +1,4 @@
-# {{ page.title }}
-{:.no_toc}
-
-<!-- TOC -->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-
-## Introduction
+### Introduction
 There are a number of FHIR resource types used to record provider directory entries.
 
 [PractitionerRole](StructureDefinition-au-pd-practitionerrole.html) and [HealthcareService](StructureDefinition-au-pd-healthcareservice.html) are the main searchable concepts and can be related to other resources, [Practitioner](StructureDefinition-au-pd-practitioner.html), [Organization](StructureDefinition-au-pd-organisation.html), [Location](StructureDefinition-au-pd-location.html) and [Endpoint](StructureDefinition-au-pd-sm-endpoint.html).
@@ -18,11 +10,11 @@ In this usage the [PractitionerRole](StructureDefinition-au-pd-practitionerrole.
 <br/>
 <br/>
 
-## Provider Directory Service Roles
+### Provider Directory Service Roles
 
 This implementation guide is defined to allow multiple consumer systems to call multiple provider directory services reliably with a consistent interface and available data support.  
 
-### Provider Directory Supplier
+#### Provider Directory Supplier
 
 Provider Directory Supplier implementations are server software systems that supply a provider directory service interface and data.
 
@@ -51,7 +43,7 @@ SRV06 Servers MAY be capable of responding to other search requests that are FHI
 ```
 <br/>
 
-### Provider Directory Consumer 
+#### Provider Directory Consumer 
 
 Provider Directory Consumer implementations are client software systems that call provider directory services and consume data.
 
@@ -79,7 +71,7 @@ CLI05 Clients may use search requests marked as OPTIONAL but MUST inform the use
 <br/>
 
 
-## Provider Directory Core Entity Relationships
+### Provider Directory Core Entity Relationships
 
 For directory service profiles, the [HealthcareService](StructureDefinition-au-pd-healthcareservice.html) is used to represent a practice or clinic as they would be externally advertised in a directory. The [HealthcareService](StructureDefinition-au-pd-healthcareservice.html) is delivering a category of services at a [Location](StructureDefinition-au-pd-location.html) by an [Organization](StructureDefinition-au-pd-organisation.html).
 
@@ -91,7 +83,7 @@ The [PractitionerRole](StructureDefinition-au-pd-practitionerrole.html) is used 
 <br/>
 <br/>
 
-### Relationship guidance
+#### Relationship guidance
 Given the implementation guide allows Endpoints to be referenced from PractitionerRoles, HealthcareServices and Locations, clarity is required as to what it means for an Endpoint to be referenced from each of these entities, where a client should look for an endpoint and the supported payloads:
 
 ```
@@ -125,7 +117,7 @@ REL07 Hours of operation at a Location are for the Location itself rather than t
 <br/>
 <br/>
 
-## Provider Directory Usage Sequence for Secure Messaging
+### Provider Directory Usage Sequence for Secure Messaging
 
 Typical sequence describing endpoint search, HL7 V2 generation, secure message composition, secure message delivery via intermediary, acknowledgement response addressing, generation and delivery.
 	
@@ -135,7 +127,7 @@ Typical sequence describing endpoint search, HL7 V2 generation, secure message c
 <br/>
 <br/>
 
-### Component Roles
+#### Component Roles
 1. USER
 * User of the PMS/CIS (practice management system/clinical information system) sending a message.
 1. PMS/CIS SENDER
@@ -154,7 +146,7 @@ Typical sequence describing endpoint search, HL7 V2 generation, secure message c
 * The practice management system or clinical information system) receiving the HL7 V2 message and processsing it.
 * On accept/reject of the received message formatting and sending a HL7 V2 ACK message.
 
-### Sequence
+#### Sequence
 1. USER SEARCH
 * User performs a provider search in there client application.
 * This will likely include search parameters to use on search calls.

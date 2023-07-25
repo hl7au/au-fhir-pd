@@ -1,6 +1,4 @@
-# {{ page.title }}
-
-## Scope of Resource Profiles
+### Scope of Resource Profiles
 
 A subset of FHIR resource types are used in this specification. These are profiled to ensure minimal elements needed for secure messaging are supported by the directory service.
 
@@ -11,13 +9,13 @@ A subset of FHIR resource types are used in this specification. These are profil
 * **HealthcareService** describes the services delivered at one location for one organisation.
 
 
-## Service Interactions Overview
+### Service Interactions Overview
 
 A subset of FHIR possible interactions are required for this specification. This applies to core directory services offered by a directory 
 provider and also federated services combining results from multiple directory service sources.
 
 ----------
-### Instance Level Interactions	
+#### Instance Level Interactions	
 
 * **[read](http://hl7.org/fhir/R4/http.html#read)** PractitionerRole, Practitioner, HealthcareService, Location, Organization, Endpoint
 * **vread** Not Required 
@@ -27,14 +25,14 @@ provider and also federated services combining results from multiple directory s
 * **history** Not Required
 
 ----------
-### Type Level Interactions
+#### Type Level Interactions
 
 * **create** Not Required
 * **[search](http://hl7.org/fhir/R4/http.html#search)** PractitionerRole, Practitioner, HealthcareService, Location, Organization, Endpoint
 * **history** Not Required
 
 ----------
-### Whole System Interactions
+#### Whole System Interactions
 
 * **capabilities** Required
 * **batch/transaction** Not Required
@@ -42,7 +40,7 @@ provider and also federated services combining results from multiple directory s
 * **search** Not required
 
 ----------
-### Type Level Search
+#### Type Level Search
 
 Expected scope of search/include support:
 

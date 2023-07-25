@@ -1,6 +1,4 @@
-# {{ page.title }}
-
-## Secure Messaging Certificate Usage
+### Secure Messaging Certificate Usage
 
 ''Vendor'' refers to a secure messaging vendor
 

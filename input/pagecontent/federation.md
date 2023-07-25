@@ -1,6 +1,4 @@
-# {{ page.title }}
-
-## Description
+### Description
 
 Multiple directory service sources (operating FHIR services under this implementation guide) may be combined to offer a federated service capability by suppliers. 
 This allows searches by client systems to be supported across multiple directory service sources.  This allows directory entries to be provided to client systems that
@@ -14,12 +12,12 @@ support forwarding of secure messages to other secure message intermediaries.
 Arrangements for federated directories and secure message exchange between suppliers are on a case by case basis and completely under control of the participating federating
 parties.
 
-## Definitions
+### Definitions
 
 * **Source Provider Directory** is a provider directory service supplying the entries managed by a directory provider
 * **Federated Provider Directory** is a provider directory service supplying results based on multiple source provider directories
 
-## Requirements
+### Requirements
 
 ```
 FED01 Directory service source providers SHALL supply adequate core registration information to federating directory service providers
