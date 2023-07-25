@@ -78,7 +78,7 @@ For directory service profiles, the [HealthcareService](StructureDefinition-au-p
 The [PractitionerRole](StructureDefinition-au-pd-practitionerrole.html) is used to represent a [Practitioner](StructureDefinition-au-pd-practitioner.html) practicing at those practices or clinics where they are externally advertised.
 
 <div>
-<img src="assets/images/erd3.png"/>
+<img src="{{site.baseurl}}erd3.png"/>
 </div>
 <br/>
 <br/>
@@ -122,7 +122,7 @@ REL07 Hours of operation at a Location are for the Location itself rather than t
 Typical sequence describing endpoint search, HL7 V2 generation, secure message composition, secure message delivery via intermediary, acknowledgement response addressing, generation and delivery.
 	
 <div>
-<img src="assets/images/sequence2.png" width="1200" height="800"/>
+<img src="{{site.baseurl}}sequence2.png" width="1200" height="800"/>
 </div>
 <br/>
 <br/>
