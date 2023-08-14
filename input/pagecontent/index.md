@@ -38,9 +38,9 @@ implementation. This implementation guide will be used as the basis for Australi
 This guide is the product of collaborative work undertaken with participants from:
 
 * Secure Messaging Technical Working Group
-* HL7 Australia Patient Administration Working Group
+* HL7 Australia Working Groups
 * Australian Digital Health Agency
-* Australian FHIR Implementers' Community
+* Australian FHIR Implementers Community
 * HL7 Australia Members 
 
 
