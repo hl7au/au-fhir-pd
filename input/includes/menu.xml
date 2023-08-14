@@ -5,17 +5,24 @@
   <li>
     <a href="guidance.html">Guidance</a>
   </li>
-  <li>
-    <a href="profiles.html">Profiles</a>
-  </li>
-  <li>
-    <a href="terminology.html">Terminology</a>
-  </li>
-  <li>
-    <a href="searchparams.html">Search Parameters</a>
-  </li>
-  <li>
-    <a href="capstatements.html">Capability Statements</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles.html">Profiles and Extensions</a>
+      </li>
+      <li>
+        <a href="searchparams.html">Search Parameters</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="capstatements.html">Capability Statements</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="security.html">Security</a>
@@ -24,9 +31,12 @@
     <a href="federation.html">Federation</a>
   </li>
   <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
     <a href="downloads.html">Downloads</a>
   </li>
-  <!--<li>
+  <li>
     <a href="changes.html">Change Log</a>
-  </li>-->
+  </li>
 </ul>

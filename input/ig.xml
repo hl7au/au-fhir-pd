@@ -265,7 +265,7 @@
       </page>
       <page>
         <nameUrl value="profiles.html"/>
-        <title value="Profiles Defined"/>
+        <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -294,8 +294,18 @@
         <generation value="markdown"/>
       </page>
       <page>
+				<nameUrl value="examples.html"/>
+				<title value="Examples"/>
+				<generation value="markdown"/>
+			</page>
+      <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="Change Log"/>
         <generation value="markdown"/>
       </page>
 
