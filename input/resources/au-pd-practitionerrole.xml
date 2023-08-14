@@ -29,7 +29,7 @@
     </element>
     <element id="PractitionerRole.meta">
       <path value="PractitionerRole.meta" />
-      <short value="Metadata on Practitoner Role" />
+      <short value="Metadata on Practitioner Role" />
     </element>
     <element id="PractitionerRole.meta.source">
       <path value="PractitionerRole.meta.source" />
@@ -183,7 +183,7 @@
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
       <short value="Directory SNOMED-CT Practitioner Specialty." />
-      <definition value="Healthcare specialties for directory lookup." />
+      <definition value="Healthcare specialities for directory lookup." />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.location">

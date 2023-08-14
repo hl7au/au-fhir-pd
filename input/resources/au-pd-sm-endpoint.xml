@@ -23,7 +23,7 @@
     <element id="Endpoint">
       <path value="Endpoint" />
       <short value="Australian Secure Message Directory Endpoint Record" />
-      <definition value="Enpoint defined for use in secure message addressing." />
+      <definition value="Endpoint defined for use in secure message addressing." />
     </element>
     <element id="Endpoint.meta">
       <path value="Endpoint.meta" />
@@ -83,13 +83,13 @@
       <path value="Endpoint.identifier" />
       <sliceName value="smdtarget" />
       <short value="Secure Messaging Target Identifier" />
-      <definition value="Secure messaging interface target identity included in addressing metadata.  Thiis is the complete URL identifier that can be directly used in secure messaging.  This identifier should be matched when selecting the encrypting certificate data used for payload encryption also referenced from this endpoint." />
+      <definition value="Secure messaging interface target identity included in addressing metadata.  This is the complete URL identifier that can be directly used in secure messaging.  This identifier should be matched when selecting the encrypting certificate data used for payload encryption also referenced from this endpoint." />
       <mustSupport value="true" />
     </element>
     <element id="Endpoint.identifier:smdtarget.system">
       <path value="Endpoint.identifier.system" />
       <short value="Secure Messaging Delivery Target Identifier" />
-      <definition value="Target identifier suitable for Secure Message Delivery interface metatadat content; also allows lookup for responses." />
+      <definition value="Target identifier suitable for Secure Message Delivery interface metadata content; also allows lookup for responses." />
       <min value="1" />
       <fixedUri value="http://ns.electronichealth.net.au/smd/target" />
     </element>

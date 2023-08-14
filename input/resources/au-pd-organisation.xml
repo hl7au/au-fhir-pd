@@ -64,7 +64,7 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
-      <short value="Name of Directroy Entry Organisation" />
+      <short value="Name of Directory Entry Organisation" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
