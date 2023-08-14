@@ -46,12 +46,12 @@ Expected scope of search/include support:
 
 |Resource Type|Profile|MUST Support Search Parameters|SHOULD Support Search Parameters|Includes|
 |---|---|---|---|---|
-|[Organization](StructureDefinition-au-pd-organisation.html#search)| Australian Organisation Directory Entry | active, name | identifier ||
-|[Practitioner](StructureDefinition-au-pd-practitioner.html#search)| Australian Practitioner Directory Entry | active | identifier, family, given, name ||
-|[PractitionerRole](StructureDefinition-au-pd-practitionerrole.html#search)| Australian PractitionerRole Directory Entry | active, role, specialty, identifier, healthcareService, location.address-city, location.address-postalcode, location.address-state, organization.identifier, practitioner.family, practitioner.given, practitioner.name, practitioner.identifier, endpoint.connection-type, endpoint.payload-type | location.near, location.near-distance | location, organization, endpoint, practitioner, healthcareService |
-|[HealthcareService](StructureDefinition-au-pd-healthcareservice.html#search)| Australian HealthcareService Directory Entry | active, identifier, name, service-type, specialty, location.address-city, location.address-postalcode, location.address-state, organization.name, organization.identifier, endpoint.connection-type, endpoint.payload-type | location.near, location.near-distance | location, organization, endpoint |
-|[Location](StructureDefinition-au-pd-location.html#search)| Australian Location Directory Entry | status | address-city, address-postalcode, address-state, near, near-distance ||
-|[Endpoint](StructureDefinition-au-pd-sm-endpoint.html#search)| Australian Endpoint Directory Entry | status, identifier, connection-type, payload-type, au-receivingfacility-namespace-id, au-receivingfacility-universal-id, au-receivingfacility-universal-id-type |||
+|[Organization](StructureDefinition-au-pd-organisation.html#notes)| Australian Organisation Directory Entry | active, name | identifier ||
+|[Practitioner](StructureDefinition-au-pd-practitioner.html#notes)| Australian Practitioner Directory Entry | active | identifier, family, given, name ||
+|[PractitionerRole](StructureDefinition-au-pd-practitionerrole.html#notes)| Australian PractitionerRole Directory Entry | active, role, specialty, identifier, healthcareService, location.address-city, location.address-postalcode, location.address-state, organization.identifier, practitioner.family, practitioner.given, practitioner.name, practitioner.identifier, endpoint.connection-type, endpoint.payload-type | location.near, location.near-distance | location, organization, endpoint, practitioner, healthcareService |
+|[HealthcareService](StructureDefinition-au-pd-healthcareservice.html#notes)| Australian HealthcareService Directory Entry | active, identifier, name, service-type, specialty, location.address-city, location.address-postalcode, location.address-state, organization.name, organization.identifier, endpoint.connection-type, endpoint.payload-type | location.near, location.near-distance | location, organization, endpoint |
+|[Location](StructureDefinition-au-pd-location.html#notes)| Australian Location Directory Entry | status | address-city, address-postalcode, address-state, near, near-distance ||
+|[Endpoint](StructureDefinition-au-pd-sm-endpoint.html#notes)| Australian Endpoint Directory Entry | status, identifier, connection-type, payload-type, au-receivingfacility-namespace-id, au-receivingfacility-universal-id, au-receivingfacility-universal-id-type |||
 {:.grid}
 
 Expected adherence to search parameters:
