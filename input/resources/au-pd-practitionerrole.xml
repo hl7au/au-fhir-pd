@@ -2,18 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-pd-practitionerrole" />
   <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitionerrole" />
-  <version value="2.1.0" />
   <name value="AUPDPractitionerRole" />
   <title value="AU PD Practitioner Role" />
   <status value="draft" />
-  <publisher value="HL7 Australia" />
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="AU" />
-    </coding>
-  </jurisdiction>
-  <fhirVersion value="4.0.1" />
+  <description value="This profile defines a practitioner in role for an organisation at a location providing a healthcare service."/>
   <kind value="resource" />
   <abstract value="false" />
   <type value="PractitionerRole" />

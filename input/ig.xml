@@ -43,8 +43,8 @@
       <reference>
         <reference value="StructureDefinition/au-pd-practitioner"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="AU PD Practitioner"/>
+      <description value="This profile defines provider directory details of an individual person delivering health related services."/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -52,8 +52,8 @@
       <reference>
         <reference value="StructureDefinition/au-pd-practitionerrole"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="AU PD Practitioner Role"/>
+      <description value="This profile defines a practitioner in role for an organisation at a location providing a healthcare service."/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -61,8 +61,8 @@
       <reference>
         <reference value="StructureDefinition/au-pd-organisation"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="AU PD Organisation"/>
+      <description value="This profile defines a provider directory entry for an organisation."/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -70,8 +70,8 @@
       <reference>
         <reference value="StructureDefinition/au-pd-location"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="AU PD Location"/>
+      <description value="This profile defines a provider directory entry for a location."/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -79,8 +79,8 @@
       <reference>
         <reference value="StructureDefinition/au-pd-sm-endpoint"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="AU PD Secure Messaging Endpoint"/>
+      <description value="This profile defines content for describing details of an endpoint that would be adequate for addressing a secure message."/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -88,8 +88,8 @@
       <reference>
         <reference value="StructureDefinition/au-pd-healthcareservice"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="AU PD Healthcare Service"/>
+      <description value="This profile defines a provider directory entry for a healthcare service or category of services delivered at a location by an organisation."/>
       <exampleBoolean value="false"/>
     </resource>
 
