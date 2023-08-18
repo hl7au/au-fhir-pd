@@ -218,7 +218,7 @@
         <reference value="Bundle/search1"/>
       </reference>
       <name value="Bundle - search 1"/>
-      <description value="description TBD"/>
+      <description value="Example PractitionerRole search response, with one PractitionerRole and included resources returned."/>
       <exampleBoolean value="true"/>
     </resource>
 
@@ -227,7 +227,7 @@
         <reference value="Bundle/search2"/>
       </reference>
       <name value="Bundle - search 2"/>
-      <description value="description TBD"/>
+      <description value="Example HealthcareService search response, with one HealthcareService and included resources returned."/>
       <exampleBoolean value="true"/>
     </resource>
 
@@ -236,7 +236,7 @@
         <reference value="Bundle/search3"/>
       </reference>
       <name value="Bundle - search 3"/>
-      <description value="description TBD"/>
+      <description value="Example Endpoint search response, with one Endpoint resource returned."/>
       <exampleBoolean value="true"/>
     </resource>
 
