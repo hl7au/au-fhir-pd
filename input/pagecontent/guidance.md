@@ -143,7 +143,7 @@ Typical sequence describing endpoint search, HL7 V2 generation, secure message c
 1. SM CLIENT (RECEIVER)
 * Secure messaging client component/system that can receive payloads using secure messaging standard [ATS 5822—2010 — E-Health Secure Message Delivery](https://infostore.saiglobal.com/en-au/Standards/Product-Details-129644_SAIG_AS_AS_274353/?productID=129644_SAIG_AS_AS_274353).
 1. PMS/CIS (RECEIVER)
-* The practice management system or clinical information system) receiving the HL7 V2 message and processsing it.
+* The practice management system or clinical information system) receiving the HL7 V2 message and processing it.
 * On accept/reject of the received message formatting and sending a HL7 V2 ACK message.
 
 #### Sequence
@@ -192,7 +192,7 @@ http://sqlonfhir-aupd.azurewebsites.net/fhir/Endpoint?status=active&identifier=h
 1. SEND HL7 V2 Message
 * Drop outbound HL7 V2 file or send via local SM CLIENT API.
 1. SEARCH (2) 
-* For independent HL7 V2 sender processing (no Endpoint knowledege) can lookup Endpoint details via search by Receiving Facility.
+* For independent HL7 V2 sender processing (no Endpoint knowledge) can lookup Endpoint details via search by Receiving Facility.
 * Examples - lookup Endpoint by HL7 V2 content using [AU PD search parameter extensions](searchparams.html) for delivery via secure messaging.
 ```
 GET https://jdfhir.test.medical-objects.com.au/rest/fhir/Endpoint?status=active&au-receivingfacility-namespace-id=8003623233355378&au-receivingfacility-universal-id=1.2.36.1.2001.1003.0.8003623233355378&au-receivingfacility-universal-id-type=ISO&connection-type=http://hl7.org.au/fhir/CodeSystem/smd-interfaces|http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010&payload-type=http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type|http://ns.electronichealth.net.au/ack/sc/deliver/hl7Ack/2012 
