@@ -183,8 +183,8 @@ http://sqlonfhir-aupd.azurewebsites.net/fhir/Endpoint?status=active&identifier=h
 1. GENERATE HL7 V2 MESSAGE
 * The [compliant HL7 V2 payload](ValueSet-endpoint-payload-type.html) needs to be generated.
 * Utilise Endpoint result content for generating HL7 V2 content.
-  * Endpoint [au-receivingfacility](http://hl7.org.au/fhir/2021Aug/StructureDefinition-au-receivingfacility.html) extension (HL7 V2 Receiving Facility)
-  * Endpoint [au-receivingapplication](http://hl7.org.au/fhir/2021Aug/StructureDefinition-au-receivingapplication.html) extension (HL7 V2 Receiving Application)
+  * Endpoint [au-receivingfacility](http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-receivingfacility.html) extension (HL7 V2 Receiving Facility)
+  * Endpoint [au-receivingapplication](http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-receivingapplication.html) extension (HL7 V2 Receiving Application)
 * Use the [Australian Diagnostics and Referral Messaging](https://confluence.hl7australia.com/display/OO/Australian+Diagnostics+and+Referral+Messaging+-+Localisation+of+HL7+Version+2.4) guidance for HL7 V2 formatting:
   * Fill HL7 V2 MSH-4, MSH-6 content as per [Australian Diagnostics and Referral Messaging - Facility/Organisational level addressing](https://confluence.hl7australia.com/pages/viewpage.action?pageId=31589320#Appendix10AddressingmessagesusingAustralianProfileforProviderDirectoryServices(Normative)-A10.1.1Facility/Organisationalleveladdressing).
   * Fill HL7 V2 PRD-1, PRD-2, PRD-3, PRD-5, PRD-7 and/or XCN datatype content as per [Australian Diagnostics and Referral Messaging - Intended Provider/Individual recipient level addressing](https://confluence.hl7australia.com/pages/viewpage.action?pageId=31589320#Appendix10AddressingmessagesusingAustralianProfileforProviderDirectoryServices(Normative)-A10.1.2IntendedProvider/Individualrecipientleveladdressing).
