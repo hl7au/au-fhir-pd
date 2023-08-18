@@ -165,7 +165,7 @@
       </reference>
       <name value="Practitioner - Dr Helen Mayo"/>
       <description value="Practitioner Dr Helen Mayo, with HPI-I and prescriber number."/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitioner"/>
     </resource>
 
     <resource>
@@ -174,7 +174,7 @@
       </reference>
       <name value="PractitionerRole - Dr Helen Mayo"/>
       <description value="Cardiologist Dr Helen Mayo, with Medicare Provide Number, Vendor Directory Identifier and Endpoint."/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitionerrole"/>
     </resource>
 
     <resource>
@@ -183,7 +183,7 @@
       </reference>
       <name value="Organization - Downunder Hospital"/>
       <description value="Downunder Hospital with HPI-O."/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-organisation"/>
     </resource>
 
     <resource>
@@ -192,7 +192,7 @@
       </reference>
       <name value="Location - Downunder Hospital Blacktown"/>
       <description value="Downunder Hospital Blacktown, with address and telecom."/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-location"/>
     </resource>
 
     <resource>
@@ -246,7 +246,7 @@
       </reference>
       <name value="HealthcareService - Downunder Hospital Accident and Emergency"/>
       <description value="Downunder Hospital Accident and Emergency, with specialty, location and endpoint."/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-healthcareservice"/>
     </resource>
 
     <page>
