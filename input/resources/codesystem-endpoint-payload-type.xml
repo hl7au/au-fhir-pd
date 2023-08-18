@@ -1,22 +1,17 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="endpoint-payload-type"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="1"/>
+	</extension>
 	<url value="http://hl7.org.au/fhir/CodeSystem/endpoint-payload-type"/>
-  	<version value="2.1.0" />
 	<name value="AustralianEndpointPayloadTypes"/>
 	<title value="Australian Endpoint Payload Types"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<publisher value="HL7 Australia"/>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="AU" />
-    </coding>
-  </jurisdiction>
-	<contact>
-		<name value="hl7.org.au"/>
-	</contact>
-	<description value="Endpoint payload types"/>
+	<description value="The Endpoint Payload Types code system defines concepts that identify well known endpoint payload types."/>
 	<caseSensitive value="true"/>
 	<valueSet value="http://hl7.org.au.fhir/ValueSet/valueset-au-endpoint-payload-type"/>
 	<compositional value="false"/>

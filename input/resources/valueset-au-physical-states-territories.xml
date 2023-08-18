@@ -1,25 +1,17 @@
-<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/valueset.xsd">
+<ValueSet xmlns="http://hl7.org/fhir">
 	<id value="au-physical-states-territories"/>
 	<meta>
-		<versionId value="1"/>
-		<lastUpdated value="2018-06-14T11:00:00+11:00"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="1"/>
+	</extension>
 	<url value="http://hl7.org.au/fhir/pd/ValueSet/au-physical-states-territories"/>
-	<version value="1.0.0"/>
 	<name value="AustralianStatesandTerritories"/>
 	<title value="Australian States and Territories"/>
 	<status value="draft"/>
-	<publisher value="Health Level Seven Australia"/>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="AU" />
-    </coding>
-  </jurisdiction>
-	<contact>
-		<name value="hl7.org.au"/>
-	</contact>
-	<description value="Enumeration of physical states and territories"/>
+	<experimental value="false"/>
+	<description value="The Australian States and Territories value set  includes values that represent the physical Australian states and territories."/>
 	<compose>
 		<include>
 			<system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1"/>
