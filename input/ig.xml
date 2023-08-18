@@ -97,8 +97,8 @@
       <reference>
         <reference value="CodeSystem/smd-interfaces"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Australian Secure Message Service Interfaces"/>
+      <description value="The Australian Secure Message Service Interfaces code system defines concepts that identify service interfaces for secure message delivery."/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -106,8 +106,8 @@
       <reference>
         <reference value="ValueSet/service-interfaces"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Australian Service Interfaces"/>
+      <description value="The Australian Service Interfaces value set enumerates well known service interfaces that can be used for specifying a connection type."/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -115,8 +115,8 @@
       <reference>
         <reference value="ValueSet/au-physical-states-territories"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Australian States and Territories"/>
+      <description value="The Australian States and Territories value set  includes values that represent the physical Australian states and territories."/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -124,8 +124,8 @@
       <reference>
         <reference value="CodeSystem/endpoint-payload-type"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Australian Endpoint Payload Types"/>
+      <description value="The Endpoint Payload Types code system defines concepts that identify well known endpoint payload types."/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -133,8 +133,8 @@
       <reference>
         <reference value="ValueSet/endpoint-payload-type"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Australian Endpoint Payload Types"/>
+      <description value="The Australian Endpoint Payload Types value set enumerates well known endpoint payload types."/>
       <exampleBoolean value="false"/>
     </resource>
     <!--
@@ -163,8 +163,8 @@
       <reference>
         <reference value="Practitioner/example0"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Practitioner - Dr Helen Mayo"/>
+      <description value="Practitioner Dr Helen Mayo, with HPI-I and prescriber number."/>
       <exampleBoolean value="true"/>
     </resource>
 
@@ -172,8 +172,8 @@
       <reference>
         <reference value="PractitionerRole/example0"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="PractitionerRole - Dr Helen Mayo"/>
+      <description value="Cardiologist Dr Helen Mayo, with Medicare Provide Number, Vendor Directory Identifier and Endpoint."/>
       <exampleBoolean value="true"/>
     </resource>
 
@@ -181,8 +181,8 @@
       <reference>
         <reference value="Organization/example0"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Organization - Downunder Hospital"/>
+      <description value="Downunder Hospital with HPI-O."/>
       <exampleBoolean value="true"/>
     </resource>
 
@@ -190,8 +190,8 @@
       <reference>
         <reference value="Location/example0"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Location - Downunder Hospital Blacktown"/>
+      <description value="Downunder Hospital Blacktown, with address and telecom."/>
       <exampleBoolean value="true"/>
     </resource>
 
@@ -199,8 +199,8 @@
       <reference>
         <reference value="Endpoint/example0"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Endpoint - Telstra Health Secure Messaging Endpoint"/>
+      <description value="Telstra Health Secure Messaging Endpoint, with payload type and address."/>
       <exampleBoolean value="true"/>
     </resource>
 
@@ -208,8 +208,8 @@
       <reference>
         <reference value="Endpoint/example1"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="Endpoint - Medical Objects Test Secure Messaging Endpoint"/>
+      <description value="Medical Objects Test Secure Messaging Endpoint, with payload type and address."/>
       <exampleBoolean value="true"/>
     </resource>
 
@@ -217,7 +217,7 @@
       <reference>
         <reference value="Bundle/search1"/>
       </reference>
-      <name value="name TBD"/>
+      <name value="Bundle - search 1"/>
       <description value="description TBD"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -226,7 +226,7 @@
       <reference>
         <reference value="Bundle/search2"/>
       </reference>
-      <name value="name TBD"/>
+      <name value="Bundle - search 2"/>
       <description value="description TBD"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -235,7 +235,7 @@
       <reference>
         <reference value="Bundle/search3"/>
       </reference>
-      <name value="name TBD"/>
+      <name value="Bundle - search 3"/>
       <description value="description TBD"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -244,8 +244,8 @@
       <reference>
         <reference value="HealthcareService/example0"/>
       </reference>
-      <name value="name TBD"/>
-      <description value="description TBD"/>
+      <name value="HealthcareService - Downunder Hospital Accident and Emergency"/>
+      <description value="Downunder Hospital Accident and Emergency, with specialty, location and endpoint."/>
       <exampleBoolean value="true"/>
     </resource>
 
