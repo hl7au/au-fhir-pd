@@ -13,7 +13,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Changed HL7 AU implementation guide publication structure and format to better align to current HL7 practices.</li>
     <li>Updated dependency on au-fhir-base version '4.1.0', from version '4.1.0-ballot'. Refer to <a href="http://hl7.org.au/fhir/4.1.0/changes.html#release-410">au-fhir-base detailed change log</a>. The specific changes impacting this IG are:
         <ul>
-            <li>Changed <a href="CodeSystem-au-location-physical-type.html">Location Type (Physical) AU</a> to deprecate concept 'vi'. This code has been deprecated as it has been replaced by an equivalent term provided by HL7 international.</li>
+            <li>Changed <a href="http://hl7.org.au/fhir/4.1.0/CodeSystem-au-location-physical-type.html">Location Type (Physical) AU</a> to deprecate concept 'vi'. This code has been deprecated as it has been replaced by an equivalent term provided by HL7 international.</li>
         </ul>
     <li><a href="StructureDefinition-au-pd-healthcareservice.html">AU PD Healthcare Service profile</a>:
         <ul>
