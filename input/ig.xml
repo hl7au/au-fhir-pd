@@ -15,13 +15,14 @@
   <experimental value="false"/>
   <publisher value="HL7 Australia"/>
   <contact>
+    <name value="HL7 Australia FHIR Working Group"/>
     <telecom>
       <system value="url" />
-      <value value="http://hl7.com.au" />
+      <value value="https://confluence.hl7.org/display/HAFWG" />
       <use value="work" />
     </telecom>
   </contact>
-  <description value="This implementation guide is provides guidance on the implementation of provider directories using FHIR in an Australian usage context"/>
+  <description value="This implementation guide is provides guidance on the implementation of provider directories using FHIR®© in an Australian usage context"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166" />
