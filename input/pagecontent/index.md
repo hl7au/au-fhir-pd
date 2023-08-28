@@ -45,6 +45,8 @@ This guide is divided into several pages which are listed at the top of each pag
   - [Search Parameters](searchparams.html): This set of pages lists the search parameters defined in this guide for use in AU operations.
   - [Terminology](terminology.html): This set of pages lists the value sets and code systems defined in this guide.
   - [Capability Statements](capstatements.html): This page defines the expected FHIR capabilities of AU PD Servers and Clients.
+- [Security](security.html): This page lists all security considerations for this guide.
+- [Federation](federation.html): This page outlines the arrangements and requirements for federated directories.
 - [Examples](examples.html): This page lists all the examples used in this guide.
 - [Downloads](downloads.html): This page provides links to downloadable artefacts including the AU PD FHIR NPM package.
 - [Change Log](changes.html): This page documents the changes across versions of this guide.
