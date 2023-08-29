@@ -61,12 +61,12 @@ To help implementers, only the more significant changes are listed here.
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
         </ul>
     </li>
-    <li>ValueSet: <a href="">Australian Service Interfaces</a>
+    <li>ValueSet: <a href="ValueSet-service-interfaces.html">Australian Service Interfaces</a>
         <ul>
             <li>the compose statement was updated to include the core specification Endpoint Connection Type valueSet</li>
         </ul>
     </li>
-    <li>CodeSystem: <a href="">Australian Endpoint Payload Types</a>
+    <li>CodeSystem: <a href="CodeSystem-endpoint-payload-type.html">Australian Endpoint Payload Types</a>
         <ul>
             <li>4 concepts were added for HL7 v2.4 ORU, ORM, ORR and ACK messages</li>
             <li>concepts no longer have a nested hierarchy</li>
