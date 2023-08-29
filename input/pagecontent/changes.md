@@ -15,6 +15,7 @@ To help implementers, only the more significant changes are listed here.
         <ul>
             <li>Changed <a href="http://hl7.org.au/fhir/4.1.0/CodeSystem-au-location-physical-type.html">Location Type (Physical) AU</a> to deprecate concept 'vi'. This code has been deprecated as it has been replaced by an equivalent term provided by HL7 international.</li>
         </ul>
+    </li>    
     <li>Profile: <a href="StructureDefinition-au-pd-healthcareservice.html">AU PD Healthcare Service</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
