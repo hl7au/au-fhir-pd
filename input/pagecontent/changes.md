@@ -20,17 +20,17 @@ To help implementers, only the more significant changes are listed here.
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
             <li>the inheritance from the updated AU Base HealthcareService includes explicit Identifier types for all of the applicable organisation identifiers (i.e. HPI-O and AU Residential Aged Care Service Identifier)</li>
-            <li>the inheritance from the updated AU Base HealthcareService allows the <a href="http://hl7.org.au/fhir/4.1.0-ballot/StructureDefinition-au-assigningauthority.html">HL7 V2 Assigning Authority Identifier extension</a> on all Identifier slices</li>
-            <li>the inheritance from the updated AU Base HealthcareService introduces the <a href="http://hl7.org.au/fhir/4.1.0-ballot/StructureDefinition-identifier-routability.html">Identifier Routability Identifier extension</a> on all Identifier slices</li>
-            <li>HealthcareService.endpoint must only be a reference to an <a href="http://build.fhir.org/ig/hl7au/au-fhir-pd/StructureDefinition-au-pd-sm-endpoint.html">AU PD Secure Messaging Endpoint</a></li>
-            <li>HealthcareService.availableTime.availableStartTime and HealthcareService.availableTime.availableStartTime both include the <a href="http://hl7.org.au/fhir/4.1.0-ballot/StructureDefinition-au-timezone.html">Australian Time Zone extension</a> with its required binding to the <a href="http://hl7.org.au/fhir/4.1.0-ballot/ValueSet-au-timezone.html">AU Time Zone ValueSet</a></li>
+            <li>the inheritance from the updated AU Base HealthcareService allows the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-assigningauthority.html">HL7 V2 Assigning Authority Identifier extension</a> on all Identifier slices</li>
+            <li>the inheritance from the updated AU Base HealthcareService introduces the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-identifier-routability.html">Identifier Routability Identifier extension</a> on all Identifier slices</li>
+            <li>HealthcareService.endpoint must only be a reference to an <a href="StructureDefinition-au-pd-sm-endpoint.html">AU PD Secure Messaging Endpoint</a></li>
+            <li>HealthcareService.availableTime.availableStartTime and HealthcareService.availableTime.availableStartTime both include the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-timezone.html">Australian Time Zone extension</a> with its required binding to the <a href="http://hl7.org.au/fhir/4.1.0/ValueSet-au-timezone.html">AU Time Zone ValueSet</a></li>
         </ul>
     </li>
     <li>Profile: <a href="StructureDefinition-au-pd-location.html">AU PD Location</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
-            <li>the inheritance from the updated AU Base Location includes <a href="http://hl7.org.au/fhir/4.1.0-ballot/StructureDefinition-au-address.html">AustralianAddress</a> as an allowed Location.address type </li>
-            <li>the inheritance from the updated AU Base Location includes <a href="http://hl7.org.au/fhir/4.1.0-ballot/StructureDefinition-au-locationspecificpracticenumber.html">AU Location Specific Practice Number</a> as an allowed Location.identifier type </li>
+            <li>the inheritance from the updated AU Base Location includes <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-address.html">AustralianAddress</a> as an allowed Location.address type </li>
+            <li>the inheritance from the updated AU Base Location includes <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-locationspecificpracticenumber.html">AU Location Specific Practice Number</a> as an allowed Location.identifier type </li>
         </ul>
     </li>
     <li>Profile: <a href="StructureDefinition-au-pd-organisation.html">AU PD Organisation</a>
@@ -49,11 +49,11 @@ To help implementers, only the more significant changes are listed here.
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
             <li>the inheritance from the updated AU Base PractitionerRole includes explicit Identifier types for all of the applicable practitioner role identifiers (i.e. Medicare provider number, National Provider Identifier At Organisation etc)</li>
-            <li>the inheritance from the updated AU Base PractitionerRole allows the <a href="http://hl7.org.au/fhir/4.1.0-ballot/StructureDefinition-au-assigningauthority.html">HL7 V2 Assigning Authority Identifier extension</a> on all Identifier slices</li>
-            <li>the inheritance from the updated AU Base PractitionerRole introduces the <a href="http://hl7.org.au/fhir/4.1.0-ballot/StructureDefinition-identifier-routability.html">Identifier Routability Identifier extension</a> on all Identifier slices</li>
+            <li>the inheritance from the updated AU Base PractitionerRole allows the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-assigningauthority.html">HL7 V2 Assigning Authority Identifier extension</a> on all Identifier slices</li>
+            <li>the inheritance from the updated AU Base PractitionerRole introduces the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-identifier-routability.html">Identifier Routability Identifier extension</a> on all Identifier slices</li>
             <li>PractitionerRole.location - exactly one must be present</li>
-            <li>PractitionerRole.availableTime.availableStartTime and PractitionerRole.availableTime.availableStartTime both include the <a href="http://hl7.org.au/fhir/4.1.0-ballot/StructureDefinition-au-timezone.html">Australian Time Zone extension</a> with its required binding to the <a href="http://hl7.org.au/fhir/4.1.0-ballot/ValueSet-au-timezone.html">AU Time Zone ValueSet</a></li>
-            <li>PractitionerRole.endpoint must only be a reference to an <a href="http://build.fhir.org/ig/hl7au/au-fhir-pd/StructureDefinition-au-pd-sm-endpoint.html">AU PD Secure Messaging Endpoint</a></li>
+            <li>PractitionerRole.availableTime.availableStartTime and PractitionerRole.availableTime.availableStartTime both include the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-timezone.html">Australian Time Zone extension</a> with its required binding to the <a href="http://hl7.org.au/fhir/4.1.0/ValueSet-au-timezone.html">AU Time Zone ValueSet</a></li>
+            <li>PractitionerRole.endpoint must only be a reference to an <a href="StructureDefinition-au-pd-sm-endpoint.html">AU PD Secure Messaging Endpoint</a></li>
         </ul>
     </li>
     <li>Profile: <a href="StructureDefinition-au-pd-sm-endpoint.html">AU PD Secure Messaging Endpoint</a>
