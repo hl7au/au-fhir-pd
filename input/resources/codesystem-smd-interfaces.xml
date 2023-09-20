@@ -1,0 +1,42 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="smd-interfaces"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="http://hl7.org.au/fhir/CodeSystem/smd-interfaces"/>
+	<name value="AustralianSecureMessageServiceInterfaces"/>
+	<title value="Australian Secure Message Service Interfaces"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+    <description value="The Australian Secure Message Service Interfaces code system defines concepts that identify service interfaces for secure message delivery."/>
+	<caseSensitive value="true"/>
+	<valueSet value="http://hl7.org.au.fhir/ValueSet/valueset-au-serviceinterface"/>
+	<compositional value="false"/>
+	<versionNeeded value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/SealedImmediateMessageDelivery/TLS/2010"/>
+		<display value="Sealed Immediate Message Delivery"/>
+		<definition value="Service interface for secure message delivery (immediate mode)"/>
+	</concept>
+	<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/SealedMessageDelivery/TLS/2010"/>
+		<display value="Sealed Message Delivery"/>
+		<definition value="Service interface for secure message delivery (deferred mode)"/>
+	</concept>
+		<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/SealedMessageRetrieval/TLS/2010"/>
+		<display value="Sealed Message Retrieval"/>
+		<definition value="Service interface for secure message delivery (retrieval in deferred mode)"/>
+	</concept>	
+	<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/TransportResponseDelivery/TLS/2010"/>
+		<display value="Transport Response Delivery"/>
+		<definition value="Service interface for secure message delivery (deliver acknowledgement)"/>
+	</concept>
+		<concept>
+		<code value="http://ns.electronichealth.net.au/smd/intf/TransportResponseRetrieval/TLS/2010"/>
+		<display value="Transport Response Retrieval"/>
+		<definition value="Service interface for secure message delivery (retrieve acknowledgement)"/>
+	</concept>
+</CodeSystem>

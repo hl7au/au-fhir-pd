@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.au.pd"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <url value="http://hl7.org.au/fhir/pd/ImplementationGuide/hl7.fhir.au.pd"/>
+  <version value="2.1.0"/>
+  <name value="AUProviderDirectoryImplementationGuide"/>
+  <title value="AU Provider Directory Implementation Guide"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 Australia"/>
+  <contact>
+    <name value="HL7 Australia FHIR Working Group"/>
+    <telecom>
+      <system value="url" />
+      <value value="https://confluence.hl7.org/display/HAFWG" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="This implementation guide is provides guidance on the implementation of provider directories using FHIR®© in an Australian usage context"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="AU" />
+    </coding>
+  </jurisdiction>
+  <copyright value="HL7 Australia© 2018+; Licensed Under Creative Commons No Rights Reserved."/>
+  <packageId value="hl7.fhir.au.pd"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="aubaser4">
+    <uri value="http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base"/>
+    <packageId value="hl7.fhir.au.base"/>
+    <version value="4.1.0"/>
+  </dependsOn>
+  <definition>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-pd-practitioner"/>
+      </reference>
+      <name value="AU PD Practitioner"/>
+      <description value="This profile defines provider directory details of an individual person delivering health related services."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-pd-practitionerrole"/>
+      </reference>
+      <name value="AU PD Practitioner Role"/>
+      <description value="This profile defines a practitioner in role for an organisation at a location providing a healthcare service."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-pd-organisation"/>
+      </reference>
+      <name value="AU PD Organisation"/>
+      <description value="This profile defines a provider directory entry for an organisation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-pd-location"/>
+      </reference>
+      <name value="AU PD Location"/>
+      <description value="This profile defines a provider directory entry for a location."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-pd-sm-endpoint"/>
+      </reference>
+      <name value="AU PD Secure Messaging Endpoint"/>
+      <description value="This profile defines content for describing details of an endpoint that would be adequate for addressing a secure message."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-pd-healthcareservice"/>
+      </reference>
+      <name value="AU PD Healthcare Service"/>
+      <description value="This profile defines a provider directory entry for a healthcare service or category of services delivered at a location by an organisation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="CodeSystem/smd-interfaces"/>
+      </reference>
+      <name value="Australian Secure Message Service Interfaces"/>
+      <description value="The Australian Secure Message Service Interfaces code system defines concepts that identify service interfaces for secure message delivery."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/service-interfaces"/>
+      </reference>
+      <name value="Australian Service Interfaces"/>
+      <description value="The Australian Service Interfaces value set enumerates well known service interfaces that can be used for specifying a connection type."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/au-physical-states-territories"/>
+      </reference>
+      <name value="Australian States and Territories"/>
+      <description value="The Australian States and Territories value set  includes values that represent the physical Australian states and territories."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="CodeSystem/endpoint-payload-type"/>
+      </reference>
+      <name value="Australian Endpoint Payload Types"/>
+      <description value="The Endpoint Payload Types code system defines concepts that identify well known endpoint payload types."/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/endpoint-payload-type"/>
+      </reference>
+      <name value="Australian Endpoint Payload Types"/>
+      <description value="The Australian Endpoint Payload Types value set enumerates well known endpoint payload types."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <!--
+    <resource>
+      <reference>
+        <reference value="SearchParameter/au-searchparameter-receivingfacility-namespace-id"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/au-searchparameter-receivingfacility-universal-id"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/au-searchparameter-receivingfacility-universal-id-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+	-->
+    <resource>
+      <reference>
+        <reference value="Practitioner/example0"/>
+      </reference>
+      <name value="Practitioner - Dr Helen Mayo"/>
+      <description value="Practitioner Dr Helen Mayo, with HPI-I and prescriber number."/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitioner"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/example0"/>
+      </reference>
+      <name value="PractitionerRole - Dr Helen Mayo"/>
+      <description value="Cardiologist Dr Helen Mayo, with Medicare Provide Number, Vendor Directory Identifier and Endpoint."/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitionerrole"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Organization/example0"/>
+      </reference>
+      <name value="Organization - Downunder Hospital"/>
+      <description value="Downunder Hospital with HPI-O."/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-organisation"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Location/example0"/>
+      </reference>
+      <name value="Location - Downunder Hospital Blacktown"/>
+      <description value="Downunder Hospital Blacktown, with address and telecom."/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-location"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Endpoint/example0"/>
+      </reference>
+      <name value="Endpoint - Telstra Health Secure Messaging Endpoint"/>
+      <description value="Telstra Health Secure Messaging Endpoint, with payload type and address."/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Endpoint/example1"/>
+      </reference>
+      <name value="Endpoint - Medical Objects Test Secure Messaging Endpoint"/>
+      <description value="Medical Objects Test Secure Messaging Endpoint, with payload type and address."/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Bundle/search1"/>
+      </reference>
+      <name value="Bundle - example PractitionerRole search response"/>
+      <description value="Example PractitionerRole search response, with one PractitionerRole and included resources returned."/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Bundle/search2"/>
+      </reference>
+      <name value="Bundle - example HealthcareService search response"/>
+      <description value="Example HealthcareService search response, with one HealthcareService and included resources returned."/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Bundle/search3"/>
+      </reference>
+      <name value="Bundle - example Endpoint search response"/>
+      <description value="Example Endpoint search response, with one Endpoint resource returned."/>
+      <exampleBoolean value="true"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="HealthcareService/example0"/>
+      </reference>
+      <name value="HealthcareService - Downunder Hospital Accident and Emergency"/>
+      <description value="Downunder Hospital Accident and Emergency, with specialty, location and endpoint."/>
+      <exampleCanonical value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-healthcareservice"/>
+    </resource>
+
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles and Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="searchparams.html"/>
+        <title value="Search Parameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="capstatements.html"/>
+        <title value="Capability Statements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security Considerations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="federation.html"/>
+        <title value="Federation of Directory Services"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+				<nameUrl value="examples.html"/>
+				<title value="Examples"/>
+				<generation value="markdown"/>
+			</page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
+
+    </page>
+
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2022+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="Draft"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/intro-notes"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/includes"/>
+    </parameter>
+    <parameter>
+      <code value="shownav"/>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code value="show-inherited-invariants"/>
+      <value value="false"/>
+    </parameter>
+    <!-- Uncomment one testing testing or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+<parameter>
+  <code value="excludexml"/>
+  <value value="true"/>
+</parameter>
+<parameter>
+  <code value="excludejson"/>
+  <value value="true"/>
+</parameter>
+<parameter>
+  <code value="excludettl"/>
+  <value value="true"/>
+</parameter>
+<parameter>
+  <code value="excludeexample"/>
+  <value value="true"/>
+</parameter>-->
+    <parameter>
+      <code value="excludemap"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-expansion-params"/>
+      <value value="../input/_resources/exp-params.json"/>
+    </parameter>
+
+  </definition>
+</ImplementationGuide>

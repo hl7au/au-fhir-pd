@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="au-pd-location" />
+  <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-location" />
+  <name value="AUPDLocation" />
+  <title value="AU PD Location" />
+  <status value="draft" />
+  <description value="This profile defines a provider directory entry for a location."/>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Location" />
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-location" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Location">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="trial-use" />
+      </extension>
+      <path value="Location" />
+      <short value="Australian Location Directory Entry" />
+    </element>
+    <element id="Location.meta">
+      <path value="Location.meta" />
+      <short value="Metadata on Location" />
+    </element>
+    <element id="Location.meta.source">
+      <path value="Location.meta.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Location.status">
+      <path value="Location.status" />
+      <short value="Required status" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Location.address">
+      <path value="Location.address" />
+      <short value="Australian location" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Location.address.state">
+      <path value="Location.address.state" />
+      <binding>
+        <strength value="required" />
+        <description value="well known state representation" />
+        <valueSet value="http://hl7.org.au/fhir/pd/ValueSet/au-physical-states-territories" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
