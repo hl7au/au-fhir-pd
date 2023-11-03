@@ -65,8 +65,8 @@
       <path value="Endpoint.identifier" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="type" />
         </discriminator>
         <rules value="open" />
       </slicing>

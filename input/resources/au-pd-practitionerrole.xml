@@ -34,10 +34,6 @@
           <type value="pattern" />
           <path value="type" />
         </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
         <rules value="open" />
       </slicing>
       <mustSupport value="true" />

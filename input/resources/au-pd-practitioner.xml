@@ -28,6 +28,16 @@
       <path value="Practitioner.meta.source" />
       <mustSupport value="true" />
     </element>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Practitioner.identifier:hpii">
       <path value="Practitioner.identifier" />
       <sliceName value="hpii" />
