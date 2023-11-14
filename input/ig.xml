@@ -93,6 +93,15 @@
       <description value="This profile defines a provider directory entry for a healthcare service or category of services delivered at a location by an organisation."/>
       <exampleBoolean value="false"/>
     </resource>
+    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/au-pd-vdi"/>
+      </reference>
+      <name value="AU VDI Identifier"/>
+      <description value="This profile defines a ... TO COMPLETE ... in an Australian context."/>
+      <exampleBoolean value="false"/>
+    </resource>
 
     <resource>
       <reference>
