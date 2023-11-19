@@ -87,9 +87,9 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="PractitionerRole.identifier:vendorAssignedDirectoryIdentifier">
+    <element id="PractitionerRole.identifier:auvdi">
       <path value="PractitionerRole.identifier" />
-      <sliceName value="vendorAssignedDirectoryIdentifier" />
+      <sliceName value="auvdi" />
       <short value="Secure Messaging Vendor's Provider Identifier" />
       <definition value="Vendor allocated directory identifier this can be used for search for specific practitioner role directory entry and/or for routing of messages." />
       <type>

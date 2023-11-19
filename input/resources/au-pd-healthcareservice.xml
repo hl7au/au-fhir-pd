@@ -77,9 +77,9 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="HealthcareService.identifier:pdvendor">
+    <element id="HealthcareService.identifier:auvdi">
       <path value="HealthcareService.identifier" />
-      <sliceName value="pdvendor" />
+      <sliceName value="auvdi" />
       <short value="Secure Messaging Vendor's Healthcare Service Identifier" />
       <definition value="Vendor allocated directory identifier this can be used for search for specific healthcare service directory entry and/or for routing of messages." />
       <type>
