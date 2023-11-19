@@ -98,8 +98,8 @@
       <reference>
         <reference value="StructureDefinition/au-pd-vdi"/>
       </reference>
-      <name value="AU VDI Identifier"/>
-      <description value="This profile defines a ... TO COMPLETE ... in an Australian context."/>
+      <name value="AU Vendor Directory Identifier"/>
+      <description value="This identifier profile defines a vendor directory identifier in an Australian context."/>
       <exampleBoolean value="false"/>
     </resource>
 

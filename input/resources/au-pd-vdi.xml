@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="au-pd-vdi" />
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-        <valueInteger value="2"/> 
+        <valueInteger value="0"/> 
     </extension>
     <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-vdi" />
-    <name value="AUVDIIdentifier" />
-    <title value="AU VDI Identifier" />
+    <name value="AUVendorDirectoryIdentifier" />
+    <title value="AU Vendor Directory Identifier" />
     <status value="draft" />
-    <description value="This profile defines a ... TO COMPLETE ... in an Australian context." />
+    <description value="This identifier profile defines a vendor directory identifier allocated to a provider directory entry, in an Australian provider directory context." />
     <kind value="complex-type" />
     <abstract value="false" />
     <type value="Identifier" />
@@ -18,11 +18,11 @@
         <element id="Identifier">
             <path value="Identifier" />
             <short value="Vendor Directory Identifier" />
-            <definition value="A unique vendor identifier allocated to a provider directory entry." />
+            <definition value="Vendor Directory Identifiers typically assigned by a vendor that can be used to search for specific healthcare service directory entries and/or for routing of messages." />
         </element>
         <element id="Identifier.type">
             <path value="Identifier.type" />
-            <short value="Coded identifier type for VDI" />
+            <short value="Coded identifier type for vendor directory identifier" />
             <min value="1"/>
             <patternCodeableConcept>
                 <coding>
