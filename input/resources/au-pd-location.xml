@@ -27,6 +27,10 @@
       <path value="Location.meta.source" />
       <mustSupport value="true" />
     </element>
+    <element id="Location.identifier">
+      <path value="Location.identifier"/>
+      <mustSupport value="true"/>
+    </element>
     <element id="Location.status">
       <path value="Location.status" />
       <short value="Required status" />

@@ -37,6 +37,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Practitioner.identifier:hpii">
       <path value="Practitioner.identifier" />
