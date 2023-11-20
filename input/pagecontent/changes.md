@@ -19,7 +19,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> - <strong>new</strong>
         <ul>
             <li>refactored from the in-line Identifier definitions in <a href="StructureDefinition-au-pd-healthcareservice.html">AU PD Healthcare Service</a> and <a href="StructureDefinition-au-pd-practitionerrole.html">AU PD Practitioner Role</a>, thereby amalgamating the respective definitions into a single datatype profile</li>
-            <li>constraints follow other HL7AU Base IG Identifier profiles, such as using `patternCodeableConcept` for `type.coding`, and not mandating type.text</li>
+            <li>constraints follow other HL7AU Base IG Identifier profiles, such as using <code>patternCodeableConcept</code> for <code>type.coding</code>, and not mandating <code>type.text</code></li>
         </ul>
     </li>
     <li>Profile: <a href="StructureDefinition-au-pd-smdtargetidentifier.html">PD Secure Messaging Delivery Target Identifier</a> - <strong>new</strong>
@@ -30,7 +30,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-healthcareservice.html">AU PD Healthcare Service</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
-            <li>removed in-line identifier definitions for <code>pdvendor</code> and instead references the new <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> profile. The impact of this change is that 
+            <li>removed in-line identifier definitions for <code>pdvendor</code> and instead reference the new <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> profile. The impact of this change on representations of vendor directory identifiers is that:
                 <ul>
                     <li><code>type.coding.system</code> value is now <code>http://terminology.hl7.org.au/CodeSystem/v2-0203</code> (instead of <code>http://terminology.hl7.org/CodeSystem/v2-0203</code>) - <strong>breaking change</strong></li>
                     <li><code>type.text</code> value is no longer mandatory</li>
@@ -70,7 +70,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-practitionerrole.html">AU PD Practitioner Role</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
-            <li>removed in-line identifier definitions for <code>vendorAssignedDirectoryIdentifier</code> and instead references the new <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> profile. The impact of this change is that 
+            <li>removed in-line identifier definitions for <code>vendorAssignedDirectoryIdentifier</code> and instead reference the new <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> profile. The impact of this change on representations of vendor directory identifiers is that:
                 <ul>
                     <li><code>type</code> value is now mandatory - <strong>breaking change</strong></li>
                     <li><code>type.coding.system</code> is now mandatory with a fixed value of <code>http://terminology.hl7.org.au/CodeSystem/v2-0203</code> - <strong>breaking change</strong></li>
