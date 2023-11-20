@@ -36,7 +36,7 @@ To help implementers, only the more significant changes are listed here.
                     <li><code>type.text</code> value is no longer mandatory</li>
                 </ul>            
             </li>
-            <li>the identifier slice discriminator has been updated to be <code>pattern:type</code>
+            <li>the identifier slice discriminator has been updated to be <code>pattern:type</code></li>
             <li>the inheritance from the updated AU Base HealthcareService includes explicit Identifier types for all of the applicable organisation identifiers (i.e. HPI-O and AU Residential Aged Care Service Identifier)</li>
             <li>the inheritance from the updated AU Base HealthcareService allows the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-assigningauthority.html">HL7 V2 Assigning Authority Identifier extension</a> on all Identifier slices</li>
             <li>the inheritance from the updated AU Base HealthcareService introduces the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-identifier-routability.html">Identifier Routability Identifier extension</a> on all Identifier slices</li>
@@ -108,7 +108,7 @@ To help implementers, only the more significant changes are listed here.
             <li>concepts no longer have a nested hierarchy</li>
         </ul>
     </li>
-    <li>Examples: </a>
+    <li>Examples:
         <ul>
             <li><a href="HealthcareService-example0.html">healthcareservice-example0.xml</a>: added a snippet of the AU Vendor Directory Identifier</li>
             <li><a href="PractitionerRole-example0.html">practitionerrole-example0.xml</a>: corrected wrong system value for Medicare Provider Number identifier</li>
