@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="au-pd-smdtargetidentifier"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/> 
+  </extension>
+  <url value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-smdtargetidentifier"/>
+  <name value="PDSMDTargetIdentifier"/>
+  <title value="PD Secure Messaging Delivery Target Identifier"/>
+  <status value="draft"/>
+  <description value="This identifier profile defines a Secure Messaging Delivery Target Identifier in an Australian provider directory context."/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Identifier"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Identifier">
+      <path value="Identifier"/>
+      <short value="Secure Messaging Delivery Target Identifier"/>
+      <definition value="Secure messaging interface target identity included in addressing metadata.  This is the complete URL identifier that can be directly used in secure messaging.  This identifier should be matched when selecting the encrypting certificate data used for payload encryption also referenced from this endpoint." />
+    </element>   
+    <element id="Identifier.system">
+      <path value="Identifier.system"/>
+      <short value="Vendor allocated URL" />
+      <definition value="System identifier namespace for the assigning vendor's identifier value."/>
+      <min value="1"/>
+      <fixedUri value="http://ns.electronichealth.net.au/smd/target" />
+    </element>
+    <element id="Identifier.value">
+      <path value="Identifier.value"/>
+      <short value="Vendor Identifier Value"/>
+      <definition value="Secure messaging target identifier value." />
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>
