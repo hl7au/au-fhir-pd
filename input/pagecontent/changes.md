@@ -15,10 +15,28 @@ To help implementers, only the more significant changes are listed here.
         <ul>
             <li>Changed <a href="http://hl7.org.au/fhir/4.1.0/CodeSystem-au-location-physical-type.html">Location Type (Physical) AU</a> to deprecate concept 'vi'. This code has been deprecated as it has been replaced by an equivalent term provided by HL7 international.</li>
         </ul>
-    </li>    
+    </li>
+    <li>Profile: <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> - <strong>new</strong>
+        <ul>
+            <li>refactored from the in-line Identifier definitions in <a href="StructureDefinition-au-pd-healthcareservice.html">AU PD Healthcare Service</a> and <a href="StructureDefinition-au-pd-practitionerrole.html">AU PD Practitioner Role</a>, thereby amalgamating the respective definitions into a single datatype profile</li>
+            <li>constraints follow other HL7AU Base IG Identifier profiles, such as using `patternCodeableConcept` for `type.coding`, and not mandating type.text</li>
+        </ul>
+    </li>
+    <li>Profile: <a href="StructureDefinition-au-pd-smdtargetidentifier.html">PD Secure Messaging Delivery Target Identifier</a> - <strong>new</strong>
+        <ul>
+            <li>refactored from the in-line Identifier definitions in <a href="StructureDefinition-au-pd-sm-endpoint.html">AU PD Secure Messaging Endpoint</a></li>
+        </ul>
+    </li>
     <li>Profile: <a href="StructureDefinition-au-pd-healthcareservice.html">AU PD Healthcare Service</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>removed in-line identifier definitions for <code>pdvendor</code> and instead references the new <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> profile. The impact of this change is that 
+                <ul>
+                    <li><code>type.coding.system</code> value is now <code>http://terminology.hl7.org.au/CodeSystem/v2-0203</code> (instead of <code>http://terminology.hl7.org/CodeSystem/v2-0203</code>) - <strong>breaking change</strong></li>
+                    <li><code>type.text</code> value is no longer mandatory</li>
+                </ul>            
+            </li>
+            <li>the identifier slice discriminator has been updated to be <code>pattern:type</code>
             <li>the inheritance from the updated AU Base HealthcareService includes explicit Identifier types for all of the applicable organisation identifiers (i.e. HPI-O and AU Residential Aged Care Service Identifier)</li>
             <li>the inheritance from the updated AU Base HealthcareService allows the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-assigningauthority.html">HL7 V2 Assigning Authority Identifier extension</a> on all Identifier slices</li>
             <li>the inheritance from the updated AU Base HealthcareService introduces the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-identifier-routability.html">Identifier Routability Identifier extension</a> on all Identifier slices</li>
@@ -29,6 +47,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-location.html">AU PD Location</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>Location.identifier is now must support = true</li>
             <li>the inheritance from the updated AU Base Location includes <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-address.html">AustralianAddress</a> as an allowed Location.address type </li>
             <li>the inheritance from the updated AU Base Location includes <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-locationspecificpracticenumber.html">AU Location Specific Practice Number</a> as an allowed Location.identifier type </li>
         </ul>
@@ -36,18 +55,32 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-organisation.html">AU PD Organisation</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>the slicing discriminator on Organization.identifier is now <code>pattern:type</code></li>
+            <li>Organization.identifier is now must support = true</li>
             <li>the inheritance from the updated AU Base Organisation includes explicit Identifier types for all of the applicable organisation identifiers (i.e. HPI-O, ACN, ABN etc)</li>       
         </ul>
     </li>
     <li>Profile: <a href="StructureDefinition-au-pd-practitioner.html">AU PD Practitioner</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>the Practitioner.identifier element has been updated to have slicing discriminator of <code>pattern:type</code>, must support = true and the HPI-I identifier datatype profile properly referenced</li>
             <li>the inheritance from the updated AU Base Practitioner includes explicit Identifier types for all of the applicable practitioner identifiers (i.e. HPI-I, PBS prescriber number etc)</li>
         </ul>
     </li>
     <li>Profile: <a href="StructureDefinition-au-pd-practitionerrole.html">AU PD Practitioner Role</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>removed in-line identifier definitions for <code>vendorAssignedDirectoryIdentifier</code> and instead references the new <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> profile. The impact of this change is that 
+                <ul>
+                    <li><code>type</code> value is now mandatory - <strong>breaking change</strong></li>
+                    <li><code>type.coding.system</code> is now mandatory with a fixed value of <code>http://terminology.hl7.org.au/CodeSystem/v2-0203</code> - <strong>breaking change</strong></li>
+                    <li><code>type.coding.code</code> is now mandatory - <strong>breaking change</strong></li>
+                    <li><code>type.text</code> value is no longer mandatory</li>
+                    <li><code>system</code> is now mandatory - <strong>breaking change</strong></li>
+                    <li><code>value</code> is now mandatory - <strong>breaking change</strong></li>
+                </ul>            
+            </li>
+            <li>the identifier slice discriminator has been updated to be <code>pattern:type</code></li>
             <li>the inheritance from the updated AU Base PractitionerRole includes explicit Identifier types for all of the applicable practitioner role identifiers (i.e. Medicare provider number, National Provider Identifier At Organisation etc)</li>
             <li>the inheritance from the updated AU Base PractitionerRole allows the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-assigningauthority.html">HL7 V2 Assigning Authority Identifier extension</a> on all Identifier slices</li>
             <li>the inheritance from the updated AU Base PractitionerRole introduces the <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-identifier-routability.html">Identifier Routability Identifier extension</a> on all Identifier slices</li>
@@ -59,6 +92,9 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-sm-endpoint.html">AU PD Secure Messaging Endpoint</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>removed in-line identifier definitions for <code>smdtarget</code> and instead references the new <a href="StructureDefinition-au-pd-smdtargetidentifier.html">PD Secure Messaging Delivery Target Identifier</a> profile. This update does not involve any constraint changes.</li>
+            <li>the identifier slice discriminator has been updated to be <code>pattern:type</code></li>
+            <li>Endpoint.identifier is now must support = true</li>
         </ul>
     </li>
     <li>ValueSet: <a href="ValueSet-service-interfaces.html">Australian Service Interfaces</a>
@@ -70,6 +106,12 @@ To help implementers, only the more significant changes are listed here.
         <ul>
             <li>4 concepts were added for HL7 v2.4 ORU, ORM, ORR and ACK messages</li>
             <li>concepts no longer have a nested hierarchy</li>
+        </ul>
+    </li>
+    <li>Examples: </a>
+        <ul>
+            <li><a href="HealthcareService-example0.html">healthcareservice-example0.xml</a>: added a snippet of the AU Vendor Directory Identifier</li>
+            <li><a href="PractitionerRole-example0.html">practitionerrole-example0.xml</a>: corrected wrong system value for Medicare Provider Number identifier</li>
         </ul>
     </li>
     <li>Guidance page
