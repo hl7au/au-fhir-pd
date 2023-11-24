@@ -31,7 +31,7 @@
       <path value="HealthcareService.identifier" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
+          <type value="value" />
           <path value="type" />
         </discriminator>
         <rules value="open" />
