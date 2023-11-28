@@ -32,7 +32,7 @@
       <path value="Practitioner.identifier" />
       <slicing>
         <discriminator>
-          <type value="value" />
+          <type value="pattern" />
           <path value="type" />
         </discriminator>
         <rules value="open" />
