@@ -29,6 +29,7 @@
     </element>
     <element id="Location.identifier">
       <path value="Location.identifier"/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="Location.status">

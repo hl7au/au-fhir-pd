@@ -38,6 +38,7 @@
         <rules value="open" />
       </slicing>
       <short value="Organisation Directory Entry Identifiers" />
+      <min value="1"/>
       <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:hpio">
