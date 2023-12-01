@@ -16,6 +16,13 @@
       <path value="Endpoint" />
       <short value="Australian Secure Message Directory Endpoint Record" />
       <definition value="Endpoint defined for use in secure message addressing." />
+      <constraint>
+        <key value="au-pd-ep-01"/>
+        <severity value="error"/>
+        <human value="At least a known and defined identifier must be present"/>
+        <expression value="identifier.where(system='http://ns.electronichealth.net.au/smd/target').exists()"/>
+        <source value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-sm-endpoint"/>
+      </constraint>
     </element>
     <element id="Endpoint.meta">
       <path value="Endpoint.meta" />
