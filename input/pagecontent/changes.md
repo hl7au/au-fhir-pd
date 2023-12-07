@@ -30,6 +30,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-healthcareservice.html">AU PD Healthcare Service</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>mandated at least one of the known and defined Identifier types (invariant <code>au-pd-hs-01</code>), i.e. <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-hpio.html">AU HPI-O</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-residentialagedcareserviceidentifier.html">AU Residential Aged Care Service Identifier</a> or <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> - <strong>breaking change</strong></li>
             <li>removed in-line identifier definitions for <code>pdvendor</code> and instead reference the new <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> profile. The impact of this change on representations of vendor directory identifiers is that:
                 <ul>
                     <li><code>type.coding.system</code> value is now <code>http://terminology.hl7.org.au/CodeSystem/v2-0203</code> (instead of <code>http://terminology.hl7.org/CodeSystem/v2-0203</code>) - <strong>breaking change</strong></li>
@@ -47,6 +48,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-location.html">AU PD Location</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>at least one of the known and defined Identifier types should be present (invariant <code>au-pd-loc-01</code>), i.e. <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-locationspecificpracticenumber.html">AU Location Specific Practice Number</a> or <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-natasitenumber.html">AU NATA Site Number</a></li>
             <li>Location.identifier is now must support = true</li>
             <li>the inheritance from the updated AU Base Location includes <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-address.html">AustralianAddress</a> as an allowed Location.address type </li>
             <li>the inheritance from the updated AU Base Location includes <a href="http://hl7.org.au/fhir/4.1.0/StructureDefinition-au-locationspecificpracticenumber.html">AU Location Specific Practice Number</a> as an allowed Location.identifier type </li>
@@ -55,6 +57,8 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-organisation.html">AU PD Organisation</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>mandated at least one of the known and defined Identifier types (invariant <code>au-pd-org-01</code>), i.e. <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-hpio.html">AU HPI-O</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-paioidentifier.html">AU PAI-O Identifier</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-cspregistrationnumber.html">AU CSP Registration Number</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-australianbusinessnumber.html">AU Australian Business Number</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-australiancompanynumber.html">AU Australian Company Number</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-australianregistredbodynumber.html">AU Australian Registered Body Number</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-nataaccreditationnumber.html">AU NATA Accreditation Number</a> or <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-pharmacyapprovalnumber.html">AU Pharmacy Approval Number</a>
+ - <strong>breaking change</strong></li>
             <li>the slicing discriminator on Organization.identifier is now <code>pattern:type</code></li>
             <li>Organization.identifier is now must support = true</li>
             <li>the inheritance from the updated AU Base Organisation includes explicit Identifier types for all of the applicable organisation identifiers (i.e. HPI-O, ACN, ABN etc)</li>       
@@ -63,6 +67,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-practitioner.html">AU PD Practitioner</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>mandated at least one of the known and defined Identifier types (invariant <code>au-pd-prac-01</code>), i.e. <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-hpii.html">AU HPI-I</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-pbsprescribernumber.html">AU PBS Prescriber Number</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-careagencyemployeeidentifier.html">AU Care Agency Employee Identifier</a> or<a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-ahpraregistrationnumber.html">AU Ahpra Registration Number</a> - <strong>breaking change</strong></li>
             <li>the Practitioner.identifier element has been updated to have slicing discriminator of <code>pattern:type</code>, must support = true and the HPI-I identifier datatype profile properly referenced</li>
             <li>the inheritance from the updated AU Base Practitioner includes explicit Identifier types for all of the applicable practitioner identifiers (i.e. HPI-I, PBS prescriber number etc)</li>
         </ul>
@@ -70,6 +75,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-practitionerrole.html">AU PD Practitioner Role</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>mandated at least one of the known and defined Identifier types (invariant <code>au-pd-pracrole-01</code>), i.e. <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-medicareprovidernumber.html">AU Medicare Provider Number</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-nationalprovideridentifieratorganisation.html">AU National Provider Identifier At Organisation</a>, <a href="https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-employeenumber.html">AU Employee Number</a> or <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> - <strong>breaking change</strong></li>
             <li>removed in-line identifier definitions for <code>vendorAssignedDirectoryIdentifier</code> and instead reference the new <a href="StructureDefinition-au-pd-vdi.html">AU Vendor Directory Identifier</a> profile. The impact of this change on representations of vendor directory identifiers is that:
                 <ul>
                     <li><code>type</code> value is now mandatory - <strong>breaking change</strong></li>
@@ -92,6 +98,7 @@ To help implementers, only the more significant changes are listed here.
     <li>Profile: <a href="StructureDefinition-au-pd-sm-endpoint.html">AU PD Secure Messaging Endpoint</a>
         <ul>
             <li>based on FHIR version 4.0.1 instead of 4.0.0</li>
+            <li>mandated at least one of the known and defined Identifier types (invariant <code>au-pd-ep-01</code>), i.e. <a href="StructureDefinition-au-pd-smdtargetidentifier.html">PD Secure Messaging Delivery Target Identifier</a> - <strong>breaking change</strong></li>
             <li>removed in-line identifier definitions for <code>smdtarget</code> and instead references the new <a href="StructureDefinition-au-pd-smdtargetidentifier.html">PD Secure Messaging Delivery Target Identifier</a> profile. This update does not involve any constraint changes.</li>
             <li>the identifier slice discriminator has been updated to be <code>pattern:type</code></li>
             <li>Endpoint.identifier is now must support = true</li>
