@@ -22,7 +22,7 @@
         <key value="au-pd-pracrole-01"/>
         <severity value="error"/>
         <human value="At least one defined identifier, known to this AU PD Practitioner Role profile, must be present"/>
-        <expression value="identifier.where(type.coding.where(code='VDI' or code='EI') or system='http://ns.electronichealth.net.au/id/medicare-provider-number' or system='http://hl7.org.au/id/npio').exists()"/>
+        <expression value="identifier.exists() implies identifier.where(type.coding.where(code='VDI' or code='EI') or system='http://ns.electronichealth.net.au/id/medicare-provider-number' or system='http://hl7.org.au/id/npio').exists()"/>
         <source value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitionerrole"/>
       </constraint>
     </element>

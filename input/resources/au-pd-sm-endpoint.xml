@@ -20,7 +20,7 @@
         <key value="au-pd-ep-01"/>
         <severity value="error"/>
         <human value="At least one defined identifier, known to this AU PD Secure Messaging Endpoint profile, must be present"/>
-        <expression value="identifier.where(system='http://ns.electronichealth.net.au/smd/target').exists()"/>
+        <expression value="identifier.exists() implies identifier.where(system='http://ns.electronichealth.net.au/smd/target').exists()"/>
         <source value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-sm-endpoint"/>
       </constraint>
     </element>
