@@ -7,7 +7,7 @@ In the context of provider directories the practitioner role may include referen
 
 **Profile specific implementation guidance:**
 
-As a minimum, one of the following defined Identifier types **SHALL** be supplied:
+At least one of the following defined identifier types, known to this profile, **SHALL** be supplied:
 
 * [AU Medicare Provider Number](https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-medicareprovidernumber.html)
 * [AU National Provider Identifier At Organisation](https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-nationalprovideridentifieratorganisation.html)

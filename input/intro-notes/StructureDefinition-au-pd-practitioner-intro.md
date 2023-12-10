@@ -3,7 +3,7 @@
 
 **Profile specific implementation guidance:**
 
-As a minimum, one of the following defined Identifier types **SHALL** be supplied:
+At least one of the following defined identifier types, known to this profile, **SHALL** be supplied:
 
 * [AU HPI-I](https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-hpii.html)
 * [AU PBS Prescriber Number](https://hl7.org.au/fhir/4.1.0/StructureDefinition-au-pbsprescribernumber.html)
