@@ -19,6 +19,13 @@
       <path value="Practitioner" />
       <short value="Australian Practitioner Directory Entry" />
       <definition value="Directory entry for a person who is directly or indirectly involved in the provisioning of healthcare." />
+      <constraint>
+        <key value="au-pd-prac-01"/>
+        <severity value="error"/>
+        <human value="At least one defined identifier, known to this AU PD Practitioner profile, must be present"/>
+        <expression value="identifier.exists() implies identifier.where(system='http://ns.electronichealth.net.au/id/hi/hpii/1.0' or system='http://ns.electronichealth.net.au/id/medicare-prescriber-number' or system='http://ns.electronichealth.net.au/id/pcehr/caei/1.0' or system='http://hl7.org.au/id/ahpra-registration-number').exists()"/>
+        <source value="http://hl7.org.au/fhir/pd/StructureDefinition/au-pd-practitioner"/>
+      </constraint>
     </element>
     <element id="Practitioner.meta">
       <path value="Practitioner.meta" />
@@ -28,11 +35,27 @@
       <path value="Practitioner.meta.source" />
       <mustSupport value="true" />
     </element>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1"/>
+      <mustSupport value="true" />
+    </element>
     <element id="Practitioner.identifier:hpii">
       <path value="Practitioner.identifier" />
       <sliceName value="hpii" />
       <short value="HPI-I for Directory Entry Practitioner" />
       <definition value="National identifier for the individual provider" />
+      <type>
+        <code value="Identifier"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-hpii" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Practitioner.active">
