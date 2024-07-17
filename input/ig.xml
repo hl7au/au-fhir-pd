@@ -327,7 +327,11 @@
         <title value="Change Log"/>
         <generation value="markdown"/>
       </page>
-
+      <page>
+        <nameUrl value="variance.html"/>
+        <title value="AU Variance Statement"/>
+        <generation value="markdown"/>
+			</page>
     </page>
 
     <!-- copyright year is a mandatory parameter -->
