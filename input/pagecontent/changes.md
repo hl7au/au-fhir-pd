@@ -1,7 +1,7 @@
-### Release 2.1.0
+### Release TBD
 
-- Expected Publication date: December 2023
-- Expected Publication status: Trial Use
+- Expected Publication date: ??
+- Expected Publication status: Working Standard
 - Based on FHIR version: 4.0.1
 
 The changes in this update are in progress and yet to be balloted.
@@ -10,6 +10,8 @@ To help implementers, only the more significant changes are listed here.
 
 #### Changes in this version
 <ul>
+    <li><a href="variance.html">Variance Statement</a> page added as required HL7 AU IG Content</li> 
+    <li><a href="licensing.html">Licensing</a> page added as required HL7 AU IG Content</li> 
     <li>Changed HL7 AU implementation guide publication structure and format to better align to current HL7 practices.</li>
     <li>Updated dependency on au-fhir-base version '4.1.0', from version '4.1.0-ballot'. Refer to <a href="http://hl7.org.au/fhir/4.1.0/changes.html#release-410">au-fhir-base detailed change log</a>. The specific changes impacting this IG are:
         <ul>
