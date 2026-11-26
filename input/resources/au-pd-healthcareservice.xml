@@ -144,23 +144,9 @@
       <short value="Contact details" />
       <mustSupport value="true" />
     </element>
-    <element id="HealthcareService.availableTime.availableStartTime.extension:timeZone">
-      <path value="HealthcareService.availableTime.availableStartTime.extension" />
-      <sliceName value="timeZone" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-timezone" />
-      </type>
-    </element>
-    <element id="HealthcareService.availableTime.availableEndTime.extension:timeZone">
-      <path value="HealthcareService.availableTime.availableEndTime.extension" />
-      <sliceName value="timeZone" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-timezone" />
-      </type>
+    <element id="HealthcareService.availableTime">
+      <path value="HealthcareService.availableTime"/>
+      <mustSupport value="true" />
     </element>
     <element id="HealthcareService.endpoint">
       <path value="HealthcareService.endpoint" />

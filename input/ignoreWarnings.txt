@@ -65,3 +65,7 @@ No definition could be found for URL value 'https://sqlonfhir-aupd.azurewebsites
 
 # === WARNING 11: Fixed typo in CodeSystem/smd-interfaces valueSet reference (was http://hl7.org.au.fhir/..., corrected to http://hl7.org.au/fhir/pd/ValueSet/service-interfaces); kept here until the CI build output no longer emits it. ===
 A definition could not be found for Canonical URL 'http://hl7.org.au.fhir/ValueSet/valueset-au-serviceinterface'
+
+# === WARNING 12: The publisher auto-generates this heading inside the CapabilityStatement narrative (data-fhir="generated"); the IG has no control over its heading level, so this WCAG heading-skip finding cannot be fixed from IG source. ===
+The page skips a heading level: <h4> 'SHALL Support the Following Implementation Guides' (id=shallIGs) follows <h2> 'CapabilityStatement: AU PD Requester CapabilityStatement' (id=root), so it should be <h3>. Heading levels must not skip a level going down (WCAG compliance test)
+The page skips a heading level: <h4> 'SHALL Support the Following Implementation Guides' (id=shallIGs) follows <h2> 'CapabilityStatement: AU PD Responder CapabilityStatement' (id=root), so it should be <h3>. Heading levels must not skip a level going down (WCAG compliance test)

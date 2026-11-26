@@ -11,7 +11,7 @@
     <description value="The Australian Secure Message Service Interfaces code system defines concepts that identify service interfaces for secure message delivery."/>
 	<caseSensitive value="true"/>
 	<compositional value="false"/>
-	<versionNeeded value="true"/>
+	<versionNeeded value="false"/>
 	<content value="complete"/>
 	<concept>
 		<code value="http://ns.electronichealth.net.au/smd/intf/SealedImmediateMessageDelivery/TLS/2010"/>
